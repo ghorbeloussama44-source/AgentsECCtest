@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>RusStudy — 10 s</title>
+<style>html,body{margin:0;background:#0A0A0A}canvas{display:block;width:1080px;height:1920px}</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+(function () {
+  "use strict";
+  var W = 1080, H = 1920;
+  var ctx = document.getElementById("c").getContext("2d");
+  var C = { ink: "#0A0A0A", cream: "#F0EBE3", blue: "#2F66E8", yellow: "#FBBB21" };
+  var F = '"Space Grotesk", sans-serif';
+
+  // ---------- outils ----------
+  function clamp(x, a, b) { return Math.min(b === undefined ? 1 : b, Math.max(a || 0, x)); }
+  function prog(t, a, b) { return clamp((t - a) / (b - a)); }
+  function eo(x) { return x >= 1 ? 1 : 1 - Math.pow(2, -10 * x); }
+  function sine(x) { return 0.5 - Math.cos(Math.PI * clamp(x)) / 2; }
+  function eio(x) { return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; }
+  function back(x) { var c1 = 1.9, c3 = c1 + 1; return x <= 0 ? 0 : 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); }
+  function lerp(a, b, x) { return a + (b - a) * x; }
+  function hash(i) { var x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+  function rgba(hex, a) {
+    var n = parseInt(hex.slice(1), 16);
+    return "rgba(" + (n >> 16) + "," + ((n >> 8) & 255) + "," + (n & 255) + "," + a + ")";
+  }
+  function font(weight, size) { ctx.font = weight + " " + size + "px " + F; }
+  // taille de police qui fait tenir le texte dans maxW
+  function fit(text, weight, size, maxW) {
+    font(weight, size);
+    var w = ctx.measureText(text).width;
+    if (w > maxW) { size = Math.floor(size * maxW / w); font(weight, size); }
+    return size;
+  }
+  function roundRect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y); ctx.closePath();
+  }
+  // texte qui monte depuis sous sa ligne de base, coupé par un masque
+  function maskText(text, x, y, size, k, color, weight) {
+    if (k <= 0) return;
+    ctx.save();
+    ctx.beginPath(); ctx.rect(0, y - size * 1.02, W, size * 1.28); ctx.clip();
+    font(weight || 700, size);
+    ctx.fillStyle = color;
+    ctx.fillText(text, x, y + (1 - eo(k)) * size * 1.15);
+    ctx.restore();
+  }
+  // volet en parallélogramme : couvre l'écran à mi-parcours
+  function wipe(t, start, dur, color) {
+    var q = prog(t, start, start + dur);
+    if (q <= 0 || q >= 1) return;
+    var s = 420, PW = W + 2 * s + 40;
+    var L = -PW - s + eio(q) * (W + PW + 2 * s);
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(L + s, 0); ctx.lineTo(L + s + PW, 0); ctx.lineTo(L + PW, H); ctx.lineTo(L, H);
+    ctx.closePath(); ctx.fill();
+  }
+
+  // ---------- décor : grille en perspective qui avance, points scintillants ----------
+  function grid(t, strength, color) {
+    if (strength <= 0) return;
+    var vy = H * 0.34, vx = W / 2, N = 14;
+    ctx.save();
+    ctx.lineWidth = 2;
+    for (var k = 0; k < N; k++) {
+      var z = ((k + t * 1.6) % N) / N;
+      var y = vy + (H - vy) * z * z;
+      ctx.strokeStyle = rgba(color, 0.22 * z * strength);
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+    for (var i = -9; i <= 9; i++) {
+      ctx.strokeStyle = rgba(color, 0.12 * strength);
+      ctx.beginPath(); ctx.moveTo(vx, vy); ctx.lineTo(vx + i * 230, H); ctx.stroke();
+    }
+    var g = ctx.createLinearGradient(0, vy - 40, 0, vy + 260);
+    g.addColorStop(0, rgba(C.ink, 1)); g.addColorStop(1, rgba(C.ink, 0));
+    ctx.fillStyle = g; ctx.fillRect(0, vy - 40, W, 300);
+    ctx.restore();
+  }
+  function stars(t, strength) {
+    if (strength <= 0) return;
+    for (var i = 0; i < 70; i++) {
+      var x = hash(i) * W, y = hash(i + 99) * H * 0.62;
+      var tw = 0.35 + 0.65 * Math.abs(Math.sin(t * (1.5 + hash(i + 7) * 3) + i));
+      ctx.fillStyle = rgba(i % 5 === 0 ? C.yellow : C.cream, 0.5 * tw * strength);
+      var r = 1.5 + hash(i + 3) * 2.5;
+      ctx.fillRect(x, y, r, r);
+    }
+  }
+
+  // ---------- scène A : accroche (0 – 1,9 s) ----------
+  function sceneA(t) {
+    ctx.fillStyle = C.ink; ctx.fillRect(0, 0, W, H);
+    grid(t, 1, C.blue); stars(t, 1);
+    var x = 90, max = W - 180;
+    var kick = prog(t, 0.05, 0.5);
+    ctx.globalAlpha = eo(kick);
+    font(600, 34); ctx.fillStyle = C.yellow;
+    ctx.fillText("RUSSTUDY · ÉTUDES EN RUSSIE", x, 640);
+    ctx.fillRect(x, 662, 120 * eo(kick), 5);
+    ctx.globalAlpha = 1;
+    var s1 = fit("EN RUSSIE.", 700, 158, max);
+    maskText("ÉTUDIE", x, 830, s1, prog(t, 0.15, 0.75), C.cream);
+    maskText("EN RUSSIE.", x, 830 + s1 * 1.05, s1, prog(t, 0.28, 0.88), C.cream);
+    // « CHANGE TA VIE. » sur un bandeau jaune qui se déroule
+    var y3 = 830 + s1 * 2.35;
+    var s3 = fit("CHANGE TA VIE.", 700, 128, max - 40);
+    var bar = eo(prog(t, 0.85, 1.25));
+    font(700, s3);
+    var bw = ctx.measureText("CHANGE TA VIE.").width + 48;
+    ctx.fillStyle = C.yellow;
+    ctx.fillRect(x - 24, y3 - s3 * 0.92, bw * bar, s3 * 1.22);
+    ctx.save();
+    ctx.beginPath(); ctx.rect(x - 24, y3 - s3, bw * bar, s3 * 1.4); ctx.clip();
+    maskText("CHANGE TA VIE.", x, y3, s3, prog(t, 0.95, 1.5), C.ink);
+    ctx.restore();
+  }
+
+  // ---------- scène B : le parcours (1,9 – 6,25 s) ----------
+  var STEPS = [
+    ["Consultation", "1ère consultation gratuite"],
+    ["Dossier d'admission", "Conseil & traduction gratuits"],
+    ["Invitation & visa", "Visa garanti par contrat"],
+    ["Accueil à l'aéroport", "Tuteur bilingue sur place"],
+    ["Logement garanti", "Résidence universitaire 24h/24"]
+  ];
+  var SX = 168, Y0 = 1640, Y1 = 330, T0 = 2.05, T1 = 5.6;
+  function nodeY(i) { return lerp(Y0, Y1, (i + 1) / 6); } // i = -1 (Tunis) à 5 (Russie)
+  function sceneB(t) {
+    ctx.fillStyle = C.ink; ctx.fillRect(0, 0, W, H);
+    grid(t, 0.45, C.blue); stars(t, 0.6);
+    var cam = (1 - eio(prog(t, 1.9, 6.2))) * 70;
+    ctx.save(); ctx.translate(0, cam);
+
+    var head = lerp(Y0, Y1, sine(prog(t, T0, T1)));
+    // titre de section
+    var tk = prog(t, 2.0, 2.5);
+    ctx.globalAlpha = eo(tk);
+    font(600, 34); ctx.fillStyle = C.yellow;
+    ctx.fillText("TON PARCOURS AVEC RUSSTUDY", 90, 170 - cam);
+    ctx.globalAlpha = 1;
+
+    // rail en pointillé puis tracé plein jusqu'à l'avion
+    ctx.lineCap = "round";
+    ctx.setLineDash([2, 22]); ctx.lineWidth = 6; ctx.strokeStyle = rgba(C.cream, 0.28 * eo(prog(t, 1.95, 2.3)));
+    ctx.beginPath(); ctx.moveTo(SX, Y0); ctx.lineTo(SX, Y1); ctx.stroke();
+    ctx.setLineDash([]);
+    var lg = ctx.createLinearGradient(0, Y0, 0, Y1);
+    lg.addColorStop(0, C.blue); lg.addColorStop(1, C.yellow);
+    ctx.strokeStyle = lg; ctx.lineWidth = 12;
+    ctx.beginPath(); ctx.moveTo(SX, Y0); ctx.lineTo(SX, head); ctx.stroke();
+
+    // départ et arrivée
+    endpoint(t, "TUNIS", Y0, 2.0, C.blue);
+    endpoint(t, "RUSSIE", Y1, 5.65, C.yellow);
+
+    // étapes
+    for (var i = 0; i < 5; i++) {
+      var y = nodeY(i);
+      var hit = T0 + (T1 - T0) * eioInv((Y0 - y) / (Y0 - Y1));
+      var k = prog(t, hit - 0.05, hit + 0.45);
+      if (k <= 0) {
+        ctx.fillStyle = rgba(C.cream, 0.25);
+        ctx.beginPath(); ctx.arc(SX, y, 12, 0, 7); ctx.fill();
+        continue;
+      }
+      // onde au passage
+      var ring = prog(t, hit, hit + 0.6);
+      if (ring > 0 && ring < 1) {
+        ctx.strokeStyle = rgba(C.yellow, 0.6 * (1 - ring)); ctx.lineWidth = 4;
+        ctx.beginPath(); ctx.arc(SX, y, 40 + 70 * eo(ring), 0, 7); ctx.stroke();
+      }
+      var r = 44 * back(k);
+      ctx.fillStyle = C.yellow; ctx.beginPath(); ctx.arc(SX, y, r, 0, 7); ctx.fill();
+      font(700, 34); ctx.fillStyle = C.ink; ctx.textAlign = "center";
+      ctx.globalAlpha = clamp(k * 3); ctx.fillText("0" + (i + 1), SX, y + 12); ctx.globalAlpha = 1;
+      ctx.textAlign = "left";
+      // libellés
+      var lx = 262, maxW = W - lx - 64;
+      var dx = (1 - eo(k)) * 120;
+      ctx.globalAlpha = eo(k);
+      fit(STEPS[i][0], 700, 66, maxW); ctx.fillStyle = C.cream; ctx.fillText(STEPS[i][0], lx + dx, y + 4);
+      fit(STEPS[i][1], 400, 36, maxW); ctx.fillStyle = rgba(C.cream, 0.62); ctx.fillText(STEPS[i][1], lx + dx * 1.4, y + 54);
+      ctx.globalAlpha = 1;
+    }
+    // avion
+    if (t > T0 - 0.1 && t < T1 + 0.25) plane(SX, head, t);
+    ctx.restore();
+  }
+  // instant où l'avion atteint une fraction f du trajet (inverse d'eio)
+  function eioInv(f) { return Math.acos(1 - 2 * clamp(f)) / Math.PI; }
+  function endpoint(t, label, y, at, color) {
+    var k = prog(t, at, at + 0.45);
+    if (k <= 0) return;
+    ctx.fillStyle = color;
+    ctx.beginPath(); ctx.arc(SX, y, 20 * back(k), 0, 7); ctx.fill();
+    ctx.strokeStyle = rgba(color, 0.5); ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(SX, y, 34 * back(k), 0, 7); ctx.stroke();
+    ctx.globalAlpha = eo(k);
+    font(700, 44); ctx.fillStyle = color;
+    ctx.fillText(label, 262, y + 15);
+    ctx.globalAlpha = 1;
+  }
+  function plane(x, y, t) {
+    var glow = ctx.createRadialGradient(x, y, 0, x, y, 90);
+    glow.addColorStop(0, rgba(C.yellow, 0.55)); glow.addColorStop(1, rgba(C.yellow, 0));
+    ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(x, y, 90, 0, 7); ctx.fill();
+    ctx.save(); ctx.translate(x, y);
+    ctx.fillStyle = C.cream;
+    ctx.beginPath(); // silhouette d'avion vue de dessus, nez vers le haut
+    ctx.moveTo(0, -38); ctx.lineTo(7, -16); ctx.lineTo(36, 4); ctx.lineTo(36, 12); ctx.lineTo(7, 4);
+    ctx.lineTo(6, 24); ctx.lineTo(15, 32); ctx.lineTo(15, 37); ctx.lineTo(0, 32);
+    ctx.lineTo(-15, 37); ctx.lineTo(-15, 32); ctx.lineTo(-6, 24); ctx.lineTo(-7, 4);
+    ctx.lineTo(-36, 12); ctx.lineTo(-36, 4); ctx.lineTo(-7, -16); ctx.closePath(); ctx.fill();
+    ctx.restore();
+  }
+
+  // ---------- scène C : chiffres (6,25 – 8,25 s) ----------
+  var STATS = [
+    { v: 1200, pre: "+", suf: "", label: "étudiants tunisiens placés", bg: C.blue, fg: C.cream, sub: C.cream, from: -1 },
+    { v: 40, pre: "", suf: "+", label: "universités d'État partenaires", bg: C.cream, fg: C.ink, sub: C.ink, from: 1 },
+    { v: 2200, pre: "", suf: " €", label: "de frais de scolarité par an", kick: "DÈS", bg: C.yellow, fg: C.ink, sub: C.ink, from: -1 }
+  ];
+  function num(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " "); }
+  function sceneC(t) {
+    ctx.fillStyle = C.ink; ctx.fillRect(0, 0, W, H);
+    var hk = prog(t, 6.3, 6.7);
+    ctx.globalAlpha = eo(hk);
+    font(600, 34); ctx.fillStyle = C.yellow; ctx.fillText("DEPUIS 2018", 90, 200);
+    font(700, 76); ctx.fillStyle = C.cream; ctx.fillText("En chiffres", 90, 290);
+    ctx.globalAlpha = 1;
+    var top = 360, bh = 470;
+    for (var i = 0; i < 3; i++) {
+      var s = STATS[i], st = 6.32 + i * 0.16;
+      var k = eo(prog(t, st, st + 0.55));
+      if (k <= 0) continue;
+      var y = top + i * (bh + 22);
+      var off = (1 - k) * W * s.from;
+      ctx.save(); ctx.translate(off, 0);
+      ctx.fillStyle = s.bg; ctx.fillRect(48, y, W - 96, bh);
+      var c = Math.round(s.v * eo(prog(t, st + 0.1, st + 1.05)));
+      var txt = s.pre + num(c) + s.suf;
+      var full = s.pre + num(s.v) + s.suf;
+      var size = fit(full, 700, 230, W - 96 - 160);
+      if (s.kick) { font(700, 40); ctx.fillStyle = s.sub; ctx.fillText(s.kick, 110, y + 110); }
+      font(700, size); ctx.fillStyle = s.fg; ctx.fillText(txt, 104, y + 300);
+      fit(s.label, 500, 46, W - 96 - 160); ctx.fillStyle = rgba(s.sub, 0.85); ctx.fillText(s.label, 110, y + 395);
+      ctx.restore();
+    }
+  }
+
+  // ---------- scène D : appel à l'action (8,25 – 10 s) ----------
+  function sceneD(t) {
+    ctx.fillStyle = C.blue; ctx.fillRect(0, 0, W, H);
+    grid(t, 0.9, C.ink);
+    var cx = W / 2;
+    ctx.textAlign = "center";
+    var k0 = prog(t, 8.35, 8.75);
+    if (k0 > 0) {
+      ctx.globalAlpha = eo(k0);
+      font(600, 34);
+      var pill = "SESSION 2026–2027 OUVERTE";
+      var pw = ctx.measureText(pill).width + 56;
+      ctx.fillStyle = C.ink; roundRect(cx - pw / 2, 560, pw, 70, 35); ctx.fill();
+      ctx.fillStyle = C.yellow; ctx.fillText(pill, cx, 607);
+      ctx.globalAlpha = 1;
+    }
+    // logo « RusStudy »
+    var k1 = prog(t, 8.4, 8.9);
+    if (k1 > 0) {
+      var sc = back(k1);
+      ctx.save(); ctx.translate(cx, 830); ctx.scale(sc, sc);
+      font(700, 170);
+      var a = ctx.measureText("Rus").width, b = ctx.measureText("Study").width;
+      ctx.textAlign = "left";
+      ctx.fillStyle = C.cream; ctx.fillText("Rus", -(a + b) / 2, 0);
+      ctx.fillStyle = C.yellow; ctx.fillText("Study", -(a + b) / 2 + a, 0);
+      ctx.restore();
+      ctx.textAlign = "center";
+    }
+    var k2 = prog(t, 8.6, 9.0);
+    ctx.globalAlpha = eo(k2);
+    fit("Étudie en Russie. Change ta vie.", 500, 54, W - 200);
+    ctx.fillStyle = C.cream; ctx.fillText("Étudie en Russie. Change ta vie.", cx, 960 + (1 - eo(k2)) * 30);
+    ctx.globalAlpha = 1;
+    // bouton
+    var k3 = prog(t, 8.75, 9.2);
+    if (k3 > 0) {
+      var label = "Commencer mon dossier gratuit";
+      var fs = fit(label, 700, 50, W - 160 - 120);
+      var bw = ctx.measureText(label).width + 120, bh = fs * 2.3;
+      var pulse = t > 9.25 ? 1 + 0.025 * Math.sin((t - 9.25) * 9) : 1;
+      var s2 = back(k3) * pulse;
+      ctx.save(); ctx.translate(cx, 1160); ctx.scale(s2, s2);
+      ctx.fillStyle = rgba(C.ink, 0.25); roundRect(-bw / 2 + 8, -bh / 2 + 12, bw, bh, 22); ctx.fill();
+      ctx.fillStyle = C.yellow; roundRect(-bw / 2, -bh / 2, bw, bh, 22); ctx.fill();
+      ctx.fillStyle = C.ink; font(700, fs); ctx.fillText(label, 0, fs * 0.36);
+      ctx.restore();
+    }
+    var k4 = prog(t, 8.95, 9.35);
+    ctx.globalAlpha = eo(k4);
+    font(700, 60); ctx.fillStyle = C.cream; ctx.fillText("russieetudes.com", cx, 1380);
+    ctx.fillRect(cx - 220 * eo(k4), 1408, 440 * eo(k4), 4);
+    ctx.globalAlpha = 1;
+    ctx.textAlign = "left";
+  }
+
+  window.renderAt = function (t) {
+    t = clamp(t, 0, 10);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.textAlign = "left"; ctx.globalAlpha = 1;
+    if (t < 1.9) sceneA(t);
+    else if (t < 6.25) sceneB(t);
+    else if (t < 8.25) sceneC(t);
+    else sceneD(t);
+    wipe(t, 1.7, 0.4, C.blue);
+    wipe(t, 6.05, 0.4, C.yellow);
+    wipe(t, 8.05, 0.4, C.blue);
+  };
+  window.renderAt(0);
+})();
+</script>
+</body>
+</html>
