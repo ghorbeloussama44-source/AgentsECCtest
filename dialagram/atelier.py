@@ -61,11 +61,19 @@ def run_task(task, project):
               f"Tâche : {task.get('title', '')}\n\nConsigne :\n{task.get('instructions', '')}")
     attempts = int(task.get("attempts") or 0) + 1
     try:
-        r = nexum.chat(model, prompt, system=SYSTEM, max_tokens=4000)
+        r = nexum.chat(model, prompt, system=SYSTEM, max_tokens=12000)
     except (urllib.error.URLError, TimeoutError) as e:
         reason = f"HTTP {e.code}" if isinstance(e, urllib.error.HTTPError) else str(e)
         return {"status": "refuse", "attempts": attempts, "updatedAt": int(time.time() * 1000),
                 "claude": {"verdict": "echec", "note": f"Dialagram n'a pas répondu ({model}, {reason}). Relancez la tâche.",
+                           "tokens": 0}}
+    if r.get("finish") != "stop":
+        return {"status": "refuse", "attempts": attempts, "updatedAt": int(time.time() * 1000),
+                "claude": {"verdict": "echec", "note": f"Réponse de {r['model']} incomplète (fin : {r.get('finish') or 'flux coupé'}). Relancez ou découpez la tâche.",
+                           "tokens": 0}}
+    if not (r["text"] or "").strip():
+        return {"status": "refuse", "attempts": attempts, "updatedAt": int(time.time() * 1000),
+                "claude": {"verdict": "echec", "note": f"{r['model']} a renvoyé une réponse vide. Relancez la tâche.",
                            "tokens": 0}}
     usage = r["usage"]
     return {

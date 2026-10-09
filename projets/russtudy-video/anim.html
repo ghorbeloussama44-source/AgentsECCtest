@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RusStudy</title>
+<style>*{margin:0;padding:0}body{background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh;overflow:hidden}canvas{max-height:100vh;max-width:100vw}</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+(function(){
+var cv=document.getElementById('c'),cx=cv.getContext('2d'),W=1080,H=1920,M=80;
+var C={bg:'#0A0A0A',cr:'#F0EBE3',bl:'#2F66E8',yl:'#FBBB21'};
+var F='"Space Grotesk",sans-serif';
+
+function eOE(x){return x>=1?1:x<=0?0:1-Math.pow(2,-10*x)}
+function eIOC(x){return x<=0?0:x>=1?1:x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+function cl(v,a,b){return v<a?a:v>b?b:v}
+function pr(t,s,e){return cl((t-s)/(e-s),0,1)}
+
+function fitTx(s,mf,mw){
+  cx.font=mf+'px '+F;
+  if(cx.measureText(s).width<=mw)return mf;
+  var lo=10,hi=mf;
+  while(hi-lo>.5){var m=(lo+hi)/2;cx.font=m+'px '+F;if(cx.measureText(s).width<=mw)lo=m;else hi=m;}
+  return lo;
+}
+
+function dTx(s,x,y,c,sz,al){
+  al=al||'left';
+  var fs=fitTx(s,sz,W-2*M);
+  cx.font=fs+'px '+F;cx.fillStyle=c;cx.textAlign=al;cx.textBaseline='middle';
+  cx.fillText(s,al==='center'?x:al==='right'?x:x,y);
+  return fs;
+}
+
+function rR(x,y,w,h,r){
+  cx.beginPath();cx.moveTo(x+r,y);cx.lineTo(x+w-r,y);cx.quadraticCurveTo(x+w,y,x+w,y+r);
+  cx.lineTo(x+w,y+h-r);cx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);cx.lineTo(x+r,y+h);
+  cx.quadraticCurveTo(x,y+h,x,y+h-r);cx.lineTo(x,y+r);cx.quadraticCurveTo(x,y,x+r,y);cx.closePath();
+}
+
+// Grille de points de fond (déterministe)
+var seed=42;
+function sR(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
+var dots=[];
+for(var i=0;i<120;i++)dots.push({x:sR()*W,y:sR()*H,r:1+sR()*2.5,a:.04+sR()*.08});
+seed=42;
+
+// Particules géométriques (transition scène 3 -> 4)
+var parts=[];
+for(var i=0;i<80;i++){
+  var ang=sR()*Math.PI*2,dist=80+sR()*600;
+  parts.push({a:ang,d:dist,sz:4+sR()*16,sh:Math.floor(sR()*3),dl:sR()*.35,c:i%3===0?C.yl:i%3===1?C.bl:C.cr});
+}
+seed=42;
+
+// Parcours géométrique scène 2 (angles droits, occupe >60% largeur)
+var pB=[
+  {x:160,y:500},{x:920,y:500},
+  {x:920,y:900},{x:160,y:900},
+  {x:160,y:1300},{x:920,y:1300}
+];
+
+// Bouclier géométrique scène 3 (>60% largeur)
+var bld=[
+  {x:540,y:420},{x:880,y:580},{x:880,y:950},
+  {x:540,y:1180},{x:200,y:950},{x:200,y:580},{x:540,y:420}
+];
+
+function pLen(p){var l=0;for(var i=1;i<p.length;i++){var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y;l+=Math.sqrt(dx*dx+dy*dy)}return l}
+function dPP(p,prg,lw,col){
+  if(prg<=0||p.length<2)return;
+  var tl=pLen(p)*prg,ac=0;
+  cx.strokeStyle=col;cx.lineWidth=lw;cx.lineCap='round';cx.lineJoin='round';
+  cx.beginPath();cx.moveTo(p[0].x,p[0].y);
+  for(var i=1;i<p.length;i++){
+    var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y,sl=Math.sqrt(dx*dx+dy*dy);
+    if(ac+sl<=tl){cx.lineTo(p[i].x,p[i].y);ac+=sl}
+    else{var rm=tl-ac,t=sl>0?rm/sl:0;cx.lineTo(p[i-1].x+dx*t,p[i-1].y+dy*t);break}
+  }
+  cx.stroke();
+}
+
+window.renderAt=function(t){
+  t=cl(t,0,10);
+  cx.clearRect(0,0,W,H);
+
+  // Fond
+  cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);
+
+  // Dégradé radial bleu très sombre animé
+  var grd=cx.createRadialGradient(540,960+Math.sin(t*.5)*100,0,540,960,1200);
+  grd.addColorStop(0,'rgba(47,102,232,0.07)');grd.addColorStop(1,'rgba(10,10,10,0)');
+  cx.fillStyle=grd;cx.fillRect(0,0,W,H);
+
+  // Grille de points
+  cx.save();
+  for(var i=0;i<dots.length;i++){
+    var d=dots[i];
+    cx.globalAlpha=d.a*(0.7+0.3*Math.sin(t*1.5+i));
+    cx.fillStyle=C.bl;
+    cx.beginPath();cx.arc(d.x,d.y,d.r,0,Math.PI*2);cx.fill();
+  }
+  cx.restore();
+
+  // ================= SCÈNE 1 (0 - 2s) =================
+  if(t<2.6){
+    var fi=eOE(pr(t,0,.4)),fo=t>1.6?1-eIOC(pr(t,1.6,2.2)):1,al=fi*fo;
+    if(al>.001){
+      cx.save();
+      var sh=t>1.6?eIOC(pr(t,1.6,2.2))*H:0;
+      cx.translate(0,-sh);
+      cx.globalAlpha=al;
+
+      // Point crème + Tunis placé à y=1500 (bas de l'image, loin de l'accroche)
+      var dp=eOE(pr(t,0,.6));
+      if(dp>0){
+        cx.fillStyle=C.cr;cx.beginPath();cx.arc(160,1500,14*dp,0,Math.PI*2);cx.fill();
+        cx.globalAlpha=al*dp;
+        dTx('Tunis',160,1430,C.cr,56,'center');
+        cx.globalAlpha=al;
+      }
+
+      // Ligne bleue épaisse (10px) partant de y=1500 + cercle géométrique
+      var lp=eIOC(pr(t,.2,1.6));
+      if(lp>0){
+        if(lp<=.65){
+          var lineP=[{x:160,y:1500},{x:160+(740)*(lp/.65),y:1500}];
+          dPP(lineP,1,10,C.bl);
+        } else {
+          dPP([{x:160,y:1500},{x:900,y:1500}],1,10,C.bl);
+          var cp=(lp-.65)/.35;
+          cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';
+          cx.beginPath();cx.arc(900,1500,120,-Math.PI/2,-Math.PI/2+Math.PI*2*cp);cx.stroke();
+        }
+      }
+
+      // Accroche typographique (120-140px, stagger vertical)
+      var tx=['Étudie en Russie.','Change ta vie.'];
+      for(var i=0;i<2;i++){
+        var tp=eOE(pr(t,.5+i*.18,1.1+i*.18));
+        if(tp>0){
+          var oy=(1-tp)*120;
+          cx.globalAlpha=al*tp;
+          dTx(tx[i],W/2,900+i*160+oy,i===0?C.yl:C.cr,140,'center');
+        }
+      }
+      cx.restore();
+    }
+  }
+
+  // ================= SCÈNE 2 (2 - 4s) =================
+  if(t>=1.8&&t<4.6){
+    var fi2=eOE(pr(t,2,2.3)),fo2=t>3.6?1-eIOC(pr(t,3.6,4.2)):1,al2=fi2*fo2;
+    if(al2>.001){
+      cx.save();
+      if(t>=3.6){
+        var sc=1+eIOC(pr(t,3.6,4.2))*3;
+        cx.translate(W/2,H/2);cx.scale(sc,sc);cx.translate(-W/2,-H/2);
+        cx.globalAlpha=al2*(1-eIOC(pr(t,3.6,4.2)));
+      } else {
+        cx.globalAlpha=al2;
+      }
+
+      // Ligne géométrique angles droits
+      var lp2=eIOC(pr(t,2,3.6));
+      dPP(pB,lp2,10,C.bl);
+
+      // Textes et jalons : alignés à gauche à x=120, mesurés avec measureText via dTx
+      var tx2=['Consultation gratuite','Dossier d\'admission'];
+      var corners=[1,3]; // Indices des virages dans pB
+      var txtOffY=[-80,80]; // L'un au-dessus, l'autre en dessous
+
+      for(var ci=0;ci<corners.length;ci++){
+        var cidx=corners[ci];
+        var ct=cidx/(pB.length-1);
+        if(lp2>=ct){
+          var cp2=pr(t,2+ct*1.6,2+ct*1.6+.35);
+          var pulse=1+.35*Math.sin(cl(cp2,0,1)*Math.PI);
+          var sz=28*pulse;
+          cx.fillStyle=C.yl;
+          cx.fillRect(pB[cidx].x-sz/2,pB[cidx].y-sz/2,sz,sz);
+
+          // Texte positionné à x=120 (gauche), dTx gère la réduction si trop large
+          var tAl=eOE(pr(t,2.3+ci*.4,2.7+ci*.4));
+          if(tAl>0){
+            var curAlpha = t>=3.6 ? al2*(1-eIOC(pr(t,3.6,4.2))) : al2;
+            cx.globalAlpha=curAlpha*tAl;
+            dTx(tx2[ci],120,pB[cidx].y+txtOffY[ci],C.cr,88,'left');
+            cx.globalAlpha=curAlpha;
+          }
+        }
+      }
+      cx.restore();
+    }
+  }
+
+  // ================= SCÈNE 3 (4 - 6s) =================
+  if(t>=3.8&&t<6.6){
+    var fi3=eOE(pr(t,4,4.3)),fo3=t>5.6?1-eIOC(pr(t,5.6,6.2)):1,al3=fi3*fo3;
+    if(al3>.001){
+      cx.save();cx.globalAlpha=al3;
+
+      // Bouclier géométrique
+      var sp3=eIOC(pr(t,4,4.8));
+      if(sp3>0) dPP(bld,sp3,10,C.bl);
+
+      // Tampon circulaire jaune
+      var stP=pr(t,4.8,5.1);
+      if(stP>0){
+        var stS=eOE(cl(stP,0,1))*1.15;
+        cx.fillStyle=C.yl;cx.beginPath();cx.arc(540,800,90*stS,0,Math.PI*2);cx.fill();
+      }
+
+      // Onde de choc
+      var swP=pr(t,4.9,5.5);
+      if(swP>0&&swP<1){
+        cx.strokeStyle=C.yl;cx.lineWidth=4;cx.globalAlpha=al3*(1-swP);
+        cx.beginPath();cx.arc(540,800,90+swP*350,0,Math.PI*2);cx.stroke();
+        cx.globalAlpha=al3;
+      }
+
+      // Textes sous le bouclier (visibles et bien placés)
+      var tx3=['Visa garanti par contrat','Accueil et logement garantis'];
+      for(var i=0;i<2;i++){
+        var t3p=eOE(pr(t,5+i*.2,5.5+i*.2));
+        if(t3p>0){
+          var sx=i===0?-W/2*(1-t3p):W/2*(1-t3p);
+          cx.globalAlpha=al3*t3p;
+          dTx(tx3[i],W/2+sx,1300+i*120,C.cr,80,'center');
+        }
+      }
+
+      // Réduction en point pour transition
+      var shP=pr(t,5.7,6.2);
+      if(shP>0){
+        cx.globalAlpha=al3*(1-shP);
+        cx.fillStyle=C.bl;
+        var rad=80*(1-eIOC(shP));
+        if(rad>1){cx.beginPath();cx.arc(540,800,rad,0,Math.PI*2);cx.fill()}
+      }
+      cx.restore();
+    }
+  }
+
+  // ================= PARTICULES (Transition 3->4) =================
+  if(t>=5.8&&t<7.2){
+    var ppP=pr(t,5.9,6.8);
+    if(ppP>0){
+      cx.save();
+      for(var pi=0;pi<parts.length;pi++){
+        var p=parts[pi];
+        var ppp=cl((ppP-p.dl)/(1-p.dl),0,1);
+        if(ppp<=0)continue;
+        var ep=eOE(ppp);
+        var px=540+Math.cos(p.a)*p.d*ep;
+        var py=800+Math.sin(p.a)*p.d*ep;
+        var pa=ppp<.7?1:1-eIOC((ppp-.7)/.3);
+        cx.globalAlpha=pa*.8;
+        cx.fillStyle=p.c;
+        var psz=p.sz*(1-ppp*.5);
+        if(p.sh===0){cx.fillRect(px-psz/2,py-psz/2,psz,psz)}
+        else if(p.sh===1){cx.beginPath();cx.arc(px,py,psz/2,0,Math.PI*2);cx.fill()}
+        else{cx.beginPath();cx.moveTo(px,py-psz/2);cx.lineTo(px+psz/2,py+psz/2);cx.lineTo(px-psz/2,py+psz/2);cx.closePath();cx.fill()}
+      }
+      cx.restore();
+    }
+  }
+
+  // ================= SCÈNE 4 (6 - 8.5s) =================
+  if(t>=6.2&&t<9.2){
+    var fi4=eOE(pr(t,6.2,6.6)),fo4=t>8.2?1-eIOC(pr(t,8.2,8.7)):1,al4=fi4*fo4;
+    if(al4>.001){
+      cx.save();cx.globalAlpha=al4;
+
+      // Flip out sur axe Y
+      var flipP=pr(t,8.2,8.7);
+      var scaleX=flipP>0?Math.abs(Math.cos(flipP*Math.PI)):1;
+      if(scaleX<.01)scaleX=.01;
+      cx.translate(W/2,960);cx.scale(scaleX,1);cx.translate(-W/2,-960);
+
+      // Fil conducteur derrière les chiffres
+      cx.strokeStyle=C.bl;cx.lineWidth=10;cx.globalAlpha=al4*.3;
+      cx.beginPath();cx.moveTo(M,750);cx.lineTo(W-M,750);cx.stroke();
+      cx.beginPath();cx.moveTo(M,1150);cx.lineTo(W-M,1150);cx.stroke();
+      cx.globalAlpha=al4;
+
+      // Compteur 1 : +1 200 étudiants tunisiens (220px pour le chiffre)
+      var c1p=eOE(pr(t,6.4,7.6));
+      var v1=Math.round(c1p*1200);
+      var numStr1='+'+v1.toLocaleString('fr-FR');
+
+      // Dessiner le grand chiffre
+      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';
+      cx.fillText(numStr1,W/2,700);
+
+      // Dessiner le mot clé en dessous
+      var kw1='étudiants tunisiens';
+      dTx(kw1,W/2,860,C.cr,80,'center');
+
+      // Soulignement rectangle jaune
+      if(c1p>.3){
+        cx.fillStyle=C.yl;
+        var uw1=c1p*650;
+        cx.fillRect(W/2-uw1/2,910,uw1,10);
+      }
+
+      // Compteur 2 : 40+ universités d'État
+      var c2p=eOE(pr(t,6.8,7.8));
+      var v2=Math.round(c2p*40);
+      var numStr2=v2+'+';
+
+      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';
+      cx.fillText(numStr2,W/2,1100);
+
+      var kw2='universités d\'État';
+      dTx(kw2,W/2,1260,C.cr,80,'center');
+
+      // Soulignement rectangle jaune
+      if(c2p>.3){
+        cx.fillStyle=C.yl;
+        var uw2=c2p*550;
+        cx.fillRect(W/2-uw2/2,1310,uw2,10);
+      }
+
+      cx.restore();
+    }
+  }
+
+  // ================= SCÈNE 5 (8.5 - 10s) =================
+  if(t>=8.2){
+    var fi5=eOE(pr(t,8.5,8.9));
+    var fadeBlack=t>=9.7?eIOC(pr(t,9.7,10)):0;
+    var al5=fi5*(1-fadeBlack);
+    if(al5>.001){
+      cx.save();cx.globalAlpha=al5;
+
+      // Ligne bleue arrivant à destination
+      var lineArrive=eIOC(pr(t,8.3,8.8));
+      if(lineArrive>0){
+        cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';
+        cx.beginPath();cx.moveTo(0,800);cx.lineTo(880*lineArrive,800);cx.stroke();
+      }
+
+      // Gros point jaune "Russie"
+      var dotP=eOE(pr(t,8.6,9));
+      if(dotP>0){
+        cx.fillStyle=C.yl;
+        cx.beginPath();cx.arc(900,800,35*dotP,0,Math.PI*2);cx.fill();
+        cx.globalAlpha=al5*dotP;
+        dTx('Russie',850,800,C.yl,72,'right');
+        cx.globalAlpha=al5;
+      }
+
+      // Bloc CTA pulsant
+      var ctaP=eOE(pr(t,8.7,9.1));
+      if(ctaP>0){
+        var pulse=1+.025*Math.sin(pr(t,9,10)*Math.PI*6);
+        var ctaTxt='Commencer mon dossier gratuit';
+
+        // Calculer la taille exacte du bouton avec measureText + marges
+        cx.font='72px '+F;
+        var tw=cx.measureText(ctaTxt).width;
+        var bw=(tw+120)*pulse; // 2x60px de marge
+        var bh=140*pulse;
+
+        // Si le bouton dépasse la largeur dispo, on passe sur deux lignes
+        if(tw+120>W-2*M){
+          var l1='Commencer mon',l2='dossier gratuit';
+          cx.font='72px '+F;
+          var tw1=cx.measureText(l1).width,tw2=cx.measureText(l2).width;
+          bw=(Math.max(tw1,tw2)+120)*pulse;
+          bh=220*pulse;
+          var bx=W/2-bw/2,by=1100-bh/2;
+
+          cx.globalAlpha=al5*ctaP;
+          cx.strokeStyle=C.cr;cx.lineWidth=6;
+          rR(bx,by,bw,bh,24);cx.stroke();
+
+          dTx(l1,W/2,1100-45,C.cr,72,'center');
+          dTx(l2,W/2,1100+45,C.cr,72,'center');
+        } else {
+          var bx=W/2-bw/2,by=1100-bh/2;
+          cx.globalAlpha=al5*ctaP;
+          cx.strokeStyle=C.cr;cx.lineWidth=6;
+          rR(bx,by,bw,bh,24);cx.stroke();
+          dTx(ctaTxt,W/2,1100,C.cr,72,'center');
+        }
+      }
+
+      // URL
+      var urlP=eOE(pr(t,8.9,9.2));
+      if(urlP>0){
+        cx.globalAlpha=al5*urlP;
+        dTx('russieetudes.com',W/2,1320,C.bl,88,'center');
+      }
+
+      cx.restore();
+    }
+
+    // Fondu net au noir final (9.7s à 10s)
+    if(fadeBlack>0){
+      cx.save();cx.globalAlpha=fadeBlack;
+      cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);
+      cx.restore();
+    }
+  }
+};
+
+window.renderAt(0);
+})();
+</script>
+</body>
+</html>

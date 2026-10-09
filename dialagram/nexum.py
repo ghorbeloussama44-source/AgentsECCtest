@@ -32,12 +32,33 @@ def _request(path, payload=None, timeout=300):
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
+                if payload and payload.get("stream"):
+                    return _read_stream(resp)
                 return json.load(resp)
         except urllib.error.HTTPError as e:
             # Les 5xx (modèle en amont indisponible) sont souvent passagers.
             if e.code < 500 or attempt == 2:
                 raise
             time.sleep(2 ** attempt)
+
+
+def _read_stream(resp):
+    """Assemble une réponse SSE en un objet au format non streamé.
+    Le streaming évite les 502 de la passerelle sur les longues générations."""
+    parts, usage, finish = [], {}, None
+    for raw in resp:
+        line = raw.decode("utf-8").strip()
+        if not line.startswith("data:"):
+            continue
+        body = line[5:].strip()
+        if body == "[DONE]":
+            break
+        chunk = json.loads(body)
+        usage = chunk.get("usage") or usage
+        for choice in chunk.get("choices", []):
+            parts.append((choice.get("delta") or {}).get("content") or "")
+            finish = choice.get("finish_reason") or finish
+    return {"choices": [{"message": {"content": "".join(parts)}, "finish_reason": finish}], "usage": usage}
 
 
 def list_models():
@@ -53,21 +74,20 @@ def chat(model, prompt, system=None, max_tokens=2000):
     messages = [{"role": "system", "content": system}] if system else []
     messages.append({"role": "user", "content": prompt})
     start = time.time()
+    payload = {"model": model, "messages": messages, "max_tokens": max_tokens,
+               "stream": True, "stream_options": {"include_usage": True}}
     try:
-        resp = _request("/chat/completions", {
-            "model": model, "messages": messages, "max_tokens": max_tokens,
-        })
+        resp = _request("/chat/completions", payload)
     except urllib.error.HTTPError as e:
         if e.code < 500 or model == FALLBACK_MODEL:
             raise
         print(f"[{model}] HTTP {e.code}, bascule sur {FALLBACK_MODEL}", file=sys.stderr)
         model = FALLBACK_MODEL
-        resp = _request("/chat/completions", {
-            "model": model, "messages": messages, "max_tokens": max_tokens,
-        })
+        resp = _request("/chat/completions", dict(payload, model=model))
     return {
         "model": model,
         "text": resp["choices"][0]["message"]["content"],
+        "finish": resp["choices"][0].get("finish_reason"),
         "usage": resp.get("usage", {}),
         "seconds": round(time.time() - start, 1),
     }
