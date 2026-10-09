@@ -1,0 +1,331 @@
+<title>Atelier Dialagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout : bandeau de compteurs, rail des projets, puis le flux des tâches par étape (colonnes sur ordinateur, liste sur téléphone) */
+:root {
+  --bg: #f3f4f6; --panel: #ffffff; --ink: #161a22; --muted: #5d6573; --line: #dde1e8;
+  --dia: #4b5bd6; --dia-soft: #e6e9fb; --cla: #c4622d; --cla-soft: #f8e9df;
+  --ok: #1f7a4d; --ok-soft: #e0f1e8; --warn: #a3680b; --warn-soft: #f8eedb; --bad: #b3352f; --bad-soft: #f8e2e0;
+  --idle: #6b7280; --idle-soft: #eceef2;
+  --font: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12151b; --panel: #1a1e26; --ink: #e8eaef; --muted: #9aa2b1; --line: #2c323d;
+  --dia: #8d99f2; --dia-soft: #252b4a; --cla: #e48a5a; --cla-soft: #3a2a21;
+  --ok: #5fc493; --ok-soft: #1b3328; --warn: #e2ad52; --warn-soft: #382c17; --bad: #ef7d76; --bad-soft: #3b2120;
+  --idle: #9aa2b1; --idle-soft: #262b35; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #12151b; --panel: #1a1e26; --ink: #e8eaef; --muted: #9aa2b1; --line: #2c323d;
+  --dia: #8d99f2; --dia-soft: #252b4a; --cla: #e48a5a; --cla-soft: #3a2a21;
+  --ok: #5fc493; --ok-soft: #1b3328; --warn: #e2ad52; --warn-soft: #382c17; --bad: #ef7d76; --bad-soft: #3b2120;
+  --idle: #9aa2b1; --idle-soft: #262b35; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 20px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1 { font-size: 1.45rem; font-weight: 700; letter-spacing: -.01em; }
+h2 { font-size: 1.1rem; font-weight: 600; }
+.lab { font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+button, input, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--dia); outline-offset: 2px; }
+
+/* En-tête */
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px; }
+.top p { margin: 4px 0 0; max-width: 62ch; color: var(--muted); }
+.how { font-size: .85rem; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 12px; max-width: 420px; }
+.how code { font-family: var(--mono); font-size: .8rem; background: var(--dia-soft); color: var(--dia); padding: 1px 5px; border-radius: 4px; }
+
+/* Compteurs */
+.meters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.meter { background: var(--panel); padding: 14px 16px; display: grid; gap: 4px; min-width: 0; }
+.meter b { font-family: var(--mono); font-size: 1.5rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.meter small { color: var(--muted); font-size: .78rem; }
+.meter.dia b { color: var(--dia); } .meter.cla b { color: var(--cla); }
+.split { height: 8px; border-radius: 4px; background: var(--cla-soft); overflow: hidden; display: flex; margin-top: 4px; }
+.split i { display: block; height: 100%; background: var(--dia); }
+
+/* Corps */
+.body { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 20px; align-items: start; }
+.rail { display: grid; gap: 10px; }
+.projects { display: grid; gap: 6px; }
+.proj { text-align: start; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 12px; display: grid; gap: 2px; }
+.proj[aria-pressed="true"] { border-color: var(--dia); box-shadow: inset 3px 0 0 var(--dia); }
+.proj strong { font-weight: 600; overflow-wrap: anywhere; }
+.proj span { font-size: .78rem; color: var(--muted); }
+
+details.form { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); }
+details.form summary { padding: 10px 12px; font-weight: 600; cursor: pointer; list-style: none; }
+details.form summary::before { content: "+ "; color: var(--dia); }
+details.form[open] summary::before { content: "− "; }
+form { display: grid; gap: 10px; padding: 0 12px 12px; }
+label { display: grid; gap: 4px; font-size: .82rem; color: var(--muted); }
+input, textarea, select { width: 100%; min-width: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 8px 10px; color: var(--ink); }
+textarea { resize: vertical; min-height: 84px; }
+.btn { border: 1px solid var(--line); background: var(--panel); border-radius: var(--r); padding: 7px 12px; font-weight: 600; font-size: .85rem; }
+.btn.primary { background: var(--dia); border-color: var(--dia); color: #fff; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.danger { color: var(--bad); }
+
+.main { display: grid; gap: 16px; min-width: 0; }
+.phead { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 8px; }
+.phead p { margin: 0; color: var(--muted); white-space: pre-wrap; overflow-wrap: anywhere; }
+.pstats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--muted); }
+.pstats .num { color: var(--ink); }
+
+/* Flux par étape */
+.flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; align-items: start; }
+.col { display: grid; gap: 8px; min-width: 0; }
+.col > header { display: flex; justify-content: space-between; align-items: center; padding: 2px 2px 4px; border-bottom: 2px solid var(--c); }
+.col > header .num { font-size: .8rem; color: var(--muted); }
+.col .empty { font-size: .8rem; color: var(--muted); padding: 6px 2px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 10px; display: grid; gap: 6px; min-width: 0; }
+.card h3 { font-size: .92rem; font-weight: 600; overflow-wrap: anywhere; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-size: .7rem; font-family: var(--mono); padding: 1px 6px; border-radius: 999px; background: var(--idle-soft); color: var(--idle); white-space: nowrap; }
+.chip.dia { background: var(--dia-soft); color: var(--dia); }
+.chip.cla { background: var(--cla-soft); color: var(--cla); }
+.card details summary { font-size: .78rem; color: var(--dia); cursor: pointer; }
+.card .block { margin-top: 6px; display: grid; gap: 4px; }
+.card pre { margin: 0; font: .78rem/1.5 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; background: var(--bg); border-radius: 4px; padding: 8px; max-height: 320px; overflow: auto; }
+.verdict { font-size: .82rem; padding: 6px 8px; border-radius: 4px; background: var(--c-soft); color: var(--ink); border-inline-start: 3px solid var(--c); white-space: pre-wrap; overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.actions .btn { padding: 4px 8px; font-size: .75rem; }
+
+.s-a_faire { --c: var(--idle); --c-soft: var(--idle-soft); }
+.s-delegue { --c: var(--dia); --c-soft: var(--dia-soft); }
+.s-a_valider { --c: var(--warn); --c-soft: var(--warn-soft); }
+.s-valide { --c: var(--ok); --c-soft: var(--ok-soft); }
+.s-refuse { --c: var(--bad); --c-soft: var(--bad-soft); }
+
+.notice { background: var(--panel); border: 1px dashed var(--line); border-radius: var(--r); padding: 18px; color: var(--muted); }
+.toast { position: fixed; inset-inline: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); margin: 0 auto; max-width: 420px; background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: var(--r); font-size: .85rem; }
+
+@media (max-width: 1080px) { .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) {
+  .body { grid-template-columns: 1fr; }
+  .meters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flow { grid-template-columns: 1fr; }
+  .projects { grid-auto-flow: column; grid-auto-columns: minmax(180px, 70%); overflow-x: auto; padding-bottom: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Atelier Dialagram</h1>
+      <p>Les tâches partent chez les modèles Dialagram, Claude relit et valide. Chaque tâche garde ses tokens des deux côtés.</p>
+    </div>
+    <div class="how">Ajoutez un projet et ses tâches ici, puis écrivez à Claude dans la session : <code>lance l'atelier</code>. Claude délègue les tâches « À faire », relit les résultats et met la page à jour.</div>
+  </header>
+
+  <section class="meters" aria-label="Tokens">
+    <div class="meter dia"><span class="lab">Tokens Dialagram</span><b id="mDia">0</b><small>forfait, hors quota Claude</small></div>
+    <div class="meter cla"><span class="lab">Tokens Claude</span><b id="mCla">0</b><small>estimés : relecture et validation</small></div>
+    <div class="meter"><span class="lab">Part déléguée</span><b id="mShare">—</b><div class="split" aria-hidden="true"><i id="mBar" style="width:0%"></i></div></div>
+    <div class="meter"><span class="lab">Tâches validées</span><b id="mDone">0 / 0</b><small id="mRef">0 à refaire</small></div>
+  </section>
+
+  <div class="body">
+    <aside class="rail">
+      <div class="lab">Projets</div>
+      <div class="projects" id="projects"></div>
+      <details class="form" id="newProj">
+        <summary>Nouveau projet</summary>
+        <form id="projForm">
+          <label for="pName">Nom<input id="pName" required maxlength="120" placeholder="Ex. Page FAQ du site"></label>
+          <label for="pBrief">Objectif<textarea id="pBrief" maxlength="4000" placeholder="Ce que le projet doit produire, pour qui, avec quelles contraintes."></textarea></label>
+          <button class="btn primary" type="submit" id="pSubmit">Créer le projet</button>
+        </form>
+      </details>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="notice" id="boot">Chargement des projets…</div>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const MODELS = ["auto", "qwen-3.8-max", "qwen-3.8-max-thinking", "qwen-3.7-max", "qwen-3.7-plus", "qwen-3.6-plus", "xiaomi-mimo-2.6", "xiaomi-mimo-2.5", "meta-muse-spark-1.2", "meta-muse-spark-1.3"];
+const STAGES = [
+  ["a_faire", "À faire"], ["delegue", "Chez Dialagram"], ["a_valider", "À valider"], ["valide", "Validé"], ["refuse", "À refaire"]
+];
+const state = { projects: [], tasks: [], sel: null, armed: null };
+let db = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmt = (n) => Number(n || 0).toLocaleString("fr-FR");
+const dTok = (t) => (t.dialagram && t.dialagram.total_tokens) || 0;
+const cTok = (t) => (t.claude && t.claude.tokens) || 0;
+
+function toast(msg) {
+  const el = $("toast"); el.textContent = msg; el.hidden = false;
+  clearTimeout(toast.t); toast.t = setTimeout(() => { el.hidden = true; }, 2600);
+}
+function remember(id) { try { localStorage.setItem("atelier.sel", id); } catch (e) {} }
+function recalled() { try { return localStorage.getItem("atelier.sel"); } catch (e) { return null; } }
+
+function renderMeters() {
+  const ts = state.tasks;
+  const d = ts.reduce((a, t) => a + dTok(t), 0), c = ts.reduce((a, t) => a + cTok(t), 0);
+  $("mDia").textContent = fmt(d);
+  $("mCla").textContent = fmt(c);
+  const share = d + c ? Math.round((d / (d + c)) * 100) : null;
+  $("mShare").textContent = share === null ? "—" : share + " %";
+  $("mBar").style.width = (share || 0) + "%";
+  $("mDone").textContent = ts.filter((t) => t.status === "valide").length + " / " + ts.length;
+  const r = ts.filter((t) => t.status === "refuse").length;
+  $("mRef").textContent = r + " à refaire";
+}
+
+function renderProjects() {
+  const box = $("projects");
+  if (!state.projects.length) { box.innerHTML = '<div class="muted" style="font-size:.85rem">Aucun projet pour l’instant.</div>'; return; }
+  box.innerHTML = state.projects.map((p) => {
+    const ts = state.tasks.filter((t) => t.projectId === p.id);
+    const ok = ts.filter((t) => t.status === "valide").length;
+    return `<button class="proj" type="button" data-proj="${esc(p.id)}" aria-pressed="${p.id === state.sel}">
+      <strong>${esc(p.name)}</strong><span class="num">${ok}/${ts.length} validées · ${fmt(ts.reduce((a, t) => a + dTok(t), 0))} tok. Dialagram</span></button>`;
+  }).join("");
+}
+
+function taskCard(t) {
+  const m = t.dialagram && t.dialagram.model ? t.dialagram.model : (t.model || "auto");
+  const chips = [`<span class="chip">${esc(m)}</span>`];
+  if (dTok(t)) chips.push(`<span class="chip dia">${fmt(dTok(t))} D</span>`);
+  if (cTok(t)) chips.push(`<span class="chip cla">≈${fmt(cTok(t))} C</span>`);
+  if (t.attempts > 1) chips.push(`<span class="chip">essai ${t.attempts}</span>`);
+  const verdict = t.claude && t.claude.note ? `<div class="verdict s-${esc(t.status)}">${esc(t.claude.note)}</div>` : "";
+  const result = t.result ? `<div class="block"><span class="lab">Réponse Dialagram</span><pre>${esc(t.result)}</pre></div>` : "";
+  const armed = state.armed === t.id;
+  const actions = [];
+  if (t.status === "refuse" || t.status === "valide") actions.push(`<button class="btn" data-requeue="${esc(t.id)}">Relancer</button>`);
+  actions.push(armed
+    ? `<button class="btn danger" data-del="${esc(t.id)}">Confirmer la suppression</button><button class="btn" data-cancel="1">Annuler</button>`
+    : `<button class="btn danger" data-arm="${esc(t.id)}">Supprimer</button>`);
+  return `<article class="card s-${esc(t.status)}">
+    <h3>${esc(t.title)}</h3>
+    <div class="chips">${chips.join("")}</div>
+    ${verdict}
+    <details><summary>Détails</summary>
+      <div class="block"><span class="lab">Consigne</span><pre>${esc(t.instructions || "—")}</pre></div>
+      ${result}
+      <div class="actions">${actions.join("")}</div>
+    </details>
+  </article>`;
+}
+
+function renderMain() {
+  const main = $("main");
+  const p = state.projects.find((x) => x.id === state.sel);
+  if (!p) {
+    main.innerHTML = '<div class="notice">Créez un premier projet à gauche : un nom et l’objectif suffisent. Vous ajouterez ensuite ses tâches ici.</div>';
+    return;
+  }
+  const ts = state.tasks.filter((t) => t.projectId === p.id).sort((a, b) => (a.order || 0) - (b.order || 0));
+  const d = ts.reduce((a, t) => a + dTok(t), 0), c = ts.reduce((a, t) => a + cTok(t), 0);
+  const cols = STAGES.map(([key, label]) => {
+    const list = ts.filter((t) => t.status === key);
+    return `<section class="col s-${key}"><header><strong>${label}</strong><span class="num">${list.length}</span></header>
+      ${list.length ? list.map(taskCard).join("") : '<div class="empty">Rien ici.</div>'}</section>`;
+  }).join("");
+  const draft = { t: $("tTitle") ? $("tTitle").value : "", i: $("tInstr") ? $("tInstr").value : "", m: $("tModel") ? $("tModel").value : "auto", open: $("newTask") ? $("newTask").open : !ts.length };
+  main.innerHTML = `
+    <div class="phead">
+      <h2>${esc(p.name)}</h2>
+      ${p.brief ? `<p>${esc(p.brief)}</p>` : ""}
+      <div class="pstats"><span><span class="num">${ts.length}</span> tâches</span><span>Dialagram <span class="num">${fmt(d)}</span></span><span>Claude ≈ <span class="num">${fmt(c)}</span></span></div>
+    </div>
+    <details class="form" id="newTask"${draft.open ? " open" : ""}>
+      <summary>Ajouter une tâche</summary>
+      <form id="taskForm">
+        <label for="tTitle">Titre<input id="tTitle" required maxlength="160" placeholder="Ex. Rédiger 5 questions fréquentes"></label>
+        <label for="tInstr">Consigne pour le modèle<textarea id="tInstr" required maxlength="6000" placeholder="Ce qu’il faut produire, le format attendu, la longueur, le ton."></textarea></label>
+        <label for="tModel">Modèle Dialagram<select id="tModel">${MODELS.map((m) => `<option value="${m}">${m === "auto" ? "auto (Claude choisit)" : m}</option>`).join("")}</select></label>
+        <button class="btn primary" type="submit" id="tSubmit">Ajouter à « À faire »</button>
+      </form>
+    </details>
+    <div class="flow">${cols}</div>`;
+  $("tTitle").value = draft.t; $("tInstr").value = draft.i; $("tModel").value = draft.m;
+}
+
+function render() { renderMeters(); renderProjects(); renderMain(); }
+
+function pickSelection() {
+  if (state.projects.some((p) => p.id === state.sel)) return;
+  const r = recalled();
+  state.sel = state.projects.some((p) => p.id === r) ? r : (state.projects[0] && state.projects[0].id) || null;
+}
+
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.proj) { state.sel = b.dataset.proj; remember(state.sel); render(); return; }
+  if (b.dataset.arm) { state.armed = b.dataset.arm; renderMain(); return; }
+  if (b.dataset.cancel) { state.armed = null; renderMain(); return; }
+  if (!db) return;
+  try {
+    if (b.dataset.del) { b.disabled = true; await db.doc("tasks/" + b.dataset.del).delete(); state.armed = null; toast("Tâche supprimée"); }
+    if (b.dataset.requeue) { b.disabled = true; await db.doc("tasks/" + b.dataset.requeue).update({ status: "a_faire", updatedAt: Date.now() }); toast("Tâche remise dans « À faire »"); }
+  } catch (err) { b.disabled = false; toast(writeError(err)); }
+});
+
+document.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!db) { toast("La base n’est pas disponible dans cette vue."); return; }
+  const now = Date.now();
+  try {
+    if (e.target.id === "projForm") {
+      const name = $("pName").value.trim(); if (!name) return;
+      $("pSubmit").disabled = true;
+      const ref = await db.collection("projects").add({ name, brief: $("pBrief").value.trim(), createdAt: now });
+      state.sel = ref.id; remember(ref.id);
+      $("projForm").reset(); $("newProj").open = false; $("pSubmit").disabled = false;
+      toast("Projet créé");
+    }
+    if (e.target.id === "taskForm") {
+      const title = $("tTitle").value.trim(), instructions = $("tInstr").value.trim(); if (!title || !instructions) return;
+      $("tSubmit").disabled = true;
+      await db.collection("tasks").add({ projectId: state.sel, title, instructions, model: $("tModel").value, status: "a_faire", order: now, createdAt: now, updatedAt: now, attempts: 0 });
+      $("tTitle").value = ""; $("tInstr").value = "";
+      toast("Tâche ajoutée à « À faire »");
+    }
+  } catch (err) { toast(writeError(err)); }
+  finally { ["pSubmit", "tSubmit"].forEach((id) => { if ($(id)) $(id).disabled = false; }); }
+});
+
+function writeError(err) {
+  const code = err && err.code;
+  if (code === "invalid_argument") return "Enregistrement refusé : vous n’avez peut-être pas le droit de modifier cette page.";
+  if (code === "quota_exceeded") return "La base est pleine : supprimez d’anciennes tâches.";
+  return "Enregistrement impossible pour le moment. Réessayez dans un instant.";
+}
+
+(async function start() {
+  db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+  if (!db) {
+    $("boot").textContent = "La base de l’atelier n’est pas disponible ici. Ouvrez la page sur claude.ai en étant connecté.";
+    $("projForm").querySelectorAll("input,textarea,button").forEach((el) => { el.disabled = true; });
+    return;
+  }
+  const onErr = () => toast("La synchronisation s’est interrompue. Rechargez la page.");
+  db.collection("projects").orderBy("createdAt", "asc").onSnapshot((s) => {
+    state.projects = s.docs.map((d) => Object.assign({ id: d.id }, d.data()));
+    pickSelection(); render();
+  }, onErr);
+  db.collection("tasks").onSnapshot((s) => {
+    state.tasks = s.docs.map((d) => Object.assign({ id: d.id }, d.data()));
+    render();
+  }, onErr);
+})();
+</script>
