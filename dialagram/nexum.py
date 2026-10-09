@@ -127,7 +127,7 @@ CHAIRMAN = "qwen-3.8-max"
 
 def council(question, members=COUNCIL, chairman=CHAIRMAN):
     # 1. Chaque membre répond seul.
-    answers = [a for a in run_parallel([(m, question, None) for m in members]) if a]
+    answers = [a for a in run_parallel([(m, question, None) for m in members]) if a and a["text"]]
     if len(answers) < 2:
         raise RuntimeError("Moins de 2 membres ont répondu, council impossible.")
 
@@ -143,7 +143,7 @@ def council(question, members=COUNCIL, chairman=CHAIRMAN):
 
     # 3. Le président synthétise.
     final = chat(chairman, context + "Revues des pairs :\n\n"
-                 + "\n\n".join(r["text"] for r in reviews if r)
+                 + "\n\n".join(r["text"] for r in reviews if r and r["text"])
                  + "\n\nRédige la meilleure réponse finale en t'appuyant sur tout ce qui précède.")
     return {
         "labels": {k: a["model"] for k, a in labels.items()},
