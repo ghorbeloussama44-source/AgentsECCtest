@@ -1,0 +1,18 @@
+MISSION (correction 1/2, rédaction) — Claude a relu ton livre et l'a noté 13/20 : à refaire avant publication. Claude n'écrit aucun code : écris le script de correction.
+
+Problèmes constatés dans chapitres/*.md (fichiers 00_introduction.md, ch01.md … ch40.md, 99_conclusion.md) :
+1. Des phrases de chatbot sont restées dans 11 chapitres (2, 6, 7, 8, 14, 16, 19, 29, 33, 34, 37), conséquence des requêtes de continuation. Exemples réels :
+   « **Si vous souhaitez que j'enchaîne, je peux :** 1. **Passer directement au chapitre 7** … 2. **Réviser ou étoffer une section du chapitre 6** … Dites-moi simplement comment vous voulez procéder, et je m'y mets immédiatement. »
+   « **Ce que je peux faire maintenant :** 1. **Passer au chapitre suivant** – Rédiger le chapitre 20 … Dites-moi simplement comment vous souhaitez procéder. »
+   Dans ch06.md, ce bloc apparaît deux fois, et la fin du chapitre semble répétée après la continuation.
+2. Des citations sont mal attribuées (ex. « Le plus grand ennemi de la connaissance n'est pas l'ignorance, c'est l'illusion de la connaissance. » attribuée à Stephen Hawking, généralement attribuée à Daniel Boorstin ; « Je n'ai jamais rencontré une personne riche qui ne lise pas beaucoup » attribuée à Warren Buffett, alors que la citation connue est de Charlie Munger).
+3. Avertissement financier répété presque à l'identique en tête de 38 chapitres : il suffit qu'il figure une fois au début du livre ; dans les chapitres, ne garder qu'une mention brève et variée là où un passage parle concrètement d'investissement.
+
+Écris UN script Python 3.13 autonome `nettoyage.py`, bibliothèque standard uniquement, qui :
+- Appelle POST https://dialagram.me/router/v1/chat/completions, "model":"qwen-3.8-max-thinking", "stream": true, sans en-tête d'auth (proxy), sans max_tokens ; lit le SSE (choices[0].delta.content, ignorer reasoning_content, stop sur [DONE]) ; récupère le champ "usage" du dernier chunk (prompt_tokens, completion_tokens, total_tokens) ; timeout 1500 s ; 5 tentatives avec backoff exponentiel.
+- Étape A, pour CHAQUE fichier de chapitres/ (42 fichiers, 8 en parallèle) : envoie le texte au modèle avec une consigne d'éditeur : supprimer toute phrase où l'auteur s'adresse à un commanditaire (propositions de suite, « dites-moi », « je peux rédiger », etc.), supprimer les passages dupliqués par les continuations, alléger l'avertissement financier selon le point 3, vérifier chaque citation et corriger l'attribution (ou la reformuler en « attribuée à » / la retirer si douteuse), NE RIEN changer d'autre, garder tout le reste du texte mot pour mot, rendre le chapitre complet en Markdown sans commentaire.
+- Contrôles sur la réponse : pas vide ; nombre de mots ≥ 85 % de l'original (sinon nouvelle tentative, puis garder l'original et le signaler) ; plus aucune occurrence des motifs (insensible à la casse) : "dites-moi", "si vous souhaitez que j", "je peux :", "ce que je peux faire", "voulez-vous que je", "souhaitez-vous que je", "je m'y mets", "passer au chapitre", "passer directement au chapitre" (sinon nouvelle tentative).
+- Écrit le résultat dans chapitres_v2/ (même nom de fichier), saute les fichiers déjà présents et valides (reprise).
+- Écrit rapport_nettoyage.json : par fichier, mots avant/après, motifs trouvés avant/après, tentatives, tokens, durée, statut ; et affiche un résumé (totaux de tokens inclus).
+Usage : python3 nettoyage.py chapitres chapitres_v2
+Réponds UNIQUEMENT avec le code complet dans un seul bloc ```python, sans jamais écrire trois backticks dans le code (utilise '`'*3).

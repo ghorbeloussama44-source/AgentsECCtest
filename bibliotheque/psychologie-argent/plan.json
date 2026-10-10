@@ -1,0 +1,578 @@
+{
+ "titre": "Les Menottes Invisibles",
+ "sous_titre": "Décrypter les biais cognitifs et croyances limitantes qui décident de votre richesse à votre insu",
+ "bibliographie": [
+  {
+   "auteur": "Daniel Kahneman",
+   "titre": "Système 1 / Système 2 : Les deux vitesses de la pensée",
+   "annee": "2011",
+   "idee": "Le cerveau fonctionne selon deux systèmes : un rapide, intuitif et sujet aux erreurs (S1), un lent, analytique mais paresseux (S2). La plupart de nos décisions financières sont prises par S1.",
+   "apport": "Cadre théorique central du livre ; chaque biais sera rattaché à S1 ou S2. Structure des exercices de 'ralentissement cognitif'."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "La Psychologie de l'argent",
+   "annee": "2020",
+   "idee": "Le succès financier dépend moins du savoir technique que du comportement. Chacun porte une histoire personnelle qui colore ses décisions d'argent.",
+   "apport": "Approche narrative et humble ; intégration de témoignages et d'histoires vécues dans chaque chapitre."
+  },
+  {
+   "auteur": "T. Harv Eker",
+   "titre": "Les Secrets de l'esprit millionnaire",
+   "annee": "2005",
+   "idee": "Chacun possède un 'thermostat financier' inconscient hérité de l'enfance. Tant qu'on ne reprogramme pas ce thermostat, les revenus plafonnent.",
+   "apport": "Concept de blueprint financier repris et critiqué ; exercices de reprogrammation dans la partie 3."
+  },
+  {
+   "auteur": "Dan Ariely",
+   "titre": "C'est (vraiment ?) moi qui décide",
+   "annee": "2008",
+   "idee": "Nos choix économiques sont prévisiblement irrationnels : ancrage, aversion à la perte, effet de dotation dictent nos comportements à notre insu.",
+   "apport": "Démonstrations expérimentales réutilisées comme études de cas ; protocole d'auto-observation."
+  },
+  {
+   "auteur": "Richard Thaler & Cass Sunstein",
+   "titre": "Nudge : La méthode douce pour inspirer la bonne décision",
+   "annee": "2008",
+   "idee": "L'architecture de choix influence massivement les décisions financières. De petits changements contextuels produisent de grands effets.",
+   "apport": "Partie 5 : construire son propre 'nudge personnel' pour contrer les biais identifiés."
+  },
+  {
+   "auteur": "Gary Belsky & Thomas Gilovich",
+   "titre": "Why Smart People Make Big Money Mistakes",
+   "annee": "1999",
+   "idee": "Même les personnes intelligentes et éduquées commettent des erreurs financières systématiques à cause de biais cognitifs précis (comptabilité mentale, regret, excès de confiance).",
+   "apport": "Catalogue de biais spécifiques à l'argent ; grille de diagnostic utilisée au chapitre 6."
+  },
+  {
+   "auteur": "Carol Dweck",
+   "titre": "Changer d'état d'esprit : Une nouvelle psychologie de la réussite",
+   "annee": "2006",
+   "idee": "L'état d'esprit fixe ('je suis comme ça') versus l'état d'esprit de croissance ('je peux évoluer') détermine la capacité à apprendre, y compris financièrement.",
+   "apport": "Transposition du mindset fixe/croissance à la relation à l'argent ; exercices de reformulation."
+  },
+  {
+   "auteur": "Brad Klontz & Ted Klontz",
+   "titre": "Mind Over Money",
+   "annee": "2010",
+   "idee": "Les 'troubles financiers' (compulsion d'achat, évitement de l'argent, culte de la richesse) ont des racines émotionnelles profondes liées à l'histoire familiale.",
+   "apport": "Typologie des profils relationnels à l'argent ; questionnaire d'auto-diagnostic en partie 3."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Le Cygne Noir : La puissance de l'imprévisible",
+   "annee": "2007",
+   "idee": "Nous sous-estimons massivement l'improbable et construisons des plans financiers fragiles en croyant que le passé prédit l'avenir.",
+   "apport": "Chapitre sur le biais de normalité et la planification financière ; notion d'antifragilité appliquée."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence et Manipulation",
+   "annee": "1984",
+   "idee": "Six principes de persuasion (réciprocité, rareté, autorité, preuve sociale, engagement, sympathie) sont exploités pour nous faire dépenser.",
+   "apport": "Chapitre dédié aux biais sociaux et à la pression consumériste ; exercices de contre-influence."
+  },
+  {
+   "auteur": "Annie Duke",
+   "titre": "Thinking in Bets",
+   "annee": "2018",
+   "idee": "Toute décision est un pari dans l'incertitude. Séparer la qualité d'une décision de son résultat est essentiel pour progresser.",
+   "apport": "Cadre décisionnel probabiliste pour les choix d'investissement et de dépense ; journal de décisions."
+  },
+  {
+   "auteur": "Claudia Hammond",
+   "titre": "Mind over Money",
+   "annee": "2016",
+   "idee": "Synthèse de 250 études en psychologie de l'argent : l'argent active les mêmes circuits neuronaux que la douleur et le plaisir, créant des réactions disproportionnées.",
+   "apport": "Base neuroscientifique du livre ; explication des réactions émotionnelles face aux chiffres."
+  },
+  {
+   "auteur": "Napoleon Hill",
+   "titre": "Réfléchissez et devenez riche",
+   "annee": "1937",
+   "idee": "La richesse commence par un désir ardent, une foi inébranlable et la transmutation des croyances limitantes en convictions constructives.",
+   "apport": "Contrepoint historique ; ce que la science moderne valide ou invalide dans les préceptes classiques."
+  },
+  {
+   "auteur": "Ramit Sethi",
+   "titre": "I Will Teach You to Be Rich",
+   "annee": "2009",
+   "idee": "La psychologie de l'argent compte plus que l'optimisation mathématique ; identifier sa 'vie riche' personnelle désamorce la culpabilité.",
+   "apport": "Concept de 'rich life' personnalisée ; exercices de clarification des valeurs financières."
+  },
+  {
+   "auteur": "George Loewenstein",
+   "titre": "Emotions and Economic Theory (article fondateur)",
+   "annee": "2000",
+   "idee": "Les émotions ne sont pas des parasites de la décision économique : elles en sont le moteur principal, via l'anticipation et la viscéralité.",
+   "apport": "Chapitre sur la dimension émotionnelle des biais ; exercices de régulation émotionnelle financière."
+  },
+  {
+   "auteur": "Bodo Schäfer",
+   "titre": "La Voie vers la liberté financière",
+   "annee": "1998",
+   "idee": "Les croyances sur l'argent se forment avant 7 ans et agissent comme un programme inconscient. La liberté financière exige une reprogrammation active.",
+   "apport": "Exercices de cartographie des croyances précoces ; perspective européenne complémentaire."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – L'ARCHITECTURE INVISIBLE : COMMENT VOTRE CERVEAU TRAHIT VOTRE PORTEFEUILLE",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le cerveau en deux vitesses : pourquoi votre compte en banque dépend de votre Système 1",
+     "objectif": "Faire comprendre au lecteur les deux systèmes de pensée et montrer que 90 % des décisions financières sont prises en pilote automatique, donc vulnérables aux biais.",
+     "sections": [
+      "L'illusion du décideur rationnel : le mythe de l'homo economicus",
+      "Système 1 et Système 2 appliqués à l'argent : exemples concrets",
+      "La fatigue décisionnelle : pourquoi vous achetez plus le soir",
+      "Le rôle des émotions comme raccourcis financiers",
+      "La mémoire corporelle de l'argent : stress, cortisol et impulsivité",
+      "Cartographie personnelle : identifier vos moments de vulnérabilité"
+     ],
+     "exercices": [
+      "Journal de bord financier sur 7 jours : noter chaque décision d'argent et le contexte émotionnel",
+      "Test d'auto-évaluation : 'Quel système pilote mes finances ?' (questionnaire de 20 items)",
+      "Expérience de la pause de 24 heures avant tout achat non planifié supérieur à 50 €"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La naissance d'un biais : de l'évolution à votre relevé bancaire",
+     "objectif": "Expliquer l'origine évolutive et développementale des biais cognitifs pour déculpabiliser le lecteur et créer un socle de compréhension.",
+     "sections": [
+      "L'héritage de la savane : pourquoi le cerveau déteste l'incertitude financière",
+      "Les heuristiques : des raccourcis vitaux devenus des pièges modernes",
+      "L'enfance comme usine à croyances : les 0-7 ans décisifs",
+      "La transmission intergénérationnelle de la peur ou du déni de l'argent",
+      "Neuroplasticité : la bonne nouvelle, tout peut se recâbler",
+      "Du biais à la croyance limitante : la cristallisation"
+     ],
+     "exercices": [
+      "Arbre généalogique financier : interviewer 3 membres de la famille sur leur rapport à l'argent",
+      "Schéma personnel des 'premières mémoires d'argent' (dessin guidé)",
+      "Liste de 10 situations où une réaction émotionnelle a primé sur la logique financière"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'argent comme langage : ce que vos émotions chuchotent à vos chiffres",
+     "objectif": "Montrer que l'argent n'est jamais neutre émotionnellement ; explorer les circuits neuronaux du plaisir, de la douleur et de la peur liés aux finances.",
+     "sections": [
+      "L'insula et la douleur de payer : pourquoi dépenser fait littéralement mal",
+      "La dopamine du gain : shopping, trading et mécanismes de récompense",
+      "La honte financière : le tabou le mieux gardé",
+      "L'argent comme proxy de sécurité, d'amour, de pouvoir, de liberté",
+      "Les quatre profils émotionnels face à l'argent (Klontz revisité)",
+      "Écouter sans juger : la pleine conscience financière"
+     ],
+     "exercices": [
+      "Méditation guidée 'Scan corporel de l'argent' (15 minutes, script fourni)",
+      "Écriture libre : 'Quand je pense à mon solde bancaire, je ressens…' (3 pages sans censure)",
+      "Matrice émotion-finances : relier chaque émotion dominante à un comportement financier récurrent"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les 12 croyances limitantes universelles sur l'argent",
+     "objectif": "Fournir un panorama complet et structuré des croyances limitantes les plus répandues, pour que le lecteur puisse immédiatement s'identifier.",
+     "sections": [
+      "Croyance n°1-3 : 'L'argent est sale / dangereux / corrupteur'",
+      "Croyance n°4-6 : 'Je ne mérite pas / Je ne suis pas fait pour ça / C'est trop tard'",
+      "Croyance n°7-9 : 'Les riches sont malhonnêtes / L'argent ne fait pas le bonheur / Il n'y en aura jamais assez'",
+      "Croyance n°10-12 : 'Il faut travailler dur pour gagner / L'argent change les gens / Je n'y comprendrai jamais rien'",
+      "Comment ces croyances se déguisent en 'bon sens'",
+      "Le cercle vicieux : croyance → biais → comportement → résultat → renforcement"
+     ],
+     "exercices": [
+      "Questionnaire des 12 croyances : cocher, nuancer, reformuler",
+      "Débat écrit avec soi-même : argumenter POUR puis CONTRE sa croyance dominante",
+      "Carte mentale : relier chaque croyance identifiée à une décision financière concrète du passé"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – LES 10 BIAIS QUI VOUS APPAUVRISSENT SANS QUE VOUS LE SACHIEZ",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "L'ancrage : pourquoi votre premier prix reste gravé dans votre cerveau",
+     "objectif": "Décrypter le biais d'ancrage dans les négociations, les investissements et la consommation quotidienne.",
+     "sections": [
+      "L'expérience fondatrice de Tversky et Kahneman",
+      "L'ancrage dans les prix barrés, les soldes et le marketing",
+      "L'ancrage salarial : pourquoi votre premier salaire vous suit 20 ans",
+      "L'ancrage en investissement : le piège du prix d'achat",
+      "Désancrer : techniques de réévaluation objective",
+      "Construire ses propres ancres protectrices"
+     ],
+     "exercices": [
+      "Audit d'ancrage : lister 5 décisions financières récentes et identifier l'ancre",
+      "Négociation simulée : fixer 3 ancres intentionnelles avant une discussion financière",
+      "Règle des 3 références : avant tout achat > 100 €, chercher 3 prix de référence indépendants"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "L'aversion à la perte : pourquoi perdre 100 € fait plus mal qu'en gagner 200",
+     "objectif": "Explorer le biais le plus puissant en finance comportementale et ses conséquences sur l'épargne, l'investissement et la négociation.",
+     "sections": [
+      "La théorie des perspectives : la courbe de valeur asymétrique",
+      "L'effet de dotation : surévaluer ce qu'on possède déjà",
+      "Le biais du coût irrécupérable : 'J'ai déjà tellement investi…'",
+      "L'aversion à la perte dans la carrière : rester dans un emploi sous-payé",
+      "L'effet disposition en bourse : vendre les gagnants, garder les perdants",
+      "Reprogrammer sa tolérance à la perte"
+     ],
+     "exercices": [
+      "Expérience personnelle : vendre ou donner un objet possédé et noter la résistance émotionnelle",
+      "Calcul du coût d'opportunité : combien m'a coûté mon biais du coût irrécupable sur 5 ans ?",
+      "Simulateur : réécrire 3 décisions passées en ignorant le montant déjà investi"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "La comptabilité mentale : vos enveloppes imaginaires qui vous font perdre de l'argent",
+     "objectif": "Montrer comment le cerveau compartimente l'argent de façon irrationnelle et comment exploiter ou corriger ce biais.",
+     "sections": [
+      "Thaler et les enveloppes mentales : l'argent n'est pas fongible dans votre tête",
+      "L'argent 'gagné' vs l'argent 'trouvé' : dépenser un bonus vs un salaire",
+      "Le piège des abonnements : la douleur de payer diluée",
+      "Comptabilité mentale et budget : quand le biais devient outil",
+      "Les frais cachés et la cécité aux petits montants",
+      "Construire un système financier qui travaille avec ce biais"
+     ],
+     "exercices": [
+      "Audit des enveloppes : lister toutes les catégories mentales de son argent et leur traitement différencié",
+      "Recalcul du coût réel annuel de tous les abonnements",
+      "Expérience : traiter une rentrée exceptionnelle comme un salaire et observer la différence de comportement"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'excès de confiance et l'illusion de contrôle : le cocktail qui ruine les investisseurs",
+     "objectif": "Analyser comment la surconfiance et l'illusion de maîtrise poussent à des risques inconsidérés et à la sous-diversification.",
+     "sections": [
+      "L'effet Dunning-Kruger appliqué à la finance",
+      "L'illusion de contrôle : 'Je sens le marché'",
+      "Le biais d'attribution : mes gains sont mon talent, mes pertes sont la malchance",
+      "Le trading actif et la sous-performance chronique",
+      "L'excès de confiance dans l'entrepreneuriat : le taux de survie réel",
+      "L'humilité calibrée : garder confiance sans aveuglement"
+     ],
+     "exercices": [
+      "Journal de prédictions financières : noter 10 prédictions, les revoir après 3 mois et calculer son taux de réussite réel",
+      "Audit de diversification : son portefeuille est-il concentré par excès de confiance ?",
+      "Liste des 'coups de chance' qu'on a attribués à son talent"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le biais de statu quo et l'inertie financière : le coût caché de ne rien faire",
+     "objectif": "Révéler pourquoi rester dans une situation financière sous-optimale (banque, assurance, emploi, investissement) est un choix actif qui coûte cher.",
+     "sections": [
+      "L'expérience des régimes de retraite : l'option par défaut comme destin",
+      "Le biais de statu quo dans les contrats : banque, assurance, énergie",
+      "La procrastination financière : déclarer, négocier, renégocier",
+      "Le coût cumulé de l'inertie : calcul sur 10, 20, 30 ans",
+      "La peur du changement déguisée en rationalité",
+      "Micro-mouvements : vaincre l'inertie par l'action minimale"
+     ],
+     "exercices": [
+      "Calcul du 'coût de l'inertie' : additionner les économies possibles sur ses contrats actuels",
+      "Règle des 5 minutes : lancer une seule démarche financière repoussée depuis > 6 mois",
+      "Contrat d'engagement avec soi-même : une action de changement par mois pendant 6 mois"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Le biais de confirmation et la chambre d'écho financière",
+     "objectif": "Montrer comment on ne cherche que les informations qui confirment nos croyances financières, créant une réalité distordue.",
+     "sections": [
+      "L'expérience de Wason et ses déclinaisons financières",
+      "Les réseaux sociaux comme amplificateurs de biais financiers",
+      "Le biais de confirmation dans l'investissement : ne lire que les analyses qui valident sa position",
+      "Les bulles informationnelles : 'Mon entourage pense comme moi'",
+      "La dissonance cognitive face à une perte : nier, minimiser, rationaliser",
+      "S'exposer volontairement à la contradiction"
+     ],
+     "exercices": [
+      "Défi de la contradiction : trouver 3 arguments solides CONTRE sa conviction financière principale",
+      "Audit de ses sources d'information financière : diversité ou homogénéité ?",
+      "Journal de dissonance : noter chaque fois qu'on ignore une information dérangeante sur ses finances"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – LES RACINES : D'OÙ VIENNENT VOS CROYANCES LIMITANTES",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "L'héritage familial : ce que vos parents vous ont transmis sans le vouloir",
+     "objectif": "Explorer la transmission intergénérationnelle des croyances sur l'argent à travers les mots, les silences, les rituels et les non-dits.",
+     "sections": [
+      "Les phrases assassines de l'enfance : 'L'argent ne pousse pas sur les arbres'",
+      "Le rapport à l'argent du père et de la mère : deux héritages parfois contradictoires",
+      "Les secrets financiers familiaux : dettes cachées, faillites tues",
+      "Les rituels familiaux autour de l'argent : générosité, radinerie, ostentation",
+      "Le loyalisme invisible : 'Si je gagne plus, je trahis ma famille'",
+      "La lettre de libération : honorer sans reproduire"
+     ],
+     "exercices": [
+      "Interview structurée de 2 membres de la famille sur leur histoire financière",
+      "Écriture d'une lettre à ses parents sur l'héritage financier reçu (non envoyée)",
+      "Cartographie : tracer les 'règles d'argent' familiales sur 3 générations"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "L'école, la culture et la société : les programmateurs silencieux",
+     "objectif": "Analyser comment l'éducation, la culture nationale, la religion et les médias façonnent notre rapport à l'argent sans qu'on en ait conscience.",
+     "sections": [
+      "L'école française et le tabou de l'argent : un angle mort éducatif",
+      "La culture de la modestie vs la culture de l'abondance",
+      "Religion et argent : culpabilité, charité, prospérité",
+      "Les médias et la diabolisation des riches / la glorification de la consommation",
+      "Le genre et l'argent : les biais spécifiques subis par les femmes",
+      "Déprogrammer le logiciel culturel sans rejeter ses valeurs"
+     ],
+     "exercices": [
+      "Inventaire des messages culturels sur l'argent reçus entre 6 et 18 ans",
+      "Analyse critique : décrypter 3 publicités ou articles récents et leurs messages implicites sur l'argent",
+      "Écriture : 'Si j'avais grandi dans une autre culture, mon rapport à l'argent serait…'"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Les traumatismes financiers : quand une perte marque à vie",
+     "objectif": "Comprendre comment les chocs financiers (faillite, licenciement, divorce, crise) créent des réactions de survie qui persistent bien après l'événement.",
+     "sections": [
+      "Le choc financier comme trauma : les parallèles avec le stress post-traumatique",
+      "La faillite personnelle ou parentale : la honte comme cicatrice",
+      "Le licenciement et la perte de sécurité : le syndrome du 'ça peut recommencer'",
+      "Le divorce et la violence économique",
+      "Les crises collectives (2008, 2020) et leur empreinte générationnelle",
+      "Du traumatisme à la résilience financière : les étapes de reconstruction"
+     ],
+     "exercices": [
+      "Timeline financière : placer sur une ligne de vie les événements financiers marquants et l'émotion associée",
+      "Lettre à son 'moi' du moment du choc : compassion et mise à jour",
+      "Identification des comportements de surprotection financière hérités d'un trauma"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le syndrome de l'imposteur financier : 'Je ne mérite pas cet argent'",
+     "objectif": "Décrypter ce syndrome spécifique au domaine financier et ses manifestations : sous-tarification, auto-sabotage, culpabilité de gagner.",
+     "sections": [
+      "Le syndrome de l'imposteur : définition et mécanismes",
+      "La sous-tarification chronique : freelances, salariés, entrepreneurs",
+      "L'auto-sabotage au moment de la réussite : 'Je vais tout perdre'",
+      "La culpabilité de gagner plus que ses proches",
+      "Le plafond de verre intérieur : le thermostat financier en action",
+      "Reconstruire une estime financière légitime"
+     ],
+     "exercices": [
+      "Calcul de sa valeur réelle vs sa rémunération actuelle (marché, compétences, résultats)",
+      "Journal des 'preuves de compétence' : lister 20 réussites financières/professionnelles",
+      "Exercice du mentor imaginaire : que dirait une personne bienveillante sur votre droit à prospérer ?"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "L'identité et l'argent : quand votre valeur se confond avec votre solde",
+     "objectif": "Explorer la fusion toxique entre identité personnelle et situation financière, et proposer une séparation libératrice.",
+     "sections": [
+      "'Je suis ce que j'ai' : la société de consommation comme fabrique d'identité",
+      "L'estime de soi indexée sur le revenu : le piège de la comparaison",
+      "La honte du découvert, du crédit, de la pauvreté",
+      "L'identité du 'pas bon avec l'argent' : prophétie autoréalisatrice",
+      "Séparer être et avoir : l'argent comme outil, pas comme miroir",
+      "Construire une identité financière choisie plutôt que subie"
+     ],
+     "exercices": [
+      "Définition personnelle de la richesse en dehors de tout chiffre",
+      "Lettre de divorce symbolique : 'Cher argent, tu n'es plus mon identité'",
+      "Liste de 10 qualités et compétences personnelles totalement indépendantes du solde bancaire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – LES BIAIS EN ACTION : COMMENT ILS SABOTENT VOTRE QUOTIDIEN FINANCIER",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Consommer sous influence : les biais à l'œuvre dans vos achats",
+     "objectif": "Décortiquer les mécanismes cognitifs exploités par le marketing et la distribution pour déclencher des achats non désirés.",
+     "sections": [
+      "La rareté artificielle et l'urgence : 'Plus que 2 en stock !'",
+      "La preuve sociale : les avis, les influenceurs et le mimétisme d'achat",
+      "L'effet de leurre et l'architecture de choix en magasin",
+      "Le paiement sans douleur : carte, sans-contact, abonnement",
+      "La fatigue décisionnelle dans les supermarchés et en ligne",
+      "Construire son bouclier anti-manipulation"
+     ],
+     "exercices": [
+      "Audit d'une semaine de courses : identifier 5 achats déclenchés par un biais spécifique",
+      "Règle des 72 heures pour tout achat non planifié > 50 €",
+      "Désinscription de 10 newsletters promotionnelles et observation de l'effet"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Négocier, demander, oser : les biais qui vous font accepter moins",
+     "objectif": "Analyser les biais cognitifs qui empêchent de négocier son salaire, ses contrats, ses prix, et proposer des contre-stratégies.",
+     "sections": [
+      "L'ancrage bas : pourquoi on propose toujours moins que ce qu'on devrait",
+      "La peur du rejet et le biais de projection négative",
+      "Le biais de politesse et la difficulté à demander",
+      "L'effet de contraste : comment préparer ses arguments",
+      "La négociation salariale : déjouer le biais de genre et de légitimité",
+      "Scripts et rituels de préparation mentale"
+     ],
+     "exercices": [
+      "Simulation de négociation : préparer 3 scénarios avec ancrage haut, silence et reformulation",
+      "Calcul du manque à gagner cumulé lié aux non-négociations passées",
+      "Défi : négocier un petit service ou prix cette semaine (marché, facture, abonnement)"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Investir avec ses tripes : les biais qui détruisent la performance",
+     "objectif": "Passer en revue les biais spécifiques à l'investissement (effet de disposition, mimétisme, biais de familiarité) et leurs antidotes.",
+     "sections": [
+      "Le biais de familiarité : investir uniquement dans ce qu'on connaît",
+      "Le moutonnement : acheter quand tout le monde achète",
+      "L'effet de récence : extrapoler la tendance récente dans le futur",
+      "Le biais de narration : confondre une belle histoire et un bon investissement",
+      "L'horizon temporel et le biais du présent : tout vouloir maintenant",
+      "L'investisseur systémique : règles, automatisation, déconnexion émotionnelle"
+     ],
+     "exercices": [
+      "Audit de portefeuille : identifier les biais présents dans ses choix actuels",
+      "Rédaction de sa 'charte d'investissement personnelle' (règles non négociables)",
+      "Simulation : réécrire ses 3 pires décisions d'investissement en appliquant les principes anti-biais"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Entreprendre en mode survie : les biais qui freinent la croissance",
+     "objectif": "Cibler les biais cognitifs spécifiques aux entrepreneurs et indépendants : sous-tarification, peur de l'échec, biais de planification.",
+     "sections": [
+      "Le biais de planification : 'Mon business plan sera prêt en 2 semaines'",
+      "L'aversion à la perte appliquée au pivot : s'accrocher à un modèle qui ne marche pas",
+      "Le biais de conformité : copier le concurrent au lieu de se différencier",
+      "La malédiction du savoir : sous-estimer la valeur de son expertise",
+      "Le biais du survivant : ne voir que les réussites et ignorer les échecs",
+      "Entreprendre avec ses biais plutôt que malgré eux"
+     ],
+     "exercices": [
+      "Recalcul du prix de ses prestations en intégrant la valeur réelle et non le confort",
+      "Analyse post-mortem d'un projet entrepreneurial passé : quels biais ont joué ?",
+      "Liste de 3 décisions entrepreneuriales à prendre en appliquant la méthode 'pre-mortem'"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Le couple et l'argent : quand les biais s'invitent à deux",
+     "objectif": "Explorer comment les biais cognitifs individuels créent des dynamiques de couple toxiques autour de l'argent.",
+     "sections": [
+      "Deux héritages financiers, deux systèmes de croyances : le choc",
+      "Le biais de projection : 'Il/elle devrait penser comme moi'",
+      "L'asymétrie d'information et le contrôle financier",
+      "Le biais d'évitement : les sujets financiers qu'on n'aborde jamais",
+      "L'argent et la répartition des tâches : le biais de normalité",
+      "Construire un langage financier commun sans fusion ni domination"
+     ],
+     "exercices": [
+      "Questionnaire de couple : chacun répond séparément à 15 questions sur l'argent puis compare",
+      "Rituel financier mensuel : instaurer un 'rendez-vous argent' structuré de 30 minutes",
+      "Écriture individuelle : 'Ma plus grande peur financière dans ce couple est…' puis partage"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – SE LIBÉRER : LE PROTOCOLE DE DÉCRISTALLISATION EN 7 ÉTAPES",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Étape 1-2 : Observer et nommer – La cartographie de vos biais personnels",
+     "objectif": "Fournir une méthode structurée pour identifier, nommer et hiérarchiser ses propres biais et croyances limitantes.",
+     "sections": [
+      "Le principe de l'observateur : regarder ses pensées financières sans les juger",
+      "La grille des 24 biais : auto-diagnostic complet",
+      "Le top 5 personnel : identifier ses biais dominants",
+      "La chaîne Biais → Émotion → Comportement → Conséquence",
+      "Le journal de décryptage : outil quotidien de 5 minutes",
+      "Passer de 'Je suis comme ça' à 'J'ai ce biais'"
+     ],
+     "exercices": [
+      "Remplir la grille complète des 24 biais avec exemples personnels",
+      "Tenir le journal de décryptage pendant 21 jours consécutifs",
+      "Rédiger sa 'carte d'identité biais' : portrait honnête de ses vulnérabilités financières"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Étape 3-4 : Déconstruire et questionner – La méthode du tribunal intérieur",
+     "objectif": "Apprendre à interroger, contester et démanteler les croyances limitantes identifiées grâce à des techniques cognitives éprouvées.",
+     "sections": [
+      "La méthode socratique appliquée aux croyances financières",
+      "Le tribunal intérieur : avocat de la défense, procureur, juge",
+      "La décatastrophisation : 'Et alors ? Et ensuite ?'",
+      "La technique des 5 pourquoi adaptée à l'argent",
+      "La restructuration cognitive : de la croyance toxique à la croyance fonctionnelle",
+      "L'acceptation radicale : ce qui est n'a pas besoin d'être combattu"
+     ],
+     "exercices": [
+      "Procès écrit de sa croyance limitante n°1 : arguments pour, contre, verdict",
+      "La chaîne des 5 pourquoi sur sa peur financière la plus ancienne",
+      "Réécriture de 5 croyances limitantes en croyances fonctionnelles et réalistes"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Étape 5-6 : Reprogrammer et expérimenter – Les nouveaux circuits",
+     "objectif": "Proposer des techniques concrètes de reprogrammation cognitive et comportementale pour installer de nouveaux automatismes financiers.",
+     "sections": [
+      "La visualisation guidée : se voir agir avec ses nouveaux réflexes",
+      "Les affirmations ancrées : pourquoi 'Je suis riche' ne marche pas et quoi faire à la place",
+      "Les micro-expériences : expositions progressives aux situations financières évitées",
+      "L'ancrage positif : associer un geste à un nouvel état financier",
+      "Le nudge personnel : architecturer son environnement pour le succès",
+      "L'effet de communauté : s'entourer pour reprogrammer"
+     ],
+     "exercices": [
+      "Script de visualisation de 10 minutes : 'Ma journée financière idéale' (à enregistrer et écouter 21 jours)",
+      "Plan de 3 micro-expériences progressives sur 30 jours",
+      "Conception de 3 nudges environnementaux personnalisés (applis, post-its, automatisations)"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Étape 7 : Intégrer et transmettre – Devenir son propre architecte financier",
+     "objectif": "Consolider les acquis, prévenir les rechutes, créer un système de maintenance et transformer l'expérience en transmission.",
+     "sections": [
+      "La maintenance cognitive : routines hebdomadaires et mensuelles",
+      "Anticiper les rechutes : les périodes de vulnérabilité (stress, deuil, changement)",
+      "Le tableau de bord personnel : 10 indicateurs de santé relationnelle à l'argent",
+      "La posture de l'apprenant permanent : rester curieux de ses biais",
+      "Transmettre sans imposer : parler d'argent à ses enfants, ses proches",
+      "L'argent libéré : quand la relation apaisée à l'argent ouvre toutes les autres portes"
+     ],
+     "exercices": [
+      "Construction de son tableau de bord financier personnel (10 indicateurs choisis)",
+      "Rituel mensuel de 30 minutes : 'Mon rendez-vous avec mon argent'",
+      "Lettre à son futur soi dans 5 ans : 'Voilà comment j'ai changé ma relation à l'argent'",
+      "Plan de transmission : une conversation sur l'argent à initier avec un proche ce mois-ci"
+     ]
+    }
+   ]
+  }
+ ]
+}

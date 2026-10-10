@@ -1,0 +1,12 @@
+MISSION (phase 2) — Ton plan est validé (fichier plan.json, structure : {"titre","sous_titre","bibliographie":[...],"parties":[{"titre","chapitres":[{"numero","titre","objectif","sections":[...],"exercices":[...]}]}]}).
+Claude n'écrit aucun code : c'est toi qui écris les outils. Écris UN script Python 3.13 autonome, `redaction.py`, bibliothèque standard uniquement (urllib, json, concurrent.futures, pathlib, re), qui :
+- Appelle l'API OpenAI-compatible POST https://dialagram.me/router/v1/chat/completions avec "model":"qwen-3.8-max-thinking" et "stream": true, SANS en-tête d'authentification (un proxy l'injecte). Réponse en SSE : lignes "data: {json}" ; concaténer choices[0].delta.content ; ignorer reasoning_content ; s'arrêter sur "data: [DONE]". Ne PAS envoyer max_tokens (provoque une erreur). Timeout 1500 s. Un appel non-streaming long renvoie "upstream request failed".
+- Pour chacun des 40 chapitres, génère un chapitre en français, en Markdown (## pour le titre du chapitre, ### pour les sections), ~3 500 mots, en suivant les sections, l'objectif et les exercices du plan ; le prompt système te décrit comme l'auteur du livre (donne-lui le titre, le sous-titre, le plan global résumé et la règle : contenu original, pas de reproduction de textes protégés, citations courtes attribuées seulement, pas de promesses irréalistes, avertissement que ce n'est pas un conseil financier personnalisé quand pertinent).
+- Si le chapitre fait moins de 3 200 mots, envoie une requête de continuation (historique de la conversation + "Continue exactement là où tu t'es arrêté, sans répéter, jusqu'à la fin du chapitre") et concatène ; max 3 continuations.
+- Retry avec backoff exponentiel (5 tentatives) sur erreur réseau/HTTP ou réponse vide.
+- 8 chapitres en parallèle (ThreadPoolExecutor). Écrit chapitres/ch01.md … ch40.md. Reprise : saute les chapitres déjà présents et ≥ 3 200 mots.
+- Génère aussi chapitres/00_introduction.md (~3 000 mots) et chapitres/99_conclusion.md (~2 500 mots).
+- Log de progression sur stdout (chapitre, nombre de mots, durée), et un résumé final.
+Usage : python3 redaction.py plan.json
+
+Réponds UNIQUEMENT avec le code Python complet, sans explication, dans un seul bloc ```python.

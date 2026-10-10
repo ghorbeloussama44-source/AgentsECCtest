@@ -1,0 +1,517 @@
+{
+ "titre": "L'Ingénierie Émotionnelle",
+ "sous_titre": "Décoder ses états, maîtriser l'impact des autres et transformer l'affect en avantage décisif.",
+ "bibliographie": [
+  {
+   "auteur": "Daniel Goleman",
+   "titre": "Emotional Intelligence",
+   "annee": "1995",
+   "idee": "L'intelligence émotionnelle (IE) surpasse le QI dans la réussite, reposant sur la conscience de soi et l'empathie.",
+   "apport": "Poser les fondations du vocabulaire émotionnel et de l'impact de l'IE sur la trajectoire de vie."
+  },
+  {
+   "auteur": "Travis Bradberry et Jean Greaves",
+   "titre": "Emotional Intelligence 2.0",
+   "annee": "2009",
+   "idee": "L'IE n'est pas figée et peut être augmentée par des stratégies ciblées et mesurables au quotidien.",
+   "apport": "Intégrer des exercices d'entraînement mental pour muscler la régulation émotionnelle en temps réel."
+  },
+  {
+   "auteur": "Susan David",
+   "titre": "Emotional Agility",
+   "annee": "2016",
+   "idee": "La rigidité émotionnelle mène à l'échec ; il faut accepter ses émotions pour les dépasser sans s'y noyer.",
+   "apport": "Remplacer le contrôle forcé par l'agilité et l'acceptation radicale des états internes."
+  },
+  {
+   "auteur": "Lisa Feldman Barrett",
+   "titre": "How Emotions Are Made",
+   "annee": "2017",
+   "idee": "Les émotions ne sont pas universelles mais construites par le cerveau à partir de concepts et de prédictions.",
+   "apport": "Affiner la granularité émotionnelle pour mieux décoder et reprogrammer ses propres réactions."
+  },
+  {
+   "auteur": "Antonio Damasio",
+   "titre": "Descartes' Error",
+   "annee": "1994",
+   "idee": "Sans émotion, la raison est paralysée ; les marqueurs somatiques guident nos choix complexes.",
+   "apport": "Légitimer l'usage de l'intuition et du ressenti corporel dans les décisions d'affaires et d'investissement."
+  },
+  {
+   "auteur": "Paul Ekman",
+   "titre": "Emotions Revealed",
+   "annee": "2003",
+   "idee": "Les micro-expressions faciales trahissent les émotions véritables avant que le masque social ne tombe.",
+   "apport": "Fournir une grille de lecture non-verbale pour détecter les non-dits en négociation."
+  },
+  {
+   "auteur": "Chris Voss",
+   "titre": "Never Split the Difference",
+   "annee": "2016",
+   "idee": "L'empathie tactique et le recalibrage émotionnel sont les armes ultimes de la négociation de haut niveau.",
+   "apport": "Adapter les techniques de négociation de crise aux enjeux financiers et relationnels."
+  },
+  {
+   "auteur": "Daniel Kahneman",
+   "titre": "Thinking, Fast and Slow",
+   "annee": "2011",
+   "idee": "Le Système 1 (rapide, émotionnel) biaise le Système 2 (lent, logique) dans nos jugements et achats.",
+   "apport": "Identifier et neutraliser les biais émotionnels lors des investissements et des acquisitions."
+  },
+  {
+   "auteur": "Brené Brown",
+   "titre": "Dare to Lead",
+   "annee": "2018",
+   "idee": "La vulnérabilité mesurée est le catalyseur de la confiance et de l'innovation dans les équipes.",
+   "apport": "Désamorcer la peur de l'échec pour créer des alliances professionnelles indestructibles."
+  },
+  {
+   "auteur": "Robin Stern",
+   "titre": "The Gaslight Effect",
+   "annee": "2007",
+   "idee": "La manipulation émotionnelle repose sur la mise en doute de la propre perception de la victime.",
+   "apport": "Créer des boucliers cognitifs contre les profils toxiques et les manipulateurs en affaires."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence",
+   "annee": "1984",
+   "idee": "Les déclencheurs émotionnels (réciprocité, preuve sociale) court-circuitent l'analyse critique.",
+   "apport": "Comprendre comment les émotions sont weaponisées par le marché pour mieux s'en protéger."
+  },
+  {
+   "auteur": "Matthew Lieberman",
+   "titre": "Social",
+   "annee": "2013",
+   "idee": "Le cerveau humain est câblé pour la connexion sociale ; l'exclusion active les zones de la douleur physique.",
+   "apport": "Optimiser le networking et les partenariats en jouant sur le besoin d'appartenance."
+  },
+  {
+   "auteur": "Marc Brackett",
+   "titre": "Permission to Feel",
+   "annee": "2019",
+   "idee": "Le système RULER permet de cartographier et réguler les émotions dans les environnements exigeants.",
+   "apport": "Structurer une routine d'audit émotionnel pour les entrepreneurs et investisseurs."
+  },
+  {
+   "auteur": "Karla McLaren",
+   "titre": "The Language of Emotions",
+   "annee": "2010",
+   "idee": "Chaque émotion, même la colère ou la jalousie, contient une donnée utile et une action requise.",
+   "apport": "Transformer les émotions dites négatives en signaux d'alerte stratégiques pour les affaires."
+  },
+  {
+   "auteur": "Daniel Goleman",
+   "titre": "Social Intelligence",
+   "annee": "2006",
+   "idee": "L'intelligence sociale repose sur la conscience sociale et la facilité sociale (résonance limbique).",
+   "apport": "Maîtriser l'art de l'accordage émotionnel pour influencer subtilement n'importe quel interlocuteur."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 : L'Anatomie de l'Affect (Comprendre la mécanique émotionnelle)",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le Mythe de la Raison Pure",
+     "objectif": "Démystifier la séparation entre raison et émotion pour comprendre que toute décision est fondamentalement affective (3500 mots).",
+     "sections": [
+      "L'erreur de Descartes : quand le cerveau émotionnel prend le volant",
+      "Les marqueurs somatiques : le corps vote avant l'esprit",
+      "Le coût cognitif de la répression émotionnelle",
+      "L'émotion comme système de navigation rapide",
+      "Repenser la rationalité : l'alliance du cortex et du système limbique"
+     ],
+     "exercices": [
+      "Journal de bord des décisions : tracer l'émotion cachée derrière vos 3 derniers choix majeurs.",
+      "Scan somatique : identifier où les émotions se manifestent physiquement en vous sur une échelle de 1 à 10."
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Le Lexique des Ombres",
+     "objectif": "Développer la granularité émotionnelle pour passer d'un vocabulaire basique à une cartographie précise de ses états (3500 mots).",
+     "sections": [
+      "La tyrannie du « je vais bien » : le danger des émotions fourre-tout",
+      "La théorie de la construction des émotions de Lisa Feldman Barrett",
+      "Granularité émotionnelle : pourquoi nommer précisément, c'est dompter",
+      "Le dictionnaire des nuances : de la frustration à l'indignation",
+      "L'impact du vocabulaire sur la neuroplasticité"
+     ],
+     "exercices": [
+      "L'audit lexical : remplacer 5 émotions génériques par des termes précis pendant une semaine.",
+      "La roue des émotions : cartographier son état dominant à 3 moments clés de la journée."
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Les Déclencheurs Fantômes",
+     "objectif": "Identifier les schémas récurrents et les blessures invisibles qui dictent nos réactions disproportionnées (3500 mots).",
+     "sections": [
+      "L'anatomie d'un trigger : stimulus, mémoire implicite, réaction",
+      "Les dettes émotionnelles : comment le passé pirate le présent",
+      "La projection : voir ses propres ombres chez les autres",
+      "Le détournement amygdalien : quand le cerveau reptilien prend le pouvoir",
+      "Cartographier ses zones d'ombre et ses angles morts"
+     ],
+     "exercices": [
+      "L'autopsie du déclencheur : analyser la dernière réaction disproportionnée en remontant à sa racine.",
+      "Le registre des frictions : noter les situations qui génèrent une tension récurrente."
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "L'Écologie de l'Énergie",
+     "objectif": "Considérer les émotions non comme du bruit, mais comme des données et des réservoirs d'énergie exploitables (3500 mots).",
+     "sections": [
+      "Le langage caché des émotions dites négatives",
+      "La colère comme délimitation de frontières",
+      "La peur comme radar de préparation et d'anticipation",
+      "La tristesse comme signal de réalignement des valeurs",
+      "L'émotion comme carburant : la sublimation des affects"
+     ],
+     "exercices": [
+      "Le décodage du signal : poser la question « Que me demande cette émotion de protéger ou de changer ? »",
+      "La conversion d'énergie : utiliser la frustration pour alimenter une tâche complexe pendant 30 minutes."
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "L'Illusion du Contrôle",
+     "objectif": "Abandonner la lutte contre les émotions pour adopter l'agilité émotionnelle et l'acceptation radicale (3500 mots).",
+     "sections": [
+      "Le paradoxe de la suppression : pourquoi résister, c'est amplifier",
+      "L'agilité émotionnelle selon Susan David",
+      "La différence entre ressentir et s'identifier à l'émotion",
+      "La technique de la défusion cognitive",
+      "Créer un espace intérieur inviolable"
+     ],
+     "exercices": [
+      "L'étiquetage distancé : remplacer « Je suis en colère » par « Je remarque que je ressens de la colère ».",
+      "La méditation de l'observateur : laisser passer les pensées et émotions comme des nuages sans s'y accrocher."
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Le Bilan Émotionnel",
+     "objectif": "Mettre en place un système de mesure et de suivi de son capital émotionnel, comme on gère un bilan financier (3500 mots).",
+     "sections": [
+      "Pourquoi les performeurs ignorent leur tableau de bord intérieur",
+      "Le système RULER de Marc Brackett appliqué aux affaires",
+      "Définir ses métriques émotionnelles personnelles",
+      "L'audit des fuites d'énergie émotionnelle",
+      "Créer sa routine de clôture émotionnelle quotidienne"
+     ],
+     "exercices": [
+      "Le bilan de fin de journée : noter les pics de drain et les sources de recharge émotionnelle.",
+      "La matrice d'impact : évaluer le coût émotionnel de vos 5 principales relations ou projets actuels."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 : La Forge des États (Maîtrise et reprogrammation en temps réel)",
+   "chapitres": [
+    {
+     "numero": 7,
+     "titre": "Le Circuit de la Pause",
+     "objectif": "Maîtriser l'intervalle critique entre le stimulus et la réponse pour reprendre le contrôle exécutif (3500 mots).",
+     "sections": [
+      "La fenêtre de tolérance et le point de bascule",
+      "Le piratage du nerf vague pour freiner le système nerveux",
+      "Les micro-pauses tactiques en pleine négociation",
+      "La respiration en cohérence cardiaque",
+      "L'art de répondre plutôt que de réagir"
+     ],
+     "exercices": [
+      "La règle des 90 secondes : laisser passer le pic neurochimique avant de parler ou d'agir.",
+      "L'ancrage physique : associer un geste discret (ex: toucher son pouce et son index) à un état de calme."
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'Alchimie du Stress",
+     "objectif": "Transformer l'anxiété et la pression en arousal positif et en focus laser pour la haute performance (3500 mots).",
+     "sections": [
+      "Le mythe de la relaxation : pourquoi le calme n'est pas toujours la solution",
+      "La réévaluation cognitive : de la menace au défi",
+      "L'excitation comme émotion jumelle de l'anxiété",
+      "Le stress comme dilatation de la capacité d'action",
+      "Créer son rituel de bascule en mode performance"
+     ],
+     "exercices": [
+      "Le recadrage sémantique : se dire « Je suis excité » au lieu de « Je suis stressé » avant un enjeu majeur.",
+      "L'exposition volontaire : s'entraîner au stress contrôlé (ex: douches froides) pour muscler la tolérance."
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le Recadrage Cognitif",
+     "objectif": "Modifier la narration interne qui génère les émotions toxiques et réécrire le sens des événements (3500 mots).",
+     "sections": [
+      "Le triangle cognitif : pensée, émotion, comportement",
+      "Les distorsions cognitives qui sabotent les affaires et les relations",
+      "La technique du tribunal intérieur : plaider contre ses propres croyances",
+      "Le recadrage contextuel et le recadrage de sens",
+      "L'adoption de la perspective du stratège"
+     ],
+     "exercices": [
+      "L'avocat du diable : écrire 3 arguments logiques contredisant votre pire crainte actuelle.",
+      "La lettre de l'observateur neutre : raconter un conflit récent du point de vue d'une caméra de surveillance."
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "La Désactivation des Boucles",
+     "objectif": "Stopper net les ruminations mentales et les boucles d'inquiétude qui épuisent le capital décisionnel (3500 mots).",
+     "sections": [
+      "L'anatomie de la rumination : le cerveau en mode roue libre",
+      "La différence entre résolution de problème et rumination",
+      "Les techniques d'interruption de pattern (pattern interrupt)",
+      "L'externalisation : vider le cache mental",
+      "La clôture cognitive : savoir quand un dossier est fermé"
+     ],
+     "exercices": [
+      "Le brain-dump chronométré : écrire tout ce qui préoccupe pendant 10 minutes, puis jeter ou classer.",
+      "Le mot-stop : utiliser un signal visuel ou sonore pour couper net une boucle de pensée négative."
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "L'Ancrage Physiologique",
+     "objectif": "Utiliser le corps comme un levier direct pour modifier l'état émotionnel, sans passer par le mental (3500 mots).",
+     "sections": [
+      "Le feedback facial et postural : le corps dicte l'esprit",
+      "La chimie de la puissance : testosterone, cortisol et postures",
+      "L'impact du regard et de la vision périphérique sur le stress",
+      "Le mouvement comme métaboliseur des émotions bloquées",
+      "Créer sa playlist et sa gestuelle de pouvoir"
+     ],
+     "exercices": [
+      "La posture de l'architecte : adopter une posture d'ouverture et d'ancrage avant une réunion difficile.",
+      "Le secouage (shaking) : utiliser le mouvement oscillatoire pour évacuer la tension accumulée."
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "La Résilience Active",
+     "objectif": "Construire un système immunitaire émotionnel capable d'absorber les chocs, les échecs et les trahisons (3500 mots).",
+     "sections": [
+      "La résilience n'est pas l'absence de douleur, mais la vitesse de récupération",
+      "Le deuil des attentes : accepter la réalité du terrain",
+      "La mentalité du survivant vs la mentalité de la victime",
+      "Extraire la leçon sans garder la cicatrice",
+      "Le protocole de rebond post-échec"
+     ],
+     "exercices": [
+      "L'autopsie sans blâme : analyser un échec récent en séparant les faits des jugements moraux.",
+      "Le rituel de transition : créer une action symbolique pour marquer la fin d'un revers et le début du rebond."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 : Le Radar Social (Décoder les autres et naviguer les egos)",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "La Lecture Micro-Expressionnelle",
+     "objectif": "Développer l'acuité visuelle pour capter les fuites émotionnelles et les non-dits chez ses interlocuteurs (3500 mots).",
+     "sections": [
+      "Le visage comme télégraphe de l'inconscient",
+      "Les 7 émotions universelles de Paul Ekman",
+      "Repérer les asymétries et les micro-expressions",
+      "La ligne de base (baseline) : connaître l'état neutre de l'autre",
+      "Les congruences et dissonances entre le verbal et le corporel"
+     ],
+     "exercices": [
+      "L'observation silencieuse : regarder une interview politique sans le son pour analyser les expressions faciales.",
+      "Le calibrage initial : passer les 3 premières minutes d'une rencontre à établir la baseline de l'interlocuteur."
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "L'Empathie Tactique",
+     "objectif": "Utiliser l'empathie non comme une faiblesse, mais comme un outil de collecte d'informations et d'influence (3500 mots).",
+     "sections": [
+      "La différence entre empathie affective et empathie cognitive",
+      "Le mirroring : créer un lien limbique instantané",
+      "L'étiquetage (labeling) : valider l'émotion de l'autre pour la désamorcer",
+      "L'art de la question calibrée pour ouvrir l'inconscient",
+      "Faire baisser les défenses sans céder sur le fond"
+     ],
+     "exercices": [
+      "Le miroir vocal : répéter les 3 derniers mots de votre interlocuteur avec un ton interrogatif.",
+      "L'étiquetage de la peur : dire « Il semble que vous ayez peur que ce deal vous désavantage » lors d'un blocage."
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "La Détection des Dissonances",
+     "objectif": "Identifier les agendas cachés, les mensonges par omission et les manipulations dans les environnements complexes (3500 mots).",
+     "sections": [
+      "L'incongruence : quand les mots disent oui mais que le corps dit non",
+      "Les signaux de fuite et de pacification",
+      "Détecter la flatterie stratégique et l'intérêt feint",
+      "Le test de la contrainte : révéler les vraies intentions",
+      "Protéger son périmètre contre les vampires énergétiques"
+     ],
+     "exercices": [
+      "L'analyse des pieds : observer l'orientation des pieds de votre interlocuteur pour connaître son vrai désir de rester ou partir.",
+      "Le test du « non » : proposer une condition mineure défavorable pour observer la réaction émotionnelle réelle."
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "La Gestion des Profils Toxiques",
+     "objectif": "Neutraliser les narcissiques, les manipulateurs et les profils instables sans s'engager dans leur guerre émotionnelle (3500 mots).",
+     "sections": [
+      "L'anatomie du gaslighting et de la manipulation",
+      "Le narcissique en affaires : comprendre sa faim de validation",
+      "La technique de la pierre grise (Grey Rock Method)",
+      "Poser des limites inébranlables sans agressivité",
+      "Savoir quand couper les ponts stratégiquement"
+     ],
+     "exercices": [
+      "Le script de la pierre grise : préparer des réponses neutres et factuelles face aux provocations.",
+      "L'audit des relations : identifier une personne qui draine votre énergie et planifier une distanciation."
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "L'Influence par la Résonance",
+     "objectif": "Maîtriser la contagion émotionnelle pour imposer subtilement son état interne à une pièce ou un groupe (3500 mots).",
+     "sections": [
+      "Les neurones miroirs et la contagion limbique",
+      "Pourquoi le leader émotionnel dicte la météo de la salle",
+      "L'ancrage de l'état désiré avant d'entrer en scène",
+      "La synchronisation respiratoire et vocale",
+      "Diriger l'énergie d'un groupe sans hausser le ton"
+     ],
+     "exercices": [
+      "Le seuil de la porte : définir l'émotion exacte que vous souhaitez incarner avant de franchir une porte.",
+      "La modulation vocale : baisser le volume et ralentir le débit pour forcer une salle agitée à se calmer."
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La Négociation Émotionnelle",
+     "objectif": "Intégrer la dimension affective dans l'art du deal pour créer des accords durables et maximiser sa marge (3500 mots).",
+     "sections": [
+      "Pourquoi les gens achètent avec l'émotion et justifient avec la logique",
+      "Cartographier les peurs et les désirs de l'autre partie",
+      "L'illusion du contrôle : laisser l'autre penser qu'il a le pouvoir",
+      "Gérer la colère et les ultimatums en face à face",
+      "L'art de la concession émotionnelle"
+     ],
+     "exercices": [
+      "La matrice des motivations : lister les 3 peurs profondes et les 3 désirs d'ego de votre adversaire avant le deal.",
+      "L'accusation auditée : lister toutes les choses négatives que l'autre pourrait dire de vous, et les dire en premier."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 : Le Capital Émotionnel (L'appliquer à l'argent, au travail et aux relations)",
+   "chapitres": [
+    {
+     "numero": 19,
+     "titre": "L'Affect et la Prise de Risque",
+     "objectif": "Blinder ses décisions financières et entrepreneuriales contre les biais émotionnels et l'euphorie des marchés (3500 mots).",
+     "sections": [
+      "Le biais de perte et la terreur de la dépossession",
+      "L'euphorie du gagnant : quand le succès rend aveugle",
+      "Le FOMO (Fear Of Missing Out) comme poison de l'investisseur",
+      "Créer des garde-fous systémiques contre ses propres émotions",
+      "La discipline émotionnelle du capital-risqueur"
+     ],
+     "exercices": [
+      "Le pré-mortem émotionnel : imaginer que l'investissement a échoué et identifier l'émotion qui a poussé à ignorer les risques.",
+      "La règle des 24 heures : s'imposer un délai de réflexion obligatoire pour toute décision financière excitante."
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Le Charisme Silencieux",
+     "objectif": "Développer une présence magnétique qui inspire confiance et respect sans recourir à la domination ou au bruit (3500 mots).",
+     "sections": [
+      "Le charisme n'est pas l'extraversion, c'est la présence",
+      "L'écoute radicale : faire sentir à l'autre qu'il est la seule personne au monde",
+      "La gestion du silence comme outil de pouvoir et de confort",
+      "L'authenticité stratégique : révéler juste assez pour créer le lien",
+      "L'impact de la régulation émotionnelle sur l'aura personnelle"
+     ],
+     "exercices": [
+      "Le défi du silence : laisser 3 secondes de pause après chaque intervention de votre interlocuteur avant de répondre.",
+      "L'ancrage du regard : maintenir un contact visuel doux mais inébranlable lors de l'écoute."
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "La Vente Émotionnelle",
+     "objectif": "Aligner son offre sur l'état émotionnel du client pour transformer l'acte d'achat en expérience de validation (3500 mots).",
+     "sections": [
+      "Vendre, c'est transférer une certitude émotionnelle",
+      "Diagnostiquer l'état limbique du prospect",
+      "Le storytelling comme véhicule de transfert d'émotion",
+      "Gérer les objections comme des peurs déguisées",
+      "La clôture émotionnelle : sceller l'engagement par la fierté"
+     ],
+     "exercices": [
+      "Le pont émotionnel : relier chaque caractéristique technique de votre produit à un soulagement émotionnel précis.",
+      "L'écoute des mots chargés : repérer et réutiliser les mots à forte connotation affective employés par le client."
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "L'Intimité Stratégique",
+     "objectif": "Approfondir les relations personnelles et les partenariats clés par une vulnérabilité mesurée et une écoute active (3500 mots).",
+     "sections": [
+      "Le mythe de l'homme de fer : pourquoi la fermeture mène à l'isolement",
+      "La vulnérabilité comme preuve de force et de maîtrise",
+      "Créer des espaces de sécurité psychologique à deux",
+      "Gérer les conflits intimes sans destruction",
+      "L'investissement émotionnel à long terme"
+     ],
+     "exercices": [
+      "La confession stratégique : partager une difficulté ou un doute avec un partenaire de confiance pour renforcer le lien.",
+      "Le rituel de connexion : instaurer un moment hebdomadaire sans écran dédié uniquement à l'écoute de l'autre."
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "La Résolution de Conflits",
+     "objectif": "Désamorcer les crises relationnelles et professionnelles en traitant la racine émotionnelle plutôt que les symptômes logiques (3500 mots).",
+     "sections": [
+      "Le conflit n'est jamais sur les faits, toujours sur les egos",
+      "La désescalade : baisser la température limbique",
+      "La recherche de l'intention positive derrière l'attaque",
+      "La méthode de la troisième histoire",
+      "Transformer l'affrontement en collaboration forcée"
+     ],
+     "exercices": [
+      "Le recadrage de l'attaque : traduire chaque reproche de l'autre en une demande émotionnelle non satisfaite.",
+      "L'accord partiel : trouver un point de vérité dans la critique de l'adversaire pour briser sa résistance."
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "L'Héritage Émotionnel",
+     "objectif": "Bâtir une culture et un environnement qui soutiennent l'excellence émotionnelle pour soi et pour les générations futures (3500 mots).",
+     "sections": [
+      "L'empreinte émotionnelle : ce que vous laissez aux autres après votre départ",
+      "Éduquer à l'intelligence émotionnelle (enfants, équipes)",
+      "Créer des sanctuaires de décompression",
+      "La cohérence entre ses valeurs et ses réactions",
+      "L'ingénierie émotionnelle comme philosophie de vie"
+     ],
+     "exercices": [
+      "L'audit de l'héritage : demander à 3 proches quel est l'impact émotionnel de votre présence sur eux.",
+      "Le manifeste émotionnel : rédiger les 5 règles non négociables qui guideront vos réactions pour le reste de votre vie."
+     ]
+    }
+   ]
+  }
+ ]
+}

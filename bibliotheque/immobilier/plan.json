@@ -1,0 +1,622 @@
+{
+ "titre": "L'Édifice Locatif",
+ "sous_titre": "La méthode complète pour bâtir un patrimoine immobilier, pierre après pierre",
+ "bibliographie": [
+  {
+   "auteur": "Robert Kiyosaki",
+   "titre": "Père riche, Père pauvre",
+   "annee": "1997",
+   "idee": "Distinguer actifs et passifs ; utiliser l'immobilier pour générer du cash-flow plutôt que dépendre d'un salaire.",
+   "apport": "Le principe de l'actif productif sera intégré en filigrane, mais sans répéter la dimension mindset déjà couverte par L'Architecture de la Richesse."
+  },
+  {
+   "auteur": "Gary Keller",
+   "titre": "The Millionaire Real Estate Investor",
+   "annee": "2005",
+   "idee": "Modéliser l'investissement comme un système réplicable en quatre étapes : critères, sourcing, financement, gestion déléguée.",
+   "apport": "Structure systémique et notion de critères écrits non négociables avant toute visite."
+  },
+  {
+   "auteur": "Brandon Turner",
+   "titre": "The Book on Rental Property Investing",
+   "annee": "2015",
+   "idee": "Guide pratique BiggerPockets : analyse de deals, stratégies (BRRRR, turnkey, value-add), gestion locative et scaling.",
+   "apport": "Méthodologie BRRRR adaptée au marché francophone ; check-lists opérationnelles."
+  },
+  {
+   "auteur": "J. Scott",
+   "titre": "The Book on Estimating Rehab Costs",
+   "annee": "2014",
+   "idee": "Évaluer précisément le coût des travaux de rénovation pour éviter les dépassements qui détruisent la rentabilité.",
+   "apport": "Grilles de chiffrage travaux et marge de sécurité à intégrer dans l'analyse de rentabilité."
+  },
+  {
+   "auteur": "Ken McElroy",
+   "titre": "The ABCs of Real Estate Investing",
+   "annee": "2004",
+   "idee": "Démystifier l'investissement : analyse des revenus, dépenses, vacance, et utilisation de la dette comme levier contrôlé.",
+   "apport": "Cadre d'analyse financière simplifié (NOI, cap rate, cash-on-cash) traduit en indicateurs accessibles."
+  },
+  {
+   "auteur": "David Greene",
+   "titre": "Long-Distance Real Estate Investing",
+   "annee": "2017",
+   "idee": "Investir hors de sa zone géographique en s'appuyant sur des équipes locales, la data et la technologie.",
+   "apport": "Chapitre sur l'investissement à distance et la constitution d'une équipe de confiance."
+  },
+  {
+   "auteur": "William Nickerson",
+   "titre": "How I Turned $1,000 into Five Million in Real Estate",
+   "annee": "1971",
+   "idee": "Narration de la construction progressive d'un portefeuille via la plus-value forcée et le réinvestissement.",
+   "apport": "Preuve historique que la patience et la réinjection des gains priment sur la spéculation."
+  },
+  {
+   "auteur": "Andrew Hallam",
+   "titre": "Millionaire Teacher",
+   "annee": "2011",
+   "idee": "Approche sobre et chiffrée de l'enrichissement : dépenses maîtrisées, diversification, horizon long.",
+   "apport": "Ton réaliste, absence de promesses miracles ; intégration de l'immobilier dans une allocation globale."
+  },
+  {
+   "auteur": "Michaël Ferré",
+   "titre": "L'Investissement immobilier locatif intelligent",
+   "annee": "2016",
+   "idee": "Guide francophone couvrant fiscalité LMNP/LMP, montage SCI, choix du bien et calcul de rentabilité en France.",
+   "apport": "Cadre fiscal français, spécificités LMNP réel vs micro, amortissement comptable."
+  },
+  {
+   "auteur": "Julien Delagrandanne",
+   "titre": "L'Immobilier pour les Nuls – Investir",
+   "annee": "2019",
+   "idee": "Panorama pédagogique du marché immobilier français : prêt, notaire, copropriété, diagnostics, baux.",
+   "apport": "Vocabulaire juridique et administratif français ; listes de documents à vérifier."
+  },
+  {
+   "auteur": "Yann Darwin",
+   "titre": "Investir dans l'immobilier : le guide complet",
+   "annee": "2020",
+   "idee": "Parcours du premier achat locatif à la constitution d'un portefeuille de 10+ lots, avec focus cash-flow.",
+   "apport": "Progression par étapes et erreurs courantes des débutants à éviter."
+  },
+  {
+   "auteur": "Olivier Seban",
+   "titre": "Tout le monde mérite d'être riche",
+   "annee": "2007",
+   "idee": "L'immobilier comme véhicule d'enrichissement accessible ; importance du cash-flow positif dès le départ.",
+   "apport": "Principe du cash-flow positif comme filtre éliminatoire dans l'analyse des biens."
+  },
+  {
+   "auteur": "Sébastien Aguettaz",
+   "titre": "L'Investissement locatif de A à Z",
+   "annee": "2018",
+   "idee": "Méthode structurée : étude de marché locale, calcul du TRI, gestion des travaux, sélection du locataire.",
+   "apport": "Approche quantitative (TRI, VAN) et étude de marché par quartier."
+  },
+  {
+   "auteur": "Jean-Philippe Carbonnelle",
+   "titre": "Investir dans l'immobilier ancien",
+   "annee": "2017",
+   "idee": "Stratégie de rénovation de biens anciens pour créer de la valeur et maximiser le rendement locatif.",
+   "apport": "Techniques de valorisation par les travaux et calcul du coût au m² post-rénovation."
+  },
+  {
+   "auteur": "Peter G. Miller",
+   "titre": "The Smart Money Guide to Real Estate Investing",
+   "annee": "2005",
+   "idee": "Comprendre les cycles immobiliers, les indicateurs macro et la psychologie du vendeur pour acheter au bon moment.",
+   "apport": "Notion de cycle et timing ; grille d'analyse macro-locale avant d'investir."
+  },
+  {
+   "auteur": "Rich Dad (équipe Kiyosaki)",
+   "titre": "Rich Dad's Guide to Becoming Rich Without Cutting Up Your Credit Cards",
+   "annee": "2000",
+   "idee": "Utiliser le crédit de manière stratégique pour acquérir des actifs générateurs de revenus.",
+   "apport": "Chapitre sur l'usage raisonné du levier bancaire et la distinction bonne dette / mauvaise dette."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – LES FONDATIONS : Comprendre le terrain avant de poser la première pierre",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi l'immobilier locatif ? Le diagnostic honnête",
+     "objectif": "Poser un regard lucide sur l'immobilier comme véhicule patrimonial : avantages réels, limites, mythes à déconstruire, et conditions préalables personnelles.",
+     "sections": [
+      "1.1 – Ce que l'immobilier fait vraiment pour vous (levier, inflation, fiscalité, contrôle)",
+      "1.2 – Ce que l'immobilier ne fera jamais : déconstruire cinq mythes persistants",
+      "1.3 – Les trois piliers du succès : temps, capital, compétence",
+      "1.4 – Auto-diagnostic : où en êtes-vous ? (bilan patrimonial, capacité d'épargne, appétence au risque)",
+      "1.5 – L'horizon de temps et la notion de cycle : pourquoi la patience est votre premier outil",
+      "1.6 – Intégrer l'immobilier dans une allocation patrimoniale globale (pas tout dans la pierre)"
+     ],
+     "exercices": [
+      "Rédiger son bilan patrimonial personnel sur une grille fournie",
+      "Calculer sa capacité d'épargne mensuelle nette et son taux d'endettement actuel",
+      "Écrire en 10 lignes ses objectifs chiffrés à 5, 10 et 20 ans",
+      "Lister trois mythes sur l'immobilier auxquels on croyait et les reformuler"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La stratégie avant le bien : définir votre thèse d'investissement",
+     "objectif": "Amener le lecteur à formaliser une stratégie écrite (critères, typologie, zone, rendement cible) avant toute recherche, pour éviter les achats impulsifs.",
+     "sections": [
+      "2.1 – Stratégie vs opportunité : pourquoi commencer par le plan et non par l'annonce",
+      "2.2 – Les grandes familles de stratégies : cash-flow, plus-value, value-add, colocation, meublé courte durée",
+      "2.3 – Choisir sa typologie : studio, T2, immeuble de rapport, local commercial – forces et contraintes",
+      "2.4 – Définir ses critères non négociables (yield minimum, budget max, zone, travaux acceptables)",
+      "2.5 – Écrire sa « fiche mission » : le document d'une page qui guide chaque décision",
+      "2.6 – Adapter la stratégie à son profil : salarié, indépendant, jeune actif, futur retraité"
+     ],
+     "exercices": [
+      "Remplir la fiche mission (modèle fourni en annexe)",
+      "Classer 5 stratégies par ordre de compatibilité avec son profil",
+      "Rédiger 5 critères éliminatoires absolus",
+      "Simuler mentalement : si le marché baisse de 15 %, ma stratégie tient-elle ?"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Lire un marché : macro, micro et dynamique locale",
+     "objectif": "Donner les clés pour analyser un marché immobilier à trois échelles (nationale, régionale, quartier) et identifier les signaux de santé ou de risque.",
+     "sections": [
+      "3.1 – Les indicateurs macro : taux, démographie, emploi, construction neuve",
+      "3.2 – L'échelle micro : quartier, rue, immeuble – ce qui fait la vraie valeur",
+      "3.3 – Les sources de données : INSEE, DVF, observatoires locaux, cadastre, PLU",
+      "3.4 – Analyser la demande locative : qui loue, pourquoi, à quel prix ?",
+      "3.5 – Les signaux d'alerte : vacance élevée, mono-industrie, suroffre",
+      "3.6 – Construire sa grille d'évaluation de marché (scoring sur 10 critères)"
+     ],
+     "exercices": [
+      "Choisir deux villes et remplir la grille de scoring fournie",
+      "Consulter 10 annonces locatives dans la zone cible et noter les loyers pratiqués",
+      "Vérifier le PLU et les projets d'urbanisme de la commune visée",
+      "Cartographier sur papier les zones à fort potentiel et celles à éviter"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Le vocabulaire du chantier : lexique et concepts indispensables",
+     "objectif": "Éliminer la barrière du jargon. Le lecteur maîtrise les termes juridiques, financiers et techniques avant d'aborder la suite.",
+     "sections": [
+      "4.1 – Le lexique financier : taux, TAEG, LTV, NOI, cap rate, cash-on-cash, TRI, VAN",
+      "4.2 – Le lexique juridique : pleine propriété, nue-propriété, usufruit, bail, servitude, copropriété",
+      "4.3 – Le lexique technique : DPE, GES, amiante, plomb, loi Carrez, surface habitable vs utile",
+      "4.4 – Le lexique fiscal : revenus fonciers, LMNP, LMP, plus-value, TVA, CFE",
+      "4.5 – Les acteurs : notaire, diagnostiqueur, syndic, gestionnaire, courtier, expert",
+      "4.6 – Les documents clés : compromis, acte authentique, PV d'AG, diagnostic, bail"
+     ],
+     "exercices": [
+      "Quiz de 20 termes à relier à leur définition",
+      "Calculer un cash-on-cash et un cap rate sur un exemple chiffré",
+      "Lire un extrait de diagnostic et identifier les points critiques",
+      "Lister les 8 professionnels à contacter pour un premier projet et leur rôle"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – LES PLANS ET LE FINANCEMENT : Dessiner la stratégie et lever les fonds",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Le financement bancaire : préparer un dossier qui convainc",
+     "objectif": "Démystifier le crédit immobilier, comprendre les critères du banquier et construire un dossier irréprochable.",
+     "sections": [
+      "5.1 – Comment la banque décide : les 5 C (Capacité, Capital, Collatéral, Conditions, Caractère)",
+      "5.2 – Les types de prêts : amortissable, in fine, relais, PTZ, conventionné – quand les utiliser",
+      "5.3 – Optimiser son profil emprunteur : épargne, stabilité, taux d'endettement, apport",
+      "5.4 – Le rôle du courtier : quand le solliciter, comment le rémunérer, ce qu'il peut négocier",
+      "5.5 – Préparer le dossier : les 15 pièces à réunir et la lettre de présentation",
+      "5.6 – Négocier les conditions : taux, assurance emprunteur, IRA, délégation d'assurance",
+      "5.7 – Le refus de prêt : comprendre, contester, pivoter"
+     ],
+     "exercices": [
+      "Calculer sa capacité d'emprunt maximale avec un simulateur",
+      "Rassembler les 15 pièces du dossier et les classer",
+      "Comparer trois offres de prêt (tableau comparatif fourni)",
+      "Rédiger une lettre de motivation d'une page à joindre au dossier"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "L'analyse de rentabilité : les chiffres ne mentent pas",
+     "objectif": "Fournir une méthode de calcul complète pour évaluer la viabilité économique d'un bien avant de s'engager.",
+     "sections": [
+      "6.1 – Le coût total d'acquisition : prix, frais de notaire, travaux, ameublement, frais de dossier",
+      "6.2 – Les revenus réels : loyer brut, vacance, impayés, revalorisation",
+      "6.3 – Les charges complètes : taxe foncière, PNO, copropriété, gestion, entretien, CFE",
+      "6.4 – Les indicateurs de performance : rendement brut, net, net-net, cash-flow, TRI, VAN",
+      "6.5 – Le stress-test : que se passe-t-il si le loyer baisse de 10 %, si les travaux dérapent de 20 % ?",
+      "6.6 – Comparer deux biens côte à côte : la grille de décision pondérée"
+     ],
+     "exercices": [
+      "Analyser une annonce réelle avec la grille de calcul fournie",
+      "Calculer le cash-flow mensuel d'un T2 à 150 000 € (cas chiffré)",
+      "Réaliser un stress-test sur son propre projet",
+      "Remplir la grille de comparaison pour deux biens fictifs"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Structures juridiques : SCI, nom propre, LMNP – choisir son véhicule",
+     "objectif": "Présenter les montages juridiques et fiscaux disponibles en France, leurs avantages et limites, sans conseil personnalisé mais avec une grille d'aide à la décision.",
+     "sections": [
+      "7.1 – Détenir en nom propre : simplicité, imposition aux revenus fonciers",
+      "7.2 – Le régime LMNP (micro-BIC vs réel) : amortissement, charges déductibles",
+      "7.3 – Le régime LMP : seuils, cotisations sociales, plus-value professionnelle",
+      "7.4 – La SCI à l'IR : quand elle a du sens (transmission, associés)",
+      "7.5 – La SCI à l'IS : amortissement du bien, fiscalité des distributions",
+      "7.6 – La SARL de famille et autres structures : cas d'usage spécifiques",
+      "7.7 – Grille de décision : quel véhicule selon votre situation ?"
+     ],
+     "exercices": [
+      "Remplir la grille de décision (7 questions) pour identifier le montage adapté",
+      "Simuler l'imposition d'un loyer de 800 €/mois en foncier vs LMNP réel",
+      "Lister 3 questions à poser à un expert-comptable avant de choisir",
+      "Écrire les avantages/inconvénients de la SCI pour son projet précis"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'effet de levier : utiliser la dette comme outil, pas comme béquille",
+     "objectif": "Expliquer le mécanisme du levier, ses bénéfices, ses dangers, et les règles de prudence pour ne pas se retrouver en fragilité financière.",
+     "sections": [
+      "8.1 – Le principe du levier : contrôler 100 avec 10, la mécanique du crédit",
+      "8.2 – Levier positif vs levier négatif : quand la dette enrichit, quand elle appauvrit",
+      "8.3 – Le taux d'endettement et le reste à vivre : les lignes rouges",
+      "8.4 – Le LTV (Loan-to-Value) : combien emprunter par rapport à la valeur du bien",
+      "8.5 – La stratégie BRRRR adaptée au marché français : Buy, Rehab, Rent, Refinance, Repeat",
+      "8.6 – Les garde-fous : épargne de précaution, assurance, clause de sortie",
+      "8.7 – Quand ne PAS emprunter : les contre-indications"
+     ],
+     "exercices": [
+      "Calculer le levier sur un exemple : 20 % d'apport, rendement 6 %, taux 3,5 %",
+      "Simuler un scénario de hausse des taux de 2 points",
+      "Établir son plan d'épargne de précaution (6 mois de charges)",
+      "Décrire en 5 étapes un cycle BRRRR sur un bien fictif"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – LE CHANTIER DE RECHERCHE : Trouver, analyser et sélectionner le bien",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Sourcer efficacement : au-delà des portails d'annonces",
+     "objectif": "Multiplier les canaux de recherche pour accéder à des biens hors marché et augmenter ses chances de trouver la bonne affaire.",
+     "sections": [
+      "9.1 – Les portails classiques : Leboncoin, SeLoger, Bien'ici – filtres et alertes optimisés",
+      "9.2 – Le réseau local : agents, notaires, marchands de biens, gardiens, commerçants",
+      "9.3 – Les ventes aux enchères, adjudications et biens de succession",
+      "9.4 – Le sourcing off-market : courrier, porte-à-porte, réseaux sociaux, associations",
+      "9.5 – Les intermédiaires spécialisés : chasseurs immobiliers, grossistes",
+      "9.6 – Organiser sa recherche : tableau de suivi, scoring, relances systématiques"
+     ],
+     "exercices": [
+      "Créer 5 alertes paramétrées sur les portails avec ses critères",
+      "Rédiger un script d'appel pour contacter 3 agents immobiliers",
+      "Envoyer 10 courriers de recherche à des propriétaires potentiels",
+      "Construire un tableau de suivi (10 colonnes) pour ses prospects"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "La visite qui révèle tout : inspection méthodique d'un bien",
+     "objectif": "Transformer la visite en audit : repérer les défauts, évaluer les travaux, sentir le potentiel et poser les bonnes questions.",
+     "sections": [
+      "10.1 – Avant la visite : préparation, documents à demander, questions au vendeur",
+      "10.2 – L'extérieur et les parties communes : façade, toiture, hall, ascenseur, caves",
+      "10.3 – L'intérieur : structure, murs, sols, plafonds, fenêtres, isolation",
+      "10.4 – Les réseaux : électricité, plomberie, chauffage, ventilation, compteur",
+      "10.5 – Le potentiel de transformation : murs porteurs, combles, division, changement d'usage",
+      "10.6 – Le voisinage et l'environnement : nuisances, commerces, transports, projets urbains",
+      "10.7 – La check-list de visite (25 points) et le compte-rendu structuré"
+     ],
+     "exercices": [
+      "Remplir la check-list de 25 points lors d'une visite réelle ou virtuelle",
+      "Prendre 15 photos structurées (extérieur, parties communes, chaque pièce, réseaux)",
+      "Rédiger un compte-rendu de visite en 20 lignes",
+      "Identifier 3 défauts majeurs et estimer leur coût de réparation"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Évaluer les travaux : chiffrer sans se tromper",
+     "objectif": "Estimer le budget travaux avec une marge de sécurité réaliste pour intégrer ce coût dans l'analyse de rentabilité.",
+     "sections": [
+      "11.1 – Les postes de travaux : gros œuvre, second œuvre, finitions, équipements",
+      "11.2 – Les ordres de grandeur : coût au m² par type d'intervention",
+      "11.3 – Faire établir des devis : combien demander, comment comparer, les pièges",
+      "11.4 – La marge de sécurité : pourquoi ajouter 15 à 25 % au devis",
+      "11.5 – Les travaux à forte valeur ajoutée vs les travaux cosmétiques",
+      "11.6 – Le calendrier des travaux et son impact sur la vacance locative"
+     ],
+     "exercices": [
+      "Chiffrer les travaux d'un T2 de 45 m² à rénover (grille fournie)",
+      "Comparer deux devis fictifs et identifier les incohérences",
+      "Calculer l'impact de 2 mois de travaux sur le cash-flow annuel",
+      "Lister les 5 travaux qui augmentent le plus la valeur locative au m²"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "La décision finale : le go / no-go éclairé",
+     "objectif": "Synthétiser toutes les données en une décision binaire et rationnelle, en éliminant l'émotion et le biais de confirmation.",
+     "sections": [
+      "12.1 – La grille de décision pondérée : 12 critères notés sur 5",
+      "12.2 – Le test du pire scénario : si tout va mal, est-ce que je survis ?",
+      "12.3 – Le biais de l'engagement : pourquoi on veut dire oui après 3 visites",
+      "12.4 – Le regard extérieur : faire valider son analyse par un pair ou un mentor",
+      "12.5 – Le tableau comparatif : mettre en concurrence 2 ou 3 biens finalistes",
+      "12.6 – La décision en une phrase : formuler son go ou no-go par écrit"
+     ],
+     "exercices": [
+      "Noter un bien réel sur la grille de 12 critères",
+      "Écrire le pire scénario plausible en 10 lignes et vérifier sa survie financière",
+      "Demander un avis extérieur à une personne de confiance",
+      "Rédiger sa décision finale en une phrase avec justification en 3 lignes"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – LA POSE DE LA PREMIÈRE PIERRE : Négocier, acheter et sécuriser",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "L'art de la négociation : obtenir le juste prix sans braquer",
+     "objectif": "Donner des techniques concrètes de négociation fondées sur les données, l'écoute et la patience, loin de l'agressivité stérile.",
+     "sections": [
+      "13.1 – Préparer la négociation : connaître la valeur réelle, l'historique du prix, la motivation du vendeur",
+      "13.2 – Les leviers factuels : travaux, charges, DPE, vacance locale, comparables",
+      "13.3 – La posture : écoute active, questions ouvertes, silence stratégique",
+      "13.4 – Formuler une offre : par écrit, argumentée, avec conditions suspensives",
+      "13.5 – Gérer la contre-offre : quand céder, quand maintenir, quand partir",
+      "13.6 – Négocier au-delà du prix : meubles inclus, délai, travaux à la charge du vendeur",
+      "13.7 – Les erreurs fatales : surenchérir par ego, négliger l'écrit, accepter sous pression"
+     ],
+     "exercices": [
+      "Analyser 3 annonces et calculer la décote justifiable par les travaux",
+      "Rédiger une lettre d'offre argumentée pour un bien fictif",
+      "Jeu de rôle : simuler une négociation avec un ami qui joue le vendeur",
+      "Lister 5 concessions non-monétaires à demander en plus du prix"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Du compromis à l'acte : sécuriser l'acquisition",
+     "objectif": "Accompagner le lecteur étape par étape dans le processus juridique de l'achat, pour éviter les pièges entre la signature et la remise des clés.",
+     "sections": [
+      "14.1 – Le compromis de vente : clauses essentielles, conditions suspensives, délai de rétractation",
+      "14.2 – Le rôle du notaire : vérifications, séquestre, purge du droit de préemption",
+      "14.3 – Les diagnostics obligatoires : DPE, amiante, plomb, termites, électricité, gaz, ERP",
+      "14.4 – La copropriété : PV d'AG, règlement, charges impayées, travaux votés",
+      "14.5 – L'acte authentique : lecture, vérifications, signature, remise des clés",
+      "14.6 – Les recours en cas de vice caché ou de non-conformité",
+      "14.7 – Le calendrier type : de J0 à la remise des clés en 90 jours"
+     ],
+     "exercices": [
+      "Relire un compromis type et surligner les 5 clauses à vérifier absolument",
+      "Vérifier la liste des diagnostics et leur validité sur un exemple",
+      "Préparer une check-list de 10 questions pour le notaire",
+      "Simuler le calendrier de son acquisition sur une frise chronologique"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Financer concrètement : du compromis au déblocage des fonds",
+     "objectif": "Gérer la phase opérationnelle du financement entre la signature du compromis et le déblocage effectif du prêt.",
+     "sections": [
+      "15.1 – Le délai de 45 jours : ce qui se passe entre le compromis et l'offre de prêt",
+      "15.2 – L'offre de prêt : conditions, validité, délai de réflexion de 10 jours",
+      "15.3 – L'assurance emprunteur : délégation, garanties (DC, PTIA, ITT, IPT)",
+      "15.4 – La garantie du prêt : hypothèque, caution mutuelle (Crédit Logement, SACCEF)",
+      "15.5 – Le déblocage des fonds : appel de fonds, frais intercalaires, différé d'amortissement",
+      "15.6 – Les frais annexes : notaire, caution, dossier, intercalaires – le vrai coût total",
+      "15.7 – Anticiper les imprévus : refus de dernière minute, changement de taux"
+     ],
+     "exercices": [
+      "Calculer le coût total du crédit sur 20 ans (intérêts + assurance + frais)",
+      "Comparer deux assurances emprunteur (tableau comparatif)",
+      "Simuler un différé d'amortissement de 6 mois pendant des travaux",
+      "Établir le budget global d'acquisition incluant tous les frais annexes"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Après l'achat : la transition vers l'exploitation",
+     "objectif": "Gérer les premières semaines post-acquisition : remise en état, mise en conformité, préparation à la mise en location.",
+     "sections": [
+      "16.1 – L'état des lieux d'entrée et la remise en état immédiate",
+      "16.2 – Les travaux de préparation : sécurité, conformité, esthétique",
+      "16.3 – Les obligations légales : détecteur de fumée, DPE à jour, décence",
+      "16.4 – L'ameublement et l'équipement (si meublé) : budget, durabilité, attractivité",
+      "16.5 – Les assurances : PNO, GLI (Garantie Loyers Impayés), responsabilité civile",
+      "16.6 – L'ouverture des compteurs, la déclaration fiscale initiale",
+      "16.7 – Le passage de relais : de propriétaire-acheteur à propriétaire-bailleur"
+     ],
+     "exercices": [
+      "Réaliser un état des lieux d'entrée type (grille fournie)",
+      "Lister les travaux de mise en conformité pour un bien fictif",
+      "Comparer deux contrats PNO et une GLI",
+      "Établir un budget ameublement pour un T2 meublé (15 postes)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – L'EXPLOITATION DE L'ÉDIFICE : Gérer, optimiser et rentabiliser",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "Trouver le bon locataire : sélection, bail et entrée en relation",
+     "objectif": "Sécuriser la relation locative dès le départ par une sélection rigoureuse et un bail protecteur, sans discrimination.",
+     "sections": [
+      "17.1 – Définir le profil cible : étudiant, jeune actif, famille, colocation",
+      "17.2 – L'annonce efficace : photos, texte, prix, canaux de diffusion",
+      "17.3 – La sélection des dossiers : critères objectifs, pièces à demander, scoring",
+      "17.4 – Le bail : clauses essentielles, durée, révision, dépôt de garantie",
+      "17.5 – L'état des lieux d'entrée : méthode, photos, précision",
+      "17.6 – Les interdictions légales : ce qu'on ne peut PAS demander ni refuser",
+      "17.7 – La gestion de la relation dès le premier jour : communication, réactivité"
+     ],
+     "exercices": [
+      "Rédiger une annonce pour un T2 de 45 m² en zone tendue",
+      "Construire une grille de scoring locataire (critères pondérés)",
+      "Relire un bail type et identifier 5 clauses à personnaliser",
+      "Simuler un état des lieux d'entrée en 20 points"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La gestion locative au quotidien : déléguer ou faire soi-même ?",
+     "objectif": "Comparer la gestion en direct et la gestion déléguée, fournir les outils et process pour une exploitation sereine.",
+     "sections": [
+      "18.1 – La gestion en direct : avantages, inconvénients, temps requis",
+      "18.2 – La gestion déléguée : choisir un gestionnaire, coût, mandat, contrôle",
+      "18.3 – Les outils numériques : logiciels de gestion, comptabilité, communication",
+      "18.4 – L'entretien courant et les réparations : qui paie quoi (décret de 2002)",
+      "18.5 – La gestion des impayés : prévention, relance, procédure, assurance GLI",
+      "18.6 – La vacance locative : causes, prévention, stratégie de relocation rapide",
+      "18.7 – Les obligations annuelles : révision du loyer, régularisation des charges, AG copropriété"
+     ],
+     "exercices": [
+      "Calculer le coût annuel d'une gestion déléguée à 7 %",
+      "Établir un calendrier annuel des tâches du bailleur (mois par mois)",
+      "Rédiger une lettre de relance pour un loyer impayé à J+5",
+      "Comparer deux logiciels de gestion locative (grille de 8 critères)"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Optimiser la rentabilité : augmenter la valeur sans tout casser",
+     "objectif": "Identifier les leviers concrets pour améliorer le rendement d'un bien déjà en exploitation : loyer, charges, fiscalité, petits travaux.",
+     "sections": [
+      "19.1 – La revalorisation du loyer : indexation IRL, travaux d'amélioration, relocation",
+      "19.2 – Réduire les charges : renégocier l'assurance, optimiser la copropriété, énergie",
+      "19.3 – Les petits travaux à fort ROI : cuisine, salle de bain, peinture, éclairage",
+      "19.4 – Le passage en meublé ou colocation : quand et comment",
+      "19.5 – Optimiser la fiscalité courante : charges déductibles, amortissement LMNP, déficit foncier",
+      "19.6 – Le refinancement : renégocier son prêt, racheter son assurance, dégager de la trésorerie",
+      "19.7 – Mesurer l'amélioration : recalculer le cash-flow et le rendement net-net"
+     ],
+     "exercices": [
+      "Calculer la revalorisation IRL sur un loyer de 750 € sur 3 ans",
+      "Lister 5 travaux de moins de 2 000 € qui augmentent le loyer de 5 %",
+      "Simuler le passage d'un bien nu en meublé : impact fiscal",
+      "Recalculer le rendement après une renégociation de taux de 0,5 %"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Gérer les situations difficiles : conflits, sinistres, impayés, départ",
+     "objectif": "Préparer le bailleur aux situations de crise avec des procédures claires, des recours et une posture adaptée.",
+     "sections": [
+      "20.1 – Le locataire en difficulté : écoute, échéancier, accompagnement social",
+      "20.2 – L'impayé caractérisé : mise en demeure, commandement de payer, procédure judiciaire",
+      "20.3 – Le sinistre : dégât des eaux, incendie, assurance, gestion avec le locataire",
+      "20.4 – Les nuisances et conflits de voisinage : médiation, syndic, recours",
+      "20.5 – Le départ du locataire : congé, préavis, état des lieux de sortie, restitution du dépôt",
+      "20.6 – La procédure d'expulsion : étapes, délais, trêve hivernale, accompagnement",
+      "20.7 – Protéger sa santé mentale : poser des limites, déléguer, ne pas subir"
+     ],
+     "exercices": [
+      "Rédiger une mise en demeure pour loyer impayé (modèle fourni)",
+      "Établir un protocole de gestion de sinistre en 6 étapes",
+      "Préparer une check-list d'état des lieux de sortie (15 points)",
+      "Lister 3 ressources d'aide (ADIL, conciliateur, assurance protection juridique)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VI – L'ÉLÉVATION ET LA PROTECTION : Fiscalité, risques et expansion",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "La fiscalité immobilière : payer le juste impôt, pas plus",
+     "objectif": "Donner une vision claire des régimes fiscaux applicables aux revenus locatifs et aux plus-values, pour optimiser légalement sa charge fiscale.",
+     "sections": [
+      "21.1 – Les revenus fonciers (location nue) : micro-foncier vs réel, charges déductibles, déficit",
+      "21.2 – Les BIC (location meublée) : micro-BIC vs réel, amortissement, plus-value",
+      "21.3 – La plus-value immobilière : calcul, abattements, exonérations (résidence principale, durée)",
+      "21.4 – La taxe foncière, la CFE, la taxe sur les logements vacants",
+      "21.5 – L'IFI (Impôt sur la Fortune Immobilière) : seuil, calcul, exonérations",
+      "21.6 – Les niches et dispositifs : Pinel, Denormandie, Malraux, monuments historiques – à qui ils profitent vraiment",
+      "21.7 – La planification fiscale : anticiper, lisser, structurer – sans fraude"
+     ],
+     "exercices": [
+      "Simuler l'imposition d'un revenu locatif de 10 000 €/an en micro-foncier vs réel",
+      "Calculer l'amortissement LMNP d'un bien à 180 000 € sur 25 ans",
+      "Estimer la plus-value imposable d'un bien vendu après 12 ans de détention",
+      "Lister 5 questions à poser à son expert-comptable en début d'année"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Gérer les risques : anticiper plutôt que subir",
+     "objectif": "Identifier les risques majeurs de l'investissement locatif et mettre en place des protections concrètes pour chacun.",
+     "sections": [
+      "22.1 – Le risque locatif : vacance, impayé, dégradation – prévention et couverture",
+      "22.2 – Le risque financier : hausse des taux, baisse des loyers, surendettement",
+      "22.3 – Le risque technique : vice caché, sinistre, obsolescence, copropriété dégradée",
+      "22.4 – Le risque juridique : évolution de la loi, encadrement des loyers, fiscalité",
+      "22.5 – Le risque personnel : divorce, décès, perte d'emploi, invalidité",
+      "22.6 – Les protections : assurances, clauses, épargne de précaution, diversification",
+      "22.7 – Le plan B : scénarios de sortie et de liquidation en cas de crise"
+     ],
+     "exercices": [
+      "Remplir une matrice risques × probabilité × impact (5 risques majeurs)",
+      "Vérifier que ses 3 assurances principales sont à jour (PNO, GLI, emprunteur)",
+      "Constituer un fonds de précaution : calculer 6 mois de charges",
+      "Écrire son plan B en 10 lignes : si je dois vendre dans 6 mois, que fais-je ?"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Du premier bien au portefeuille : la stratégie d'expansion",
+     "objectif": "Montrer comment passer d'un premier investissement à un portefeuille cohérent, en réinvestissant les gains et en structurant sa croissance.",
+     "sections": [
+      "23.1 – Le réinvestissement des cash-flows : capitaliser sans apport externe",
+      "23.2 – La stratégie BRRRR appliquée : acheter, rénover, louer, refinancer, recommencer",
+      "23.3 – La diversification géographique et typologique : réduire le risque concentration",
+      "23.4 – L'achat d'immeubles de rapport : avantages, financement, gestion",
+      "23.5 – Structurer son patrimoine : SCI, holding, démembrement – à partir de quand ?",
+      "23.6 – La délégation progressive : s'entourer pour changer d'échelle",
+      "23.7 – Le cap des 5, 10, 20 lots : ce qui change à chaque seuil"
+     ],
+     "exercices": [
+      "Dessiner son plan d'expansion sur 10 ans (nombre de biens, cash-flow cumulé)",
+      "Calculer le réinvestissement possible avec un cash-flow de 300 €/mois",
+      "Établir sa « dream team » : 7 professionnels à recruter progressivement",
+      "Fixer 3 objectifs chiffrés à 3 ans et les indicateurs de suivi"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Transmettre, vendre, pérenniser : penser au-delà de soi",
+     "objectif": "Aborder la dimension long terme : transmission, arbitrage, sortie progressive, et héritage patrimonial.",
+     "sections": [
+      "24.1 – La transmission de son patrimoine immobilier : donation, succession, démembrement",
+      "24.2 – L'arbitrage : quand vendre un bien pour en acheter un meilleur",
+      "24.3 – La sortie progressive : transformer le patrimoine locatif en rente ou en capital",
+      "24.4 – La dimension humaine : transmettre des connaissances, pas seulement des murs",
+      "24.5 – L'entretien du patrimoine sur 20, 30, 40 ans : plan de travaux, obsolescence",
+      "24.6 – Rester informé : veille réglementaire, fiscale, marché – les sources fiables",
+      "24.7 – Le mot de la fin : l'immobilier comme projet de vie, pas comme sprint"
+     ],
+     "exercices": [
+      "Simuler la transmission d'un bien à ses enfants (donation vs succession)",
+      "Établir un plan de travaux sur 20 ans pour son premier bien",
+      "Écrire une lettre à son « futur moi » dans 10 ans sur ses objectifs patrimoniaux",
+      "Créer sa routine de veille mensuelle : 3 sources, 1 heure, 1 action"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,618 @@
+{
+ "titre": "Le Rayonnement Numérique",
+ "sous_titre": "Se faire connaître, bâtir son audience et vendre sur internet dans l'espace francophone — de la première publication au premier million de vues",
+ "bibliographie": [
+  {
+   "auteur": "Seth Godin",
+   "titre": "This Is Marketing: You Can't Be Seen Until You Learn to See",
+   "annee": "2018",
+   "idee": "Le marketing moderne repose sur la permission, la niche et la promesse tenue. On ne crie plus vers la masse, on chuchote à la bonne tribu.",
+   "apport": "Cadre philosophique du positionnement : définir sa plus petite audience viable avant toute tactique."
+  },
+  {
+   "auteur": "Gary Vaynerchuk",
+   "titre": "Crushing It!: How Great Entrepreneurs Build Their Business and Influence—and How You Can, Too",
+   "annee": "2018",
+   "idee": "La marque personnelle se construit par une production massive et authentique de contenu sur chaque plateforme, avec une voix propre.",
+   "apport": "Études de cas multi-plateformes ; modèle de régularité et d'authenticité adapté aux créateurs francophones."
+  },
+  {
+   "auteur": "Donald Miller",
+   "titre": "Building a StoryBrand: Clarify Your Message So Customers Will Listen",
+   "annee": "2017",
+   "idee": "Le client est le héros de l'histoire ; la marque est le guide. Un message clair suit la structure narrative en sept étapes.",
+   "apport": "Grille narrative pour structurer le message de marque personnelle et les pages de vente."
+  },
+  {
+   "auteur": "Russell Brunson",
+   "titre": "Expert Secrets: The Underground Playbook for Finding Your Voice, Building a Tribe, and Changing the World",
+   "annee": "2017",
+   "idee": "L'autorité en ligne se construit via un « héros épique », des histoires de transformation et une offre irrésistible présentée en webinaire ou séquence.",
+   "apport": "Architecture de la séquence de vente et du storytelling de transformation pour les coachs et formateurs."
+  },
+  {
+   "auteur": "Russell Brunson",
+   "titre": "DotCom Secrets: The Underground Playbook for Growing Your Company Online with Sales Funnels",
+   "annee": "2015",
+   "idee": "Chaque produit a son tunnel de vente dédié ; la valeur perçue se construit par l'empilement et la rareté.",
+   "apport": "Schémas de tunnels adaptés aux infoproduits et services francophones."
+  },
+  {
+   "auteur": "Russell Brunson",
+   "titre": "Traffic Secrets: The Underground Playbook for Filling Your Websites and Funnels with Your Dream Customers",
+   "annee": "2020",
+   "idee": "Le trafic se conquiert en occupant les « piscines » où se trouvent déjà les clients idéaux, via le contenu et les partenariats.",
+   "apport": "Stratégies d'acquisition gratuites et payantes transposables aux marchés maghrébins."
+  },
+  {
+   "auteur": "Joe Pulizzi",
+   "titre": "Content Inc.: Start a Content-First Business, Build a Massive Audience and Become Radically Successful",
+   "annee": "2015",
+   "idee": "Créer d'abord une audience grâce à un contenu de niche régulier, puis monétiser ensuite : le contenu est l'actif principal.",
+   "apport": "Méthodologie « audience d'abord » et calendrier éditorial sur 12 mois."
+  },
+  {
+   "auteur": "Ann Handley",
+   "titre": "Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content",
+   "annee": "2014",
+   "idee": "Tout marketeur est un rédacteur ; la qualité rédactionnelle et la clarté priment sur la quantité.",
+   "apport": "Techniques de copywriting et de rédaction web pour les créateurs non-anglophones."
+  },
+  {
+   "auteur": "Allan Dib",
+   "titre": "The 1-Page Marketing Plan: Get New Customers, Make More Money, and Stand Out from the Crowd",
+   "annee": "2016",
+   "idee": "Le marketing tient sur une page en neuf cases : avant, pendant et après la vente. La simplicité bat la complexité.",
+   "apport": "Canevas simplifié de plan marketing pour entrepreneurs solos et TPE francophones."
+  },
+  {
+   "auteur": "Jonah Berger",
+   "titre": "Contagious: Why Things Catch On",
+   "annee": "2013",
+   "idee": "Six principes (STEPPS) expliquent la viralité : monnaie sociale, déclencheurs, émotion, public, valeur pratique, histoires.",
+   "apport": "Grille d'analyse pour concevoir du contenu partageable dans les communautés francophones."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence: The Psychology of Persuasion",
+   "annee": "2006 (rév. 2021)",
+   "idee": "Sept principes universels de persuasion : réciprocité, engagement, preuve sociale, autorité, sympathie, rareté, unité.",
+   "apport": "Intégration éthique de ces leviers dans les séquences e-mail et les pages de vente."
+  },
+  {
+   "auteur": "Chip Heath & Dan Heath",
+   "titre": "Made to Stick: Why Some Ideas Survive and Others Die",
+   "annee": "2007",
+   "idee": "Les idées mémorables sont simples, inattendues, concrètes, crédibles, émotionnelles et narratives (SUCCESs).",
+   "apport": "Formulation du message de marque en une phrase mémorable et création de hooks."
+  },
+  {
+   "auteur": "Nir Eyal",
+   "titre": "Hooked: How to Build Habit-Forming Products",
+   "annee": "2014",
+   "idee": "Les produits qui créent l'habitude suivent une boucle : déclencheur, action, récompense variable, investissement.",
+   "apport": "Conception de newsletters et de communautés qui fidélisent l'audience semaine après semaine."
+  },
+  {
+   "auteur": "Chris Guillebeau",
+   "titre": "The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future",
+   "annee": "2012",
+   "idee": "Un micro-business en ligne peut démarrer avec moins de 100 $ ; l'offre se construit autour d'une compétence et d'un besoin identifié.",
+   "apport": "Modèles de lancement à très faible budget pour les entrepreneurs du Maghreb."
+  },
+  {
+   "auteur": "Austin Kleon",
+   "titre": "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
+   "annee": "2012",
+   "idee": "La créativité consiste à recombiner des influences ; il faut collectionner, transformer, publier sans attendre la perfection.",
+   "apport": "Débloquer la création de contenu chez les débutants et construire une voix originale par hybridation."
+  },
+  {
+   "auteur": "Donald Miller (avec Dr. J.J. Peterson)",
+   "titre": "Marketing Made Simple: A Step-by-Step StoryBrand Guide for Any Business",
+   "annee": "2020",
+   "idee": "Un site web doit répondre en cinq secondes à : que proposez-vous, en quoi cela améliore ma vie, comment l'obtenir.",
+   "apport": "Checklist pour optimiser les sites et landing pages en français."
+  },
+  {
+   "auteur": "Cole Nussbaumer Knaflic",
+   "titre": "Storytelling with Data: A Data Visualization Guide for Business Professionals",
+   "annee": "2015",
+   "idee": "Les données racontent une histoire ; la visualisation claire persuade plus qu'un long discours.",
+   "apport": "Présenter ses résultats et ses études de cas de manière visuelle dans le contenu et les pitchs."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I — LES FONDATIONS : IDENTITÉ, POSITIONNEMENT ET ÉTAT D'ESPRIT NUMÉRIQUE",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi votre nom est votre premier actif",
+     "objectif": "Faire comprendre que la marque personnelle n'est pas un luxe mais une infrastructure économique, surtout dans les marchés francophones et maghrébins où la confiance interpersonnelle domine.",
+     "sections": [
+      "1.1 Le basculement : de l'entreprise-marque à l'individu-marque",
+      "1.2 La confiance comme monnaie dans l'espace francophone et maghrébin",
+      "1.3 Les trois piliers du rayonnement : visibilité, crédibilité, générosité",
+      "1.4 Le mythe du « trop tard » : pourquoi chaque niche a encore de la place",
+      "1.5 Cartographier vos actifs invisibles : compétences, réseau, vécu",
+      "1.6 L'anti-portrait : ce que la marque personnelle n'est PAS"
+     ],
+     "exercices": [
+      "Audit personnel : lister 20 compétences, expériences et histoires qui vous distinguent",
+      "Test du « Qui suis-je en une phrase ? » validé par trois proches",
+      "Cartographie de votre réseau actuel sur une matrice influence × proximité",
+      "Rédaction de votre « manifeste de marque » en 150 mots"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Définir son territoire : niche, audience et promesse",
+     "objectif": "Guider le lecteur dans le choix d'un positionnement précis et différenciant, en évitant le piège du généraliste.",
+     "sections": [
+      "2.1 La plus petite audience viable : penser tribu, pas masse",
+      "2.2 Le triangle niche × compétence × passion",
+      "2.3 Profiler son audience : douleurs, désirs, langage",
+      "2.4 Formuler une promesse unique en une phrase",
+      "2.5 Analyser cinq concurrents francophones sans les copier",
+      "2.6 Adapter la niche aux réalités du Maghreb et de l'Afrique francophone"
+     ],
+     "exercices": [
+      "Remplir le canevas « Je aide [qui] à [résultat] grâce à [méthode] »",
+      "Interviewer trois personnes de l'audience cible et retranscrire leurs mots exacts",
+      "Tableau comparatif de cinq concurrents : forces, faiblesses, angles morts",
+      "Rédiger trois versions de sa promesse et tester auprès de dix personnes"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'architecture du message : storytelling et clarté",
+     "objectif": "Construire un message de marque mémorable en s'appuyant sur la structure narrative et les principes de clarté.",
+     "sections": [
+      "3.1 Le client est le héros : inverser la perspective",
+      "3.2 La grille en sept temps du StoryBrand appliquée à soi",
+      "3.3 Les six filtres SUCCESs pour rendre une idée inoubliable",
+      "3.4 Votre histoire d'origine : trouver le « moment déclencheur »",
+      "3.5 Le pitch en 30 secondes, 3 minutes et 30 minutes",
+      "3.6 Le langage de votre audience : parler comme elle, pas comme un manuel",
+      "3.7 La phrase-fétiche : créer une signature verbale"
+     ],
+     "exercices": [
+      "Écrire son « histoire d'origine » en 300 mots selon la grille héros-guide-plan",
+      "Transformer un message technique en analogie concrète",
+      "Enregistrer son pitch de 30 secondes, le réécouter et l'itérer trois fois",
+      "Créer une liste de dix expressions récurrentes de son audience cible"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "L'écosystème numérique : choisir ses terrains de jeu",
+     "objectif": "Présenter une vue d'ensemble des canaux digitaux et aider à sélectionner ceux qui correspondent à la stratégie, au temps disponible et au marché cible.",
+     "sections": [
+      "4.1 Cartographie des canaux : réseaux sociaux, blog, e-mail, podcast, vidéo",
+      "4.2 La règle du « un canal principal, deux secondaires »",
+      "4.3 Spécificités des plateformes en francophonie : LinkedIn, Instagram, TikTok, YouTube, Facebook",
+      "4.4 Le Maghreb connecté : WhatsApp, groupes Facebook, Telegram, plateformes locales",
+      "4.5 Le site web comme quartier général : pourquoi il reste indispensable",
+      "4.6 Matrice effort × impact × audience pour choisir"
+     ],
+     "exercices": [
+      "Remplir la matrice de sélection des canaux selon son profil",
+      "Créer ou optimiser ses profils sur deux plateformes prioritaires",
+      "Lister dix groupes et communautés francophones pertinents pour sa niche",
+      "Rédiger une « charte de présence » : ton, fréquence, formats par canal"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II — L'ART DU CONTENU : CRÉER, ÉCRIRE, CAPTIVER",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La machine à idées : ne plus jamais manquer de sujets",
+     "objectif": "Installer un système de collecte et de génération d'idées de contenu qui fonctionne en continu.",
+     "sections": [
+      "5.1 Les cinq sources inépuisables : questions, erreurs, actualités, conversations, curiosité",
+      "5.2 Le carnet à idées numérique et la capture quotidienne",
+      "5.3 La méthode des « piliers de contenu » : trois à cinq thèmes récurrents",
+      "5.4 Recycler, décliner, hybrider : une idée, dix formats",
+      "5.5 S'inspirer sans plagier : la recombinaison créative",
+      "5.6 Planifier 90 jours de contenu en une après-midi"
+     ],
+     "exercices": [
+      "Créer son « second cerveau » de collecte (Notion, Obsidian ou carnet)",
+      "Générer 50 idées de contenu en 60 minutes via les cinq sources",
+      "Définir ses trois piliers et décliner dix sujets par pilier",
+      "Construire un calendrier éditorial sur 90 jours"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Écrire pour l'écran : hooks, structure et lisibilité",
+     "objectif": "Maîtriser les techniques de rédaction web qui captent l'attention en trois secondes et maintiennent la lecture.",
+     "sections": [
+      "6.1 Le hook : les dix ouvertures qui stoppent le scroll",
+      "6.2 La structure en « AIDA » et ses variantes pour le contenu long",
+      "6.3 Écrire comme on parle : oralité, rythme, phrases courtes",
+      "6.4 La mise en forme visuelle : titres, listes, gras, espaces",
+      "6.5 Le CTA (appel à l'action) intégré naturellement",
+      "6.6 Réécrire, couper, publier : le processus en trois passes"
+     ],
+     "exercices": [
+      "Réécrire un texte existant avec trois hooks différents et tester en A/B",
+      "Transformer un article de 1 500 mots en thread Twitter/X et en carrousel",
+      "Chronométrer la rédaction d'un post de 300 mots et viser moins de 25 minutes",
+      "Faire relire un texte par un non-expert et mesurer la compréhension"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "La vidéo et l'audio : parler à la caméra et au micro",
+     "objectif": "Démystifier la production vidéo et podcast pour les créateurs francophones, avec du matériel accessible.",
+     "sections": [
+      "7.1 Pourquoi la vidéo domine : algorithmes, confiance, mémorisation",
+      "7.2 Le matériel minimal viable : smartphone, micro-cravate, lumière naturelle",
+      "7.3 Structurer une vidéo courte (Reels, TikTok, Shorts) en 30 à 90 secondes",
+      "7.4 Structurer une vidéo longue (YouTube) : rétention et chapitrage",
+      "7.5 Le podcast francophone : format, régularité, distribution",
+      "7.6 Vaincre la peur de la caméra : exposition progressive",
+      "7.7 Sous-titres, transcription et accessibilité"
+     ],
+     "exercices": [
+      "Tourner et publier une vidéo de 60 secondes avec son téléphone",
+      "Écrire le script d'une vidéo YouTube de 8 minutes selon le modèle hook-valeur-CTA",
+      "Enregistrer un pilote podcast de 15 minutes et le faire écouter à trois personnes",
+      "Créer un kit de tournage fixe chez soi en moins de 100 euros"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le design et l'image : une identité visuelle cohérente",
+     "objectif": "Donner les bases d'une identité visuelle professionnelle sans nécessiter un graphiste à plein temps.",
+     "sections": [
+      "8.1 Les quatre éléments : palette, typographie, logo, gabarits",
+      "8.2 Outils accessibles : Canva, Figma, Adobe Express",
+      "8.3 Créer un kit visuel déclinable pour chaque plateforme",
+      "8.4 La photographie personnelle : portraits, coulisses, lifestyle",
+      "8.5 L'infographie et la data-visualisation comme aimants à partages",
+      "8.6 Cohérence visuelle et reconnaissance instantanée"
+     ],
+     "exercices": [
+      "Concevoir sa charte graphique en cinq éléments avec Canva",
+      "Créer trois gabarits de posts réutilisables",
+      "Réaliser un mini-shooting photo avec un smartphone et un drap blanc",
+      "Transformer une donnée clé de son secteur en infographie partageable"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "La régularité créative : produire sans s'épuiser",
+     "objectif": "Mettre en place un rythme de publication durable qui protège l'énergie créative et évite le burn-out du créateur.",
+     "sections": [
+      "9.1 La fréquence optimale par canal : données et bon sens",
+      "9.2 Le batch production : regrouper, enregistrer, programmer",
+      "9.3 Les rituels créatifs et la gestion de l'énergie",
+      "9.4 Déléguer et outiller : IA, assistants, templates",
+      "9.5 Le droit à l'imperfection : publier à 80 %",
+      "9.6 Mesurer sans obsession : les trois indicateurs qui comptent"
+     ],
+     "exercices": [
+      "Bloquer deux créneaux hebdomadaires de « batch » dans son agenda",
+      "Programmer deux semaines de contenu à l'avance",
+      "Lister cinq tâches délégables ou automatisables dans sa production",
+      "Tenir un journal créatif pendant 30 jours pour identifier ses pics d'énergie"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III — BÂTIR SON AUDIENCE : RÉSEAUX, COMMUNAUTÉ ET CONFIANCE",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Les réseaux sociaux : stratégies par plateforme",
+     "objectif": "Détaille les tactiques spécifiques à LinkedIn, Instagram, TikTok, YouTube, X (Twitter) et Facebook, adaptées au contexte francophone.",
+     "sections": [
+      "10.1 LinkedIn : le levier B2B et thought leadership francophone",
+      "10.2 Instagram : carrousels, Reels et stories pour la proximité",
+      "10.3 TikTok : viralité, authenticité et marché maghrébin",
+      "10.4 YouTube : le SEO vidéo et la bibliothèque permanente",
+      "10.5 X (Twitter) et Threads : conversation et autorité en temps réel",
+      "10.6 Facebook et les groupes : la puissance communautaire au Maghreb",
+      "10.7 Adapter le format au canal sans se démultiplier"
+     ],
+     "exercices": [
+      "Optimiser son profil LinkedIn avec un titre orienté résultat et un « À propos » narratif",
+      "Publier cinq carrousels Instagram en une semaine et analyser les statistiques",
+      "Créer une série de trois TikToks éducatifs dans sa niche",
+      "Rejoindre trois groupes Facebook actifs de sa niche et y apporter de la valeur pendant deux semaines"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "L'e-mail : l'actif que personne ne peut vous retirer",
+     "objectif": "Construire et animer une liste e-mail engagée, canal le plus rentable et le plus pérenne du marketing digital.",
+     "sections": [
+      "11.1 Pourquoi l'e-mail surpasse les réseaux en conversion",
+      "11.2 Choisir son outil : Mailchimp, Brevo, ConvertKit, systèmes locaux",
+      "11.3 La page de capture et le lead magnet irrésistible",
+      "11.4 La séquence de bienvenue : les cinq premiers e-mails",
+      "11.5 La newsletter hebdomadaire : format, ton, régularité",
+      "11.6 Segmentation et personnalisation : parler à chaque sous-groupe",
+      "11.7 Conformité RGPD et spécificités légales francophones"
+     ],
+     "exercices": [
+      "Créer un lead magnet (PDF, mini-formation, checklist) en une journée",
+      "Mettre en place une séquence automatisée de cinq e-mails",
+      "Rédiger et envoyer sa première newsletter à une liste test",
+      "Atteindre 100 abonnés en 30 jours avec trois tactiques d'acquisition"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "La communauté : transformer les followers en tribu",
+     "objectif": "Passer d'une audience passive à une communauté active et engagée qui amplifie le message.",
+     "sections": [
+      "12.1 La différence entre audience et communauté",
+      "12.2 Les espaces communautaires : groupes privés, Discord, WhatsApp, Slack",
+      "12.3 Les rituels communautaires : lives, défis, Q&A hebdomadaires",
+      "12.4 Donner un nom et une identité à sa tribu",
+      "12.5 L'UGC : encourager le contenu généré par les membres",
+      "12.6 Gérer les trolls, modérer et maintenir un espace sain"
+     ],
+     "exercices": [
+      "Lancer un groupe WhatsApp ou Telegram pour ses 50 premiers abonnés engagés",
+      "Organiser un live Q&A de 30 minutes et recueillir les questions",
+      "Créer un défi communautaire de 7 jours lié à sa thématique",
+      "Mettre en place un système de reconnaissance des membres actifs"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Le réseautage stratégique : collaborations, interviews et partenariats",
+     "objectif": "Accélérer la visibilité en s'appuyant sur les audiences des autres, les médias et les alliances stratégiques.",
+     "sections": [
+      "13.1 La loi de la générosité : donner avant de demander",
+      "13.2 Identifier et contacter vingt créateurs complémentaires",
+      "13.3 L'interview croisée : podcast, live, article invité",
+      "13.4 Les partenariats de contenu et les co-créations",
+      "13.5 Les médias francophones et maghrébins : presse, radio, webzines",
+      "13.6 Les événements : conférences, webinaires conjoints, masterclass"
+     ],
+     "exercices": [
+      "Rédiger trois modèles de messages de prise de contact personnalisés",
+      "Proposer et réaliser une interview croisée en podcast ou live",
+      "Écrire un article invité pour un blog ou média francophone de sa niche",
+      "Planifier un webinaire co-animé avec un partenaire dans les 60 jours"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La preuve sociale et l'autorité : se rendre incontournable",
+     "objectif": "Construire méthodiquement les signaux de crédibilité qui transforment un inconnu en référence.",
+     "sections": [
+      "14.1 Les sept formes de preuve sociale et comment les accumuler",
+      "14.2 Témoignages, études de cas et résultats chiffrés",
+      "14.3 Les certifications, publications et prises de parole",
+      "14.4 Le « halo effect » : s'associer à des marques et des événements reconnus",
+      "14.5 La page « À propos » et le media kit : vos vitrines de crédibilité",
+      "14.6 Gérer la critique et transformer les objections en contenu"
+     ],
+     "exercices": [
+      "Collecter cinq témoignages clients ou lecteurs et les mettre en forme",
+      "Rédiger une étude de cas détaillée d'un projet ou d'un accompagnement",
+      "Créer un media kit d'une page avec chiffres clés et propositions de collaboration",
+      "Soumettre une candidature pour intervenir dans un événement ou un podcast dans les 90 jours"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV — CONVERTIR ET VENDRE : DU CONTENU AU CHIFFRE D'AFFAIRES",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "L'offre irrésistible : concevoir ce que l'on va vendre",
+     "objectif": "Structurer une offre de produit ou service digitale claire, désirable et adaptée au pouvoir d'achat francophone.",
+     "sections": [
+      "15.1 Les quatre grandes familles d'offres : services, formations, produits numériques, abonnements",
+      "15.2 Le principe de la « value ladder » : du gratuit au premium",
+      "15.3 Fixer un prix juste dans les marchés francophones et maghrébins",
+      "15.4 Le packaging : nom, promesse, bonus, garantie",
+      "15.5 Valider l'offre avant de la créer : préventes et listes d'attente",
+      "15.6 L'offre « no-brainer » : rendre le oui plus facile que le non"
+     ],
+     "exercices": [
+      "Dessiner sa « value ladder » avec au moins quatre niveaux de prix",
+      "Rédiger la fiche de vente de son offre en suivant la grille StoryBrand",
+      "Lancer une prévente ou une liste d'attente pour valider l'intérêt",
+      "Interviewer cinq clients potentiels sur leur perception du prix"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Le tunnel de vente : le parcours du visiteur au client",
+     "objectif": "Construire un entonnoir de conversion adapté aux produits digitaux et services, avec des outils accessibles.",
+     "sections": [
+      "16.1 Anatomie d'un tunnel : attirer, capturer, nourrir, convertir, fidéliser",
+      "16.2 La landing page qui convertit : structure, copy, design",
+      "16.3 Le webinaire et la masterclass comme moteurs de vente",
+      "16.4 Les tunnels simplifiés pour les marchés émergents (WhatsApp, paiement mobile)",
+      "16.5 Outils : Systeme.io, ClickFunnels, WordPress + WooCommerce, solutions locales",
+      "16.6 Mesurer et optimiser : taux de conversion, coût d'acquisition, valeur vie"
+     ],
+     "exercices": [
+      "Construire un tunnel simple en cinq pages avec Systeme.io ou équivalent",
+      "Écrire le script d'un webinaire de vente en quatre parties",
+      "Mettre en place un paiement en ligne adapté à sa zone géographique",
+      "Lancer un test A/B sur l'accroche de sa landing page"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Le copywriting qui vend : textes, e-mails et scripts",
+     "objectif": "Acquérir les techniques de rédaction persuasive pour les pages de vente, les e-mails de lancement et les scripts vidéo.",
+     "sections": [
+      "17.1 Les sept principes de Cialdini appliqués au texte de vente",
+      "17.2 La structure PAS, AIDA et les « quatre U » du titre",
+      "17.3 Écrire une page de vente longue qui se lit comme une histoire",
+      "17.4 La séquence de lancement : pré-lancement, ouverture, urgence, clôture",
+      "17.5 L'art de l'objet d'e-mail et de la première ligne",
+      "17.6 Éthique et persuasion : vendre sans manipuler"
+     ],
+     "exercices": [
+      "Réécrire une page de vente existante avec la structure PAS",
+      "Écrire une séquence de sept e-mails de lancement",
+      "Rédiger trois objets d'e-mail pour un même message et mesurer le taux d'ouverture",
+      "Analyser une page de vente concurrente et identifier cinq techniques utilisées"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La publicité en ligne : amplifier sans se ruiner",
+     "objectif": "Maîtriser les bases de la publicité payante (Meta, Google, YouTube, TikTok) avec des budgets adaptés aux marchés francophones.",
+     "sections": [
+      "18.1 Quand passer au payant : les prérequis organiques",
+      "18.2 Meta Ads : ciblage, créas, audiences lookalike",
+      "18.3 Google Ads et YouTube Ads : capter l'intention",
+      "18.4 TikTok Ads et Snapchat : toucher la jeunesse maghrébine",
+      "18.5 Budgets progressifs : de 5 € par jour à la scalabilité",
+      "18.6 Lire les métriques : CPC, CPM, ROAS, taux de conversion",
+      "18.7 Les erreurs fatales et comment les éviter"
+     ],
+     "exercices": [
+      "Créer un compte Meta Business Suite et configurer le pixel",
+      "Lancer une campagne de test à 5 €/jour pendant sept jours",
+      "Produire trois variantes de publicité (image, vidéo courte, carrousel)",
+      "Construire un tableau de suivi des dépenses et du ROAS hebdomadaire"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Fidéliser, relancer et augmenter la valeur client",
+     "objectif": "Transformer un achat unique en relation durable et maximiser la valeur vie client (LTV) sans multiplier les coûts d'acquisition.",
+     "sections": [
+      "19.1 L'économie de la rétention : pourquoi garder un client coûte cinq fois moins que d'en acquérir un",
+      "19.2 Le parcours post-achat : l'onboarding comme première impression décisive",
+      "19.3 Les séquences de relance automatisées : cross-selling, up-selling et renouvellement",
+      "19.4 Créer des offres récurrentes : abonnements, clubs privés et maintenances",
+      "19.5 La surprise et le cadeau inattendu : déclencher la réciprocité après la vente",
+      "19.6 Gérer les insatisfactions et transformer un client mécontent en ambassadeur"
+     ],
+     "exercices": [
+      "Cartographier le parcours client sur 90 jours après le premier achat",
+      "Rédiger une séquence de trois e-mails d'onboarding pour votre offre principale",
+      "Concevoir une offre complémentaire (up-sell ou cross-sell) logique et la tester sur dix clients existants",
+      "Mettre en place un système simple de collecte d'avis à chaud (formulaire ou message WhatsApp)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V — LE MOTEUR DE CROISSANCE : ANALYSE, AUTOMATISATION ET PASSAGE À L'ÉCHELLE",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Lire ses chiffres : les indicateurs qui pilotent la croissance",
+     "objectif": "Apprendre à naviguer dans les données sans se noyer, en identifiant les métriques clés qui dictent les décisions stratégiques.",
+     "sections": [
+      "20.1 Le tableau de bord minimaliste : les sept chiffres à regarder chaque semaine",
+      "20.2 Trafic, engagement et conversion : comprendre la cascade des taux",
+      "20.3 Le coût d'acquisition client (CAC) face à la valeur vie (LTV)",
+      "20.4 Analyser les statistiques natives : Instagram Insights, YouTube Studio, LinkedIn Analytics",
+      "20.5 Les tests A/B appliqués au contenu et aux pages de vente",
+      "20.6 Éviter le piège de la vanité : likes contre revenus"
+     ],
+     "exercices": [
+      "Créer un tableau de bord hebdomadaire sur une feuille ou un tableur avec vos sept métriques clés",
+      "Analyser vos trois contenus les plus performants du dernier trimestre pour en extraire un modèle",
+      "Calculer votre CAC actuel si vous avez déjà vendu, ou estimer votre seuil de rentabilité",
+      "Lancer un test A/B sur un titre de page de capture ou un objet d'e-mail pendant 7 jours"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "L'automatisation et l'intelligence artificielle au service du créateur",
+     "objectif": "Utiliser la technologie pour démultiplier son temps et sa portée sans perdre l'authenticité humaine qui fonde la marque personnelle.",
+     "sections": [
+      "21.1 Ce qu'il faut automatiser et ce qu'il faut garder humain : la règle des 80/20",
+      "21.2 Les outils d'automatisation marketing : Zapier, Make, et intégrations CRM",
+      "21.3 L'IA générative comme assistant de recherche, de brouillon et d'idéation",
+      "21.4 Chatbots et réponses automatisées sur WhatsApp et Messenger pour le marché maghrébin",
+      "21.5 Programmer et distribuer : Buffer, Metricool, Hootsuite et alternatives",
+      "21.6 Préserver sa voix : comment éditer et humaniser le travail de la machine"
+     ],
+     "exercices": [
+      "Automatiser l'ajout des nouveaux inscrits à votre newsletter dans un fichier CRM centralisé",
+      "Générer vingt idées de sujets avec une IA, puis les réécrire intégralement avec votre propre ton",
+      "Configurer un message d'accueil automatique et pertinent sur WhatsApp Business",
+      "Planifier un mois entier de publications sur deux plateformes en une seule session de deux heures"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Spécificités et conquête des marchés francophones et maghrébins",
+     "objectif": "Adapter les stratégies globales aux réalités culturelles, linguistiques, économiques et technologiques de la France, de l'Afrique francophone et du Maghreb.",
+     "sections": [
+      "22.1 Le paysage numérique maghrébin : pénétration mobile, usages et plateformes dominantes",
+      "22.2 La question linguistique : français classique, darija, codeswitching et arabe",
+      "22.3 Les solutions de paiement locales : CIB, Edahabia, Fawry, Mobile Money, Cash Plus",
+      "22.4 Bâtir la confiance dans des cultures où le commerce repose sur le lien social",
+      "22.5 Naviguer entre les cadres légaux : RGPD européen et lois numériques locales",
+      "22.6 Études de cas : créateurs et entreprises ayant réussi le pont entre les deux rives"
+     ],
+     "exercices": [
+      "Lister les trois méthodes de paiement les plus utilisées par votre cible au Maghreb et configurer celle qui manque",
+      "Traduire ou adapter votre promesse de marque en tenant compte des expressions culturelles locales",
+      "Identifier cinq influenceurs ou médias locaux incontournables dans votre niche pour amorcer un contact",
+      "Rédiger une politique de confidentialité simplifiée et adaptée à votre juridiction de résidence"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VI — PÉRENNISER SON EMPIRE NUMÉRIQUE : DURABILITÉ, ÉTHIQUE ET HÉRITAGE",
+   "chapitres": [
+    {
+     "numero": 23,
+     "titre": "Protéger sa marque : crises, droit et éthique numérique",
+     "objectif": "Anticiper les risques liés à la visibilité publique, gérer les crises de réputation et opérer dans un cadre juridique et moral irréprochable.",
+     "sections": [
+      "23.1 L'exposition publique : accepter la critique et ignorer le bruit",
+      "23.2 Protocole de gestion de crise : quand un bad buzz frappe",
+      "23.3 Propriété intellectuelle : protéger ses contenus, ses formations et son nom",
+      "23.4 Le plagiat et la contrefaçon dans l'espace francophone : comment réagir",
+      "23.5 L'éthique du marketing digital : transparence sur les affiliations et les promesses",
+      "23.6 Séparer l'homme de la marque : limites personnelles et santé mentale"
+     ],
+     "exercices": [
+      "Rédiger un protocole de réponse à chaud en cas de commentaire viral négatif ou de crise",
+      "Vérifier la disponibilité et déposer votre nom de marque ou de domaine dans votre pays de résidence",
+      "Auditer vos communications actuelles pour supprimer toute promesse exagérée ou non tenue",
+      "Définir trois limites personnelles strictes concernant votre temps d'écran et votre exposition"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le plan à dix ans : de la marque personnelle à l'institution",
+     "objectif": "Projeter le lecteur au-delà de la tactique quotidienne pour bâtir un actif pérenne, transmissible et capable d'évoluer vers une entreprise structurée.",
+     "sections": [
+      "24.1 Le cycle de vie d'une marque personnelle : lancement, plateau, pivot",
+      "24.2 De l'individu à l'équipe : recruter, déléguer et devenir le directeur de sa propre marque",
+      "24.3 Diversifier les actifs : médias, éditions, investissements, prises de participation",
+      "24.4 L'empreinte culturelle : utiliser son audience pour financer des causes ou créer des fondations",
+      "24.5 Préparer la transmission : vendre, céder ou archiver son écosystème numérique",
+      "24.6 Le mot de la fin : le rayonnement comme service aux autres"
+     ],
+     "exercices": [
+      "Dessiner la vision de votre marque personnelle dans dix ans sur une page (revenus, impact, équipe)",
+      "Identifier la première tâche opérationnelle à déléguer dans les 90 prochains jours",
+      "Lister trois projets à impact social ou culturel que votre audience pourrait soutenir",
+      "Écrire une lettre à votre futur vous décrivant l'empire numérique que vous avez bâti"
+     ]
+    }
+   ]
+  }
+ ]
+}

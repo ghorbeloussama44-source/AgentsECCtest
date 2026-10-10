@@ -1,0 +1,457 @@
+[
+ {
+  "slug": "bourse-debutants",
+  "theme": "Investir en bourse",
+  "sujet": "Guide pratique pour comprendre les marchés financiers et construire un premier portefeuille d'actions et d'ETF."
+ },
+ {
+  "slug": "epargne-precaution",
+  "theme": "Gérer son épargne",
+  "sujet": "Méthodes pour constituer, dimensionner et placer intelligemment son matelas de sécurité financière."
+ },
+ {
+  "slug": "preparer-retraite",
+  "theme": "Planifier retraite",
+  "sujet": "Stratégies d'investissement à long terme pour s'assurer des revenus passifs confortables après la vie active."
+ },
+ {
+  "slug": "comprendre-crypto",
+  "theme": "Comprendre crypto",
+  "sujet": "Introduction prudente aux blockchain et crypto-actifs, entre opportunités technologiques et gestion des risques."
+ },
+ {
+  "slug": "psychologie-argent",
+  "theme": "Psychologie financière",
+  "sujet": "Décryptage des biais cognitifs et des croyances limitantes qui entravent notre rapport à l'argent."
+ },
+ {
+  "slug": "independance-financiere",
+  "theme": "Atteindre FIRE",
+  "sujet": "Feuille de route pour optimiser ses dépenses et investir massivement afin d'atteindre l'indépendance financière."
+ },
+ {
+  "slug": "metaux-precieux",
+  "theme": "Métaux précieux",
+  "sujet": "Comment utiliser l'or et l'argent physiques comme valeur refuge dans une stratégie de diversification patrimoniale."
+ },
+ {
+  "slug": "financement-participatif",
+  "theme": "Crowdfunding pratique",
+  "sujet": "Guide pour lever des fonds ou investir via les plateformes de financement participatif immobilier et entrepreneurial."
+ },
+ {
+  "slug": "gerer-budget",
+  "theme": "Budget personnel",
+  "sujet": "Systèmes simples et automatisés pour suivre ses flux de trésorerie et épargner sans se priver au quotidien."
+ },
+ {
+  "slug": "crises-financieres",
+  "theme": "Histoire économique",
+  "sujet": "Analyse des grandes crises financières du passé pour apprendre à protéger son patrimoine dans le futur."
+ },
+ {
+  "slug": "techniques-vente",
+  "theme": "Maîtriser vente",
+  "sujet": "Méthodes de prospection, de traitement des objections et de closing pour les commerciaux et entrepreneurs."
+ },
+ {
+  "slug": "management-distant",
+  "theme": "Management distant",
+  "sujet": "Bonnes pratiques pour fédérer, évaluer et motiver des équipes réparties dans différents fuseaux horaires."
+ },
+ {
+  "slug": "lancer-freelance",
+  "theme": "Devenir freelance",
+  "sujet": "Guide complet pour trouver ses premiers clients, fixer ses tarifs et gérer l'administratif en solo."
+ },
+ {
+  "slug": "creer-ecommerce",
+  "theme": "Créer e-commerce",
+  "sujet": "Étapes pour lancer une boutique en ligne rentable, de la sélection des produits à l'optimisation du tunnel de vente."
+ },
+ {
+  "slug": "investir-franchise",
+  "theme": "Investir franchise",
+  "sujet": "Comment choisir, évaluer et financer un réseau de franchise pour entreprendre avec un modèle éprouvé."
+ },
+ {
+  "slug": "recruter-talents",
+  "theme": "Recrutement stratégique",
+  "sujet": "Techniques pour rédiger des offres attractives, mener des entretiens structurés et fidéliser les meilleurs profils."
+ },
+ {
+  "slug": "methodes-agiles",
+  "theme": "Gestion de projet",
+  "sujet": "Application des frameworks Scrum et Kanban pour livrer des projets complexes avec flexibilité et rapidité."
+ },
+ {
+  "slug": "reconversion-pro",
+  "theme": "Transition carrière",
+  "sujet": "Méthodologie pour identifier ses compétences transférables et bâtir un plan de reconversion professionnelle réaliste."
+ },
+ {
+  "slug": "business-plan",
+  "theme": "Business plan",
+  "sujet": "Construction d'un prévisionnel financier et d'un pitch deck convaincants pour les banques et les investisseurs."
+ },
+ {
+  "slug": "logistique-entreprise",
+  "theme": "Supply chain",
+  "sujet": "Optimisation des flux de marchandises, des stocks et des fournisseurs pour réduire les coûts opérationnels."
+ },
+ {
+  "slug": "innover-startup",
+  "theme": "Lean startup",
+  "sujet": "Méthodes pour tester rapidement des hypothèses marché et créer un produit minimum viable sans gaspiller de ressources."
+ },
+ {
+  "slug": "fideliser-clients",
+  "theme": "Customer success",
+  "sujet": "Stratégies pour transformer les acheteurs ponctuels en ambassadeurs fidèles grâce à une expérience client exceptionnelle."
+ },
+ {
+  "slug": "bases-juridiques",
+  "theme": "Droit des affaires",
+  "sujet": "Compréhension des fondamentaux juridiques et contractuels indispensables pour tout dirigeant d'entreprise non-juriste."
+ },
+ {
+  "slug": "amelioration-continue",
+  "theme": "Optimiser processus",
+  "sujet": "Application des principes du Lean Management pour éliminer les gaspillages et fluidifier les opérations internes."
+ },
+ {
+  "slug": "lever-fonds",
+  "theme": "Startup fundraising",
+  "sujet": "Préparation, ciblage et négociation pour réussir une levée de fonds auprès de business angels et VC."
+ },
+ {
+  "slug": "copywriting",
+  "theme": "Écriture persuasive",
+  "sujet": "Techniques de rédaction pour créer des pages de vente, emails et publicités qui captent l'attention et convertissent."
+ },
+ {
+  "slug": "meta-apprentissage",
+  "theme": "Apprendre à apprendre",
+  "sujet": "Stratégies cognitives pour assimiler de nouvelles compétences complexes en un temps record."
+ },
+ {
+  "slug": "booster-memoire",
+  "theme": "Techniques mémorisation",
+  "sujet": "Exercices et palais de mémoire pour retenir durablement des discours, des langues ou des données techniques."
+ },
+ {
+  "slug": "esprit-critique",
+  "theme": "Pensée critique",
+  "sujet": "Outils pour déjouer les manipulations, analyser l'information et prendre des décisions rationnelles."
+ },
+ {
+  "slug": "pensee-creative",
+  "theme": "Stimuler créativité",
+  "sujet": "Méthodes de brainstorming et de pensée latérale pour générer des idées innovantes et résoudre des blocages."
+ },
+ {
+  "slug": "devenir-polyglotte",
+  "theme": "Apprentissage langues",
+  "sujet": "Immersion, répétition espacée et astuces pratiques pour maîtriser une langue étrangère en autodidacte."
+ },
+ {
+  "slug": "lecture-rapide",
+  "theme": "Lecture efficace",
+  "sujet": "Techniques pour augmenter sa vitesse de lecture tout en améliorant la compréhension et la rétention des livres."
+ },
+ {
+  "slug": "problem-solving",
+  "theme": "Résolution problèmes",
+  "sujet": "Cadres logiques et analytiques pour déconstruire les défis complexes en sous-problèmes actionnables."
+ },
+ {
+  "slug": "prise-notes",
+  "theme": "Synthèse information",
+  "sujet": "Systèmes comme Zettelkasten ou Cornell pour organiser ses connaissances et créer un second cerveau numérique."
+ },
+ {
+  "slug": "raconter-histoires",
+  "theme": "Storytelling pro",
+  "sujet": "Construction de récits captivants pour vendre, inspirer une équipe ou bâtir une marque personnelle forte."
+ },
+ {
+  "slug": "design-thinking",
+  "theme": "Design thinking",
+  "sujet": "Approche centrée sur l'utilisateur pour concevoir des services et des produits qui répondent à de vrais besoins."
+ },
+ {
+  "slug": "data-literacy",
+  "theme": "Culture données",
+  "sujet": "Comment lire, interpréter et visualiser les données pour prendre de meilleures décisions stratégiques."
+ },
+ {
+  "slug": "vie-couple",
+  "theme": "Communication couple",
+  "sujet": "Outils pour maintenir la connexion émotionnelle, gérer les désaccords et construire un projet de vie commun."
+ },
+ {
+  "slug": "eduquer-enfants",
+  "theme": "Parentalité positive",
+  "sujet": "Méthodes bienveillantes pour poser un cadre éducatif clair tout en favorisant l'autonomie et l'estime de soi."
+ },
+ {
+  "slug": "amities-adultes",
+  "theme": "Réseau amical",
+  "sujet": "Comment créer et entretenir des amitiés profondes et sincères en dehors du cercle scolaire et professionnel."
+ },
+ {
+  "slug": "reseau-pro",
+  "theme": "Networking stratégique",
+  "sujet": "Techniques pour développer un réseau d'entraide professionnel authentique et générer des opportunités mutuelles."
+ },
+ {
+  "slug": "cnv-pratique",
+  "theme": "Communication non violente",
+  "sujet": "Application des principes de Marshall Rosenberg pour exprimer ses besoins et désamorcer les tensions relationnelles."
+ },
+ {
+  "slug": "relations-toxiques",
+  "theme": "Gérer toxicité",
+  "sujet": "Identifier les manipulateurs, poser des limites saines et se protéger émotionnellement des personnalités difficiles."
+ },
+ {
+  "slug": "ecoute-active",
+  "theme": "Écoute active",
+  "sujet": "Développer une présence authentique et une empathie profonde pour améliorer toutes ses interactions humaines."
+ },
+ {
+  "slug": "debat-serein",
+  "theme": "Convaincre sereinement",
+  "sujet": "L'art de défendre ses idées avec calme et pédagogie sans tomber dans l'agressivité ou la polarisation."
+ },
+ {
+  "slug": "creer-communaute",
+  "theme": "Construire tribu",
+  "sujet": "Fédérer des personnes autour de valeurs communes pour créer un groupe d'entraide ou une audience engagée."
+ },
+ {
+  "slug": "resolution-conflits",
+  "theme": "Gérer conflits",
+  "sujet": "Médiations et techniques de négociation pour apaiser les tensions et trouver des accords gagnant-gagnant au travail."
+ },
+ {
+  "slug": "hygiene-sommeil",
+  "theme": "Optimiser sommeil",
+  "sujet": "Protocoles comportementaux et environnementaux pour retrouver un sommeil réparateur et une énergie maximale."
+ },
+ {
+  "slug": "anti-stress",
+  "theme": "Gérer stress",
+  "sujet": "Techniques de régulation du système nerveux pour faire face à la pression et prévenir l'épuisement professionnel."
+ },
+ {
+  "slug": "alimentation-energie",
+  "theme": "Nutrition quotidienne",
+  "sujet": "Principes généraux d'une alimentation équilibrée pour soutenir l'effort intellectuel et physique au quotidien."
+ },
+ {
+  "slug": "sport-maison",
+  "theme": "Calisthenics pratique",
+  "sujet": "Programmes d'entraînement au poids du corps pour développer force et mobilité sans matériel de salle de sport."
+ },
+ {
+  "slug": "pleine-conscience",
+  "theme": "Méditation laïque",
+  "sujet": "Pratiques de pleine conscience pour améliorer sa concentration, réduire l'anxiété et vivre l'instant présent."
+ },
+ {
+  "slug": "sante-bureau",
+  "theme": "Ergonomie télétravail",
+  "sujet": "Aménager son espace de travail et adopter de bonnes postures pour prévenir les troubles musculosquelettiques."
+ },
+ {
+  "slug": "techniques-respiration",
+  "theme": "Cohérence cardiaque",
+  "sujet": "Exercices respiratoires simples pour moduler son état émotionnel et récupérer rapidement après un effort."
+ },
+ {
+  "slug": "detox-numerique",
+  "theme": "Déconnexion écrans",
+  "sujet": "Stratégies pour réduire sa dépendance aux smartphones et retrouver du temps pour les activités profondes."
+ },
+ {
+  "slug": "routines-quotidiennes",
+  "theme": "Routines matin soir",
+  "sujet": "Concevoir des rituels personnalisés pour bien démarrer la journée et optimiser la récupération nocturne."
+ },
+ {
+  "slug": "sante-dos",
+  "theme": "Posture mobilité",
+  "sujet": "Exercices d'assouplissement et de renforcement pour corriger les déséquilibres posturaux liés à la sédentarité."
+ },
+ {
+  "slug": "ethique-business",
+  "theme": "Éthique affaires",
+  "sujet": "Réflexions et cadres pour aligner la recherche de profit avec le respect des humains et de l'environnement."
+ },
+ {
+  "slug": "impact-social",
+  "theme": "Philanthropie efficace",
+  "sujet": "Comment évaluer et maximiser l'impact de ses dons et de son engagement associatif sur la société."
+ },
+ {
+  "slug": "zero-dechet",
+  "theme": "Écologie pratique",
+  "sujet": "Gestes concrets et accessibles pour réduire son empreinte carbone et sa production de déchets au quotidien."
+ },
+ {
+  "slug": "histoire-eco",
+  "theme": "Grandes idées économiques",
+  "sujet": "Parcourir l'évolution de la pensée économique pour mieux comprendre les enjeux financiers contemporains."
+ },
+ {
+  "slug": "stoicisme-moderne",
+  "theme": "Philosophie stoïcienne",
+  "sujet": "Appliquer les préceptes des stoïciens pour développer la résilience et l'acceptation face aux imprévus de la vie."
+ },
+ {
+  "slug": "geopolitique-monde",
+  "theme": "Comprendre géopolitique",
+  "sujet": "Clés de lecture neutres et factuelles pour analyser les grands équilibres de pouvoir et les enjeux mondiaux."
+ },
+ {
+  "slug": "culture-scientifique",
+  "theme": "Histoire inventions",
+  "sujet": "Récits des grandes découvertes scientifiques et techniques qui ont façonné le monde moderne et notre quotidien."
+ },
+ {
+  "slug": "vie-simple",
+  "theme": "Minimalisme essentiel",
+  "sujet": "Désencombrer son espace physique et mental pour se concentrer sur ce qui apporte réellement de la valeur."
+ },
+ {
+  "slug": "action-locale",
+  "theme": "Engagement citoyen",
+  "sujet": "Guide pour initier ou rejoindre des projets solidaires, écologiques ou culturels à l'échelle de son quartier."
+ },
+ {
+  "slug": "influence-sociale",
+  "theme": "Psychologie sociale",
+  "sujet": "Comprendre les dynamiques de groupe, la conformité et les mécanismes de l'influence pour mieux interagir."
+ },
+ {
+  "slug": "ia-productivite",
+  "theme": "IA au quotidien",
+  "sujet": "Intégrer les outils d'intelligence artificielle générative pour automatiser les tâches répétitives et stimuler sa créativité."
+ },
+ {
+  "slug": "securite-numerique",
+  "theme": "Cybersécurité perso",
+  "sujet": "Bonnes pratiques pour sécuriser ses mots de passe, ses données et ses appareils contre les cybermenaces courantes."
+ },
+ {
+  "slug": "nocode-business",
+  "theme": "Automatisation No-Code",
+  "sujet": "Créer des applications et automatiser ses processus métier sans savoir programmer grâce aux outils visuels."
+ },
+ {
+  "slug": "personal-branding",
+  "theme": "Identité numérique",
+  "sujet": "Bâtir et gérer sa réputation en ligne pour attirer des opportunités professionnelles et personnelles cohérentes."
+ },
+ {
+  "slug": "algorithmes-sociaux",
+  "theme": "Comprendre algorithmes",
+  "sujet": "Décrypter le fonctionnement des réseaux sociaux pour optimiser sa visibilité sans en devenir prisonnier."
+ },
+ {
+  "slug": "privacy-web",
+  "theme": "Vie privée ligne",
+  "sujet": "Configurer ses navigateurs, applications et appareils pour limiter la collecte de données et le profilage publicitaire."
+ },
+ {
+  "slug": "maitriser-prompts",
+  "theme": "Prompt engineering",
+  "sujet": "Techniques avancées pour formuler des requêtes précises et obtenir des résultats optimaux avec les modèles de langage."
+ },
+ {
+  "slug": "travail-asynchrone",
+  "theme": "Outils collaboratifs",
+  "sujet": "Organiser la communication et le partage de documents pour des équipes distribuées travaillant en asynchrone."
+ },
+ {
+  "slug": "mobilite-etudiante",
+  "theme": "Étudier étranger",
+  "sujet": "Préparer son dossier, obtenir des bourses et réussir son intégration académique et culturelle à l'international."
+ },
+ {
+  "slug": "reseau-diaspora",
+  "theme": "Levier diaspora",
+  "sujet": "Mobiliser les compétences et les réseaux de la diaspora pour créer des ponts économiques et culturels fructueux."
+ },
+ {
+  "slug": "business-afrique",
+  "theme": "Entreprendre Afrique",
+  "sujet": "Comprendre les spécificités, les opportunités et les défis du entrepreneuriat sur le continent africain."
+ },
+ {
+  "slug": "logistique-locale",
+  "theme": "E-commerce africain",
+  "sujet": "Surmonter les défis de la livraison du dernier kilomètre et des paiements mobiles dans les marchés émergents."
+ },
+ {
+  "slug": "funding-afrique",
+  "theme": "Financement projets",
+  "sujet": "Identifier et convaincre les incubateurs, fonds d'impact et institutions financières dédiés aux startups africaines."
+ },
+ {
+  "slug": "management-interculturel",
+  "theme": "Leadership interculturel",
+  "sujet": "Adapter son style de management et sa communication pour diriger des équipes multiculturelles et internationales."
+ },
+ {
+  "slug": "agribusiness",
+  "theme": "Agriculture moderne",
+  "sujet": "Techniques et modèles d'affaires pour développer une exploitation agricole rentable et respectueuse de l'environnement."
+ },
+ {
+  "slug": "ecotourisme",
+  "theme": "Tourisme durable",
+  "sujet": "Créer et promouvoir des offres touristiques qui valorisent le patrimoine local tout en préservant les écosystèmes."
+ },
+ {
+  "slug": "ecosysteme-tech",
+  "theme": "Tech hubs Afrique",
+  "sujet": "Cartographie et analyse des pôles d'innovation technologiques et des success stories du numérique africain."
+ },
+ {
+  "slug": "export-maghreb",
+  "theme": "Exporter Maghreb",
+  "sujet": "Stratégies pour adapter ses produits, trouver des distributeurs et réussir son implantation sur les marchés internationaux."
+ },
+ {
+  "slug": "marketing-local",
+  "theme": "Marketing adapté",
+  "sujet": "Concevoir des campagnes publicitaires et des messages qui résonnent avec les réalités culturelles et économiques locales."
+ },
+ {
+  "slug": "immobilier-afrique",
+  "theme": "Urbanisation africaine",
+  "sujet": "Opportunités et stratégies d'investissement dans le développement immobilier et les infrastructures des villes en croissance."
+ },
+ {
+  "slug": "solaire-pratique",
+  "theme": "Énergie renouvelable",
+  "sujet": "Dimensionner, installer et rentabiliser des panneaux solaires pour les particuliers et les petites entreprises."
+ },
+ {
+  "slug": "investir-diaspora",
+  "theme": "Transferts diaspora",
+  "sujet": "Transformer l'argent des transferts familiaux en investissements productifs et immobiliers structurés au pays d'origine."
+ },
+ {
+  "slug": "ecrire-publier",
+  "theme": "Écrire et publier",
+  "sujet": "écrire, réviser et publier son propre livre (essai ou guide pratique), de l'idée au lancement, en autoédition ou chez un éditeur"
+ },
+ {
+  "slug": "travail-equipe",
+  "theme": "Travail d'équipe",
+  "sujet": "l'intelligence collective : faire fonctionner une équipe, prendre des décisions ensemble, animer des réunions utiles et collaborer à distance"
+ }
+]

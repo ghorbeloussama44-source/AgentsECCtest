@@ -1,0 +1,506 @@
+{
+ "exporte_le": "2026-10-10",
+ "projects": [
+  {
+   "brief": "Collection de livres signés Oussama Ghorbel : Claude choisit les sujets, Qwen 3.8 Max Thinking (Dialagram) fait la recherche, le plan, la rédaction, la rectification et la mise en page ; Claude relit et note.\nLot 1 : 4 livres et le copyright de « L'Architecture de la Richesse ». Lot 2 : 4 livres et la correction des expériences inventées du lot 1.\n9 livres, 2 935 pages au total. PDF téléchargeables : https://claude.ai/artifact/QcemggvA5hWLGW8SwJ3yNf\nFichiers : dossier bibliotheque/ sur la branche claude/millionaire-book-500-pages-kb2v7u.",
+   "createdAt": 1791635000000,
+   "name": "Bibliothèque Oussama Ghorbel",
+   "id": "bibliotheque-og"
+  },
+  {
+   "brief": "Projet d'exemple créé par Claude pour vérifier le circuit : délégation à Dialagram, relecture, validation, comptage des tokens. Vous pouvez le supprimer.",
+   "createdAt": 1791582900000,
+   "name": "Exemple : essai de l'atelier",
+   "id": "exemple"
+  },
+  {
+   "brief": "Mission confiée à Qwen Thinking via Dialagram : trouver les livres de référence sur la pensée du millionnaire et l'enrichissement, puis écrire un livre complet de 500 pages livré en PDF. Claude transmet les consignes, relit et note, sans écrire de code.\n\nV2 (après « lance l'atelier ») : « L'Architecture de la Richesse », 499 pages en 6×9 pouces, 134 728 mots, nettoyé et remis en page. Note globale de Claude : 16/20 (V1 : 13/20).\nFichiers : dossier livre-millionnaire/ sur la branche claude/millionaire-book-500-pages-kb2v7u du dépôt AgentsECCtest.",
+   "createdAt": 1791612000000,
+   "name": "Livre 500 pages : mentalité du millionnaire",
+   "id": "livre-millionnaire"
+  },
+  {
+   "brief": "Tu est creatif je veut faire une video motion design pour russtudy  leur site est russieetudes.com je veut juste 10s de rendu install les skills necessaire a ton fonctionnement video qui decrit process, video cool et moderne. Fait ton max allez y.",
+   "createdAt": 1791583616441,
+   "name": "Faire une video pro",
+   "id": "s8xa2ozmbp3w44cmrypx"
+  }
+ ],
+ "tasks": [
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "Validé : 5 points exacts et conformes aux règles Google (pas de contrepartie, pas de faux avis, pas de filtrage des clients). Format respecté.",
+    "tokens": 276,
+    "verdict": "ok"
+   },
+   "createdAt": 1791582900002,
+   "dialagram": {
+    "completion_tokens": 578,
+    "model": "xiaomi-mimo-2.6",
+    "prompt_tokens": 2385,
+    "seconds": 14.4,
+    "total_tokens": 2963
+   },
+   "instructions": "Résume en 5 points courts ce qu'une entreprise a le droit et n'a pas le droit de faire pour obtenir des avis Google. Une phrase par point, en français.",
+   "model": "xiaomi-mimo-2.6",
+   "order": 1791582900002,
+   "projectId": "exemple",
+   "result": "**Règles Google sur les avis clients — 5 points**\n\n1. **Droit :** Une entreprise peut demander à ses clients de laisser un avis en leur envoyant un lien direct vers son profil Google Maps.\n2. **Droit :** Elle peut relancer par message ou e-mail, et afficher un panneau ou un QR code en magasin invitant à noter l'établissement.\n3. **Droit :** Elle peut répondre à tous les avis, positifs comme négatifs, en restant factuelle et professionnelle.\n4. **Interdit :** Elle ne peut pas acheter d'avis, créer de faux comptes, faire noter par ses employés ou ses proches, ni rédiger elle-même des avis sur son propre établissement.\n5. **Interdit :** Elle ne peut offrir aucune contrepartie (réduction, cadeau, lot) en échange d'un avis, ni filtrer les clients pour ne solliciter que les satisfaits (*review gating*).",
+   "status": "valide",
+   "title": "Règles Google sur les avis clients",
+   "updatedAt": 1791582940968,
+   "id": "ex-avis"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "Validé après exécution sur 6 cas (accents, espaces, tirets multiples, chaîne vide). Limite : la ligature « Œ » est supprimée (Œuvre → uvre) au lieu de devenir « oe ».",
+    "tokens": 189,
+    "verdict": "ok"
+   },
+   "createdAt": 1791582900001,
+   "dialagram": {
+    "completion_tokens": 88,
+    "model": "qwen-3.8-max",
+    "prompt_tokens": 248,
+    "seconds": 6.2,
+    "total_tokens": 336
+   },
+   "instructions": "Écris une fonction Python `slugify(texte: str) -> str` qui met en minuscules, retire les accents (é → e), remplace tout caractère non alphanumérique par un tiret, fusionne les tirets successifs et retire ceux du début et de la fin. Bibliothèque standard uniquement. Réponds avec un seul bloc ```python.",
+   "model": "qwen-3.8-max",
+   "order": 1791582900001,
+   "projectId": "exemple",
+   "result": "```python\nimport unicodedata\nimport re\n\ndef slugify(texte: str) -> str:\n    texte = texte.lower()\n    texte = unicodedata.normalize('NFKD', texte).encode('ascii', 'ignore').decode('ascii')\n    texte = re.sub(r'[^a-z0-9]+', '-', texte)\n    texte = texte.strip('-')\n    return texte\n```",
+   "status": "valide",
+   "title": "Fonction Python slugify",
+   "updatedAt": 1791582940894,
+   "id": "ex-slugify"
+  },
+  {
+   "attempts": 2,
+   "claude": {
+    "estimated": true,
+    "note": "16/20. Plan cohérent et progressif : mentalité, stratégie, action, levier, résilience, transmission. Bibliographie riche (23 titres), mais tirée de la mémoire du modèle, sans accès web. Le premier essai sans streaming a échoué côté serveur (« upstream request failed »), le second en streaming a réussi.",
+    "tokens": 3000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791612000001,
+   "dialagram": {
+    "completion_tokens": 14539,
+    "model": "qwen-3.8-max-thinking",
+    "prompt_tokens": 404,
+    "seconds": 450.7,
+    "total_tokens": 14943
+   },
+   "instructions": "Recenser au moins 20 livres de référence sur la mentalité du millionnaire et l'enrichissement (auteur, année, idée centrale, apport). Concevoir le plan d'un livre original en français d'environ 500 pages : titre, sous-titre, 5 à 7 parties, 40 chapitres avec objectif, sections et exercices, environ 3 500 mots par chapitre. Réponse en JSON uniquement.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791612000001,
+   "projectId": "livre-millionnaire",
+   "result": "Titre : L'Architecture de la Richesse — Le système mental complet pour bâtir une fortune durable.\n23 livres de référence : Hill, Kiyosaki, Clason, Stanley & Danko, Housel, Eker, Ferriss, DeMarco, Sincero, Cardone, Robin & Dominguez, Bach, Ramsey, Wattles, Schwartz, Allen, Hardy, Stanley, Gerber, Graham, Keller, Taleb, Newport.\n7 parties, 40 chapitres de 7 sections chacun, avec des exercices pour chaque chapitre.",
+   "status": "valide",
+   "title": "Recherche des livres de référence et plan du livre",
+   "updatedAt": 1791612000001,
+   "id": "livre-1-plan"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "15/20. Propre, sûr, fonctionnel dès le premier essai. Défaut de conception : la relance « continue là où tu t'es arrêté » a poussé le modèle à ajouter des phrases de chatbot (« Dites-moi comment procéder… ») dans 11 chapitres.",
+    "tokens": 3000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791612000002,
+   "dialagram": {
+    "completion_tokens": 3300,
+    "estimated": true,
+    "model": "qwen-3.8-max-thinking",
+    "prompt_tokens": 700,
+    "seconds": 180,
+    "total_tokens": 4000
+   },
+   "instructions": "Écrire redaction.py (bibliothèque standard uniquement) : appelle Dialagram en streaming, rédige les 40 chapitres plus l'introduction et la conclusion, 8 en parallèle, relance si un chapitre fait moins de 3 200 mots, réessaie en cas d'erreur réseau, reprend là où il s'est arrêté.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791612000002,
+   "projectId": "livre-millionnaire",
+   "result": "Script de 313 lignes, compilé et exécuté du premier coup. Il a survécu à 4 coupures réseau grâce aux nouvelles tentatives automatiques.",
+   "status": "valide",
+   "title": "Script d'orchestration de la rédaction",
+   "updatedAt": 1791612000002,
+   "id": "livre-2-script"
+  },
+  {
+   "attempts": 2,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 (contre 13/20 à l'essai 1) : validé. Plus aucune phrase de chatbot, citations corrigées, texte d'origine préservé. Reste perfectible : les 6 chapitres les plus nettoyés sont plus courts (environ 2 400 à 2 900 mots), et la bibliographie vient de la mémoire du modèle, sans vérification web. Tokens : essai 1 estimé, essai 2 mesuré (920 000).",
+    "tokens": 20000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791612000003,
+   "dialagram": {
+    "completion_tokens": 718173,
+    "estimated": true,
+    "model": "qwen-3.8-max-thinking",
+    "prompt_tokens": 550311,
+    "seconds": 3664,
+    "total_tokens": 1268484
+   },
+   "instructions": "Rédiger en français, en Markdown, chaque chapitre du plan (environ 3 500 mots) en suivant ses sections, son objectif et ses exercices. Contenu original, citations courtes et attribuées, pas de promesses irréalistes, avertissement « pas un conseil financier » quand c'est pertinent.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791612000003,
+   "projectId": "livre-millionnaire",
+   "result": "Essai 2 (correction) : Qwen a écrit nettoyage.py, puis a relu les 42 fichiers. Premier passage : 36 réussis, 6 bloqués par son propre seuil de contrôle (85 %) ; il l'a corrigé à 70 %, puis 42/42.\nRésultat : 134 728 mots (contre 143 281). Environ 8 500 mots de remplissage chatbot supprimés, aucune fuite restante, citations réattribuées (Boorstin, Munger), avertissement financier allégé (22 chapitres au lieu de 38). Le reste du texte est conservé presque mot pour mot (vérifié par comparaison).\n\nEssai 1 : 143 281 mots en 29 min, avec des phrases de chatbot dans 11 chapitres.",
+   "status": "valide",
+   "title": "Rédaction des 40 chapitres, de l'introduction et de la conclusion",
+   "updatedAt": 1791620000000,
+   "id": "livre-3-redaction"
+  },
+  {
+   "attempts": 5,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 (contre 11/20) : validé. Les 3 défauts sont corrigés (table des matières, en-tête, italique) et le corps passe de 8,1 à 11,3 pt pour 499 pages. Petit reste : dans la table des matières, les titres de chapitre les plus longs écrasent leur numéro de page.",
+    "tokens": 10000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791612000004,
+   "dialagram": {
+    "completion_tokens": 39114,
+    "estimated": true,
+    "model": "qwen-3.8-max-thinking",
+    "prompt_tokens": 30666,
+    "seconds": 1105,
+    "total_tokens": 69780
+   },
+   "instructions": "Écrire mise_en_page.py avec reportlab : PDF A5, page de titre, avertissement, table des matières automatique, pages de partie, chaque chapitre sur une nouvelle page, en-tête et numéros de page, bibliographie commentée en annexe, option --corps pour viser 500 pages.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791612000004,
+   "projectId": "livre-millionnaire",
+   "result": "Essai 5 : nouveau mise_en_page.py écrit par Qwen, fonctionnel du premier coup, plus un correctif de deux lignes pour le doublon « Partie 1 – PARTIE I ».\nPDF final : 499 pages, format 6×9 pouces, corps 11,3 pt (confortable), famille Times avec un vrai italique, table des matières par parties, en-tête correct, 1,2 Mo.",
+   "status": "valide",
+   "title": "Mise en page PDF de 500 pages",
+   "updatedAt": 1791620000000,
+   "id": "livre-4-pdf"
+  },
+  {
+   "attempts": 4,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Le filtre anti-chatbot marche parfaitement. La page de copyright a demandé 4 allers-retours (débordement sur la page suivante, import manquant, fonction mal corrigée) avant la solution simple.",
+    "tokens": 6000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791635000001,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "seconds": 900,
+    "total_tokens": 56318
+   },
+   "instructions": "Adapter les scripts pour toute la collection : auteur Oussama Ghorbel, page de copyright, « © 2026 Oussama Ghorbel » en pied de page, métadonnées PDF ; rédaction qui filtre les messages de chatbot et compte les tokens.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791635000001,
+   "projectId": "bibliotheque-og",
+   "result": "Copyright appliqué à « L'Architecture de la Richesse » (501 pages) et à tous les nouveaux livres. Le nouveau script de rédaction n'a laissé aucune phrase de chatbot sur 104 chapitres.",
+   "status": "valide",
+   "title": "Copyright et outils de la collection",
+   "updatedAt": 1791635000001,
+   "id": "og-0-copyright"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Contenu concret et actionnable (offre en trois options, validation du marché). Réserve : la voix d'auteur s'attribue parfois une expérience inventée (« chaque entrepreneur que j'accompagne »).",
+    "tokens": 2500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791635000002,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "seconds": 3600,
+    "total_tokens": 731612
+   },
+   "instructions": "Recherche (15 références), plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791635000002,
+   "projectId": "bibliotheque-og",
+   "result": "314 pages, environ 91 500 mots, 4 parties, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "L'Équation Entrepreneuriale (entrepreneuriat)",
+   "updatedAt": 1791635000002,
+   "id": "og-1-entreprise"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "15/20 : validé. Bonne méthode générale. Réserve : la fiscalité et le financement restent génériques (les règles varient selon le pays) ; à relire avant diffusion à un public précis.",
+    "tokens": 2000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791635000003,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "seconds": 4200,
+    "total_tokens": 714377
+   },
+   "instructions": "Recherche (16 références), plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791635000003,
+   "projectId": "bibliotheque-og",
+   "result": "313 pages, environ 88 700 mots, 6 parties, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "L'Édifice Locatif (investissement immobilier)",
+   "updatedAt": 1791635000003,
+   "id": "og-2-immobilier"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Structure claire, aucun chapitre sous 3 000 mots. Mêmes réserves de collection : bibliographie tirée de la mémoire du modèle, sans vérification web.",
+    "tokens": 2000,
+    "verdict": "ok"
+   },
+   "createdAt": 1791635000004,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "seconds": 1700,
+    "total_tokens": 708944
+   },
+   "instructions": "Recherche (18 références), plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791635000004,
+   "projectId": "bibliotheque-og",
+   "result": "297 pages, environ 89 900 mots, 5 parties, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "La Gravité du Leader (leadership)",
+   "updatedAt": 1791635000004,
+   "id": "og-3-leadership"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Concepts concrets et bien nommés (le « bloc de forge » de 90 minutes). Ton motivant sans promesses excessives.",
+    "tokens": 2500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791635000005,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "seconds": 3000,
+    "total_tokens": 650876
+   },
+   "instructions": "Recherche (17 références), plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791635000005,
+   "projectId": "bibliotheque-og",
+   "result": "286 pages, environ 86 700 mots, 5 parties, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "La Forge des Jours (discipline et productivité)",
+   "updatedAt": 1791635000005,
+   "id": "og-4-discipline"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "17/20 : validé. Correction ciblée et efficace, sans repasser les livres entiers.",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791642000000,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "total_tokens": 142120
+   },
+   "instructions": "Ajouter à la rectification une règle qui reformule les expériences personnelles invérifiables de l'auteur, puis l'appliquer aux chapitres concernés du lot 1.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791642000000,
+   "projectId": "bibliotheque-og",
+   "result": "Règle ajoutée par Qwen à son script. Appliquée à 10 chapitres (8 dans L'Équation Entrepreneuriale, 2 dans La Forge des Jours) : 0 occurrence restante. PDF régénérés.",
+   "status": "valide",
+   "title": "Correction des expériences inventées (lot 1)",
+   "updatedAt": 1791642000000,
+   "id": "og-5-correction"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Propre et régulier (aucun chapitre sous 3 000 mots).",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791642000001,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "total_tokens": 645872
+   },
+   "instructions": "Recherche, plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791642000001,
+   "projectId": "bibliotheque-og",
+   "result": "304 pages, environ 96 000 mots, 24 chapitres. Rectification 26/26, zéro fuite, zéro expérience inventée.",
+   "status": "valide",
+   "title": "L'Ingénierie Émotionnelle (intelligence émotionnelle)",
+   "updatedAt": 1791642000001,
+   "id": "og-6-emotions"
+  },
+  {
+   "attempts": 2,
+   "claude": {
+    "estimated": true,
+    "note": "15/20 : validé. Contenu utile, mais un chapitre descend à 2 729 mots, et les outils et plateformes cités vieilliront vite : à relire chaque année.",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791642000002,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "total_tokens": 823494
+   },
+   "instructions": "Recherche, plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791642000002,
+   "projectId": "bibliotheque-og",
+   "result": "304 pages, environ 90 000 mots, 24 chapitres. Plan obtenu au 2e essai (premier JSON invalide). Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "Le Rayonnement Numérique (marketing digital)",
+   "updatedAt": 1791642000002,
+   "id": "og-7-marketing"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Le plus long du lot, structure solide.",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791642000003,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "total_tokens": 734869
+   },
+   "instructions": "Recherche, plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791642000003,
+   "projectId": "bibliotheque-og",
+   "result": "316 pages, environ 95 500 mots, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "L'Alchimie de l'Accord (négociation)",
+   "updatedAt": 1791642000003,
+   "id": "og-8-negociation"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "16/20 : validé. Premier livre du lot terminé, chapitres réguliers (au moins 3 128 mots).",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791642000004,
+   "dialagram": {
+    "estimated": false,
+    "model": "qwen-3.8-max-thinking",
+    "total_tokens": 684906
+   },
+   "instructions": "Recherche, plan de 24 chapitres, rédaction d'environ 85 000 mots, rectification, PDF 6×9 avec copyright.",
+   "model": "qwen-3.8-max-thinking",
+   "order": 1791642000004,
+   "projectId": "bibliotheque-og",
+   "result": "300 pages, environ 94 000 mots, 24 chapitres. Rectification 26/26, zéro fuite.",
+   "status": "valide",
+   "title": "L'Acoustique de l'Influence (prise de parole)",
+   "updatedAt": 1791642000004,
+   "id": "og-9-parole"
+  },
+  {
+   "attempts": 2,
+   "claude": {
+    "estimated": true,
+    "note": "Validé (2e essai) : chiffres animés (+1 200 étudiants, 40+ universités) et trajet Tunis → Russie comme fil conducteur. Ajustement pour le code : le fondu au noir final ne dure que 0,3 s, pour que l'appel à l'action reste lisible.",
+    "tokens": 2047,
+    "verdict": "ok"
+   },
+   "createdAt": 1791584000001,
+   "dialagram": {
+    "completion_tokens": 745,
+    "model": "qwen-3.8-max",
+    "prompt_tokens": 740,
+    "seconds": 19.3,
+    "total_tokens": 1485
+   },
+   "instructions": "Écris le storyboard d'une vidéo motion design de 10 secondes exactement, format vertical 1080×1920, pour RusStudy (russieetudes.com), une agence qui accompagne les bacheliers tunisiens pour étudier dans les universités d'État russes. Sujet : le parcours, de la Tunisie à l'amphi en Russie. Style : moderne, dynamique, typographique, formes géométriques, aucune photo.\n\nFaits à utiliser (n'invente rien d'autre) :\n- Accroche du site : « Étudie en Russie. Change ta vie. »\n- Étapes : 1ère consultation gratuite → dossier d'admission → invitation officielle et visa (garanti par contrat) → accueil à l'aéroport → logement garanti en résidence universitaire.\n- Chiffres : +1 200 étudiants tunisiens placés · 40+ universités d'État partenaires · frais dès 2 200 €/an.\n- Appel à l'action : « Commencer mon dossier gratuit » · russieetudes.com\n- Couleurs : fond #0A0A0A, crème #F0EBE3, bleu #2F66E8, jaune #FBBB21. Police : Space Grotesk.\n\nRéponds uniquement avec un bloc ```json : {\"scenes\": [{\"start\": s, \"end\": s, \"texte\": [\"ligne 1\", \"ligne 2\"], \"visuel\": \"description précise des formes et de leur mouvement\", \"transition\": \"...\"}]}. 5 ou 6 scènes, couvrant 0 à 10 s sans trou. Au plus 5 mots par ligne de texte, au plus 2 lignes par scène.\n\nRetour de Claude sur ta première version (à corriger) :\n- Intègre au moins deux chiffres du site, en grand, comme compteurs animés : « +1 200 étudiants tunisiens », « 40+ universités d'État », « dès 2 200 €/an ».\n- Montre le trajet Tunisie → Russie : par exemple un point de départ « Tunis » et un point d'arrivée « Russie » reliés par une ligne qui se trace, qui sert de fil conducteur aux étapes.\n- Garde ce qui marchait : accroche au début, appel à l'action et URL à la fin, timing continu de 0 à 10 s, 5 ou 6 scènes.",
+   "model": "qwen-3.8-max",
+   "order": 1791584000001,
+   "projectId": "s8xa2ozmbp3w44cmrypx",
+   "result": "{\"scenes\": [{\"start\": 0, \"end\": 2, \"texte\": [\"Étudie en Russie.\", \"Change ta vie.\"], \"visuel\": \"Fond #0A0A0A. Un point crème #F0EBE3 apparaît à gauche avec le texte 'Tunis' en Space Grotesk. Une ligne bleue #2F66E8 se trace dynamiquement vers la droite pour former un cercle géométrique. L'accroche typographique s'affiche au centre en grand, lettres jaunes #FBBB21 et crème alternées, avec un effet de décalage vertical rapide (stagger).\", \"transition\": \"La ligne bleue continue de se tracer vers le haut de l'écran, poussant les textes hors champ.\"}, {\"start\": 2, \"end\": 4, \"texte\": [\"Consultation gratuite\", \"Dossier d'admission\"], \"visuel\": \"La ligne bleue #2F66E8 descend en formant des angles droits (parcours géométrique). À chaque virage, un carré jaune #FBBB21 pulse et fait apparaître le texte en crème #F0EBE3. Les formes s'animent en rebond (overshoot) synchronisé sur le tracé de la ligne qui relie Tunis à la Russie.\", \"transition\": \"Zoom rapide le long de la ligne bleue qui accélère sa course vers la droite.\"}, {\"start\": 4, \"end\": 6, \"texte\": [\"Visa garanti par contrat\", \"Accueil et logement garantis\"], \"visuel\": \"La ligne bleue trace un bouclier géométrique minimaliste. Un tampon circulaire jaune #FBBB21 frappe le centre du bouclier avec une onde de choc. Le texte en Space Grotesk crème glisse depuis les bords de l'écran vertical pour se verrouiller en place.\", \"transition\": \"Le bouclier se réduit en un point qui explose en multiples particules géométriques.\"}, {\"start\": 6, \"end\": 8.5, \"texte\": [\"+1 200 étudiants tunisiens\", \"40+ universités d'État\"], \"visuel\": \"Les particules forment deux immenses compteurs typographiques superposés verticalement. Les chiffres défilent rapidement de 0 jusqu'à '+1 200' et '40+' en bleu #2F66E8 sur fond #0A0A0A. La ligne bleue passe derrière les chiffres comme un fil conducteur. Des rectangles jaunes #FBBB21 soulignent chaque mot clé.\", \"transition\": \"Les compteurs pivotent sur leur axe Y et disparaissent, laissant place à la scène finale.\"}, {\"start\": 8.5, \"end\": 10, \"texte\": [\"Commencer mon dossier gratuit\", \"russieetudes.com\"], \"visuel\": \"La ligne bleue arrive enfin à destination à droite : un gros point jaune #FBBB21 avec le texte 'Russie'. L'appel à l'action s'affiche au centre dans un bloc rectangulaire aux bordures arrondies crème #F0EBE3. L'URL est en dessous, en gras bleu #2F66E8. Le bloc central pulse légèrement pour inciter au clic.\", \"transition\": \"Fondu net au noir #0A0A0A à 10s pile.\"}]}",
+   "status": "valide",
+   "title": "1. Storyboard 10 s (vertical 1080×1920)",
+   "updatedAt": 1791583810378,
+   "id": "video-1-storyboard"
+  },
+  {
+   "attempts": 5,
+   "claude": {
+    "estimated": true,
+    "note": "Validé (5e essai) : rendu complet de 300 images sans erreur JS ; textes entiers, compteurs +1 200 et 40+, bouton lisible. Détail accepté : la ligne verticale touche le « D » de « Dossier ». Historique : 2 échecs techniques (502, réponse vide), 1 réponse tronquée, 2 renvois pour défauts visuels.",
+    "tokens": 18836,
+    "verdict": "ok"
+   },
+   "createdAt": 1791584000002,
+   "dialagram": {
+    "completion_tokens": 19197,
+    "model": "qwen-3.8-max",
+    "prompt_tokens": 19816,
+    "seconds": 445.7,
+    "total_tokens": 39013
+   },
+   "instructions": "Écris une animation motion design de 10 secondes exactement, format vertical 1080×1920, pour RusStudy, en suivant ce storyboard validé :\n\n{\n \"scenes\": [\n  {\n   \"start\": 0,\n   \"end\": 2,\n   \"texte\": [\n    \"Étudie en Russie.\",\n    \"Change ta vie.\"\n   ],\n   \"visuel\": \"Fond #0A0A0A. Un point crème #F0EBE3 apparaît à gauche avec le texte 'Tunis' en Space Grotesk. Une ligne bleue #2F66E8 se trace dynamiquement vers la droite pour former un cercle géométrique. L'accroche typographique s'affiche au centre en grand, lettres jaunes #FBBB21 et crème alternées, avec un effet de décalage vertical rapide (stagger).\",\n   \"transition\": \"La ligne bleue continue de se tracer vers le haut de l'écran, poussant les textes hors champ.\"\n  },\n  {\n   \"start\": 2,\n   \"end\": 4,\n   \"texte\": [\n    \"Consultation gratuite\",\n    \"Dossier d'admission\"\n   ],\n   \"visuel\": \"La ligne bleue #2F66E8 descend en formant des angles droits (parcours géométrique). À chaque virage, un carré jaune #FBBB21 pulse et fait apparaître le texte en crème #F0EBE3. Les formes s'animent en rebond (overshoot) synchronisé sur le tracé de la ligne qui relie Tunis à la Russie.\",\n   \"transition\": \"Zoom rapide le long de la ligne bleue qui accélère sa course vers la droite.\"\n  },\n  {\n   \"start\": 4,\n   \"end\": 6,\n   \"texte\": [\n    \"Visa garanti par contrat\",\n    \"Accueil et logement garantis\"\n   ],\n   \"visuel\": \"La ligne bleue trace un bouclier géométrique minimaliste. Un tampon circulaire jaune #FBBB21 frappe le centre du bouclier avec une onde de choc. Le texte en Space Grotesk crème glisse depuis les bords de l'écran vertical pour se verrouiller en place.\",\n   \"transition\": \"Le bouclier se réduit en un point qui explose en multiples particules géométriques.\"\n  },\n  {\n   \"start\": 6,\n   \"end\": 8.5,\n   \"texte\": [\n    \"+1 200 étudiants tunisiens\",\n    \"40+ universités d'État\"\n   ],\n   \"visuel\": \"Les particules forment deux immenses compteurs typographiques superposés verticalement. Les chiffres défilent rapidement de 0 jusqu'à '+1 200' et '40+' en bleu #2F66E8 sur fond #0A0A0A. La ligne bleue passe derrière les chiffres comme un fil conducteur. Des rectangles jaunes #FBBB21 soulignent chaque mot clé.\",\n   \"transition\": \"Les compteurs pivotent sur leur axe Y et disparaissent, laissant place à la scène finale.\"\n  },\n  {\n   \"start\": 8.5,\n   \"end\": 10,\n   \"texte\": [\n    \"Commencer mon dossier gratuit\",\n    \"russieetudes.com\"\n   ],\n   \"visuel\": \"La ligne bleue arrive enfin à destination à droite : un gros point jaune #FBBB21 avec le texte 'Russie'. L'appel à l'action s'affiche au centre dans un bloc rectangulaire aux bordures arrondies crème #F0EBE3. L'URL est en dessous, en gras bleu #2F66E8. Le bloc central pulse légèrement pour inciter au clic.\",\n   \"transition\": \"Fondu net au noir #0A0A0A à 10s pile.\"\n  }\n ]\n}\n\nContraintes techniques (obligatoires) :\n- Un seul fichier HTML autonome : un <canvas> de 1080×1920, CSS et JavaScript en ligne, aucune bibliothèque, aucune ressource externe, aucune image.\n- Expose une fonction globale window.renderAt(t) qui dessine l'image complète à l'instant t (en secondes, de 0 à 10) uniquement à partir de t : pas d'état accumulé entre deux appels, pas de requestAnimationFrame, pas de Math.random (pseudo-aléatoire à graine fixe si besoin). Elle sera appelée 300 fois (30 images/s).\n- Police : ctx.font avec \"Space Grotesk\", sans-serif (la police est chargée avant le rendu).\n- Courbes : easeOutExpo pour les entrées, easeInOutCubic pour les déplacements. Aucun texte ne sort du cadre ; marges latérales d'au moins 80 px ; textes principaux entre 72 et 140 px, mesurés avec measureText pour réduire la taille si la ligne est trop large.\n- Le fondu au noir final dure 0,3 s (de 9,7 s à 10 s) ; l'appel à l'action est pleinement lisible de 8,9 s à 9,7 s.\n- Appelle renderAt(0) au chargement.\nRéponds uniquement avec un bloc ```html.\n\nRetour de Claude : ta dernière version (ci-dessous) est presque bonne. Ne change QUE ces deux points et renvoie le fichier COMPLET :\n1. Scène 2 (2-4 s) : « Consultation gratuite » et « Dossier d'admission » sont coupés par les bords de l'image. Chaque texte doit tenir entre x = 80 et x = 1000 : aligne-les à gauche à x = 120, mesure-les avec measureText et réduis la taille si besoin. Garde le tracé de la ligne.\n2. « Tunis » chevauche l'accroche : place l'étiquette « Tunis » et son point à y = 1500 environ (bas de l'image), loin de l'accroche, et fais partir la ligne de là.\nNe touche à rien d'autre.\n\n```html\n<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>RusStudy</title>\n<style>*{margin:0;padding:0}body{background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh;overflow:hidden}canvas{max-height:100vh;max-width:100vw}</style>\n</head>\n<body>\n<canvas id=\"c\" width=\"1080\" height=\"1920\"></canvas>\n<script>\n(function(){\nvar cv=document.getElementById('c'),cx=cv.getContext('2d'),W=1080,H=1920,M=80;\nvar C={bg:'#0A0A0A',cr:'#F0EBE3',bl:'#2F66E8',yl:'#FBBB21'};\nvar F='\"Space Grotesk\",sans-serif';\n\nfunction eOE(x){return x>=1?1:x<=0?0:1-Math.pow(2,-10*x)}\nfunction eIOC(x){return x<=0?0:x>=1?1:x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}\nfunction cl(v,a,b){return v<a?a:v>b?b:v}\nfunction pr(t,s,e){return cl((t-s)/(e-s),0,1)}\n\nfunction fitTx(s,mf,mw){\n  cx.font=mf+'px '+F;\n  if(cx.measureText(s).width<=mw)return mf;\n  var lo=10,hi=mf;\n  while(hi-lo>.5){var m=(lo+hi)/2;cx.font=m+'px '+F;if(cx.measureText(s).width<=mw)lo=m;else hi=m;}\n  return lo;\n}\n\nfunction dTx(s,x,y,c,sz,al){\n  al=al||'left';\n  var fs=fitTx(s,sz,W-2*M);\n  cx.font=fs+'px '+F;cx.fillStyle=c;cx.textAlign=al;cx.textBaseline='middle';\n  cx.fillText(s,al==='center'?x:al==='right'?x:x,y);\n  return fs;\n}\n\nfunction rR(x,y,w,h,r){\n  cx.beginPath();cx.moveTo(x+r,y);cx.lineTo(x+w-r,y);cx.quadraticCurveTo(x+w,y,x+w,y+r);\n  cx.lineTo(x+w,y+h-r);cx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);cx.lineTo(x+r,y+h);\n  cx.quadraticCurveTo(x,y+h,x,y+h-r);cx.lineTo(x,y+r);cx.quadraticCurveTo(x,y,x+r,y);cx.closePath();\n}\n\n// Grille de points de fond (déterministe)\nvar seed=42;\nfunction sR(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}\nvar dots=[];\nfor(var i=0;i<120;i++)dots.push({x:sR()*W,y:sR()*H,r:1+sR()*2.5,a:.04+sR()*.08});\nseed=42;\n\n// Particules géométriques (transition scène 3 -> 4)\nvar parts=[];\nfor(var i=0;i<80;i++){\n  var ang=sR()*Math.PI*2,dist=80+sR()*600;\n  parts.push({a:ang,d:dist,sz:4+sR()*16,sh:Math.floor(sR()*3),dl:sR()*.35,c:i%3===0?C.yl:i%3===1?C.bl:C.cr});\n}\nseed=42;\n\n// Parcours géométrique scène 2 (angles droits, occupe >60% largeur)\nvar pB=[\n  {x:160,y:500},{x:920,y:500},\n  {x:920,y:900},{x:160,y:900},\n  {x:160,y:1300},{x:920,y:1300}\n];\n\n// Bouclier géométrique scène 3 (>60% largeur)\nvar bld=[\n  {x:540,y:420},{x:880,y:580},{x:880,y:950},\n  {x:540,y:1180},{x:200,y:950},{x:200,y:580},{x:540,y:420}\n];\n\nfunction pLen(p){var l=0;for(var i=1;i<p.length;i++){var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y;l+=Math.sqrt(dx*dx+dy*dy)}return l}\nfunction dPP(p,prg,lw,col){\n  if(prg<=0||p.length<2)return;\n  var tl=pLen(p)*prg,ac=0;\n  cx.strokeStyle=col;cx.lineWidth=lw;cx.lineCap='round';cx.lineJoin='round';\n  cx.beginPath();cx.moveTo(p[0].x,p[0].y);\n  for(var i=1;i<p.length;i++){\n    var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y,sl=Math.sqrt(dx*dx+dy*dy);\n    if(ac+sl<=tl){cx.lineTo(p[i].x,p[i].y);ac+=sl}\n    else{var rm=tl-ac,t=sl>0?rm/sl:0;cx.lineTo(p[i-1].x+dx*t,p[i-1].y+dy*t);break}\n  }\n  cx.stroke();\n}\n\nwindow.renderAt=function(t){\n  t=cl(t,0,10);\n  cx.clearRect(0,0,W,H);\n\n  // Fond\n  cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);\n\n  // Dégradé radial bleu très sombre animé\n  var grd=cx.createRadialGradient(540,960+Math.sin(t*.5)*100,0,540,960,1200);\n  grd.addColorStop(0,'rgba(47,102,232,0.07)');grd.addColorStop(1,'rgba(10,10,10,0)');\n  cx.fillStyle=grd;cx.fillRect(0,0,W,H);\n\n  // Grille de points\n  cx.save();\n  for(var i=0;i<dots.length;i++){\n    var d=dots[i];\n    cx.globalAlpha=d.a*(0.7+0.3*Math.sin(t*1.5+i));\n    cx.fillStyle=C.bl;\n    cx.beginPath();cx.arc(d.x,d.y,d.r,0,Math.PI*2);cx.fill();\n  }\n  cx.restore();\n\n  // ================= SCÈNE 1 (0 - 2s) =================\n  if(t<2.6){\n    var fi=eOE(pr(t,0,.4)),fo=t>1.6?1-eIOC(pr(t,1.6,2.2)):1,al=fi*fo;\n    if(al>.001){\n      cx.save();\n      var sh=t>1.6?eIOC(pr(t,1.6,2.2))*H:0;\n      cx.translate(0,-sh);\n      cx.globalAlpha=al;\n\n      // Point crème + Tunis (étiquette au-dessus du point, loin du texte)\n      var dp=eOE(pr(t,0,.6));\n      if(dp>0){\n        cx.fillStyle=C.cr;cx.beginPath();cx.arc(160,960,14*dp,0,Math.PI*2);cx.fill();\n        cx.globalAlpha=al*dp;\n        dTx('Tunis',160,880,C.cr,56,'center');\n        cx.globalAlpha=al;\n      }\n\n      // Ligne bleue épaisse (10px) + cercle géométrique\n      var lp=eIOC(pr(t,.2,1.6));\n      if(lp>0){\n        if(lp<=.65){\n          var lineP=[{x:160,y:960},{x:160+(740)*(lp/.65),y:960}];\n          dPP(lineP,1,10,C.bl);\n        } else {\n          dPP([{x:160,y:960},{x:900,y:960}],1,10,C.bl);\n          var cp=(lp-.65)/.35;\n          cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';\n          cx.beginPath();cx.arc(900,960,120,-Math.PI/2,-Math.PI/2+Math.PI*2*cp);cx.stroke();\n        }\n      }\n\n      // Accroche typographique (120-140px, stagger vertical)\n      var tx=['Étudie en Russie.','Change ta vie.'];\n      for(var i=0;i<2;i++){\n        var tp=eOE(pr(t,.5+i*.18,1.1+i*.18));\n        if(tp>0){\n          var oy=(1-tp)*120;\n          cx.globalAlpha=al*tp;\n          dTx(tx[i],W/2,900+i*160+oy,i===0?C.yl:C.cr,140,'center');\n        }\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 2 (2 - 4s) =================\n  if(t>=1.8&&t<4.6){\n    var fi2=eOE(pr(t,2,2.3)),fo2=t>3.6?1-eIOC(pr(t,3.6,4.2)):1,al2=fi2*fo2;\n    if(al2>.001){\n      cx.save();\n      if(t>=3.6){\n        var sc=1+eIOC(pr(t,3.6,4.2))*3;\n        cx.translate(W/2,H/2);cx.scale(sc,sc);cx.translate(-W/2,-H/2);\n        cx.globalAlpha=al2*(1-eIOC(pr(t,3.6,4.2)));\n      } else {\n        cx.globalAlpha=al2;\n      }\n\n      // Ligne géométrique angles droits\n      var lp2=eIOC(pr(t,2,3.6));\n      dPP(pB,lp2,10,C.bl);\n\n      // Textes et jalons (décalés pour ne pas se superposer)\n      var tx2=['Consultation gratuite','Dossier d\\'admission'];\n      var corners=[1,3]; // Indices des virages dans pB\n      var txtOffY=[-80,80]; // L'un au-dessus, l'autre en dessous\n      var txtOffX=[0,0];\n      var txtAl=['center','center'];\n\n      for(var ci=0;ci<corners.length;ci++){\n        var cidx=corners[ci];\n        var ct=cidx/(pB.length-1);\n        if(lp2>=ct){\n          var cp2=pr(t,2+ct*1.6,2+ct*1.6+.35);\n          var pulse=1+.35*Math.sin(cl(cp2,0,1)*Math.PI);\n          var sz=28*pulse;\n          cx.fillStyle=C.yl;\n          cx.fillRect(pB[cidx].x-sz/2,pB[cidx].y-sz/2,sz,sz);\n\n          // Texte avec décalage d'apparition et positionnement séparé\n          var tAl=eOE(pr(t,2.3+ci*.4,2.7+ci*.4));\n          if(tAl>0){\n            var curAlpha = t>=3.6 ? al2*(1-eIOC(pr(t,3.6,4.2))) : al2;\n            cx.globalAlpha=curAlpha*tAl;\n            dTx(tx2[ci],pB[cidx].x+txtOffX[ci],pB[cidx].y+txtOffY[ci],C.cr,88,txtAl[ci]);\n            cx.globalAlpha=curAlpha;\n          }\n        }\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 3 (4 - 6s) =================\n  if(t>=3.8&&t<6.6){\n    var fi3=eOE(pr(t,4,4.3)),fo3=t>5.6?1-eIOC(pr(t,5.6,6.2)):1,al3=fi3*fo3;\n    if(al3>.001){\n      cx.save();cx.globalAlpha=al3;\n\n      // Bouclier géométrique\n      var sp3=eIOC(pr(t,4,4.8));\n      if(sp3>0) dPP(bld,sp3,10,C.bl);\n\n      // Tampon circulaire jaune\n      var stP=pr(t,4.8,5.1);\n      if(stP>0){\n        var stS=eOE(cl(stP,0,1))*1.15;\n        cx.fillStyle=C.yl;cx.beginPath();cx.arc(540,800,90*stS,0,Math.PI*2);cx.fill();\n      }\n\n      // Onde de choc\n      var swP=pr(t,4.9,5.5);\n      if(swP>0&&swP<1){\n        cx.strokeStyle=C.yl;cx.lineWidth=4;cx.globalAlpha=al3*(1-swP);\n        cx.beginPath();cx.arc(540,800,90+swP*350,0,Math.PI*2);cx.stroke();\n        cx.globalAlpha=al3;\n      }\n\n      // Textes sous le bouclier (visibles et bien placés)\n      var tx3=['Visa garanti par contrat','Accueil et logement garantis'];\n      for(var i=0;i<2;i++){\n        var t3p=eOE(pr(t,5+i*.2,5.5+i*.2));\n        if(t3p>0){\n          var sx=i===0?-W/2*(1-t3p):W/2*(1-t3p);\n          cx.globalAlpha=al3*t3p;\n          dTx(tx3[i],W/2+sx,1300+i*120,C.cr,80,'center');\n        }\n      }\n\n      // Réduction en point pour transition\n      var shP=pr(t,5.7,6.2);\n      if(shP>0){\n        cx.globalAlpha=al3*(1-shP);\n        cx.fillStyle=C.bl;\n        var rad=80*(1-eIOC(shP));\n        if(rad>1){cx.beginPath();cx.arc(540,800,rad,0,Math.PI*2);cx.fill()}\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= PARTICULES (Transition 3->4) =================\n  if(t>=5.8&&t<7.2){\n    var ppP=pr(t,5.9,6.8);\n    if(ppP>0){\n      cx.save();\n      for(var pi=0;pi<parts.length;pi++){\n        var p=parts[pi];\n        var ppp=cl((ppP-p.dl)/(1-p.dl),0,1);\n        if(ppp<=0)continue;\n        var ep=eOE(ppp);\n        var px=540+Math.cos(p.a)*p.d*ep;\n        var py=800+Math.sin(p.a)*p.d*ep;\n        var pa=ppp<.7?1:1-eIOC((ppp-.7)/.3);\n        cx.globalAlpha=pa*.8;\n        cx.fillStyle=p.c;\n        var psz=p.sz*(1-ppp*.5);\n        if(p.sh===0){cx.fillRect(px-psz/2,py-psz/2,psz,psz)}\n        else if(p.sh===1){cx.beginPath();cx.arc(px,py,psz/2,0,Math.PI*2);cx.fill()}\n        else{cx.beginPath();cx.moveTo(px,py-psz/2);cx.lineTo(px+psz/2,py+psz/2);cx.lineTo(px-psz/2,py+psz/2);cx.closePath();cx.fill()}\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 4 (6 - 8.5s) =================\n  if(t>=6.2&&t<9.2){\n    var fi4=eOE(pr(t,6.2,6.6)),fo4=t>8.2?1-eIOC(pr(t,8.2,8.7)):1,al4=fi4*fo4;\n    if(al4>.001){\n      cx.save();cx.globalAlpha=al4;\n\n      // Flip out sur axe Y\n      var flipP=pr(t,8.2,8.7);\n      var scaleX=flipP>0?Math.abs(Math.cos(flipP*Math.PI)):1;\n      if(scaleX<.01)scaleX=.01;\n      cx.translate(W/2,960);cx.scale(scaleX,1);cx.translate(-W/2,-960);\n\n      // Fil conducteur derrière les chiffres\n      cx.strokeStyle=C.bl;cx.lineWidth=10;cx.globalAlpha=al4*.3;\n      cx.beginPath();cx.moveTo(M,750);cx.lineTo(W-M,750);cx.stroke();\n      cx.beginPath();cx.moveTo(M,1150);cx.lineTo(W-M,1150);cx.stroke();\n      cx.globalAlpha=al4;\n\n      // Compteur 1 : +1 200 étudiants tunisiens (220px pour le chiffre)\n      var c1p=eOE(pr(t,6.4,7.6));\n      var v1=Math.round(c1p*1200);\n      var numStr1='+'+v1.toLocaleString('fr-FR');\n\n      // Dessiner le grand chiffre\n      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';\n      cx.fillText(numStr1,W/2,700);\n\n      // Dessiner le mot clé en dessous\n      var kw1='étudiants tunisiens';\n      dTx(kw1,W/2,860,C.cr,80,'center');\n\n      // Soulignement rectangle jaune\n      if(c1p>.3){\n        cx.fillStyle=C.yl;\n        var uw1=c1p*650;\n        cx.fillRect(W/2-uw1/2,910,uw1,10);\n      }\n\n      // Compteur 2 : 40+ universités d'État\n      var c2p=eOE(pr(t,6.8,7.8));\n      var v2=Math.round(c2p*40);\n      var numStr2=v2+'+';\n\n      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';\n      cx.fillText(numStr2,W/2,1100);\n\n      var kw2='universités d\\'État';\n      dTx(kw2,W/2,1260,C.cr,80,'center');\n\n      // Soulignement rectangle jaune\n      if(c2p>.3){\n        cx.fillStyle=C.yl;\n        var uw2=c2p*550;\n        cx.fillRect(W/2-uw2/2,1310,uw2,10);\n      }\n\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 5 (8.5 - 10s) =================\n  if(t>=8.2){\n    var fi5=eOE(pr(t,8.5,8.9));\n    var fadeBlack=t>=9.7?eIOC(pr(t,9.7,10)):0;\n    var al5=fi5*(1-fadeBlack);\n    if(al5>.001){\n      cx.save();cx.globalAlpha=al5;\n\n      // Ligne bleue arrivant à destination\n      var lineArrive=eIOC(pr(t,8.3,8.8));\n      if(lineArrive>0){\n        cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';\n        cx.beginPath();cx.moveTo(0,800);cx.lineTo(880*lineArrive,800);cx.stroke();\n      }\n\n      // Gros point jaune \"Russie\"\n      var dotP=eOE(pr(t,8.6,9));\n      if(dotP>0){\n        cx.fillStyle=C.yl;\n        cx.beginPath();cx.arc(900,800,35*dotP,0,Math.PI*2);cx.fill();\n        cx.globalAlpha=al5*dotP;\n        dTx('Russie',850,800,C.yl,72,'right');\n        cx.globalAlpha=al5;\n      }\n\n      // Bloc CTA pulsant\n      var ctaP=eOE(pr(t,8.7,9.1));\n      if(ctaP>0){\n        var pulse=1+.025*Math.sin(pr(t,9,10)*Math.PI*6);\n        var ctaTxt='Commencer mon dossier gratuit';\n\n        // Calculer la taille exacte du bouton avec measureText + marges\n        cx.font='72px '+F;\n        var tw=cx.measureText(ctaTxt).width;\n        var bw=(tw+120)*pulse; // 2x60px de marge\n        var bh=140*pulse;\n\n        // Si le bouton dépasse la largeur dispo, on passe sur deux lignes\n        if(tw+120>W-2*M){\n          var l1='Commencer mon',l2='dossier gratuit';\n          cx.font='72px '+F;\n          var tw1=cx.measureText(l1).width,tw2=cx.measureText(l2).width;\n          bw=(Math.max(tw1,tw2)+120)*pulse;\n          bh=220*pulse;\n          var bx=W/2-bw/2,by=1100-bh/2;\n\n          cx.globalAlpha=al5*ctaP;\n          cx.strokeStyle=C.cr;cx.lineWidth=6;\n          rR(bx,by,bw,bh,24);cx.stroke();\n\n          dTx(l1,W/2,1100-45,C.cr,72,'center');\n          dTx(l2,W/2,1100+45,C.cr,72,'center');\n        } else {\n          var bx=W/2-bw/2,by=1100-bh/2;\n          cx.globalAlpha=al5*ctaP;\n          cx.strokeStyle=C.cr;cx.lineWidth=6;\n          rR(bx,by,bw,bh,24);cx.stroke();\n          dTx(ctaTxt,W/2,1100,C.cr,72,'center');\n        }\n      }\n\n      // URL\n      var urlP=eOE(pr(t,8.9,9.2));\n      if(urlP>0){\n        cx.globalAlpha=al5*urlP;\n        dTx('russieetudes.com',W/2,1320,C.bl,88,'center');\n      }\n\n      cx.restore();\n    }\n\n    // Fondu net au noir final (9.7s à 10s)\n    if(fadeBlack>0){\n      cx.save();cx.globalAlpha=fadeBlack;\n      cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);\n      cx.restore();\n    }\n  }\n};\n\nwindow.renderAt(0);\n})();\n</script>\n</body>\n</html>\n```",
+   "model": "qwen-3.8-max",
+   "order": 1791584000002,
+   "projectId": "s8xa2ozmbp3w44cmrypx",
+   "result": "```html\n<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>RusStudy</title>\n<style>*{margin:0;padding:0}body{background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh;overflow:hidden}canvas{max-height:100vh;max-width:100vw}</style>\n</head>\n<body>\n<canvas id=\"c\" width=\"1080\" height=\"1920\"></canvas>\n<script>\n(function(){\nvar cv=document.getElementById('c'),cx=cv.getContext('2d'),W=1080,H=1920,M=80;\nvar C={bg:'#0A0A0A',cr:'#F0EBE3',bl:'#2F66E8',yl:'#FBBB21'};\nvar F='\"Space Grotesk\",sans-serif';\n\nfunction eOE(x){return x>=1?1:x<=0?0:1-Math.pow(2,-10*x)}\nfunction eIOC(x){return x<=0?0:x>=1?1:x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}\nfunction cl(v,a,b){return v<a?a:v>b?b:v}\nfunction pr(t,s,e){return cl((t-s)/(e-s),0,1)}\n\nfunction fitTx(s,mf,mw){\n  cx.font=mf+'px '+F;\n  if(cx.measureText(s).width<=mw)return mf;\n  var lo=10,hi=mf;\n  while(hi-lo>.5){var m=(lo+hi)/2;cx.font=m+'px '+F;if(cx.measureText(s).width<=mw)lo=m;else hi=m;}\n  return lo;\n}\n\nfunction dTx(s,x,y,c,sz,al){\n  al=al||'left';\n  var fs=fitTx(s,sz,W-2*M);\n  cx.font=fs+'px '+F;cx.fillStyle=c;cx.textAlign=al;cx.textBaseline='middle';\n  cx.fillText(s,al==='center'?x:al==='right'?x:x,y);\n  return fs;\n}\n\nfunction rR(x,y,w,h,r){\n  cx.beginPath();cx.moveTo(x+r,y);cx.lineTo(x+w-r,y);cx.quadraticCurveTo(x+w,y,x+w,y+r);\n  cx.lineTo(x+w,y+h-r);cx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);cx.lineTo(x+r,y+h);\n  cx.quadraticCurveTo(x,y+h,x,y+h-r);cx.lineTo(x,y+r);cx.quadraticCurveTo(x,y,x+r,y);cx.closePath();\n}\n\n// Grille de points de fond (déterministe)\nvar seed=42;\nfunction sR(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}\nvar dots=[];\nfor(var i=0;i<120;i++)dots.push({x:sR()*W,y:sR()*H,r:1+sR()*2.5,a:.04+sR()*.08});\nseed=42;\n\n// Particules géométriques (transition scène 3 -> 4)\nvar parts=[];\nfor(var i=0;i<80;i++){\n  var ang=sR()*Math.PI*2,dist=80+sR()*600;\n  parts.push({a:ang,d:dist,sz:4+sR()*16,sh:Math.floor(sR()*3),dl:sR()*.35,c:i%3===0?C.yl:i%3===1?C.bl:C.cr});\n}\nseed=42;\n\n// Parcours géométrique scène 2 (angles droits, occupe >60% largeur)\nvar pB=[\n  {x:160,y:500},{x:920,y:500},\n  {x:920,y:900},{x:160,y:900},\n  {x:160,y:1300},{x:920,y:1300}\n];\n\n// Bouclier géométrique scène 3 (>60% largeur)\nvar bld=[\n  {x:540,y:420},{x:880,y:580},{x:880,y:950},\n  {x:540,y:1180},{x:200,y:950},{x:200,y:580},{x:540,y:420}\n];\n\nfunction pLen(p){var l=0;for(var i=1;i<p.length;i++){var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y;l+=Math.sqrt(dx*dx+dy*dy)}return l}\nfunction dPP(p,prg,lw,col){\n  if(prg<=0||p.length<2)return;\n  var tl=pLen(p)*prg,ac=0;\n  cx.strokeStyle=col;cx.lineWidth=lw;cx.lineCap='round';cx.lineJoin='round';\n  cx.beginPath();cx.moveTo(p[0].x,p[0].y);\n  for(var i=1;i<p.length;i++){\n    var dx=p[i].x-p[i-1].x,dy=p[i].y-p[i-1].y,sl=Math.sqrt(dx*dx+dy*dy);\n    if(ac+sl<=tl){cx.lineTo(p[i].x,p[i].y);ac+=sl}\n    else{var rm=tl-ac,t=sl>0?rm/sl:0;cx.lineTo(p[i-1].x+dx*t,p[i-1].y+dy*t);break}\n  }\n  cx.stroke();\n}\n\nwindow.renderAt=function(t){\n  t=cl(t,0,10);\n  cx.clearRect(0,0,W,H);\n\n  // Fond\n  cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);\n\n  // Dégradé radial bleu très sombre animé\n  var grd=cx.createRadialGradient(540,960+Math.sin(t*.5)*100,0,540,960,1200);\n  grd.addColorStop(0,'rgba(47,102,232,0.07)');grd.addColorStop(1,'rgba(10,10,10,0)');\n  cx.fillStyle=grd;cx.fillRect(0,0,W,H);\n\n  // Grille de points\n  cx.save();\n  for(var i=0;i<dots.length;i++){\n    var d=dots[i];\n    cx.globalAlpha=d.a*(0.7+0.3*Math.sin(t*1.5+i));\n    cx.fillStyle=C.bl;\n    cx.beginPath();cx.arc(d.x,d.y,d.r,0,Math.PI*2);cx.fill();\n  }\n  cx.restore();\n\n  // ================= SCÈNE 1 (0 - 2s) =================\n  if(t<2.6){\n    var fi=eOE(pr(t,0,.4)),fo=t>1.6?1-eIOC(pr(t,1.6,2.2)):1,al=fi*fo;\n    if(al>.001){\n      cx.save();\n      var sh=t>1.6?eIOC(pr(t,1.6,2.2))*H:0;\n      cx.translate(0,-sh);\n      cx.globalAlpha=al;\n\n      // Point crème + Tunis placé à y=1500 (bas de l'image, loin de l'accroche)\n      var dp=eOE(pr(t,0,.6));\n      if(dp>0){\n        cx.fillStyle=C.cr;cx.beginPath();cx.arc(160,1500,14*dp,0,Math.PI*2);cx.fill();\n        cx.globalAlpha=al*dp;\n        dTx('Tunis',160,1430,C.cr,56,'center');\n        cx.globalAlpha=al;\n      }\n\n      // Ligne bleue épaisse (10px) partant de y=1500 + cercle géométrique\n      var lp=eIOC(pr(t,.2,1.6));\n      if(lp>0){\n        if(lp<=.65){\n          var lineP=[{x:160,y:1500},{x:160+(740)*(lp/.65),y:1500}];\n          dPP(lineP,1,10,C.bl);\n        } else {\n          dPP([{x:160,y:1500},{x:900,y:1500}],1,10,C.bl);\n          var cp=(lp-.65)/.35;\n          cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';\n          cx.beginPath();cx.arc(900,1500,120,-Math.PI/2,-Math.PI/2+Math.PI*2*cp);cx.stroke();\n        }\n      }\n\n      // Accroche typographique (120-140px, stagger vertical)\n      var tx=['Étudie en Russie.','Change ta vie.'];\n      for(var i=0;i<2;i++){\n        var tp=eOE(pr(t,.5+i*.18,1.1+i*.18));\n        if(tp>0){\n          var oy=(1-tp)*120;\n          cx.globalAlpha=al*tp;\n          dTx(tx[i],W/2,900+i*160+oy,i===0?C.yl:C.cr,140,'center');\n        }\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 2 (2 - 4s) =================\n  if(t>=1.8&&t<4.6){\n    var fi2=eOE(pr(t,2,2.3)),fo2=t>3.6?1-eIOC(pr(t,3.6,4.2)):1,al2=fi2*fo2;\n    if(al2>.001){\n      cx.save();\n      if(t>=3.6){\n        var sc=1+eIOC(pr(t,3.6,4.2))*3;\n        cx.translate(W/2,H/2);cx.scale(sc,sc);cx.translate(-W/2,-H/2);\n        cx.globalAlpha=al2*(1-eIOC(pr(t,3.6,4.2)));\n      } else {\n        cx.globalAlpha=al2;\n      }\n\n      // Ligne géométrique angles droits\n      var lp2=eIOC(pr(t,2,3.6));\n      dPP(pB,lp2,10,C.bl);\n\n      // Textes et jalons : alignés à gauche à x=120, mesurés avec measureText via dTx\n      var tx2=['Consultation gratuite','Dossier d\\'admission'];\n      var corners=[1,3]; // Indices des virages dans pB\n      var txtOffY=[-80,80]; // L'un au-dessus, l'autre en dessous\n\n      for(var ci=0;ci<corners.length;ci++){\n        var cidx=corners[ci];\n        var ct=cidx/(pB.length-1);\n        if(lp2>=ct){\n          var cp2=pr(t,2+ct*1.6,2+ct*1.6+.35);\n          var pulse=1+.35*Math.sin(cl(cp2,0,1)*Math.PI);\n          var sz=28*pulse;\n          cx.fillStyle=C.yl;\n          cx.fillRect(pB[cidx].x-sz/2,pB[cidx].y-sz/2,sz,sz);\n\n          // Texte positionné à x=120 (gauche), dTx gère la réduction si trop large\n          var tAl=eOE(pr(t,2.3+ci*.4,2.7+ci*.4));\n          if(tAl>0){\n            var curAlpha = t>=3.6 ? al2*(1-eIOC(pr(t,3.6,4.2))) : al2;\n            cx.globalAlpha=curAlpha*tAl;\n            dTx(tx2[ci],120,pB[cidx].y+txtOffY[ci],C.cr,88,'left');\n            cx.globalAlpha=curAlpha;\n          }\n        }\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 3 (4 - 6s) =================\n  if(t>=3.8&&t<6.6){\n    var fi3=eOE(pr(t,4,4.3)),fo3=t>5.6?1-eIOC(pr(t,5.6,6.2)):1,al3=fi3*fo3;\n    if(al3>.001){\n      cx.save();cx.globalAlpha=al3;\n\n      // Bouclier géométrique\n      var sp3=eIOC(pr(t,4,4.8));\n      if(sp3>0) dPP(bld,sp3,10,C.bl);\n\n      // Tampon circulaire jaune\n      var stP=pr(t,4.8,5.1);\n      if(stP>0){\n        var stS=eOE(cl(stP,0,1))*1.15;\n        cx.fillStyle=C.yl;cx.beginPath();cx.arc(540,800,90*stS,0,Math.PI*2);cx.fill();\n      }\n\n      // Onde de choc\n      var swP=pr(t,4.9,5.5);\n      if(swP>0&&swP<1){\n        cx.strokeStyle=C.yl;cx.lineWidth=4;cx.globalAlpha=al3*(1-swP);\n        cx.beginPath();cx.arc(540,800,90+swP*350,0,Math.PI*2);cx.stroke();\n        cx.globalAlpha=al3;\n      }\n\n      // Textes sous le bouclier (visibles et bien placés)\n      var tx3=['Visa garanti par contrat','Accueil et logement garantis'];\n      for(var i=0;i<2;i++){\n        var t3p=eOE(pr(t,5+i*.2,5.5+i*.2));\n        if(t3p>0){\n          var sx=i===0?-W/2*(1-t3p):W/2*(1-t3p);\n          cx.globalAlpha=al3*t3p;\n          dTx(tx3[i],W/2+sx,1300+i*120,C.cr,80,'center');\n        }\n      }\n\n      // Réduction en point pour transition\n      var shP=pr(t,5.7,6.2);\n      if(shP>0){\n        cx.globalAlpha=al3*(1-shP);\n        cx.fillStyle=C.bl;\n        var rad=80*(1-eIOC(shP));\n        if(rad>1){cx.beginPath();cx.arc(540,800,rad,0,Math.PI*2);cx.fill()}\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= PARTICULES (Transition 3->4) =================\n  if(t>=5.8&&t<7.2){\n    var ppP=pr(t,5.9,6.8);\n    if(ppP>0){\n      cx.save();\n      for(var pi=0;pi<parts.length;pi++){\n        var p=parts[pi];\n        var ppp=cl((ppP-p.dl)/(1-p.dl),0,1);\n        if(ppp<=0)continue;\n        var ep=eOE(ppp);\n        var px=540+Math.cos(p.a)*p.d*ep;\n        var py=800+Math.sin(p.a)*p.d*ep;\n        var pa=ppp<.7?1:1-eIOC((ppp-.7)/.3);\n        cx.globalAlpha=pa*.8;\n        cx.fillStyle=p.c;\n        var psz=p.sz*(1-ppp*.5);\n        if(p.sh===0){cx.fillRect(px-psz/2,py-psz/2,psz,psz)}\n        else if(p.sh===1){cx.beginPath();cx.arc(px,py,psz/2,0,Math.PI*2);cx.fill()}\n        else{cx.beginPath();cx.moveTo(px,py-psz/2);cx.lineTo(px+psz/2,py+psz/2);cx.lineTo(px-psz/2,py+psz/2);cx.closePath();cx.fill()}\n      }\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 4 (6 - 8.5s) =================\n  if(t>=6.2&&t<9.2){\n    var fi4=eOE(pr(t,6.2,6.6)),fo4=t>8.2?1-eIOC(pr(t,8.2,8.7)):1,al4=fi4*fo4;\n    if(al4>.001){\n      cx.save();cx.globalAlpha=al4;\n\n      // Flip out sur axe Y\n      var flipP=pr(t,8.2,8.7);\n      var scaleX=flipP>0?Math.abs(Math.cos(flipP*Math.PI)):1;\n      if(scaleX<.01)scaleX=.01;\n      cx.translate(W/2,960);cx.scale(scaleX,1);cx.translate(-W/2,-960);\n\n      // Fil conducteur derrière les chiffres\n      cx.strokeStyle=C.bl;cx.lineWidth=10;cx.globalAlpha=al4*.3;\n      cx.beginPath();cx.moveTo(M,750);cx.lineTo(W-M,750);cx.stroke();\n      cx.beginPath();cx.moveTo(M,1150);cx.lineTo(W-M,1150);cx.stroke();\n      cx.globalAlpha=al4;\n\n      // Compteur 1 : +1 200 étudiants tunisiens (220px pour le chiffre)\n      var c1p=eOE(pr(t,6.4,7.6));\n      var v1=Math.round(c1p*1200);\n      var numStr1='+'+v1.toLocaleString('fr-FR');\n\n      // Dessiner le grand chiffre\n      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';\n      cx.fillText(numStr1,W/2,700);\n\n      // Dessiner le mot clé en dessous\n      var kw1='étudiants tunisiens';\n      dTx(kw1,W/2,860,C.cr,80,'center');\n\n      // Soulignement rectangle jaune\n      if(c1p>.3){\n        cx.fillStyle=C.yl;\n        var uw1=c1p*650;\n        cx.fillRect(W/2-uw1/2,910,uw1,10);\n      }\n\n      // Compteur 2 : 40+ universités d'État\n      var c2p=eOE(pr(t,6.8,7.8));\n      var v2=Math.round(c2p*40);\n      var numStr2=v2+'+';\n\n      cx.font='220px '+F;cx.fillStyle=C.bl;cx.textAlign='center';cx.textBaseline='middle';\n      cx.fillText(numStr2,W/2,1100);\n\n      var kw2='universités d\\'État';\n      dTx(kw2,W/2,1260,C.cr,80,'center');\n\n      // Soulignement rectangle jaune\n      if(c2p>.3){\n        cx.fillStyle=C.yl;\n        var uw2=c2p*550;\n        cx.fillRect(W/2-uw2/2,1310,uw2,10);\n      }\n\n      cx.restore();\n    }\n  }\n\n  // ================= SCÈNE 5 (8.5 - 10s) =================\n  if(t>=8.2){\n    var fi5=eOE(pr(t,8.5,8.9));\n    var fadeBlack=t>=9.7?eIOC(pr(t,9.7,10)):0;\n    var al5=fi5*(1-fadeBlack);\n    if(al5>.001){\n      cx.save();cx.globalAlpha=al5;\n\n      // Ligne bleue arrivant à destination\n      var lineArrive=eIOC(pr(t,8.3,8.8));\n      if(lineArrive>0){\n        cx.strokeStyle=C.bl;cx.lineWidth=10;cx.lineCap='round';\n        cx.beginPath();cx.moveTo(0,800);cx.lineTo(880*lineArrive,800);cx.stroke();\n      }\n\n      // Gros point jaune \"Russie\"\n      var dotP=eOE(pr(t,8.6,9));\n      if(dotP>0){\n        cx.fillStyle=C.yl;\n        cx.beginPath();cx.arc(900,800,35*dotP,0,Math.PI*2);cx.fill();\n        cx.globalAlpha=al5*dotP;\n        dTx('Russie',850,800,C.yl,72,'right');\n        cx.globalAlpha=al5;\n      }\n\n      // Bloc CTA pulsant\n      var ctaP=eOE(pr(t,8.7,9.1));\n      if(ctaP>0){\n        var pulse=1+.025*Math.sin(pr(t,9,10)*Math.PI*6);\n        var ctaTxt='Commencer mon dossier gratuit';\n\n        // Calculer la taille exacte du bouton avec measureText + marges\n        cx.font='72px '+F;\n        var tw=cx.measureText(ctaTxt).width;\n        var bw=(tw+120)*pulse; // 2x60px de marge\n        var bh=140*pulse;\n\n        // Si le bouton dépasse la largeur dispo, on passe sur deux lignes\n        if(tw+120>W-2*M){\n          var l1='Commencer mon',l2='dossier gratuit';\n          cx.font='72px '+F;\n          var tw1=cx.measureText(l1).width,tw2=cx.measureText(l2).width;\n          bw=(Math.max(tw1,tw2)+120)*pulse;\n          bh=220*pulse;\n          var bx=W/2-bw/2,by=1100-bh/2;\n\n          cx.globalAlpha=al5*ctaP;\n          cx.strokeStyle=C.cr;cx.lineWidth=6;\n          rR(bx,by,bw,bh,24);cx.stroke();\n\n          dTx(l1,W/2,1100-45,C.cr,72,'center');\n          dTx(l2,W/2,1100+45,C.cr,72,'center');\n        } else {\n          var bx=W/2-bw/2,by=1100-bh/2;\n          cx.globalAlpha=al5*ctaP;\n          cx.strokeStyle=C.cr;cx.lineWidth=6;\n          rR(bx,by,bw,bh,24);cx.stroke();\n          dTx(ctaTxt,W/2,1100,C.cr,72,'center');\n        }\n      }\n\n      // URL\n      var urlP=eOE(pr(t,8.9,9.2));\n      if(urlP>0){\n        cx.globalAlpha=al5*urlP;\n        dTx('russieetudes.com',W/2,1320,C.bl,88,'center');\n      }\n\n      cx.restore();\n    }\n\n    // Fondu net au noir final (9.7s à 10s)\n    if(fadeBlack>0){\n      cx.save();cx.globalAlpha=fadeBlack;\n      cx.fillStyle=C.bg;cx.fillRect(0,0,W,H);\n      cx.restore();\n    }\n  }\n};\n\nwindow.renderAt(0);\n})();\n</script>\n</body>\n</html>\n```",
+   "status": "valide",
+   "title": "2. Code de l'animation (canvas, renderAt(t))",
+   "updatedAt": 1791584718918,
+   "id": "video-2-code"
+  },
+  {
+   "attempts": 1,
+   "claude": {
+    "estimated": true,
+    "note": "Fait par Claude : 300 images capturées dans Chromium avec la police Space Grotesk, encodées en H.264 (1080×1920, 30 i/s, 10,00 s, 1 Mo), puis vérification image par image. Vidéo muette.",
+    "tokens": 1500,
+    "verdict": "ok"
+   },
+   "createdAt": 1791584841780,
+   "instructions": "Rendre l'animation validée en MP4 vertical 1080×1920, 30 images/s, 10 s, et vérifier le résultat final.",
+   "model": "claude",
+   "order": 1791584000003,
+   "projectId": "s8xa2ozmbp3w44cmrypx",
+   "result": "russtudy-10s.mp4 — 1080×1920 · 30 i/s · 300 images · 10,00 s · 994 Ko · H.264",
+   "status": "valide",
+   "title": "3. Rendu MP4 et vérification",
+   "updatedAt": 1791584841780,
+   "id": "video-3-rendu"
+  }
+ ]
+}

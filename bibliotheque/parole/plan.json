@@ -1,0 +1,525 @@
+{
+ "titre": "L'Acoustique de l'Influence",
+ "sous_titre": "Vaincre le trac, architecturer le discours et magnétiser l'auditoire",
+ "bibliographie": [
+  {
+   "auteur": "Dale Carnegie",
+   "titre": "Comment parler en public",
+   "annee": "1962",
+   "idee": "La confiance naît de la préparation et de l'authenticité ; parler de ce que l'on connaît et de ce que l'on a vécu désarme la peur.",
+   "apport": "Les fondations du storytelling personnel et la dédramatisation de l'erreur comme outil de connexion."
+  },
+  {
+   "auteur": "Chris Anderson",
+   "titre": "TED Talks: The Official TED Guide to Public Speaking",
+   "annee": "2016",
+   "idee": "Chaque grand discours repose sur un « fil rouge » (throughline), une idée centrale qui mérite d'être propagée.",
+   "apport": "La méthode d'élagage impitoyable pour garantir qu'un seul message survive à la prise de parole."
+  },
+  {
+   "auteur": "Carmine Gallo",
+   "titre": "Talk Like TED",
+   "annee": "2014",
+   "idee": "L'analyse de centaines de conférences révèle des constantes neurologiques : la règle de trois, la limite de 18 minutes et l'ancrage émotionnel.",
+   "apport": "Les techniques de pacing (rythme) et l'intégration de données sensorielles pour maintenir l'attention."
+  },
+  {
+   "auteur": "Nancy Duarte",
+   "titre": "Resonate",
+   "annee": "2010",
+   "idee": "Un discours est un voyage qui doit alterner entre « ce qui est » (le statu quo) et « ce qui pourrait être » (le futur idéal) pour créer une tension.",
+   "apport": "La structure en « sparkline » (ligne d'étincelle) et le positionnement de l'orateur comme mentor, et non comme héros."
+  },
+  {
+   "auteur": "Garr Reynolds",
+   "titre": "Presentation Zen",
+   "annee": "2008",
+   "idee": "La surcharge cognitive tue le message ; la simplicité, la retenue et le storytelling visuel priment sur les listes à puces.",
+   "apport": "Le design de supports visuels minimalistes et la gestion de l'attention oculaire de l'auditoire."
+  },
+  {
+   "auteur": "Scott Berkun",
+   "titre": "Confessions of a Public Speaker",
+   "annee": "2009",
+   "idee": "La réalité terrain de l'orateur est faite d'imprévus, de pannes techniques et de publics difficiles ; la survie prime sur la perfection.",
+   "apport": "Les protocoles de gestion de crise, l'humour de secours et l'adaptation aux environnements hostiles."
+  },
+  {
+   "auteur": "Amy Cuddy",
+   "titre": "Presence",
+   "annee": "2015",
+   "idee": "Le langage corporel ne fait pas qu'influencer les autres, il modifie notre propre chimie interne (testostérone/cortisol) pour vaincre l'anxiété.",
+   "apport": "Les routines somatiques pré-scène et l'alignement postural pour projeter une autorité naturelle."
+  },
+  {
+   "auteur": "Julian Treasure",
+   "titre": "How to Be Heard",
+   "annee": "2017",
+   "idee": "La voix est un instrument qui nécessite un accordage précis (timbre, débit, prosodie) et l'écoute est le prérequis de l'influence.",
+   "apport": "La boîte à outils vocale et le framework HAIL (Honnêteté, Authenticité, Intégrité, Love) pour l'éthique oratoire."
+  },
+  {
+   "auteur": "Oren Klaff",
+   "titre": "Pitch Anything",
+   "annee": "2011",
+   "idee": "Les décisions d'achat ou d'investissement sont prises par le « cerveau reptilien » ; il faut contrôler le cadre (Frame Control) avant de présenter les faits.",
+   "apport": "La psychologie des pitchs à haute tension, la dominance de cadre et la gestion des objections fatales."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence et Manipulation",
+   "annee": "1984",
+   "idee": "Six principes universels (réciprocité, autorité, preuve sociale, etc.) régissent l'acceptation d'un message par le cerveau humain.",
+   "apport": "L'intégration subtile des déclencheurs psychologiques de persuasion dans la trame narrative du discours."
+  },
+  {
+   "auteur": "Annette Simmons",
+   "titre": "The Story Factor",
+   "annee": "2001",
+   "idee": "Les faits informent, mais les histoires créent l'adhésion ; il existe six types de récits fondamentaux en milieu professionnel.",
+   "apport": "La taxonomie des histoires d'affaires (Qui je suis, Pourquoi je suis là, La vision) pour structurer l'ethos."
+  },
+  {
+   "auteur": "Olivier Reboul",
+   "titre": "Introduction à la rhétorique",
+   "annee": "1991",
+   "idee": "La rhétorique classique (Ethos, Pathos, Logos) reste la grille de lecture indépassable de l'argumentation et de la séduction verbale.",
+   "apport": "L'équilibre structurel entre la crédibilité de l'orateur, la logique du propos et l'émotion de l'auditoire."
+  },
+  {
+   "auteur": "Brené Brown",
+   "titre": "Le Pouvoir de la vulnérabilité",
+   "annee": "2012",
+   "idee": "La vulnérabilité stratégique n'est pas une faiblesse mais le vecteur le plus puissant de connexion humaine et de leadership.",
+   "apport": "L'art de partager l'échec et le doute pour désarmer le scepticisme et créer une intimité de masse."
+  },
+  {
+   "auteur": "Stephen Denning",
+   "titre": "The Leader's Guide to Storytelling",
+   "annee": "2005",
+   "idee": "Le storytelling de leadership n'est pas un divertissement mais un outil de changement organisationnel (springboard stories).",
+   "apport": "Les schémas narratifs orientés vers l'action et la mobilisation d'équipes en contexte corporate."
+  },
+  {
+   "auteur": "Nick Morgan",
+   "titre": "Power Cues",
+   "annee": "2014",
+   "idee": "La communication humaine est dominée par des signaux inconscients et la synchronisation neuronale entre l'orateur et le groupe.",
+   "apport": "La maîtrise des micro-expressions, de la proxémique et du « leadership acoustique » pour diriger une salle."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 : L'Ingénierie du Trac et de l'Esprit",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "L'Anatomie de la Peur Scénique",
+     "objectif": "Démystifier le trac biologiquement et psychologiquement pour transformer l'anxiété en énergie scénique. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le mythe du trac zéro et l'illusion de l'orateur détaché",
+      "2. L'amygdale, le cortisol et la réaction de survie face au regard",
+      "3. Le Reframing cognitif : de la peur paralysante à l'excitation motrice",
+      "4. L'ancrage neuro-associatif et les déclencheurs de confiance",
+      "5. Le rituel pré-scène : préparer le corps avant l'esprit"
+     ],
+     "exercices": [
+      "La respiration tactique (4-7-8) en condition de stress simulé",
+      "Journaling de restructuration cognitive : renommer ses peurs"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "L'Ethos Préalable et la Légitimité",
+     "objectif": "Construire une autorité intérieure inébranlable avant même de monter sur scène. (Format cible : 3500 mots)",
+     "sections": [
+      "1. La légitimité intérieure : pourquoi vous avez le droit de parler",
+      "2. Désamorcer le syndrome de l'imposteur en contexte d'expertise",
+      "3. L'alignement Valeurs-Message : l'armure de la conviction",
+      "4. La posture psychologique de l'hôte vs celle de l'invité",
+      "5. L'armure de vulnérabilité : assumer ses zones d'ombre"
+     ],
+     "exercices": [
+      "L'audit de légitimité : cartographier ses victoires invisibles",
+      "La lettre à l'auditoire imaginaire pour clarifier son intention"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La Préparation Invisible",
+     "objectif": "Maîtriser les techniques d'internalisation du discours pour une liberté totale sur scène. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le danger mortel d'apprendre par cœur (et l'effet robotique)",
+      "2. La cartographie mentale : retenir les blocs, pas les mots",
+      "3. L'ancrage spatial et la méthode des loci (palais de la mémoire)",
+      "4. La répétition en conditions hostiles (bruit, interruptions)",
+      "5. Le point de non-retour : l'art du lâcher-prise la veille du jour J"
+     ],
+     "exercices": [
+      "Construction d'un palais de la mémoire pour un discours de 10 minutes",
+      "Répétition avec distracteurs cognitifs et physiques"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "La Gestion de l'Adversité Interne",
+     "objectif": "Survivre et rebondir face aux trous de mémoire, aux bégaiements et aux paniques internes. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le trou de mémoire : mythes, réalités et ce que le public voit vraiment",
+      "2. La technique du pont sémantique pour retrouver le fil",
+      "3. L'auto-compassion en temps réel pour stopper la spirale de l'échec",
+      "4. Gérer la voix qui tremble et le souffle court",
+      "5. Transformer l'erreur en complicité avec la salle"
+     ],
+     "exercices": [
+      "Simulation de panne : improviser à partir d'un mot déclencheur aléatoire",
+      "L'exercice du « Et donc » pour forcer la continuité logique"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 : L'Architecture du Message et de la Narration",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Le Fil Rouge et la Thèse",
+     "objectif": "Définir et protéger le message central qui survivra à la prise de parole. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'illusion de l'exhaustivité : vouloir tout dire pour ne rien marquer",
+      "2. La méthode de la phrase unique (le test du post-it)",
+      "3. Le test de résistance au scepticisme de l'auditoire",
+      "4. L'élagage impitoyable : tuer ses darlings (données et anecdotes)",
+      "5. Le contrat moral implicite passé avec l'auditoire",
+      "6. L'alignement du fil rouge sur les besoins profonds de la salle"
+     ],
+     "exercices": [
+      "L'ascenseur conceptuel : réduire 1 heure de contenu en 15 secondes",
+      "Le ciseau de l'éditeur : supprimer 30% d'un texte existant"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "La Structure en Étincelle",
+     "objectif": "Utiliser le contraste et la tension narrative pour maintenir l'attention du début à la fin. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le statu quo (l'enfer) vs le monde idéal (le paradis)",
+      "2. La sparkline de Duarte : alterner les fréquences émotionnelles",
+      "3. Le rythme binaire de la persuasion (Problème / Solution)",
+      "4. Les pivots narratifs et les fausses pistes",
+      "5. Le climax et l'établissement de la nouvelle normalité"
+     ],
+     "exercices": [
+      "Dessin de la sparkline de son propre discours",
+      "Rédaction de 3 pivots narratifs sur un sujet technique"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "L'Ingénierie de l'Histoire",
+     "objectif": "Concevoir des récits d'affaires et personnels qui contournent les défenses logiques. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Les 6 types de récits d'influence en milieu professionnel",
+      "2. L'arc héroïque adapté au business (le client est le héros)",
+      "3. Le détail sensoriel : l'ancrage mémoriel par les 5 sens",
+      "4. Le méchant : l'incarnation du problème ou de l'ancienne méthode",
+      "5. La morale implicite vs le moralisme explicite",
+      "6. Le dosage de la vulnérabilité dans le récit personnel"
+     ],
+     "exercices": [
+      "Matrice des 6 histoires : remplir son réservoir narratif",
+      "Ajout de texture sensorielle à une anecdote corporate plate"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "La Rhétorique des Données",
+     "objectif": "Rendre les chiffres, les KPI et les faits techniques émotionnels et mémorables. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le cerveau reptilien face à l'abstraction des chiffres",
+      "2. L'analogie visuelle et spatiale pour donner du poids aux données",
+      "3. L'incarnation humaine de la statistique (le visage derrière le chiffre)",
+      "4. Le contraste temporel et l'extrapolation vertigineuse",
+      "5. Le silence post-donnée : laisser le chiffre frapper"
+     ],
+     "exercices": [
+      "Traduction analogique : convertir 3 données brutes en images mentales",
+      "Humanisation d'un KPI financier ou technique"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "L'Art de l'Ouverture Magnétique",
+     "objectif": "Capturer l'attention et établir l'autorité dans les 60 premières secondes. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Les 5 amorces interdites (remerciements, excuses, météo, etc.)",
+      "2. Le cold open cinématographique (in media res)",
+      "3. La question rhétorique calibrée sur la douleur de l'auditoire",
+      "4. L'aveu contre-intuitif ou la statistique choc",
+      "5. L'ancrage du regard initial et la maîtrise du premier silence"
+     ],
+     "exercices": [
+      "Écriture de 3 cold opens radicalement différents pour le même sujet",
+      "Chronométrage et enregistrement de l'accroche"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "La Clôture Résonante",
+     "objectif": "Conclure avec impact, éviter les fins qui s'effilochent et pousser à l'action. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le syndrome de la fin qui s'effiloche (le faux départ de sortie)",
+      "2. Le rappel au fil rouge et la boucle narrative fermée",
+      "3. L'appel à l'action (CTA) comportemental et micro-engagement",
+      "4. La phrase de chute (punchline) et la vision du futur",
+      "5. L'immobilité finale : accepter les applaudissements sans fuir"
+     ],
+     "exercices": [
+      "Sculpture de la dernière phrase (rythme et sonorité)",
+      "Design d'un CTA à friction nulle pour l'auditoire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 : La Scénographie du Corps et de la Voix",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "La Géométrie de l'Espace Scénique",
+     "objectif": "Maîtriser les déplacements, l'ancrage et la proxémique sur scène. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'ancrage au sol : le tronc et la posture de l'arbre",
+      "2. Les zones de pouvoir sur scène (centre, аванс-scène, coulisses)",
+      "3. La marche intentionnelle : se déplacer pour ponctuer, pas pour fuir",
+      "4. Gérer l'espace et l'autorité sans micro ni pupitre",
+      "5. L'interaction tactique avec le mobilier et les accessoires"
+     ],
+     "exercices": [
+      "Le carré d'ancrage : parler aux 4 coins d'une pièce vide",
+      "Chorégraphie des transitions physiques entre les parties du discours"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "La Kinésie et le Langage Silencieux",
+     "objectif": "Aligner parfaitement les gestes avec le sens des mots prononcés. (Format cible : 3500 mots)",
+     "sections": [
+      "1. La congruence corps-verbe : quand le geste contredit le texte",
+      "2. La boîte gestuelle (strike zone) et l'ouverture du thorax",
+      "3. Les mains : ouvertures, fermetures, précisions et énumérations",
+      "4. Le visage, le sourire asymétrique et les micro-expressions",
+      "5. Identifier et éradiquer les tics de fuite et d'auto-apaisement"
+     ],
+     "exercices": [
+      "Le discours muet : raconter une histoire uniquement par le corps",
+      "Analyse vidéo en mode silencieux pour repérer les tics"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "L'Instrument Vocal",
+     "objectif": "Développer l'endurance, la chaleur et la portée de sa voix. (Format cible : 3500 mots)",
+     "sections": [
+      "1. La mécanique du souffle costo-diaphragmatique",
+      "2. Le timbre, la résonance et la chaleur vocale",
+      "3. Le débit : l'art stratégique de l'accélération et du frein",
+      "4. Le volume : projection de l'autorité vs intimité du secret",
+      "5. L'articulation, la diction et la gestion des accents"
+     ],
+     "exercices": [
+      "L'exercice du bouchon de liège pour la diction",
+      "Lecture d'un même texte avec 4 intentions émotionnelles différentes"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La Musique du Silence",
+     "objectif": "Utiliser les pauses comme l'arme la plus puissante de l'orateur. (Format cible : 3500 mots)",
+     "sections": [
+      "1. La peur du vide sonore et l'illusion de la fluidité ininterrompue",
+      "2. Le silence d'anticipation (avant la révélation)",
+      "3. Le silence de digestion (après la donnée complexe)",
+      "4. Le silence d'autorité (pour reprendre le contrôle de la salle)",
+      "5. L'éradication des mots de remplissage (euh, bah, donc, voilà)"
+     ],
+     "exercices": [
+      "Le métronome du silence : imposer 3 secondes de pause par paragraphe",
+      "Transcription et élagage conscient des tics verbaux"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Le Regard et la Connexion Individuelle",
+     "objectif": "Créer une intimité de masse et gérer les interactions visuelles. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le mythe du balayage panoramique (l'effet phare)",
+      "2. La technique du « un par un » (One thought, one person)",
+      "3. Gérer les visages hostiles, fermés ou distraits",
+      "4. Le regard en fond de salle pour inclure les rangées arrière",
+      "5. L'effet de miroir neuronal et la contagion émotionnelle"
+     ],
+     "exercices": [
+      "Le jeu des post-it : soutenir le regard de cibles aléatoires",
+      "Simulation de connexion avec des personnalités difficiles"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 : La Mécanique de l'Interaction et de l'Adaptation",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "La Lecture de l'Auditoire en Temps Réel",
+     "objectif": "Capter les signaux faibles de la salle et ajuster son énergie dynamiquement. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Les signaux faibles de désengagement et de fatigue cognitive",
+      "2. Le recalibrage énergétique : quand et comment changer de rythme",
+      "3. L'interaction spontanée non planifiée (faire participer sans perdre le fil)",
+      "4. Gérer les rires inattendus et les réactions parasites",
+      "5. Le sauvetage de l'attention par la rupture de pattern"
+     ],
+     "exercices": [
+      "Analyse vidéo de publics en conférence (identifier les leaders d'opinion)",
+      "Scénarios de rupture : changer de cap en 10 secondes"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "L'Art de la Question et du Q&R",
+     "objectif": "Transformer la session de questions-réponses en second discours magistral. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le Q&R comme opportunité de résonance, pas comme examen",
+      "2. L'écoute active, la reformulation et la validation de l'interlocuteur",
+      "3. La réponse en pont (bridging) pour ramener à son message",
+      "4. Gérer les questions multiples, floues ou hors-sujet",
+      "5. Clôturer le Q&R avec puissance (ne jamais finir sur une question)"
+     ],
+     "exercices": [
+      "Le jeu du bridging : ramener 5 questions hostiles à son fil rouge",
+      "Simulation de troll : répondre à des questions de mauvaise foi"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La Gestion des Hostilités et des Trolls",
+     "objectif": "Désamorcer les attaques, les interruptions et les agitateurs avec élégance. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'anatomie de l'agresseur public et ses motivations cachées",
+      "2. La désescalade verbale et la validation émotionnelle",
+      "3. L'alignement tactique (l'Aïkido verbal et le recadrage)",
+      "4. Protéger le groupe contre l'individu (l'orateur comme bouclier)",
+      "5. L'humour et l'autodérision comme boucliers impénétrables"
+     ],
+     "exercices": [
+      "Le judo sémantique : utiliser la force de l'attaque pour rebondir",
+      "Rôle-play de crise avec un partenaire agressif"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "L'Adaptation aux Formats et aux Contraintes",
+     "objectif": "Survivre aux pannes techniques, aux retards et aux changements de format. (Format cible : 3500 mots)",
+     "sections": [
+      "1. La règle de l'élasticité : réduire ou étirer son temps en temps réel",
+      "2. Parler sans support visuel (quand le projecteur lâche)",
+      "3. Gérer l'arrivée tardive ou le retard du précédent orateur",
+      "4. L'acoustique désastreuse et les salles ingrates",
+      "5. Le micro qui lâche : projeter sans se casser la voix"
+     ],
+     "exercices": [
+      "Le pitch élastique : préparer les versions 5, 15 et 45 minutes",
+      "Scénario de la panne totale : présenter dans le noir complet"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 5 : Les Arènes Spécifiques",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Le Pitch d'Investissement et de Vente",
+     "objectif": "Persuader et négocier dans les environnements à haute tension et temps court. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le cerveau reptilien de l'investisseur et l'aversion à la perte",
+      "2. Le contrôle du cadre (Frame Control) dès la poignée de main",
+      "3. La tension Problème/Solution et la validation du marché",
+      "4. L'ask financier, la valorisation et la projection",
+      "5. Gérer l'objection fatale et le silence post-pitch",
+      "6. La psychologie du « FOMO » (Fear Of Missing Out) dans le closing"
+     ],
+     "exercices": [
+      "Le pitch de 60 secondes (Elevator Pitch) chronométré",
+      "Matrice des objections : préparer les réponses aux 5 pires questions"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "L'Entretien d'Embauche et la Négociation",
+     "objectif": "Exceller dans les dialogues en huis clos où l'enjeu est personnel et financier. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'entretien comme conversation stratégique, pas interrogatoire",
+      "2. La méthode STAR magnifiée par le storytelling émotionnel",
+      "3. Projeter son futur et sa valeur ajoutée dans l'entreprise",
+      "4. Le langage corporel en espace confiné (table, bureau)",
+      "5. Négocier sa valeur : le silence et l'ancrage salarial"
+     ],
+     "exercices": [
+      "Le récit STAR émotionnel : transformer un CV en épopée",
+      "Simulation de négociation salariale avec ancrage haut"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "La Conférence Magistrale et le Keynote",
+     "objectif": "Inspirer, divertir et marquer les esprits devant de larges auditoires. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'architecture du grand spectacle et la dramaturgie",
+      "2. L'usage cinématographique des slides (Steve Jobs style)",
+      "3. La montée en puissance émotionnelle (le crescendo)",
+      "4. L'effet de masse, la contagion et les rires en cascade",
+      "5. Laisser une trace : le takeaway et le hashtag mental"
+     ],
+     "exercices": [
+      "Storyboard visuel d'un keynote de 20 minutes",
+      "Design de la slide unique et mémorable"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "L'Animation de Réunion et le Leadership Oral",
+     "objectif": "Diriger, faciliter et trancher grâce à la maîtrise de la parole partagée. (Format cible : 3500 mots)",
+     "sections": [
+      "1. Le leader comme architecte de la parole d'autrui",
+      "2. L'art du cadrage initial et la pose du cadre de sécurité",
+      "3. Synthétiser le chaos : la reformulation structurante",
+      "4. Relancer les silencieux et canaliser les monopolisateurs",
+      "5. Conclure, acter les décisions et distribuer les rôles"
+     ],
+     "exercices": [
+      "La reformulation synthétique en temps réel (jeu de rôle)",
+      "Le tour de table dirigé : extraire la vérité des introvertis"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La Présence Médiatique, Caméra et Visio",
+     "objectif": "Adapter son charisme à la lentille, aux podcasts et aux écrans. (Format cible : 3500 mots)",
+     "sections": [
+      "1. L'œil de la lentille comme un ami intime (le regard caméra)",
+      "2. L'énergie confinée du studio et la surenchère expressive",
+      "3. Le podcast : l'art de l'intimité par la seule voix",
+      "4. Le Zoom/Visio : cadrage, éclairage et gestion des regards multiples",
+      "5. Gérer le direct (l'irréversible) et le différé (le montage)"
+     ],
+     "exercices": [
+      "Le test de la caméra : s'enregistrer et analyser ses micro-expressions",
+      "L'audio sans image : captiver uniquement par la prosodie"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,637 @@
+{
+ "titre": "L'Alchimie de l'Accord",
+ "sous_titre": "Préparer, conduire et conclure toute négociation — influencer sans manipuler, convaincre sans contraindre",
+ "bibliographie": [
+  {
+   "auteur": "Roger Fisher & William Ury",
+   "titre": "Getting to Yes: Negotiating Agreement Without Giving In",
+   "annee": "1981",
+   "idee": "La négociation raisonnée (principled negotiation) : séparer les personnes du problème, se concentrer sur les intérêts plutôt que les positions, inventer des options à gain mutuel, utiliser des critères objectifs.",
+   "apport": "Notre livre retiendra le cadre BATNA/MESORE et la distinction intérêts/positions, mais le dépassera en intégrant la dimension émotionnelle et culturelle que Fisher et Ury sous-estiment."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence: The Psychology of Persuasion",
+   "annee": "1984",
+   "idee": "Six (puis sept) principes universels d'influence : réciprocité, engagement/cohérence, preuve sociale, autorité, sympathie, rareté, unité.",
+   "apport": "Nous reprendrons ces leviers comme grammaire de l'influence, mais en les encadrant systématiquement par un test éthique : transparence, réversibilité, bénéfice mutuel."
+  },
+  {
+   "auteur": "Chris Voss",
+   "titre": "Never Split the Difference: Negotiating As If Your Life Depended On It",
+   "annee": "2016",
+   "idee": "Techniques issues du FBI : écoute active tactique, miroir, étiquetage des émotions, questions calibrées, utilisation du « non » comme levier, recherche du « c'est exact ».",
+   "apport": "Nous intégrerons les micro-tactiques conversationnelles de Voss tout en les replaçant dans une éthique relationnelle et non adversariale."
+  },
+  {
+   "auteur": "Stuart Diamond",
+   "titre": "Getting More: How You Can Negotiate to Succeed in Work and Life",
+   "annee": "2010",
+   "idee": "La négociation est un processus humain avant tout : percevoir le cadre de l'autre, utiliser les normes de l'interlocuteur contre lui-même, faire des petits pas, valoriser l'invisible.",
+   "apport": "Nous retiendrons l'approche incrémentale et la notion de « cadre perceptuel » pour construire des chapitres sur la préparation psychologique."
+  },
+  {
+   "auteur": "Douglas Stone, Bruce Patton & Sheila Heen",
+   "titre": "Difficult Conversations: How to Discuss What Matters Most",
+   "annee": "1999",
+   "idee": "Toute conversation difficile comporte trois couches : le « quoi » (les faits), les émotions, et l'identité. Passer d'une posture de message à une posture d'apprentissage.",
+   "apport": "Notre livre consacrera un chapitre entier à la gestion des conversations à haute charge émotionnelle dans la négociation, en reprenant cette triple grille."
+  },
+  {
+   "auteur": "G. Richard Shell",
+   "titre": "Bargaining for Advantage: Negotiation Strategies for Reasonable People",
+   "annee": "1999",
+   "idee": "Six fondations de la négociation : objectifs, relations, normes, intérêts, style personnel, alternatives. Approche intégrative vs distributive selon le contexte.",
+   "apport": "Nous reprendrons le diagnostic du style personnel du négociateur et l'adaptabilité situationnelle comme fil conducteur de la partie préparation."
+  },
+  {
+   "auteur": "Deepak Malhotra & Max Bazerman",
+   "titre": "Negotiation Genius: How to Overcome Obstacles and Achieve Brilliant Results",
+   "annee": "2007",
+   "idee": "Le négociateur génial combine investigation stratégique, gestion des biais cognitifs et capacité à négocier depuis une position de faiblesse.",
+   "apport": "Nous intégrerons la cartographie des biais cognitifs (ancrage, aversion à la perte, biais de confirmation) comme chapitre dédié."
+  },
+  {
+   "auteur": "Jim Camp",
+   "titre": "Start with No: The Negotiating Tools That the Pros Don't Want You to Know",
+   "annee": "2002",
+   "idee": "Le « non » libère la négociation ; le « oui » prématuré piège. Se détacher du besoin, construire une mission et une vision claires, poser des questions de calibration.",
+   "apport": "Nous retiendrons la philosophie du détachement du résultat et la puissance du refus structuré comme outil de cadrage."
+  },
+  {
+   "auteur": "Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler",
+   "titre": "Crucial Conversations: Tools for Talking When Stakes Are High",
+   "annee": "2002",
+   "idee": "Quand les enjeux montent, créer un espace de sécurité psychologique mutuelle, observer les signaux de silence ou de violence, revenir au but partagé.",
+   "apport": "Nous utiliserons le concept de « sécurité mutuelle » pour la gestion des moments de rupture dans la négociation."
+  },
+  {
+   "auteur": "Daniel Pink",
+   "titre": "To Sell Is Human: The Surprising Truth About Moving Others",
+   "annee": "2012",
+   "idee": "La persuasion moderne est une vente : interroger plutôt qu'affirmer, servir plutôt que convaincre, créer une clarté plutôt qu'une excitation.",
+   "apport": "Nous reprendrons l'idée que la persuasion éthique est un service de clarification, pas une imposition de volonté."
+  },
+  {
+   "auteur": "Michael Wheeler",
+   "titre": "The Art of Negotiation: How to Improvise Agreement in a Chaotic World",
+   "annee": "2013",
+   "idee": "La négociation est un processus dynamique et improvisé, pas une séquence linéaire. S'adapter en temps réel, lire le chaos, pivoter.",
+   "apport": "Nous consacrerons un chapitre à la négociation en environnement incertain et à l'improvisation structurée."
+  },
+  {
+   "auteur": "Daniel Shapiro",
+   "titre": "Negotiating the Nonnegotiable: How to Resolve Your Most Emotionally Charged Conflicts",
+   "annee": "2016",
+   "idee": "Les conflits identitaires et émotionnels profonds se négocient en reconnaissant les « menaces identitaires » et en construisant une relation d'appartenance.",
+   "apport": "Nous intégrerons la dimension identitaire et culturelle dans les chapitres sur les conflits et les négociations sensibles."
+  },
+  {
+   "auteur": "Oren Klaff",
+   "titre": "Pitch Anything: An Innovative Method for Presenting, Pitching, and Selling the Deal",
+   "annee": "2011",
+   "idee": "Le cerveau reptilien décide en premier : créer de la tension narrative, cadrer le statut, contrôler le temps de la conversation.",
+   "apport": "Nous retiendrons la structure narrative de la proposition et la gestion du cadrage temporel, en les épurant de toute manipulation."
+  },
+  {
+   "auteur": "Matthew Dixon & Brent Adamson",
+   "titre": "The Challenger Sale: Taking Control of the Customer Conversation",
+   "annee": "2011",
+   "idee": "Le meilleur négociateur/vendeur est celui qui enseigne, adapte et prend le contrôle de la conversation plutôt que de simplement répondre aux besoins exprimés.",
+   "apport": "Nous utiliserons la posture de « challenger bienveillant » pour les chapitres sur la proposition de valeur en négociation commerciale."
+  },
+  {
+   "auteur": "William Ury",
+   "titre": "Getting to Yes with Yourself (and Other Worthy Opponents)",
+   "annee": "2015",
+   "idee": "La première négociation est celle avec soi-même : écouter ses propres besoins, construire son BATNA intérieur, aller au balcon avant de réagir.",
+   "apport": "Nous ouvrirons le livre par cette dimension intrapersonnelle : on ne peut négocier avec l'autre sans avoir clarifié sa propre position."
+  },
+  {
+   "auteur": "Olivia Fox Cabane",
+   "titre": "The Charisma Myth: How Anyone Can Master the Art and Science of Personal Magnetism",
+   "annee": "2012",
+   "idee": "Le charisme n'est pas inné : présence, pouvoir, chaleur. La présence est le socle de toute influence authentique.",
+   "apport": "Nous intégrerons la dimension de présence corporelle et vocale dans la partie sur la conduite de la négociation."
+  },
+  {
+   "auteur": "Sun Tzu (traduction et commentaires modernes)",
+   "titre": "L'Art de la Guerre",
+   "annee": "Ve siècle av. J.-C. (rééd. moderne)",
+   "idee": "Vaincre sans combattre, connaître l'autre et se connaître, choisir le terrain et le moment, éviter la confrontation directe quand elle est coûteuse.",
+   "apport": "Nous retiendrons la philosophie stratégique : la meilleure négociation est celle où l'accord précède l'affrontement. Référence culturelle, pas citation littérale."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I — LES FONDATIONS : Comprendre la négociation et l'influence éthique",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "La première négociation : celle que l'on mène avec soi-même",
+     "objectif": "Établir que toute négociation externe commence par une clarté interne. Le lecteur identifie ses besoins profonds, ses peurs, ses biais et construit sa position de départ.",
+     "sections": [
+      "1.1 Le miroir intérieur : pourquoi la plupart des négociations échouent avant même de commencer",
+      "1.2 Identifier ses besoins réels vs ses positions affichées",
+      "1.3 La peur du conflit et le syndrome du « oui » automatique",
+      "1.4 Construire son BATNA personnel : la sécurité avant la stratégie",
+      "1.5 Le « balcon » d'Ury : s'observer en temps réel pendant l'échange",
+      "1.6 L'éthique comme boussole : définir sa ligne rouge avant d'entrer en scène"
+     ],
+     "exercices": [
+      "Auto-diagnostic : remplir sa « carte des besoins » en 10 minutes (grille fournie)",
+      "Écrire son BATNA personnel sur trois scénarios récents et le soumettre à un proche pour validation",
+      "Journal de bord : noter pendant une semaine chaque fois où l'on a dit oui par peur ou par habitude",
+      "Rédiger sa « charte éthique de négociation » en 5 principes non négociables"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Anatomie d'une négociation : les lois universelles de l'échange",
+     "objectif": "Fournir au lecteur le modèle structurel de toute négociation (acteurs, enjeux, zones, phases) et les concepts-clés : ZOPA, BATNA/MESORE, réserve, ancrage.",
+     "sections": [
+      "2.1 Qu'est-ce qu'une négociation ? Définition élargie : du salaire au choix du restaurant",
+      "2.2 Les cinq éléments constitutifs : parties, intérêts, options, critères, alternatives",
+      "2.3 La ZOPA (Zone of Possible Agreement) : la cartographier avant d'entrer",
+      "2.4 Distributif vs intégratif : le gâteau à partager ou à agrandir",
+      "2.5 Les trois temporalités : préparation, interaction, post-accord",
+      "2.6 Le rôle des émotions comme données stratégiques, pas comme parasites",
+      "2.7 L'asymétrie d'information : ce que chacun sait, croit savoir et ignore"
+     ],
+     "exercices": [
+      "Cartographier la ZOPA d'une négociation réelle en cours ou passée (tableau à double entrée)",
+      "Identifier dans trois situations vécues si l'on était en mode distributif ou intégratif",
+      "Lister les informations que l'on détient, celles qu'on suppose chez l'autre, celles qui manquent",
+      "Exercice en binôme : simuler une négociation d'achat et débriefer les phases traversées"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'éthique comme architecture : influencer sans manipuler",
+     "objectif": "Poser le cadre philosophique et pratique qui distingue persuasion légitime et manipulation. Fournir des tests concrets pour évaluer ses propres méthodes.",
+     "sections": [
+      "3.1 La frontière floue : pourquoi la question éthique est centrale et non accessoire",
+      "3.2 Le triple test : transparence, réversibilité, bénéfice mutuel",
+      "3.3 Manipulation vs influence : les sept critères de distinction",
+      "3.4 Le consentement éclairé comme principe fondateur",
+      "3.5 Les zones grises : omissions, cadrages, silences stratégiques",
+      "3.6 Construire une réputation de négociateur intègre : le dividende long terme",
+      "3.7 Quand l'autre manipule : détecter, nommer, recadrer sans escalade"
+     ],
+     "exercices": [
+      "Passer cinq techniques de persuasion au triple test et noter les résultats",
+      "Étude de cas : analyser trois publicités ou discours et identifier les leviers éthiques vs manipulatoires",
+      "Rédiger un scénario où l'on aurait pu manipuler et réécrire la scène en version éthique",
+      "Créer son « radar éthique » : liste personnelle de 10 signaux d'alerte chez l'interlocuteur"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les sept leviers de l'influence : grammaire de la persuasion",
+     "objectif": "Présenter les principes d'influence (Cialdini et au-delà) comme une boîte à outils neutre, en montrant pour chacun l'usage éthique et la dérive possible.",
+     "sections": [
+      "4.1 Réciprocité : donner pour ouvrir, pas pour piéger",
+      "4.2 Engagement et cohérence : ancrer sans enfermer",
+      "4.3 Preuve sociale : montrer sans imposer",
+      "4.4 Autorité : crédibilité construite vs autorité imposée",
+      "4.5 Sympathie et connexion : la confiance comme accélérateur",
+      "4.6 Rareté et urgence : informer sans créer de panique artificielle",
+      "4.7 Unité et identité partagée : le « nous » comme pont",
+      "4.8 Combiner les leviers sans saturer : la règle des trois"
+     ],
+     "exercices": [
+      "Pour chaque levier, trouver un exemple vécu et un exemple observé dans les médias",
+      "Concevoir une argumentation de négociation salariale utilisant exactement trois leviers, sans les autres",
+      "Jeu de rôle : un partenaire utilise un levier de manière manipulatoire, l'autre doit le nommer et recadrer",
+      "Auto-évaluation : quel levier utilise-t-on naturellement ? Lequel évite-t-on par inconfort ?"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II — LA PRÉPARATION : L'art invisible avant la table",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La cartographie des intérêts : ce que chacun veut vraiment",
+     "objectif": "Apprendre à distinguer positions et intérêts, à construire la carte des intérêts des deux parties et à identifier les convergences cachées.",
+     "sections": [
+      "5.1 Positions vs intérêts : l'iceberg de la négociation",
+      "5.2 Les quatre couches d'intérêts : factuel, émotionnel, identitaire, relationnel",
+      "5.3 La méthode des « pourquoi » successifs : creuser sans interroger",
+      "5.4 Cartographier ses propres intérêts : la matrice priorité/flexibilité",
+      "5.5 Anticiper les intérêts de l'autre : recherche, empathie, hypothèses",
+      "5.6 Identifier les intérêts communs et les intérêts complémentaires",
+      "5.7 Gérer les intérêts contradictoires sans les nier"
+     ],
+     "exercices": [
+      "Remplir la matrice intérêts/priorités pour une négociation à venir (tableau fourni)",
+      "Interviewer un proche sur ses intérêts dans un désaccord récent : pratiquer les « pourquoi » successifs",
+      "Construire la « carte d'intérêts croisée » pour un conflit professionnel vécu",
+      "Rédiger trois hypothèses sur les intérêts cachés de l'interlocuteur et les vérifier par l'observation"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Construire sa stratégie : scénarios, options et plan B",
+     "objectif": "Structurer la préparation stratégique : définir ses objectifs, générer des options créatives, hiérarchiser, préparer ses BATNA et ses seuils de rupture.",
+     "sections": [
+      "6.1 Fixer ses objectifs : le triptyque idéal / acceptable / seuil de rupture",
+      "6.2 Générer des options avant de choisir : la règle du 3×3",
+      "6.3 Hiérarchiser : la matrice coût/bénéfice/faisabilité",
+      "6.4 Renforcer son BATNA et affaiblir celui de l'autre (sans détruire)",
+      "6.5 Préparer ses concessions : quoi céder, dans quel ordre, contre quoi",
+      "6.6 Le plan B émotionnel : que faire si la négociation déraille",
+      "6.7 Le briefing d'équipe : préparer une négociation à plusieurs voix"
+     ],
+     "exercices": [
+      "Remplir le triptyque objectifs pour trois négociations types (salaire, achat, conflit)",
+      "Brainstorming : générer 9 options pour un problème donné, puis les classer",
+      "Simuler par écrit une concession en chaîne : « si j'accepte X, je demande Y »",
+      "Préparer un briefing écrit de 2 pages pour une négociation en équipe et le faire relire"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Lire l'interlocuteur : profils, styles et dynamiques de pouvoir",
+     "objectif": "Donner des outils pour analyser le style de négociation de l'autre, comprendre sa culture, son rapport au pouvoir et adapter son approche.",
+     "sections": [
+      "7.1 Les quatre styles dominants : compétitif, collaboratif, évitant, accommodant",
+      "7.2 Détecter le style en 5 minutes : indices verbaux, posturaux, décisionnels",
+      "7.3 La dimension culturelle : individualisme vs collectivisme, rapport au temps, au silence",
+      "7.4 Cartographie du pouvoir : qui décide vraiment ? Les parties prenantes invisibles",
+      "7.5 Le langage corporel : lire sans surinterpréter",
+      "7.6 Adapter sa stratégie au profil détecté sans se trahir",
+      "7.7 Négocier avec un difficile : narcissique, passif-agressif, harceleur"
+     ],
+     "exercices": [
+      "Identifier le style de trois personnes de son entourage professionnel et noter les indices",
+      "Préparer une « fiche interlocuteur » avant un rendez-vous important (grille fournie)",
+      "Exercice d'observation : regarder une vidéo de négociation et noter les signaux non verbaux",
+      "Simuler une adaptation de discours pour un même message face à quatre styles différents"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le cadrage et l'ancrage : façonner le terrain avant le premier mot",
+     "objectif": "Maîtriser l'art du cadrage initial : choisir le lieu, le moment, la première offre, l'ordre du jour et les normes de référence qui structureront toute la négociation.",
+     "sections": [
+      "8.1 Le pouvoir du premier chiffre : quand et comment ancrer",
+      "8.2 Choisir le terrain : lieu, format, moment, canal (présentiel, téléphone, écrit)",
+      "8.3 L'ordre du jour comme outil de cadrage : qui le fixe gagne en structure",
+      "8.4 Les normes de référence : prix du marché, précédents, standards du secteur",
+      "8.5 Le cadrage narratif : présenter la situation comme opportunité ou comme problème",
+      "8.6 La première phrase : ouvrir avec une question, une reconnaissance ou une vision",
+      "8.7 Les pièges du cadrage adverse : détecter et neutraliser un ancrage défavorable"
+     ],
+     "exercices": [
+      "Préparer trois ouvertures différentes (chiffrée, question, narrative) pour une même négociation",
+      "Analyser une annonce immobilière ou une offre d'emploi : identifier les ancrages utilisés",
+      "Simuler un contre-ancrage face à une première offre jugée inacceptable",
+      "Rédiger un ordre du jour stratégique pour une réunion de négociation à venir"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III — LA CONDUITE : L'art de l'échange en temps réel",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "L'écoute tactique : entendre ce qui n'est pas dit",
+     "objectif": "Développer la capacité d'écoute active et stratégique : reformulation, miroir, silence, étiquetage émotionnel. Transformer l'écoute en avantage informationnel.",
+     "sections": [
+      "9.1 Écouter pour comprendre, pas pour répondre : le changement de posture",
+      "9.2 Le miroir : répéter les trois derniers mots pour ouvrir la parole",
+      "9.3 L'étiquetage émotionnel : nommer l'émotion de l'autre pour désamorcer",
+      "9.4 Le silence stratégique : laisser le vide travailler pour soi",
+      "9.5 Les questions calibrées : comment, quoi, pourquoi (et quand les éviter)",
+      "9.6 Le résumé de validation : « c'est exact » comme signal d'ouverture",
+      "9.7 Écouter les mots, le ton, le rythme, les absences"
+     ],
+     "exercices": [
+      "Pratiquer le miroir pendant 24 heures dans ses conversations quotidiennes et noter les effets",
+      "Enregistrer (avec accord) un échange et analyser le ratio parole/écoute",
+      "Simuler un étiquetage émotionnel sur trois situations de conflit",
+      "Exercice en binôme : l'un parle 3 minutes, l'autre ne peut répondre que par des questions calibrées"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "L'art de la question et de la reformulation : guider sans diriger",
+     "objectif": "Maîtriser les techniques de questionnement stratégique et de reformulation pour orienter la conversation, clarifier les enjeux et amener l'autre à reformuler sa propre position.",
+     "sections": [
+      "10.1 Questions ouvertes vs fermées vs hypothétiques : quand utiliser chacune",
+      "10.2 La question calibrée : transformer une demande en exploration conjointe",
+      "10.3 La reformulation stratégique : renvoyer la position de l'autre amplifiée ou affinée",
+      "10.4 La question impossible : « Comment suis-je censé faire ça ? »",
+      "10.5 Les questions de vérification : tester les hypothèses sans accuser",
+      "10.6 L'art du « et si… » : ouvrir des scénarios sans engagement",
+      "10.7 Savoir se taire : quand la question est déjà une réponse"
+     ],
+     "exercices": [
+      "Transformer 10 affirmations en questions calibrées (grille de conversion fournie)",
+      "Simuler une négociation où l'on ne peut utiliser que des questions pendant 10 minutes",
+      "Réécrire un mail de demande en version questionnement stratégique",
+      "Pratiquer la reformulation en binôme : répéter la position de l'autre jusqu'à obtenir « c'est exactement ça »"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Gérer les émotions : les siennes, celles de l'autre, celles de la salle",
+     "objectif": "Faire des émotions un outil et non un obstacle : réguler sa propre réactivité, accueillir la colère ou la peur de l'autre, maintenir un climat productif.",
+     "sections": [
+      "11.1 La physiologie de l'émotion en négociation : cortisol, adrénaline, tunnel visuel",
+      "11.2 Le « balcon » en temps réel : se désamorcer en 90 secondes",
+      "11.3 Accueillir la colère de l'autre sans se soumettre ni contre-attaquer",
+      "11.4 La triple conversation : faits, émotions, identité (modèle Stone-Patton-Heen)",
+      "11.5 Les techniques de régulation : respiration, ancrage physique, recadrage interne",
+      "11.6 Créer la sécurité psychologique mutuelle (modèle Patterson)",
+      "11.7 Quand l'émotion est stratégie : détecter la colère feinte et la victimisation tactique"
+     ],
+     "exercices": [
+      "Pratiquer la technique du balcon sur trois déclencheurs émotionnels personnels (écriture guidée)",
+      "Simuler une situation où l'interlocuteur élève la voix : répéter trois réponses possibles",
+      "Exercice de respiration tactique : 4-7-8 avant un entretien simulé",
+      "Identifier dans un souvenir de conflit les trois couches (faits, émotions, identité) et les nommer"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Concessions, contre-propositions et créativité : agrandir le gâteau",
+     "objectif": "Apprendre à concéder sans se affaiblir, à formuler des contre-propositions constructives et à inventer des solutions à gain mutuel quand les positions semblent incompatibles.",
+     "sections": [
+      "12.1 La règle d'or de la concession : jamais gratuite, toujours conditionnelle",
+      "12.2 La séquence des concessions : commencer par ce qui coûte peu et vaut beaucoup pour l'autre",
+      "12.3 La contre-proposition constructive : « Non, mais… » vs « Oui, si… »",
+      "12.4 L'élargissement des variables : ajouter des dimensions pour sortir du blocage",
+      "12.5 Le brainstorming conjoint : inventer des options avant de décider",
+      "12.6 Les critères objectifs : prix du marché, jurisprudence, normes, expertises",
+      "12.7 Savoir dire non avec élégance : le refus qui préserve la relation"
+     ],
+     "exercices": [
+      "Construire une « table des concessions » : 5 items, valeur pour soi, valeur pour l'autre, condition demandée",
+      "Simuler un élargissement : une négociation bloquée sur le prix, ajouter 3 variables non monétaires",
+      "Rédiger trois contre-propositions pour une offre jugée insuffisante",
+      "Exercice en binôme : trouver 5 solutions créatives à un conflit d'horaires ou de budget"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV — LA CONCLUSION : Verrouiller l'accord et préserver la relation",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Détecter le moment de conclure : signaux, timing et fenêtres",
+     "objectif": "Reconnaître les signaux qui indiquent que l'accord est mûr, choisir le bon moment pour formuler la proposition finale et éviter de prolonger inutilement ou de précipiter.",
+     "sections": [
+      "13.1 Les sept signaux de maturité : langage, posture, questions, concessions réciproques",
+      "13.2 Le timing : quand pousser et quand attendre",
+      "13.3 La fenêtre de décision : créer l'urgence légitime sans pression indue",
+      "13.4 Le test de convergence : résumer pour valider avant de conclure",
+      "13.5 Le risque de la « dernière minute » : la concession de trop qui fait tout échouer",
+      "13.6 Conclure à l'oral : formuler l'accord en termes simples et complets",
+      "13.7 Le silence après la proposition finale : ne plus parler"
+     ],
+     "exercices": [
+      "Lister les signaux de maturité observés dans trois négociations passées",
+      "Simuler un test de convergence : résumer en 3 phrases l'état d'un accord et demander validation",
+      "Pratiquer le silence de 10 secondes après une proposition formulée (exercice en binôme)",
+      "Rédiger sa phrase de conclusion type pour une négociation salariale et une négociation commerciale"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Rédiger et formaliser : de l'accord verbal à l'engagement durable",
+     "objectif": "Passer de l'accord de principe à l'engagement écrit : rédiger clairement, anticiper les ambiguïtés, prévoir les clauses de sortie et les mécanismes de suivi.",
+     "sections": [
+      "14.1 Pourquoi formaliser même un accord « entre amis »",
+      "14.2 Les sept éléments d'un accord écrit solide : qui, quoi, quand, comment, combien, si, et après",
+      "14.3 Le langage de précision : éviter les termes flous (raisonnable, rapidement, si possible)",
+      "14.4 Les clauses de révision et de sortie : prévoir le désaccord futur",
+      "14.5 Le suivi post-accord : check-in, jalons, indicateurs de respect",
+      "14.6 La lettre de synthèse : envoyer le récapitulatif dans les 24 heures",
+      "14.7 Gérer l'acheteur de regrets : quand l'autre veut revenir sur sa parole"
+     ],
+     "exercices": [
+      "Rédiger une lettre de synthèse pour un accord fictif en respectant les 7 éléments",
+      "Identifier 5 termes flous dans un contrat type et les remplacer par des formulations précises",
+      "Rédiger une clause de révision et une clause de sortie pour un accord de prestation",
+      "Simuler une réponse à un interlocuteur qui tente de renégocier un accord signé la veille"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Négocier quand on est en position de faiblesse",
+     "objectif": "Fournir des stratégies concrètes pour négocier sans levier apparent : candidat sans expérience, petit fournisseur face à un grand compte, individu face à une institution.",
+     "sections": [
+      "15.1 Redéfinir la faiblesse : le pouvoir n'est pas toujours là où on le croit",
+      "15.2 La valeur d'usage vs la valeur de marché : ce que l'on apporte d'unique",
+      "15.3 Construire des alternatives même quand on n'en a pas : le BATNA créatif",
+      "15.4 La technique du « petit pas » : obtenir des micro-accords avant le grand",
+      "15.5 Utiliser les normes et les précédents quand on n'a pas le rapport de force",
+      "15.6 La posture de l'apprenant : transformer son inexpérience en curiosité légitime",
+      "15.7 Savoir partir : quand la faiblesse impose le refus"
+     ],
+     "exercices": [
+      "Lister 5 atouts non évidents dans une situation où l'on se sent faible",
+      "Construire un BATNA créatif pour un scénario de négociation salariale sans autre offre",
+      "Simuler une négociation en position basse avec la technique des petits pas",
+      "Rédiger un mail de négociation tarifaire en tant que petit prestataire face à un grand groupe"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Sortir d'une négociation : dire non, rompre, et préserver l'avenir",
+     "objectif": "Apprendre à quitter une négociation sans détruire la relation, à dire non avec fermeté et élégance, et à transformer un échec en opportunité future.",
+     "sections": [
+      "16.1 Reconnaître le point de non-retour : quand continuer coûte plus que partir",
+      "16.2 Le non structuré : reconnaissance + refus + alternative + porte ouverte",
+      "16.3 Rompre sans humilier : les mots qui préservent la dignité de l'autre",
+      "16.4 Gérer la pression du « dernier effort » : résister à l'escalade d'engagement",
+      "16.5 La sortie élégante : laisser une trace positive dans l'esprit de l'autre",
+      "16.6 Le suivi post-rupture : garder le contact sans rancune",
+      "16.7 Transformer l'échec en apprentissage : le débrief personnel"
+     ],
+     "exercices": [
+      "Rédiger trois versions d'un refus (ferme, diplomatique, avec alternative) pour une même demande",
+      "Simuler une sortie de négociation en binôme : l'un doit partir, l'autre tente de le retenir",
+      "Écrire un mail de rupture professionnelle qui préserve la relation future",
+      "Faire le débrief écrit d'une négociation passée qui a échoué : 3 leçons, 1 chose à refaire, 1 à éviter"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V — LES TERRAINS : Appliquer l'art de l'accord aux situations réelles",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "Négocier son salaire et sa rémunération",
+     "objectif": "Guide complet pour la négociation salariale : recherche de marché, timing, formulation de la demande, gestion des objections, packages globaux, contre-offres.",
+     "sections": [
+      "17.1 La recherche : connaître sa valeur marché avant d'ouvrir la bouche",
+      "17.2 Le timing : quand demander (embauche, annuel, promotion, départ d'un collègue)",
+      "17.3 La formulation : ancrer haut, justifier par la valeur, pas par le besoin",
+      "17.4 Le package global : salaire, primes, télétravail, formation, congés, equity",
+      "17.5 Gérer les objections classiques : « il n'y a pas de budget », « c'est la politique »",
+      "17.6 La contre-offre : accepter, négocier, refuser sans brûler les ponts",
+      "17.7 Négocier une augmentation en poste : préparer le dossier et choisir le moment"
+     ],
+     "exercices": [
+      "Construire son dossier de valeur : 5 réalisations chiffrées, 3 compétences rares, 1 contribution future",
+      "Simuler la demande d'augmentation en binôme avec gestion de 3 objections",
+      "Rédiger un mail de demande d'entretien annuel avec ordre du jour incluant la rémunération",
+      "Négocier un package complet : transformer une offre à 45k en un package à 50k+ avantages"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Négocier un contrat commercial : clients, fournisseurs, partenaires",
+     "objectif": "Maîtriser la négociation contractuelle B2B et B2C : périmètre, prix, délais, garanties, propriété intellectuelle, résiliation. Protéger ses intérêts sans verrouiller la relation.",
+     "sections": [
+      "18.1 Avant le contrat : la négociation du périmètre et des attentes",
+      "18.2 Le prix : justifier, décomposer, offrir des options plutôt qu'un chiffre unique",
+      "18.3 Les clauses sensibles : pénalités, résiliation, propriété intellectuelle, confidentialité",
+      "18.4 Négocier avec un acheteur professionnel : résister à la pression du « meilleur prix »",
+      "18.5 Le contrat comme outil relationnel : rédiger pour être compris, pas pour piéger",
+      "18.6 Les avenants et renégociations : prévoir l'évolution dans le contrat initial",
+      "18.7 La négociation multipartite : clients, sous-traitants, partenaires simultanés"
+     ],
+     "exercices": [
+      "Analyser un contrat type et identifier les 5 clauses à négocier en priorité",
+      "Simuler une négociation tarifaire avec un acheteur qui demande -20 %",
+      "Rédiger une proposition commerciale à trois options (basic, standard, premium)",
+      "Préparer les arguments pour refuser une clause de résiliation unilatérale"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Négocier un achat : immobilier, voiture, biens de valeur",
+     "objectif": "Appliquer les techniques de négociation aux achats importants : recherche, inspection, offre, contre-offre, négociation des conditions, clôture.",
+     "sections": [
+      "19.1 La préparation spécifique : connaître le marché, le vendeur, l'urgence",
+      "19.2 L'inspection comme levier : transformer les défauts en arguments sans dénigrer",
+      "19.3 La première offre : combien en dessous, comment la justifier",
+      "19.4 La danse des contre-offres : rythme, amplitude, signaux",
+      "19.5 Négocier au-delà du prix : délais, meubles, travaux, garanties, frais",
+      "19.6 L'achat en couple ou en groupe : aligner les décideurs avant de négocier",
+      "19.7 Le closing immobilier et automobile : les frais cachés, le financement, la signature"
+     ],
+     "exercices": [
+      "Préparer une fiche de négociation pour un achat immobilier fictif (prix, défauts, arguments, BATNA)",
+      "Simuler une contre-offre après une première offre refusée",
+      "Lister 5 variables non-monétaires à négocier dans un achat automobile",
+      "Rédiger un script de négociation téléphonique pour un achat à distance"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Négocier dans le conflit : désaccords, litiges, médiations",
+     "objectif": "Appliquer les outils de négociation aux situations conflictuelles : désaccord entre collègues, litige avec un voisin, conflit familial, médiation professionnelle.",
+     "sections": [
+      "20.1 Du conflit à la négociation : changer le cadre mental",
+      "20.2 La désescalade : réduire la température avant de traiter le fond",
+      "20.3 La méthode des trois conversations appliquée au conflit (faits, émotions, identité)",
+      "20.4 L'écoute de l'inacceptable : entendre sans valider",
+      "20.5 Les solutions à tiers : médiateur, arbitre, facilitateur — quand et comment",
+      "20.6 Négocier avec quelqu'un qui ne veut pas négocier",
+      "20.7 L'accord de sortie de conflit : formaliser la paix, pas seulement le compromis"
+     ],
+     "exercices": [
+      "Analyser un conflit personnel passé avec la grille des trois conversations",
+      "Simuler une désescalade : l'un joue la colère, l'autre pratique l'étiquetage et le miroir",
+      "Rédiger une proposition de médiation pour un conflit de voisinage fictif",
+      "Préparer 3 phrases d'ouverture pour aborder un collègue avec qui on est en désaccord depuis des semaines"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VI — LA MAÎTRISE : Devenir un négociateur complet et intègre",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Les biais cognitifs en négociation : se protéger de soi-même",
+     "objectif": "Identifier et contrer les biais qui faussent le jugement du négociateur : ancrage, aversion à la perte, biais de confirmation, excès de confiance, escalade d'engagement.",
+     "sections": [
+      "21.1 L'ancrage : pourquoi le premier chiffre gouverne la suite",
+      "21.2 L'aversion à la perte : pourquoi on cède trop pour éviter de perdre",
+      "21.3 Le biais de confirmation : chercher les informations qui arrangent",
+      "21.4 L'excès de confiance : surestimer sa position et sous-estimer l'autre",
+      "21.5 L'escalade d'engagement : rester dans une mauvaise négociation par fierté",
+      "21.6 L'effet de dotation : survaloriser ce que l'on possède déjà",
+      "21.7 Les antidotes : check-lists, regard extérieur, délais de réflexion"
+     ],
+     "exercices": [
+      "Identifier un biais dominant dans ses trois dernières négociations",
+      "Créer sa check-list anti-biais en 7 points à relire avant chaque négociation",
+      "Simuler une négociation avec un ancrage extrême et pratiquer le contre-ancrage",
+      "Exercice en binôme : l'un défend une position qu'il sait mauvaise, pour ressentir l'escalade d'engagement"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Négocier dans l'incertitude et la complexité : improviser avec structure",
+     "objectif": "Gérer les négociations où tout change en temps réel : informations incomplètes, multiplicité des parties, environnement volatil. Passer du plan rigide à l'improvisation structurée.",
+     "sections": [
+      "22.1 La négociation en environnement VUCA : volatil, incertain, complexe, ambigu",
+      "22.2 Le plan vivant : préparer des principes plutôt qu'un script",
+      "22.3 La boucle OODA en négociation : observer, orienter, décider, agir",
+      "22.4 Pivoter en temps réel : changer de stratégie sans perdre la face",
+      "22.5 Négocier à plusieurs parties : coalitions, alliances, veto",
+      "22.6 La négociation par écrit : mails, SMS, plateformes — perdre le ton, garder la structure",
+      "22.7 Le débrief à chaud : capitaliser sur chaque échange, même inachevé"
+     ],
+     "exercices": [
+      "Simuler une négociation où une nouvelle information change tout à mi-parcours",
+      "Préparer une négociation par mail avec structure en 5 points (grille fournie)",
+      "Exercice de pivot : défendre une position puis, sur signal, basculer sur une stratégie opposée",
+      "Rédiger un débrief de 15 minutes pour une réunion récente : ce qui a marché, ce qui a échoué, à ajuster"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "La présence et la voix : le corps comme instrument de négociation",
+     "objectif": "Travailler la dimension non verbale et vocale : posture, regard, respiration, rythme, silence, énergie. Incarner la confiance sans dominer.",
+     "sections": [
+      "23.1 La présence avant les mots : arriver ancré, pas en réaction",
+      "23.2 La posture : ouverture, stabilité, occupation de l'espace sans agression",
+      "23.3 La voix : débit, volume, pauses, variations — le rythme comme outil de persuasion",
+      "23.4 Le regard : soutenir sans défier, accompagner sans fuir",
+      "23.5 La respiration comme régulateur : avant, pendant, après",
+      "23.6 Le silence habité : ne pas combler, laisser résonner",
+      "23.7 Adapter son énergie à celle de l'interlocuteur : la synchronisation respectueuse"
+     ],
+     "exercices": [
+      "S'enregistrer en vidéo pendant une simulation de 3 minutes et analyser posture, voix, tics",
+      "Pratiquer la respiration 4-4-4 avant chaque prise de parole pendant une semaine",
+      "Exercice de présence : entrer dans une pièce, s'asseoir, attendre 10 secondes avant de parler",
+      "Travailler les pauses : lire un texte à voix haute en insérant des silences de 3 secondes aux endroits clés"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le négociateur éthique : construire une pratique durable et une réputation",
+     "objectif": "Synthétiser la démarche en une pratique quotidienne durable : routines, apprentissage continu, mentorat, transmission. Devenir un négociateur que l'on recommande.",
+     "sections": [
+      "24.1 La pratique délibérée : 15 minutes par jour pour affûter ses compétences",
+      "24.2 Le journal de négociation : documenter, analyser, progresser",
+      "24.3 La réputation comme actif : chaque négociation est une audition pour la suivante",
+      "24.4 Le réseau de négociateurs : apprendre des pairs, trouver un mentor",
+      "24.5 Transmettre : former ses équipes, ses enfants, ses proches à la négociation éthique",
+      "24.6 Les situations limites : quand l'éthique est testée (pression hiérarchique, urgence, culture)",
+      "24.7 Le manifeste du négociateur éthique : les dix engagements"
+     ],
+     "exercices": [
+      "Créer son rituel quotidien de 15 minutes : 5 min écoute, 5 min questionnement, 5 min reformulation",
+      "Tenir un journal de négociation pendant 30 jours avec 3 entrées par semaine",
+      "Rédiger son « manifeste du négociateur éthique » en 10 phrases",
+      "Organiser une session de pratique avec un ami ou un collègue : simuler, débriefer, progresser ensemble"
+     ]
+    }
+   ]
+  }
+ ]
+}

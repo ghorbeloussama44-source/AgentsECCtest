@@ -1,0 +1,601 @@
+{
+ "titre": "Le Matelas d'Or",
+ "sous_titre": "Constituer, dimensionner et placer intelligemment votre réserve de sécurité financière — méthode complète en 24 étapes",
+ "bibliographie": [
+  {
+   "auteur": "Dave Ramsey",
+   "titre": "The Total Money Makeover",
+   "annee": "2003",
+   "idee": "Méthode des « baby steps » : commencer par un fonds d'urgence de 1 000 $ avant toute dette, puis monter à 3-6 mois de dépenses.",
+   "apport": "Structure progressive de constitution et priorité absolue donnée à la sécurité avant l'investissement."
+  },
+  {
+   "auteur": "Ramit Sethi",
+   "titre": "I Will Teach You to Be Rich",
+   "annee": "2009",
+   "idee": "Automatiser l'épargne dès la réception du revenu ; séparer comptes courants, épargne et investissement.",
+   "apport": "Systèmes d'automatisation et psychologie du « guilt-free spending » appliqués au matelas."
+  },
+  {
+   "auteur": "George S. Clason",
+   "titre": "The Richest Man in Babylon",
+   "annee": "1926",
+   "idee": "« Pay yourself first » : réserver au moins 10 % de chaque revenu avant toute dépense.",
+   "apport": "Principe fondateur du prélèvement prioritaire adapté à la constitution du matelas."
+  },
+  {
+   "auteur": "Robert Kiyosaki",
+   "titre": "Rich Dad Poor Dad",
+   "annee": "1997",
+   "idee": "Distinguer actifs et passifs ; la sécurité financière précède la liberté financière.",
+   "apport": "Cadre mental : le matelas comme premier actif de protection, non comme un coût."
+  },
+  {
+   "auteur": "Vicki Robin & Joe Dominguez",
+   "titre": "Your Money or Your Life",
+   "annee": "1992",
+   "idee": "Chaque euro représente des heures de vie ; aligner dépenses et valeurs pour dégager un surplus.",
+   "apport": "Lien temps-argent pour accélérer la constitution sans frustration."
+  },
+  {
+   "auteur": "Thomas J. Stanley & William D. Danko",
+   "titre": "The Millionaire Next Door",
+   "annee": "1996",
+   "idee": "Les vrais riches vivent en dessous de leurs moyens et accumulent patiemment.",
+   "apport": "Données empiriques sur les taux d'épargne réalistes et la sobriété stratégique."
+  },
+  {
+   "auteur": "Elizabeth Warren & Amelia Tyagi",
+   "titre": "All Your Worth",
+   "annee": "2005",
+   "idee": "Règle 50/30/20 : 50 % besoins, 30 % envies, 20 % épargne et dette.",
+   "apport": "Grille de répartition budgétaire servant de base au dimensionnement du matelas."
+  },
+  {
+   "auteur": "JL Collins",
+   "titre": "The Simple Path to Wealth",
+   "annee": "2016",
+   "idee": "Simplicité radicale : un fonds d'urgence liquide avant tout investissement en indices.",
+   "apport": "Articulation matelas de sécurité / investissement long terme sans produits complexes."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "La richesse est comportementale ; la marge de sécurité est la première défense contre l'imprévu.",
+   "apport": "Biais cognitifs à neutraliser lors de la constitution et de la préservation du matelas."
+  },
+  {
+   "auteur": "David Bach",
+   "titre": "The Automatic Millionaire",
+   "annee": "2003",
+   "idee": "Le « facteur latte » : de petites sommes automatisées deviennent un capital significatif.",
+   "apport": "Micro-épargne automatique comme accélérateur complémentaire du matelas."
+  },
+  {
+   "auteur": "Tony Robbins",
+   "titre": "Money: Master the Game",
+   "annee": "2014",
+   "idee": "Sept étapes vers la liberté financière ; la première est la sécurité (capital protégé).",
+   "apport": "Pyramide des besoins financiers et allocation par « buckets » inspirant le placement."
+  },
+  {
+   "auteur": "Carl Richards",
+   "titre": "The One-Page Financial Plan",
+   "annee": "2015",
+   "idee": "Un plan financier tient sur une page : valeurs, objectifs, actions simples.",
+   "apport": "Méthode de visualisation en une page pour cadrer son matelas sans complexité."
+  },
+  {
+   "auteur": "Carl Richards",
+   "titre": "The Behavior Gap",
+   "annee": "2012",
+   "idee": "L'écart entre rendement théorique et rendement réel vient des émotions.",
+   "apport": "Gardes-fous comportementaux pour ne pas piocher dans le matelas sous stress."
+  },
+  {
+   "auteur": "Taylor Larimore, Mel Lindauer, Michael LeBoeuf",
+   "titre": "The Bogleheads' Guide to Investing",
+   "annee": "2006",
+   "idee": "Investir simplement ; garder 3 à 24 mois de dépenses selon la stabilité du revenu.",
+   "apport": "Fourchettes de dimensionnement selon profil de risque et volatilité des revenus."
+  },
+  {
+   "auteur": "Grant Sabatier",
+   "titre": "Financial Freedom",
+   "annee": "2019",
+   "idee": "Accélérer l'épargne par l'augmentation des revenus et la réduction des coûts fixes.",
+   "apport": "Leviers de croissance du revenu dédiés à l'alimentation rapide du matelas."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Antifragile",
+   "annee": "2012",
+   "idee": "Construire des systèmes qui profitent du désordre ; la redondance est une force.",
+   "apport": "Concept de redondance et de « barbell strategy » appliqué à la trésorerie personnelle."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I — Comprendre et diagnostiquer : pourquoi votre matelas change tout",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le matelas de sécurité : définition, histoire et rôle vital",
+     "objectif": "Ancrer une définition claire du matelas de sécurité, retracer son origine (caisses de secours, livrets, fonds d'urgence modernes) et montrer pourquoi il constitue la première brique de toute architecture financière personnelle.",
+     "sections": [
+      "1.1 Qu'est-ce qu'un matelas de sécurité ? Définition opérationnelle en 7 critères",
+      "1.2 Petite histoire : des greniers à grain aux comptes sur livret",
+      "1.3 La différence entre matelas, épargne de projet et investissement",
+      "1.4 Les trois menaces que le matelas neutralise (perte de revenu, dépense imprévue, choc systémique)",
+      "1.5 Ce que le matelas n'est PAS : cinq idées reçues démontées",
+      "1.6 Le coût caché de l'absence de matelas : chiffres et études",
+      "1.7 Votre « score de vulnérabilité » : auto-diagnostic initial"
+     ],
+     "exercices": [
+      "Calculer votre score de vulnérabilité sur une grille de 20 items",
+      "Lister vos trois pires scénarios financiers des 12 prochains mois et leur coût estimé",
+      "Rédiger en une phrase votre « pourquoi » personnel du matelas"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La psychologie de la sécurité financière : peurs, biais et déclics",
+     "objectif": "Explorer les mécanismes émotionnels et cognitifs qui freinent ou facilitent la constitution d'une réserve, afin de débloquer le lecteur avant toute technique.",
+     "sections": [
+      "2.1 Le biais du présent : pourquoi on préfère consommer aujourd'hui",
+      "2.2 L'aversion à la perte et la paralysie de l'épargnant débutant",
+      "2.3 Le syndrome de l'autruche : ignorer ses chiffres pour ne pas souffrir",
+      "2.4 L'ancrage familial : ce que vos parents vous ont transmis sur l'argent",
+      "2.5 La honte financière et comment la dépasser",
+      "2.6 Le déclic : identifier votre « moment déclencheur » personnel",
+      "2.7 Transformer l'anxiété en plan : la méthode RAIN appliquée à l'argent"
+     ],
+     "exercices": [
+      "Journaling : écrire une lettre à votre « moi » de dans 5 ans sans matelas vs avec matelas",
+      "Identifier vos 3 croyances limitantes sur l'épargne et les reformuler",
+      "Test : évaluer votre tolérance à l'incertitude financière (questionnaire 10 questions)"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Cartographier votre situation : le bilan financier honnête",
+     "objectif": "Guider le lecteur dans un état des lieux complet (revenus, charges, dettes, actifs liquides) indispensable avant tout dimensionnement.",
+     "sections": [
+      "3.1 Rassembler les pièces : relevés, contrats, factures — la check-list",
+      "3.2 Calculer votre revenu net réel (pas seulement le salaire brut)",
+      "3.3 Lister et catégoriser vos charges : fixes, variables, exceptionnelles",
+      "3.4 L'inventaire des dettes : taux, mensualités, échéances",
+      "3.5 Vos actifs liquides actuels : livrets, comptes courants, espèces",
+      "3.6 Le tableau de bord en une page : modèle à remplir",
+      "3.7 Interpréter les chiffres : où sont les fuites et les marges ?"
+     ],
+     "exercices": [
+      "Remplir le tableau de bord financier en une page fourni en annexe",
+      "Calculer votre « burn rate » mensuel moyen sur 6 mois",
+      "Identifier les 3 postes de dépense où une réduction de 10 % est réaliste"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les 5 niveaux de sécurité financière : où vous situez-vous ?",
+     "objectif": "Proposer une échelle progressive (survie → stabilité → confort → indépendance → abondance) pour que le lecteur situe son point de départ et visualise sa trajectoire.",
+     "sections": [
+      "4.1 Niveau 1 – Survie : vivre d'un mois sur l'autre sans réserve",
+      "4.2 Niveau 2 – Stabilité : 1 à 3 mois de charges couverts",
+      "4.3 Niveau 3 – Confort : 3 à 6 mois, premier coussin psychologique",
+      "4.4 Niveau 4 – Indépendance : 6 à 12 mois, liberté de choix",
+      "4.5 Niveau 5 – Abondance : au-delà de 12 mois, le matelas devient levier",
+      "4.6 Transition entre niveaux : signaux, délais typiques, pièges",
+      "4.7 Construire votre feuille de route personnelle de progression"
+     ],
+     "exercices": [
+      "Auto-évaluation : cocher votre niveau actuel et justifier en 3 lignes",
+      "Définir votre niveau cible à 12 mois et à 36 mois",
+      "Lister 2 actions concrètes pour passer au niveau supérieur"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Le cadre légal et fiscal général du matelas (France et francophonie)",
+     "objectif": "Donner un panorama des enveloppes disponibles et de leur traitement fiscal sans conseil personnalisé, pour que le lecteur sache dans quel terrain il joue.",
+     "sections": [
+      "5.1 Les livrets réglementés : Livret A, LDDS, LEP — plafonds et taux",
+      "5.2 Les livrets bancaires classiques et comptes à terme",
+      "5.3 L'assurance-vie en fonds euros comme extension du matelas",
+      "5.4 Le PEL/CEL : pertinence et limites pour la trésorerie",
+      "5.5 Les spécificités belges, suisses, québécoises et africaines francophones",
+      "5.6 Ce qu'il faut retenir sur la fiscalité des intérêts (PFU, exonérations)",
+      "5.7 Avertissement : quand consulter un conseiller (sans dépendre de lui)"
+     ],
+     "exercices": [
+      "Vérifier vos plafonds de livrets actuels et noter la marge disponible",
+      "Comparer le taux net de 3 enveloppes accessibles dans votre pays",
+      "Rédiger votre « règle personnelle » : quelle enveloppe pour quelle fonction"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II — Dimensionner : combien mettre dans votre matelas ?",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "La règle des 3-6-12 mois : mythe universel ou point de départ ?",
+     "objectif": "Déconstruire la règle classique et montrer comment l'adapter à chaque situation réelle.",
+     "sections": [
+      "6.1 Origine de la règle des 3 à 6 mois : contexte américain des années 1980",
+      "6.2 Pourquoi « un chiffre unique » ne peut pas convenir à tous",
+      "6.3 Le facteur stabilité de l'emploi : CDI, CDD, freelance, fonctionnaire",
+      "6.4 Le facteur charges fixes : loyer, crédit, personnes à charge",
+      "6.5 Le facteur secteur et cyclisme économique",
+      "6.6 Le facteur santé et dépendances (aidants, maladies chroniques)",
+      "6.7 Formule personnalisée : calculer VOTRE nombre de mois optimal"
+     ],
+     "exercices": [
+      "Appliquer la formule de dimensionnement personnalisée à vos chiffres",
+      "Simuler 3 scénarios (optimiste, médian, pessimiste) de durée de chômage",
+      "Ajuster votre cible en fonction de votre tolérance au stress financier"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Dimensionner quand on est freelance, entrepreneur ou en revenus irréguliers",
+     "objectif": "Adapter le calcul du matelas aux revenus non linéaires, avec des méthodes de lissage et de provisionnement.",
+     "sections": [
+      "7.1 La volatilité des revenus indépendants : mesurer votre écart-type",
+      "7.2 La méthode du « revenu plancher » : identifier votre minimum garanti",
+      "7.3 Matelas de 6 à 12 mois : pourquoi le standard salarié ne suffit pas",
+      "7.4 La double réserve : matelas personnel + trésorerie d'entreprise",
+      "7.5 Provisionner les charges sociales et fiscales à part",
+      "7.6 Gérer les « mois creux » sans entamer le matelas",
+      "7.7 Études de cas : graphiste, artisan, consultant, e-commerçant"
+     ],
+     "exercices": [
+      "Calculer votre revenu plancher sur les 24 derniers mois",
+      "Construire un tableau de provisionnement mensuel des charges variables",
+      "Définir votre règle de « seuil de déclenchement » du matelas"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Dimensionner selon les étapes de vie : étudiant, jeune actif, parent, senior",
+     "objectif": "Montrer que le montant cible évolue avec les responsabilités et les obligations de chaque tranche de vie.",
+     "sections": [
+      "8.1 Étudiant / premier emploi : le micro-matelas de 500 à 1 500 €",
+      "8.2 Jeune actif en colocation : 2 à 3 mois de quote-part",
+      "8.3 Couple sans enfant : mutualiser ou séparer les matelas ?",
+      "8.4 Parents : intégrer les imprévus enfants (garde, santé, école)",
+      "8.5 Propriétaire vs locataire : la réserve travaux et copropriété",
+      "8.6 Pré-retraite et retraite : le matelas comme pont de trésorerie",
+      "8.7 Matrice récapitulative : cible par profil et étape de vie"
+     ],
+     "exercices": [
+      "Identifier votre étape de vie et cocher les risques spécifiques associés",
+      "Calculer le surcoût « enfants » ou « propriété » à ajouter à votre cible",
+      "Écrire votre « contrat de matelas » : montant cible, horizon, priorité"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Intégrer le matelas dans une stratégie globale : dettes, projets, investissements",
+     "objectif": "Articuler le matelas avec le remboursement de dettes, l'épargne de projet et l'investissement pour éviter les conflits d'allocation.",
+     "sections": [
+      "9.1 La question éternelle : rembourser la dette ou épargner d'abord ?",
+      "9.2 L'ordre des priorités : modèle séquentiel vs modèle parallèle",
+      "9.3 Le matelas AVANT l'investissement en bourse : pourquoi et quand",
+      "9.4 Coexistence matelas / épargne projet (voyage, mariage, achat)",
+      "9.5 Le matelas comme condition de la prise de risque calculée",
+      "9.6 Quand le matelas devient trop gros : le surplus vers l'investissement",
+      "9.7 Schéma d'allocation globale : la pyramide à 5 étages"
+     ],
+     "exercices": [
+      "Dessiner votre pyramide financière personnelle à 5 étages",
+      "Décider : dette ou matelas d'abord ? Grille de décision en 6 questions",
+      "Fixer le seuil au-delà duquel vous redirigerez le surplus vers l'investissement"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Recalculer et réviser : le matelas est un chiffre vivant",
+     "objectif": "Instituer une routine de révision périodique du dimensionnement pour que le matelas reste adapté à la réalité changeante du lecteur.",
+     "sections": [
+      "10.1 Les 7 événements qui imposent un recalcul immédiat",
+      "10.2 La révision annuelle : rituel de 30 minutes chaque janvier",
+      "10.3 Ajuster à la hausse : inflation, hausse de loyer, nouvel enfant",
+      "10.4 Ajuster à la baisse : dettes soldées, charges réduites, nouveau conjoint",
+      "10.5 Le matelas en devise étrangère : expatriés et multi-devises",
+      "10.6 Outils de suivi : tableur, application, ou carnet papier",
+      "10.7 Célébrer les paliers : reconnaître chaque tranche atteinte"
+     ],
+     "exercices": [
+      "Programmer un rappel annuel « révision matelas » dans votre agenda",
+      "Créer votre tableau de suivi (modèle fourni) avec colonnes cible/réalité/écart",
+      "Rédiger votre règle personnelle de déclenchement du recalcul"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III — Constituer : les stratégies pour remplir le matelas",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Se payer en premier : automatiser le prélèvement dès le revenu reçu",
+     "objectif": "Mettre en place un système automatique qui alimente le matelas sans effort de volonté.",
+     "sections": [
+      "11.1 Le principe « Pay Yourself First » adapté au matelas",
+      "11.2 Choisir le pourcentage de prélèvement : 5 %, 10 %, 20 % ?",
+      "11.3 Mettre en place le virement automatique : pas à pas bancaire",
+      "11.4 La technique du « compte invisible » : rendre l'argent moins accessible",
+      "11.5 Programmer des paliers progressifs pour éviter l'effet de privation",
+      "11.6 Automatiser aussi les micro-revenus : primes, remboursements, cashback",
+      "11.7 Que faire quand le prélèvement « fait mal » : ajuster sans abandonner"
+     ],
+     "exercices": [
+      "Programmer un virement automatique dès la prochaine paie (modèle de courrier/app)",
+      "Calculer le montant cumulé sur 12, 24, 36 mois à 3 taux différents",
+      "Identifier 3 sources de micro-revenus à rediriger vers le matelas"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Réduire les charges sans se priver : libérer du cash pour le matelas",
+     "objectif": "Dégager des marges budgétaires réalistes sans tomber dans la frustration, pour accélérer la constitution.",
+     "sections": [
+      "12.1 L'audit des abonnements : la chasse aux coûts fantômes",
+      "12.2 Renégocier les contrats : assurance, télécom, énergie, banque",
+      "12.3 La méthode des « 30 jours » pour les achats impulsifs",
+      "12.4 Optimiser l'alimentation et les transports sans perdre en qualité",
+      "12.5 Le logement : levier n° 1 (colocation, renégociation, mobilité)",
+      "12.6 La règle du « un qui entre, un qui sort » pour les dépenses plaisir",
+      "12.7 Réinvestir 100 % des économies réalisées dans le matelas"
+     ],
+     "exercices": [
+      "Faire l'audit complet de vos abonnements en 20 minutes (grille fournie)",
+      "Négocier un contrat cette semaine (script d'appel fourni)",
+      "Tenir un journal de dépenses « plaisir » pendant 14 jours et analyser"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Augmenter ses revenus : le turbo du matelas",
+     "objectif": "Explorer les leviers d'augmentation de revenus (heures sup, side-projects, compétences, négociation) dédiés à l'alimentation du matelas.",
+     "sections": [
+      "13.1 Pourquoi réduire ne suffit pas : le plafond de l'économie",
+      "13.2 Négocier une augmentation ou une prime : méthode en 5 étapes",
+      "13.3 Les heures supplémentaires et missions internes rémunérées",
+      "13.4 Le side-project : monétiser une compétence en 2 h/semaine",
+      "13.5 Vendre ce qui dort : la « grande braderie » de démarrage",
+      "13.6 Les revenus exceptionnels : 13e mois, intéressement, héritage, cadeaux",
+      "13.7 Flécher 100 % du surplus : la règle du « revenu nouveau = matelas »"
+     ],
+     "exercices": [
+      "Préparer un argumentaire de négociation salariale en 10 lignes",
+      "Lister 3 compétences monétisables en freelance et estimer le revenu potentiel",
+      "Organiser une « vente de garage » physique ou en ligne ce mois-ci"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La méthode des enveloppes et des sous-comptes : structurer le flux",
+     "objectif": "Mettre en place une architecture de comptes qui sépare physiquement le matelas du reste et empêche les fuites.",
+     "sections": [
+      "14.1 Le modèle multi-comptes : courant, matelas, projets, plaisir",
+      "14.2 La méthode des enveloppes numériques (catégories de dépenses)",
+      "14.3 Ouvrir un compte dédié au matelas dans une autre banque : avantages",
+      "14.4 Les sous-livrets et la segmentation par « tranche » de matelas",
+      "14.5 Éviter la tentation : rendre le matelas légèrement « frictionnel »",
+      "14.6 Automatiser les transferts entre enveloppes en fin de mois",
+      "14.7 Adapter le système aux couples : comptes joints, séparés, mixtes"
+     ],
+     "exercices": [
+      "Ouvrir (ou désigner) un compte/livret dédié uniquement au matelas",
+      "Dessiner votre architecture de comptes idéale sur papier",
+      "Configurer un virement de « balayage » mensuel du surplus courant vers le matelas"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Accélérer sans s'épuiser : défis 90 jours et sprint d'épargne",
+     "objectif": "Proposer des formats courts et motivants pour donner un coup de fouet à la constitution sans transformer la vie en privation.",
+     "sections": [
+      "15.1 Le défi « 90 jours pour mon premier mois de charges »",
+      "15.2 Le sprint d'épargne : 2 semaines de réduction radicale ciblée",
+      "15.3 La méthode 52 semaines : 1 € la semaine 1, 52 € la semaine 52",
+      "15.4 Le « no-spend month » : règles, garde-fous et bénéfices",
+      "15.5 Les challenges collectifs : partenaire de responsabilité, groupes",
+      "15.6 Suivre la progression : jauges visuelles, tableaux, apps",
+      "15.7 Célébrer la fin du sprint sans tout dépenser : la récompense saine"
+     ],
+     "exercices": [
+      "Choisir et démarrer un défi de 90 jours avec date de fin inscrite",
+      "Créer une jauge visuelle (thermomètre) à afficher chez soi",
+      "Trouver un « buddy » de responsabilité et fixer un check-in hebdomadaire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV — Placer intelligemment : où loger votre matelas",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Les 4 critères d'or du placement de sécurité : liquidité, sécurité, rendement, accessibilité",
+     "objectif": "Poser la grille de lecture universelle pour évaluer toute enveloppe destinée au matelas.",
+     "sections": [
+      "16.1 La liquidité : pouvoir retirer en 24-48 h sans pénalité",
+      "16.2 La sécurité du capital : garantie des dépôts, fonds euros, risque zéro",
+      "16.3 Le rendement réel : battre l'inflation sans prendre de risque",
+      "16.4 L'accessibilité : simplicité de gestion, pas de frais cachés",
+      "16.5 Le triangle d'incompatibilité : pourquoi on ne peut pas tout maximiser",
+      "16.6 Pondérer les critères selon votre profil et votre niveau de matelas",
+      "16.7 Grille de notation : évaluer une enveloppe sur 20 points"
+     ],
+     "exercices": [
+      "Noter sur 20 les 3 enveloppes que vous utilisez déjà",
+      "Identifier le critère le plus important pour VOUS et justifier",
+      "Rédiger votre « cahier des charges du placement de matelas » en 5 lignes"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Livrets, comptes à terme, fonds euros : le panorama des enveloppes sûres",
+     "objectif": "Passer en revue les solutions concrètes disponibles en francophonie avec avantages, limites et taux indicatifs.",
+     "sections": [
+      "17.1 Livret A et LDDS : le socle français, plafond et taux",
+      "17.2 LEP : le boost pour les revenus modestes",
+      "17.3 Livrets bancaires classiques : comparer les taux boostés",
+      "17.4 Comptes à terme (CAT) : bloquer 3 à 12 mois pour un meilleur taux",
+      "17.5 Fonds euros en assurance-vie : la extension du matelas au-delà du livret",
+      "17.6 Les solutions belges (compte d'épargne), suisses (compte 3a partiel), québécoises (CELI utilisé comme réserve)",
+      "17.7 Tableau comparatif synthétique : taux, disponibilité, plafond, fiscalité"
+     ],
+     "exercices": [
+      "Remplir le tableau comparatif avec les offres actuelles de votre banque",
+      "Calculer le manque à gagner d'un matelas laissé sur un compte courant à 0 %",
+      "Ouvrir ou optimiser un livret sous-utilisé cette semaine"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La stratégie en tranches : diviser le matelas pour optimiser",
+     "objectif": "Présenter la technique du « laddering » ou découpage en tranches de liquidité croissante pour concilier rendement et disponibilité.",
+     "sections": [
+      "18.1 Le principe de la tranche immédiate (0-1 mois de charges)",
+      "18.2 La tranche de précaution (1-3 mois) : livrets et CAT courts",
+      "18.3 La tranche de réserve (3-6 mois) : CAT moyens, fonds euros",
+      "18.4 La tranche de confort (au-delà de 6 mois) : obligations courtes, monétaire",
+      "18.5 Construire son échelle de CAT : exemple chiffré sur 12 mois",
+      "18.6 Rééquilibrer les tranches une fois par an",
+      "18.7 Adapter le nombre de tranches à la taille du matelas"
+     ],
+     "exercices": [
+      "Dessiner votre échelle de tranches avec montants et enveloppes",
+      "Ouvrir un premier CAT de 3 mois avec la tranche concernée",
+      "Programmer le rééquilibrage annuel dans votre agenda"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Ce qu'il ne faut PAS faire avec le matelas : les pièges de placement",
+     "objectif": "Lister et démonter les erreurs classiques : bourse, crypto, immobilier, produits structurés, et expliquer pourquoi elles menacent la fonction première du matelas.",
+     "sections": [
+      "19.1 Le matelas en actions : pourquoi la volatilité détruit la sécurité",
+      "19.2 Crypto-monnaies et actifs spéculatifs : l'anti-matelas",
+      "19.3 L'immobilier comme « réserve » : illiquidité et frais de sortie",
+      "19.4 Produits structurés, fonds à formule : la complexité contre la clarté",
+      "19.5 Prêter son matelas ou le investir dans l'entreprise d'un proche",
+      "19.6 Le piège du rendement « un peu plus élevé » qui fait prendre 1 % de risque en trop",
+      "19.7 La règle absolue : si vous ne pouvez pas récupérer la somme en 72 h, ce n'est pas le matelas"
+     ],
+     "exercices": [
+      "Vérifier qu'aucune partie de votre matelas actuel n'est exposée à un risque de perte en capital",
+      "Écrire votre « charte d'inviolabilité du matelas » et la signer",
+      "Identifier une tentation de placement risqué que vous avez eue et analyser le biais"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Protéger le matelas contre l'inflation et les risques systémiques",
+     "objectif": "Aborder la préservation du pouvoir d'achat et la diversification des contreparties sans trahir la sécurité.",
+     "sections": [
+      "20.1 L'inflation : l'ennemi silencieux du matelas dormant",
+      "20.2 Indexer partiellement : livrets à taux révisables, CAT renouvelables",
+      "20.3 La garantie des dépôts (100 000 € en Europe) : diversifier les banques si nécessaire",
+      "20.4 Le risque de faillite bancaire : mythe vs réalité",
+      "20.5 Détenir une petite poche en devises étrangères pour les expatriés",
+      "20.6 Le matelas « physique » : espèces à domicile, limites et précautions",
+      "20.7 Plan B : que faire si votre banque principale est inaccessible 48 h ?"
+     ],
+     "exercices": [
+      "Vérifier que vos avoirs sont sous le plafond de garantie par banque",
+      "Calculer la perte de pouvoir d'achat de votre matelas sur 3 ans à 3 % d'inflation",
+      "Définir votre « plan B d'accès » : deuxième banque, espèces, proche de confiance"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V — Protéger, maintenir et faire évoluer le matelas dans la durée",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Quand et comment utiliser le matelas sans culpabilité",
+     "objectif": "Définir les règles claires de déclenchement du matelas pour éviter la culpabilité ou, à l'inverse, la tentation de le garder intact face à une vraie urgence.",
+     "sections": [
+      "21.1 Qu'est-ce qu'une « vraie urgence » ? La grille de décision en 4 questions",
+      "21.2 Le protocole de retrait : combien, où, comment, en combien de temps",
+      "21.3 Utiliser le matelas pour une opportunité (pas une urgence) : oui ou non ?",
+      "21.4 La culpabilité de « casser son matelas » : la dépasser par la rationalité",
+      "21.5 Le plan de reconstitution post-utilisation : revenir à la cible en X mois",
+      "21.6 Documenter chaque utilisation : journal de bord du matelas",
+      "21.7 Enseigner l'usage du matelas à son conjoint ou ses enfants majeurs"
+     ],
+     "exercices": [
+      "Rédiger votre protocole de retrait en 5 étapes (qui décide, seuil, délai)",
+      "Simuler un scénario de perte d'emploi et dérouler le protocole",
+      "Planifier la reconstitution : montant mensuel et durée cible"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Le matelas dans le couple et la famille : gouvernance partagée",
+     "objectif": "Gérer la question du matelas à deux ou en famille : comptes joints, transparence, accord sur le montant et les règles d'usage.",
+     "sections": [
+      "22.1 Matelas commun, séparé ou hybride : les 3 modèles",
+      "22.2 La conversation argent en couple : comment l'aborder sans conflit",
+      "22.3 Fixer la cible commune : additionner ou moyenner les charges ?",
+      "22.4 Qui gère au quotidien ? Rôles, accès, transparence",
+      "22.5 Le matelas en cas de séparation : protection juridique de base",
+      "22.6 Impliquer les enfants adolescents : pédagogie de la sécurité",
+      "22.7 Le matelas familial élargi : aider un proche sans se mettre en danger"
+     ],
+     "exercices": [
+      "Organiser un « rendez-vous argent » de 30 min avec votre partenaire (ordre du jour fourni)",
+      "Rédiger ensemble votre charte de matelas familial (modèle fourni)",
+      "Définir la règle d'aide à un proche : montant max, conditions, non-remboursement accepté"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Au-delà du matelas : la transition vers la résilience financière complète",
+     "objectif": "Montrer comment le matelas achevé devient le tremplin vers la construction patrimoniale, l'investissement et la liberté de choix.",
+     "sections": [
+      "23.1 Le matelas complet : signal psychologique de permission d'investir",
+      "23.2 Les premiers pas en bourse une fois le matelas sécurisé (indices, ETF)",
+      "23.3 Construire un fonds d'opportunité : la tranche au-delà du matelas",
+      "23.4 L'assurance comme complément : prévoyance, santé, perte d'emploi",
+      "23.5 La stratégie « barbell » de Taleb appliquée : sécurité maximale + audace calculée",
+      "23.6 Redéfinir la richesse : de la peur du manque à la liberté de choix",
+      "23.7 Votre plan financier à 5 ans maintenant que le matelas est en place"
+     ],
+     "exercices": [
+      "Rédiger votre « permission d'investir » : conditions à remplir pour commencer",
+      "Esquisser votre allocation post-matelas (pourcentages sécurité/croissance/plaisir)",
+      "Écrire une lettre à votre moi futur : « ce que je ferai grâce à ma sécurité »"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le rituel annuel et la transmission : faire vivre votre matelas d'or",
+     "objectif": "Instituer une routine pérenne de maintenance, de mise à jour et de transmission du savoir-faire acquis.",
+     "sections": [
+      "24.1 Le rituel annuel du matelas : 1 heure, 7 étapes, chaque janvier",
+      "24.2 Mettre à jour les montants, les enveloppes, les bénéficiaires",
+      "24.3 Archiver et documenter : le « dossier matelas » en cas d'imprévu grave",
+      "24.4 Transmettre la méthode à ses enfants, amis, communauté",
+      "24.5 Rejoindre ou créer un groupe d'entraide financière locale",
+      "24.6 Rester vigilant face aux arnaques qui ciblent l'épargne de précaution",
+      "24.7 Mot de la fin : votre matelas est un acte d'amour envers vous-même et les vôtres"
+     ],
+     "exercices": [
+      "Programmer le rituel annuel dans votre calendrier avec rappel récurrent",
+      "Constituer votre « dossier matelas » physique et numérique (check-list fournie)",
+      "Partager une leçon du livre à un proche cette semaine et noter sa réaction"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,517 @@
+{
+ "titre": "L'Équation Entrepreneuriale",
+ "sous_titre": "De l'idée brute à l'empire rentable : le manuel de l'entrepreneur bâtisseur en Afrique, au Maghreb et en Europe",
+ "bibliographie": [
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "L'approche scientifique de la création d'entreprise via le cycle construire-mesurer-apprendre et le produit minimum viable (MVP).",
+   "apport": "Retenir la méthodologie de validation rapide pour éviter le gaspillage de capital dans des marchés où les ressources sont rares."
+  },
+  {
+   "auteur": "Rob Fitzpatrick",
+   "titre": "The Mom Test",
+   "annee": "2013",
+   "idee": "Comment parler aux clients et apprendre si votre idée est bonne sans qu'ils ne vous mentent pour vous faire plaisir.",
+   "apport": "Adapter les techniques d'entretien aux cultures relationnelles et polies du Maghreb et de l'Afrique francophone pour obtenir la vérité."
+  },
+  {
+   "auteur": "Alexander Osterwalder",
+   "titre": "Business Model Generation",
+   "annee": "2010",
+   "idee": "Le Business Model Canvas comme langage universel pour modéliser la création de valeur et les flux financiers.",
+   "apport": "Utiliser le Canvas en y intégrant les spécificités des économies émergentes, de l'informel et des contraintes infrastructurelles."
+  },
+  {
+   "auteur": "Mike Michalowicz",
+   "titre": "Profit First",
+   "annee": "2014",
+   "idee": "Inverser la formule comptable classique pour garantir la rentabilité et la trésorerie avant de payer les charges.",
+   "apport": "Appliquer cette rigueur de trésorerie vitale dans les écosystèmes où l'accès au crédit bancaire est difficile et les retards de paiement fréquents."
+  },
+  {
+   "auteur": "Michael Gerber",
+   "titre": "The E-Myth Revisited",
+   "annee": "1995",
+   "idee": "Le piège de l'entrepreneur artisan qui travaille dans son entreprise plutôt que sur son entreprise.",
+   "apport": "Structurer les processus pour permettre la délégation et la croissance hors de la dépendance totale au fondateur."
+  },
+  {
+   "auteur": "Gabriel Weinberg",
+   "titre": "Traction",
+   "annee": "2015",
+   "idee": "Les 19 canaux d'acquisition pour trouver ses premiers clients et scaler de manière prévisible.",
+   "apport": "Identifier les canaux les plus pertinents et moins coûteux pour les marchés francophones hors Silicon Valley."
+  },
+  {
+   "auteur": "Peter Thiel",
+   "titre": "Zero to One",
+   "annee": "2014",
+   "idee": "Le vrai progrès vient de la création de monopoles par l'innovation radicale plutôt que de la concurrence frontale.",
+   "apport": "Chercher des niches non saturées et créer des offres uniques dans les économies en développement."
+  },
+  {
+   "auteur": "Geoffrey Moore",
+   "titre": "Crossing the Chasm",
+   "annee": "1991",
+   "idee": "Le fossé critique entre les adopteurs précoces et la majorité du marché qui tue de nombreuses startups.",
+   "apport": "Adapter la stratégie de franchissement du gouffre aux réalités de la confiance, du bouche-à-oreille et du réseau local."
+  },
+  {
+   "auteur": "Nir Eyal",
+   "titre": "Hooked",
+   "annee": "2014",
+   "idee": "Le modèle en 4 étapes pour créer des produits qui ancrent des habitudes chez les utilisateurs.",
+   "apport": "Concevoir des offres à forte rétention dans des marchés où le pouvoir d'achat impose une concurrence féroce sur l'attention et le budget."
+  },
+  {
+   "auteur": "Geoff Smart",
+   "titre": "Who",
+   "annee": "2008",
+   "idee": "La méthode A pour recruter les meilleurs talents et éviter les erreurs de casting coûteuses.",
+   "apport": "Bâtir des équipes performantes dans des marchés où le vivier de talents formés est restreint, cher ou peu structuré."
+  },
+  {
+   "auteur": "Ben Horowitz",
+   "titre": "The Hard Thing About Hard Things",
+   "annee": "2014",
+   "idee": "La réalité brutale du management en temps de guerre et des crises inévitables que les livres de gestion ignorent.",
+   "apport": "Préparer les fondateurs aux chocs macro-économiques, réglementaires et aux pénuries de supply chain spécifiques à nos régions."
+  },
+  {
+   "auteur": "W. Chan Kim",
+   "titre": "Blue Ocean Strategy",
+   "annee": "2005",
+   "idee": "Créer des espaces de marché non contestés plutôt que de se battre dans des océans rouges saturés.",
+   "apport": "Repenser la proposition de valeur pour servir des populations ignorées par les grands groupes et les multinationales."
+  },
+  {
+   "auteur": "Chris Guillebeau",
+   "titre": "The $100 Startup",
+   "annee": "2012",
+   "idee": "Le bootstrapping et la capacité à lancer un business rentable avec très peu de capital initial.",
+   "apport": "Valoriser le « Système D » et la débrouillardise, atouts majeurs et historiques des entrepreneurs africains et maghrébins."
+  },
+  {
+   "auteur": "Reid Hoffman",
+   "titre": "Blitzscaling",
+   "annee": "2018",
+   "idee": "Les stratégies de croissance ultra-rapide et leurs risques pour dominer un marché mondial.",
+   "apport": "Comprendre quand accélérer et quand privilégier une croissance organique et résiliente selon le contexte local et les infrastructures."
+  },
+  {
+   "auteur": "John Doerr",
+   "titre": "Measure What Matters",
+   "annee": "2018",
+   "idee": "Le système des OKR (Objectives and Key Results) pour aligner les équipes et exécuter la vision.",
+   "apport": "Instaurer une culture de la performance, de la transparence et de l'alignement dans des structures en forte croissance."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 : La Genèse - De l'Intuition à la Preuve",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le Mythe de l'Idée du Siècle",
+     "objectif": "Déconstruire le culte de l'idée pour se concentrer sur l'identification de problèmes douloureux et récurrents.",
+     "sections": [
+      "1. L'illusion du génie solitaire et le biais du survivant",
+      "2. Problème vs Solution : le mauvais point de départ",
+      "3. Le biais de confirmation du fondateur",
+      "4. L'observation ethnographique du marché local",
+      "5. Le carnet d'hypothèses falsifiables"
+     ],
+     "exercices": [
+      "Cartographier 10 frustrations quotidiennes dans votre secteur cible.",
+      "Rédiger votre énoncé de problème sans utiliser une seule fois le mot « solution »."
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "L'Immersion Terrain et le Test de Vérité",
+     "objectif": "Maîtriser l'art de l'entretien client pour obtenir des faits, pas des compliments.",
+     "sections": [
+      "1. Les principes fondamentaux du Mom Test",
+      "2. Adapter l'entretien aux codes culturels (Maghreb/Afrique)",
+      "3. Les questions interdites et les faux positifs de politesse",
+      "4. Décoder le non-verbal et les non-dits",
+      "5. Synthétiser et pondérer les retours terrain"
+     ],
+     "exercices": [
+      "Mener 5 entretiens qualitatifs en appliquant strictement les règles du Mom Test.",
+      "Créer une matrice de fréquence des problèmes évoqués par vos prospects."
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Le Business Model Contextuel",
+     "objectif": "Modéliser une entreprise viable en tenant compte des réalités des marchés émergents et francophones.",
+     "sections": [
+      "1. Le Business Model Canvas revisité pour l'Afrique et le Maghreb",
+      "2. Intégrer l'informel et le manque d'infrastructures",
+      "3. La proposition de valeur locale et accessible",
+      "4. Les partenariats stratégiques de proximité",
+      "5. Les flux de revenus adaptés au pouvoir d'achat"
+     ],
+     "exercices": [
+      "Remplir un Canvas en y ajoutant une ligne « Contraintes Infrastructurelles ».",
+      "Identifier 3 acteurs de l'économie informelle qui pourraient être des partenaires ou des concurrents."
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Le Prototype Minimaliste (MVP)",
+     "objectif": "Concevoir et lancer un MVP avec les moyens du bord pour tester l'appétence du marché.",
+     "sections": [
+      "1. Définition réelle du MVP (ce n'est pas un produit buggy)",
+      "2. Les MVP « Concierge » et « Magicien d'Oz »",
+      "3. Utiliser WhatsApp, Facebook et les outils No-Code",
+      "4. Le MVP de service vs le MVP logiciel",
+      "5. Définir les métriques de succès du test"
+     ],
+     "exercices": [
+      "Lancer une offre test en 48h via un groupe WhatsApp ou une landing page No-Code.",
+      "Mesurer le taux de clic ou d'engagement sur votre prototype."
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "La Mesure de la Vraie Demande",
+     "objectif": "Valider le marché par des engagements concrets (pré-ventes, LOI) plutôt que par des sondages.",
+     "sections": [
+      "1. La psychologie de l'engagement financier",
+      "2. La lettre d'intention (LOI) en B2B",
+      "3. Le crowdfunding et la pré-vente en B2C",
+      "4. Gérer l'attente et la déception des early adopters",
+      "5. Le seuil de viabilité minimale"
+     ],
+     "exercices": [
+      "Obtenir 3 lettres d'intention signées ou 10 pré-commandes fermes.",
+      "Rédiger un contrat de pré-vente protecteur pour vous et votre client."
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Le Pivot ou la Persévérance",
+     "objectif": "Prendre des décisions rationnelles face aux données récoltées : changer de cap ou doubler la mise.",
+     "sections": [
+      "1. Les signes avant-coureurs de l'impasse",
+      "2. Les types de pivots (segment, technologie, canal)",
+      "3. Tuer ses darlings : le coût émotionnel du fondateur",
+      "4. Communiquer le pivot aux premiers soutiens",
+      "5. Le cadre de décision basé sur les données"
+     ],
+     "exercices": [
+      "Réaliser un audit de vos hypothèses initiales : rayer celles invalidées.",
+      "Formuler 3 nouvelles hypothèses de pivot basées sur les retours inattendus."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 : La Traction - Conquérir le Marché et Générer du Cash",
+   "chapitres": [
+    {
+     "numero": 7,
+     "titre": "L'Art de l'Offre Irrésistible",
+     "objectif": "Transformer une solution en une offre packagée, priced et positionnée pour dominer son segment.",
+     "sections": [
+      "1. La psychologie du prix dans les marchés sensibles",
+      "2. Le packaging et l'effet de contraste",
+      "3. La garantie et la réversibilité du risque",
+      "4. L'alignement Offre-Marché (Product-Market Fit)",
+      "5. L'offre d'entrée vs l'offre premium"
+     ],
+     "exercices": [
+      "Créer une grille tarifaire à 3 niveaux.",
+      "Tester la réaction de 5 prospects sur l'offre intermédiaire (effet leurre)."
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Les Canaux d'Acquisition Locaux",
+     "objectif": "Identifier et activer les leviers de croissance les plus efficaces dans les écosystèmes francophones.",
+     "sections": [
+      "1. La matrice des 19 canaux de Traction",
+      "2. Le pouvoir du bouche-à-oreille et des communautés",
+      "3. Les micro-influenceurs locaux vs les macro-célébrités",
+      "4. Le SEO local et les annuaires de niche",
+      "5. Le démarchage B2B de terrain et le networking"
+     ],
+     "exercices": [
+      "Sélectionner 2 canaux prioritaires et y allouer 80% de votre budget/temps d'acquisition.",
+      "Cartographier 10 micro-influenceurs ou prescripteurs locaux à contacter."
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le Copywriting de Proximité",
+     "objectif": "Rédiger des messages qui résonnent culturellement et déclenchent l'action.",
+     "sections": [
+      "1. Les principes de base de la persuasion écrite",
+      "2. Adapter le ton : du formel européen au relationnel africain",
+      "3. Les mots déclencheurs de confiance et d'autorité",
+      "4. Storytelling : l'histoire du fondateur et du client",
+      "5. Optimiser les tunnels de conversion mobiles"
+     ],
+     "exercices": [
+      "Réécrire votre page de vente en remplaçant le jargon technique par les mots exacts de vos clients.",
+      "A/B tester deux accroches différentes sur une campagne Facebook Ads ciblée."
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Convertir les Curieux en Acheteurs",
+     "objectif": "Maîtriser le processus de vente, de la prise de contact au closing, en surmontant les objections.",
+     "sections": [
+      "1. La vente consultative vs la vente agressive",
+      "2. Le traitement des objections (prix, confiance, temps)",
+      "3. L'importance du suivi (follow-up) rigoureux",
+      "4. Les outils de CRM pour les petites équipes",
+      "5. Célébrer et analyser les premiers closings"
+     ],
+     "exercices": [
+      "Mettre en place une séquence de follow-up en 5 étapes pour les prospects tièdes.",
+      "Rédiger un document de traitement des 5 objections les plus fréquentes."
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "La Rétention et l'Effet Réseau",
+     "objectif": "Transformer les premiers clients en ambassadeurs et bâtir une forteresse contre le churn.",
+     "sections": [
+      "1. Le coût caché de l'attrition (churn)",
+      "2. L'onboarding : les 100 premiers jours du client",
+      "3. Créer des habitudes (modèle Hooked)",
+      "4. Les programmes de parrainage adaptés culturellement",
+      "5. Le service client comme avantage concurrentiel majeur"
+     ],
+     "exercices": [
+      "Concevoir un parcours d'onboarding qui garantit la première « victoire » client en moins de 24h.",
+      "Lancer une campagne de parrainage avec une récompense à double sens."
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le Premier Million (de dinars, francs CFA ou euros)",
+     "objectif": "Franchir le cap des premiers revenus significatifs et structurer la machine à vendre.",
+     "sections": [
+      "1. La psychologie du premier jalon financier",
+      "2. Passer du fondateur-vendeur à l'équipe commerciale",
+      "3. Standardiser le playbook de vente",
+      "4. Réinvestir les premiers profits dans la croissance",
+      "5. Éviter le syndrome de l'objet brillant"
+     ],
+     "exercices": [
+      "Documenter votre processus de vente actuel dans un playbook de 10 pages.",
+      "Définir le profil et la fiche de poste de votre premier recruit commercial."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 : La Mécanique - Finances, Systèmes et Équipes",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Le Bootstrapping et le Système D",
+     "objectif": "Financer sa croissance par ses propres moyens et transformer les contraintes en avantages compétitifs.",
+     "sections": [
+      "1. La philosophie et la fierté du bootstrapping",
+      "2. Négocier avec les fournisseurs (BFR négatif)",
+      "3. Les subventions, concours et love money",
+      "4. Le growth hacking à coût nul",
+      "5. Quand le bootstrapping atteint ses limites"
+     ],
+     "exercices": [
+      "Renégocier les termes de paiement avec vos 3 principaux fournisseurs.",
+      "Lister 5 actifs inutilisés (matériels, compétences, réseau) que vous pouvez monétiser ou échanger."
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La Trésorerie comme Oxygène",
+     "objectif": "Maîtriser la gestion financière de base pour ne jamais mourir d'asphyxie cash.",
+     "sections": [
+      "1. La différence cruciale entre profit et cash-flow",
+      "2. La méthode Profit First adaptée aux marchés locaux",
+      "3. Gérer les retards de paiement (le fléau local)",
+      "4. Le tableau de bord financier du fondateur",
+      "5. Prévoir les creux saisonniers et les crises"
+     ],
+     "exercices": [
+      "Mettre en place le système des 4 comptes bancaires (Recettes, Dépenses, Profit, Taxes).",
+      "Créer un plan de trésorerie prévisionnel sur 13 semaines glissantes."
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "L'Automatisation des Processus",
+     "objectif": "Sortir du piège de l'artisan en créant des systèmes qui tournent sans la présence constante du fondateur.",
+     "sections": [
+      "1. Le mythe de l'E-Myth et la dépendance au fondateur",
+      "2. Cartographier les processus clés (SOPs)",
+      "3. L'automatisation logicielle (Zapier, Make, n8n)",
+      "4. Déléguer aux assistants virtuels et freelances",
+      "5. Le contrôle qualité des systèmes délégués"
+     ],
+     "exercices": [
+      "Enregistrer en vidéo l'une de vos tâches récurrentes et la transformer en SOP écrite.",
+      "Automatiser une tâche administrative répétitive via un outil No-Code."
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Recruter dans les Marchés Émergents",
+     "objectif": "Attirer, former et retenir les talents dans des environnements où la guerre des talents est asymétrique.",
+     "sections": [
+      "1. La méthode A de Geoff Smart adaptée au contexte local",
+      "2. Sourcer au-delà des diplômes (le potentiel vs le CV)",
+      "3. L'onboarding et la formation interne comme obligation",
+      "4. La culture d'entreprise comme aimant à talents",
+      "5. Gérer la déloyauté, le turnover et le braconnage"
+     ],
+     "exercices": [
+      "Rédiger une fiche de poste axée sur les résultats attendus (outcomes).",
+      "Concevoir un test pratique de recrutement payé pour évaluer les compétences réelles."
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Le Leadership de Transition",
+     "objectif": "Évoluer du rôle de bricoleur génial à celui de CEO gestionnaire et visionnaire.",
+     "sections": [
+      "1. Les crises de croissance classiques de l'entreprise",
+      "2. Le management de proximité vs le management par objectifs",
+      "3. Savoir dire non et protéger son temps de CEO",
+      "4. La solitude du dirigeant et les réseaux de pairs",
+      "5. L'intelligence émotionnelle en contexte interculturel"
+     ],
+     "exercices": [
+      "Auditer votre agenda : déléguer ou supprimer 30% des tâches hors de votre zone de génie.",
+      "Rejoindre ou créer un cercle de 3 entrepreneurs non-concurrents pour un point mensuel."
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La Conformité et la Gouvernance",
+     "objectif": "Naviguer dans la complexité administrative et juridique sans se laisser paralyser.",
+     "sections": [
+      "1. Choisir la bonne structure juridique (locale et holding)",
+      "2. La fiscalité : optimiser légalement sans tricher",
+      "3. Protéger sa propriété intellectuelle et sa marque",
+      "4. Les contrats : se protéger des impayés et des litiges",
+      "5. Préparer l'entreprise aux audits (due diligence)"
+     ],
+     "exercices": [
+      "Faire auditer vos contrats types par un juriste local pour identifier les 3 failles critiques.",
+      "Créer un classeur de gouvernance (statuts, PV, registres) à jour."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 : L'Empire - Croissance, Expansion et Pérennité",
+   "chapitres": [
+    {
+     "numero": 19,
+     "titre": "Les Moteurs de la Croissance (Scaling)",
+     "objectif": "Identifier le levier principal qui permettra de multiplier le CA sans multiplier les coûts fixes.",
+     "sections": [
+      "1. Les 3 moteurs de croissance (viral, payant, sticky)",
+      "2. L'économie unitaire (LTV vs CAC)",
+      "3. Les partenariats B2B et les intégrations stratégiques",
+      "4. Le scaling des opérations et de la supply chain",
+      "5. Les dangers mortels de la croissance prématurée"
+     ],
+     "exercices": [
+      "Calculer votre Coût d'Acquisition Client (CAC) et votre Valeur Vie Client (LTV).",
+      "Identifier le levier principal pour améliorer votre ratio LTV/CAC ce trimestre."
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "L'Expansion Géographique et Sectorielle",
+     "objectif": "Répliquer le succès dans de nouveaux pays (Afrique, Maghreb, Europe) ou sur de nouveaux segments.",
+     "sections": [
+      "1. Le biais de l'extrapolation géographique",
+      "2. Adapter l'offre aux réalités réglementaires et culturelles",
+      "3. Recruter et manager des country managers",
+      "4. Les joint-ventures et alliances stratégiques locales",
+      "5. Gérer une équipe multi-pays et multi-fuseaux"
+     ],
+     "exercices": [
+      "Réaliser une matrice d'attractivité/complexité pour évaluer 3 marchés régionaux potentiels.",
+      "Rédiger le profil idéal du partenaire local pour votre première expansion."
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Lever des Fonds (ou s'en passer)",
+     "objectif": "Comprendre les mécanismes du financement externe (VC, PE, Dette) et savoir si c'est la bonne voie.",
+     "sections": [
+      "1. Le mythe de la levée de fonds comme victoire absolue",
+      "2. Bootstrapping vs VC : quel profil d'entreprise ?",
+      "3. Préparer son pitch deck et sa data room",
+      "4. La valorisation et la négociation du term-sheet",
+      "5. Gérer la relation avec son board et ses investisseurs"
+     ],
+     "exercices": [
+      "Construire un modèle financier à 3 ans montrant l'impact d'une injection de capital.",
+      "Rédiger la slide « Pourquoi maintenant ? » de votre pitch deck."
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Gérer les Crises et les Chocs",
+     "objectif": "Bâtir une entreprise anti-fragile capable de survivre aux turbulences macro-économiques.",
+     "sections": [
+      "1. La mentalité du CEO en temps de guerre",
+      "2. Gérer les crises de liquidité soudaines",
+      "3. Faire face à la dévaluation monétaire et à l'inflation",
+      "4. La communication de crise envers les parties prenantes",
+      "5. Transformer les menaces en opportunités de consolidation"
+     ],
+     "exercices": [
+      "Réaliser un « Pre-Mortem » : lister les 5 causes de faillite les plus probables à 12 mois.",
+      "Créer un plan de continuité d'activité (PCA) pour une rupture de votre supply chain principal."
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "L'Innovation Continue et la Défense",
+     "objectif": "Maintenir son avance concurrentielle face aux copieurs et aux nouveaux entrants.",
+     "sections": [
+      "1. Le dilemme de l'innovateur dans les marchés émergents",
+      "2. Créer des douves (moats) défensives durables",
+      "3. La R&D orientée client et le feedback loop",
+      "4. L'acquisition de startups ou de concurrents (M&A)",
+      "5. Institutionaliser la culture du test et de l'erreur"
+     ],
+     "exercices": [
+      "Identifier votre « douve » actuelle et planifier une action pour la creuser davantage.",
+      "Organiser un hackathon interne d'une journée pour résoudre une frustration client majeure."
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La Transmission et l'Héritage",
+     "objectif": "Penser la sortie (Exit), la revente ou la transformation de l'entreprise en institution pérenne.",
+     "sections": [
+      "1. Les différentes voies de sortie (M&A, IPO, transmission familiale)",
+      "2. Préparer l'entreprise à la due diligence de vente",
+      "3. La valorisation émotionnelle vs financière",
+      "4. Bâtir un management autonome (le fondateur peut partir)",
+      "5. L'impact social et l'héritage de l'entrepreneur bâtisseur"
+     ],
+     "exercices": [
+      "Rédiger votre « Manuel du Repreneur » pour qu'un inconnu puisse diriger l'entreprise en 30 jours.",
+      "Définir votre objectif personnel et financier à 5 ans pour aligner votre stratégie de sortie."
+     ]
+    }
+   ]
+  }
+ ]
+}

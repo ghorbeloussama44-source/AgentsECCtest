@@ -1,0 +1,1005 @@
+{
+ "titre": "L'Architecture de la Richesse",
+ "sous_titre": "Le système mental complet pour bâtir une fortune durable — au-delà des secrets, au-delà des mythes",
+ "bibliographie": [
+  {
+   "auteur": "Napoleon Hill",
+   "titre": "Réfléchissez et devenez riche",
+   "annee": "1937",
+   "idee": "Le succès financier naît d'un désir ardent, d'une foi inébranlable et d'un plan organisé ; 13 principes extraits de 500 entrevues avec les plus grands riches d'Amérique.",
+   "apport": "On retiendra la notion de Master Mind et de définition précise de l'objectif, mais on dépassera le côté métaphysique par des mécanismes neuroscientifiques concrets."
+  },
+  {
+   "auteur": "Robert T. Kiyosaki",
+   "titre": "Père riche, Père pauvre",
+   "annee": "1997",
+   "idee": "La différence entre actifs et passifs détermine la richesse ; l'éducation financière n'est pas enseignée à l'école.",
+   "apport": "On reprendra la distinction actif/passif mais on l'approfondira avec une taxonomie des actifs et une critique des limites du modèle."
+  },
+  {
+   "auteur": "George S. Clason",
+   "titre": "L'Homme le plus riche de Babylone",
+   "annee": "1926",
+   "idee": "Les lois éternelles de l'argent : se payer d'abord, faire travailler chaque pièce, protéger son capital, investir dans ce qu'on connaît.",
+   "apport": "On intégrera les principes d'épargne systématique dans un chapitre dédié, en les modernisant avec les outils financiers du XXIe siècle."
+  },
+  {
+   "auteur": "Thomas J. Stanley & William D. Danko",
+   "titre": "The Millionaire Next Door",
+   "annee": "1996",
+   "idee": "La plupart des millionnaires vivent modestement, dépensent peu, investissent patiemment ; la richesse est invisible et se construit sur la frugalité.",
+   "apport": "On utilisera les données statistiques pour déconstruire les mythes du luxe et ancrer le livre dans la réalité sociologique."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "La Psychologie de l'argent",
+   "annee": "2020",
+   "idee": "Le comportement financier compte plus que l'intelligence ; la richesse se construit par des choix émotionnellement cohérents sur le long terme.",
+   "apport": "On s'inspirera de l'approche narrative et des biais cognitifs pour structurer la partie sur les pièges mentaux."
+  },
+  {
+   "auteur": "T. Harv Eker",
+   "titre": "Les Secrets d'un esprit millionnaire",
+   "annee": "2005",
+   "idee": "Chacun possède un 'thermostat financier' hérité de l'enfance ; il faut reprogrammer ses croyances subconscientes sur l'argent.",
+   "apport": "On retiendra le concept de blueprint financier qu'on enrichira avec la psychologie du développement et les neurosciences de la croyance."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "La Semaine de 4 heures",
+   "annee": "2007",
+   "idee": "La richesse se définit en temps libre et en expériences, pas seulement en dollars ; il faut automatiser, déléguer, éliminer.",
+   "apport": "On intégrera la notion de design de vie et de liberté temporelle comme finalité de la richesse, pas la richesse comme fin en soi."
+  },
+  {
+   "auteur": "MJ DeMarco",
+   "titre": "The Millionaire Fastlane",
+   "annee": "2011",
+   "idee": "Trois voies : trottoir (pauvreté), voie lente (épargne salariale), voie rapide (création de systèmes scalables) ; la richesse rapide vient de la valeur créée à grande échelle.",
+   "apport": "On reprendra la typologie des véhicules de richesse en la complexifiant et en ajoutant des voies hybrides."
+  },
+  {
+   "auteur": "Jen Sincero",
+   "titre": "You Are a Badass at Making Money",
+   "annee": "2017",
+   "idee": "La relation émotionnelle à l'argent est le premier obstacle ; il faut réconcilier désir de richesse et estime de soi.",
+   "apport": "On utilisera l'approche de la relation émotionnelle à l'argent comme point de départ du travail intérieur."
+  },
+  {
+   "auteur": "Grant Cardone",
+   "titre": "The 10X Rule",
+   "annee": "2011",
+   "idee": "Il faut multiplier par dix ses objectifs et ses efforts ; la plupart des gens sous-estiment massivement ce qu'il faut pour réussir.",
+   "apport": "On intégrera le principe de l'ambition démesurée tout en le tempérant par la stratégie et la durabilité."
+  },
+  {
+   "auteur": "Vicki Robin & Joe Dominguez",
+   "titre": "Your Money or Your Life",
+   "annee": "1992",
+   "idee": "L'argent est de l'énergie vitale échangée contre du temps ; l'indépendance financière se calcule en heures de vie libérées.",
+   "apport": "On adoptera la notion d'énergie vitale pour donner une profondeur philosophique à la quête de richesse."
+  },
+  {
+   "auteur": "David Bach",
+   "titre": "The Automatic Millionaire",
+   "annee": "2004",
+   "idee": "La richesse se construit par des automatismes : épargne automatique, investissement programmé, élimination de la volonté.",
+   "apport": "On intégrera les systèmes automatiques dans la partie exécution, comme levier contre la fatigue décisionnelle."
+  },
+  {
+   "auteur": "Dave Ramsey",
+   "titre": "The Total Money Makeover",
+   "annee": "2003",
+   "idee": "Sortir des dettes par la méthode boule de neige, constituer un fonds d'urgence, puis investir ; la discipline bat l'intelligence.",
+   "apport": "On reprendra la logique séquentielle de remise en ordre financière comme prérequis à toute stratégie d'enrichissement."
+  },
+  {
+   "auteur": "Wallace D. Wattles",
+   "titre": "La Science de la richesse",
+   "annee": "1910",
+   "idee": "La richesse est un droit et un devoir ; penser en termes de création plutôt que de compétition attire l'abondance.",
+   "apport": "On gardera l'idée de création vs compétition mais on la traduira en termes économiques modernes (valeur ajoutée, océan bleu)."
+  },
+  {
+   "auteur": "David J. Schwartz",
+   "titre": "La Magie de voir grand",
+   "annee": "1959",
+   "idee": "La taille de votre succès est déterminée par la taille de votre croyance ; penser grand modifie les comportements et les résultats.",
+   "apport": "On utilisera ce principe pour la partie sur l'identité et l'expansion de l'image de soi."
+  },
+  {
+   "auteur": "James Allen",
+   "titre": "As a Man Thinketh",
+   "annee": "1903",
+   "idee": "Les pensées façonnent le caractère et les circonstances ; la maîtrise intérieure précède toute maîtrise extérieure.",
+   "apport": "On s'inspirera de la primauté de la pensée pour ouvrir le livre, tout en ancrant dans la psychologie contemporaine."
+  },
+  {
+   "auteur": "Darren Hardy",
+   "titre": "The Compound Effect",
+   "annee": "2010",
+   "idee": "De petites actions cohérentes, répétées quotidiennement, produisent des résultats exponentiels sur le long terme.",
+   "apport": "On intégrera le principe composé comme fil rouge de tout le livre et comme moteur des exercices pratiques."
+  },
+  {
+   "auteur": "Thomas J. Stanley",
+   "titre": "The Millionaire Mind",
+   "annee": "2000",
+   "idee": "Les millionnaires partagent des traits : intégrité, discipline, passion, prise de risque calculée, soutien familial.",
+   "apport": "On utilisera les portraits psychologiques pour nuancer les archétypes de richesse."
+  },
+  {
+   "auteur": "Michael E. Gerber",
+   "titre": "The E-Myth Revisited",
+   "annee": "1986",
+   "idee": "La plupart des entreprises échouent parce que le technicien travaille DANS son entreprise au lieu de construire un système qui travaille POUR lui.",
+   "apport": "On intégrera la distinction travailleur/propriétaire/système dans la partie sur la création de richesse scalable."
+  },
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "L'Investisseur intelligent",
+   "annee": "1949",
+   "idee": "Investir avec une marge de sécurité, ignorer M. Marché, penser en termes de valeur intrinsèque plutôt que de spéculation.",
+   "apport": "On reprendra les principes d'investissement rationnel dans la partie multiplication du capital."
+  },
+  {
+   "auteur": "Gary Keller",
+   "titre": "The Millionaire Real Estate Investor",
+   "annee": "2005",
+   "idee": "L'immobilier est un véhicule de richesse accessible ; il faut penser en portefeuille et en cash-flow, pas en spéculation.",
+   "apport": "On intégrera l'immobilier comme l'un des véhicules dans la typologie des actifs, sans en faire le seul chemin."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Antifragile",
+   "annee": "2012",
+   "idee": "La vraie robustesse vient de la capacité à bénéficier du désordre ; il faut construire des systèmes qui profitent de la volatilité.",
+   "apport": "On intégrera l'antifragilité comme principe de construction patrimoniale et de résilience mentale face aux crises."
+  },
+  {
+   "auteur": "Cal Newport",
+   "titre": "Deep Work",
+   "annee": "2016",
+   "idee": "La capacité de concentration profonde est la compétence économique la plus rare et la plus précieuse du XXIe siècle.",
+   "apport": "On utilisera le concept de travail profond comme outil d'exécution et de création de valeur exceptionnelle."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I — LES FONDATIONS INVISIBLES : Comprendre la machine mentale de la richesse",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "L'anatomie d'une croyance financière",
+     "objectif": "Cartographier la manière dont les croyances sur l'argent se forment, se cristallisent et gouvernent les décisions financières à l'insu de l'individu.",
+     "sections": [
+      "1.1 Le blueprint financier : archéologie de vos premières mémoires monétaires",
+      "1.2 Les trois sources de programmation : famille, culture, expériences",
+      "1.3 Neurobiologie de la croyance : comment une pensée devient un câblage",
+      "1.4 L'argent comme écran de projection : peurs, désirs, loyautés invisibles",
+      "1.5 Cartographie personnelle : identifier vos 5 croyances dominantes",
+      "1.6 Le coût caché des croyances limitantes : calculer ce qu'elles vous ont pris",
+      "1.7 Déclaration d'intention : le contrat que vous signez avec ce livre"
+     ],
+     "exercices": [
+      "Écrire la 'lettre de votre argent' : un récit à la première personne du point de vue de votre relation à l'argent depuis l'enfance",
+      "Remplir la grille des 10 croyances financières héritées (parents, école, religion, média, pairs)",
+      "Calculer le 'coût d'opportunité' de vos 3 plus anciennes croyances limitantes sur 10 ans",
+      "Rédiger votre 'constitution financière personnelle' en 7 articles"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Le mythe du millionnaire : déconstruire les images fausses",
+     "objectif": "Démanteler les représentations culturelles erronées de la richesse (héritage, chance, génie, immoralité) pour libérer le lecteur des récits paralysants.",
+     "sections": [
+      "2.1 Les cinq archétypes toxiques : le flambeur, l'avare, le tricheur, l'héritier, le génie solitaire",
+      "2.2 Ce que disent vraiment les données : profil statistique du millionnaire réel",
+      "2.3 Le biais du survivant : pourquoi vous ne voyez que les exceptions",
+      "2.4 La richesse invisible : ces millionnaires que vous croisez sans les reconnaître",
+      "2.5 Le mythe de la rareté vs la réalité de la création de valeur",
+      "2.6 L'argent et la morale : dissoudre la fausse équation richesse = péché",
+      "2.7 Votre nouvelle définition : écrire ce qu'est la richesse POUR vous"
+     ],
+     "exercices": [
+      "Lister 10 personnes riches que vous admirez et 10 que vous méprisez ; analyser le pattern",
+      "Rechercher et noter 5 exemples concrets de richesse construite sans héritage dans votre entourage élargi",
+      "Écrire un 'avis de décès financier' de vos anciennes croyances sur les riches",
+      "Rédiger votre définition personnelle de la richesse en 100 mots, sans mentionner de chiffre"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Les sept piliers de la mentalité de l'abondance",
+     "objectif": "Présenter le cadre conceptuel original du livre : sept attitudes mentales interdépendantes qui constituent le socle de toute construction de richesse.",
+     "sections": [
+      "3.1 Pilier 1 : La responsabilité radicale — vous êtes l'architecte, pas la victime",
+      "3.2 Pilier 2 : La pensée en systèmes — voir les mécanismes, pas les événements",
+      "3.3 Pilier 3 : L'orientation long terme — le temps comme allié composé",
+      "3.4 Pilier 4 : La tolérance à l'inconfort — croître dans la zone d'incertitude",
+      "3.5 Pilier 5 : L'abondance relationnelle — la richesse se construit à plusieurs",
+      "3.6 Pilier 6 : L'itération permanente — l'échec comme donnée, pas comme verdict",
+      "3.7 Pilier 7 : La générosité stratégique — donner pour multiplier"
+     ],
+     "exercices": [
+      "Auto-évaluation : se noter de 1 à 10 sur chaque pilier et justifier",
+      "Choisir le pilier le plus faible et rédiger un plan de renforcement sur 30 jours",
+      "Identifier pour chaque pilier une personne modèle vivante et une personne modèle historique",
+      "Créer un 'tableau de bord des piliers' à afficher et réviser chaque semaine"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "La neuroscience de la décision financière",
+     "objectif": "Expliquer les mécanismes cérébraux qui gouvernent les choix financiers et fournir des outils pour court-circuiter les biais cognitifs.",
+     "sections": [
+      "4.1 Le cerveau reptilien et la peur de la perte : l'aversion au risque codée dans l'amygdale",
+      "4.2 Le cortex préfrontal : votre PDG intérieur et ses limites de bande passante",
+      "4.3 Les 7 biais cognitifs qui détruisent les patrimoines (ancrage, confirmation, statut quo, etc.)",
+      "4.4 La fatigue décisionnelle : pourquoi vos choix du soir coûtent plus cher",
+      "4.5 Le rôle des émotions : peur, cupidité, envie — les reconnaître sans les subir",
+      "4.6 L'environnement décisionnel : architecturer vos choix par défaut",
+      "4.7 Protocole de décision financière en 5 étapes"
+     ],
+     "exercices": [
+      "Tenir un journal de 10 décisions financières sur une semaine et identifier les biais à l'œuvre",
+      "Concevoir votre 'architecture de choix' : automatiser 3 décisions financières récurrentes",
+      "Pratiquer la 'règle des 24 heures' sur un achat de plus de 200 € et noter le résultat",
+      "Écrire votre 'protocole personnel de décision' en 5 étapes et le tester sur une décision réelle"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "L'identité financière : devenir avant d'avoir",
+     "objectif": "Montrer que la richesse commence par une transformation identitaire ; fournir un processus pour incarner la version de soi capable de générer et gérer l'abondance.",
+     "sections": [
+      "5.1 Le paradoxe de l'identité : vous n'attirez pas ce que vous voulez, vous attirez ce que vous êtes",
+      "5.2 Les trois niveaux d'identité : ce que vous faites, ce que vous croyez, ce que vous êtes",
+      "5.3 Le dialogue intérieur : comment vos phrases quotidiennes sculptent votre plafond financier",
+      "5.4 L'effet Pygmalion appliqué à soi : se traiter comme un futur riche dès aujourd'hui",
+      "5.5 Les rituels identitaires : routines matinales, environnement, vocabulaire",
+      "5.6 La cohérence identitaire : aligner apparence, discours, actions et ambitions",
+      "5.7 Le passage de seuil : le moment où 'je veux être riche' devient 'je suis en train de bâtir ma richesse'"
+     ],
+     "exercices": [
+      "Écrire sa 'biographie future' à 5 ans comme si la richesse était déjà acquise (2 pages)",
+      "Identifier et réécrire 10 phrases de dialogue intérieur limitantes en affirmations identitaires",
+      "Concevoir une routine matinale de 30 minutes alignée sur l'identité financière visée",
+      "Changer un élément concret de son environnement (bureau, fond d'écran, lecture) pour refléter la nouvelle identité"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "La vision à 20 ans : dessiner le plan directeur de votre fortune",
+     "objectif": "Guider le lecteur dans la construction d'une vision financière précise, chiffrée, émotionnellement chargée et déclinée en objectifs intermédiaires.",
+     "sections": [
+      "6.1 Pourquoi 95 % des gens n'ont pas de vision financière (et ce que ça leur coûte)",
+      "6.2 La méthode VISION : Valeurs, Image, Stratégie, Indicateurs, Objectifs, Narratif",
+      "6.3 Chiffrer sa liberté : calculer son 'chiffre de liberté' personnel",
+      "6.4 La visualisation structurée : technique des 3 scénarios (pessimiste, réaliste, ambitieux)",
+      "6.5 Décliner la vision en jalons : 20 ans, 10 ans, 5 ans, 1 an, 90 jours",
+      "6.6 Le tableau de vision financier : le rendre tangible, quotidien, inévitable",
+      "6.7 Le contrat avec soi-même : engagement écrit et mécanisme de responsabilité"
+     ],
+     "exercices": [
+      "Calculer son chiffre de liberté : dépenses mensuelles idéales × 12 × 25 (règle des 4 %)",
+      "Rédiger sa vision financière en une page en utilisant les 6 lettres de la méthode VISION",
+      "Créer un tableau de vision physique ou numérique avec 20 images représentant les jalons",
+      "Écrire et signer son 'contrat de bâtisseur' avec un partenaire de responsabilité"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II — DÉMOLIR POUR RECONSTRUIRE : Éliminer les freins et reprogrammer",
+   "chapitres": [
+    {
+     "numero": 7,
+     "titre": "Les dettes émotionnelles : se libérer du poids du passé financier",
+     "objectif": "Identifier et traiter les traumatismes financiers, les loyautés familiales et les dettes émotionnelles qui sabotent inconsciemment la construction de richesse.",
+     "sections": [
+      "7.1 Les dettes invisibles : promesses faites à 7 ans qui gouvernent vos finances à 40 ans",
+      "7.2 La loyauté familiale inconsciente : 'si je deviens riche, je trahis les miens'",
+      "7.3 Les traumatismes financiers : faillite parentale, humiliation, privation — et leurs cicatrices",
+      "7.4 Le syndrome de l'imposteur financier : 'je ne mérite pas l'argent'",
+      "7.5 La culpabilité de la réussite : quand gagner plus crée un malaise",
+      "7.6 Protocole de libération : les 5 étapes pour couper les amarres émotionnelles",
+      "7.7 La réconciliation : honorer le passé sans le laisser dicter l'avenir"
+     ],
+     "exercices": [
+      "Écrire une lettre de pardon à son 'enfant financier' (celui qui a vécu la peur du manque)",
+      "Cartographier l'arbre généalogique financier : revenus, faillites, tabous sur 3 générations",
+      "Pratiquer un exercice de visualisation de 'coupure de cordon' avec une croyance familiale limitante",
+      "Rédiger une 'permission de réussir' adressée à soi-même, lue à voix haute pendant 21 jours"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le langage de l'argent : reprogrammer son vocabulaire intérieur",
+     "objectif": "Montrer comment le langage utilisé au quotidien crée ou détruit la réalité financière, et fournir un nouveau lexique conscient.",
+     "sections": [
+      "8.1 Les mots qui appauvrissent : 'je ne peux pas', 'c'est trop cher', 'les riches sont...'",
+      "8.2 La linguistique de la rareté vs la linguistique de l'abondance",
+      "8.3 Les phrases assassines héritées : 'l'argent ne pousse pas sur les arbres', 'l'argent est sale'",
+      "8.4 Le pouvoir performatif : quand dire c'est créer (théorie des actes de langage appliquée)",
+      "8.5 Les questions qui ouvrent : remplacer 'je ne peux pas' par 'comment puis-je ?'",
+      "8.6 Le vocabulaire du bâtisseur : 50 termes à intégrer dans son quotidien",
+      "8.7 Audit linguistique : une semaine de surveillance de son propre discours"
+     ],
+     "exercices": [
+      "Noter pendant 7 jours chaque phrase négative sur l'argent et la réécrire immédiatement",
+      "Créer son 'glossaire personnel de l'abondance' : 20 définitions réécrites de termes financiers",
+      "Pratiquer le 'recadrage en question' : transformer 10 affirmations limitantes en questions ouvrantes",
+      "Enregistrer 5 minutes de monologue financier positif à écouter chaque matin pendant 30 jours"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "L'environnement : votre richesse est dans votre pièce",
+     "objectif": "Démontrer l'influence massive de l'environnement physique, social et informationnel sur les résultats financiers, et guider sa restructuration.",
+     "sections": [
+      "9.1 La théorie de la moyenne des 5 : vous êtes la moyenne de vos influences",
+      "9.2 L'audit de votre cercle : qui vous tire vers le haut, qui vous maintient au sol",
+      "9.3 L'environnement informationnel : ce que vous lisez, regardez, écoutez façonne vos croyances",
+      "9.4 L'espace physique : bureau, maison, quartier — l'impact sur la cognition financière",
+      "9.5 Les 'parasites énergétiques' : identifier et gérer les relations toxiques financièrement",
+      "9.6 Construire son 'conseil d'administration personnel' : mentors, pairs, challengers",
+      "9.7 Le protocole de rénovation environnementale en 30 jours"
+     ],
+     "exercices": [
+      "Cartographier ses 20 relations les plus fréquentes et les classer en 3 catégories (élévateur, neutre, ancre)",
+      "Désinstaller/supprimer 5 sources d'information négatives et les remplacer par 5 sources éducatives",
+      "Réorganiser une pièce de travail pour qu'elle reflète l'identité financière visée",
+      "Contacter 3 personnes inspirantes cette semaine (message, email, événement) pour initier une relation"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "La peur de la visibilité : oser être vu en train de réussir",
+     "objectif": "Traiter la peur du jugement, du succès et de la visibilité qui empêche de demander, vendre, négocier et se positionner à sa juste valeur.",
+     "sections": [
+      "10.1 Le paradoxe : vouloir être riche mais refuser d'être vu",
+      "10.2 Les racines de l'invisibilité : éducation, genre, culture, classe sociale",
+      "10.3 La peur de demander : pourquoi vous sous-facturez, sous-négociez, sous-vendez",
+      "10.4 Le syndrome du 'pas encore prêt' : la perfection comme excuse pour ne pas se lancer",
+      "10.5 La vulnérabilité stratégique : montrer ses résultats sans arrogance",
+      "10.6 L'exposition progressive : protocole pour augmenter sa visibilité par paliers",
+      "10.7 Célébrer ses victoires : le rituel qui ancre la permission de réussir"
+     ],
+     "exercices": [
+      "Lister 5 situations où vous vous êtes 'fait petit' financièrement cette année et analyser le pattern",
+      "Demander cette semaine quelque chose qui vous intimide (augmentation, prix plus élevé, aide)",
+      "Publier ou partager un résultat, une idée ou une création avec votre réseau",
+      "Écrire une 'déclaration de visibilité' : ce que vous vous autorisez à montrer au monde"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Le rapport au temps : de la mentalité salariée à la mentalité d'architecte",
+     "objectif": "Opérer la bascule mentale entre 'vendre son temps' et 'construire des systèmes' ; introduire la notion de temps comme ressource non renouvelable à allouer stratégiquement.",
+     "sections": [
+      "11.1 L'équation piège : temps × taux horaire = plafond de verre",
+      "11.2 Les 4 quadrants du temps financier : urgence, importance, investissement, délétion",
+      "11.3 Le coût d'opportunité : chaque heure a un prix, même quand vous ne le facturez pas",
+      "11.4 La mentalité d'architecte : concevoir des systèmes qui génèrent sans votre présence",
+      "11.5 Le temps des riches vs le temps des pauvres : consommation vs création",
+      "11.6 La délégation comme libération : ce que votre temps vaut vraiment",
+      "11.7 Concevoir sa 'semaine idéale' : un emploi du temps de bâtisseur"
+     ],
+     "exercices": [
+      "Tracker son temps pendant 5 jours et calculer son taux horaire réel (revenus ÷ heures travaillées)",
+      "Identifier 3 tâches à déléguer ou éliminer cette semaine et calculer le temps libéré",
+      "Concevoir sa 'semaine idéale de bâtisseur' : blocs de création, d'apprentissage, de repos",
+      "Calculer ce que vaudrait une heure de votre temps dans 5 ans si vos objectifs sont atteints"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le droit à la richesse : s'autoriser l'abondance sans condition",
+     "objectif": "Résoudre le conflit intérieur entre désir de richesse et sentiment d'illégitimité ; ancrer une autorisation profonde et inconditionnelle de prospérer.",
+     "sections": [
+      "12.1 La permission conditionnelle : 'je serai riche quand je le mériterai'",
+      "12.2 Le mythe de la souffrance nécessaire : pourquoi la douleur n'est pas un prérequis",
+      "12.3 La richesse comme responsabilité : ce que vous ferez avec plus de moyens",
+      "12.4 L'abondance naturelle : observer que la nature crée sans se limiter",
+      "12.5 Le droit inconditionnel : séparer mérite et permission",
+      "12.6 Les résistances résiduelles : les 'oui, mais...' qui persistent",
+      "12.7 Le rituel d'autorisation : acte symbolique de prise de possession de son droit"
+     ],
+     "exercices": [
+      "Écrire la liste de toutes les conditions que vous vous imposez avant de 'mériter' la richesse, puis les barrer une à une",
+      "Rédiger une 'lettre d'autorisation' que vous vous adressez à vous-même, lue à voix haute",
+      "Lister 10 façons concrètes dont votre richesse future servira les autres",
+      "Créer un objet symbolique (pierre, pièce, œuvre) représentant votre droit à l'abondance"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III — L'ARCHITECTURE STRATÉGIQUE : Concevoir le plan de construction de sa fortune",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "La remise en ordre : assainir ses finances avant de bâtir",
+     "objectif": "Fournir un protocole complet de diagnostic et de nettoyage financier : dettes, dépenses, épargne d'urgence, clarté totale sur sa situation de départ.",
+     "sections": [
+      "13.1 Le diagnostic sans complaisance : bilan patrimonial, flux de trésorerie, dettes",
+      "13.2 La méthode boule de neige vs avalanche : éliminer les dettes stratégiquement",
+      "13.3 Le fonds de forteresse : constituer 6 mois de dépenses en réserve inviolable",
+      "13.4 L'audit des dépenses : identifier les 20 % de dépenses qui mangent 80 % de votre marge",
+      "13.5 La simplification radicale : comptes, abonnements, engagements — élaguer",
+      "13.6 Le budget comme outil de liberté, pas de privation",
+      "13.7 Le 'point zéro' : la date de votre nouveau départ financier"
+     ],
+     "exercices": [
+      "Réaliser son bilan patrimonial complet en 1 heure (actifs, passifs, revenus, charges)",
+      "Lister toutes ses dettes et choisir une stratégie d'élimination (boule de neige ou avalanche)",
+      "Ouvrir un compte dédié 'forteresse' et programmer un virement automatique dès le prochain salaire",
+      "Annuler 3 abonnements inutiles et réallouer la somme vers l'épargne ou l'investissement"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Les cinq véhicules de richesse : choisir sa route",
+     "objectif": "Présenter une taxonomie complète des véhicules de création de richesse (entrepreneuriat, investissement, immobilier, propriété intellectuelle, carrière à haut levier) et guider le choix stratégique.",
+     "sections": [
+      "14.1 Véhicule 1 : L'entrepreneuriat — créer de la valeur à grande échelle",
+      "14.2 Véhicule 2 : L'investissement en bourse — faire travailler le capital composé",
+      "14.3 Véhicule 3 : L'immobilier — le levier du tangible et du cash-flow",
+      "14.4 Véhicule 4 : La propriété intellectuelle — brevets, contenu, licences, royalties",
+      "14.5 Véhicule 5 : La carrière à haut levier — expertise rare, négociation, equity",
+      "14.6 La matrice de choix : profil de risque, capital de départ, temps, compétences",
+      "14.7 Les combinaisons hybrides : pourquoi les millionnaires ont 3 véhicules, pas un"
+     ],
+     "exercices": [
+      "Remplir la matrice de choix : se noter sur 6 critères pour chaque véhicule",
+      "Écrire un paragraphe par véhicule : 'Ce véhicule m'attire parce que... / me repousse parce que...'",
+      "Choisir son véhicule principal et son véhicule secondaire, et justifier par écrit",
+      "Identifier une première action concrète pour chaque véhicule choisi cette semaine"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "L'éducation financière permanente : votre avantage compétitif n°1",
+     "objectif": "Construire un système d'apprentissage continu en finance, investissement et stratégie ; montrer que le savoir est le premier actif.",
+     "sections": [
+      "15.1 Le taux de rendement de l'éducation : pourquoi 1 heure de lecture vaut 100 heures de travail",
+      "15.2 Le curriculum du bâtisseur : les 7 domaines à maîtriser (fiscalité, comptabilité, droit, marketing, vente, investissement, psychologie)",
+      "15.3 La lecture stratégique : 52 livres par an, méthode de sélection et de synthèse",
+      "15.4 Les mentors : comment trouver, approcher et apprendre des gens 10 ans devant vous",
+      "15.5 L'apprentissage par l'action : la règle du 70/20/10 (pratique/échange/théorie)",
+      "15.6 Construire son 'université personnelle' : routines, ressources, communauté",
+      "15.7 L'enseignement comme accélérateur : apprendre en enseignant"
+     ],
+     "exercices": [
+      "Créer sa liste de lecture annuelle : 12 livres essentiels + 40 livres de complément",
+      "Identifier 3 mentors potentiels (vivants ou via leurs œuvres) et planifier le premier contact",
+      "Concevoir sa routine d'apprentissage quotidienne : 30 minutes minimum, créneau fixe",
+      "Résumer par écrit le dernier concept financier appris et l'expliquer à un proche"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "La fiscalité comme outil : comprendre les règles du jeu",
+     "objectif": "Donner une culture fiscale stratégique (sans conseil personnalisé) : comprendre la logique de l'impôt pour optimiser légalement et ne plus subir.",
+     "sections": [
+      "16.1 Le changement de paradigme : l'impôt comme variable d'optimisation, pas comme fatalité",
+      "16.2 Les structures juridiques : pourquoi les riches utilisent des sociétés",
+      "16.3 La différence entre revenu, plus-value et dividende : implications fiscales",
+      "16.4 Les enveloppes fiscales : PEA, assurance-vie, plans retraite — les utiliser pleinement",
+      "16.5 La fiscalité immobilière : les régimes qui changent tout",
+      "16.6 L'optimisation vs l'évasion : la ligne éthique et légale",
+      "16.7 S'entourer : quand et comment engager un fiscaliste / expert-comptable"
+     ],
+     "exercices": [
+      "Cartographier sa situation fiscale actuelle : structure, taux marginal, niches utilisées",
+      "Lister 3 optimisations fiscales légales applicables à sa situation cette année",
+      "Prendre rendez-vous avec un conseiller fiscal ou un expert-comptable pour un diagnostic",
+      "Créer un tableau de suivi annuel de sa charge fiscale et de ses optimisations"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Le risque recalibré : penser en asymétrie",
+     "objectif": "Transformer la relation au risque : passer de l'évitement à la recherche de risques asymétriques (perte limitée, gain illimité) et à la gestion probabiliste.",
+     "sections": [
+      "17.1 Le risque n'est pas l'ennemi : c'est l'inaction qui détruit les patrimoines",
+      "17.2 Risque vs incertitude : la distinction de Knight appliquée à vos finances",
+      "17.3 L'asymétrie : chercher les paris où vous pouvez perdre 1 et gagner 100",
+      "17.4 La taille de position : combien risquer sans mettre en péril votre base",
+      "17.5 La diversification intelligente : ne pas mettre tous ses œufs, mais pas dans 50 paniers non plus",
+      "17.6 L'antifragilité financière : construire un portefeuille qui profite des crises",
+      "17.7 Le 'pire scénario' : le définir, l'accepter, puis agir"
+     ],
+     "exercices": [
+      "Lister 3 risques pris cette année et 3 risques évités ; évaluer le coût de l'évitement",
+      "Identifier un 'pari asymétrique' accessible actuellement (investissement, projet, formation)",
+      "Calculer sa 'taille de position maximale' : combien peut-on perdre sans affecter son train de vie",
+      "Définir son 'pire scénario acceptable' par écrit et vérifier qu'on pourrait y survivre"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Le plan financier à 10 ans : votre feuille de route chiffrée",
+     "objectif": "Guider la construction d'un plan financier détaillé, réaliste et ambitieux sur 10 ans, avec jalons trimestriels et indicateurs de suivi.",
+     "sections": [
+      "18.1 La méthode rétro-ingénierie : partir du résultat et remonter au présent",
+      "18.2 Les 4 phases du plan : stabilisation, accumulation, accélération, multiplication",
+      "18.3 Chiffrer chaque phase : revenus, épargne, investissements, rendements attendus",
+      "18.4 Les jalons trimestriels : 40 checkpoints sur 10 ans",
+      "18.5 Les indicateurs de pilotage : 7 chiffres à suivre chaque mois",
+      "18.6 Le plan B et le plan C : prévoir les déviations sans perdre le cap",
+      "18.7 La révision annuelle : le rituel stratégique de décembre"
+     ],
+     "exercices": [
+      "Construire son plan à 10 ans en une page : 4 phases, objectifs chiffrés, véhicules utilisés",
+      "Définir ses 7 indicateurs de pilotage mensuels et créer un tableau de suivi",
+      "Écrire le scénario 'plan B' : que faire si un véhicule échoue ou si une crise survient",
+      "Programmer dans son agenda la 'révision annuelle stratégique' de décembre prochain"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV — L'EXÉCUTION IMPLACABLE : Passer de la stratégie à l'action quotidienne",
+   "chapitres": [
+    {
+     "numero": 19,
+     "titre": "La discipline comme liberté : le paradoxe du bâtisseur",
+     "objectif": "Réconcilier discipline et liberté ; montrer que la structure quotidienne est le véhicule de la créativité et de la croissance financière.",
+     "sections": [
+      "19.1 Le mythe de la motivation : pourquoi attendre d'être motivé garantit l'échec",
+      "19.2 La discipline comme architecture : les routines qui rendent la volonté superflue",
+      "19.3 Les 3 rituels quotidiens du bâtisseur : matin, exécution, bilan",
+      "19.4 La règle des 2 minutes : vaincre l'inertie du démarrage",
+      "19.5 L'empilement d'habitudes : relier chaque nouvelle habitude à une existante",
+      "19.6 La gestion de l'énergie, pas du temps : identifier ses pics et ses creux",
+      "19.7 Le contrat de discipline : engagement écrit et conséquences"
+     ],
+     "exercices": [
+      "Concevoir sa routine matinale de bâtisseur (30-60 min) et la tester 7 jours consécutifs",
+      "Identifier son 'pic d'énergie' quotidien et y placer la tâche financière la plus importante",
+      "Créer un 'empilement' : relier une nouvelle habitude financière à une habitude existante",
+      "Signer un contrat de discipline avec un partenaire : engagement de 90 jours"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "L'art de la focalisation : une seule priorité à la fois",
+     "objectif": "Enseigner la concentration extrême sur un objectif prioritaire, la capacité à dire non et la protection de son attention comme actif financier.",
+     "sections": [
+      "20.1 Le piège de la multitâche : pourquoi tout faire en même temps ne mène nulle part",
+      "20.2 La question unique : 'Quelle est LA chose qui rend tout le reste plus facile ou inutile ?'",
+      "20.3 Le deep work financier : 4 heures de concentration ininterrompue sur la création de valeur",
+      "20.4 L'art du 'non' : refuser les opportunités médiocres pour protéger les excellentes",
+      "20.5 La protection de l'attention : notifications, réseaux, interruptions — les protocols",
+      "20.6 Les cycles de 90 jours : un objectif, un sprint, une livraison",
+      "20.7 Le bilan hebdomadaire : 30 minutes pour recalibrer"
+     ],
+     "exercices": [
+      "Définir SON objectif unique pour les 90 prochains jours et l'afficher visiblement",
+      "Bloquer 2 créneaux de 2 heures de deep work cette semaine et les protéger",
+      "Lister 5 engagements à refuser ou déléguer cette semaine",
+      "Instaurer un bilan hebdomadaire de 30 minutes chaque dimanche soir"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Générer plus : l'offensive des revenus",
+     "objectif": "Présenter un arsenal de stratégies pour augmenter activement ses revenus : négociation, side business, montée en compétence, pricing.",
+     "sections": [
+      "21.1 La mentalité offensive : ne pas attendre une augmentation, la créer",
+      "21.2 La négociation salariale : préparer, chiffrer, demander, négocier",
+      "21.3 Le side business : lancer un projet parallèle à 5h/semaine",
+      "21.4 La montée en compétence stratégique : devenir rare et irremplaçable",
+      "21.5 Le pricing de sa valeur : cesser de sous-facturer son expertise",
+      "21.6 Les revenus multiples : viser 3 à 5 sources de revenus en 3 ans",
+      "21.7 Le passage de salarié à entrepreneur : quand et comment"
+     ],
+     "exercices": [
+      "Préparer un argumentaire de négociation salariale avec 3 preuves de valeur chiffrées",
+      "Brainstormer 5 idées de side business basées sur ses compétences actuelles",
+      "Calculer son taux horaire réel et le comparer au marché ; ajuster si nécessaire",
+      "Lancer UNE action de génération de revenu supplémentaire cette semaine (annonce, candidature, prototype)"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Épargner sans souffrir : l'automatisation de la richesse",
+     "objectif": "Mettre en place un système d'épargne et d'investissement automatique qui rend la discipline superflue et la croissance inévitable.",
+     "sections": [
+      "22.1 Le principe du 'payez-vous d'abord' : inverser l'ordre classique",
+      "22.2 L'automatisation totale : virements programmés, investissements récurrents",
+      "22.3 La règle des 50/30/20 et ses variantes selon l'ambition",
+      "22.4 L'épargne de liberté vs l'épargne de sécurité : deux fonctions distinctes",
+      "22.5 L'augmentation progressive : +1 % d'épargne chaque trimestre",
+      "22.6 Les micro-investissements : arrondis, cashback, intérêts composés",
+      "22.7 Le tableau de bord d'épargne : suivre sans obsession"
+     ],
+     "exercices": [
+      "Mettre en place un virement automatique vers l'épargne/investissement le jour de la paie",
+      "Calculer son taux d'épargne actuel et programmer une augmentation de 1 % par trimestre",
+      "Ouvrir un compte d'investissement automatique (ETF, robo-advisor) avec un premier versement",
+      "Créer un tableau de bord simple : épargne, investissements, progression mensuelle"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Investir comme un stratège : les principes de l'allocation",
+     "objectif": "Donner les fondements d'une stratégie d'investissement rationnelle, diversifiée et alignée sur son horizon, sans jargon inutile.",
+     "sections": [
+      "23.1 La philosophie de l'investisseur : propriétaire vs spéculateur",
+      "23.2 L'allocation d'actifs : actions, obligations, immobilier, cash, alternatives",
+      "23.3 Les ETF et la gestion passive : pourquoi la simplicité bat la complexité",
+      "23.4 L'investissement immobilier : cash-flow, plus-value, effet de levier",
+      "23.5 Le dollar-cost averaging : investir régulièrement sans timer le marché",
+      "23.6 La gestion des émotions en période de crise : ne pas vendre la panique",
+      "23.7 Le rééquilibrage annuel : maintenir son allocation cible"
+     ],
+     "exercices": [
+      "Définir son allocation d'actifs cible en fonction de son âge, horizon et tolérance au risque",
+      "Ouvrir un PEA ou compte-titres et effectuer un premier investissement en ETF diversifié",
+      "Programmer un investissement mensuel automatique (DCA) même de petit montant",
+      "Écrire sa 'charte d'investisseur' : règles personnelles de gestion en période de baisse"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Créer de la valeur : le moteur de toute richesse durable",
+     "objectif": "Montrer que la richesse véritable vient de la création de valeur pour autrui ; guider la identification d'un problème à résoudre et d'une offre à construire.",
+     "sections": [
+      "24.1 L'équation fondamentale : richesse = valeur créée × nombre de personnes servies",
+      "24.2 Identifier un problème douloureux : l'écoute active du marché",
+      "24.3 La proposition de valeur unique : pourquoi vous, pourquoi maintenant",
+      "24.4 Le prototype minimum : tester avant de construire",
+      "24.5 Le feedback comme carburant : itérer, pivoter, améliorer",
+      "24.6 La scalabilité : concevoir pour servir 10, 100, 10 000 personnes",
+      "24.7 L'éthique de la création de valeur : richesse et contribution ne s'opposent pas"
+     ],
+     "exercices": [
+      "Lister 10 problèmes que l'on rencontre personnellement ou que l'on observe autour de soi",
+      "Choisir un problème et rédiger une proposition de valeur en une phrase",
+      "Concevoir un prototype minimum (maquette, service test, landing page) en une semaine",
+      "Obtenir 5 feedbacks sur son prototype et noter les améliorations"
+     ]
+    },
+    {
+     "numero": 25,
+     "titre": "La vente et la négociation : oser demander le juste prix",
+     "objectif": "Développer les compétences de vente, de négociation et de persuasion comme outils essentiels de création de richesse.",
+     "sections": [
+      "25.1 La vente n'est pas la manipulation : c'est aider quelqu'un à résoudre son problème",
+      "25.2 La psychologie de l'acheteur : les 6 déclencheurs de décision",
+      "25.3 Le pitch de 30 secondes : présenter sa valeur avec clarté et impact",
+      "25.4 La négociation : les principes de Harvard appliqués à vos finances",
+      "25.5 L'objection comme invitation : traiter les résistances avec curiosité",
+      "25.6 Le closing éthique : conclure sans forcer, sans culpabilité",
+      "25.7 Pratiquer chaque jour : la vente est un muscle"
+     ],
+     "exercices": [
+      "Écrire et répéter son pitch de 30 secondes (sa valeur, son client, son résultat)",
+      "Simuler une négociation avec un partenaire : demander 20 % de plus que d'habitude",
+      "Lister les 5 objections les plus fréquentes à son offre et préparer une réponse pour chacune",
+      "Réaliser une action de vente cette semaine : proposer, demander, négocier un prix"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V — MULTIPLIER ET LEVER : Accélérer avec les systèmes, le levier et les autres",
+   "chapitres": [
+    {
+     "numero": 26,
+     "titre": "Le levier : les quatre multiplicateurs de la richesse",
+     "objectif": "Présenter les quatre formes de levier (capital, travail, code/média, réseau) et montrer comment les combiner pour démultiplier son impact.",
+     "sections": [
+      "26.1 La définition du levier : produire plus avec la même unité d'effort",
+      "26.2 Levier 1 : Le capital — faire travailler l'argent pour vous",
+      "26.3 Levier 2 : Le travail des autres — déléguer, employer, externaliser",
+      "26.4 Levier 3 : Le code et le média — créer une fois, vendre à l'infini",
+      "26.5 Levier 4 : Le réseau — la richesse relationnelle et l'accès",
+      "26.6 La combinaison des leviers : l'effet multiplicatif",
+      "26.7 Le levier éthique : ne pas exploiter, mais créer des relations gagnant-gagnant"
+     ],
+     "exercices": [
+      "Identifier quel levier est le plus accessible actuellement et planifier son activation",
+      "Déléguer une tâche cette semaine (même petite) et mesurer le temps gagné",
+      "Créer un contenu (article, vidéo, outil) qui peut toucher plus de 100 personnes sans effort supplémentaire",
+      "Cartographier son réseau : identifier 5 personnes à contacter pour créer de la valeur mutuelle"
+     ]
+    },
+    {
+     "numero": 27,
+     "titre": "Construire des systèmes : l'entreprise qui tourne sans vous",
+     "objectif": "Enseigner la pensée systémique appliquée à la création de richesse : processus, automatisation, délégation, documentation.",
+     "sections": [
+      "27.1 Du travailleur au propriétaire : le changement de posture fondamental",
+      "27.2 La cartographie des processus : documenter chaque étape de votre activité",
+      "27.3 L'automatisation : outils, logiciels, IA — éliminer les tâches répétitives",
+      "27.4 La délégation progressive : ce que vous pouvez confier à 10 €/h, 50 €/h, 100 €/h",
+      "27.5 Les indicateurs de santé du système : savoir si la machine tourne bien",
+      "27.6 Le test de la plage : votre système survit-il à 2 semaines d'absence ?",
+      "27.7 L'amélioration continue : le cycle PDCA appliqué à vos systèmes"
+     ],
+     "exercices": [
+      "Cartographier un processus clé de son activité en étapes numérotées",
+      "Identifier 3 tâches automatisables et mettre en place l'automatisation cette semaine",
+      "Créer une fiche de délégation pour une tâche et la confier à quelqu'un",
+      "Planifier un 'test de la plage' : 2 jours sans toucher à son activité, observer ce qui casse"
+     ]
+    },
+    {
+     "numero": 28,
+     "titre": "L'effet composé : la huitième merveille appliquée à votre vie",
+     "objectif": "Illustrer et ancrer le principe de l'effet composé dans tous les domaines : financier, relationnel, intellectuel, sanitaire.",
+     "sections": [
+      "28.1 La mathématique du composé : 1 % par jour = 37 fois mieux en un an",
+      "28.2 Le composé financier : les intérêts, les dividendes, la patience",
+      "28.3 Le composé relationnel : la confiance se construit en couches",
+      "28.4 Le composé intellectuel : chaque livre, chaque compétence s'empile",
+      "28.5 Le composé de réputation : la cohérence sur 10 ans crée une marque personnelle",
+      "28.6 Les ennemis du composé : interruption, impatience, changement permanent de cap",
+      "28.7 La règle des 10 ans : ne jamais sous-estimer une décennie de constance"
+     ],
+     "exercices": [
+      "Calculer ce que donnerait un investissement de 200 €/mois à 8 % sur 20, 30, 40 ans",
+      "Identifier un domaine où l'on peut appliquer +1 % par jour pendant 90 jours",
+      "Écrire sa 'lettre à soi-même dans 10 ans' décrivant les effets composés attendus",
+      "Créer un 'tracker de constance' : une habitude à cocher chaque jour pendant 66 jours"
+     ]
+    },
+    {
+     "numero": 29,
+     "titre": "Le réseau stratégique : la richesse se construit à plusieurs",
+     "objectif": "Enseigner la construction d'un réseau relationnel puissant, authentique et mutuellement bénéfique comme accélérateur de richesse.",
+     "sections": [
+      "29.1 Le réseau n'est pas du 'réseautage' : c'est de la création de valeur relationnelle",
+      "29.2 La loi de la réciprocité : donner avant de recevoir, systématiquement",
+      "29.3 Les cercles concentriques : intimes, alliés, connaissance, écosystème",
+      "29.4 Les lieux de rencontre : événements, communautés, en ligne, mentorat",
+      "29.5 Le suivi relationnel : CRM personnel, messages, présence régulière",
+      "29.6 Les alliances stratégiques : s'associer avec des complémentaires",
+      "29.7 La générosité comme stratégie : être le connecteur, le facilitateur, celui qui aide"
+     ],
+     "exercices": [
+      "Cartographier son réseau actuel en 4 cercles et identifier les trous",
+      "Contacter 5 personnes cette semaine avec une offre de valeur (pas une demande)",
+      "S'inscrire à un événement ou une communauté alignée avec ses objectifs financiers",
+      "Créer un système simple de suivi relationnel (tableau, app, carnet) et le remplir"
+     ]
+    },
+    {
+     "numero": 30,
+     "titre": "La marque personnelle : devenir une référence dans son domaine",
+     "objectif": "Montrer comment construire une autorité personnelle qui attire les opportunités, les clients et les partenariats sans effort de prospection.",
+     "sections": [
+      "30.1 La marque personnelle n'est pas un luxe : c'est un actif financier",
+      "30.2 Définir son positionnement : expertise unique, audience, promesse",
+      "30.3 Le contenu comme preuve de valeur : écrire, parler, enseigner",
+      "30.4 La cohérence sur la durée : publier régulièrement pendant 2 ans minimum",
+      "30.5 Les canaux : choisir 1-2 plateformes et les dominer plutôt que s'éparpiller",
+      "30.6 La preuve sociale : témoignages, résultats, études de cas",
+      "30.7 La monétisation de l'autorité : conférences, consulting, produits, licences"
+     ],
+     "exercices": [
+      "Définir son positionnement en une phrase : 'J'aide [qui] à [résultat] grâce à [méthode unique]'",
+      "Publier un contenu (article, post, vidéo) cette semaine sur son expertise",
+      "Planifier un calendrier de publication sur 30 jours (1 à 3 contenus par semaine)",
+      "Demander un témoignage ou une recommandation à un client ou collègue satisfait"
+     ]
+    },
+    {
+     "numero": 31,
+     "titre": "L'association et l'equity : posséder plutôt que louer son travail",
+     "objectif": "Introduire les concepts d'equity, de parts, d'association et de propriété comme voie royale vers la richesse non linéaire.",
+     "sections": [
+      "31.1 La différence fondamentale : salaire vs equity",
+      "31.2 Les formes d'equity : actions, parts sociales, stock-options, carried interest",
+      "31.3 Créer sa propre société : la structure juridique comme véhicule de propriété",
+      "31.4 S'associer intelligemment : complémentarité, alignement, pacte d'associés",
+      "31.5 Négocier de l'equity dans un emploi : quand et comment",
+      "31.6 Investir dans les entreprises des autres : business angels, crowdfunding",
+      "31.7 La vision long terme : posséder, c'est bénéficier de la croissance exponentielle"
+     ],
+     "exercices": [
+      "Évaluer si son emploi actuel offre une possibilité d'equity et comment la négocier",
+      "Étudier une structure juridique adaptée à un projet (SAS, SARL, SCI) et ses avantages",
+      "Identifier un partenaire potentiel complémentaire et lister les conditions d'une bonne association",
+      "Rechercher une opportunité d'investissement en equity accessible (crowdfunding, startup locale)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VI — RÉSILIENCE ET DURABILITÉ : Traverser les tempêtes et durer",
+   "chapitres": [
+    {
+     "numero": 32,
+     "titre": "L'échec comme matériau : la méthode du rebond",
+     "objectif": "Fournir un cadre complet pour transformer les échecs financiers en apprentissages structurés et en carburant pour la suite.",
+     "sections": [
+      "32.1 Redéfinir l'échec : une donnée, pas un verdict",
+      "32.2 L'autopsie constructive : analyser un échec sans se détruire",
+      "32.3 Les 5 types d'échec financier et leurs leçons spécifiques",
+      "32.4 Le deuil financier : accepter la perte pour pouvoir repartir",
+      "32.5 La vitesse de rebond : le vrai indicateur de résilience",
+      "32.6 L'histoire des grands rebonds : ce que les biographies nous enseignent",
+      "32.7 Le protocole de rebond en 7 étapes"
+     ],
+     "exercices": [
+      "Écrire l'autopsie de son plus grand échec financier : faits, causes, leçons, actions futures",
+      "Identifier la 'croyance sur l'échec' la plus limitante et la réécrire",
+      "Créer son 'protocole de rebond' personnel : que faire dans les 24h, 7 jours, 30 jours après un échec",
+      "Écrire une lettre d'encouragement à soi-même pour le prochain échec inévitable"
+     ]
+    },
+    {
+     "numero": 33,
+     "titre": "La gestion de crise : protéger et adapter son patrimoine",
+     "objectif": "Préparer mentalement et stratégiquement aux crises (économiques, personnelles, sanitaires) pour protéger et même profiter des périodes de turbulences.",
+     "sections": [
+      "33.1 Les crises sont certaines : la question n'est pas 'si' mais 'quand'",
+      "33.2 Le fonds de forteresse renforcé : 12 mois en période d'incertitude",
+      "33.3 La diversification anti-crise : ne pas dépendre d'un seul revenu, marché, actif",
+      "33.4 Le plan de continuité : que faire si votre source principale s'arrête demain",
+      "33.5 L'opportunisme de crise : acheter quand les autres vendent (avec prudence)",
+      "33.6 La santé mentale en période de turbulence : routines, soutien, perspective",
+      "33.7 Le bilan post-crise : ce que la tempête vous a appris"
+     ],
+     "exercices": [
+      "Écrire son 'plan de continuité financière' : scénario de perte de revenu principal",
+      "Vérifier que son épargne de précaution couvre au moins 6 mois (viser 12)",
+      "Identifier 3 diversifications possibles de ses sources de revenus",
+      "Étudier une crise passée (2008, 2020) et noter les opportunités qu'elle a créées"
+     ]
+    },
+    {
+     "numero": 34,
+     "titre": "L'équilibre durable : richesse sans burnout",
+     "objectif": "Intégrer la santé physique, mentale et relationnelle comme conditions non négociables de la construction de richesse à long terme.",
+     "sections": [
+      "34.1 Le mythe du sacrifice total : pourquoi le burnout est un mauvais investissement",
+      "34.2 Les 4 piliers de la durabilité : sommeil, mouvement, nutrition, relations",
+      "34.3 Le repos comme stratégie : la récupération active augmente la productivité",
+      "34.4 Les limites saines : dire non aux projets, aux heures, aux sollicitations",
+      "34.5 La richesse relationnelle : conjoint, famille, amis — le socle invisible",
+      "34.6 La spiritualité et le sens : au-delà de l'argent, la question du 'pourquoi'",
+      "34.7 Le rituel de déconnexion : une journée par semaine sans écran ni travail"
+     ],
+     "exercices": [
+      "Évaluer ses 4 piliers de durabilité (sommeil, sport, nutrition, relations) sur 10",
+      "Planifier une journée complète de déconnexion cette semaine et la respecter",
+      "Identifier une limite à poser cette semaine (horaire, projet, sollicitation)",
+      "Écrire sa définition du succès qui inclut autre chose que l'argent"
+     ]
+    },
+    {
+     "numero": 35,
+     "titre": "La psychologie du plateau : quand rien ne semble avancer",
+     "objectif": "Préparer et outiller pour les périodes de stagnation apparente, de doute et de découragement qui précèdent souvent les percées.",
+     "sections": [
+      "35.1 Le plateau est normal : la courbe de croissance n'est pas linéaire",
+      "35.2 La vallée de la déception : le décalage entre effort visible et résultat visible",
+      "35.3 Les signaux de progrès invisibles : compétences, réseau, réputation, système",
+      "35.4 La tentation de tout changer : pourquoi la constance bat la nouveauté",
+      "35.5 Les micro-victoires : célébrer les 1 % pour nourrir la motivation",
+      "35.6 Le compagnon de plateau : avoir un partenaire de responsabilité",
+      "35.7 La traversée : combien de temps dure un plateau et comment le raccourcir"
+     ],
+     "exercices": [
+      "Lister 10 progrès invisibles réalisés dans les 6 derniers mois (compétences, contacts, habitudes)",
+      "Instaurer un rituel de célébration des micro-victoires chaque vendredi",
+      "Trouver un partenaire de responsabilité et convenir d'un check-in hebdomadaire",
+      "Écrire une 'lettre de persévérance' à lire quand le doute est trop fort"
+     ]
+    },
+    {
+     "numero": 36,
+     "titre": "L'adaptation permanente : évoluer avec le monde qui change",
+     "objectif": "Développer la capacité d'adaptation continue : veille, apprentissage, pivot, réinvention — rester pertinent dans un monde en mutation accélérée.",
+     "sections": [
+      "36.1 Le monde change de plus en plus vite : IA, géopolitique, démographie, climat",
+      "36.2 La veille stratégique : 30 minutes par jour pour anticiper les mutations",
+      "36.3 La compétence d'apprendre à apprendre : la méta-compétence du XXIe siècle",
+      "36.4 Le pivot : savoir changer de véhicule sans changer de destination",
+      "36.5 La réinvention de mi-carrière : à 40, 50, 60 ans, tout est encore possible",
+      "36.6 L'humilité stratégique : accepter de ne pas savoir, de se tromper, de recommencer",
+      "36.7 Le plan d'adaptation : réviser sa stratégie tous les 2 ans"
+     ],
+     "exercices": [
+      "Instaurer 30 minutes de veille quotidienne (newsletter, podcast, article) sur son secteur",
+      "Identifier une compétence émergente à acquérir dans les 12 prochains mois",
+      "Écrire son 'plan de réinvention' : si votre activité disparaissait demain, que feriez-vous ?",
+      "Planifier une révision stratégique complète dans 6 mois (date dans l'agenda)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VII — L'HÉRITAGE ET LA PLÉNITUDE : Au-delà de l'argent, la richesse complète",
+   "chapitres": [
+    {
+     "numero": 37,
+     "titre": "La transmission : préparer l'héritage matériel et immatériel",
+     "objectif": "Aborder la question de la transmission : transmettre un patrimoine, des valeurs, des compétences et une vision aux générations suivantes.",
+     "sections": [
+      "37.1 L'héritage n'est pas qu'une question d'argent : valeurs, savoir, réseau",
+      "37.2 La transmission financière : outils juridiques, fiscaux, structuraux",
+      "37.3 Éduquer ses enfants à l'argent : les leçons par âge",
+      "37.4 Le risque de l'héritage toxique : quand la richesse détruit au lieu de construire",
+      "37.5 La transmission d'une mentalité : enseigner la pêche, pas donner le poisson",
+      "37.6 Le legs immatériel : écrits, enseignements, philosophie de vie",
+      "37.7 La lettre à ses héritiers : ce que vous voulez vraiment leur transmettre"
+     ],
+     "exercices": [
+      "Écrire une 'lettre d'héritage' à ses enfants ou proches : valeurs, leçons, souhaits",
+      "Se renseigner sur les outils de transmission adaptés à sa situation (donation, assurance-vie, trust)",
+      "Créer un 'conseil de famille financier' annuel pour parler argent ouvertement",
+      "Rédiger ses 10 principes de vie à transmettre, au-delà de l'argent"
+     ]
+    },
+    {
+     "numero": 38,
+     "titre": "La philanthropie stratégique : donner pour multiplier",
+     "objectif": "Montrer que le don n'est pas l'opposé de la richesse mais son prolongement naturel ; guider une approche stratégique et impactante de la générosité.",
+     "sections": [
+      "38.1 Le paradoxe du don : donner ne diminue pas, ça multiplie",
+      "38.2 La psychologie de la générosité : pourquoi donner rend plus riche (études)",
+      "38.3 La philanthropie à tous les niveaux : pas besoin d'être milliardaire pour donner",
+      "38.4 Le don stratégique : choisir ses causes, mesurer son impact",
+      "38.5 Les structures de don : fonds, fondations, mécénat, investissement à impact",
+      "38.6 Le don de temps et de compétences : la philanthropie non monétaire",
+      "38.7 L'effet de modèle : inspirer d'autres à donner"
+     ],
+     "exercices": [
+      "Définir un pourcentage de ses revenus à donner (même 1 %) et le programmer",
+      "Choisir une cause qui touche personnellement et s'y engager concrètement",
+      "Offrir une heure de son expertise gratuitement à une association cette semaine",
+      "Écrire sa 'philosophie du don' : pourquoi, à qui, comment, combien"
+     ]
+    },
+    {
+     "numero": 39,
+     "titre": "La richesse complète : intégrer argent, santé, relations et sens",
+     "objectif": "Proposer une vision intégrée de la richesse qui dépasse le seul patrimoine financier pour embrasser toutes les dimensions d'une vie pleinement réussie.",
+     "sections": [
+      "39.1 La richesse à 4 dimensions : financière, physique, relationnelle, spirituelle",
+      "39.2 Le danger de la richesse unidimensionnelle : riche en argent, pauvre en vie",
+      "39.3 L'alignement : quand vos 4 dimensions se renforcent mutuellement",
+      "39.4 Le tableau de bord de la richesse complète : 12 indicateurs de vie",
+      "39.5 La suffisance : savoir quand 'asse' est vraiment assez",
+      "39.6 La gratitude comme multiplicateur de richesse : les études et la pratique",
+      "39.7 La définition finale : votre richesse complète, votre vie complète"
+     ],
+     "exercices": [
+      "Remplir le tableau de bord des 4 dimensions : se noter de 1 à 10 sur chaque sous-dimension",
+      "Identifier la dimension la plus négligée et planifier une action d'amélioration cette semaine",
+      "Écrire sa définition personnelle de la 'richesse complète' en un paragraphe",
+      "Instaurer un rituel de gratitude quotidien : 3 choses pour lesquelles on est reconnaissant"
+     ]
+    },
+    {
+     "numero": 40,
+     "titre": "Le premier jour du reste de votre vie financière : votre plan d'action de 90 jours",
+     "objectif": "Synthétiser tout le livre en un plan d'action concret de 90 jours ; créer l'élan irrésistible qui transforme la lecture en résultats tangibles.",
+     "sections": [
+      "40.1 Le résumé des 7 piliers : votre boussole permanente",
+      "40.2 Les 90 jours qui changent tout : pourquoi 3 mois suffisent pour tout lancer",
+      "40.3 Semaine 1-2 : Audit, vision, engagement",
+      "40.4 Semaine 3-6 : Mise en place des systèmes, premiers investissements, premières actions",
+      "40.5 Semaine 7-10 : Accélération, réseau, création de valeur",
+      "40.6 Semaine 11-13 : Bilan, ajustement, ancrage des habitudes",
+      "40.7 Le serment du bâtisseur : votre engagement final et votre prochaine décennie"
+     ],
+     "exercices": [
+      "Remplir le plan d'action de 90 jours jour par jour (fourni en annexe du livre)",
+      "Choisir un partenaire de responsabilité et faire le premier check-in cette semaine",
+      "Écrire son 'serment du bâtisseur' : engagement solennel envers soi-même",
+      "Planifier la 'célébration des 90 jours' : se récompenser pour le chemin parcouru",
+      "Écrire une lettre à soi-même à lire dans 1 an : où en serez-vous ?"
+     ]
+    }
+   ]
+  }
+ ]
+}
