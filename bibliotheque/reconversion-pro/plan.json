@@ -1,0 +1,596 @@
+{
+ "titre": "Le Grand Pivot",
+ "sous_titre": "La méthode complète pour identifier vos compétences transférables et bâtir une reconversion professionnelle réaliste, étape par étape",
+ "bibliographie": [
+  {
+   "auteur": "Richard N. Bolles",
+   "titre": "What Color Is Your Parachute?",
+   "annee": "1970 (rééd. annuelle)",
+   "idee": "Guide exhaustif de recherche d'emploi fondé sur l'introspection : valeurs, intérêts, compétences transférables et entretiens informationnels.",
+   "apport": "Retenir la grille des sept compétences génériques et l'exercice de la fleur à sept pétales pour structurer l'auto-inventaire."
+  },
+  {
+   "auteur": "Herminia Ibarra",
+   "titre": "Working Identity: Unconventional Strategies for Reinventing Your Career",
+   "annee": "2002",
+   "idee": "La reconversion n'est pas une réflexion linéaire mais une série d'expérimentations identitaires ; agir avant de tout savoir.",
+   "apport": "Intégrer le concept de 'provisional selves' et la méthode des petits pas expérimentaux plutôt que le grand plan figé."
+  },
+  {
+   "auteur": "Bill Burnett & Dave Evans",
+   "titre": "Designing Your Life",
+   "annee": "2016",
+   "idee": "Appliquer le design thinking (empathie, idéation, prototypage, test) à la construction de sa trajectoire professionnelle.",
+   "apport": "Reprendre les outils de prototypage (entretiens exploratoires, mini-stages, projets pilotes) comme phases obligatoires du plan."
+  },
+  {
+   "auteur": "Cal Newport",
+   "titre": "So Good They Can't Ignore You",
+   "annee": "2012",
+   "idee": "La passion suit la maîtrise ; accumuler un capital de compétences rares et précieuses vaut mieux que chercher sa vocation.",
+   "apport": "Incorporer la notion de 'career capital' et le cadre compétence-rareté-demande pour évaluer la viabilité d'une reconversion."
+  },
+  {
+   "auteur": "Carol S. Dweck",
+   "titre": "Mindset: The New Psychology of Success",
+   "annee": "2006",
+   "idee": "L'état d'esprit de croissance permet d'apprendre à tout âge ; la peur de l'échec est le premier frein au changement.",
+   "apport": "Construire un chapitre sur les croyances limitantes et fournir des exercices de recadrage cognitif adaptés à la transition."
+  },
+  {
+   "auteur": "Tom Rath",
+   "titre": "StrengthsFinder 2.0",
+   "annee": "2007",
+   "idee": "Identifier ses 34 thèmes de talents naturels et les combiner pour maximiser l'impact professionnel.",
+   "apport": "Adapter la logique des forces signature à l'inventaire des compétences transférables et à leur mise en récit."
+  },
+  {
+   "auteur": "Nicholas Lore",
+   "titre": "The Pathfinder: How to Choose or Change Your Career for a Lifetime of Satisfaction and Success",
+   "annee": "1998",
+   "idee": "Méthode en cinq étapes : exploration de soi, recherche d'informations, prise de décision, plan d'action, transition.",
+   "apport": "Reprendre la séquence diagnostic-exploration-décision-action et l'enrichir d'outils contemporains."
+  },
+  {
+   "auteur": "William Bridges",
+   "titre": "Transitions: Making Sense of Life's Changes",
+   "annee": "1980",
+   "idee": "Toute transition comporte trois phases : fin, zone neutre, nouveau départ ; ignorer la zone neutre mène à l'échec.",
+   "apport": "Structurer la partie exécution autour du modèle des trois phases pour normaliser le désarroi du milieu de parcours."
+  },
+  {
+   "auteur": "Edgar H. Schein",
+   "titre": "Career Anchors: Discovering Your Real Values",
+   "annee": "1993 (rév. 2013)",
+   "idee": "Huit ancres de carrière (sécurité, autonomie, défi technique, etc.) guident les choix ; les identifier évite les fausses pistes.",
+   "apport": "Intégrer un questionnaire d'ancres dans le diagnostic initial et croiser le résultat avec l'analyse de compétences."
+  },
+  {
+   "auteur": "Chip Heath & Dan Heath",
+   "titre": "Switch: How to Change Things When Change Is Hard",
+   "annee": "2010",
+   "idee": "Le changement exige d'aligner le Cavalier (raison), l'Éléphant (émotion) et le Chemin (environnement).",
+   "apport": "Utiliser la métaphore Cavalier-Éléphant-Chemin pour concevoir les étapes de passage à l'action et la gestion des résistances."
+  },
+  {
+   "auteur": "Reid Hoffman & Ben Casnocha",
+   "titre": "The Start-Up of You",
+   "annee": "2012",
+   "idee": "Gérer sa carrière comme une start-up : avantage concurrentiel, réseau, prise de risque calculée, itération.",
+   "apport": "Emprunter le cadre ABZ (plan A, plan B, plan Z) pour bâtir un plan de reconversion à plusieurs scénarios."
+  },
+  {
+   "auteur": "David Epstein",
+   "titre": "Range: Why Generalists Triumph in a Specialized World",
+   "annee": "2019",
+   "idee": "Les parcours variés produisent une capacité supérieure de transfert et d'adaptation ; la spécialisation précoce n'est pas la seule voie.",
+   "apport": "Légitimer les profils multi-potentiels et montrer comment la diversité d'expériences devient un atout de reconversion."
+  },
+  {
+   "auteur": "Jenny Blake",
+   "titre": "Pivot: The Only Move That Matters Is Your Next One",
+   "annee": "2016",
+   "idee": "Méthode en quatre phases (plante, scanne, pilote, lance) pour pivoter sans tout quitter d'un coup.",
+   "apport": "Adopter le calendrier de pilotage progressif et la notion de 'double-runway' financier pendant la transition."
+  },
+  {
+   "auteur": "Helen Tupper & Sarah Ellis",
+   "titre": "The Squiggly Career",
+   "annee": "2020",
+   "idee": "Les carrières ne sont plus linéaires ; identifier ses 'super-strengths', valeurs et possibilités ouvre des chemins inattendus.",
+   "apport": "Intégrer la notion de carrière sinueuse et les exercices de cartographie des possibles pour dédramatiser le non-linéaire."
+  },
+  {
+   "auteur": "Stephen R. Covey",
+   "titre": "The 7 Habits of Highly Effective People",
+   "annee": "1989",
+   "idee": "L'efficacité personnelle repose sur des principes : proactivité, vision, priorisation, synergies.",
+   "apport": "Reprendre le principe 'commencer par la fin en tête' pour la définition de la vision de reconversion et la priorisation des actions."
+  },
+  {
+   "auteur": "Peter Drucker",
+   "titre": "Managing Oneself",
+   "annee": "1999 (HBR)",
+   "idee": "Chacun doit identifier ses forces, sa manière d'apprendre, ses valeurs et se positionner là où il contribue le plus.",
+   "apport": "Inclure l'exercice de l'analyse de feedback (feedback analysis) pour objectiver les compétences réellement mobilisées."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – Faire le point : qui êtes-vous aujourd'hui, professionnellement parlant ?",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le déclic : reconnaître que la reconversion n'est plus une option mais une nécessité",
+     "objectif": "Aider le lecteur à valider son besoin de changement, à dépasser la culpabilité et à adopter une posture proactive.",
+     "sections": [
+      "1.1 Les cinq signaux qui indiquent qu'il est temps de bouger",
+      "1.2 Déconstruire le mythe de la vocation unique",
+      "1.3 Peur, fatigue, ennui : nommer l'émotion pour mieux la traverser",
+      "1.4 Le coût de l'inaction : ce que vous perdez en restant",
+      "1.5 La reconversion comme compétence, pas comme échec",
+      "1.6 Votre lettre de permission : vous autoriser à changer"
+     ],
+     "exercices": [
+      "Échelle de satisfaction professionnelle (0-10) sur huit dimensions",
+      "Journal des signaux : noter pendant 7 jours les moments de frustration et d'énergie",
+      "Lettre de permission à soi-même, rédigée et relue à voix haute"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Cartographier votre parcours : l'inventaire chronologique de vos expériences",
+     "objectif": "Produire une chronologie exhaustive des expériences (salariées, bénévoles, personnelles) pour faire émerger les fils conducteurs.",
+     "sections": [
+      "2.1 Pourquoi votre CV actuel ne dit pas tout",
+      "2.2 La timeline enrichie : emploi, formation, projets perso, bénévolat",
+      "2.3 Pour chaque expérience : contexte, rôle, résultats, émotions",
+      "2.4 Les compétences techniques (hard skills) : liste brute",
+      "2.5 Les compétences relationnelles et organisationnelles (soft skills)",
+      "2.6 Les micro-compétences invisibles : ce que vous faites sans y penser",
+      "2.7 Repérer les récurrences : vos motifs de carrière"
+     ],
+     "exercices": [
+      "Timeline visuelle sur grand format (papier ou numérique)",
+      "Tableau à quatre colonnes : Quoi / Comment / Résultat / Ressenti",
+      "Entretien croisé avec un proche qui vous décrit en situation de travail"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Vos valeurs, vos ancres, vos moteurs : ce qui ne se négocie pas",
+     "objectif": "Clarifier les valeurs profondes et les ancres de carrière pour éviter de choisir une reconversion alignée en surface mais dissonante en profondeur.",
+     "sections": [
+      "3.1 Valeurs vs intérêts vs compétences : trois boussoles distinctes",
+      "3.2 Le questionnaire des ancres de carrière (inspiré de Schein)",
+      "3.3 Les non-négociables : rythme, sens, revenus, géographie, statut",
+      "3.4 La pyramide des besoins appliquée au travail",
+      "3.5 Conflits de valeurs internes : quand deux moteurs se contredisent",
+      "3.6 Rédiger votre manifeste personnel de travail"
+     ],
+     "exercices": [
+      "Classement forcé de 20 valeurs pour en retenir 5",
+      "Questionnaire des ancres adapté (auto-scoring)",
+      "Rédaction du manifeste en 10 phrases maximum"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "L'audit énergétique : quand, où et avec quoi êtes-vous dans le flux ?",
+     "objectif": "Identifier les conditions concrètes dans lesquelles le lecteur performe et s'épanouit, au-delà des intitulés de poste.",
+     "sections": [
+      "4.1 Le concept de flow appliqué au travail",
+      "4.2 Vos moments de flow : les repérer dans les 12 derniers mois",
+      "4.3 Les voleurs d'énergie : tâches, contextes, relations",
+      "4.4 Les multiplicateurs d'énergie : ce qui vous recharge",
+      "4.5 Matrice énergie/compétence : croiser plaisir et maîtrise",
+      "4.6 L'environnement de travail idéal : taille d'équipe, rythme, espace",
+      "4.7 Synthèse : votre profil énergétique de travailleur"
+     ],
+     "exercices": [
+      "Semaine d'observation : noter heure par heure le niveau d'énergie (1-5)",
+      "Matrice 2x2 : plaisir/maîtrise pour classer 20 activités",
+      "Portrait-robot de votre journée de travail idéale"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Croyances limitantes et syndrome de l'imposteur : lever les freins invisibles",
+     "objectif": "Repérer et déconstruire les croyances qui bloquent la démarche de reconversion avant même qu'elle ne commence.",
+     "sections": [
+      "5.1 Les cinq croyances les plus fréquentes en reconversion",
+      "5.2 Le syndrome de l'imposteur : mécanisme et antidotes",
+      "5.3 L'état d'esprit fixe vs l'état d'esprit de croissance (Dweck)",
+      "5.4 La peur du regard des autres et le poids de l'identité sociale",
+      "5.5 Recadrage cognitif : transformer les 'je ne peux pas' en hypothèses",
+      "5.6 Construire un dialogue intérieur de soutien",
+      "5.7 S'entourer : qui vous tire vers le haut, qui vous freine"
+     ],
+     "exercices": [
+      "Liste des 10 croyances limitantes + contre-argument factuel pour chacune",
+      "Exercice du tribunal : avocat de la défense vs procureur intérieur",
+      "Carte de votre écosystème relationnel : alliés, neutres, freins"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – Extraire l'or : identifier, nommer et prouver vos compétences transférables",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "Qu'est-ce qu'une compétence transférable ? Anatomie d'un concept mal compris",
+     "objectif": "Donner une définition opérationnelle des compétences transférables et distinguer savoirs, savoir-faire, savoir-être et méta-compétences.",
+     "sections": [
+      "6.1 Compétence vs tâche vs poste : clarifier le vocabulaire",
+      "6.2 Les trois familles : techniques, transversales, comportementales",
+      "6.3 Les méta-compétences : apprendre à apprendre, s'adapter, créer du lien",
+      "6.4 Pourquoi 70 % de vos compétences sont transférables sans que vous le sachiez",
+      "6.5 Le mythe de la page blanche : vous avez déjà un capital",
+      "6.6 La compétence comme combinaison, pas comme élément isolé"
+     ],
+     "exercices": [
+      "Décomposer son dernier poste en 30 compétences distinctes",
+      "Classer chaque compétence en T (technique), X (transversale), C (comportementale)",
+      "Repérer 3 compétences acquises hors travail (sport, parentalité, association)"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "La méthode STAR-T : transformer vos expériences en preuves de compétence",
+     "objectif": "Fournir un cadre structuré (Situation, Tâche, Action, Résultat, Transfert) pour objectiver chaque compétence par un exemple concret.",
+     "sections": [
+      "7.1 Pourquoi la mémoire est sélective et comment la contourner",
+      "7.2 La méthode STAR classique et ses limites",
+      "7.3 Ajouter le T : formuler explicitement le transfert possible",
+      "7.4 Choisir les bons exemples : impact, complexité, répétition",
+      "7.5 Quantifier : chiffres, périmètres, délais",
+      "7.6 Rédiger 10 fiches-compétences STAR-T",
+      "7.7 Faire valider ses fiches par un tiers"
+     ],
+     "exercices": [
+      "Rédaction de 10 fiches STAR-T (une par compétence clé)",
+      "Entretien de validation avec un ancien collègue ou manager",
+      "Classement des fiches par niveau de maîtrise (1 à 5) et niveau de plaisir (1 à 5)"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'analyse de feedback : ce que les autres voient et que vous ne voyez pas",
+     "objectif": "Utiliser le regard extérieur (collègues, managers, proches, clients) pour révéler des compétences sous-estimées ou ignorées.",
+     "sections": [
+      "8.1 L'angle mort du self-assessment",
+      "8.2 La méthode de feedback analysis (Drucker)",
+      "8.3 Construire un questionnaire de feedback structuré",
+      "8.4 Qui interroger : diversité des regards",
+      "8.5 Recueillir sans se justifier : posture d'écoute",
+      "8.6 Croiser les retours : convergences et surprises",
+      "8.7 Mettre à jour votre inventaire de compétences"
+     ],
+     "exercices": [
+      "Questionnaire de 5 questions envoyé à 8 personnes de confiance",
+      "Tableau de synthèse des verbatims reçus",
+      "Identification de 3 compétences 'surprises' révélées par les autres"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Traduire votre jargon : rendre vos compétences lisibles dans un autre secteur",
+     "objectif": "Apprendre à reformuler ses compétences dans le langage du secteur visé pour créer un pont sémantique entre ancien et nouveau métier.",
+     "sections": [
+      "9.1 Chaque secteur a son dialecte : vocabulaires et codes",
+      "9.2 L'exercice de traduction littérale : même compétence, trois formulations",
+      "9.3 Les ponts sectoriels : santé→tech, enseignement→formation, militaire→logistique",
+      "9.4 Les compétences universelles qui parlent à tous les recruteurs",
+      "9.5 Construire un glossaire personnel bilingue (ancien secteur / nouveau secteur)",
+      "9.6 Tester la traduction auprès de personnes du secteur cible"
+     ],
+     "exercices": [
+      "Fiche de traduction : 10 compétences reformulées pour 2 secteurs cibles",
+      "Simulation d'entretien : expliquer son parcours en 2 min à un inconnu du secteur",
+      "Glossaire croisé de 20 termes spécifiques au secteur visé"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Votre portfolio de compétences : le document vivant qui vous suivra partout",
+     "objectif": "Assembler l'ensemble des données collectées en un document synthétique, évolutif et exploitable pour la suite du parcours.",
+     "sections": [
+      "10.1 Du listing au portfolio : structurer l'information",
+      "10.2 Le format : une page synthèse + fiches détaillées",
+      "10.3 La carte visuelle de vos compétences (mind-map ou radar)",
+      "10.4 Hiérarchiser : compétences maîtresses, secondaires, dormantes",
+      "10.5 Identifier les gaps : ce qui manque pour les métiers visés",
+      "10.6 Mettre à jour : le portfolio comme outil vivant",
+      "10.7 Formats adaptés : PDF, Notion, LinkedIn, entretien"
+     ],
+     "exercices": [
+      "Réalisation d'une carte radar à 8 axes de compétences",
+      "Rédaction de la page synthèse 'Qui suis-je professionnellement' en 200 mots",
+      "Calendrier de mise à jour trimestrielle du portfolio"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – Explorer le champ des possibles : de la compétence au métier",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Générer des pistes : 20 métiers, 3 secteurs, 5 formats de travail",
+     "objectif": "Élargir le champ des possibles sans autocensure avant de filtrer, en croisant compétences, valeurs et tendances du marché.",
+     "sections": [
+      "11.1 Brainstorming sans filtre : la règle des 20",
+      "11.2 Les familles de métiers accessibles avec vos compétences",
+      "11.3 Salariat, freelance, entrepreneuriat, portage : les formats",
+      "11.4 Temps plein, temps partiel, slasheur : les rythmes",
+      "11.5 Explorer les tendances : quels secteurs recrutent ?",
+      "11.6 Utiliser les outils en ligne (ROME, LinkedIn, job boards) pour ouvrir le champ",
+      "11.7 La liste courte : 5 pistes réalistes et 2 pistes audacieuses"
+     ],
+     "exercices": [
+      "Brainstorming des 20 métiers en 30 minutes chrono",
+      "Tableau croisé compétences × secteurs × formats",
+      "Recherche de 10 offres d'emploi par piste retenue pour vérifier l'adéquation"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "L'entretien informationnel : apprendre le métier de l'intérieur avant de s'y lancer",
+     "objectif": "Maîtriser la technique de l'entretien exploratoire pour valider ou infirmer chaque piste en situation réelle.",
+     "sections": [
+      "12.1 Qu'est-ce qu'un entretien informationnel et ce qu'il n'est pas",
+      "12.2 Identifier et contacter les bonnes personnes",
+      "12.3 Préparer 15 questions qui révèlent la réalité du quotidien",
+      "12.4 Conduire l'entretien : écoute, curiosité, prise de notes",
+      "12.5 La question magique : 'Qu'auriez-vous aimé savoir avant de commencer ?'",
+      "12.6 Après l'entretien : remercier, synthétiser, rebondir",
+      "12.7 Croiser 5 témoignages pour dégager une vision nuancée"
+     ],
+     "exercices": [
+      "Rédaction d'un message de prise de contact en 5 lignes",
+      "Grille de 15 questions adaptables par métier",
+      "Fiche de synthèse post-entretien (à remplir 5 fois minimum)"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Prototyper sans tout quitter : micro-stages, bénévolat, projets parallèles",
+     "objectif": "Tester concrètement une ou deux pistes via des expériences courtes et peu risquées avant de s'engager pleinement.",
+     "sections": [
+      "13.1 Le principe du prototype : apprendre en faisant, pas en planifiant",
+      "13.2 Les formats de test : immersion d'une journée, bénévolat de compétences, freelance side-project",
+      "13.3 Les plateformes et réseaux pour trouver un micro-stage",
+      "13.4 Négocier une période d'observation avec son employeur actuel",
+      "13.5 Le projet parallèle : construire une preuve de compétence en conditions réelles",
+      "13.6 Évaluer le prototype : qu'est-ce qui confirme, qu'est-ce qui infirme ?",
+      "13.7 Itérer ou pivoter : ajuster la piste après chaque test"
+     ],
+     "exercices": [
+      "Plan de 3 prototypes à réaliser en 90 jours",
+      "Journal de bord de chaque prototype (ressenti, apprentissages, surprises)",
+      "Grille de décision post-prototype : je continue / j'ajuste / j'abandonne"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "L'analyse de viabilité : revenu, formation, marché, timing",
+     "objectif": "Confronter chaque piste retenue aux réalités économiques et logistiques pour écarter les illusions et sécuriser le choix.",
+     "sections": [
+      "14.1 Le test de viabilité financière : de combien avez-vous besoin ?",
+      "14.2 La fourchette de rémunération du métier visé : sources et méthodes",
+      "14.3 Les formations nécessaires : durée, coût, formats (présentiel, en ligne, VAE)",
+      "14.4 Le marché de l'emploi du secteur : tension, géographie, évolution",
+      "14.5 Le timing personnel : âge, situation familiale, obligations",
+      "14.6 Le plan A / plan B / plan Z (méthode Hoffman)",
+      "14.7 Matrice de décision multicritère pour trancher entre les pistes"
+     ],
+     "exercices": [
+      "Calcul du besoin financier minimum pendant la transition",
+      "Tableau comparatif des 3 pistes sur 8 critères pondérés",
+      "Rédaction du plan A (piste choisie), plan B (alternative) et plan Z (filet de sécurité)"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Choisir sans certitude absolue : décider avec 70 % d'information",
+     "objectif": "Aider le lecteur à trancher entre les pistes restantes en acceptant l'incertitude résiduelle et en évitant la paralysie de l'analyse.",
+     "sections": [
+      "15.1 Le paradoxe du choix : pourquoi trop d'options bloquent",
+      "15.2 La règle des 70 % : assez d'information pour avancer",
+      "15.3 Écouter le corps : la décision somatique",
+      "15.4 Le test du regret : dans 10 ans, quelle inaction regretteriez-vous ?",
+      "15.5 Le test de l'ami : que conseilleriez-vous à votre meilleur ami ?",
+      "15.6 Formaliser la décision : l'écrire, la dire, la dater",
+      "15.7 Accepter que le choix se corrige en marchant"
+     ],
+     "exercices": [
+      "Exercice des 10 ans : lettre de votre futur vous à votre vous actuel",
+      "Matrice regret : 4 scénarios (j'y vais / je n'y vais pas × réussite / échec)",
+      "Rituel de décision : annonce orale à une personne de confiance"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – Bâtir le plan de reconversion : la feuille de route réaliste",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "La vision à 3 ans : donner une direction claire à votre reconversion",
+     "objectif": "Formuler une vision inspirante mais ancrée, déclinée en objectifs intermédiaires mesurables.",
+     "sections": [
+      "16.1 La différence entre rêve, vision et objectif",
+      "16.2 Écrire sa vision en une phrase, un paragraphe, une page",
+      "16.3 Décliner la vision en objectifs à 3 ans, 1 an, 6 mois, 3 mois",
+      "16.4 Les indicateurs de progrès : comment saurez-vous que vous avancez ?",
+      "16.5 La vision révisable : prévoir des points d'étape",
+      "16.6 Visualisation et tableau de bord personnel"
+     ],
+     "exercices": [
+      "Rédaction de la vision à 3 ans (1 page max)",
+      "Déclinaison en 4 objectifs SMART intermédiaires",
+      "Création d'un tableau de bord visuel (physique ou numérique)"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Le plan de formation : combler les gaps sans tout réapprendre",
+     "objectif": "Construire un parcours de montée en compétences ciblé, efficient et compatible avec la vie actuelle du lecteur.",
+     "sections": [
+      "17.1 De l'inventaire des gaps à la liste de formations",
+      "17.2 Les formats : diplômes, certifications, MOOC, VAE, tutorat",
+      "17.3 Financer sa formation : CPF, OPCO, Pôle emploi, autofinancement",
+      "17.4 Le calendrier : combien d'heures par semaine, sur combien de mois ?",
+      "17.5 Apprendre en travaillant : l'approche 70-20-10",
+      "17.6 Les pièges : la formation comme procrastination déguisée",
+      "17.7 Valider les acquis : portfolio, certification, projet concret"
+     ],
+     "exercices": [
+      "Tableau des gaps de compétences × solution de formation × durée × coût",
+      "Calendrier hebdomadaire intégrant les heures de formation",
+      "Demande de prise en charge CPF ou OPCO (modèle de lettre)"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Le plan financier : sécuriser la transition sans se mettre en danger",
+     "objectif": "Établir un budget de transition réaliste, identifier les sources de financement et créer un filet de sécurité.",
+     "sections": [
+      "18.1 Calculer votre runway : combien de mois sans salaire ?",
+      "18.2 Le budget de transition : formation, perte de revenus, frais annexes",
+      "18.3 Les aides mobilisables : ARE, ACRE, ARCE, aides régionales",
+      "18.4 Réduire les charges fixes : le plan d'austérité temporaire",
+      "18.5 Générer un revenu de transition : freelance, temps partiel, side-project",
+      "18.6 Le matelas de sécurité : objectif et stratégie d'épargne",
+      "18.7 Le plan B financier : si la reconversion prend 6 mois de plus"
+     ],
+     "exercices": [
+      "Simulation budgétaire sur 24 mois (scénario optimiste / réaliste / pessimiste)",
+      "Tableau des aides mobilisables et conditions d'éligibilité",
+      "Plan de réduction de 3 postes de dépenses non essentielles"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Construire et activer votre réseau de reconversion",
+     "objectif": "Passer d'un réseau passif à un réseau actif, orienté vers le secteur visé, en mobilisant les liens faibles et la générosité.",
+     "sections": [
+      "19.1 Le réseau comme accélérateur, pas comme piston",
+      "19.2 Cartographier son réseau actuel : qui connaît qui ?",
+      "19.3 Les liens faibles : pourquoi vos connaissances éloignées sont les plus utiles",
+      "19.4 LinkedIn et les réseaux professionnels : optimiser sa présence",
+      "19.5 Les événements, communautés, associations sectorielles",
+      "19.6 Donner avant de demander : la loi de la réciprocité",
+      "19.7 Le rituel réseau : 3 contacts par semaine, minimum"
+     ],
+     "exercices": [
+      "Cartographie du réseau : 50 contacts classés par proximité et secteur",
+      "Message type de reconnexion (3 variantes : proche, connaissance, inconnu)",
+      "Calendrier réseau : 12 semaines, 3 actions par semaine"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Le personal branding : raconter votre reconversion comme une histoire cohérente",
+     "objectif": "Construire un récit de transition qui transforme la dispersion apparente en fil conducteur et donne envie aux recruteurs ou clients.",
+     "sections": [
+      "20.1 Votre histoire n'est pas un problème : c'est votre avantage",
+      "20.2 Le storytelling de reconversion : structure en 3 actes",
+      "20.3 Le pitch en 30 secondes, 2 minutes et 5 minutes",
+      "20.4 Adapter le récit selon l'interlocuteur : recruteur, client, réseau",
+      "20.5 Les supports : CV, profil LinkedIn, lettre, portfolio",
+      "20.6 La cohérence visuelle et sémantique sur tous les canaux",
+      "20.7 Tester et affiner le récit face à un public réel"
+     ],
+     "exercices": [
+      "Rédaction du pitch de reconversion en 3 formats",
+      "Réécriture du CV orienté compétences transférables (pas chronologie de postes)",
+      "Test du pitch devant 3 personnes de profils différents + ajustements"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – Passer à l'action, tenir la distance et installer la nouvelle vie",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Le premier pas concret : les 30 premiers jours de votre transition",
+     "objectif": "Transformer le plan en actions immédiates pour créer un élan irréversible dès le premier mois.",
+     "sections": [
+      "21.1 Pourquoi les 30 premiers jours déterminent la suite",
+      "21.2 La semaine 1 : annonces, démarches administratives, premier contact",
+      "21.3 La semaine 2 : début de la formation ou du prototype",
+      "21.4 La semaine 3 : premiers retours réseau, premiers ajustements",
+      "21.5 La semaine 4 : bilan du mois, célébration, recalage",
+      "21.6 Gérer la cohabitation ancien emploi / nouvelle trajectoire",
+      "21.7 Le rituel quotidien : 90 minutes pour votre reconversion, quoi qu'il arrive"
+     ],
+     "exercices": [
+      "Checklist des 10 actions des 7 premiers jours",
+      "Blocage de créneaux 'reconversion' dans l'agenda hebdomadaire",
+      "Rituel du vendredi : 15 minutes de bilan + 3 actions pour la semaine suivante"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Traverser la zone neutre : gérer le doute, la fatigue et l'envie d'abandonner",
+     "objectif": "Normaliser la phase de désorientation (modèle de Bridges) et fournir des stratégies concrètes pour la traverser sans lâcher.",
+     "sections": [
+      "22.1 Le modèle des trois phases : fin, zone neutre, nouveau départ",
+      "22.2 Les symptômes de la zone neutre : perte de repères, irritabilité, doute",
+      "22.3 Les stratégies émotionnelles : journal, méditation, parole",
+      "22.4 Les stratégies pratiques : réduire la charge cognitive, simplifier",
+      "22.5 Le soutien : coach, mentor, groupe de pairs, thérapie si besoin",
+      "22.6 Distinguer fatigue passagère et erreur de trajectoire",
+      "22.7 Le contrat d'engagement envers soi-même : durée minimale avant de juger"
+     ],
+     "exercices": [
+      "Journal de la zone neutre : 5 minutes par jour pendant 30 jours",
+      "Liste de 5 personnes-ressources à appeler en cas de doute aigu",
+      "Rédaction du contrat d'engagement : 'Je m'engage à tenir X mois avant de réévaluer'"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "L'atterrissage : décrocher le poste, le client ou le premier contrat",
+     "objectif": "Préparer et réussir l'entrée concrète dans le nouveau métier : candidature, entretien, négociation ou lancement d'activité.",
+     "sections": [
+      "23.1 La stratégie de candidature : ciblée, personnalisée, proactive",
+      "23.2 L'entretien de reconversion : transformer les questions pièges en atouts",
+      "23.3 La négociation salariale quand on change de secteur",
+      "23.4 Le lancement freelance ou entrepreneurial : les 10 premières actions",
+      "23.5 Les 90 premiers jours dans le nouveau rôle : observer, apprendre, s'intégrer",
+      "23.6 Le droit à l'erreur : accepter la courbe d'apprentissage",
+      "23.7 Demander du feedback dès la première semaine"
+     ],
+     "exercices": [
+      "Préparation de 10 questions-réponses d'entretien spécifiques reconversion",
+      "Simulation d'entretien filmée ou avec un coach",
+      "Plan des 90 premiers jours : 3 objectifs par mois"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La reconversion continue : faire de votre carrière un système apprenant",
+     "objectif": "Installer une posture d'évolution permanente pour que la reconversion ne soit pas un événement unique mais une compétence de vie.",
+     "sections": [
+      "24.1 Le monde du travail change : vous aussi, en continu",
+      "24.2 Le bilan de compétences annuel : un rituel, pas une urgence",
+      "24.3 Maintenir et développer son réseau au-delà de la transition",
+      "24.4 La veille sectorielle : rester informé sans être submergé",
+      "24.5 Les compétences à acquérir en continu : adaptabilité, numérique, intelligence relationnelle",
+      "24.6 Transmettre : mentorat, témoignage, accompagnement d'autres reconvertis",
+      "24.7 Votre prochaine version : la reconversion comme mode de vie"
+     ],
+     "exercices": [
+      "Plan de développement personnel annuel : 3 compétences à renforcer",
+      "Rejoindre ou créer un groupe de pairs en reconversion",
+      "Rédaction d'une lettre à son futur soi dans 5 ans : que voulez-vous avoir appris ?"
+     ]
+    }
+   ]
+  }
+ ]
+}

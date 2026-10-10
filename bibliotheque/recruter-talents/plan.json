@@ -1,0 +1,598 @@
+{
+ "titre": "Attirer, Choisir, Fidéliser",
+ "sous_titre": "Le manuel complet pour rédiger des offres magnétiques, mener des entretiens structurés et retenir durablement les meilleurs talents",
+ "bibliographie": [
+  {
+   "auteur": "Geoff Smart & Randy Street",
+   "titre": "Who: The A Method for Hiring",
+   "annee": "2008",
+   "idee": "Propose une méthode en quatre étapes (scorecard, sourcing, interview, sell) pour recruter des joueurs A plutôt que B ou C, en éliminant les biais intuitifs.",
+   "apport": "Structure du chapitre sur la définition du poste et la grille d'évaluation avant toute rédaction d'offre."
+  },
+  {
+   "auteur": "Laszlo Bock",
+   "titre": "Work Rules! Insights from Inside Google That Will Transform How You Live and Lead",
+   "annee": "2015",
+   "idee": "Décrit les pratiques RH de Google : recrutement par comités, entretiens structurés, importance de la mission et de l'autonomie pour fidéliser.",
+   "apport": "Inspiration pour les sections sur l'entretien en panel et la construction d'une culture de rétention."
+  },
+  {
+   "auteur": "Mark Murphy",
+   "titre": "Hiring for Attitude",
+   "annee": "2012",
+   "idee": "Démontre que 46 % des échecs de recrutement viennent d'un mauvais fit culturel ; propose d'évaluer l'attitude avant la compétence.",
+   "apport": "Fondement des chapitres sur les questions comportementales et la culture d'entreprise comme critère de sélection."
+  },
+  {
+   "auteur": "Bradford D. Smart",
+   "titre": "Topgrading: How Leading Companies Win by Hiring, Coaching, and Keeping the Best People",
+   "annee": "2005",
+   "idee": "Méthode Topgrading : entretien chronologique approfondi, fiche de scorecard, référence croisée pour identifier les profils A.",
+   "apport": "Technique de l'entretien chronologique et de la vérification des références intégrée à la partie entretiens."
+  },
+  {
+   "auteur": "Michael Watkins",
+   "titre": "The First 90 Days: Proven Strategies for Getting Up to Speed Faster and Smarter",
+   "annee": "2003",
+   "idee": "Cadre structuré pour réussir l'intégration d'un nouveau collaborateur : quick wins, alliances, apprentissage organisationnel.",
+   "apport": "Base du chapitre consacré à l'onboarding comme premier levier de fidélisation."
+  },
+  {
+   "auteur": "Daniel H. Pink",
+   "titre": "Drive: The Surprising Truth About What Motivates Us",
+   "annee": "2009",
+   "idee": "La motivation intrinsèque repose sur trois piliers : autonomie, maîtrise, finalité (purpose). Les récompenses extrinsèques seules échouent.",
+   "apport": "Cadre théorique pour la partie fidélisation et la rédaction d'offres qui parlent de sens et de progression."
+  },
+  {
+   "auteur": "Simon Barrow & Richard Mosley",
+   "titre": "The Employer Brand: Bringing the Brand to Life in HR",
+   "annee": "2005",
+   "idee": "L'employeur doit se penser comme une marque : promesse, expérience candidat, cohérence entre discours et réalité.",
+   "apport": "Structure du chapitre sur la marque employeur et la différenciation dans les offres d'emploi."
+  },
+  {
+   "auteur": "Beverly Kaye & Sharon Jordan-Evans",
+   "titre": "Love 'Em or Lose 'Em: Getting Good People to Stay",
+   "annee": "2008",
+   "idee": "Vingt-six stratégies de rétention allant de l'écoute active à la personnalisation du parcours professionnel.",
+   "apport": "Liste d'actions concrètes pour les chapitres de fidélisation et de développement continu."
+  },
+  {
+   "auteur": "Reid Hoffman, Ben Casnocha & Chris Yeh",
+   "titre": "The Alliance: Managing Talent in the Networked Age",
+   "annee": "2014",
+   "idee": "Remplace le contrat implicite par une alliance explicite entre employeur et salarié : missions, développement mutuel, réseau.",
+   "apport": "Concept d'alliance utilisé dans la partie fidélisation et dans la rédaction d'offres transparentes."
+  },
+  {
+   "auteur": "Adrian Gostick & Chester Elton",
+   "titre": "The Carrot Principle: How the Best Managers Use Recognition to Engage Their People",
+   "annee": "2007",
+   "idee": "La reconnaissance régulière et spécifique multiplie l'engagement ; les managers qui reconnaissent obtiennent des équipes plus performantes.",
+   "apport": "Section sur la reconnaissance comme outil quotidien de rétention."
+  },
+  {
+   "auteur": "Jeff Hyman",
+   "titre": "Recruit Rockstars: The 10-Step Playbook to Find the Winners and Ignite Your Business",
+   "annee": "2014",
+   "idee": "Dix étapes concrètes pour attirer des profils passifs via le storytelling, le réseau et la rapidité du processus.",
+   "apport": "Techniques de sourcing et de séduction intégrées aux chapitres sur la rédaction d'offres."
+  },
+  {
+   "auteur": "Richard Thaler & Cass Sunstein",
+   "titre": "Nudge: Improving Decisions About Health, Wealth, and Happiness",
+   "annee": "2008",
+   "idee": "L'architecture de choix influence les décisions sans contraindre ; petits ajustements contextuels, grands effets.",
+   "apport": "Application du nudge à la rédaction d'offres (ordre des informations, formulation) et à l'expérience candidat."
+  },
+  {
+   "auteur": "Lance A. Berger & Dorothy R. Berger",
+   "titre": "The Talent Management Handbook: Creating Organizational Excellence by Identifying, Developing, and Promoting the Best and the Brightest",
+   "annee": "2003",
+   "idee": "Cycle complet du talent management : identification, développement, succession, rétention des hauts potentiels.",
+   "apport": "Vision systémique alimentant la partie fidélisation et les plans de carrière."
+  },
+  {
+   "auteur": "Lou Adler",
+   "titre": "Hire with Your Head: Using Performance-Based Hiring to Build Outstanding Teams",
+   "annee": "2012",
+   "idee": "Recrutement fondé sur les performances attendues plutôt que sur les compétences listées ; entretiens orientés résultats.",
+   "apport": "Méthode de l'entretien par performance utilisée dans les chapitres d'entretien structuré."
+  },
+  {
+   "auteur": "Steven Mostyn",
+   "titre": "Recruiting 101: The Essentials for Every Recruiter",
+   "annee": "2004",
+   "idee": "Guide opérationnel du recruteur : sourcing, screening, closing, négociation, indicateurs de performance.",
+   "apport": "Checklists et KPI intégrés dans les exercices pratiques de chaque chapitre."
+  },
+  {
+   "auteur": "Rusty Rueff & Hank Stringer",
+   "titre": "Talent Force: A New Mandate for Effective Management of Human Capital",
+   "annee": "2006",
+   "idee": "Le capital humain doit être géré comme un actif stratégique avec des métriques précises et une gouvernance dédiée.",
+   "apport": "Indicateurs de suivi du recrutement et de la rétention pour la partie pilotage."
+  },
+  {
+   "auteur": "René Carayol",
+   "titre": "Le Talent, c'est comme l'argent : ça se gère",
+   "annee": "2008",
+   "idee": "Le talent se cultive par la diversité des expériences, le mentorat et la responsabilité progressive.",
+   "apport": "Perspective francophone et métaphores utilisées pour illustrer les chapitres de fidélisation."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 – Poser les fondations : stratégie, marque employeur et préparation",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le recrutement, un acte stratégique qui se prépare",
+     "objectif": "Faire comprendre que recruter n'est pas un acte administratif mais un investissement stratégique, et poser le cadre mental du recruteur.",
+     "sections": [
+      "1.1 Pourquoi 70 % des recrutements échouent avant même l'entretien",
+      "1.2 Le coût réel d'un mauvais recrutement : chiffres et effets domino",
+      "1.3 Passer d'une logique de poste vacant à une logique de mission à accomplir",
+      "1.4 Les trois piliers : attirer, évaluer, fidéliser – une boucle continue",
+      "1.5 Définir votre philosophie de recrutement en cinq principes",
+      "1.6 Le rôle du recruteur : chef d'orchestre, pas simple filtre"
+     ],
+     "exercices": [
+      "Cartographier le coût d'un poste vacant dans votre organisation (calcul guidé sur 12 mois)",
+      "Rédiger votre charte de recrutement en cinq principes non négociables",
+      "Auditer vos trois derniers recrutements : où la chaîne a-t-elle cassé ?"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Construire une marque employeur qui attire avant même l'offre",
+     "objectif": "Montrer comment la perception externe de l'entreprise conditionne la qualité des candidatures et comment la construire pas à pas.",
+     "sections": [
+      "2.1 Qu'est-ce qu'une marque employeur concrètement (au-delà du slogan)",
+      "2.2 Les six points de contact du parcours candidat",
+      "2.3 Audit de votre réputation : Glassdoor, LinkedIn, bouche-à-oreille",
+      "2.4 Définir votre proposition de valeur employeur (EVP) en une phrase",
+      "2.5 Aligner promesse interne et promesse externe",
+      "2.6 Faire de vos collaborateurs actuels vos premiers ambassadeurs"
+     ],
+     "exercices": [
+      "Réaliser un audit de votre présence en ligne en tant qu'employeur (grille fournie)",
+      "Rédiger votre EVP en une phrase puis la décliner en trois messages clés",
+      "Interviewer trois collaborateurs récents : qu'est-ce qui les a fait rester ?"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Définir le besoin : du poste à la mission",
+     "objectif": "Apprendre à formaliser le vrai besoin avant de rédiger quoi que ce soit, en utilisant la méthode du scorecard et de la performance attendue.",
+     "sections": [
+      "3.1 Erreur n° 1 : recopier l'ancienne fiche de poste",
+      "3.2 La méthode Topgrading : identifier les résultats attendus",
+      "3.3 Le scorecard : objectifs, compétences, valeurs, non-négociables",
+      "3.4 Distinguer compétences techniques, comportementales et potentiel",
+      "3.5 Valider le besoin avec le manager opérationnel (script de réunion)",
+      "3.6 Fixer le niveau de séniorité et la fourchette salariale en amont",
+      "3.7 Le brief de recrutement : document unique de référence"
+     ],
+     "exercices": [
+      "Remplir un scorecard vierge pour un poste réel de votre organisation",
+      "Simuler la réunion de cadrage avec le manager (jeu de rôle scripté)",
+      "Rédiger le brief de recrutement en une page maximum"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Sourcer intelligemment : aller chercher les talents là où ils sont",
+     "objectif": "Élargir le vivier au-delà des candidatures spontanées et maîtriser les canaux de sourcing modernes.",
+     "sections": [
+      "4.1 Les profils passifs : 75 % des meilleurs talents ne cherchent pas",
+      "4.2 Cartographier vos bassins de talents (concurrents, écoles, communautés)",
+      "4.3 LinkedIn, GitHub, Behance, forums : adapter le canal au profil",
+      "4.4 Le réseau interne : cooptation structurée et primes",
+      "4.5 L'approche directe : message d'accroche en 150 mots",
+      "4.6 Les événements, meetups et hackathons comme terrain de chasse",
+      "4.7 Construire un vivier (talent pool) vivant et qualifié"
+     ],
+     "exercices": [
+      "Rédiger trois messages d'approche directe pour des profils distincts",
+      "Mettre en place un programme de cooptation en cinq étapes",
+      "Créer votre liste de 50 profils cibles et planifier les contacts sur 4 semaines"
+     ]
+    }
+   ],
+   "parties_note": "continuation ci-dessous"
+  },
+  {
+   "titre": "Partie 2 – Rédiger des offres qui donnent envie de postuler",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "L'anatomie d'une offre magnétique : structure et psychologie",
+     "objectif": "Décomposer les éléments d'une offre d'emploi qui capte l'attention et déclenche l'action, en s'appuyant sur la psychologie de la lecture.",
+     "sections": [
+      "5.1 Les 7 secondes de la première impression : titre et accroche",
+      "5.2 La pyramide inversée appliquée à l'offre d'emploi",
+      "5.3 Ce que le candidat lit vraiment (et ce qu'il saute)",
+      "5.4 Le pouvoir du concret : chiffres, projets, impact",
+      "5.5 Éviter le jargon, les clichés et les listes interminables",
+      "5.6 L'architecture visuelle : aérer, hiérarchiser, respirer"
+     ],
+     "exercices": [
+      "Réécrire une offre existante en appliquant la pyramide inversée",
+      "Test A/B : soumettre deux versions d'une même offre à cinq personnes et mesurer l'attrait",
+      "Rédiger une accroche de trois lignes pour un poste technique difficile"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Le titre et l'accroche : faire cliquer en une ligne",
+     "objectif": "Maîtriser l'art du titre de poste et du paragraphe d'ouverture pour maximiser le taux de clic et de candidature.",
+     "sections": [
+      "6.1 Le titre : précision, attractivité, référencement (SEO emploi)",
+      "6.2 Les mots qui déclenchent : verbes d'action, bénéfices, défi",
+      "6.3 Le paragraphe d'ouverture : raconter une mission, pas décrire une fonction",
+      "6.4 Intégrer la marque employeur dès la première ligne",
+      "6.5 Adapter le ton à la cible (junior, senior, tech, commercial)",
+      "6.6 Erreurs fatales : titres génériques, acronymes, exigences dès la ligne 1"
+     ],
+     "exercices": [
+      "Écrire cinq titres différents pour le même poste et les tester sur un panel",
+      "Rédiger trois accroches de tonalité différente (inspirante, pragmatique, provocante)",
+      "Analyser dix offres concurrentes et identifier les points faibles"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Décrire la mission, les responsabilités et l'impact",
+     "objectif": "Transformer la liste de tâches en récit de mission engageant qui montre au candidat ce qu'il va accomplir et pourquoi c'est important.",
+     "sections": [
+      "7.1 Du task-based au impact-based : changer de paradigme",
+      "7.2 La règle des 5 à 7 responsabilités clés (pas 25)",
+      "7.3 Formuler en résultats attendus plutôt qu'en activités",
+      "7.4 Montrer l'impact sur l'équipe, le client, la société",
+      "7.5 Intégrer des projets concrets et des premiers défis à 90 jours",
+      "7.6 Le langage inclusif : élargir sans diluer"
+     ],
+     "exercices": [
+      "Réécrire une liste de 20 tâches en 6 missions orientées impact",
+      "Rédiger le paragraphe 'Vos 90 premiers jours' pour un poste clé",
+      "Vérifier l'inclusivité du texte avec une grille de relecture fournie"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Présenter l'entreprise, la culture et les avantages",
+     "objectif": "Donner envie de rejoindre l'organisation en montrant la culture, les valeurs vécues et les avantages concrets sans tomber dans le catalogue.",
+     "sections": [
+      "8.1 Raconter l'entreprise en trois phrases : qui, pour qui, pourquoi",
+      "8.2 La culture : la décrire par des exemples, pas par des adjectifs",
+      "8.3 Les avantages qui comptent vraiment (et ceux qui sont du bruit)",
+      "8.4 Transparence salariale : pourquoi afficher la fourchette augmente les candidatures qualifiées",
+      "8.5 Télétravail, flexibilité, formation : les attentes post-2020",
+      "8.6 Le témoignage collaborateur : la preuve sociale intégrée à l'offre"
+     ],
+     "exercices": [
+      "Rédiger le paragraphe 'Notre culture' en trois exemples concrets",
+      "Lister vos avantages et les classer par valeur perçue (sondage interne)",
+      "Intégrer un témoignage authentique de 80 mots dans une offre"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le call-to-action et l'expérience candidat dès la lecture",
+     "objectif": "Optimiser la fin de l'offre et le processus de candidature pour réduire la friction et maximiser la conversion.",
+     "sections": [
+      "9.1 Le call-to-action : clair, chaleureux, engageant",
+      "9.2 Réduire les étapes de candidature : moins de clics, plus de candidats",
+      "9.3 L'offre sur mobile : 70 % des consultations se font sur smartphone",
+      "9.4 Le délai de réponse : promettre et tenir (48 heures)",
+      "9.5 Le rejet respectueux : message type qui préserve l'image",
+      "9.6 Mesurer la performance de vos offres (taux de clic, taux de conversion, qualité)"
+     ],
+     "exercices": [
+      "Chronométrer votre propre processus de candidature et éliminer deux étapes",
+      "Rédiger un e-mail de confirmation de réception et un e-mail de rejet bienveillant",
+      "Mettre en place un tableau de bord de suivi des offres (5 KPI minimum)"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Adapter l'offre aux profils rares et aux marchés tendus",
+     "objectif": "Développer des stratégies de rédaction et de diffusion spécifiques pour les postes difficiles à pourvoir (tech, médical, artisanat, data).",
+     "sections": [
+      "10.1 Comprendre le rapport de force : le candidat choisit, pas l'inverse",
+      "10.2 Personnaliser l'offre : lettre d'accroche + offre ciblée",
+      "10.3 Mettre en avant les défis techniques et la stack pour les profils tech",
+      "10.4 La promesse de développement : formation, mentorat, évolution",
+      "10.5 Diffusion multicanal et timing : quand et où publier",
+      "10.6 Le suivi proactif : relancer sans harceler (séquence en 3 touches)",
+      "10.7 Négocier avant l'entretien : répondre aux objections salariales dans l'offre"
+     ],
+     "exercices": [
+      "Rédiger une lettre d'accroche personnalisée pour un profil passif identifié",
+      "Créer un calendrier de diffusion multicanal sur 3 semaines",
+      "Écrire une séquence de relance en trois e-mails espacés de 5 jours"
+     ]
+    }
+   ],
+   "parties_note": "continuation"
+  },
+  {
+   "titre": "Partie 3 – Mener des entretiens structurés et équitables",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Préparer l'entretien : la grille, le comité, la logistique",
+     "objectif": "Éliminer l'improvisation en construisant un dispositif d'entretien reproductible, équitable et juridiquement solide.",
+     "sections": [
+      "11.1 Pourquoi l'entretien non structuré prédit moins bien que le lancer de pièce",
+      "11.2 Construire la grille d'entretien : compétences, questions, échelle de notation",
+      "11.3 Définir le panel : qui interroge quoi, combien d'entretiens",
+      "11.4 La logistique : lieu, durée, matériel, accessibilité",
+      "11.5 Le cadre juridique français : questions interdites, non-discrimination",
+      "11.6 Préparer le candidat : e-mail d'invitation, déroulé, attentes",
+      "11.7 Le briefing du panel : aligner les évaluateurs avant l'entretien"
+     ],
+     "exercices": [
+      "Construire une grille d'entretien complète pour un poste de votre choix",
+      "Rédiger l'e-mail d'invitation à l'entretien (ton, informations, logistique)",
+      "Simuler un briefing de panel de 15 minutes (script fourni)"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Les 10 premières minutes : accueil, cadre et mise en confiance",
+     "objectif": "Maîtriser l'ouverture de l'entretien pour réduire le stress du candidat, poser le cadre et instaurer une relation de confiance.",
+     "sections": [
+      "12.1 L'accueil physique et virtuel : les détails qui comptent",
+      "12.2 Se présenter et présenter le déroulé (le contrat d'entretien)",
+      "12.3 Briser la glace sans banalité : trois techniques",
+      "12.4 Expliquer la méthode : 'Voici comment nous allons procéder'",
+      "12.5 Le langage corporel du recruteur : écoute active, posture ouverte",
+      "12.6 Gérer un candidat visiblement stressé : techniques de recadrage"
+     ],
+     "exercices": [
+      "Pratiquer l'ouverture face caméra et se réévaluer (grille d'auto-observation)",
+      "Lister cinq questions de brise-glace adaptées à votre secteur",
+      "Jouer un entretien avec un candidat stressé et trouver les mots justes"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Les questions comportementales et situationnelles : la méthode STAR",
+     "objectif": "Apprendre à formuler des questions qui révèlent les comportements passés et la capacité de projection, en évitant les questions hypothétiques vagues.",
+     "sections": [
+      "13.1 Pourquoi 'Racontez-moi une fois où…' vaut mieux que 'Que feriez-vous si…'",
+      "13.2 La méthode STAR : Situation, Tâche, Action, Résultat",
+      "13.3 Les 12 questions comportementales clés par compétence",
+      "13.4 Les questions de suivi : creuser sans interroger",
+      "13.5 Détecter les réponses préparées et les zones d'ombre",
+      "13.6 Adapter les questions au niveau de séniorité",
+      "13.7 Noter en temps réel : technique de prise de notes structurée"
+     ],
+     "exercices": [
+      "Rédiger trois questions STAR par compétence pour votre scorecard",
+      "Jouer un entretien complet en utilisant uniquement des questions comportementales",
+      "Analyser une réponse STAR enregistrée et identifier les informations manquantes"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Évaluer la culture, les valeurs et le potentiel",
+     "objectif": "Mesurer le fit culturel et le potentiel d'évolution sans tomber dans le clonage ni la discrimination.",
+     "sections": [
+      "14.1 Définir la culture : comportements observables, pas slogans",
+      "14.2 Les questions de valeurs : mise en situation éthique et choix",
+      "14.3 Évaluer le potentiel : agilité d'apprentissage, curiosité, humilité",
+      "14.4 Le risque du 'fit culturel' comme biais de similarité",
+      "14.5 Diversité cognitive : chercher la complémentarité, pas la copie",
+      "14.6 L'entretien par performance : projeter le candidat dans ses 12 premiers mois"
+     ],
+     "exercices": [
+      "Lister cinq comportements observables de votre culture d'entreprise",
+      "Concevoir une mise en situation éthique liée à votre secteur",
+      "Mener un mini-entretien 'projection 12 mois' avec un collègue"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Les entretiens spécifiques : technique, panel, mise en situation, final",
+     "objectif": "Maîtriser les formats d'entretien complémentaires et les articuler dans un parcours candidat cohérent.",
+     "sections": [
+      "15.1 L'entretien technique : exercices pratiques, code review, cas réel",
+      "15.2 L'entretien panel : rôles, répartition des questions, débriefing",
+      "15.3 La mise en situation et l'étude de cas : concevoir un exercice pertinent",
+      "15.4 L'entretien final avec la direction : vision, ambition, engagement",
+      "15.5 L'entretien de groupe : observer la dynamique (quand c'est pertinent)",
+      "15.6 Le débriefing structuré du panel : grille croisée, consensus, vote"
+     ],
+     "exercices": [
+      "Concevoir un exercice pratique de 45 minutes pour un poste technique",
+      "Organiser un entretien panel simulé avec quatre collègues et débriefing",
+      "Rédiger le compte rendu d'entretien standardisé (template fourni)"
+     ]
+    }
+   ],
+   "parties_note": "continuation"
+  },
+  {
+   "titre": "Partie 4 – Décider, proposer et intégrer",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Prendre la décision : éviter les biais et choisir objectivement",
+     "objectif": "Structurer le processus de décision post-entretien pour limiter les biais cognitifs et sélectionner le meilleur profil.",
+     "sections": [
+      "16.1 Les dix biais cognitifs du recruteur (halo, confirmation, contraste…)",
+      "16.2 La grille de scoring : noter à chaud, comparer à froid",
+      "16.3 Le débriefing : chacun parle, personne ne domine",
+      "16.4 Gérer le désaccord dans le panel : méthode de consensus",
+      "16.5 La vérification des références : qui appeler, quoi demander, cadre légal",
+      "16.6 Le test de la décision inversée : 'Si cette personne était déjà en poste, la garderais-je ?'"
+     ],
+     "exercices": [
+      "Noter un entretien fictif sur la grille de scoring et comparer avec un collègue",
+      "Préparer un script d'appel de références en huit questions",
+      "Réaliser l'exercice de la décision inversée sur vos trois derniers recrutements"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Faire l'offre : négocier, convaincre et sécuriser",
+     "objectif": "Transformer la décision en proposition acceptée en maîtrisant la négociation salariale et la communication persuasive.",
+     "sections": [
+      "17.1 Le timing : ne pas laisser refroidir l'enthousiasme (règle des 48 h)",
+      "17.2 L'appel d'offre : script, ton, personnalisation",
+      "17.3 Présenter le package global : fixe, variable, avantages, perspectives",
+      "17.4 Gérer la contre-offre du candidat : écoute, marge, créativité",
+      "17.5 La lettre d'offre : contenu juridique et ton humain",
+      "17.6 Le délai de réflexion : respecter sans perdre le momentum",
+      "17.7 Le refus d'offre : analyser, répondre, garder le contact"
+     ],
+     "exercices": [
+      "Simuler un appel d'offre avec un candidat qui a une contre-proposition",
+      "Rédiger une lettre d'offre complète et chaleureuse",
+      "Créer une FAQ des objections candidat (salaire, télétravail, mobilité) et vos réponses"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "L'onboarding : les 90 jours qui déterminent la fidélité",
+     "objectif": "Concevoir un parcours d'intégration structuré qui transforme le nouveau recrutement en collaborateur engagé dès le premier trimestre.",
+     "sections": [
+      "18.1 Les chiffres : 20 % des démissions ont lieu dans les 45 premiers jours",
+      "18.2 Avant le jour J : logistique, accès, e-mail de bienvenue, parrain",
+      "18.3 La première semaine : immersion, rencontres, premières victoires",
+      "18.4 Le plan de 30-60-90 jours : objectifs progressifs et feedback",
+      "18.5 Le rôle du manager : points de contact hebdomadaires le premier mois",
+      "18.6 Le buddy system : choisir et former le parrain",
+      "18.7 Le bilan d'intégration à 90 jours : mesurer, ajuster, célébrer"
+     ],
+     "exercices": [
+      "Construire le planning d'onboarding jour par jour pour la première semaine",
+      "Rédiger l'e-mail de bienvenue envoyé 48 heures avant l'arrivée",
+      "Créer le template du plan 30-60-90 jours adapté à votre organisation"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "La période d'essai : évaluer, accompagner, décider",
+     "objectif": "Faire de la période d'essai un vrai outil d'évaluation mutuelle et non une simple formalité administrative.",
+     "sections": [
+      "19.1 Le cadre juridique français : durées, renouvellement, rupture",
+      "19.2 Fixer des objectifs de période d'essai dès le jour 1",
+      "19.3 Les entretiens de suivi : fréquence, contenu, posture",
+      "19.4 Les signaux d'alerte : comment les repérer sans surinterpréter",
+      "19.5 La rupture de période d'essai : quand, comment, avec humanité",
+      "19.6 La validation : formaliser la fin d'essai comme un rituel positif"
+     ],
+     "exercices": [
+      "Rédiger la lettre de fixation d'objectifs de période d'essai",
+      "Préparer la trame de l'entretien de suivi à 30 jours",
+      "Écrire le script d'une fin de période d'essai non concluante avec bienveillance"
+     ]
+    }
+   ],
+   "parties_note": "continuation"
+  },
+  {
+   "titre": "Partie 5 – Fidéliser les talents : retenir, développer, faire grandir",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Comprendre pourquoi les gens restent (et pourquoi ils partent)",
+     "objectif": "Identifier les vrais moteurs de fidélisation au-delà du salaire, en s'appuyant sur la recherche en motivation et les données de turnover.",
+     "sections": [
+      "20.1 Les cinq premières raisons de départ (et ce n'est pas le salaire)",
+      "20.2 Autonomie, maîtrise, finalité : le triangle de Pink appliqué",
+      "20.3 Le rôle du manager direct : 70 % de l'engagement",
+      "20.4 Le contrat psychologique : promesses implicites et ruptures",
+      "20.5 L'entretien de rétention : poser la question avant la démission",
+      "20.6 Les données : mesurer l'engagement et prédire les départs"
+     ],
+     "exercices": [
+      "Mener trois entretiens de rétention avec des collaborateurs clés",
+      "Cartographier les facteurs de risque de départ dans votre équipe",
+      "Créer un baromètre d'engagement trimestriel en cinq questions"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Développer les compétences et tracer des parcours",
+     "objectif": "Construire des parcours de développement individualisés qui donnent envie de rester parce qu'on grandit.",
+     "sections": [
+      "21.1 Le plan de développement individuel (PDI) : co-construit, pas imposé",
+      "21.2 Formation continue : budget, formats, temps dédié",
+      "21.3 Le mentorat interne : structurer sans rigidifier",
+      "21.4 La mobilité interne horizontale et verticale",
+      "21.5 Les projets stretch : sortir de la zone de confort en sécurité",
+      "21.6 La revue de talent annuelle : calibrer, projeter, investir",
+      "21.7 Communiquer les opportunités : transparence et équité"
+     ],
+     "exercices": [
+      "Construire un PDI type en une page (objectifs, actions, échéances, ressources)",
+      "Lancer un programme de mentorat pilote avec quatre binômes",
+      "Organiser une revue de talent simulée pour une équipe de huit personnes"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Reconnaissance, feedback et culture de l'appréciation",
+     "objectif": "Installer une culture de reconnaissance régulière et authentique qui nourrit l'engagement quotidien.",
+     "sections": [
+      "22.1 La reconnaissance : fréquence, spécificité, sincérité (les 3 S)",
+      "22.2 Le feedback constructif : méthode SBI (Situation, Behavior, Impact)",
+      "22.3 Les rituels de reconnaissance : hebdo, mensuel, annuel",
+      "22.4 La reconnaissance par les pairs : programmes et outils",
+      "22.5 Célébrer les victoires : petites et grandes, individuelles et collectives",
+      "22.6 Le feedback descendant ET ascendant : créer la boucle complète"
+     ],
+     "exercices": [
+      "Instaurer un rituel de reconnaissance hebdomadaire dans votre équipe",
+      "Pratiquer le feedback SBI sur trois situations réelles",
+      "Concevoir un programme de reconnaissance par les pairs en quatre étapes"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Flexibilité, équilibre et qualité de vie au travail",
+     "objectif": "Intégrer les attentes contemporaines de flexibilité et de bien-être comme leviers majeurs de rétention.",
+     "sections": [
+      "23.1 Télétravail et hybridation : poser un cadre clair et équitable",
+      "23.2 L'autonomie dans l'organisation du temps : horaires, RTT, congés",
+      "23.3 La charge de travail : détecter la surcharge avant le burnout",
+      "23.4 Le droit à la déconnexion : politique et culture",
+      "23.5 L'environnement de travail : espace, outils, confort",
+      "23.6 Les moments de vie : parentalité, aidants, transitions personnelles",
+      "23.7 Mesurer la qualité de vie au travail : indicateurs et enquêtes"
+     ],
+     "exercices": [
+      "Rédiger votre charte de télétravail en dix points",
+      "Mener un audit de charge de travail sur une équipe type",
+      "Concevoir un plan d'action QVT en cinq initiatives sur six mois"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le cycle vertueux : fidéliser pour mieux attirer",
+     "objectif": "Boucler la boucle en montrant comment la fidélisation alimente la marque employeur, le sourcing et la qualité des futures offres, créant un système auto-renforçant.",
+     "sections": [
+      "24.1 Les collaborateurs fidèles comme ambassadeurs de recrutement",
+      "24.2 Le programme alumni : garder le lien avec les anciens",
+      "24.3 Les données de rétention comme argument dans vos offres",
+      "24.4 L'amélioration continue : itérer sur vos pratiques de recrutement",
+      "24.5 Construire votre tableau de bord global : attirer, choisir, fidéliser",
+      "24.6 Votre plan d'action 90 jours : par où commencer demain",
+      "24.7 Le mot de la fin : recruter, c'est construire une relation"
+     ],
+     "exercices": [
+      "Créer votre tableau de bord recrutement-fidélisation (10 indicateurs)",
+      "Rédiger votre plan d'action 90 jours en trois chantiers prioritaires",
+      "Écrire votre manifeste personnel de recruteur en dix engagements"
+     ]
+    }
+   ]
+  }
+ ]
+}
