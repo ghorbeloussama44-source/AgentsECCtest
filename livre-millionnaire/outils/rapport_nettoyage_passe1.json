@@ -1,0 +1,759 @@
+{
+  "genere_le": "2026-10-10T07:56:48.621436+00:00",
+  "duree_totale_s": 1641.81,
+  "fichiers": [
+    {
+      "fichier": "00_introduction.md",
+      "mots_avant": 3673,
+      "mots_après": 3600,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6661,
+        "completion_tokens": 6742,
+        "total_tokens": 13403
+      },
+      "duree_s": 169.09,
+      "statut": "ok"
+    },
+    {
+      "fichier": "99_conclusion.md",
+      "mots_avant": 2885,
+      "mots_après": 2885,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 5432,
+        "completion_tokens": 6071,
+        "total_tokens": 11503
+      },
+      "duree_s": 185.11,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch01.md",
+      "mots_avant": 4675,
+      "mots_après": 4150,
+      "motifs_avant": [
+        "Dites-moi",
+        "dites-moi",
+        "je peux :",
+        "Passer directement au chapitre"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 8613,
+        "completion_tokens": 7846,
+        "total_tokens": 16459
+      },
+      "duree_s": 228.9,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch02.md",
+      "mots_avant": 3266,
+      "mots_après": 3266,
+      "motifs_avant": [
+        "je peux :",
+        "je m'y mets",
+        "je m'y mets"
+      ],
+      "motifs_après": [
+        "je peux :",
+        "je m'y mets",
+        "je m'y mets"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 30405,
+        "completion_tokens": 27693,
+        "total_tokens": 58098
+      },
+      "duree_s": 785.8,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch03.md",
+      "mots_avant": 3939,
+      "mots_après": 3808,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 7355,
+        "completion_tokens": 6852,
+        "total_tokens": 14207
+      },
+      "duree_s": 209.82,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch04.md",
+      "mots_avant": 3364,
+      "mots_après": 3325,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6479,
+        "completion_tokens": 5967,
+        "total_tokens": 12446
+      },
+      "duree_s": 158.54,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch05.md",
+      "mots_avant": 3316,
+      "mots_après": 3021,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6042,
+        "completion_tokens": 6021,
+        "total_tokens": 12063
+      },
+      "duree_s": 179.57,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch06.md",
+      "mots_avant": 3054,
+      "mots_après": 3054,
+      "motifs_avant": [
+        "Dites-moi",
+        "Dites-moi",
+        "Si vous souhaitez que j",
+        "Si vous souhaitez que j",
+        "je peux :",
+        "je peux :",
+        "je m'y mets",
+        "je m'y mets",
+        "Passer directement au chapitre",
+        "Passer directement au chapitre"
+      ],
+      "motifs_après": [
+        "Dites-moi",
+        "Dites-moi",
+        "Si vous souhaitez que j",
+        "Si vous souhaitez que j",
+        "je peux :",
+        "je peux :",
+        "je m'y mets",
+        "je m'y mets",
+        "Passer directement au chapitre",
+        "Passer directement au chapitre"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 28310,
+        "completion_tokens": 23779,
+        "total_tokens": 52089
+      },
+      "duree_s": 643.95,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch07.md",
+      "mots_avant": 2948,
+      "mots_après": 2948,
+      "motifs_avant": [
+        "Dites-moi",
+        "Souhaitez-vous que je",
+        "Souhaitez-vous que je"
+      ],
+      "motifs_après": [
+        "Dites-moi",
+        "Souhaitez-vous que je",
+        "Souhaitez-vous que je"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 28190,
+        "completion_tokens": 25371,
+        "total_tokens": 53561
+      },
+      "duree_s": 640.08,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch08.md",
+      "mots_avant": 3250,
+      "mots_après": 2963,
+      "motifs_avant": [
+        "je peux :",
+        "je m'y mets",
+        "Passer directement au chapitre"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6084,
+        "completion_tokens": 7064,
+        "total_tokens": 13148
+      },
+      "duree_s": 245.25,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch09.md",
+      "mots_avant": 3224,
+      "mots_après": 2766,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6084,
+        "completion_tokens": 5687,
+        "total_tokens": 11771
+      },
+      "duree_s": 165.11,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch10.md",
+      "mots_avant": 3266,
+      "mots_après": 3100,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 5961,
+        "completion_tokens": 5716,
+        "total_tokens": 11677
+      },
+      "duree_s": 61.56,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch11.md",
+      "mots_avant": 3324,
+      "mots_après": 3119,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6080,
+        "completion_tokens": 6149,
+        "total_tokens": 12229
+      },
+      "duree_s": 176.92,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch12.md",
+      "mots_avant": 3537,
+      "mots_après": 3293,
+      "motifs_avant": [
+        "Dites-moi",
+        "je peux :"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6583,
+        "completion_tokens": 6879,
+        "total_tokens": 13462
+      },
+      "duree_s": 259.16,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch13.md",
+      "mots_avant": 3289,
+      "mots_après": 3168,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6237,
+        "completion_tokens": 6728,
+        "total_tokens": 12965
+      },
+      "duree_s": 201.9,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch14.md",
+      "mots_avant": 3443,
+      "mots_après": 3275,
+      "motifs_avant": [
+        "Si vous souhaitez que j",
+        "je m'y mets"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6580,
+        "completion_tokens": 6742,
+        "total_tokens": 13322
+      },
+      "duree_s": 208.94,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch15.md",
+      "mots_avant": 3225,
+      "mots_après": 2842,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6002,
+        "completion_tokens": 5576,
+        "total_tokens": 11578
+      },
+      "duree_s": 159.03,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch16.md",
+      "mots_avant": 3260,
+      "mots_après": 3072,
+      "motifs_avant": [
+        "Si vous souhaitez que j",
+        "Souhaitez-vous que je"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6379,
+        "completion_tokens": 6759,
+        "total_tokens": 13138
+      },
+      "duree_s": 198.19,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch17.md",
+      "mots_avant": 3536,
+      "mots_après": 3204,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6646,
+        "completion_tokens": 6565,
+        "total_tokens": 13211
+      },
+      "duree_s": 182.46,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch18.md",
+      "mots_avant": 3396,
+      "mots_après": 4131,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6583,
+        "completion_tokens": 8620,
+        "total_tokens": 15203
+      },
+      "duree_s": 425.94,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch19.md",
+      "mots_avant": 3416,
+      "mots_après": 3416,
+      "motifs_avant": [
+        "Dites-moi",
+        "Dites-moi",
+        "Dites-moi",
+        "Si vous souhaitez que j",
+        "Ce que je peux faire",
+        "je m'y mets",
+        "Passer au chapitre",
+        "Passer au chapitre"
+      ],
+      "motifs_après": [
+        "Dites-moi",
+        "Dites-moi",
+        "Dites-moi",
+        "Si vous souhaitez que j",
+        "Ce que je peux faire",
+        "je m'y mets",
+        "Passer au chapitre",
+        "Passer au chapitre"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 31215,
+        "completion_tokens": 29062,
+        "total_tokens": 60277
+      },
+      "duree_s": 668.85,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch20.md",
+      "mots_avant": 3981,
+      "mots_après": 3941,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 7273,
+        "completion_tokens": 7071,
+        "total_tokens": 14344
+      },
+      "duree_s": 181.3,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch21.md",
+      "mots_avant": 3418,
+      "mots_après": 3421,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6429,
+        "completion_tokens": 6198,
+        "total_tokens": 12627
+      },
+      "duree_s": 169.18,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch22.md",
+      "mots_avant": 3202,
+      "mots_après": 2766,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6244,
+        "completion_tokens": 5563,
+        "total_tokens": 11807
+      },
+      "duree_s": 153.58,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch23.md",
+      "mots_avant": 3559,
+      "mots_après": 3497,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6609,
+        "completion_tokens": 6893,
+        "total_tokens": 13502
+      },
+      "duree_s": 186.59,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch24.md",
+      "mots_avant": 3635,
+      "mots_après": 3635,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6578,
+        "completion_tokens": 6746,
+        "total_tokens": 13324
+      },
+      "duree_s": 161.39,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch25.md",
+      "mots_avant": 3748,
+      "mots_après": 3748,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6744,
+        "completion_tokens": 6781,
+        "total_tokens": 13525
+      },
+      "duree_s": 173.55,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch26.md",
+      "mots_avant": 3308,
+      "mots_après": 3238,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 5977,
+        "completion_tokens": 5737,
+        "total_tokens": 11714
+      },
+      "duree_s": 153.94,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch27.md",
+      "mots_avant": 4533,
+      "mots_après": 4378,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 8381,
+        "completion_tokens": 8547,
+        "total_tokens": 16928
+      },
+      "duree_s": 235.08,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch28.md",
+      "mots_avant": 3289,
+      "mots_après": 3245,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6045,
+        "completion_tokens": 6261,
+        "total_tokens": 12306
+      },
+      "duree_s": 180.6,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch29.md",
+      "mots_avant": 3948,
+      "mots_après": 3789,
+      "motifs_avant": [
+        "Dites-moi",
+        "je peux :",
+        "je m'y mets"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 7186,
+        "completion_tokens": 7339,
+        "total_tokens": 14525
+      },
+      "duree_s": 192.68,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch30.md",
+      "mots_avant": 3533,
+      "mots_après": 3533,
+      "motifs_avant": [
+        "Si vous souhaitez que j",
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [
+        "Si vous souhaitez que j",
+        "Si vous souhaitez que j"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 32475,
+        "completion_tokens": 28580,
+        "total_tokens": 61055
+      },
+      "duree_s": 678.91,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch31.md",
+      "mots_avant": 3774,
+      "mots_après": 3749,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6855,
+        "completion_tokens": 7349,
+        "total_tokens": 14204
+      },
+      "duree_s": 185.77,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch32.md",
+      "mots_avant": 3631,
+      "mots_après": 3155,
+      "motifs_avant": [
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6705,
+        "completion_tokens": 6198,
+        "total_tokens": 12903
+      },
+      "duree_s": 195.53,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch33.md",
+      "mots_avant": 3322,
+      "mots_après": 3018,
+      "motifs_avant": [
+        "Si vous souhaitez que j",
+        "je m'y mets"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6323,
+        "completion_tokens": 5877,
+        "total_tokens": 12200
+      },
+      "duree_s": 175.58,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch34.md",
+      "mots_avant": 3354,
+      "mots_après": 3354,
+      "motifs_avant": [
+        "Si vous souhaitez que j",
+        "je peux :",
+        "je m'y mets",
+        "Passer directement au chapitre"
+      ],
+      "motifs_après": [
+        "Si vous souhaitez que j",
+        "je peux :",
+        "je m'y mets",
+        "Passer directement au chapitre"
+      ],
+      "tentatives": 5,
+      "tokens": {
+        "prompt_tokens": 30720,
+        "completion_tokens": 27065,
+        "total_tokens": 57785
+      },
+      "duree_s": 662.5,
+      "statut": "echec_garde_original"
+    },
+    {
+      "fichier": "ch35.md",
+      "mots_avant": 4752,
+      "mots_après": 4445,
+      "motifs_avant": [
+        "Dites-moi",
+        "Si vous souhaitez que j"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 8509,
+        "completion_tokens": 8346,
+        "total_tokens": 16855
+      },
+      "duree_s": 211.05,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch36.md",
+      "mots_avant": 3346,
+      "mots_après": 3222,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6385,
+        "completion_tokens": 6312,
+        "total_tokens": 12697
+      },
+      "duree_s": 173.32,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch37.md",
+      "mots_avant": 3232,
+      "mots_après": 2770,
+      "motifs_avant": [
+        "Dites-moi",
+        "Dites-moi",
+        "Si vous souhaitez que j",
+        "je peux :",
+        "Ce que je peux faire",
+        "je m'y mets",
+        "Passer directement au chapitre"
+      ],
+      "motifs_après": [],
+      "tentatives": 3,
+      "tokens": {
+        "prompt_tokens": 18030,
+        "completion_tokens": 18679,
+        "total_tokens": 36709
+      },
+      "duree_s": 461.73,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch38.md",
+      "mots_avant": 3684,
+      "mots_après": 3614,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6738,
+        "completion_tokens": 8073,
+        "total_tokens": 14811
+      },
+      "duree_s": 250.59,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch39.md",
+      "mots_avant": 3205,
+      "mots_après": 3205,
+      "motifs_avant": [],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 6007,
+        "completion_tokens": 5899,
+        "total_tokens": 11906
+      },
+      "duree_s": 207.84,
+      "statut": "ok"
+    },
+    {
+      "fichier": "ch40.md",
+      "mots_avant": 4606,
+      "mots_après": 4424,
+      "motifs_avant": [
+        "Dites-moi",
+        "je peux :"
+      ],
+      "motifs_après": [],
+      "tentatives": 1,
+      "tokens": {
+        "prompt_tokens": 8387,
+        "completion_tokens": 7923,
+        "total_tokens": 16310
+      },
+      "duree_s": 230.07,
+      "statut": "ok"
+    }
+  ]
+}

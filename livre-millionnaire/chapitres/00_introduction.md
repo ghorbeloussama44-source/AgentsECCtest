@@ -100,9 +100,6 @@ Et toute construction commence par un plan.
 
 Le vôtre commence à la page suivante.
 
----
-
-*Avertissement : Le contenu de cet ouvrage est fourni à titre informatif et éducatif uniquement. Il ne constitue en aucun cas un conseil financier, fiscal ou juridique personnalisé. Les exemples et stratégies mentionnés sont illustratifs et ne garantissent aucun rendement ni résultat. Avant toute décision financière, consultez un professionnel qualifié et indépendant. L'auteur et l'éditeur déclinent toute responsabilité quant aux décisions prises sur la seule base des informations contenues dans ce livre.*
 ### Le contexte : pourquoi les anciennes règles sont brisées
 
 Pour comprendre la nécessité d'une nouvelle architecture, il faut d'abord observer le terrain sur lequel nous sommes censés construire. Et force est de constater que le terrain a changé. Le contrat social financier qui a guidé les générations précédentes est obsolète.
@@ -119,7 +116,7 @@ Dans ce monde de bruit, de volatilité et d'attention fragmentée, appliquer les
 
 Avant de poser la première pierre, nous devons nous mettre d'accord sur le vocabulaire. Tout au long de ce livre, nous utiliserons parfois les mots « argent » et « richesse » de manière interchangeable dans le langage courant, mais conceptuellement, ils désignent deux réalités radicalement différentes. Confondre les deux est l'erreur fatale qui pousse des millions de personnes à courir après un mirage toute leur vie.
 
-L'argent est un outil de mesure. C'est un flux, un moyen d'��change, un chiffre sur un compte en banque. Il est visible, quantifiable, et surtout, il peut être perdu, volé ou dépensé en une fraction de seconde. Vous pouvez gagner beaucoup d'argent tout en étant financièrement fragile. Le cadre supérieur qui gagne 10 000 euros par mois mais qui en dépense 11 000 pour financer un train de vie qui impressionne des gens qu'il n'aime pas n'a pas d'argent. Il a un problème de flux.
+L'argent est un outil de mesure. C'est un flux, un moyen d'échange, un chiffre sur un compte en banque. Il est visible, quantifiable, et surtout, il peut être perdu, volé ou dépensé en une fraction de seconde. Vous pouvez gagner beaucoup d'argent tout en étant financièrement fragile. Le cadre supérieur qui gagne 10 000 euros par mois mais qui en dépense 11 000 pour financer un train de vie qui impressionne des gens qu'il n'aime pas n'a pas d'argent. Il a un problème de flux.
 
 La richesse, en revanche, est un stock. C'est une capacité, une option, une liberté. Comme l'écrit brillamment Morgan Housel dans *La Psychologie de l'Argent* : « La richesse est ce que vous ne voyez pas. » C'est la voiture de luxe que vous n'avez pas achetée, le restaurant chic où vous n'êtes pas allé, les vêtements que vous n'avez pas portés. La richesse, c'est du temps acheté. C'est la capacité de dire « non » à un environnement toxique, de prendre une année sabbatique pour vous réinventer, de payer les meilleurs soins pour un proche malade sans avoir à contracter un prêt usurier.
 

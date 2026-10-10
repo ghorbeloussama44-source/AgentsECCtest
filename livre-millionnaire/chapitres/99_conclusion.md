@@ -2,7 +2,7 @@
 
 Vous avez entre les mains bien plus qu'un simple manuel de finance personnelle. En parcourant les quarante chapitres de cet ouvrage, vous n'avez pas seulement accumulé des connaissances ; vous avez entrepris un chantier de démolition et de reconstruction intérieure. Nous arrivons aujourd'hui au terme de ce livre, mais au tout début de votre véritable travail.
 
-Le plan directeur est déplié sur la table. Les fondations ont été auscultées, les matériaux sélectionnés, et les échafaudages montés. Pourtant, une vérité fondamentale de l'architecture s'applique à la richesse : *ce n'est pas la beauté du plan qui vous abrite, c'est la solidité des murs que vous avez bâtis.*
+Le plan directeur est déplié sur la table. Les fondations ont été auscultées, les matériaux sélectionnés, et les échafaudages montés. Pourtant, une vérité fondamentale de l'architecture s'applique à la richesse : *ce n'est pas la beaut�� du plan qui vous abrite, c'est la solidité des murs que vous avez bâtis.*
 
 Alors que nous nous apprêtons à refermer « L'Architecture de la Richesse », il est temps de prendre de la hauteur. Non pas pour contempler un monument achevé — car la richesse est un organisme vivant, en perpétuelle évolution — mais pour observer l'horizon avec le regard de celui qui ne subit plus son environnement, mais qui le façonne.
 
@@ -104,6 +104,7 @@ Le reste de votre vie financière commence aujourd'hui.
 
 **Avertissement légal et financier**
 *Le présent ouvrage, y compris cette conclusion, a une vocation strictement éducative, informative et philosophique. Les concepts, stratégies, véhicules d'investissement et réflexions fiscales ou juridiques qui y sont partagés ne constituent en aucun cas des conseils financiers, juridiques ou fiscaux personnalisés. Chaque situation individuelle est unique et dépend de votre juridiction, de votre profil de risque et de votre contexte personnel. Avant de prendre toute décision d'investissement, de création d'entreprise ou de restructuration patrimoniale, il est impératif de consulter des professionnels agréés (conseillers en gestion de patrimoine, avocats fiscalistes, experts-comptables). L'auteur et l'éditeur déclinent toute responsabilité quant aux pertes financières ou aux conséquences directes ou indirectes résultant de l'application des informations contenues dans ce livre. Investir comporte toujours des risques, y compris celui de perte en capital.*
+
 ### Post-scriptum : La Lettre que Vous Vous Écrirez dans Vingt Ans
 
 Il existe un exercice que je réserve toujours à la toute dernière page, comme on glisse une lettre dans les fondations d'un immeuble avant de couler le béton. Une capsule temporelle adressée à soi-même.

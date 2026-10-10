@@ -1,8 +1,9 @@
 
 #!/usr/bin/env python3
 """
-mise_en_page.py — Assemblage du livre PDF (Phase 3).
-Usage : python3 mise_en_page.py plan.json chapitres livre.pdf [--corps 10.5]
+mise_en_page.py — Assemblage du livre PDF (Phase 3, correction 2/2).
+Usage : python3 mise_en_page.py plan.json chapitres_v2 livre.pdf [--corps 10]
+Format : 6x9 pouces (152,4 x 228,6 mm), police Times (WinAnsi).
 """
 
 import argparse
@@ -12,243 +13,174 @@ import re
 import sys
 from pathlib import Path
 
-from reportlab.lib.pagesizes import A5
+from reportlab.lib.pagesizes import inch
 from reportlab.lib.units import mm
-from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
-from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT, TA_RIGHT
-from reportlab.lib.colors import HexColor, black, white
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT
+from reportlab.lib.colors import HexColor
 from reportlab.platypus import (
     BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer,
-    PageBreak, NextPageTemplate, KeepTogether, Table, TableStyle,
-    HRFlowable, ListFlowable, ListItem, Preformatted
+    PageBreak, NextPageTemplate, HRFlowable, Flowable,
+    Table, TableStyle,
 )
 from reportlab.platypus.tableofcontents import TableOfContents
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase.pdfmetrics import registerFontFamily
 
-# ─── Constantes ───────────────────────────────────────────────────────────────
+# ─── Constantes géométriques (6 x 9 pouces) ─────────────────────────────────
 
-PAGE_W, PAGE_H = A5  # 148×210 mm en points
-MARGIN = 18 * mm
-BODY_DEFAULT = 10.5
-LEADING_RATIO = 14.0 / 10.5  # ratio interligne/corps
+PAGE_W = 6 * inch   # 432 pt = 152,4 mm
+PAGE_H = 9 * inch   # 648 pt = 228,6 mm
 
-DEJAVU_DIR = "/usr/share/fonts/truetype/dejavu"
+MARGIN_LR = 16 * mm   # marges gauche / droite (intérieure / extérieure)
+MARGIN_TB = 18 * mm   # marges haut / bas
 
-# ─── Enregistrement des polices (robuste) ─────────────────────────────────────
+BODY_DEFAULT = 10.0
+LEADING_DEFAULT = 12.5
 
-def _try_register(name: str, path: str) -> bool:
-    """Tente d'enregistrer une TTFont ; retourne True si succès."""
-    if not os.path.isfile(path):
-        return False
-    try:
-        pdfmetrics.registerFont(TTFont(name, path))
-        return True
-    except Exception:
-        return False
+# ─── Polices : famille Times intégrée à ReportLab (WinAnsi) ─────────────────
 
-def register_fonts() -> dict:
-    """
-    Enregistre les polices DejaVu disponibles.
-    Retourne un dict avec les clés :
-      serif, serif_bold, serif_italic, serif_bolditalic,
-      sans, sans_bold, sans_italic, sans_bolditalic
-    Chaque valeur est le nom de police utilisable dans reportlab.
-    Ne plante JAMAIS sur une police manquante.
-    """
-    fm = {}
+FONT_SERIF = "Times-Roman"
+FONT_SERIF_BOLD = "Times-Bold"
+FONT_SERIF_ITALIC = "Times-Italic"
+FONT_SERIF_BOLDITALIC = "Times-BoldItalic"
 
-    # --- Serif ---
-    if _try_register("Serif", os.path.join(DEJAVU_DIR, "DejaVuSerif.ttf")):
-        fm['serif'] = "Serif"
-    else:
-        fm['serif'] = "Times-Roman"
+registerFontFamily(
+    "Times",
+    normal=FONT_SERIF,
+    bold=FONT_SERIF_BOLD,
+    italic=FONT_SERIF_ITALIC,
+    boldItalic=FONT_SERIF_BOLDITALIC,
+)
 
-    if _try_register("Serif-Bold", os.path.join(DEJAVU_DIR, "DejaVuSerif-Bold.ttf")):
-        fm['serif_bold'] = "Serif-Bold"
-    else:
-        fm['serif_bold'] = "Times-Bold"
+# ─── Assainissement WinAnsi ──────────────────────────────────────────────────
 
-    # Italique serif
-    serif_italic_registered = False
-    for candidate_name, candidate_file in [
-        ("Serif-Italic", "DejaVuSerif-Italic.ttf"),
-        ("Serif-Italic", "DejaVuSans-Oblique.ttf"),
-        ("Serif-Italic", "DejaVuSansMono-Oblique.ttf"),
-    ]:
-        if _try_register(candidate_name, os.path.join(DEJAVU_DIR, candidate_file)):
-            fm['serif_italic'] = candidate_name
-            serif_italic_registered = True
-            break
-    if not serif_italic_registered:
-        fm['serif_italic'] = "Times-Italic"
+_WINANSI_REPLACEMENTS = [
+    ('\u202f', '\u00a0'),   # fine no-break space → no-break space
+    ('\u2009', '\u00a0'),   # thin space → no-break space
+    ('\u200a', ' '),        # hair space
+    ('\u2192', '->'),       # →
+    ('\u2190', '<-'),       # ←
+    ('\u2194', '<->'),      # ↔
+    ('\u2248', 'env.'),     # ≈
+    ('\u2260', '!='),       # ≠
+    ('\u2264', '<='),       # ≤
+    ('\u2265', '>='),       # ≥
+    ('\u2713', '-'),        # ✓
+    ('\u2714', '-'),        # ✔
+    ('\u2717', 'x'),        # ✗
+    ('\u2718', 'x'),        # ✘
+    ('\u25cf', '-'),        # ●
+    ('\u25cb', 'o'),        # ○
+    ('\u2022', '-'),        # • (en fait dans WinAnsi, mais au cas où)
+    ('\u2023', '-'),        # ‣
+    ('\u2043', '-'),        # ⁃
+    ('\u00a0', '\u00a0'),   # NBSP reste
+    ('\ufeff', ''),         # BOM
+    ('\u200b', ''),         # zero-width space
+    ('\u200c', ''),         # ZWNJ
+    ('\u200d', ''),         # ZWJ
+]
 
-    # BoldItalic serif
-    serif_bi_registered = False
-    for candidate_name, candidate_file in [
-        ("Serif-BoldItalic", "DejaVuSerif-BoldItalic.ttf"),
-        ("Serif-BoldItalic", "DejaVuSans-BoldOblique.ttf"),
-        ("Serif-BoldItalic", "DejaVuSansMono-BoldOblique.ttf"),
-    ]:
-        if _try_register(candidate_name, os.path.join(DEJAVU_DIR, candidate_file)):
-            fm['serif_bolditalic'] = candidate_name
-            serif_bi_registered = True
-            break
-    if not serif_bi_registered:
-        fm['serif_bolditalic'] = "Times-BoldItalic"
+def sanitize_winansi(text: str) -> str:
+    """Remplace les caractères hors WinAnsi par des équivalents sûrs."""
+    for old, new in _WINANSI_REPLACEMENTS:
+        text = text.replace(old, new)
+    # Supprimer tout caractère hors plage WinAnsi restante
+    out = []
+    for ch in text:
+        cp = ord(ch)
+        # WinAnsi couvre 0x00-0xFF + quelques caractères cp1252 spécifiques
+        if cp <= 0xFF:
+            out.append(ch)
+        elif ch in '\u20ac\u201a\u0192\u201e\u2026\u2020\u2021\u02c6\u2030' \
+                   '\u0160\u2039\u0152\u017d\u2018\u2019\u201c\u201d' \
+                   '\u2022\u2013\u2014\u02dc\u2122\u0161\u203a\u0153\u017e\u0178':
+            out.append(ch)
+        else:
+            out.append(' ')
+    return ''.join(out)
 
-    # --- Sans ---
-    if _try_register("Sans", os.path.join(DEJAVU_DIR, "DejaVuSans.ttf")):
-        fm['sans'] = "Sans"
-    else:
-        fm['sans'] = "Helvetica"
-
-    if _try_register("Sans-Bold", os.path.join(DEJAVU_DIR, "DejaVuSans-Bold.ttf")):
-        fm['sans_bold'] = "Sans-Bold"
-    else:
-        fm['sans_bold'] = "Helvetica-Bold"
-
-    # Italique sans
-    sans_italic_registered = False
-    for candidate_name, candidate_file in [
-        ("Sans-Italic", "DejaVuSans-Oblique.ttf"),
-        ("Sans-Italic", "DejaVuSansMono-Oblique.ttf"),
-    ]:
-        if _try_register(candidate_name, os.path.join(DEJAVU_DIR, candidate_file)):
-            fm['sans_italic'] = candidate_name
-            sans_italic_registered = True
-            break
-    if not sans_italic_registered:
-        fm['sans_italic'] = "Helvetica-Oblique"
-
-    # BoldItalic sans
-    sans_bi_registered = False
-    for candidate_name, candidate_file in [
-        ("Sans-BoldItalic", "DejaVuSans-BoldOblique.ttf"),
-        ("Sans-BoldItalic", "DejaVuSansMono-BoldOblique.ttf"),
-    ]:
-        if _try_register(candidate_name, os.path.join(DEJAVU_DIR, candidate_file)):
-            fm['sans_bolditalic'] = candidate_name
-            sans_bi_registered = True
-            break
-    if not sans_bi_registered:
-        fm['sans_bolditalic'] = "Helvetica-BoldOblique"
-
-    # --- Enregistrement des familles (tolérant aux erreurs) ---
-    try:
-        registerFontFamily(
-            "Serif",
-            normal=fm['serif'], bold=fm['serif_bold'],
-            italic=fm['serif_italic'], boldItalic=fm['serif_bolditalic'],
-        )
-    except Exception:
-        pass
-    try:
-        registerFontFamily(
-            "Sans",
-            normal=fm['sans'], bold=fm['sans_bold'],
-            italic=fm['sans_italic'], boldItalic=fm['sans_bolditalic'],
-        )
-    except Exception:
-        pass
-
-    return fm
-
-# ─── Conversion Markdown → Paragraph XML ──────────────────────────────────────
+# ─── Conversion Markdown → XML ReportLab ─────────────────────────────────────
 
 def escape_xml(text: str) -> str:
-    """Échappe &, <, > pour le XML reportlab."""
     text = text.replace("&", "&amp;")
     text = text.replace("<", "&lt;")
     text = text.replace(">", "&gt;")
     return text
 
 def _is_meaningful(content: str) -> bool:
-    """
-    Retourne True si le contenu entre marqueurs est significatif.
-    Rejette : vide, uniquement des espaces, ou uniquement ponctuation/underscores/slashes.
-    """
     stripped = content.strip()
     if not stripped:
         return False
-    # Si le contenu n'est composé que de ponctuation, underscores, slashes, espaces → non significatif
-    if re.match(r'^[\s_\-./\\,;:!?\'"()«»\[\]{}|~`^+=*#]+$', stripped):
+    if re.match(r'^[\s_\-./\\,;:!?\'"()\[\]{}|~`^+=*#]+$', stripped):
         return False
     return True
 
 def inline_markup(text: str) -> str:
-    """
-    Applique gras/italique sur du texte déjà échappé.
-    Ordre : ***x*** / ___x___ → **x** / __x__ → *x* / _x_
-    Ne convertit que si le contenu capturé est significatif.
-    Les marqueurs orphelins restent littéraux.
-    """
-
-    def _sub_meaningful(pattern: str, tag_open: str, tag_close: str, txt: str) -> str:
+    def _sub(pattern, tag_open, tag_close, txt):
         def replacer(m):
             content = m.group(1)
             if not _is_meaningful(content):
-                return m.group(0)  # inchangé
+                return m.group(0)
             return tag_open + content + tag_close
         return re.sub(pattern, replacer, txt)
 
-    # 1) Bold + Italic : ***x*** puis ___x___
-    text = _sub_meaningful(r'\*\*\*(.+?)\*\*\*', '<b><i>', '</i></b>', text)
-    text = _sub_meaningful(r'___(.+?)___', '<b><i>', '</i></b>', text)
-
-    # 2) Bold : **x** puis __x__
-    text = _sub_meaningful(r'\*\*(.+?)\*\*', '<b>', '</b>', text)
-    text = _sub_meaningful(r'__(.+?)__', '<b>', '</b>', text)
-
-    # 3) Italic : *x* puis _x_ (avec garde-fous word-boundary pour underscore)
-    text = _sub_meaningful(r'\*(.+?)\*', '<i>', '</i>', text)
-    text = _sub_meaningful(r'(?<!\w)_(.+?)_(?!\w)', '<i>', '</i>', text)
-
+    text = _sub(r'\*\*\*(.+?)\*\*\*', '<b><i>', '</i></b>', text)
+    text = _sub(r'___(.+?)___', '<b><i>', '</i></b>', text)
+    text = _sub(r'\*\*(.+?)\*\*', '<b>', '</b>', text)
+    text = _sub(r'__(.+?)__', '<b>', '</b>', text)
+    text = _sub(r'\*(.+?)\*', '<i>', '</i>', text)
+    text = _sub(r'(?<!\w)_(.+?)_(?!\w)', '<i>', '</i>', text)
     return text
 
 def md_to_xml(text: str) -> str:
-    """Convertit une ligne Markdown en XML reportlab sûr."""
+    text = sanitize_winansi(text)
     text = escape_xml(text)
     text = inline_markup(text)
     return text
 
 def strip_think_tags(text: str) -> str:
-    """Supprime les blocs ."""
     return re.sub(r'', '', text, flags=re.DOTALL | re.IGNORECASE)
 
 def safe_paragraph(text: str, style) -> Paragraph:
-    """
-    Crée un Paragraph. Si le XML est mal formé et lève une exception,
-    retente avec le texte entièrement dépourvu de balises (échappé).
-    Ne lève JAMAIS d'exception.
-    """
+    """Crée un Paragraph avec filet de sécurité anti-exception."""
     try:
         return Paragraph(text, style)
     except Exception:
         pass
-    # Filet de sécurité : retirer toutes les balises XML
     try:
         plain = re.sub(r'<[^>]*>', '', text)
         return Paragraph(plain, style)
     except Exception:
         pass
-    # Ultime recours : texte brut échappé
     try:
         raw = re.sub(r'<[^>]*>', '', text)
         raw = raw.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
         raw = escape_xml(raw)
         return Paragraph(raw, style)
     except Exception:
-        # Ne devrait jamais arriver, mais on retourne un paragraphe vide
         return Paragraph("", style)
 
+def strip_chapter_heading(md_text: str, chap_num: int) -> str:
+    """
+    Supprime la première ligne ## si elle reprend le numéro du chapitre
+    (ex. '## Chapitre 3 — ...'). Évite le doublon avec le titre qu'on génère.
+    """
+    lines = md_text.split('\n')
+    for i, line in enumerate(lines):
+        if not line.strip():
+            continue
+        # Première ligne non vide trouvée
+        if re.match(
+            r'^##\s+[Cc]hapitre\s+' + str(chap_num) + r'[\s\-—–:.]',
+            line.strip()
+        ):
+            return '\n'.join(lines[:i] + lines[i + 1:])
+        break
+    return md_text
+
 def parse_markdown(md_text: str, styles: dict) -> list:
-    """
-    Convertit un texte Markdown en liste de flowables reportlab.
-    Gère : #, ##, ###, ####, paragraphes, listes, citations, ---, tableaux.
-    Ignore les blocs de code délimités par triple backtick.
-    """
+    """Convertit le Markdown en flowables. Pas d'entrée TOC pour ##/###."""
     flowables = []
     md_text = strip_think_tags(md_text)
     lines = md_text.split('\n')
@@ -256,23 +188,22 @@ def parse_markdown(md_text: str, styles: dict) -> list:
     in_code_block = False
     in_list = False
     list_items = []
-    list_type = None
 
     def flush_list():
-        nonlocal in_list, list_items, list_type
+        nonlocal in_list, list_items
         if list_items:
             for item_text in list_items:
-                p = safe_paragraph(item_text, styles['list_item'])
-                flowables.append(p)
+                flowables.append(safe_paragraph(item_text, styles['list_item']))
             flowables.append(Spacer(1, 4))
         list_items = []
         in_list = False
-        list_type = None
+
+    code_fence = '`' * 3  # trois backticks sans les écrire littéralement
 
     while i < len(lines):
         line = lines[i]
 
-        if line.strip().startswith('`' * 3):
+        if line.strip().startswith(code_fence):
             if in_code_block:
                 in_code_block = False
             else:
@@ -291,15 +222,18 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
+        # Séparateur horizontal
         if re.match(r'^-{3,}$|^\*{3,}$|^_{3,}$', stripped):
             flush_list()
             flowables.append(Spacer(1, 6))
-            flowables.append(HRFlowable(width="100%", thickness=0.5, color=HexColor("#999999")))
+            flowables.append(HRFlowable(width="100%", thickness=0.5,
+                                        color=HexColor("#999999")))
             flowables.append(Spacer(1, 6))
             i += 1
             continue
 
-        heading_match = re.match(r'^(#{1,4})\s+(.*)', stripped)
+        # Titres ##, ###, #### (pas de TOC, juste du rendu)
+        heading_match = re.match(r'^(#{2,4})\s+(.*)', stripped)
         if heading_match:
             flush_list()
             level = len(heading_match.group(1))
@@ -312,6 +246,16 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
+        # Titre # (niveau 1 dans le markdown, peu probable mais géré)
+        h1_match = re.match(r'^#\s+(.*)', stripped)
+        if h1_match:
+            flush_list()
+            flowables.append(safe_paragraph(md_to_xml(h1_match.group(1)),
+                                            styles['h2']))
+            i += 1
+            continue
+
+        # Citation
         if stripped.startswith('>'):
             flush_list()
             quote_text = md_to_xml(stripped.lstrip('> '))
@@ -319,6 +263,7 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
+        # Tableau
         if stripped.startswith('|') and stripped.endswith('|'):
             flush_list()
             table_lines = []
@@ -328,29 +273,30 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             flowables.extend(build_table(table_lines, styles))
             continue
 
+        # Liste non ordonnée
         ul_match = re.match(r'^(\s*)[-*+]\s+(.*)', line)
         if ul_match:
-            if not in_list or list_type != 'ul':
+            if not in_list:
                 flush_list()
                 in_list = True
-                list_type = 'ul'
-            item_text = "• " + md_to_xml(ul_match.group(2))
+            item_text = "\u2022 " + md_to_xml(ul_match.group(2))
             list_items.append(item_text)
             i += 1
             continue
 
+        # Liste ordonnée
         ol_match = re.match(r'^(\s*)\d+[.)]\s+(.*)', line)
         if ol_match:
-            if not in_list or list_type != 'ol':
+            if not in_list:
                 flush_list()
                 in_list = True
-                list_type = 'ol'
             num = re.match(r'^(\s*)(\d+)[.)]\s+(.*)', line)
             item_text = f"{num.group(2)}. " + md_to_xml(num.group(3))
             list_items.append(item_text)
             i += 1
             continue
 
+        # Paragraphe normal
         flush_list()
         para_text = md_to_xml(stripped)
         if para_text.strip():
@@ -361,7 +307,6 @@ def parse_markdown(md_text: str, styles: dict) -> list:
     return flowables
 
 def build_table(table_lines: list, styles: dict) -> list:
-    """Construit un flowable Table à partir de lignes Markdown |."""
     rows = []
     for tl in table_lines:
         if re.match(r'^\|[\s\-:|]+\|$', tl):
@@ -375,11 +320,13 @@ def build_table(table_lines: list, styles: dict) -> list:
     for r in rows:
         while len(r) < ncols:
             r.append('')
-    table_data = [[safe_paragraph(c, styles['table_cell']) for c in row] for row in rows]
-    col_w = (PAGE_W - 2 * MARGIN) / max(ncols, 1)
+    table_data = [[safe_paragraph(c, styles['table_cell']) for c in row]
+                  for row in rows]
+    avail_w = PAGE_W - 2 * MARGIN_LR
+    col_w = avail_w / max(ncols, 1)
     t = Table(table_data, colWidths=[col_w] * ncols)
     t.setStyle(TableStyle([
-        ('FONTNAME', (0, 0), (-1, -1), styles['body'].fontName),
+        ('FONTNAME', (0, 0), (-1, -1), FONT_SERIF),
         ('FONTSIZE', (0, 0), (-1, -1), 9),
         ('GRID', (0, 0), (-1, -1), 0.4, HexColor("#666666")),
         ('BACKGROUND', (0, 0), (-1, 0), HexColor("#EEEEEE")),
@@ -393,144 +340,176 @@ def build_table(table_lines: list, styles: dict) -> list:
 
 # ─── Styles ───────────────────────────────────────────────────────────────────
 
-def make_styles(fm: dict, corps: float) -> dict:
-    """Construit les styles à partir du font_map."""
-    leading = corps * LEADING_RATIO
-    serif = fm['serif']
-    serif_bold = fm['serif_bold']
-    serif_italic = fm['serif_italic']
-    serif_bolditalic = fm['serif_bolditalic']
-    sans = fm['sans']
-    sans_bold = fm['sans_bold']
-
+def make_styles(corps: float, leading: float) -> dict:
     s = {}
     s['body'] = ParagraphStyle(
-        'Body', fontName=serif, fontSize=corps, leading=leading,
-        alignment=TA_JUSTIFY, spaceAfter=corps * 0.6, spaceBefore=0,
+        'Body', fontName=FONT_SERIF, fontSize=corps, leading=leading,
+        alignment=TA_JUSTIFY, spaceAfter=corps * 0.55, spaceBefore=0,
         firstLineIndent=corps * 1.5,
     )
-    s['h1'] = ParagraphStyle(
-        'H1', fontName=serif_bold,
-        fontSize=corps * 1.8, leading=corps * 2.2,
-        alignment=TA_LEFT, spaceBefore=corps * 1.5, spaceAfter=corps,
-    )
+    # Titres de sections internes (##, ###) — PAS d'entrée TOC
     s['h2'] = ParagraphStyle(
-        'H2', fontName=serif_bold,
-        fontSize=corps * 1.45, leading=corps * 1.8,
-        alignment=TA_LEFT, spaceBefore=corps * 1.2, spaceAfter=corps * 0.6,
+        'H2', fontName=FONT_SERIF_BOLD,
+        fontSize=corps * 1.3, leading=corps * 1.65,
+        alignment=TA_LEFT, spaceBefore=corps * 1.1, spaceAfter=corps * 0.5,
     )
     s['h3'] = ParagraphStyle(
-        'H3', fontName=serif_bold,
-        fontSize=corps * 1.2, leading=corps * 1.5,
-        alignment=TA_LEFT, spaceBefore=corps, spaceAfter=corps * 0.5,
+        'H3', fontName=FONT_SERIF_BOLD,
+        fontSize=corps * 1.12, leading=corps * 1.45,
+        alignment=TA_LEFT, spaceBefore=corps * 0.9, spaceAfter=corps * 0.4,
     )
     s['h4'] = ParagraphStyle(
-        'H4', fontName=serif_italic,
-        fontSize=corps * 1.1, leading=corps * 1.4,
-        alignment=TA_LEFT, spaceBefore=corps * 0.8, spaceAfter=corps * 0.4,
+        'H4', fontName=FONT_SERIF_ITALIC,
+        fontSize=corps * 1.05, leading=corps * 1.35,
+        alignment=TA_LEFT, spaceBefore=corps * 0.7, spaceAfter=corps * 0.35,
     )
     s['quote'] = ParagraphStyle(
-        'Quote', fontName=serif_italic,
+        'Quote', fontName=FONT_SERIF_ITALIC,
         fontSize=corps * 0.95, leading=leading * 0.95,
         alignment=TA_JUSTIFY, leftIndent=20, rightIndent=10,
         spaceBefore=corps * 0.5, spaceAfter=corps * 0.5,
         textColor=HexColor("#444444"),
     )
     s['list_item'] = ParagraphStyle(
-        'ListItem', fontName=serif, fontSize=corps, leading=leading,
+        'ListItem', fontName=FONT_SERIF, fontSize=corps, leading=leading,
         alignment=TA_JUSTIFY, leftIndent=18, spaceAfter=corps * 0.3,
         bulletIndent=6,
     )
+    # Titre de chapitre (entrée TOC niveau 1)
+    s['chap_title'] = ParagraphStyle(
+        'ChapTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=corps * 1.6, leading=corps * 2.0,
+        alignment=TA_LEFT, spaceBefore=corps * 0.5, spaceAfter=corps * 1.0,
+    )
+    # Titre de partie (page de partie, entrée TOC niveau 0)
+    s['part_title'] = ParagraphStyle(
+        'PartTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=20, leading=26, alignment=TA_CENTER,
+        spaceBefore=0, spaceAfter=12,
+    )
+    # Titres Introduction / Conclusion / Bibliographie (TOC niveau 0)
+    s['sect_title'] = ParagraphStyle(
+        'SectTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=corps * 1.6, leading=corps * 2.0,
+        alignment=TA_LEFT, spaceBefore=corps * 0.5, spaceAfter=corps * 1.0,
+    )
+    # Page de titre
     s['title_page'] = ParagraphStyle(
-        'TitlePage', fontName=serif_bold,
-        fontSize=22, leading=28, alignment=TA_CENTER, spaceAfter=12,
+        'TitlePage', fontName=FONT_SERIF_BOLD,
+        fontSize=24, leading=30, alignment=TA_CENTER, spaceAfter=12,
     )
     s['subtitle'] = ParagraphStyle(
-        'Subtitle', fontName=serif_italic,
+        'Subtitle', fontName=FONT_SERIF_ITALIC,
         fontSize=14, leading=18, alignment=TA_CENTER, spaceAfter=8,
     )
-    s['part_title'] = ParagraphStyle(
-        'PartTitle', fontName=serif_bold,
-        fontSize=18, leading=24, alignment=TA_CENTER, spaceBefore=80, spaceAfter=20,
+    # TOC
+    s['toc_level0'] = ParagraphStyle(
+        'TOCLevel0', fontName=FONT_SERIF_BOLD,
+        fontSize=corps, leading=leading, spaceBefore=7, spaceAfter=2,
     )
-    s['toc_h1'] = ParagraphStyle(
-        'TOCH1', fontName=serif_bold,
-        fontSize=corps, leading=leading, spaceBefore=6, spaceAfter=2,
+    s['toc_level1'] = ParagraphStyle(
+        'TOCLevel1', fontName=FONT_SERIF,
+        fontSize=corps * 0.92, leading=leading * 0.92,
+        leftIndent=14, spaceBefore=1, spaceAfter=1,
     )
-    s['toc_h2'] = ParagraphStyle(
-        'TOCH2', fontName=serif, fontSize=corps * 0.9, leading=leading * 0.9,
-        leftIndent=12, spaceBefore=1, spaceAfter=1,
-    )
-    s['table_cell'] = ParagraphStyle(
-        'TableCell', fontName=serif, fontSize=8.5, leading=11,
-        alignment=TA_LEFT,
-    )
+    # Bibliographie
     s['bib_entry'] = ParagraphStyle(
-        'BibEntry', fontName=serif, fontSize=corps * 0.92, leading=leading * 0.92,
-        alignment=TA_JUSTIFY, spaceAfter=corps * 0.8, leftIndent=12,
+        'BibEntry', fontName=FONT_SERIF, fontSize=corps * 0.92,
+        leading=leading * 0.92, alignment=TA_JUSTIFY,
+        spaceAfter=corps * 0.7, leftIndent=12,
     )
+    # Avertissement
     s['warning'] = ParagraphStyle(
-        'Warning', fontName=serif, fontSize=corps, leading=leading,
+        'Warning', fontName=FONT_SERIF, fontSize=corps, leading=leading,
         alignment=TA_JUSTIFY, spaceAfter=corps,
+    )
+    # Cellule tableau
+    s['table_cell'] = ParagraphStyle(
+        'TableCell', fontName=FONT_SERIF, fontSize=8.5, leading=11,
+        alignment=TA_LEFT,
     )
     return s
 
-# ─── Templates de page ────────────────────────────────────────────────────────
+# ─── Flowable invisible : mise à jour du titre courant ───────────────────────
+
+class RunningTitle(Flowable):
+    """Flowable de hauteur nulle qui met à jour le titre courant du doc."""
+    def __init__(self, title: str):
+        super().__init__()
+        self.title = title
+        self.width = 0
+        self.height = 0
+
+    def draw(self):
+        pass  # rien à dessiner
+
+# ─── Template de document ────────────────────────────────────────────────────
 
 class BookDocTemplate(BaseDocTemplate):
     def __init__(self, filename, **kwargs):
         super().__init__(filename, **kwargs)
         self._current_title = ""
-        self._show_header = False
-        self._font_map = {}
-
-    def set_running_title(self, title):
-        self._current_title = title
 
     def afterFlowable(self, flowable):
-        """Notification pour la table des matières."""
+        # Mise à jour du titre courant
+        if isinstance(flowable, RunningTitle):
+            self._current_title = flowable.title
+            return
+
+        # Notifications TOC
         if isinstance(flowable, Paragraph):
             style_name = flowable.style.name
-            if style_name == 'H1':
-                text = flowable.getPlainText()
+            text = flowable.getPlainText()
+            if style_name == 'PartTitle':
                 self.notify('TOCEntry', (0, text, self.page))
-            elif style_name == 'H2':
-                text = flowable.getPlainText()
+            elif style_name == 'SectTitle':
+                self.notify('TOCEntry', (0, text, self.page))
+            elif style_name == 'ChapTitle':
                 self.notify('TOCEntry', (1, text, self.page))
 
+# ─── En-tête / pied de page ──────────────────────────────────────────────────
+
 def header_footer(canvas, doc):
-    """Dessine en-tête (titre courant) et pied de page (numéro)."""
+    """Titre courant en haut, numéro de page en bas."""
     canvas.saveState()
     page_num = canvas.getPageNumber()
-    fm = doc._font_map
 
-    # Pied de page : numéro
-    footer_font = fm.get('serif', 'Times-Roman')
-    canvas.setFont(footer_font, 8.5)
+    # Pied : numéro de page
+    canvas.setFont(FONT_SERIF, 8.5)
     canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(page_num))
 
-    # En-tête : titre courant (sauf premières pages)
+    # En-tête : titre courant (à partir de la page 4)
     if page_num > 3 and doc._current_title:
-        header_font = fm.get('serif_italic', 'Times-Italic')
-        canvas.setFont(header_font, 8)
-        canvas.drawCentredString(PAGE_W / 2, PAGE_H - 10 * mm, doc._current_title)
+        canvas.setFont(FONT_SERIF_ITALIC, 8)
+        canvas.drawCentredString(PAGE_W / 2, PAGE_H - 11 * mm,
+                                 doc._current_title)
         canvas.setStrokeColor(HexColor("#AAAAAA"))
         canvas.setLineWidth(0.4)
-        canvas.line(MARGIN, PAGE_H - 12 * mm, PAGE_W - MARGIN, PAGE_H - 12 * mm)
+        canvas.line(MARGIN_LR, PAGE_H - 13 * mm,
+                    PAGE_W - MARGIN_LR, PAGE_H - 13 * mm)
     canvas.restoreState()
 
 def no_header_footer(canvas, doc):
-    """Pages sans en-tête/pied (page de titre, etc.)."""
+    """Pages sans en-tête ni pied (page de titre, pages de partie)."""
     pass
 
-# ─── Construction du document ─────────────────────────────────────────────────
+# ─── Lecture fichier ─────────────────────────────────────────────────────────
 
-def build_book(plan_path: str, chapitres_dir: str, output_path: str, corps: float):
-    fm = register_fonts()
-    styles = make_styles(fm, corps)
-    serif = fm['serif']
+def read_file_safe(path: str) -> str:
+    try:
+        with open(path, 'r', encoding='utf-8', errors='replace') as f:
+            return f.read()
+    except Exception as e:
+        print(f"\u26a0 Erreur lecture {path} : {e}", file=sys.stderr)
+        return ""
 
-    # Charger le plan
+# ─── Construction du livre ───────────────────────────────────────────────────
+
+def build_book(plan_path: str, chapitres_dir: str, output_path: str,
+               corps: float):
+    leading = LEADING_DEFAULT if corps == BODY_DEFAULT else corps * 1.25
+    styles = make_styles(corps, leading)
+
     with open(plan_path, 'r', encoding='utf-8') as f:
         plan = json.load(f)
 
@@ -539,106 +518,120 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str, corps: floa
     bibliographie = plan.get("bibliographie", [])
     parties = plan.get("parties", [])
 
-    # Dimensions
-    frame_w = PAGE_W - 2 * MARGIN
-    frame_h = PAGE_H - 2 * MARGIN - 8 * mm
-
     # Frames
-    frame_main = Frame(MARGIN, MARGIN + 5 * mm, frame_w, frame_h, id='main')
-    frame_title = Frame(MARGIN, MARGIN, frame_w, PAGE_H - 2 * MARGIN, id='title')
+    frame_w = PAGE_W - 2 * MARGIN_LR
+    frame_h = PAGE_H - 2 * MARGIN_TB
+
+    frame_main = Frame(MARGIN_LR, MARGIN_TB, frame_w, frame_h, id='main')
+    frame_blank = Frame(MARGIN_LR, MARGIN_TB, frame_w, frame_h, id='blank')
 
     doc = BookDocTemplate(
         output_path,
-        pagesize=A5,
-        leftMargin=MARGIN, rightMargin=MARGIN,
-        topMargin=MARGIN + 4 * mm, bottomMargin=MARGIN + 4 * mm,
+        pagesize=(PAGE_W, PAGE_H),
+        leftMargin=MARGIN_LR,
+        rightMargin=MARGIN_LR,
+        topMargin=MARGIN_TB,
+        bottomMargin=MARGIN_TB,
         title=titre,
         author="Qwen 3.8 Max Thinking via Dialagram",
     )
-    doc._font_map = fm
 
-    # Templates
-    tmpl_content = PageTemplate(id='content', frames=[frame_main], onPage=header_footer)
-    tmpl_blank = PageTemplate(id='blank', frames=[frame_title], onPage=no_header_footer)
+    tmpl_content = PageTemplate(id='content', frames=[frame_main],
+                                onPage=header_footer)
+    tmpl_blank = PageTemplate(id='blank', frames=[frame_blank],
+                              onPage=no_header_footer)
     doc.addPageTemplates([tmpl_blank, tmpl_content])
 
     story = []
 
-    # ── Page de titre ──
+    # ── Page de titre ──────────────────────────────────────────────────────
     story.append(NextPageTemplate('blank'))
-    story.append(Spacer(1, 50 * mm))
-    story.append(safe_paragraph(escape_xml(titre), styles['title_page']))
+    story.append(Spacer(1, 55 * mm))
+    story.append(safe_paragraph(escape_xml(sanitize_winansi(titre)),
+                                styles['title_page']))
     if sous_titre:
-        story.append(Spacer(1, 6))
-        story.append(safe_paragraph(escape_xml(sous_titre), styles['subtitle']))
-    story.append(Spacer(1, 20 * mm))
+        story.append(Spacer(1, 8))
+        story.append(safe_paragraph(escape_xml(sanitize_winansi(sous_titre)),
+                                    styles['subtitle']))
+    story.append(Spacer(1, 25 * mm))
     mention_style = ParagraphStyle(
-        'Mention', fontName=serif, fontSize=9.5, leading=13,
+        'Mention', fontName=FONT_SERIF, fontSize=9.5, leading=13,
         alignment=TA_CENTER, textColor=HexColor("#555555"),
     )
-    story.append(safe_paragraph("Rédigé par Qwen 3.8 Max Thinking via Dialagram", mention_style))
+    story.append(safe_paragraph(
+        "R\u00e9dig\u00e9 par Qwen 3.8 Max Thinking via Dialagram",
+        mention_style))
     story.append(PageBreak())
 
-    # ── Page d'avertissement ──
-    story.append(Spacer(1, 20 * mm))
+    # ── Page d'avertissement ───────────────────────────────────────────────
+    story.append(Spacer(1, 22 * mm))
     warn_title_style = ParagraphStyle(
-        'WarnTitle', fontName=fm['serif_bold'],
-        fontSize=13, leading=17, alignment=TA_CENTER, spaceAfter=14,
+        'WarnTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=14, leading=18, alignment=TA_CENTER, spaceAfter=14,
     )
     story.append(safe_paragraph("Avertissement", warn_title_style))
     story.append(safe_paragraph(
-        "Le présent ouvrage est fourni à titre strictement éducatif et informatif. "
-        "Il ne constitue en aucun cas un conseil financier personnalisé, une recommandation "
-        "d'investissement, ni une sollicitation à acheter ou vendre un instrument financier.",
-        styles['warning']
-    ))
+        "Le pr\u00e9sent ouvrage est fourni \u00e0 titre strictement "
+        "\u00e9ducatif et informatif. Il ne constitue en aucun cas un "
+        "conseil financier personnalis\u00e9, une recommandation "
+        "d\u2019investissement, ni une sollicitation \u00e0 acheter ou "
+        "vendre un instrument financier.",
+        styles['warning']))
     story.append(safe_paragraph(
-        "Les informations contenues dans ce livre sont générales et ne tiennent pas compte "
-        "de votre situation financière personnelle, de vos objectifs ni de votre tolérance "
-        "au risque. Avant toute décision d'investissement, consultez un conseiller financier "
-        "agréé et indépendant.",
-        styles['warning']
-    ))
+        "Les informations contenues dans ce livre sont g\u00e9n\u00e9rales "
+        "et ne tiennent pas compte de votre situation financi\u00e8re "
+        "personnelle, de vos objectifs ni de votre tol\u00e9rance au "
+        "risque. Avant toute d\u00e9cision d\u2019investissement, consultez "
+        "un conseiller financier agr\u00e9\u00e9 et ind\u00e9pendant.",
+        styles['warning']))
     story.append(safe_paragraph(
-        "L'auteur et l'éditeur déclinent toute responsabilité quant aux pertes éventuelles "
-        "résultant de l'utilisation des informations présentées dans cet ouvrage.",
-        styles['warning']
-    ))
+        "L\u2019auteur et l\u2019\u00e9diteur d\u00e9clinent toute "
+        "responsabilit\u00e9 quant aux pertes \u00e9ventuelles r\u00e9sultant "
+        "de l\u2019utilisation des informations pr\u00e9sent\u00e9es dans "
+        "cet ouvrage.",
+        styles['warning']))
     story.append(PageBreak())
 
-    # ── Table des matières ──
+    # ── Table des matières ─────────────────────────────────────────────────
     story.append(NextPageTemplate('content'))
-    doc.set_running_title(titre)
+    story.append(RunningTitle("Table des mati\u00e8res"))
 
     toc_title_style = ParagraphStyle(
-        'TOCTitle', fontName=fm['serif_bold'],
-        fontSize=16, leading=20, alignment=TA_CENTER, spaceAfter=16, spaceBefore=10,
+        'TOCTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=16, leading=21, alignment=TA_CENTER,
+        spaceAfter=16, spaceBefore=6,
     )
-    story.append(safe_paragraph("Table des matières", toc_title_style))
+    story.append(safe_paragraph("Table des mati\u00e8res", toc_title_style))
 
     toc = TableOfContents()
-    toc.levelStyles = [styles['toc_h1'], styles['toc_h2']]
+    toc.levelStyles = [styles['toc_level0'], styles['toc_level1']]
     toc.dotsMinLevel = 0
     story.append(toc)
     story.append(PageBreak())
 
-    # ── Introduction ──
+    # ── Introduction ───────────────────────────────────────────────────────
     intro_path = os.path.join(chapitres_dir, "00_introduction.md")
     if os.path.isfile(intro_path):
-        doc.set_running_title("Introduction")
+        story.append(RunningTitle("Introduction"))
+        story.append(safe_paragraph("Introduction", styles['sect_title']))
         md = read_file_safe(intro_path)
         if md:
+            md = strip_chapter_heading(md, 0)
             flowables = parse_markdown(md, styles)
             story.extend(flowables)
         story.append(PageBreak())
 
-    # ── Parties et chapitres ──
+    # ── Parties et chapitres ───────────────────────────────────────────────
     chap_counter = 1
-    for partie in parties:
-        partie_titre = partie.get("titre", "")
+    for part_idx, partie in enumerate(parties, start=1):
+        partie_titre = partie.get("titre", f"Partie {part_idx}")
+        partie_label = partie_titre if partie_titre.lower().startswith("partie") else f"Partie {part_idx} – {partie_titre}"
+
+        # Page de partie (template blank, pas d'en-tête)
         story.append(NextPageTemplate('blank'))
-        story.append(Spacer(1, 60 * mm))
-        story.append(safe_paragraph(escape_xml(partie_titre), styles['part_title']))
+        story.append(Spacer(1, 70 * mm))
+        story.append(safe_paragraph(escape_xml(sanitize_winansi(partie_label)),
+                                    styles['part_title']))
         story.append(PageBreak())
         story.append(NextPageTemplate('content'))
 
@@ -646,107 +639,120 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str, corps: floa
         for chap in chapitres:
             chap_num = chap.get("numero", chap_counter)
             chap_titre = chap.get("titre", f"Chapitre {chap_num}")
+            chap_label = f"Chapitre {chap_num} \u2013 {chap_titre}"
 
+            # Fichier du chapitre
             chap_file = os.path.join(chapitres_dir, f"ch{chap_num:02d}.md")
             if not os.path.isfile(chap_file):
                 chap_file = os.path.join(chapitres_dir, f"ch{chap_num}.md")
 
-            doc.set_running_title(f"Chapitre {chap_num} – {chap_titre}")
-
+            # Titre courant + titre visible
+            story.append(RunningTitle(chap_label))
             story.append(safe_paragraph(
-                escape_xml(f"Chapitre {chap_num} – {chap_titre}"), styles['h1']
-            ))
+                escape_xml(sanitize_winansi(chap_label)),
+                styles['chap_title']))
             story.append(Spacer(1, 4))
 
             if os.path.isfile(chap_file):
                 md = read_file_safe(chap_file)
                 if md:
-                    md_clean = re.sub(r'^#\s+.*\n?', '', md, count=1)
-                    flowables = parse_markdown(md_clean, styles)
+                    # Supprimer le ## Chapitre N doublon
+                    md = strip_chapter_heading(md, chap_num)
+                    flowables = parse_markdown(md, styles)
                     story.extend(flowables)
             else:
                 story.append(safe_paragraph(
-                    f"<i>[Contenu du chapitre {chap_num} non trouvé.]</i>",
-                    styles['body']
-                ))
+                    "<i>[Contenu du chapitre "
+                    + str(chap_num) + " non trouv\u00e9.]</i>",
+                    styles['body']))
 
             story.append(PageBreak())
             chap_counter += 1
 
-    # ── Conclusion ──
+    # ── Conclusion ─────────────────────────────────────────────────────────
     concl_path = os.path.join(chapitres_dir, "99_conclusion.md")
     if os.path.isfile(concl_path):
-        doc.set_running_title("Conclusion")
+        story.append(RunningTitle("Conclusion"))
+        story.append(safe_paragraph("Conclusion", styles['sect_title']))
         md = read_file_safe(concl_path)
         if md:
+            md = strip_chapter_heading(md, 99)
             flowables = parse_markdown(md, styles)
             story.extend(flowables)
         story.append(PageBreak())
 
-    # ── Bibliographie commentée ──
-    doc.set_running_title("Bibliographie commentée")
+    # ── Bibliographie commentée ────────────────────────────────────────────
+    story.append(RunningTitle("Bibliographie"))
     bib_title_style = ParagraphStyle(
-        'BibTitle', fontName=fm['serif_bold'],
-        fontSize=15, leading=20, alignment=TA_CENTER, spaceBefore=10, spaceAfter=14,
+        'BibTitle', fontName=FONT_SERIF_BOLD,
+        fontSize=16, leading=21, alignment=TA_CENTER,
+        spaceBefore=6, spaceAfter=14,
     )
-    story.append(safe_paragraph("Bibliographie commentée", bib_title_style))
+    story.append(safe_paragraph("Bibliographie comment\u00e9e",
+                                bib_title_style))
+    # On utilise sect_title pour l'entrée TOC (niveau 0)
+    # Mais on a déjà le titre visible ci-dessus ; on ajoute un invisible
+    # pour la TOC via un paragraphe de style SectTitle de taille nulle.
+    # En fait, utilisons directement le bib_title avec style SectTitle :
+    # Correction : on remplace le paragraphe ci-dessus.
+    # -> On supprime le dernier flowable et on remet avec le bon style.
+    story.pop()  # retire le Paragraph bib_title_style
+    story.append(safe_paragraph("Bibliographie comment\u00e9e",
+                                styles['sect_title']))
     story.append(Spacer(1, 6))
 
     for entry in bibliographie:
-        auteur = escape_xml(entry.get("auteur", ""))
-        titre_ref = escape_xml(entry.get("titre", ""))
+        auteur = escape_xml(sanitize_winansi(entry.get("auteur", "")))
+        titre_ref = escape_xml(sanitize_winansi(entry.get("titre", "")))
         annee = escape_xml(str(entry.get("annee", "")))
-        idee = escape_xml(entry.get("idee", ""))
-        apport = escape_xml(entry.get("apport", ""))
+        idee = escape_xml(sanitize_winansi(entry.get("idee", "")))
+        apport = escape_xml(sanitize_winansi(entry.get("apport", "")))
 
         ref_line = f"<b>{auteur}</b>, <i>{titre_ref}</i> ({annee})."
         story.append(safe_paragraph(ref_line, styles['bib_entry']))
         if idee:
-            story.append(safe_paragraph(f"<i>Idée maîtresse :</i> {idee}", styles['bib_entry']))
+            story.append(safe_paragraph(
+                f"<i>Id\u00e9e ma\u00eetresse :</i> {idee}",
+                styles['bib_entry']))
         if apport:
-            story.append(safe_paragraph(f"<i>Apport :</i> {apport}", styles['bib_entry']))
+            story.append(safe_paragraph(
+                f"<i>Apport :</i> {apport}",
+                styles['bib_entry']))
         story.append(Spacer(1, 4))
 
-    # ── Build avec multiBuild pour la TOC ──
+    # ── Build (multiBuild pour résoudre la TOC) ───────────────────────────
     doc.multiBuild(story)
 
-    # ── Rapport final ──
+    # ── Rapport final ──────────────────────────────────────────────────────
     try:
         from pypdf import PdfReader
         reader = PdfReader(output_path)
         n_pages = len(reader.pages)
     except Exception:
         n_pages = "?"
-    print(f"✔ {output_path} généré — {n_pages} pages.")
+    print(f"\u2714 {output_path} g\u00e9n\u00e9r\u00e9 \u2014 {n_pages} pages.")
     return n_pages
-
-def read_file_safe(path: str) -> str:
-    """Lit un fichier texte en ignorant les erreurs de décodage."""
-    try:
-        with open(path, 'r', encoding='utf-8', errors='replace') as f:
-            return f.read()
-    except Exception as e:
-        print(f"⚠ Erreur lecture {path} : {e}", file=sys.stderr)
-        return ""
 
 # ─── CLI ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Assemble le livre PDF à partir de plan.json et du dossier chapitres/."
-    )
+        description="Assemble le livre PDF depuis plan.json et le dossier "
+                    "de chapitres Markdown.")
     parser.add_argument("plan", help="Chemin vers plan.json")
-    parser.add_argument("chapitres", help="Dossier contenant les fichiers .md")
+    parser.add_argument("chapitres", help="Dossier contenant les .md")
     parser.add_argument("output", help="Chemin du PDF de sortie")
     parser.add_argument("--corps", type=float, default=BODY_DEFAULT,
-                        help=f"Taille du corps en pt (défaut {BODY_DEFAULT})")
+                        help=f"Taille du corps en pt (d\u00e9faut "
+                             f"{BODY_DEFAULT})")
     args = parser.parse_args()
 
     if not os.path.isfile(args.plan):
-        print(f"Erreur : fichier plan introuvable : {args.plan}", file=sys.stderr)
+        print(f"Erreur : plan introuvable : {args.plan}", file=sys.stderr)
         sys.exit(1)
     if not os.path.isdir(args.chapitres):
-        print(f"Erreur : dossier chapitres introuvable : {args.chapitres}", file=sys.stderr)
+        print(f"Erreur : dossier chapitres introuvable : {args.chapitres}",
+              file=sys.stderr)
         sys.exit(1)
 
     build_book(args.plan, args.chapitres, args.output, args.corps)
