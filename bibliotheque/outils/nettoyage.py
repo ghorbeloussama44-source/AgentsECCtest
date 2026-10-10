@@ -22,7 +22,7 @@ API_URL = "https://dialagram.me/router/v1/chat/completions"
 MODEL = "qwen-3.8-max-thinking"
 TIMEOUT_S = 1500
 MAX_ATTEMPTS = 5
-PARALLEL = 8
+PARALLEL = 3
 WORD_RATIO_MIN = 0.70
 
 BOT_PATTERNS = [
@@ -146,7 +146,7 @@ def call_api(text: str) -> tuple[str, dict]:
         except Exception as exc:
             last_err = exc
             if attempt < MAX_ATTEMPTS:
-                wait = 2 ** attempt
+                wait = 15 * 2 ** attempt
                 time.sleep(wait)
 
     raise RuntimeError(f"Échec après {MAX_ATTEMPTS} tentatives : {last_err}")

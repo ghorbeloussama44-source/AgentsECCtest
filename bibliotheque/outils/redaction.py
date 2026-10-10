@@ -118,7 +118,7 @@ def call_with_retry(messages: list[dict]) -> tuple[str, dict, int]:
         except Exception as exc:
             last_exc = exc
             if attempt < MAX_RETRIES:
-                wait = 2 ** attempt * 2
+                wait = 15 * 2 ** attempt
                 print(f"    ⚠ tentative {attempt}/{MAX_RETRIES} échouée ({exc}). Retry dans {wait}s…")
                 time.sleep(wait)
     raise RuntimeError(f"Échec après {MAX_RETRIES} tentatives : {last_exc}") from last_exc

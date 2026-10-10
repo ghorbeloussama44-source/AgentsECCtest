@@ -32,8 +32,19 @@ p=json.loads(t);assert sum(len(x['chapitres']) for x in p['parties'])>=20
 json.dump(p,open('plan.json','w'),ensure_ascii=False,indent=1)" 2>/dev/null || { rm -f plan.json; sleep 20; }
   done
   [ -s plan.json ] || { echo "[$s] ERREUR plan"; return; }
-  python3 -u $O/redaction.py plan.json chapitres --parallele 6 > redaction.log 2>&1
-  python3 -u $O/nettoyage.py chapitres chapitres_v2 > nettoyage.log 2>&1
+  # Garde-fou : chaque étape est relancée (reprise) tant qu'il manque des chapitres ; jamais de livre incomplet publié
+  for i in 1 2 3; do
+    python3 -u $O/redaction.py plan.json chapitres --parallele 3 >> redaction.log 2>&1
+    attendus=$(python3 -c "import json;p=json.load(open('plan.json'));print(sum(len(x['chapitres']) for x in p['parties'])+2)")
+    [ $(ls chapitres/*.md 2>/dev/null | wc -l) -ge $attendus ] && break; sleep 180
+  done
+  [ $(ls chapitres/*.md 2>/dev/null | wc -l) -ge $attendus ] || { echo "[$s] ERREUR rédaction incomplète ($(ls chapitres/*.md | wc -l)/$attendus), reporté"; return; }
+  for i in 1 2 3; do
+    python3 -u $O/nettoyage.py chapitres chapitres_v2 >> nettoyage.log 2>&1
+    [ $(ls chapitres_v2/*.md 2>/dev/null | wc -l) -ge $attendus ] && break; sleep 180
+  done
+  [ $(ls chapitres_v2/*.md 2>/dev/null | wc -l) -ge $attendus ] || { echo "[$s] ERREUR rectification incomplète ($(ls chapitres_v2/*.md | wc -l)/$attendus), reporté"; return; }
+  rm -f livre.pdf
   python3 $O/mise_en_page.py plan.json chapitres_v2 livre.pdf --corps 11.3 > pdf.log 2>&1
   [ -s livre.pdf ] || { echo "[$s] ERREUR pdf"; return; }
   python3 - "$s" <<'PY'
