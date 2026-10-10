@@ -77,6 +77,6 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01RdzzPjcfx3EDQ99UzoYL5J"
   for t in 2 4 8 16; do git push -q origin $BR && break; sleep $t; done
   echo "$(date -u +%H:%M) LOT $lot poussé ($(ls -d $R/bibliotheque/*/controle.json 2>/dev/null | wc -l) livres avec contrôle)"
-  cd $W
+  cd $W; [ -n "$LOTS" ] && [ $lot -ge $LOTS ] && { echo "PAUSE_APRES_LOT $lot"; exit 0; }
 done
 echo "USINE_TERMINEE"
