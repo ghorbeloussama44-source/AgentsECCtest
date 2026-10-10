@@ -1,0 +1,622 @@
+{
+ "titre": "Solo & Solide",
+ "sous_titre": "Le guide complet pour décrocher vos premiers clients, fixer vos tarifs et maîtriser votre administratif sans équipe ni bureau",
+ "bibliographie": [
+  {
+   "auteur": "Sara Horowitz",
+   "titre": "The Freelancer's Bible",
+   "annee": "2012",
+   "idee": "Manuel exhaustif couvrant tous les aspects de la vie en indépendant : santé, retraite, fiscalité, prospection et équilibre personnel.",
+   "apport": "Structure encyclopédique et checklists administratives que notre livre adaptera au contexte francophone."
+  },
+  {
+   "auteur": "Chris Guillebeau",
+   "titre": "The $100 Startup",
+   "annee": "2012",
+   "idee": "Lancer une activité rentable avec un capital minimal en misant sur une compétence existante et un micro-marché.",
+   "apport": "Philosophie du démarrage lean et tableaux de validation d'idée à intégrer dans la partie fondations."
+  },
+  {
+   "auteur": "Paul Jarvis",
+   "titre": "Company of One",
+   "annee": "2019",
+   "idee": "Rester volontairement petit pour maximiser marge, liberté et qualité plutôt que croître à tout prix.",
+   "apport": "Contre-discours à la scalabilité ; inspirera notre chapitre sur la définition du périmètre solo."
+  },
+  {
+   "auteur": "Michael E. Gerber",
+   "titre": "The E-Myth Revisited",
+   "annee": "1995",
+   "idee": "La plupart des petites entreprises échouent parce que le fondateur travaille DANS son activité au lieu de travailler SUR elle.",
+   "apport": "Cadre systémique pour créer des process même en solo ; base de la partie 'Systèmes'."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "The 4-Hour Workweek",
+   "annee": "2007",
+   "idee": "Automatiser, déléguer et éliminer pour construire un revenu avec un minimum d'heures actives.",
+   "apport": "Techniques de productivité et d'automatisation adaptées à l'administratif du solo."
+  },
+  {
+   "auteur": "Donald Miller",
+   "titre": "Building a StoryBrand",
+   "annee": "2017",
+   "idee": "Le client est le héros ; le prestataire est le guide. Structurer son message via un arc narratif en 7 étapes.",
+   "apport": "Framework de positionnement et de pitch utilisé dans les chapitres prospection."
+  },
+  {
+   "auteur": "Alan Weiss",
+   "titre": "Million Dollar Consulting",
+   "annee": "2009",
+   "idee": "Facturer à la valeur plutôt qu'au temps ; construire des propositions commerciales irrésistibles.",
+   "apport": "Modèle de tarification à la valeur et structure de proposition commerciale."
+  },
+  {
+   "auteur": "Blair Enns",
+   "titre": "The Win Without Pitching Manifesto",
+   "annee": "2008",
+   "idee": "Se positionner en expert plutôt qu'en exécutant pour attirer des clients premium sans prospecter à froid.",
+   "apport": "Posture d'expert et techniques de repositionnement tarifaire."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "Valider chaque hypothèse commerciale par des cycles courts Build-Measure-Learn avant d'investir massivement.",
+   "apport": "Méthode itérative pour tester son offre et ses prix sans risque."
+  },
+  {
+   "auteur": "Josh Kaufman",
+   "titre": "The Personal MBA",
+   "annee": "2010",
+   "idee": "Synthèse des concepts clés du business (marketing, vente, finance, systèmes) accessibles sans école de commerce.",
+   "apport": "Vulgarisation des notions comptables et financières pour la partie administratif."
+  },
+  {
+   "auteur": "Jason Fried & David Heinemeier Hansson",
+   "titre": "Rework",
+   "annee": "2010",
+   "idee": "Rejeter les conventions du monde corporate : plans sur 5 ans inutiles, réunions toxiques, croissance forcée.",
+   "apport": "État d'esprit minimaliste et pragmatique pour la gestion quotidienne en solo."
+  },
+  {
+   "auteur": "David Allen",
+   "titre": "Getting Things Done",
+   "annee": "2001",
+   "idee": "Libérer la charge mentale en externalisant chaque tâche dans un système de confiance à 5 étapes.",
+   "apport": "Méthode GTD appliquée à la gestion administrative et aux relances clients."
+  },
+  {
+   "auteur": "James Clear",
+   "titre": "Atomic Habits",
+   "annee": "2018",
+   "idee": "Les petits changements quotidiens (1 %) composés sur la durée produisent des résultats exponentiels.",
+   "apport": "Routines de prospection et de gestion administrative intégrées en micro-habitudes."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "La réussite financière dépend davantage du comportement et de la psychologie que de la technique pure.",
+   "apport": "Rapport sain à l'argent pour fixer ses tarifs sans culpabilité ni sous-évaluation."
+  },
+  {
+   "auteur": "Mike Michalowicz",
+   "titre": "Profit First",
+   "annee": "2014",
+   "idee": "Inverser la formule comptable : se payer d'abord, puis répartir le reste entre charges, impôts et exploitation.",
+   "apport": "Système de comptes bancaires séparés adapté à la trésorerie du solo."
+  },
+  {
+   "auteur": "Brené Brown",
+   "titre": "Daring Greatly",
+   "annee": "2012",
+   "idee": "La vulnérabilité assumée est une force : oser se montrer, demander, négocier malgré la peur du rejet.",
+   "apport": "Gestion du syndrome de l'imposteur et confiance nécessaire pour prospecter et vendre."
+  },
+  {
+   "auteur": "Cal Newport",
+   "titre": "Deep Work",
+   "annee": "2016",
+   "idee": "La capacité à se concentrer sans distraction est l'avantage compétitif ultime du XXIe siècle.",
+   "apport": "Organisation du temps pour mener de front prospection, production et administratif."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 – Poser les fondations : état d'esprit, positionnement et offre",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le déclic solo : pourquoi et comment se lancer seul",
+     "objectif": "Aider le lecteur à valider sa décision de se lancer en indépendant, identifier ses motivations profondes et lever les freins psychologiques initiaux.",
+     "sections": [
+      "1.1 Salariat, freelance, micro-entreprise : clarifier les options réelles",
+      "1.2 Le mythe du 'moment parfait' et la règle des 70 %",
+      "1.3 Identifier ses compétences monétisables : l'audit personnel",
+      "1.4 Gérer le syndrome de l'imposteur dès le jour zéro",
+      "1.5 Construire son filet de sécurité financière avant de sauter",
+      "1.6 Le contrat moral avec soi-même : engagements non négociables"
+     ],
+     "exercices": [
+      "Audit de compétences en 4 quadrants (savoir-faire, savoir-être, réseau, passion)",
+      "Calcul du 'numéro de survie' : dépenses minimales mensuelles × 6",
+      "Lettre à son futur soi dans 12 mois : objectifs et limites",
+      "Liste des 10 peurs du lancement et contre-argument pour chacune"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Définir une offre irrésistible en 7 jours",
+     "objectif": "Guider le lecteur dans la construction d'une offre claire, différenciante et testable, en évitant le piège de la prestation générique.",
+     "sections": [
+      "2.1 Du talent brut à la promesse client : la transformation",
+      "2.2 Le framework StoryBrand appliqué à son positionnement",
+      "2.3 Niche ou généraliste : trancher sans se fermer de portes",
+      "2.4 Construire son offre en 3 niveaux (essentiel, avancé, premium)",
+      "2.5 Le test Lean : valider son offre auprès de 5 personnes en 72 h",
+      "2.6 Rédiger sa phrase d'accroche en une ligne",
+      "2.7 Itérer : ajuster l'offre après les 3 premiers retours"
+     ],
+     "exercices": [
+      "Canvas d'offre en une page (problème, solution, résultat, preuve, prix indicatif)",
+      "Interview de 5 clients potentiels avec grille de questions fournie",
+      "Rédaction de 3 versions de la promesse et test A/B auprès de proches",
+      "Matrice niche × compétence pour identifier 3 positionnements possibles"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Choisir son statut et ouvrir son activité sans avocat",
+     "objectif": "Donner une vue claire des statuts juridiques disponibles (micro-entreprise, EI, SASU, portage salarial) et des étapes administratives de création, sans remplacer un conseil personnalisé.",
+     "sections": [
+      "3.1 Panorama des statuts : avantages, limites, seuils de chiffre d'affaires",
+      "3.2 Micro-entreprise vs entreprise individuelle : le match",
+      "3.3 Portage salarial et coopératives d'activité : l'alternative hybride",
+      "3.4 Les démarches d'immatriculation pas à pas (guichet unique INPI)",
+      "3.5 Les obligations déclaratives dès le premier euro",
+      "3.6 Assurances, RC Pro et protection sociale : ce qui est vraiment obligatoire",
+      "3.7 Checklist des 15 actions à réaliser dans les 30 premiers jours"
+     ],
+     "exercices": [
+      "Tableau comparatif rempli avec ses propres projections de CA",
+      "Simulation de charges sociales sur le site de l'URSSAF avec 3 scénarios",
+      "Rédaction de sa checklist personnelle de lancement (template fourni)",
+      "Prise de rendez-vous avec un conseiller CCI ou BGE : liste de 10 questions à poser"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Construire sa marque personnelle sans budget",
+     "objectif": "Permettre au lecteur de créer une identité professionnelle cohérente (nom, visuel, ton, présence en ligne) avec des outils gratuits ou quasi gratuits.",
+     "sections": [
+      "4.1 Le nom, le logo et la charte : faire simple et mémorable",
+      "4.2 Définir sa voix éditoriale en 3 adjectifs",
+      "4.3 Créer un site vitrine en une journée (outils no-code)",
+      "4.4 Optimiser son profil LinkedIn comme page de vente",
+      "4.5 Les 5 contenus piliers à publier dès la première semaine",
+      "4.6 Cohérence visuelle : templates Canva et kit de survie graphique",
+      "4.7 La preuve sociale dès le départ : témoignages, cas d'usage, portfolio"
+     ],
+     "exercices": [
+      "Brainstorming de 20 noms et test de disponibilité (INPI, domaine, réseaux)",
+      "Rédaction de sa bio en 50, 150 et 300 mots",
+      "Création effective d'un mini-site ou d'une page Notion publique",
+      "Publication du premier post LinkedIn avec le framework AIDA"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 – Décrocher ses premiers clients : prospection, réseau et conversion",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La prospection sans prospection : attirer plutôt que chasser",
+     "objectif": "Montrer comment générer des demandes entrantes grâce au contenu, à la visibilité et au bouche-à-oreille structuré.",
+     "sections": [
+      "5.1 L'inbound marketing adapté au solo : principes et limites",
+      "5.2 Choisir 1 à 2 canaux d'acquisition prioritaires",
+      "5.3 La stratégie de contenu '3-2-1' (3 posts, 2 interactions, 1 message/jour)",
+      "5.4 Le SEO local et les annuaires de freelances (Malt, Fiverr, Upwork)",
+      "5.5 Créer un aimant à prospects (lead magnet) en 2 heures",
+      "5.6 Mesurer : tableau de bord de prospection hebdomadaire"
+     ],
+     "exercices": [
+      "Cartographie de 30 prospects idéaux (persona + source d'accès)",
+      "Calendrier éditorial de 4 semaines avec thèmes et formats",
+      "Création d'un lead magnet (checklist, mini-guide ou template)",
+      "Inscription optimisée sur 2 plateformes de mise en relation"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Activer son réseau : les 50 personnes qui changeront tout",
+     "objectif": "Transformer le réseau existant (personnel, ancien emploi, formations) en source de missions sans paraître insistant.",
+     "sections": [
+      "6.1 Cartographier son réseau : les 3 cercles concentriques",
+      "6.2 Le message de réactivation en 3 phrases (sans mendier)",
+      "6.3 Demander des recommandations, pas des missions",
+      "6.4 Les événements physiques et en ligne : lesquels choisir",
+      "6.5 Le suivi CRM personnel : ne jamais perdre un contact",
+      "6.6 Créer un programme de parrainage informel"
+     ],
+     "exercices": [
+      "Liste des 50 contacts classés par potentiel et proximité",
+      "Rédaction de 5 messages de réactivation personnalisés",
+      "Mise en place d'un mini-CRM (Notion, Airtable ou tableur)",
+      "Planification de 4 événements networking sur les 3 prochains mois"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "L'art du premier rendez-vous : convaincre en 30 minutes",
+     "objectif": "Préparer le lecteur à mener un appel ou une rencontre de découverte qui débouche sur une proposition signée.",
+     "sections": [
+      "7.1 La préparation : recherche sur le prospect et hypothèses",
+      "7.2 Les 10 questions de découverte qui font parler le client",
+      "7.3 Écoute active et reformulation : la méthode 80/20",
+      "7.4 Présenter son offre comme une solution sur mesure",
+      "7.5 Gérer les objections courantes (prix, délai, confiance)",
+      "7.6 Le closing doux : proposer la suite sans forcer",
+      "7.7 Le mail de suivi dans les 24 h : structure et timing"
+     ],
+     "exercices": [
+      "Script d'appel de découverte à personnaliser (trame fournie)",
+      "Jeu de rôle : simuler 3 objections et rédiger ses réponses",
+      "Template de mail de suivi post-rendez-vous",
+      "Grille d'auto-évaluation après chaque rendez-vous réel"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Répondre aux appels d'offres et aux plateformes sans se brader",
+     "objectif": "Apprendre à rédiger des propositions percutantes sur les marchés publics, les plateformes de freelance et les réponses à briefs.",
+     "sections": [
+      "8.1 Décoder un appel d'offres : ce qui est vraiment demandé",
+      "8.2 La structure de proposition en 6 blocs",
+      "8.3 Se différencier quand 20 concurrents postulent",
+      "8.4 Les plateformes : algorithmes, notation et stratégie de visibilité",
+      "8.5 Le portfolio qui vend : 3 cas suffisent",
+      "8.6 Quand dire non : filtrer les missions toxiques ou sous-payées"
+     ],
+     "exercices": [
+      "Rédaction d'une proposition complète à partir d'un brief fictif",
+      "Création d'un portfolio de 3 études de cas (réelles ou simulées)",
+      "Checklist de 15 points avant d'envoyer une réponse à AO",
+      "Liste de 5 critères 'non négociables' pour accepter une mission"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Transformer un essai en contrat : les 7 premiers clients",
+     "objectif": "Donner une feuille de route concrète pour passer de zéro à sept clients réguliers dans les 6 premiers mois.",
+     "sections": [
+      "9.1 Le plan des 90 jours : semaines 1 à 4, 5 à 8, 9 à 12",
+      "9.2 La mission gratuite stratégique : quand et comment l'utiliser",
+      "9.3 Demander un témoignage dès la fin de la première mission",
+      "9.4 Le système de relance sans harceler (J+2, J+7, J+14)",
+      "9.5 Transformer un client ponctuel en client récurrent",
+      "9.6 Le tableau de bord 'Pipeline' : suivre ses opportunités",
+      "9.7 Célébrer et analyser : la rétrospective mensuelle"
+     ],
+     "exercices": [
+      "Remplissage du plan des 90 jours avec ses propres actions",
+      "Template de demande de témoignage en 3 phrases",
+      "Création du pipeline de prospection (5 colonnes : contact, RDV, proposition, négociation, signé)",
+      "Rituel de rétrospective mensuelle en 6 questions"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 – Fixer ses tarifs : valoriser son travail et négocier sereinement",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "La psychologie du prix : pourquoi vous vous sous-vendez",
+     "objectif": "Déconstruire les croyances limitantes autour de l'argent et comprendre les mécanismes psychologiques qui poussent à baisser ses tarifs.",
+     "sections": [
+      "10.1 Le syndrome de l'imposteur appliqué au prix",
+      "10.2 L'ancrage, l'aversion à la perte et le biais de comparaison",
+      "10.3 La valeur perçue vs la valeur réelle : combler l'écart",
+      "10.4 Le rapport culturel à l'argent en France et en francophonie",
+      "10.5 Se donner la permission de gagner confortablement sa vie",
+      "10.6 L'exercice du 'prix idéal' sans contrainte"
+     ],
+     "exercices": [
+      "Journal des croyances limitantes sur l'argent (10 items) et reformulation",
+      "Calcul du taux horaire réel actuel vs taux souhaité",
+      "Lettre de permission : s'autoriser à facturer X €",
+      "Visualisation : décrire sa journée idéale dans 2 ans grâce à une tarification juste"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Les 5 modèles de tarification et quand les utiliser",
+     "objectif": "Présenter les méthodes de facturation (horaire, forfait, abonnement, à la valeur, royalties) et aider à choisir la plus adaptée.",
+     "sections": [
+      "11.1 Le taux horaire : simplicité et pièges",
+      "11.2 Le forfait par projet : cadrer le périmètre",
+      "11.3 L'abonnement mensuel (retainer) : stabilité et prévisibilité",
+      "11.4 La tarification à la valeur : facturer le résultat",
+      "11.5 Le modèle hybride : combiner abonnement + forfait + bonus",
+      "11.6 Tableau décisionnel : quel modèle pour quelle situation"
+     ],
+     "exercices": [
+      "Simulation chiffrée d'une même mission facturée selon les 5 modèles",
+      "Calcul du taux horaire plancher (charges + salaire cible + marge)",
+      "Rédaction d'une offre d'abonnement mensuel pour un service existant",
+      "Arbre de décision 'Quel modèle choisir ?' à compléter"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Construire sa grille tarifaire et la défendre",
+     "objectif": "Créer une grille de prix cohérente, évolutive et assumée, puis apprendre à la présenter sans s'excuser.",
+     "sections": [
+      "12.1 Le calcul du prix plancher : charges, temps, impôts, marge",
+      "12.2 Étudier le marché sans se comparer obsessionnellement",
+      "12.3 Construire 3 formules (Starter, Pro, Signature)",
+      "12.4 Rédiger sa page 'Tarifs' ou sa grille PDF",
+      "12.5 Annoncer le prix : ton, moment, support",
+      "12.6 Gérer la phrase 'C'est trop cher' : 7 réponses calibrées",
+      "12.7 Augmenter ses tarifs chaque année : méthode et script"
+     ],
+     "exercices": [
+      "Feuille de calcul du prix plancher (template fourni)",
+      "Benchmark de 5 concurrents directs : positionnement prix",
+      "Rédaction de sa grille tarifaire à 3 niveaux",
+      "Script d'annonce d'augmentation de tarifs à envoyer aux clients existants"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Négocier sans céder : l'art du compromis gagnant",
+     "objectif": "Outiller le lecteur pour négocier un budget, un délai ou un périmètre tout en protégeant sa rentabilité et la relation.",
+     "sections": [
+      "13.1 Les principes de la négociation raisonnée (Harvard)",
+      "13.2 Préparer sa BATNA : meilleure alternative en cas d'échec",
+      "13.3 Les concessions acceptables vs les lignes rouges",
+      "13.4 Négocier le périmètre plutôt que le prix",
+      "13.5 Le silence, le reformulation et l'ancrage : 3 tactiques",
+      "13.6 Savoir dire non élégamment et laisser la porte ouverte"
+     ],
+     "exercices": [
+      "Préparation d'une négociation fictive avec BATNA et concessions hiérarchisées",
+      "Jeu de rôle écrit : répondre à 5 demandes de rabais",
+      "Liste personnelle de 3 lignes rouges non négociables",
+      "Template de mail de contre-proposition"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 – Gérer l'administratif sans y laisser ses soirées",
+   "chapitres": [
+    {
+     "numero": 14,
+     "titre": "La comptabilité du solo : comprendre sans être comptable",
+     "objectif": "Rendre accessibles les obligations comptables de base (livre de recettes, facturation, déclarations) et les outils qui automatisent.",
+     "sections": [
+      "14.1 Les obligations comptables selon le statut (micro, réel simplifié)",
+      "14.2 La facture conforme : mentions obligatoires et modèle",
+      "14.3 Le livre de recettes et le registre des achats",
+      "14.4 Les déclarations URSSAF, TVA et impôts : calendrier annuel",
+      "14.5 Les outils de facturation (Freebe, Abby, Henrri, Indy)",
+      "14.6 Quand et pourquoi passer à un expert-comptable"
+     ],
+     "exercices": [
+      "Création de son premier modèle de facture conforme",
+      "Mise en place du calendrier fiscal annuel (12 échéances)",
+      "Test de 2 logiciels de facturation gratuits et choix argumenté",
+      "Simulation de déclaration URSSAF trimestrielle"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Contrats, CGV et protection juridique sans juriste",
+     "objectif": "Fournir les repères pour rédiger des conditions générales de vente, un contrat de prestation et gérer les litiges courants, tout en rappelant les limites de l'auto-rédaction.",
+     "sections": [
+      "15.1 Les CGV : à quoi servent-elles et que doivent-elles contenir",
+      "15.2 Le contrat de prestation : clauses essentielles",
+      "15.3 Propriété intellectuelle et cession de droits",
+      "15.4 Les conditions de paiement, acompte et pénalités de retard",
+      "15.5 La rupture de contrat et la force majeure",
+      "15.6 Gérer un impayé : relance, mise en demeure, médiation",
+      "15.7 Quand consulter un avocat : les signaux d'alerte"
+     ],
+     "exercices": [
+      "Personnalisation d'un template de CGV (structure fournie)",
+      "Rédaction des 8 clauses clés d'un contrat de prestation",
+      "Script de relance impayé J+15, J+30, J+45",
+      "Checklist 'Suis-je en règle ?' en 12 points"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Organiser son temps : produire, prospecter, administrer",
+     "objectif": "Proposer un système d'organisation hebdomadaire qui évite la surcharge et garantit du temps pour chaque pilier de l'activité.",
+     "sections": [
+      "16.1 Le piège du 'tout urgent' : la matrice d'Eisenhower appliquée",
+      "16.2 Le time-blocking : 3 blocs quotidiens minimum",
+      "16.3 La méthode GTD adaptée au solo : inbox zéro",
+      "16.4 Batcher les tâches administratives (1 demi-journée/semaine)",
+      "16.5 Protéger sa production : le deep work de Cal Newport",
+      "16.6 Les outils : calendrier, todo-list, automatisation (Zapier, Make)"
+     ],
+     "exercices": [
+      "Audit d'une semaine type : où passe vraiment le temps",
+      "Création de son emploi du temps hebdomadaire en blocs",
+      "Mise en place d'une routine administrative du vendredi matin",
+      "Automatisation d'une tâche répétitive (relance, facture, post réseau)"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Trésorerie, épargne et impôts : piloter sa trésorerie en solo",
+     "objectif": "Donner une méthode simple pour anticiper ses flux de trésorerie, provisionner ses charges et éviter la surprise fiscale.",
+     "sections": [
+      "17.1 La méthode Profit First adaptée : 4 comptes bancaires",
+      "17.2 Prévisionnel de trésorerie sur 12 mois glissants",
+      "17.3 Provisionner ses charges sociales et sa TVA",
+      "17.4 L'épargne de précaution : 3 à 6 mois de charges",
+      "17.5 Optimiser sa rémunération : salaire vs dividendes (selon statut)",
+      "17.6 Anticiper l'impôt : le prélèvement à la source et les acomptes",
+      "17.7 Le rituel financier mensuel en 45 minutes"
+     ],
+     "exercices": [
+      "Ouverture ou paramétrage de 4 sous-comptes (Pro, Charges, Impôts, Perso)",
+      "Remplissage du prévisionnel de trésorerie (template 12 mois)",
+      "Calcul de sa provision mensuelle de charges (en % du CA)",
+      "Mise en place d'un virement automatique d'épargne le 1er du mois"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 5 – Systématiser et croître sans s'épuiser",
+   "chapitres": [
+    {
+     "numero": 18,
+     "titre": "Créer ses process : travailler SUR son activité, pas seulement DEDANS",
+     "objectif": "Appliquer la philosophie E-Myth au solo : documenter ses process pour gagner du temps, réduire les erreurs et préparer une éventuelle délégation.",
+     "sections": [
+      "18.1 Identifier les 10 tâches répétitives de son activité",
+      "18.2 Rédiger une procédure en 5 étapes (SOP)",
+      "18.3 Les templates réutilisables : mails, devis, rapports",
+      "18.4 Automatiser sans coder : Zapier, Make, Notion",
+      "18.5 Le système de gestion de projet client (onboarding, suivi, livraison)",
+      "18.6 Quand et comment déléguer la première tâche"
+     ],
+     "exercices": [
+      "Liste des 10 tâches les plus chronophages et priorité d'automatisation",
+      "Rédaction de 2 SOP (accueil client et facturation)",
+      "Création de 3 templates de mail réutilisables",
+      "Mise en place d'un workflow automatisé (relance devis ou facture)"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Fidéliser et faire grandir ses clients existants",
+     "objectif": "Montrer que la croissance passe d'abord par les clients actuels : upsell, cross-sell, parrainage et relation long terme.",
+     "sections": [
+      "19.1 Le coût d'acquisition vs la valeur vie client (LTV)",
+      "19.2 Le check-in post-mission : rester présent sans vendre",
+      "19.3 L'upsell élégant : proposer plus au bon moment",
+      "19.4 Le programme de parrainage : transformer les clients en ambassadeurs",
+      "19.5 Gérer un client mécontent : la méthode LAST (Listen, Apologize, Solve, Thank)",
+      "19.6 Le bilan annuel client : renforcer le partenariat"
+     ],
+     "exercices": [
+      "Calcul de la LTV de ses 3 meilleurs clients",
+      "Rédaction d'un mail de check-in à 30 jours",
+      "Création d'une offre d'upsell pour un service existant",
+      "Script de demande de recommandation avec incitation"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Diversifier ses revenus : produits numériques, formations, affiliation",
+     "objectif": "Explorer les revenus complémentaires qui décorellent le temps du revenu : e-books, mini-formations, templates, affiliation, ateliers.",
+     "sections": [
+      "20.1 Le continuum service → produit : réduire la dépendance au temps vendu",
+      "20.2 Créer un produit numérique minimum viable en 2 semaines",
+      "20.3 Les plateformes de vente (Gumroad, Podia, Teachable, Systeme.io)",
+      "20.4 L'atelier collectif et la masterclass : format et tarif",
+      "20.5 L'affiliation et les partenariats : choisir les bons programmes",
+      "20.6 Le funnel simple : contenu gratuit → email → produit payant"
+     ],
+     "exercices": [
+      "Brainstorming de 5 idées de produits dérivés de son expertise",
+      "Plan de création d'un mini e-book en 14 jours (outline)",
+      "Comparatif de 3 plateformes de vente avec critères personnels",
+      "Schéma de son premier funnel en 4 étapes"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "S'entourer sans recruter : mentors, pairs et sous-traitants",
+     "objectif": "Construire un écosystème de soutien (communauté, mentor, sous-traitants ponctuels) pour rompre l'isolement et gagner en capacité.",
+     "sections": [
+      "21.1 La solitude du solo : un risque sous-estimé",
+      "21.2 Rejoindre ou créer un groupe de pairs (mastermind)",
+      "21.3 Trouver un mentor ou un coach : où, comment, à quel prix",
+      "21.4 Sous-traiter une mission : cadre juridique et éthique",
+      "21.5 Les collectifs et coopératives d'indépendants",
+      "21.6 Construire son 'board' personnel de 3 à 5 conseillers"
+     ],
+     "exercices": [
+      "Identification de 3 communautés pertinentes et inscription",
+      "Rédaction d'une demande de mentorat en 5 phrases",
+      "Contrat de sous-traitance : clauses essentielles à vérifier",
+      "Cartographie de son 'board' personnel (5 rôles)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 6 – Durer, s'épanouir et préparer l'avenir",
+   "chapitres": [
+    {
+     "numero": 22,
+     "titre": "Prévenir le burn-out du solo : énergie, limites et santé",
+     "objectif": "Donner des stratégies concrètes pour préserver son énergie, poser des limites claires et maintenir un équilibre durable. (Aucun conseil médical personnalisé.)",
+     "sections": [
+      "22.1 Les 5 signaux précoces du surmenage en indépendant",
+      "22.2 Poser ses horaires et les faire respecter (clients et soi-même)",
+      "22.3 Le droit à la déconnexion : rituels de fin de journée",
+      "22.4 Vacances et arrêts : anticiper financièrement",
+      "22.5 L'activité physique et le sommeil comme leviers de performance",
+      "22.6 Savoir demander de l'aide : quand et à qui"
+     ],
+     "exercices": [
+      "Auto-diagnostic énergie : grille hebdomadaire sur 4 semaines",
+      "Rédaction de ses 'heures ouvrées' et message d'absence type",
+      "Planification de 4 vraies semaines de repos sur 12 mois",
+      "Rituel de clôture de journée en 5 étapes"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Piloter sa croissance : indicateurs, bilan annuel et cap à 3 ans",
+     "objectif": "Installer une routine de pilotage stratégique pour prendre des décisions éclairées et donner une direction claire à son activité.",
+     "sections": [
+      "23.1 Les 7 indicateurs clés du solo (CA, marge, taux d'occupation, NPS…)",
+      "23.2 Le tableau de bord mensuel en une page",
+      "23.3 Le bilan annuel : célébrer, analyser, ajuster",
+      "23.4 Définir sa vision à 3 ans sans plan rigide",
+      "23.5 Les pivots : reconnaître quand changer de direction",
+      "23.6 Investir dans sa formation continue"
+     ],
+     "exercices": [
+      "Création de son tableau de bord mensuel (7 KPI)",
+      "Rédaction du bilan de l'année écoulée (forces, faiblesses, apprentissages)",
+      "Lettre de vision à 3 ans : activité, revenus, style de vie",
+      "Plan de formation : 3 compétences à développer sur 12 mois"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Transmettre, vendre ou continuer : les futurs possibles du solo",
+     "objectif": "Ouvrir les perspectives à long terme : pérenniser, céder son activité, créer un collectif ou revenir au salariat en ayant capitalisé.",
+     "sections": [
+      "24.1 Les 4 trajectoires possibles après 5 ans de solo",
+      "24.2 Valoriser et céder son portefeuille client",
+      "24.3 Passer de solo à petite équipe : les premiers recrutements",
+      "24.4 Créer une marque collective ou un studio",
+      "24.5 Le retour au salariat : valoriser son expérience d'indépendant",
+      "24.6 L'héritage professionnel : ce qu'on laisse, ce qu'on transmet",
+      "24.7 Le mot de la fin : votre activité est un véhicule, pas une prison"
+     ],
+     "exercices": [
+      "Projection personnelle : laquelle des 4 trajectoires m'attire et pourquoi",
+      "Estimation de la valeur de son portefeuille client (méthode simplifiée)",
+      "Rédaction de son 'manifeste solo' en 10 principes",
+      "Lettre ouverte à celui ou celle qui débutera dans 5 ans : conseils du futur soi"
+     ]
+    }
+   ]
+  }
+ ]
+}

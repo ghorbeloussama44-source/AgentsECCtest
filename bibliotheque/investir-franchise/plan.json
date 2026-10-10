@@ -1,0 +1,523 @@
+{
+ "titre": "Franchise Gagnante",
+ "sous_titre": "Le guide complet pour choisir, évaluer et financer votre réseau : entreprendre avec un modèle éprouvé, de l'auto-évaluation à la revente.",
+ "bibliographie": [
+  {
+   "auteur": "Michael E. Gerber",
+   "titre": "The E-Myth Revisited",
+   "annee": "1995",
+   "idee": "La plupart des entrepreneurs échouent car ils sont des techniciens et non des managers ; le modèle de la franchise est le prototype ultime de l'entreprise qui tourne sans son fondateur.",
+   "apport": "Le mindset indispensable pour travailler 'sur' son entreprise franchisée et non 'dans' son entreprise, en respectant les systèmes."
+  },
+  {
+   "auteur": "Rick Grossmann",
+   "titre": "Franchise Bible",
+   "annee": "2012",
+   "idee": "Un manuel exhaustif couvrant toutes les étapes de l'achat, de l'exploitation et de la vente d'une franchise, avec des checklists pratiques.",
+   "apport": "La structure de nos checklists d'évaluation et de due diligence opérationnelle."
+  },
+  {
+   "auteur": "Dave Thomas et Michael Seid",
+   "titre": "Franchising for Dummies",
+   "annee": "2006",
+   "idee": "Démystification des aspects légaux et opérationnels de la franchise, avec un focus sur la lecture critique des documents de divulgation.",
+   "apport": "La méthodologie pour décrypter le DIP (Dossier d'Information Précontractuel) et repérer les signaux d'alerte juridiques."
+  },
+  {
+   "auteur": "Robert L. Purvin",
+   "titre": "The Franchise Fraud",
+   "annee": "1994",
+   "idee": "Analyse critique et sans concession des déséquilibres de pouvoir dans les contrats de franchise et des abus potentiels des franchiseurs.",
+   "apport": "Les clés pour négocier les clauses abusives et protéger ses intérêts face au siège."
+  },
+  {
+   "auteur": "Joe Mathews",
+   "titre": "Street Smart Franchising",
+   "annee": "2006",
+   "idee": "L'importance cruciale de valider le terrain en interrogeant les franchisés existants plutôt que de se fier uniquement au discours du siège.",
+   "apport": "Le script d'entretien et les techniques pour obtenir la vérité financière et opérationnelle des franchisés actuels."
+  },
+  {
+   "auteur": "Richard Ruback et Royce Yudkoff",
+   "titre": "HBR Guide to Buying a Small Business",
+   "annee": "2017",
+   "idee": "Les frameworks d'acquisition de PME et de search funds appliqués à l'évaluation financière et à la négociation de rachat.",
+   "apport": "Les modèles de valorisation et d'analyse du BFR pour le rachat d'une unité franchisée existante."
+  },
+  {
+   "auteur": "Walker Deibel",
+   "titre": "Buy Then Build",
+   "annee": "2018",
+   "idee": "L'acquisition d'un business existant (ou franchisé) offre un avantage financier et temporel massif par rapport à la création ex nihilo.",
+   "apport": "Les stratégies de transition post-acquisition et de reprise de la clientèle locale."
+  },
+  {
+   "auteur": "Jean-Marie Leloup",
+   "titre": "La Franchise : De la stratégie à la pratique",
+   "annee": "2012",
+   "idee": "Vue d'ensemble du droit français de la franchise, de la loi Doubin aux spécificités des réseaux d'enseigne nationaux.",
+   "apport": "Le cadre juridique français, les obligations du franchiseur et la gestion des litiges territoriaux."
+  },
+  {
+   "auteur": "Karen Berman et Joe Knight",
+   "titre": "Financial Intelligence for Entrepreneurs",
+   "annee": "2008",
+   "idee": "Comment lire et interpréter les états financiers sans être expert-comptable pour prendre de meilleures décisions stratégiques.",
+   "apport": "La grille de lecture des comptes annuels du franchiseur et du compte de résultat prévisionnel du franchisé."
+  },
+  {
+   "auteur": "Rupert M. Barkoff",
+   "titre": "Fundamentals of Franchising",
+   "annee": "2008",
+   "idee": "Les mécanismes légaux fondamentaux qui régissent la relation franchiseur-franchisé, de la propriété intellectuelle à la rupture.",
+   "apport": "L'analyse des clauses de non-concurrence, d'approvisionnement exclusif et de droit de préemption."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "Le succès financier dépend plus du comportement personnel et de la tolérance au risque que de l'intelligence technique.",
+   "apport": "Le module d'auto-évaluation sur la résilience psychologique face aux baisses de chiffre d'affaires en phase de lancement."
+  },
+  {
+   "auteur": "Gino Wickman",
+   "titre": "Traction",
+   "annee": "2012",
+   "idee": "Le système d'exploitation entrepreneurial (EOS) pour structurer les réunions, les KPIs et la responsabilité dans les PME.",
+   "apport": "L'adaptation des routines de management pour piloter son unité franchisée avec la rigueur d'une grande entreprise."
+  },
+  {
+   "auteur": "John Warrilow",
+   "titre": "Built to Sell",
+   "annee": "2011",
+   "idee": "Comment créer une entreprise qui a de la valeur aux yeux d'un acheteur en la rendant indépendante de son dirigeant actuel.",
+   "apport": "La stratégie de sortie : préparer son unité franchisée pour la revendre au meilleur prix au bout de 5 à 7 ans."
+  },
+  {
+   "auteur": "Jim Collins",
+   "titre": "Good to Great",
+   "annee": "2001",
+   "idee": "Les entreprises qui durent possèdent un concept hérisson et une discipline de fer, portées par des leaders de niveau 5.",
+   "apport": "Les critères pour évaluer la vision à long terme, la R&D et la qualité du leadership du franchiseur."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "L'importance du test terrain, du feedback client et de l'itération rapide avant de déployer des ressources massives.",
+   "apport": "L'application des principes Lean au marketing local et au test de nouvelles offres complémentaires en unité franchisée."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 : L'État des Lieux - Se préparer psychologiquement et stratégiquement",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Mythes et réalités de la franchise",
+     "objectif": "Objectif : 3 500 mots. Déconstruire les idées reçues sur la franchise pour poser les bases d'une réflexion lucide et réaliste.",
+     "sections": [
+      "1. La franchise n'est pas un emploi déguisé ni un salaire garanti",
+      "2. Le mythe du risque zéro : pourquoi les franchises font aussi faillite",
+      "3. L'indépendance dans l'interdépendance : le paradoxe du franchisé",
+      "4. Les secteurs qui résistent aux crises et ceux qui sont cycliques",
+      "5. L'évolution du modèle franchisé en France et en Europe"
+     ],
+     "exercices": [
+      "Quiz vrai/faux sur les 10 plus grandes idées reçues de la franchise",
+      "Analyse critique de 3 échecs médiatisés de réseaux de franchise"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Auto-évaluation : êtes-vous fait pour être franchisé ?",
+     "objectif": "Objectif : 3 500 mots. Analyser son profil psychologique, managérial et financier pour déterminer son adéquation avec le modèle.",
+     "sections": [
+      "1. Bilan de compétences : manager, commercial ou technicien ?",
+      "2. Évaluer sa tolérance au risque financier et à l'endettement",
+      "3. La capacité à suivre un système strict vs le besoin de créer",
+      "4. L'alignement avec les valeurs personnelles et l'éthique",
+      "5. L'impact sur la vie familiale et le bilan temporel",
+      "6. Le profil type du franchisé multi-succès"
+     ],
+     "exercices": [
+      "Test de personnalité entrepreneurial adapté à la franchise",
+      "Matrice des motivations et des deal-breakers personnels"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Franchise vs Création vs Reprise : le match",
+     "objectif": "Objectif : 3 500 mots. Comparer objectivement les trois grandes voies de l'entrepreneuriat pour valider le choix du modèle franchisé.",
+     "sections": [
+      "1. Matrice comparative : coût, risque, temps et liberté",
+      "2. Le coût de l'erreur et la courbe d'apprentissage accélérée",
+      "3. La valeur de la marque : notoriété immédiate vs construction",
+      "4. Le potentiel d'innovation locale vs la standardisation",
+      "5. Choisir selon son profil psychologique et son capital"
+     ],
+     "exercices": [
+      "Tableau de pondération décisionnel personnalisé",
+      "Simulation de scénario sur 3 ans pour les 3 modèles"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Analyser son marché local avant de chercher un réseau",
+     "objectif": "Objectif : 3 500 mots. Comprendre les dynamiques de sa zone géographique cible pour orienter la recherche de concepts pertinents.",
+     "sections": [
+      "1. Étude de la zone de chalandise et des flux de circulation",
+      "2. Analyse de la concurrence directe, indirecte et des substituts",
+      "3. Démographie, sociologie et pouvoir d'achat local",
+      "4. Tendances de consommation et spécificités régionales",
+      "5. L'impact de l'urbanisme commercial et des zones protégées"
+     ],
+     "exercices": [
+      "Création d'une carte de chaleur (heat map) de sa ville cible",
+      "Grille d'observation terrain sur 3 jours (comptage et profils)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 : La Sélection - Trouver et auditer le réseau idéal",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Le sourcing : où et comment trouver les bons réseaux",
+     "objectif": "Objectif : 3 500 mots. Maîtriser les canaux de recherche pour identifier les réseaux performants, y compris ceux qui ne communiquent pas massivement.",
+     "sections": [
+      "1. Les salons professionnels et le rôle des fédérations (FFF)",
+      "2. Les portails spécialisés, les brokers et les cabinets de conseil",
+      "3. Décoder le marketing des franchiseurs et repérer le 'bruit'",
+      "4. Identifier les réseaux émergents vs les réseaux matures",
+      "5. Créer et gérer son entonnoir de sélection (CRM personnel)"
+     ],
+     "exercices": [
+      "Mise en place d'un tracker de réseaux (tableur ou Notion)",
+      "Grille de présélection en 10 critères éliminatoires"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Évaluer le concept, la marque et le savoir-faire",
+     "objectif": "Objectif : 3 500 mots. Analyser la robustesse du modèle économique du franchiseur et la qualité de sa propriété intellectuelle.",
+     "sections": [
+      "1. La preuve du concept : analyser les unités pilotes",
+      "2. La transférabilité du savoir-faire et la qualité des manuels",
+      "3. La R&D, l'innovation et l'adaptation aux nouvelles technologies",
+      "4. L'exclusivité territoriale et la protection de la marque",
+      "5. Le manuel opératif : le cœur du réacteur franchisé"
+     ],
+     "exercices": [
+      "Checklist d'audit du manuel opératif (si accessible)",
+      "Analyse SWOT de la marque face à son concurrent direct"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Rencontrer le franchiseur : décrypter le siège",
+     "objectif": "Objectif : 3 500 mots. Préparer et mener les entretiens avec les têtes de réseau pour évaluer la culture d'entreprise et le support réel.",
+     "sections": [
+      "1. Préparer les questions qui tuent (et celles qui révèlent)",
+      "2. Décrypter le langage corporel, la transparence et la culture siège",
+      "3. Évaluer l'équipe d'animation, de formation et de support",
+      "4. La vision stratégique à 5 et 10 ans du réseau",
+      "5. Les signaux faibles d'un réseau en difficulté ou en survente"
+     ],
+     "exercices": [
+      "Script d'entretien siège avec 20 questions clés",
+      "Grille d'évaluation de la réactivité du siège post-entretien"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'enquête terrain : interroger les franchisés existants",
+     "objectif": "Objectif : 3 500 mots. Mener une investigation journalistique auprès du réseau pour obtenir la vérité du terrain, loin du discours commercial.",
+     "sections": [
+      "1. Choisir qui appeler : les récents, les anciens, les multi-franchisés et les sortants",
+      "2. Aborder les questions financières taboues avec tact",
+      "3. Évaluer la qualité réelle de l'animation terrain et du marketing",
+      "4. La solidarité entre pairs et la culture interne du réseau",
+      "5. Analyser les conflits passés et leur mode de résolution"
+     ],
+     "exercices": [
+      "Guide d'entretien téléphoniques pour franchisés",
+      "Matrice de synthèse des retours (Promesses Siège vs Réalité Terrain)"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Valider l'adéquation Homme-Réseau et prendre sa décision",
+     "objectif": "Objectif : 3 500 mots. Synthétiser toutes les données collectées pour prendre une décision rationnelle (Go / No-Go) sans biais émotionnel.",
+     "sections": [
+      "1. Le fit culturel : partagez-vous les mêmes valeurs ?",
+      "2. Le fit opérationnel : êtes-vous fait pour le terrain ou le management ?",
+      "3. Le fit financier : le ticket d'entrée vs votre capacité réelle",
+      "4. Gérer les biais cognitifs (enthousiasme, sunk cost, FOMO)",
+      "5. La méthodologie du Go / No-Go final"
+     ],
+     "exercices": [
+      "Matrice de compatibilité globale (Score sur 100)",
+      "Rédaction de la lettre de motivation au franchiseur (test d'alignement)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 : L'Évaluation Juridique et Financière - Décrypter les chiffres et le contrat",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Décrypter le DIP (Dossier d'Information Précontractuel)",
+     "objectif": "Objectif : 3 500 mots. Maîtriser la lecture du document légal obligatoire (Loi Doubin) pour en extraire les informations cruciales.",
+     "sections": [
+      "1. Le cadre légal français et les obligations du franchiseur",
+      "2. L'identité, l'ancienneté et l'expérience des dirigeants",
+      "3. L'état du marché local/national et les perspectives du secteur",
+      "4. Les comptes annuels du franchiseur : évaluer sa santé financière",
+      "5. La liste des franchisés : analyser le turnover et les départs"
+     ],
+     "exercices": [
+      "Grille de lecture critique du DIP (les 5 alertes rouges)",
+      "Calcul du taux d'attrition du réseau sur les 3 dernières années"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Analyser et négocier le contrat de franchise",
+     "objectif": "Objectif : 3 500 mots. Comprendre les clauses juridiques fondamentales pour protéger son investissement et anticiper les scénarios de sortie.",
+     "sections": [
+      "1. Durée, conditions de renouvellement et motifs de résiliation",
+      "2. La clause de non-concurrence post-contrat : portée et limites",
+      "3. Les obligations d'approvisionnement et les centrales d'achat",
+      "4. La cession du contrat, le droit d'agrément et le droit de préemption",
+      "5. Pourquoi et comment faire appel à un avocat spécialisé"
+     ],
+     "exercices": [
+      "Surlignage et annotation des 10 clauses à risque",
+      "Checklist de préparation pour le rendez-vous avec l'avocat"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Redevances, marges et coûts cachés",
+     "objectif": "Objectif : 3 500 mots. Modéliser le poids réel des prélèvements du franchiseur sur la marge brute de l'unité franchisée.",
+     "sections": [
+      "1. Le droit d'entrée : que paie-t-on vraiment et comment le financer ?",
+      "2. Les royalties : fixe, pourcentage du CA, ou marge sur fourniture ?",
+      "3. Le fonds de publicité national vs le budget marketing local",
+      "4. Les marges arrière, les cotisations et les frais informatiques",
+      "5. Modéliser le poids total des redevances sur l'EBE"
+     ],
+     "exercices": [
+      "Calculateur de point mort intégrant toutes les redevances",
+      "Simulation d'impact d'une hausse de 2% des royalties"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Construire un Business Plan réaliste pour la franchise",
+     "objectif": "Objectif : 3 500 mots. Traduire les données du réseau et du marché local en un prévisionnel financier solide et défendable.",
+     "sections": [
+      "1. Les investissements initiaux (travaux, matériel, stock, droit d'entrée)",
+      "2. Le calcul du BFR (Besoin en Fonds de Roulement) de lancement",
+      "3. Prévisionnel de CA : construire 3 scénarios (pessimiste, réaliste, optimiste)",
+      "4. Les charges fixes, variables et la masse salariale cible",
+      "5. Le compte de résultat prévisionnel et le plan de financement sur 3 ans"
+     ],
+     "exercices": [
+      "Template de Business Plan spécifique à la franchise",
+      "Exercice de stress-test du BFR en cas de retard d'ouverture"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Évaluer le risque, le point mort et protéger son patrimoine",
+     "objectif": "Objectif : 3 500 mots. Définir les seuils de survie de l'entreprise et mettre en place les garde-fous juridiques et financiers personnels.",
+     "sections": [
+      "1. Calculer son seuil de rentabilité quotidien et mensuel",
+      "2. Identifier et pondérer les risques exogènes (marché, local, légal)",
+      "3. Identifier et mitiguer les risques endogènes (management, exécution)",
+      "4. Le plan de contingence financière : la trésorerie de sécurité",
+      "5. Protéger son patrimoine personnel (holding, régime matrimonial)"
+     ],
+     "exercices": [
+      "Simulateur de crise : que faire si le CA baisse de 25% ?",
+      "Audit de protection du patrimoine personnel"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 : Le Financement et le Lancement - Sécuriser les fonds et ouvrir",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Le montage financier et la structuration du capital",
+     "objectif": "Objectif : 3 500 mots. Assembler le tour de table financier en combinant apport personnel, dettes et financements alternatifs.",
+     "sections": [
+      "1. L'apport personnel : combien, comment et les limites à ne pas franchir",
+      "2. Le crédit professionnel, le crédit-bail et le leasing",
+      "3. L'affacturage, l'escompte et les solutions de trésorerie court terme",
+      "4. Le love money, les associés minoritaires et le crowdfunding",
+      "5. Structurer la holding et la société d'exploitation"
+     ],
+     "exercices": [
+      "Plan de financement initial (Emplois / Ressources)",
+      "Simulation de dilution du capital avec des associés"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Convaincre les banques et les investisseurs",
+     "objectif": "Objectif : 3 500 mots. Présenter son dossier de financement comme un actif sûr en s'appuyant sur la force du réseau de franchise.",
+     "sections": [
+      "1. Ce que le banquier regarde vraiment (le risque vs la rentabilité)",
+      "2. Présenter le réseau et le DIP comme des garants implicites",
+      "3. Construire le dossier de présentation bancaire (le 'Data Room')",
+      "4. Négocier les conditions, les taux et les garanties personnelles",
+      "5. Gérer les refus, comprendre les motifs et trouver des alternatives"
+     ],
+     "exercices": [
+      "Pitch bancaire de 3 minutes (Elevator Pitch)",
+      "Checklist du dossier bancaire complet"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Mobiliser les aides de l'État et les garanties publiques",
+     "objectif": "Objectif : 3 500 mots. Optimiser le coût du capital en activant tous les leviers d'aides à la création d'entreprise disponibles.",
+     "sections": [
+      "1. Les prêts d'honneur (Initiative France, Réseau Entreprendre)",
+      "2. Les garanties Bpifrance et les prêts participatifs",
+      "3. Les aides sociales et fiscales à la création (ACRE, etc.)",
+      "4. Les subventions régionales, locales et les aides à l'embauche",
+      "5. Le calendrier optimal de mobilisation des aides"
+     ],
+     "exercices": [
+      "Cartographie des aides éligibles selon sa région et son profil",
+      "Rétroplanning de dépôt des dossiers de subventions"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La formation initiale : absorber le savoir-faire",
+     "objectif": "Objectif : 3 500 mots. Maximiser le retour sur investissement de la formation dispensée par le franchiseur pour être opérationnel dès le jour J.",
+     "sections": [
+      "1. Le programme type, ses forces et ses angles morts",
+      "2. L'immersion en unité pilote : observer les détails qui comptent",
+      "3. Valider les acquis théoriques et pratiques avant l'ouverture",
+      "4. Former son futur manager ou associé en binôme",
+      "5. L'état d'esprit de l'apprenant adulte et la prise de notes"
+     ],
+     "exercices": [
+      "Journal de bord et grille d'évaluation de la formation",
+      "Plan d'action correctif pour les compétences non acquises"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Le plan de lancement et le marketing local d'ouverture",
+     "objectif": "Objectif : 3 500 mots. Orchestrer l'ouverture de l'unité pour générer un pic de chiffre d'affaires et ancrer la marque dans son territoire.",
+     "sections": [
+      "1. Le rétroplanning d'ouverture (de J-90 à J+30)",
+      "2. Le marketing de pré-ouverture : teasing, recrutement et RP locales",
+      "3. L'inauguration officielle et la gestion de l'événementiel",
+      "4. Les actions de fidélisation et de collecte de data dès le jour 1",
+      "5. Mesurer le ROI du lancement et ajuster le tir"
+     ],
+     "exercices": [
+      "Checklist et diagramme de Gantt d'ouverture",
+      "Budget et planning de campagne marketing local sur 60 jours"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 5 : L'Exploitation et la Sortie - Gérer, performer et revendre",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "L'animation du réseau et la relation avec le siège",
+     "objectif": "Objectif : 3 500 mots. Gérer la relation continue avec le franchiseur pour tirer parti du réseau tout en conservant son autonomie locale.",
+     "sections": [
+      "1. Le rôle de l'animateur de réseau : allié ou flic ?",
+      "2. Préparer les visites d'animation et exploiter les rapports",
+      "3. Participer aux commissions, groupes de travail et instances",
+      "4. Gérer les désaccords stratégiques ou opérationnels avec le siège",
+      "5. Le pouvoir et le rôle des associations de franchisés"
+     ],
+     "exercices": [
+      "Template de rapport d'activité mensuel à envoyer au siège",
+      "Guide de préparation de la visite trimestrielle de l'animateur"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Le management des équipes en mode franchisé",
+     "objectif": "Objectif : 3 500 mots. Recruter, former et fidéliser les collaborateurs locaux en s'appuyant sur les outils RH du réseau et la culture de la marque.",
+     "sections": [
+      "1. Recruter avec les profils types et les outils du réseau",
+      "2. L'intégration (onboarding) et la formation continue aux standards",
+      "3. Le management par les KPIs et les routines opérationnelles",
+      "4. Fédérer l'équipe autour de la culture et des valeurs de la marque",
+      "5. Gérer les conflits, l'absentéisme et le turnover local"
+     ],
+     "exercices": [
+      "Grille d'entretien annuel et de fixation d'objectifs collaborateur",
+      "Audit de l'expérience collaborateur (onboarding)"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Optimiser la rentabilité opérationnelle au quotidien",
+     "objectif": "Objectif : 3 500 mots. Piloter les indicateurs de performance pour maximiser l'EBE et dégager la capacité d'autofinancement de l'unité.",
+     "sections": [
+      "1. Le pilotage du tableau de bord mensuel (Flash Report)",
+      "2. Optimiser les achats, gérer les stocks et limiter la démarque",
+      "3. Augmenter le panier moyen, la fréquence et le taux de transformation",
+      "4. Maîtriser la masse salariale et optimiser les plannings",
+      "5. Les leviers de croissance locale hors du manuel standard"
+     ],
+     "exercices": [
+      "Audit de performance opérationnelle (les 20 fuites de marge)",
+      "Plan d'action d'optimisation du panier moyen sur 30 jours"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Préparer la sortie : valoriser et revendre son unité",
+     "objectif": "Objectif : 3 500 mots. Anticiper la cession de son affaire pour en tirer la meilleure plus-value, en respectant les règles du contrat de franchise.",
+     "sections": [
+      "1. La méthodologie de valorisation d'une unité franchisée (multiples)",
+      "2. Le droit d'agrément du franchiseur et le droit de préemption",
+      "3. Préparer les comptes pour la vente (Clean-up et normalisation)",
+      "4. Trouver un repreneur : interne au réseau, externe ou LBO",
+      "5. La transition, le tuilage et l'accompagnement du repreneur"
+     ],
+     "exercices": [
+      "Estimateur de valeur de revente à 3 et 5 ans",
+      "Checklist de 'Clean-up' financier et juridique pré-cession"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Scaler : devenir multi-franchisé ou Master Franchisé",
+     "objectif": "Objectif : 3 500 mots. Explorer les stratégies de croissance externe et de changement d'échelle pour passer d'entrepreneur à chef d'entreprise.",
+     "sections": [
+      "1. Les signes cliniques que vous êtes prêt à passer à l'échelle",
+      "2. Le modèle de la succursale vs la multi-franchise (avantages/inconvénients)",
+      "3. Le management de managers : changer de posture",
+      "4. Devenir Master Franchisé, Développeur ou Area Representative",
+      "5. Construire un patrimoine d'entreprises et structurer sa holding"
+     ],
+     "exercices": [
+      "Plan stratégique de développement à 5 ans (multi-sites)",
+      "Organigramme cible pour une holding de 5 unités franchisées"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableau de bord Dialagram</title>
+<meta name="description" content="Consommation de tokens Dialagram et Claude pour la Bibliothèque Oussama Ghorbel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout : tuiles de synthèse, puis tokens Dialagram par livre (barres horizontales), puis Dialagram vs Claude par projet (tableau) */
+:root {
+  --bg: #f3f4f6; --panel: #ffffff; --ink: #161a22; --muted: #5d6573; --faint: #8a919e; --line: #dde1e8; --grid: #eceef2;
+  --s-dia: #4b5bd6; --s-cla: #c4622d; --accent: #4b5bd6;
+  --font: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --r: 6px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #12151b; --panel: #1a1e26; --ink: #e8eaef; --muted: #9aa2b1; --faint: #727a88; --line: #2c323d; --grid: #232833;
+  --s-dia: #6f7fe8; --s-cla: #d06f38; --accent: #8d99f2; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 56px; display: grid; gap: 22px; }
+h1, h2 { margin: 0; text-wrap: balance; }
+h1 { font-size: 1.5rem; font-weight: 700; }
+h2 { font-size: 1.05rem; font-weight: 600; }
+nav.site { display: flex; flex-wrap: wrap; gap: 6px; }
+nav.site a { text-decoration: none; font-size: .84rem; font-weight: 600; color: var(--ink); border: 1px solid var(--line); background: var(--panel); padding: 6px 12px; border-radius: 999px; }
+nav.site a[aria-current] { background: var(--accent); border-color: var(--accent); color: #fff; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.lead { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.tile { background: var(--panel); padding: 14px 16px; display: grid; gap: 2px; min-width: 0; }
+.tile .lab { font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+.tile b { font: 500 1.45rem var(--mono); font-variant-numeric: tabular-nums; }
+.tile small { color: var(--muted); font-size: .76rem; }
+.key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-inline-end: 6px; vertical-align: baseline; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.panel > header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+.panel > header span { font-size: .8rem; color: var(--muted); }
+.bars { display: grid; gap: 4px; position: relative; }
+.row { display: grid; grid-template-columns: minmax(120px, 34%) minmax(0, 1fr) 92px; gap: 10px; align-items: center; font-size: .8rem; }
+.row .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+.track { height: 14px; background: linear-gradient(to right, var(--grid) 1px, transparent 1px) 0 0 / 25% 100%; border-radius: 0 4px 4px 0; position: relative; }
+.bar { height: 100%; background: var(--s-dia); border-radius: 0 4px 4px 0; min-width: 2px; }
+.row .val { font: .76rem var(--mono); color: var(--muted); text-align: end; font-variant-numeric: tabular-nums; }
+.row:hover .bar, .row:focus-visible .bar { filter: brightness(1.12); }
+.row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: .76rem; padding: 6px 8px; border-radius: 4px; max-width: 280px; z-index: 2; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .84rem; min-width: 560px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: start; }
+th { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600; }
+td.n { font-family: var(--mono); text-align: end; font-variant-numeric: tabular-nums; }
+th.n { text-align: end; }
+.note { font-size: .8rem; color: var(--muted); max-width: 80ch; }
+@media (max-width: 520px) { .row { grid-template-columns: minmax(90px, 40%) minmax(0, 1fr) 70px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site" aria-label="Pages"><a href="/">Atelier</a><a href="/bibliotheque">Bibliothèque</a><a href="/tableau" aria-current="page">Tableau de bord</a></nav>
+  <header>
+    <h1>Tableau de bord</h1>
+    <p class="lead">Ce que coûte la bibliothèque, côté Dialagram (forfait illimité, mesuré par l'API) et côté Claude (relecture, contrôle et pilotage, estimé).</p>
+  </header>
+
+  <section class="tiles" id="tiles" aria-label="Synthèse"><div class="tile"><span class="lab">Chargement</span><b>…</b></div></section>
+
+  <section class="panel">
+    <header><h2><span class="key" style="background:var(--s-dia)"></span>Tokens Dialagram par livre</h2><span id="booksNote"></span></header>
+    <div class="bars" id="bars"></div>
+  </section>
+
+  <section class="panel">
+    <header><h2>Dialagram et Claude par projet</h2><span>Instantané de l'Atelier</span></header>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Projet</th><th class="n">Tâches</th><th class="n"><span class="key" style="background:var(--s-dia)"></span>Dialagram</th><th class="n"><span class="key" style="background:var(--s-cla)"></span>Claude (estimé)</th><th class="n">Part déléguée</th></tr></thead>
+      <tbody id="projs"><tr><td colspan="5">Chargement…</td></tr></tbody>
+    </table></div>
+    <p class="note">Les tokens Claude sont des estimations de la part écrite par Claude (consignes, contrôles, pages). La consommation réelle de votre forfait Claude, contexte relu compris, se lit dans les réglages de votre compte claude.ai : aucune page ne peut la lire automatiquement.</p>
+  </section>
+</div>
+
+<script>
+const OWNER = "ghorbeloussama44-source", REPO = "AgentsECCtest";
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => Number(n || 0).toLocaleString("fr-FR");
+const short = (n) => n >= 1e6 ? (n / 1e6).toLocaleString("fr-FR", { maximumFractionDigits: 1 }) + " M" : n >= 1e3 ? Math.round(n / 1e3) + " k" : String(n);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+async function etat() {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/etat.json?ref=etat-usine`, { headers: { Accept: "application/vnd.github.raw+json" } });
+    if (r.ok) return await r.json();
+  } catch (e) {}
+  return await (await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/etat-usine/etat.json?t=${Date.now()}`)).json();
+}
+
+function tiles(e, a) {
+  const cat = e.catalogue || [];
+  const diaAtelier = a.tasks.filter((t) => t.projectId !== "bibliotheque-og").reduce((s, t) => s + ((t.dialagram && t.dialagram.total_tokens) || 0), 0);
+  const diaBiblio = a.tasks.filter((t) => t.projectId === "bibliotheque-og").reduce((s, t) => s + ((t.dialagram && t.dialagram.total_tokens) || 0), 0);
+  const dia = (e.tokens_dialagram || 0) + diaAtelier + diaBiblio;
+  const cla = a.tasks.reduce((s, t) => s + ((t.claude && t.claude.tokens) || 0), 0);
+  const share = dia + cla ? (dia / (dia + cla) * 100) : 0;
+  const items = [
+    ["Livres", fmt(cat.length), `objectif ${fmt(9 + (e.objectif || 0))}`],
+    ["Pages", fmt(cat.reduce((s, b) => s + (b.pages || 0), 0)), "format 6×9 pouces"],
+    [`<span class="key" style="background:var(--s-dia)"></span>Tokens Dialagram`, short(dia), "mesurés par l'API"],
+    [`<span class="key" style="background:var(--s-cla)"></span>Tokens Claude`, "≈ " + short(cla), "estimés, hors contexte relu"],
+    ["Part déléguée", share.toLocaleString("fr-FR", { maximumFractionDigits: 1 }) + " %", "du travail écrit"],
+  ];
+  $("tiles").innerHTML = items.map(([l, v, s]) => `<div class="tile"><span class="lab">${l}</span><b>${v}</b><small>${s}</small></div>`).join("");
+}
+
+function bars(e) {
+  const list = (e.catalogue || []).filter((b) => b.tokens).sort((x, y) => y.tokens - x.tokens);
+  $("booksNote").textContent = list.length ? `${list.length} livres de l'usine · moyenne ${short(list.reduce((s, b) => s + b.tokens, 0) / list.length)} par livre` : "";
+  if (!list.length) { $("bars").innerHTML = '<p class="note">Les livres de l\'usine apparaîtront ici dès le premier lot terminé.</p>'; return; }
+  const max = list[0].tokens;
+  $("bars").innerHTML = list.map((b, i) => `<div class="row" tabindex="0" data-i="${i}" aria-label="${esc(b.titre)} : ${fmt(b.tokens)} tokens">
+      <span class="name">${esc(b.titre)}</span><div class="track"><div class="bar" style="width:${(b.tokens / max * 100).toFixed(1)}%"></div></div><span class="val">${short(b.tokens)}</span></div>`).join("") + '<div class="tip" id="tip" hidden></div>';
+  const tip = $("tip");
+  const show = (row) => {
+    const b = list[row.dataset.i];
+    tip.innerHTML = `<strong>${esc(b.titre)}</strong><br>${fmt(b.tokens)} tokens · ${b.pages} pages${b.mots ? " · " + fmt(b.mots) + " mots" : ""}`;
+    tip.hidden = false; tip.style.left = "34%"; tip.style.top = (row.offsetTop - tip.offsetHeight - 6) + "px";
+  };
+  $("bars").addEventListener("mouseover", (ev) => { const r = ev.target.closest(".row"); if (r) show(r); });
+  $("bars").addEventListener("focusin", (ev) => { const r = ev.target.closest(".row"); if (r) show(r); });
+  $("bars").addEventListener("mouseleave", () => { tip.hidden = true; });
+  $("bars").addEventListener("focusout", () => { tip.hidden = true; });
+}
+
+function projets(a) {
+  $("projs").innerHTML = a.projects.map((p) => {
+    const ts = a.tasks.filter((t) => t.projectId === p.id);
+    const d = ts.reduce((s, t) => s + ((t.dialagram && t.dialagram.total_tokens) || 0), 0);
+    const c = ts.reduce((s, t) => s + ((t.claude && t.claude.tokens) || 0), 0);
+    return `<tr><td>${esc(p.name)}</td><td class="n">${ts.length}</td><td class="n">${fmt(d)}</td><td class="n">${fmt(c)}</td><td class="n">${d + c ? (d / (d + c) * 100).toFixed(1) + " %" : "—"}</td></tr>`;
+  }).join("");
+}
+
+Promise.all([etat(), fetch("atelier.json").then((r) => r.json())]).then(([e, a]) => { tiles(e, a); bars(e); projets(a); })
+  .catch(() => { $("tiles").innerHTML = '<div class="tile"><span class="lab">Données indisponibles</span><b>—</b><small>Rechargez dans un instant.</small></div>'; });
+</script>
+</body>
+</html>

@@ -93,7 +93,8 @@ def catalogue(faits):
     themes = {x["slug"]: x["theme"] for x in json.load(open(f"{R}/bibliotheque/outils/sujets.json"))}
     for f in sorted(faits, key=lambda x: x["slug"]):
         out.append({"slug": f["slug"], "titre": f["titre"], "sous_titre": f.get("sous_titre", ""),
-                    "theme": themes.get(f["slug"], ""), "pages": f["pages"], "pdf": f"bibliotheque/{f['slug']}/{f['pdf']}"})
+                    "theme": themes.get(f["slug"], ""), "pages": f["pages"], "mots": f.get("mots"),
+                    "tokens": f.get("tokens_dialagram"), "pdf": f"bibliotheque/{f['slug']}/{f['pdf']}"})
     return out
 
 

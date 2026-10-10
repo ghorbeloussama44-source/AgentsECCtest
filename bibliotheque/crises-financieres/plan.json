@@ -1,0 +1,567 @@
+{
+ "titre": "Le Code des Krachs",
+ "sous_titre": "24 leçons tirées des grandes crises financières pour protéger et faire croître votre patrimoine",
+ "bibliographie": [
+  {
+   "auteur": "Carmen Reinhart & Kenneth Rogoff",
+   "titre": "This Time Is Different: Eight Centuries of Financial Folly",
+   "annee": "2009",
+   "idee": "Analyse quantitative de huit siècles de crises financières montrant la récurrence des mêmes schémas : endettement excessif, déni collectif et effondrement.",
+   "apport": "Le livre reprendra la grille de lecture cyclique et les données chiffrées sur la fréquence et la durée des crises pour construire un modèle d'anticipation."
+  },
+  {
+   "auteur": "Charles P. Kindleberger",
+   "titre": "Manias, Panics, and Crashes: A History of Financial Crises",
+   "annee": "1978",
+   "idee": "Théorie du cycle spéculatif (Minsky) appliquée à l'histoire : euphorie, surinvestissement, panique et krach se répètent de façon quasi mécanique.",
+   "apport": "Structure narrative des cinq phases du cycle qui servira de fil conducteur pédagogique à travers tous les chapitres historiques."
+  },
+  {
+   "auteur": "John Kenneth Galbraith",
+   "titre": "The Great Crash 1929",
+   "annee": "1955",
+   "idee": "Récit analytique du krach de 1929, de la spéculation des années folles à la Grande Dépression, avec une critique de l'autosatisfaction des élites.",
+   "apport": "Étude de cas détaillée pour illustrer les signaux d'alerte ignorés et la psychologie du déni chez les investisseurs."
+  },
+  {
+   "auteur": "Liaquat Ahamed",
+   "titre": "Lords of Finance: The Bankers Who Broke the World",
+   "annee": "2009",
+   "idee": "Comment quatre banquiers centraux (USA, UK, France, Allemagne) ont aggravé la crise de 1929 par des décisions dogmatiques sur l'étalon-or.",
+   "apport": "Leçon sur le risque systémique lié aux décisions institutionnelles ; importance de la diversification géographique du patrimoine."
+  },
+  {
+   "auteur": "Michael Lewis",
+   "titre": "The Big Short: Inside the Doomsday Machine",
+   "annee": "2010",
+   "idee": "Portraits de quelques investisseurs ayant anticipé la crise des subprimes de 2008 en lisant les données que le marché ignorait.",
+   "apport": "Méthodologie de la pensée contrarienne et de l'analyse fondamentale pour détecter les bulles naissantes."
+  },
+  {
+   "auteur": "Andrew Ross Sorkin",
+   "titre": "Too Big to Fail",
+   "annee": "2009",
+   "idee": "Chronique minute par minute de la faillite de Lehman Brothers et du sauvetage d'urgence du système bancaire américain en 2008.",
+   "apport": "Compréhension du risque de contrepartie et de l'interconnexion systémique ; leçon sur la nécessité de liquidités en période de gel."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "The Black Swan: The Impact of the Highly Improbable",
+   "annee": "2007",
+   "idee": "Les événements rares, imprévisibles et à impact extrême dominent l'histoire ; nos modèles sous-estiment systématiquement les queues de distribution.",
+   "apport": "Cadre conceptuel de l'incertitude radicale ; justification de la stratégie « barbell » et de la surprotection contre les chocs."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Antifragile: Things That Gain from Disorder",
+   "annee": "2012",
+   "idee": "Au-delà de la robustesse, certains systèmes se renforcent face au chaos ; il faut concevoir son patrimoine pour bénéficier des crises.",
+   "apport": "Principe d'antifragilité appliqué à l'allocation d'actifs : options, asymétrie de rendement, convexité."
+  },
+  {
+   "auteur": "Robert J. Shiller",
+   "titre": "Irrational Exuberance",
+   "annee": "2000",
+   "idee": "Analyse comportementale des bulles spéculatives (dot-com, immobilier) via les biais cognitifs, les narratifs et les indicateurs de valorisation (CAPE ratio).",
+   "apport": "Indicateurs quantitatifs de surévaluation et grille de lecture comportementale pour le lecteur-investisseur."
+  },
+  {
+   "auteur": "Raghuram Rajan",
+   "titre": "Fault Lines: How Hidden Fractures Still Threaten the World Economy",
+   "annee": "2010",
+   "idee": "Les crises naissent de fractures structurelles profondes (inégalités, politique monétaire, déséquilibres commerciaux) plutôt que de simples erreurs.",
+   "apport": "Approche macro-structurelle pour évaluer la vulnérabilité d'un environnement économique donné."
+  },
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "The Intelligent Investor",
+   "annee": "1949",
+   "idee": "L'investissement « value » fondé sur la marge de sécurité et la discipline émotionnelle comme rempart contre les excès du marché.",
+   "apport": "Principes de marge de sécurité et d'allocation défensive intégrés dans la stratégie patrimoniale post-crise."
+  },
+  {
+   "auteur": "George Soros",
+   "titre": "The Alchemy of Finance",
+   "annee": "1987",
+   "idee": "Théorie de la réflexivité : les perceptions des acteurs modifient les fondamentaux, créant des boucles de rétroaction amplificatrices.",
+   "apport": "Grille de lecture dynamique pour identifier les boucles spéculatives et les points de rupture."
+  },
+  {
+   "auteur": "Roger Lowenstein",
+   "titre": "When Genius Failed: The Rise and Fall of Long-Term Capital Management",
+   "annee": "2000",
+   "idee": "L'effondrement du hedge fund LTCM en 1998 montre les limites des modèles quantitatifs et le danger de l'effet de levier extrême.",
+   "apport": "Mise en garde contre la sur-confiance dans les modèles ; importance de limiter le levier et de prévoir l'imprévisible."
+  },
+  {
+   "auteur": "Paul Krugman",
+   "titre": "The Return of Depression Economics and the Crisis of 2008",
+   "annee": "2009",
+   "idee": "Les outils keynésiens classiques restent pertinents face aux trappes à liquidité ; la politique monétaire seule ne suffit pas.",
+   "apport": "Compréhension des réponses politiques aux crises pour anticiper l'inflation, les taux et les impacts sur les classes d'actifs."
+  },
+  {
+   "auteur": "G. Edward Griffin",
+   "titre": "The Creature from Jekyll Island",
+   "annee": "1994",
+   "idee": "Histoire critique de la Réserve fédérale et du système de monnaie fiduciaire, présenté comme générateur structurel de bulles et de crises.",
+   "apport": "Perspective sur le risque monétaire et la dévaluation ; justification de la détention d'actifs réels (or, immobilier)."
+  },
+  {
+   "auteur": "Howard Marks",
+   "titre": "The Most Important Thing: Uncommon Sense for the Thoughtful Investor",
+   "annee": "2011",
+   "idee": "La gestion du risque et la compréhension des cycles de marché priment sur la recherche de rendement ; penser en termes de probabilités.",
+   "apport": "Concept de « second-level thinking » et de positionnement dans le cycle, intégré dans chaque décision patrimoniale."
+  },
+  {
+   "auteur": "Ray Dalio",
+   "titre": "Principles for Navigating Big Debt Crises",
+   "annee": "2018",
+   "idee": "Modélisation des cycles de dette (court et long terme) à partir de 48 crises historiques ; identification des phases et des leviers politiques.",
+   "apport": "Template opérationnel des phases de crise (expansion, sommet, dépression, reflation) utilisé comme outil de diagnostic pour le lecteur."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie I – Anatomie du désastre : comprendre les mécanismes des crises",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi les crises sont inévitables",
+     "objectif": "Démontrer que les crises ne sont pas des anomalies mais des propriétés structurelles des systèmes financiers, et installer la posture mentale du lecteur : préparation plutôt que prédiction.",
+     "sections": [
+      "1.1 L'illusion de la stabilité : pourquoi chaque génération croit que « cette fois c'est différent »",
+      "1.2 Les trois moteurs éternels : dette, spéculation, effet de levier",
+      "1.3 Le cycle de Minsky en 7 étapes : de l'euphorie au krach",
+      "1.4 La psychologie du déni collectif : biais cognitifs et narratifs dominants",
+      "1.5 Fréquence historique : une crise majeure tous les 10 à 15 ans",
+      "1.6 Le paradoxe de la prévention : les mesures anti-crise créent la crise suivante"
+     ],
+     "exercices": [
+      "Cartographier sa propre tolérance au risque sur une échelle de 1 à 10 et identifier trois biais personnels",
+      "Lister les cinq dernières crises mondiales et noter leur intervalle pour visualiser la périodicité",
+      "Écrire une « lettre à soi-même » décrivant ce que l'on ressentirait si son portefeuille perdait 50 % demain"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Les cinq phases d'une crise financière",
+     "objectif": "Fournir une grille de lecture universelle ( Kindleberger + Dalio) permettant au lecteur d'identifier à tout moment la phase du cycle dans laquelle il se trouve.",
+     "sections": [
+      "2.1 Phase 1 – L'expansion créditiste : argent facile et optimisme",
+      "2.2 Phase 2 – La surchauffe : bulles sectorielles et excès de levier",
+      "2.3 Phase 3 – Le sommet et le déclencheur : l'événement qui fissure la confiance",
+      "2.4 Phase 4 – La panique et la contagion : ventes forcées et gel de liquidité",
+      "2.5 Phase 5 – La dépression et la reflation : purge, intervention politique, nouveau cycle",
+      "2.6 Étude de cas fil rouge : la crise de 2008 découpée en cinq actes"
+     ],
+     "exercices": [
+      "Créer un tableau de bord personnel avec 6 indicateurs (spread de crédit, CAPE, taux d'épargne, dette/GDP, prix immobilier/revenu, volume de marge)",
+      "Identifier dans l'actualité récente trois signaux correspondant à la phase 2 du cycle",
+      "Simuler sur papier l'impact d'une chute de 30 % sur sa propre allocation"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Psychologie des foules et pièges comportementaux",
+     "objectif": "Explorer les mécanismes psychologiques qui poussent les investisseurs à acheter au sommet et vendre au plus bas, et donner des contre-mesures concrètes.",
+     "sections": [
+      "3.1 L'avidité et la peur : les deux pendules du marché",
+      "3.2 Le mimétisme : pourquoi tout le monde achète en même temps",
+      "3.3 L'ancrage, l'aversion à la perte et le biais de confirmation",
+      "3.4 Le rôle des médias et des narratifs dans l'amplification",
+      "3.5 La mémoire courte : pourquoi on oublie la douleur du dernier krach",
+      "3.6 Stratégies comportementales : automatiser, temporiser, se déconnecter"
+     ],
+     "exercices": [
+      "Tenir un journal émotionnel d'investissement pendant 30 jours",
+      "Définir par écrit trois règles non négociables (ex. : ne jamais vendre sous le coup de la panique)",
+      "Identifier un « narratif dominant » actuel et rédiger un contre-argument en 200 mots"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les acteurs du drame : banquiers, régulateurs, spéculateurs",
+     "objectif": "Comprendre le rôle de chaque catégorie d'acteurs dans la genèse et la propagation d'une crise pour mieux évaluer le risque institutionnel.",
+     "sections": [
+      "4.1 Les banques et l'effet de levier : trop grosses pour faire faillite ?",
+      "4.2 Les banques centrales : gardiennes du cycle ou pompiers pyromanes ?",
+      "4.3 Les agences de notation et les conflits d'intérêts",
+      "4.4 Les hedge funds, spéculateurs et vendeurs à découvert : destructeurs ou signaux d'alarme ?",
+      "4.5 Les gouvernements : sauvetages, moral hazard et socialisation des pertes",
+      "4.6 Le citoyen-investisseur : victime collatérale ou acteur informé ?"
+     ],
+     "exercices": [
+      "Cartographier ses propres contreparties (banque, assureur, courtier) et évaluer leur solidité",
+      "Lire un rapport annuel de sa banque et identifier le ratio de levier",
+      "Rédiger une liste de 5 questions à poser à son conseiller avant la prochaine turbulence"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Lire les signaux faibles avant la tempête",
+     "objectif": "Doter le lecteur d'une boîte à outils d'indicateurs avancés et de méthodes de veille pour détecter les prémices d'une crise sans prétendre la prédire avec certitude.",
+     "sections": [
+      "5.1 Les indicateurs macro : courbe des taux, spreads de crédit, masse monétaire",
+      "5.2 Les indicateurs de marché : CAPE ratio, marge sur PIB, volumes de dérivés",
+      "5.3 Les indicateurs comportementaux : IPO frénétiques, couverture médiatique, taxi-driver test",
+      "5.4 Les indicateurs immobiliers et de dette privée",
+      "5.5 Construire son propre tableau de bord anti-crise en 10 métriques",
+      "5.6 Les limites de la prédiction : humilité probabiliste et scénarios"
+     ],
+     "exercices": [
+      "Construire un tableau de bord Excel/Notion avec 10 indicateurs et le mettre à jour trimestriellement",
+      "Analyser la courbe des taux actuelle et noter ce qu'elle signalait avant les trois derniers krachs",
+      "Établir un « seuil d'alerte » personnel : à partir de quelle combinaison de signaux je réduis mon exposition ?"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "1929 : le krach fondateur et la Grande Dépression",
+     "objectif": "Analyser en profondeur la crise de 1929 comme archétype : mécanismes, erreurs politiques, souffrance sociale, et leçons encore pertinentes un siècle plus tard.",
+     "sections": [
+      "6.1 Les Roaring Twenties : crédit facile, spéculation sur marge et euphorie",
+      "6.2 Le jeudi noir et le mardi noir : anatomie de deux séances de panique",
+      "6.3 La contagion bancaire : 9 000 faillites en trois ans",
+      "6.4 Les erreurs fatales : resserrement monétaire, protectionnisme (Smoot-Hawley)",
+      "6.5 La vie quotidienne pendant la Dépression : chômage, déflation, exode",
+      "6.6 Les leçons pour aujourd'hui : ne jamais répéter les erreurs de Hoover"
+     ],
+     "exercices": [
+      "Calculer ce qu'aurait subi un portefeuille 100 % actions US entre sept. 1929 et juillet 1932",
+      "Comparer les mesures de 1929 (inaction) à celles de 2008 (intervention massive)",
+      "Lister trois parallèles et trois différences entre 1929 et la situation actuelle"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "1973-1982 : chocs pétroliers, stagflation et destruction de l'épargne",
+     "objectif": "Montrer qu'une crise peut prendre la forme d'une érosion lente (inflation) plutôt que d'un krach soudain, et enseigner la protection contre la perte de pouvoir d'achat.",
+     "sections": [
+      "7.1 La fin de Bretton Woods et le premier choc pétrolier",
+      "7.2 La stagflation : le cauchemar de l'investisseur (hausse des prix + récession)",
+      "7.3 Le massacre obligataire : les taux à 15 % de Paul Volcker",
+      "7.4 L'or comme refuge : de 35 $ à 850 $ l'once",
+      "7.5 L'impact sur les classes moyennes et les retraités",
+      "7.6 Leçons : diversifier au-delà du 60/40 classique en période inflationniste"
+     ],
+     "exercices": [
+      "Calculer la perte de pouvoir d'achat d'un livret A entre 1973 et 1982 (simulation)",
+      "Construire une allocation « anti-stagflation » avec 5 classes d'actifs",
+      "Interviewer un proche ayant vécu cette période et noter ses souvenirs financiers"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "1997-1998 : la crise asiatique et la faillite de LTCM",
+     "objectif": "Illustrer la contagion internationale et le danger des modèles quantitatifs, en tirant des leçons sur la diversification géographique et la gestion du levier.",
+     "sections": [
+      "8.1 Le miracle asiatique et ses failles : dette en dollars, corrumpation, bulles immobilières",
+      "8.2 L'effet domino : Thaïlande, Corée, Indonésie, Russie",
+      "8.3 LTCM : quand les Nobel se trompent – la faillite du modèle",
+      "8.4 La contagion aux marchés émergents et la crise russe",
+      "8.5 Le sauvetage orchestré par la Fed : premier « too big to fail » moderne",
+      "8.6 Leçons : corrélations qui convergent à 1 en temps de crise, limites du levier"
+     ],
+     "exercices": [
+      "Vérifier la part de son portefeuille exposée aux marchés émergents et aux devises étrangères",
+      "Simuler une perte de 40 % sur la poche émergente et mesurer l'impact global",
+      "Rédiger une « politique de levier » personnelle : jamais plus de X % d'endettement"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "2000-2002 : l'éclatement de la bulle Internet",
+     "objectif": "Analyser la bulle dot-com comme cas d'école d'euphorie sectorielle, de valorisations déconnectées et de destruction de valeur concentrée.",
+     "sections": [
+      "9.1 L'irrationalité des valorisations : des entreprises sans chiffre d'affaires à 100 milliards",
+      "9.2 Le rôle des médias, des analystes et de la « nouvelle économie »",
+      "9.3 Le pic de mars 2000 et la descente aux enfers : -78 % sur le Nasdaq",
+      "9.4 Les fraudes en cascade : Enron, WorldCom, la chute d'Arthur Andersen",
+      "9.5 L'impact sur l'économie réelle et l'emploi tech",
+      "9.6 Leçons : concentration sectorielle, importance du cash-flow, scepticisme face aux narratifs"
+     ],
+     "exercices": [
+      "Identifier dans son portefeuille toute concentration sectorielle > 25 % et planifier une réduction",
+      "Calculer le rendement d'un investissement dans le Nasdaq en mars 2000 vs. un portefeuille diversifié",
+      "Lister trois « narratifs technologiques » actuels et évaluer leur degré de spéculation"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "2007-2009 : la crise des subprimes et la quasi-mort du système",
+     "objectif": "Décortiquer la crise la plus systémique depuis 1929 : titrisation toxique, faillite de Lehman, sauvetages massifs, et conséquences toujours visibles aujourd'hui.",
+     "sections": [
+      "10.1 La genèse : taux bas, crédits subprimes, titrisation en cascade (CDO, CDS)",
+      "10.2 Les signaux ignorés : hausse des défauts, avertissements de quelques analystes",
+      "10.3 Lehman Brothers : le week-end qui a failli détruire le capitalisme",
+      "10.4 Le gel mondial du crédit et la panique bancaire",
+      "10.5 Les réponses : TARP, QE, taux zéro – une nouvelle ère monétaire",
+      "10.6 Bilan humain et leçons : risque systémique, opacité des dérivés, moral hazard"
+     ],
+     "exercices": [
+      "Cartographier l'exposition de son épargne à trois banques et vérifier les garanties de dépôt",
+      "Simuler un scénario de gel des retraits pendant 30 jours : ai-je assez de liquidités ?",
+      "Écrire une checklist « pré-crise systémique » de 10 actions à réaliser en 48 heures"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "2010-2020 : la décennie de l'argent gratuit et ses fragilités",
+     "objectif": "Analyser la période post-2008 (QE, taux négatifs, bulles d'actifs) comme une crise différée, préparant le terrain pour les chocs suivants.",
+     "sections": [
+      "11.1 Le quantitative easing : 15 000 milliards injectés, à quel prix ?",
+      "11.2 Taux zéro et taux négatifs : la distorsion de toutes les classes d'actifs",
+      "11.3 La bulle obligataire et la quête désespérée de rendement",
+      "11.4 L'explosion de la dette corporate et des leveraged loans",
+      "11.5 Les crises périphériques : Grèce 2010, krach éclair 2010, flash crash 2015",
+      "11.6 Leçons : dépendance aux banques centrales, risque de « tout est cher »"
+     ],
+     "exercices": [
+      "Évaluer la part de son portefeuille dépendante de taux bas (immobilier à crédit, obligations longues)",
+      "Calculer l'impact d'une remontée de 3 % des taux sur son patrimoine net",
+      "Diversifier vers 2 classes d'actifs non corrélées aux politiques monétaires"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "2020-2022 : pandémie, inflation et retour de la volatilité",
+     "objectif": "Tirer les leçons de la triple crise récente (krach Covid, relance massive, inflation) et de la fin de l'ère de l'argent gratuit.",
+     "sections": [
+      "12.1 Mars 2020 : le krach le plus rapide de l'histoire (-34 % en 23 jours)",
+      "12.2 La réponse monétaire et budgétaire la plus massive jamais vue",
+      "12.3 Le retour de l'inflation : 9 % aux US, 6 % en zone euro",
+      "12.4 La chute simultanée des actions ET des obligations en 2022",
+      "12.5 Crypto, SPAC, meme stocks : l'éclatement des bulles spéculatives post-Covid",
+      "12.6 Leçons : rapidité des chocs, corrélation des actifs en stress, importance du cash"
+     ],
+     "exercices": [
+      "Reconstituer son comportement en mars 2020 : ai-je vendu, tenu ou acheté ?",
+      "Calculer la perte de pouvoir d'achat de son épargne liquide entre 2020 et 2023",
+      "Construire un « coussin de crise » de 6 à 12 mois de dépenses"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Leçons transversales : ce que toutes les crises ont en commun",
+     "objectif": "Synthétiser les patterns récurrents à travers les 10 crises étudiées pour formuler 10 lois universelles des crises financières.",
+     "sections": [
+      "13.1 Loi 1 : la dette est le dénominateur commun de toute crise",
+      "13.2 Loi 2 : les corrélations convergent vers 1 au pire moment",
+      "13.3 Loi 3 : la liquidité s'évapore exactement quand on en a besoin",
+      "13.4 Loi 4 : les gouvernements sauvent les banques, pas les épargnants",
+      "13.5 Loi 5 : la reprise est plus lente que la chute",
+      "13.6 Loi 6 : chaque crise engendre la suivante par ses remèdes",
+      "13.7 Synthèse : les 10 commandements de la survie patrimoniale"
+     ],
+     "exercices": [
+      "Créer une affiche personnelle des « 10 lois » à afficher près de son bureau",
+      "Pour chaque loi, noter un exemple concret tiré de son propre parcours financier",
+      "Rédiger un « testament patrimonial » : que ferait mon conjoint si je ne pouvais plus gérer ?"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le rôle de l'or, des matières premières et des actifs réels",
+     "objectif": "Évaluer objectivement la place des actifs tangibles dans la protection contre les crises, au-delà des mythes et des modes.",
+     "sections": [
+      "14.1 L'or à travers 5 000 ans de crises : performance réelle vs. perception",
+      "14.2 Les matières premières comme couverture inflationniste",
+      "14.3 L'immobilier : valeur refuge ou piège illiquide en temps de crise ?",
+      "14.4 Les terres agricoles et forêts : le dernier refuge ?",
+      "14.5 Les limites : coûts de détention, fiscalité, illiquidité",
+      "14.6 Quelle allocation réaliste pour un patrimoine résilient ?"
+     ],
+     "exercices": [
+      "Calculer la performance annualisée de l'or sur les 5 dernières crises vs. les actions",
+      "Évaluer la liquidité réelle de son immobilier : combien de mois pour vendre en période de stress ?",
+      "Définir un pourcentage cible d'actifs réels dans son allocation globale"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Diversification : mythe, réalité et limites en temps de crise",
+     "objectif": "Analyser honnêtement ce que la diversification peut et ne peut pas faire, et introduire les concepts de diversification « réelle » vs. « illusoire ».",
+     "sections": [
+      "15.1 La théorie moderne du portefeuille et ses angles morts",
+      "15.2 Quand toutes les classes chutent ensemble : le problème de 2008 et 2022",
+      "15.3 Diversification géographique : au-delà du biais domestique",
+      "15.4 Diversification temporelle : le DCA comme assurance émotionnelle",
+      "15.5 Diversification par style : value, growth, momentum, carry",
+      "15.6 La vraie diversification : détenir des actifs aux moteurs de rendement différents"
+     ],
+     "exercices": [
+      "Mesurer la corrélation réelle de ses 5 principaux placements sur les 3 derniers krachs",
+      "Construire une matrice de diversification (géographie × classe × style × devise)",
+      "Identifier la classe d'actifs manquante dans son portefeuille et planifier son introduction"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "La stratégie barbell et la convexité : se positionner pour l'asymétrie",
+     "objectif": "Traduire les concepts de Taleb en actions concrètes : protéger 90 % du patrimoine tout en exposant 10 % à des gains asymétriques.",
+     "sections": [
+      "16.1 Le principe du barbell : ultra-sécurité d'un côté, paris asymétriques de l'autre",
+      "16.2 Éliminer le risque de ruine : la règle absolue de survie",
+      "16.3 Les options comme assurance : puts, covered calls, collars",
+      "16.4 Les investissements convexes : startups, capital-risque, brevets",
+      "16.5 Le cash comme option gratuite : ne jamais être forcé de vendre",
+      "16.6 Adapter le barbell à son âge, sa situation et son horizon"
+     ],
+     "exercices": [
+      "Définir son propre ratio barbell (ex. 85/15 ou 90/10) et le justifier par écrit",
+      "Calculer le coût d'une assurance put annuelle sur son portefeuille actions",
+      "Lister 3 investissements « convexes » accessibles avec moins de 5 000 €"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Liquidité et cash : l'oxygène du patrimoine en temps de crise",
+     "objectif": "Démontrer que la liquidité est la première ligne de défense et enseigner une gestion stratégique du cash avant, pendant et après la crise.",
+     "sections": [
+      "17.1 Pourquoi la liquidité est sous-estimée en période calme",
+      "17.2 Le gel des marchés : quand vendre devient impossible",
+      "17.3 Dimensionner son coussin de sécurité : 6, 12 ou 24 mois ?",
+      "17.4 Où placer son cash : livrets, comptes à terme, fonds monétaires",
+      "17.5 Le cash comme munition : acheter quand le sang coule",
+      "17.6 La gestion de la liquidité en 3 poches (urgence, opportunité, projet)"
+     ],
+     "exercices": [
+      "Calculer précisément ses dépenses fixes mensuelles et définir 3 niveaux de coussin",
+      "Ouvrir un compte dédié « opportunité de crise » et l'alimenter mensuellement",
+      "Simuler : si mon portefeuille perd 50 %, combien de temps puis-je vivre sans toucher à mes investissements ?"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Dettes et effet de levier : l'arme à double tranchant",
+     "objectif": "Apprendre à distinguer la dette productive de la dette destructrice et à fixer des limites strictes pour ne jamais être victime d'une margin call.",
+     "sections": [
+      "18.1 L'histoire du levier : de LTCM aux ménages surendettés",
+      "18.2 Dette bonne vs. dette mauvaise : critères de distinction",
+      "18.3 Le risque de margin call et de vente forcée",
+      "18.4 L'immobilier à crédit : amortisseur ou amplificateur de crise ?",
+      "18.5 Fixer ses limites personnelles de levier : la règle des 30 %",
+      "18.6 Désendettement stratégique avant la tempête"
+     ],
+     "exercices": [
+      "Calculer son ratio d'endettement global et le comparer aux seuils de risque",
+      "Lister toutes ses dettes et les classer par urgence et coût",
+      "Rédiger un plan de désendettement sur 24 mois si le ratio dépasse 35 %"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Protéger ses revenus et son emploi pendant une crise",
+     "objectif": "Élargir la réflexion au-delà du patrimoine financier : le capital humain est le premier actif à protéger en période de récession.",
+     "sections": [
+      "19.1 Le chômage de masse : 25 % en 1933, 10 % en 2009",
+      "19.2 Diversifier ses sources de revenus : le portefeuille de compétences",
+      "19.3 L'importance des compétences transférables et de l'adaptabilité",
+      "19.4 Créer des revenus passifs ou semi-passifs avant la crise",
+      "19.5 L'entrepreneuriat de crise : opportunités dans le chaos",
+      "19.6 Le réseau professionnel comme filet de sécurité"
+     ],
+     "exercices": [
+      "Cartographier ses sources de revenus actuelles et leur vulnérabilité à une récession",
+      "Identifier 2 compétences monétisables en freelance en cas de perte d'emploi",
+      "Créer ou renforcer un réseau de 10 contacts professionnels clés"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Fiscalité, régulation et protection juridique du patrimoine",
+     "objectif": "Informer sur les cadres juridiques et fiscaux généraux (sans conseil personnalisé) qui permettent de structurer un patrimoine résilient face aux crises.",
+     "sections": [
+      "20.1 Les leçons fiscales des crises : hausses d'impôts post-krach",
+      "20.2 La protection contre le risque bancaire : garanties de dépôt, diversification des établissements",
+      "20.3 Les enveloppes juridiques : assurance-vie, société civile, trust (principes généraux)",
+      "20.4 La protection contre le risque de change et le risque pays",
+      "20.5 Anticiper les mesures d'urgence : contrôle des capitaux, taxation exceptionnelle",
+      "20.6 Le rôle du conseiller : quand et comment s'entourer (avertissement : pas de conseil personnalisé)"
+     ],
+     "exercices": [
+      "Vérifier que ses dépôts bancaires restent sous le plafond de garantie (100 000 € par établissement en UE)",
+      "Lister les pays dans lesquels on détient des actifs et évaluer le risque de change",
+      "Préparer une liste de questions pour un rendez-vous avec un notaire ou un avocat patrimonial"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Construire son plan patrimonial anti-crise en 7 étapes",
+     "objectif": "Synthétiser toutes les leçons en un plan d'action structuré et personnalisé que le lecteur peut mettre en œuvre immédiatement.",
+     "sections": [
+      "21.1 Étape 1 : Diagnostic – où en suis-je ? (bilan patrimonial complet)",
+      "21.2 Étape 2 : Définir son profil de risque réel (pas celui du questionnaire)",
+      "21.3 Étape 3 : Construire son allocation anti-crise (barbell + diversification)",
+      "21.4 Étape 4 : Mettre en place les automatismes (DCA, rebalancement)",
+      "21.5 Étape 5 : Créer le plan de contingence (scénarios à -30 %, -50 %, -70 %)",
+      "21.6 Étape 6 : Organiser la gouvernance familiale du patrimoine",
+      "21.7 Étape 7 : Réviser, ajuster, recommencer : le cycle annuel de maintenance"
+     ],
+     "exercices": [
+      "Réaliser son bilan patrimonial complet en une page (actifs, passifs, revenus, charges)",
+      "Écrire son « Investment Policy Statement » personnel en 10 lignes",
+      "Planifier une réunion annuelle de révision patrimoniale dans son agenda"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Les crises de demain : intelligence artificielle, dette souveraine, climat",
+     "objectif": "Explorer les risques émergents qui pourraient déclencher la prochaine crise systémique, sans tomber dans le catastrophisme mais en préparant le lecteur.",
+     "sections": [
+      "22.1 La dette souveraine mondiale à 300 % du PIB : la bombe à retardement",
+      "22.2 Le risque climatique : actifs échoués, assurance, migration",
+      "22.3 L'IA et la disruption du marché du travail : quel impact sur les revenus ?",
+      "22.4 Les crypto-monnaies et la DeFi : nouveau système ou nouvelle bulle ?",
+      "22.5 Le risque géopolitique : déglobalisation, sanctions, fragmentation",
+      "22.6 Le risque cyber et la fragilité des infrastructures financières"
+     ],
+     "exercices": [
+      "Évaluer l'exposition de son portefeuille aux énergies fossiles et aux secteurs menacés par la transition",
+      "Se renseigner sur 2 solutions d'épargne alternatives (livrets, monétaire) hors système bancaire classique",
+      "Rédiger un scénario « et si » sur la prochaine crise et ses 3 premières actions"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "L'après-crise : reconstruire, profiter et transmettre",
+     "objectif": "Montrer que la crise est aussi une opportunité pour ceux qui sont préparés : acheter bas, se repositionner, et penser transmission.",
+     "sections": [
+      "23.1 Historique des reprises : 1933, 1949, 1982, 2009, 2020 – les rendements post-krach",
+      "23.2 La discipline de l'achat progressif en période de panique",
+      "23.3 Repositionner son allocation pour le nouveau cycle",
+      "23.4 Les opportunités immobilières post-crise (2009-2012)",
+      "23.5 Préparer la transmission : protéger ses héritiers du prochain choc",
+      "23.6 La résilience psychologique : se reconstruire après une perte majeure"
+     ],
+     "exercices": [
+      "Établir une liste de 10 actifs à acheter si le marché perd 40 % (watchlist de crise)",
+      "Calculer le rendement d'un investissement réalisé au plus bas de 2009 vs. au plus haut de 2007",
+      "Rédiger une lettre de transmission à ses enfants expliquant sa philosophie patrimoniale"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le manifeste du patrimoine résilient : 24 principes pour traverser le siècle",
+     "objectif": "Conclure par un manifeste synthétique et inspirant qui résume les 24 leçons en 24 principes actionnables, et engage le lecteur dans une démarche de long terme.",
+     "sections": [
+      "24.1 Les 24 principes résumés en une page (un par chapitre)",
+      "24.2 Le patrimoine comme projet de vie, pas comme score",
+      "24.3 L'humilité face à l'incertitude : accepter de ne pas tout prévoir",
+      "24.4 La communauté : on traverse mieux une crise à plusieurs",
+      "24.5 L'éducation financière comme héritage : transmettre les leçons",
+      "24.6 L'appel à l'action : commencer aujourd'hui, pas demain",
+      "24.7 Épilogue : la crise comme révélateur de qui nous sommes vraiment"
+     ],
+     "exercices": [
+      "Sélectionner les 5 principes les plus importants pour sa situation et les afficher",
+      "Planifier 3 actions concrètes à réaliser dans les 7 prochains jours",
+      "Écrire une lettre à son « moi futur » dans 10 ans : que voudrais-je avoir accompli ?"
+     ]
+    }
+   ]
+  }
+ ]
+}
