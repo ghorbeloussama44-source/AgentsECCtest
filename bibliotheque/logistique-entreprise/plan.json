@@ -1,0 +1,577 @@
+{
+ "titre": "La Mécanique des Flux",
+ "sous_titre": "Optimiser marchandises, stocks et fournisseurs pour diviser vos coûts opérationnels",
+ "bibliographie": [
+  {
+   "auteur": "Eliyahu M. Goldratt",
+   "titre": "The Goal: A Process of Ongoing Improvement",
+   "annee": "1984",
+   "idee": "Roman initiatique introduisant la Théorie des Contraintes : identifier et éliminer le goulot d'étranglement pour améliorer le débit global d'un système de production.",
+   "apport": "Cadre méthodologique pour localiser les points de friction dans la chaîne logistique et prioriser les investissements d'optimisation."
+  },
+  {
+   "auteur": "Sunil Chopra et Peter Meindl",
+   "titre": "Supply Chain Management: Strategy, Planning, and Operation",
+   "annee": "2001",
+   "idee": "Manuel académique couvrant la conception, la planification et le pilotage de la supply chain, de la stratégie réseau à l'exécution quotidienne.",
+   "apport": "Modèles quantitatifs de dimensionnement des stocks et des réseaux de distribution que le livre traduira en outils pratiques."
+  },
+  {
+   "auteur": "Edward A. Silver, David F. Pyke et Douglas J. Thomas",
+   "titre": "Inventory and Production Management in Supply Chains",
+   "annee": "2016",
+   "idee": "Référence sur les politiques de réapprovisionnement, la gestion multi-échelons et la coordination production-stock.",
+   "apport": "Formules et heuristiques de calcul des stocks de sécurité, tailles de lots et points de commande, vulgarisées pour le lecteur non-mathématicien."
+  },
+  {
+   "auteur": "Jeffrey K. Liker",
+   "titre": "The Toyota Way: 14 Management Principles",
+   "annee": "2004",
+   "idee": "Déconstruction des 14 principes du système Toyota : flux tiré, jidoka, kaizen, respect des personnes.",
+   "apport": "Principes lean appliqués à la gestion des flux physiques et informationnels ; exercices d'élimination des 7 gaspillages."
+  },
+  {
+   "auteur": "James P. Womack et Daniel T. Jones",
+   "titre": "Lean Thinking: Banish Waste and Create Wealth in Your Corporation",
+   "annee": "1996",
+   "idee": "Cinq principes lean (valeur, chaîne de valeur, flux, tiré, perfection) illustrés par des études de cas industrielles.",
+   "apport": "Méthodologie de cartographie de la chaîne de valeur (VSM) adaptée aux PME et aux activités de distribution."
+  },
+  {
+   "auteur": "Martin Christopher",
+   "titre": "Logistics & Supply Chain Management",
+   "annee": "2011",
+   "idee": "Approche stratégique : la concurrence se joue entre chaînes logistiques, non entre entreprises isolées ; agilité vs efficacité.",
+   "apport": "Concept de « supply chain agile » et tableaux de bord de performance logistique intégrés dans la partie pilotage."
+  },
+  {
+   "auteur": "Kenneth Lysons et Brian Farrington",
+   "titre": "Purchasing and Supply Chain Management",
+   "annee": "2006",
+   "idee": "Cycle complet de l'achat : analyse du besoin, sourcing, négociation, gestion contractuelle, évaluation fournisseurs.",
+   "apport": "Grilles de scoring fournisseurs et stratégies de négociation structurées pour la partie « fournisseurs »."
+  },
+  {
+   "auteur": "Michael Hugos",
+   "titre": "Essentials of Supply Chain Management",
+   "annee": "2003",
+   "idee": "Vue synthétique et opérationnelle des quatre piliers : développement produit, opérations, distribution, intégration.",
+   "apport": "Schémas de processus simplifiés servant de trame pédagogique à chaque chapitre."
+  },
+  {
+   "auteur": "Shoshanah Cohen et Joseph Roussel",
+   "titre": "Strategic Supply Chain Management: The Five Disciplines for High Performance",
+   "annee": "2005",
+   "idee": "Cinq disciplines (stratégie réseau, actifs, information, transport, organisation) pour bâtir une supply chain performante.",
+   "apport": "Checklist d'audit stratégique reprise dans le diagnostic initial du livre."
+  },
+  {
+   "auteur": "Jay Heizer et Barry Render",
+   "titre": "Operations Management: Sustainability and Supply Chain Management",
+   "annee": "2014",
+   "idee": "Manuel couvrant la gestion des opérations : prévision, capacité, qualité, stocks, planification, lean.",
+   "apport": "Exercices chiffrés de prévision de la demande et de calcul de capacité réadaptés en cas pratiques."
+  },
+  {
+   "auteur": "Suman Sarkar",
+   "titre": "The Supply Chain Revolution",
+   "annee": "2017",
+   "idee": "La supply chain comme levier de croissance (et non centre de coût) : innovation, collaboration, digitalisation.",
+   "apport": "Argumentaire pour repositionner la logistique en investissement stratégique, utilisé dans l'introduction et la conclusion."
+  },
+  {
+   "auteur": "Nicolas Vandeput",
+   "titre": "Data Science for Supply Chain Forecasting",
+   "annee": "2018",
+   "idee": "Application du machine learning et de l'analyse de données à la prévision de la demande et à l'optimisation des stocks.",
+   "apport": "Introduction accessible aux outils prédictifs (Python, Excel avancé) intégrée dans les chapitres sur les stocks."
+  },
+  {
+   "auteur": "Peter Bamberger et al. (collectif)",
+   "titre": "The Purchasing and Supply Chain Manager's Handbook",
+   "annee": "2002",
+   "idee": "Guide pratique du responsable achats : processus, KPI, gestion des risques, conformité.",
+   "apport": "Modèles de cahier des charges et de contrats-types mentionnés dans la partie fournisseurs."
+  },
+  {
+   "auteur": "Hau L. Lee",
+   "titre": "The Triple-A Supply Chain",
+   "annee": "2004",
+   "idee": "Article fondateur (Harvard Business Review) : une supply chain performante est Agile, Adaptable et Aligned.",
+   "apport": "Triple critère d'évaluation utilisé dans le chapitre sur la résilience et l'alignement stratégique."
+  },
+  {
+   "auteur": "Tony Wild",
+   "titre": "Best Practice Inventory Management",
+   "annee": "2002",
+   "idee": "Bonnes pratiques de gestion des stocks : classification ABC/XYZ, rotation, obsolescence, coûts de possession.",
+   "apport": "Méthodes de classification et tableaux de bord stock repris et enrichis dans la partie II."
+  },
+  {
+   "auteur": "David Simchi-Levi, Philip Kaminsky et Edith Simchi-Levi",
+   "titre": "Designing and Managing the Supply Chain",
+   "annee": "2008",
+   "idee": "Conception réseau, gestion des transports, coordination et contrats dans la chaîne logistique.",
+   "apport": "Modèles de localisation d'entrepôts et de choix de transport utilisés dans la partie flux."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – DIAGNOSTIC : CARTOGRAPHIER VOS COÛTS CACHÉS",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi vos coûts opérationnels vous échappent",
+     "objectif": "Faire prendre conscience au lecteur de l'ampleur des coûts invisibles liés à une mauvaise gestion des flux, des stocks et des fournisseurs, et poser le cadre du livre.",
+     "sections": [
+      "Le coût réel d'un flux non optimisé : chiffres et ordres de grandeur",
+      "Les sept gaspillages logistiques transposés du lean",
+      "Pourquoi la comptabilité classique masque les surcoûts opérationnels",
+      "Le paradoxe de la sur-optimisation locale",
+      "Cartographie rapide : où se nichent vos pertes ?",
+      "Premier autodiagnostic en 10 questions"
+     ],
+     "exercices": [
+      "Exercice 1.1 : Calculer le coût total de possession (TCO) d'un produit phare de votre catalogue",
+      "Exercice 1.2 : Lister les 5 irritants quotidiens de votre équipe logistique et estimer leur coût horaire",
+      "Exercice 1.3 : Remplir la grille d'autodiagnostic et obtenir votre score de maturité logistique (0-100)"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Comprendre la chaîne de valeur de bout en bout",
+     "objectif": "Donner au lecteur une vision systémique de sa supply chain, du fournisseur de rang 2 jusqu'au client final, pour identifier les interdépendances.",
+     "sections": [
+      "Définir les frontières de votre chaîne : fournisseurs, entrepôts, transport, clients",
+      "Les flux physiques, informationnels et financiers",
+      "Cartographier avec la Value Stream Mapping (VSM)",
+      "Identifier les goulots d'étranglement : la Théorie des Contraintes appliquée",
+      "Mesurer le temps de cycle total vs le temps à valeur ajoutée",
+      "Les indicateurs clés : OTIF, taux de service, rotation, coût par unité livrée"
+     ],
+     "exercices": [
+      "Exercice 2.1 : Dessiner la VSM simplifiée de votre produit le plus vendu (papier ou outil gratuit)",
+      "Exercice 2.2 : Calculer le temps de traversée (lead time total) et le ratio valeur ajoutée / temps total",
+      "Exercice 2.3 : Identifier et classer vos 3 goulots d'étranglement par impact financier"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Mesurer avant d'agir : construire votre tableau de bord logistique",
+     "objectif": "Outiller le lecteur pour qu'il dispose d'une mesure fiable et régulière de ses performances logistiques avant toute action d'optimisation.",
+     "sections": [
+      "Les 4 familles de KPI : service, coût, productivité, qualité",
+      "Construire un tableau de bord en 7 indicateurs maximum",
+      "Sources de données : ERP, WMS, TMS, fichiers Excel",
+      "Fréquence de mesure et rituels de pilotage",
+      "Éviter les indicateurs vanity : ce qui compte vraiment",
+      "Benchmark sectoriel : où vous situez-vous ?"
+     ],
+     "exercices": [
+      "Exercice 3.1 : Sélectionner 7 KPI adaptés à votre activité et définir leur formule de calcul",
+      "Exercice 3.2 : Construire un tableau de bord mensuel sur Excel ou Power BI (template fourni)",
+      "Exercice 3.3 : Comparer vos chiffres aux ratios sectoriels du chapitre et identifier 2 écarts critiques"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les coûts cachés : stocks dormants, ruptures, transports à vide",
+     "objectif": "Rendre visibles et quantifiables les trois grandes sources de pertes : surstock, sous-stock et transport inefficient.",
+     "sections": [
+      "Le vrai coût du surstock : immobilisation, obsolescence, espace",
+      "Le coût invisible de la rupture : ventes perdues, clients perdus, urgence",
+      "Transports à vide et trajets non optimisés : la facture silencieuse",
+      "Les coûts de non-qualité fournisseur : retours, litiges, retards",
+      "Méthode ABC-XYZ pour prioriser les références problématiques",
+      "Cas pratique : chiffrage complet sur une PME fictive"
+     ],
+     "exercices": [
+      "Exercice 4.1 : Réaliser une classification ABC-XYZ de votre portefeuille produits (template Excel fourni)",
+      "Exercice 4.2 : Calculer le coût annuel de vos 10 références les plus dormantes",
+      "Exercice 4.3 : Estimer le manque à gagner de vos 3 ruptures les plus fréquentes sur les 12 derniers mois"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – STOCKS : DÉTENIR MOINS, SERVIR MIEUX",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La science du stock de sécurité",
+     "objectif": "Enseigner les méthodes de calcul du stock de sécurité adaptées à la variabilité réelle de la demande et des délais, sans surdimensionnement.",
+     "sections": [
+      "Pourquoi le stock de sécurité existe : variabilité de la demande et des délais",
+      "Formule classique vs approche probabiliste : choisir selon son contexte",
+      "Intégrer le taux de service cible (95 %, 98 %, 99,5 %)",
+      "Gérer la saisonnalité et les pics promotionnels",
+      "Réduire la variabilité plutôt qu'augmenter le stock",
+      "Outils : Excel, Python, modules ERP"
+     ],
+     "exercices": [
+      "Exercice 5.1 : Calculer le stock de sécurité de 5 références avec la méthode z-score",
+      "Exercice 5.2 : Simuler l'impact d'une réduction de 2 jours du délai fournisseur sur votre stock de sécurité",
+      "Exercice 5.3 : Définir le taux de service optimal par catégorie de produits (matrice coût de rupture vs coût de détention)"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Politiques de réapprovisionnement : quand et combien commander ?",
+     "objectif": "Permettre au lecteur de choisir et paramétrer la politique de réapprovisionnement la plus adaptée à chaque famille de produits.",
+     "sections": [
+      "Point de commande / quantité fixe : le modèle (s, Q)",
+      "Réapprovisionnement périodique : le modèle (R, S)",
+      "Politique à la demande (lot-for-lot) : quand l'utiliser",
+      "Taille économique de lot (Wilson) et ses limites pratiques",
+      "Gestion multi-échelons : entrepôt central vs dépôts régionaux",
+      "Automatiser sans déshumaniser : règles et exceptions"
+     ],
+     "exercices": [
+      "Exercice 6.1 : Paramétrer le point de commande et la quantité économique pour 3 références types",
+      "Exercice 6.2 : Comparer sur 12 mois simulés une politique (s,Q) et une politique (R,S) pour un produit saisonnier",
+      "Exercice 6.3 : Rédiger la fiche de paramétrage d'une référence pour votre ERP ou votre fichier de suivi"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Réduire les stocks sans dégrader le service : les leviers lean",
+     "objectif": "Montrer comment les principes lean (flux tiré, kanban, lissage) permettent de diminuer significativement les niveaux de stock.",
+     "sections": [
+      "Du flux poussé au flux tiré : changer de paradigme",
+      "Le kanban en pratique : dimensionnement des cartes et des bacs",
+      "Lissage de la production et des commandes (heijunka)",
+      "Réduire les tailles de lot pour réduire l'encours",
+      "Cross-docking et flux tendus : quand c'est pertinent",
+      "Gérer la transition sans créer de ruptures"
+     ],
+     "exercices": [
+      "Exercice 7.1 : Dimensionner un système kanban à 2 bacs pour une référence à forte rotation",
+      "Exercice 7.2 : Cartographier le flux actuel d'un produit et identifier les stocks intermédiaires supprimables",
+      "Exercice 7.3 : Simuler une réduction de taille de lot de 50 % et mesurer l'impact sur l'encours moyen"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Prévoir la demande : moins de boule de cristal, plus de données",
+     "objectif": "Initier le lecteur aux méthodes de prévision de la demande, des plus simples aux plus avancées, pour fiabiliser ses réapprovisionnements.",
+     "sections": [
+      "Pourquoi la prévision parfaite n'existe pas (et ce n'est pas grave)",
+      "Méthodes simples : moyenne mobile, lissage exponentiel",
+      "Intégrer la saisonnalité et les tendances",
+      "Prévision collaborative : sales & operations planning (S&OP)",
+      "Apport du machine learning : quand et comment commencer",
+      "Mesurer l'erreur de prévision : MAPE, biais, tracking signal"
+     ],
+     "exercices": [
+      "Exercice 8.1 : Prévoir la demande des 3 prochains mois d'une référence avec un lissage exponentiel (α = 0,3)",
+      "Exercice 8.2 : Mettre en place un mini-processus S&OP mensuel (trame de réunion fournie)",
+      "Exercice 8.3 : Calculer le MAPE de vos prévisions actuelles sur les 6 derniers mois et fixer un objectif d'amélioration"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Gérer la fin de vie : obsolescence, déstockage, économie circulaire",
+     "objectif": "Outiller le lecteur pour prévenir et traiter l'obsolescence des stocks, limiter les pertes et valoriser les invendus.",
+     "sections": [
+      "Détecter les signaux faibles d'obsolescence",
+      "Politiques de déstockage : promotions, bundles, dons, recyclage",
+      "Négocier les retours et reprises avec les fournisseurs",
+      "Intégrer l'économie circulaire : reconditionnement, pièces détachées",
+      "Provisions comptables et impact sur le BFR",
+      "Plan de prévention : cycle de vie produit et achats alignés"
+     ],
+     "exercices": [
+      "Exercice 9.1 : Classifier votre stock par ancienneté et identifier les références à risque d'obsolescence à 6 mois",
+      "Exercice 9.2 : Construire un plan de déstockage priorisé (valeur × urgence × canal)",
+      "Exercice 9.3 : Rédiger une clause de reprise/retour à intégrer dans vos prochains contrats fournisseurs"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – FLUX DE MARCHANDISES : ACCÉLÉRER SANS CASSER",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Concevoir son réseau logistique : entrepôts, plates-formes, derniers kilomètres",
+     "objectif": "Guider le lecteur dans les choix de localisation, de nombre et de typologie de ses sites de stockage et de distribution.",
+     "sections": [
+      "Arbitrage centralisation vs décentralisation",
+      "Méthodes de localisation : centre de gravité, coûts totaux",
+      "Entrepôt dédié, mutualisé, en prestation : critères de choix",
+      "Le dernier kilomètre : coût, délai, expérience client",
+      "Modélisation réseau : outils accessibles (Excel, AnyLogistix, Llamasoft)",
+      "Dimensionner la capacité : surface, quais, ressources humaines"
+     ],
+     "exercices": [
+      "Exercice 10.1 : Appliquer la méthode du centre de gravité pour positionner un nouvel entrepôt (données fictives fournies)",
+      "Exercice 10.2 : Comparer le coût total de 3 scénarios réseau (1 site, 2 sites, 3 sites) sur un horizon de 3 ans",
+      "Exercice 10.3 : Rédiger le cahier des charges fonctionnel d'un entrepôt en prestation"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Optimiser le transport : modes, tournées, mutualisation",
+     "objectif": "Réduire les coûts de transport tout en maintenant les délais, grâce à l'optimisation des tournées, au choix modal et à la mutualisation.",
+     "sections": [
+      "Choix modal : route, rail, fluvial, maritime, aérien – critères et coûts",
+      "Optimisation des tournées : TSP, VRP, outils de routing",
+      "Taux de remplissage : la chasse aux camions à vide",
+      "Mutualisation et bourses de fret : GIE, plateformes digitales",
+      "Transport urbain et ZFE : contraintes et opportunités",
+      "Négocier avec les transporteurs : appels d'offres et contrats-cadres"
+     ],
+     "exercices": [
+      "Exercice 11.1 : Calculer le taux de remplissage moyen de vos expéditions sur 1 mois et identifier les gains potentiels",
+      "Exercice 11.2 : Utiliser un outil gratuit de routing (ex. VROOM, OpenRouteService) pour optimiser 10 points de livraison",
+      "Exercice 11.3 : Préparer une grille d'évaluation pour un appel d'offres transport (8 critères pondérés)"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "L'entrepôt performant : réception, stockage, préparation, expédition",
+     "objectif": "Optimiser les opérations internes à l'entrepôt pour réduire les temps de traitement, les erreurs et les coûts de manutention.",
+     "sections": [
+      "Implantation et zoning : ABC des emplacements, flux en U ou en I",
+      "Réception et contrôle : réduire le temps de mise en stock",
+      "Préparation de commandes : picking par vague, batch, zone",
+      "Emballage et expédition : standardiser pour accélérer",
+      "WMS et technologies : code-barres, RFID, voice picking",
+      "Mesurer la productivité : lignes/heure, taux d'erreur, coût par commande"
+     ],
+     "exercices": [
+      "Exercice 12.1 : Réaliser un diagramme spaghetti de votre entrepôt actuel et proposer 3 améliorations d'implantation",
+      "Exercice 12.2 : Calculer le coût de préparation par commande et le comparer à la cible sectorielle",
+      "Exercice 12.3 : Concevoir une procédure de réception en 7 étapes avec points de contrôle"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Digitaliser les flux : ERP, WMS, TMS, IoT et visibilité temps réel",
+     "objectif": "Aider le lecteur à choisir et déployer les outils numériques adaptés à sa taille pour gagner en visibilité et en réactivité.",
+     "sections": [
+      "Panorama des outils : ERP, WMS, TMS, OMS – qui fait quoi ?",
+      "Choisir selon sa taille : TPE, PME, ETI",
+      "Interopérabilité et API : connecter les briques entre elles",
+      "IoT et traçabilité : capteurs, GPS, géofencing",
+      "Tour de contrôle logistique : visibilité end-to-end",
+      "Conduite du changement : former les équipes, vaincre les résistances"
+     ],
+     "exercices": [
+      "Exercice 13.1 : Cartographier vos systèmes d'information actuels et identifier les ruptures de données",
+      "Exercice 13.2 : Rédiger l'expression de besoin pour un WMS ou un TMS (template fourni)",
+      "Exercice 13.3 : Construire le plan de formation des opérateurs sur 90 jours"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Gérer les aléas : résilience, plans B et gestion de crise",
+     "objectif": "Préparer le lecteur à absorber les chocs (pandémie, grève, catastrophe, faillite fournisseur) sans exploser ses coûts.",
+     "sections": [
+      "Typologie des risques logistiques et matrice probabilité × impact",
+      "Stratégies de résilience : multi-sourcing, stocks tampons, flexibilité",
+      "Plan de continuité d'activité (PCA) logistique",
+      "Assurance, clauses contractuelles et transfert de risque",
+      "Simuler une crise : exercices de table et scénarios",
+      "Capitaliser : post-mortem et amélioration continue"
+     ],
+     "exercices": [
+      "Exercice 14.1 : Remplir une matrice des risques logistiques (10 risques, probabilité, impact, mitigation)",
+      "Exercice 14.2 : Rédiger un mini-PCA pour votre activité la plus critique (2 pages max)",
+      "Exercice 14.3 : Organiser un exercice de simulation de crise en équipe (scénario fourni : faillite d'un fournisseur clé)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – FOURNISSEURS : ACHETER MIEUX, PARTENARIAT DURABLE",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Cartographier et segmenter ses fournisseurs",
+     "objectif": "Permettre au lecteur de connaître précisément son panel fournisseurs, de le segmenter et d'identifier les dépendances critiques.",
+     "sections": [
+      "Recenser l'exhaustivité : fournisseurs de rang 1, 2 et 3",
+      "Segmentation Kraljic : leviers, stratégiques, goulots, simples",
+      "Analyse de la dépendance et du pouvoir de négociation",
+      "Cartographie des risques par fournisseur (financier, géopolitique, qualité)",
+      "Consolidation vs diversification : trouver le bon curseur",
+      "Tableau de bord fournisseurs : les 10 données indispensables"
+     ],
+     "exercices": [
+      "Exercice 15.1 : Lister vos 20 premiers fournisseurs et les classer selon la matrice de Kraljic",
+      "Exercice 15.2 : Évaluer votre taux de dépendance (part du CA fournisseur / votre CA achats) pour les 5 plus critiques",
+      "Exercice 15.3 : Créer une fiche d'identité fournisseur standardisée (template fourni)"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Sourcing et appels d'offres : trouver le bon partenaire au bon prix",
+     "objectif": "Structurer la démarche de sourcing et de consultation pour obtenir les meilleures conditions sans sacrifier la qualité ni la fiabilité.",
+     "sections": [
+      "Définir le besoin : cahier des charges fonctionnel vs technique",
+      "Sourcing national, nearshore, offshore : critères de décision totale (TCO)",
+      "Construire un appel d'offres efficace : RFI, RFQ, RFP",
+      "Dépouillement multicritère : pondération, scoring, soutenance",
+      "Négociation structurée : BATNA, ZOPA, concessions croisées",
+      "Sécuriser le choix : audits, références, périodes d'essai"
+     ],
+     "exercices": [
+      "Exercice 16.1 : Rédiger un cahier des charges fonctionnel pour un achat récurrent de votre activité",
+      "Exercice 16.2 : Construire une grille de scoring à 8 critères avec pondération et l'appliquer à 3 offres fictives",
+      "Exercice 16.3 : Préparer votre BATNA et votre fourchette cible pour votre prochaine négociation fournisseur"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Piloter la performance fournisseur : SLA, KPI et revues",
+     "objectif": "Mettre en place un suivi rigoureux de la performance fournisseurs pour garantir le respect des engagements et piloter l'amélioration.",
+     "sections": [
+      "Définir des SLA clairs : délais, qualité, flexibilité, coût",
+      "KPI fournisseurs : OTD, taux de conformité, réactivité, coût de non-qualité",
+      "Rituels de suivi : revue mensuelle, trimestrielle, annuelle",
+      "Scorecards et tableaux de bord partagés",
+      "Gérer la non-performance : plans d'action, pénalités, escalade",
+      "Passer du contrôle au partenariat : co-développement, innovation partagée"
+     ],
+     "exercices": [
+      "Exercice 17.1 : Rédiger 5 SLA mesurables pour votre fournisseur le plus stratégique",
+      "Exercice 17.2 : Construire une scorecard fournisseur mensuelle (template Excel fourni)",
+      "Exercice 17.3 : Préparer la trame d'une revue de performance annuelle (ordre du jour, participants, livrables)"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Réduire les coûts d'achat sans presser le fournisseur",
+     "objectif": "Explorer les leviers de réduction des coûts achats qui ne reposent pas uniquement sur la pression tarifaire : standardisation, mutualisation, ingénierie de la valeur.",
+     "sections": [
+      "Analyse de la valeur : fonction, coût, utilité",
+      "Standardisation et rationalisation des références",
+      "Mutualisation des achats : centrales, groupements, marketplaces B2B",
+      "Total Cost of Ownership : intégrer logistique, qualité, obsolescence",
+      "Ingénierie conjointe : concevoir avec le fournisseur pour réduire les coûts",
+      "Inverser le rapport de force par la donnée et la transparence"
+     ],
+     "exercices": [
+      "Exercice 18.1 : Réaliser une analyse fonctionnelle simplifiée d'un composant ou service acheté",
+      "Exercice 18.2 : Identifier 5 références standardisables ou substituables dans vos achats",
+      "Exercice 18.3 : Calculer le TCO complet d'un équipement sur 5 ans (achat + exploitation + maintenance + fin de vie)"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Contrats, risques et éthique : sécuriser la relation fournisseur",
+     "objectif": "Sensibiliser le lecteur aux dimensions contractuelles, juridiques et RSE de la relation fournisseur, sans se substituer à un avocat.",
+     "sections": [
+      "Structure d'un contrat d'approvisionnement : clauses essentielles (rappel : consulter un juriste)",
+      "Gestion des risques contractuels : pénalités, force majeure, résiliation",
+      "Sécuriser la chaîne : assurance, garanties, propriété intellectuelle",
+      "Achats responsables : critères ESG, devoir de vigilance, audit social",
+      "Conformité réglementaire : RGPD, anti-corruption, sanctions (information générale)",
+      "Construire une charte fournisseurs alignée sur vos valeurs"
+     ],
+     "exercices": [
+      "Exercice 19.1 : Vérifier que vos 5 contrats fournisseurs majeurs contiennent les 10 clauses essentielles (checklist fournie)",
+      "Exercice 19.2 : Élaborer une grille d'audit RSE fournisseur simplifiée (15 questions)",
+      "Exercice 19.3 : Rédiger un projet de charte fournisseurs en 1 page (engagements réciproques)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – INTÉGRATION, PILOTAGE ET TRANSFORMATION DURABLE",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Aligner ventes, opérations et finance : le processus S&OP",
+     "objectif": "Montrer comment le Sales & Operations Planning réconcilie les objectifs commerciaux, logistiques et financiers pour éviter les arbitrages coûteux.",
+     "sections": [
+      "Qu'est-ce que le S&OP et pourquoi il réduit les coûts",
+      "Le cycle en 5 étapes : données, demande, offre, pré-S&OP, décision",
+      "Rôles et responsabilités : qui anime, qui décide, qui exécute",
+      "Intégrer le finance : BFR, coût de possession, marge",
+      "Fréquence, outils et rituels : du tableur au logiciel intégré",
+      "Déployer le S&OP dans une PME : version allégée en 4 réunions"
+     ],
+     "exercices": [
+      "Exercice 20.1 : Simuler une réunion S&OP sur un cas fictif (données et rôles fournis)",
+      "Exercice 20.2 : Calculer l'impact d'une hausse de 10 % du taux de service sur votre BFR",
+      "Exercice 20.3 : Rédiger l'ordre du jour et le compte-rendu type de votre première réunion S&OP"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Piloter par les coûts : activity-based costing et coût par flux",
+     "objectif": "Donner au lecteur les méthodes de comptabilité analytique adaptées à la logistique pour piloter par les coûts réels plutôt que par les moyennes.",
+     "sections": [
+      "Limites de la comptabilité générale pour le pilotage logistique",
+      "Activity-Based Costing (ABC) appliqué à l'entrepôt et au transport",
+      "Coût par commande, par ligne, par colis : les unités d'œuvre qui parlent",
+      "Coût de possession du stock : formule complète et pièges fréquents",
+      "Construire un P&L logistique par canal ou par client",
+      "Utiliser les coûts pour arbitrer : internaliser vs externaliser"
+     ],
+     "exercices": [
+      "Exercice 21.1 : Réaliser un ABC simplifié de votre entrepôt (5 activités, 3 inducteurs)",
+      "Exercice 21.2 : Calculer le coût complet de traitement d'une commande type",
+      "Exercice 21.3 : Comparer le coût internalisé vs externalisé d'une activité logistique sur 3 ans"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Lean, Six Sigma et amélioration continue : ancrer la performance",
+     "objectif": "Installer une dynamique d'amélioration continue qui pérennise les gains obtenus et évite le retour aux anciennes pratiques.",
+     "sections": [
+      "Rappel des principes lean et DMAIC (Define, Measure, Analyze, Improve, Control)",
+      "Les outils terrain : 5S, SMED, Poka-Yoke, A3",
+      "Kaizen et chantiers d'amélioration : organiser un événement en 5 jours",
+      "Gestion visuelle et management quotidien (management visuel, AIC)",
+      "Former et impliquer les opérateurs : le facteur humain",
+      "Éviter les pièges : lean de façade, surcharge de projets, manque de sponsor"
+     ],
+     "exercices": [
+      "Exercice 22.1 : Réaliser un audit 5S de votre zone de stockage (grille de 25 items fournie)",
+      "Exercice 22.2 : Préparer un chantier kaizen de 5 jours : périmètre, équipe, planning, livrables",
+      "Exercice 22.3 : Rédiger un A3 pour un problème récurrent de votre flux (template fourni)"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Transformer l'essai : plan de mise en œuvre sur 12 mois",
+     "objectif": "Fournir au lecteur une feuille de route concrète, séquencée et réaliste pour déployer l'ensemble des optimisations sur une année.",
+     "sections": [
+      "Prioriser : matrice impact / effort pour classer 30 actions",
+      "Séquencer en 4 trimestres : quick wins, fondations, projets structurants, consolidation",
+      "Constituer l'équipe projet et le comité de pilotage",
+      "Budget, ressources et ROI attendu : construire le business case",
+      "Gérer la conduite du changement : communication, formation, résistance",
+      "Suivre et ajuster : jalons, revues mensuelles, droit à l'erreur"
+     ],
+     "exercices": [
+      "Exercice 23.1 : Sélectionner 10 actions prioritaires dans la matrice impact/effort",
+      "Exercice 23.2 : Construire un planning Gantt sur 12 mois avec jalons et responsables",
+      "Exercice 23.3 : Rédiger une note de cadrage (2 pages) pour présenter le projet à votre direction"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Vers la supply chain de demain : IA, durabilité et avantage compétitif",
+     "objectif": "Ouvrir la perspective sur les tendances structurantes (IA générative, logistique bas carbone, économie de la fonctionnalité) et positionner l'optimisation comme levier stratégique durable.",
+     "sections": [
+      "IA et automatisation : prévision, robotique, jumeaux numériques",
+      "Logistique bas carbone : bilan GES, report modal, emballages réutilisables",
+      "Économie de la fonctionnalité et logistique inversée",
+      "Supply chain as a service : mutualisation et plateformes",
+      "La supply chain comme avantage compétitif : fidéliser par le service",
+      "Mot de la fin : le flux parfait n'existe pas, l'amélioration continue oui"
+     ],
+     "exercices": [
+      "Exercice 24.1 : Estimer l'empreinte carbone de votre transport annuel et identifier 3 leviers de réduction",
+      "Exercice 24.2 : Explorer un cas d'usage IA applicable à votre activité (liste de 10 cas fournie)",
+      "Exercice 24.3 : Rédiger votre « vision supply chain à 3 ans » en 10 lignes et la partager avec votre équipe"
+     ]
+    }
+   ]
+  }
+ ]
+}
