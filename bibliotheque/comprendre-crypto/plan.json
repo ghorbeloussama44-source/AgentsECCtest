@@ -1,0 +1,599 @@
+{
+ "titre": "Blockchain & Crypto-Actifs : Le Guide Lucide",
+ "sous_titre": "Comprendre les opportunités technologiques, maîtriser les risques, agir avec méthode",
+ "bibliographie": [
+  {
+   "auteur": "Andreas M. Antonopoulos",
+   "titre": "Mastering Bitcoin: Programming the Open Blockchain",
+   "annee": "2014 (2e éd. 2017)",
+   "idee": "Exploration technique complète du protocole Bitcoin : cryptographie, consensus, transactions, réseau pair-à-pair. Démontre comment un registre décentralisé résout le problème de la double dépense sans tiers de confiance.",
+   "apport": "Notre livre reprendra sa pédagogie progressive pour vulgariser les mécanismes de consensus et de hachage, mais en les ancrant dans des analogies du quotidien plutôt que dans le code."
+  },
+  {
+   "auteur": "Andreas M. Antonopoulos & Gavin Wood",
+   "titre": "Mastering Ethereum: Building Smart Contracts and DApps",
+   "annee": "2018",
+   "idee": "Présente Ethereum comme un « ordinateur mondial » permettant d'exécuter des programmes autonomes (smart contracts) et des applications décentralisées sur une machine virtuelle.",
+   "apport": "Nous retiendrons la distinction claire entre blockchain de paiement et blockchain programmable, en simplifiant les concepts de la machine virtuelle pour un lecteur non développeur."
+  },
+  {
+   "auteur": "Don Tapscott & Alex Tapscott",
+   "titre": "Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World",
+   "annee": "2016",
+   "idee": "La blockchain constitue un « protocole de confiance » susceptible de transformer les secteurs bancaire, juridique, artistique et gouvernemental en supprimant les intermédiaires.",
+   "apport": "Leur cartographie sectorielle des usages inspirera nos chapitres sur les applications concrètes, tout en ajoutant un regard critique sur les promesses non tenues."
+  },
+  {
+   "auteur": "Melanie Swan",
+   "titre": "Blockchain: Blueprint for a New Economy",
+   "annee": "2015",
+   "idee": "Théorise trois générations de blockchain : 1.0 (monnaie), 2.0 (finance/contrats), 3.0 (applications sociétales, santé, science).",
+   "apport": "Cette taxonomie en trois vagues structurera notre progression pédagogique et notre chapitre sur l'évolution historique de l'écosystème."
+  },
+  {
+   "auteur": "Saifedean Ammous",
+   "titre": "The Bitcoin Standard: The Decentralized Alternative to Central Banking",
+   "annee": "2018",
+   "idee": "Relit l'histoire monétaire (or, étalon-or, monnaies fiduciaires) pour présenter Bitcoin comme une « monnaie dure » numérique à émission plafonnée, rempart contre l'inflation.",
+   "apport": "Nous emprunterons le récit historique sur les monnaies pour contextualiser Bitcoin, tout en signalant les limites de l'analogie or/Bitcoin et en évitant tout plaidoyer idéologique."
+  },
+  {
+   "auteur": "Chris Burniske & Jack Tatar",
+   "titre": "Cryptoassets: The Innovative Investor's Guide to Bitcoin and Beyond",
+   "annee": "2017",
+   "idee": "Propose un cadre d'analyse pour évaluer les crypto-actifs comme nouvelle classe d'actifs : métriques on-chain, valorisation par le réseau, diversification prudente.",
+   "apport": "Leur grille d'évaluation quantitative et qualitative nourrira nos chapitres sur les critères d'analyse et la construction d'une stratégie personnelle."
+  },
+  {
+   "auteur": "Nathaniel Popper",
+   "titre": "Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money",
+   "annee": "2015",
+   "idee": "Raconte la genèse de Bitcoin à travers les portraits de ses pionniers (Satoshi Nakamoto, Silk Road, premiers investisseurs), mêlant histoire sociale et financière.",
+   "apport": "L'approche narrative nous inspirera pour ancrer chaque concept technique dans une anecdote ou un parcours humain, rendant le texte vivant."
+  },
+  {
+   "auteur": "Michael J. Casey & Paul Vigna",
+   "titre": "The Truth Machine: The Blockchain and the Future of Everything",
+   "annee": "2018",
+   "idee": "La blockchain peut restaurer la confiance institutionnelle en offrant un registre infalsifiable pour l'identité, la propriété, la chaîne d'approvisionnement et la démocratie.",
+   "apport": "Leur analyse des cas d'usage institutionnels alimentera nos sections sur la traçabilité et la gouvernance, avec un contrepoint sur les limites de scalabilité."
+  },
+  {
+   "auteur": "Primavera De Filippi & Aaron Wright",
+   "titre": "Blockchain and the Law: The Rule of Code",
+   "annee": "2018",
+   "idee": "Examine les tensions entre le code décentralisé et les ordres juridiques nationaux : responsabilité, protection des données (RGPD), propriété intellectuelle, fiscalité.",
+   "apport": "Leur cadrage juridique inspirera notre chapitre réglementaire, en rappelant que le droit évolue plus lentement que la technologie et que le lecteur doit s'informer localement."
+  },
+  {
+   "auteur": "Shermin Voshmgir",
+   "titre": "Token Economy: How the Web3 Reinvents the Internet",
+   "annee": "2020 (3e éd.)",
+   "idee": "Les tokens ne sont pas que des monnaies : ils encodent des droits d'accès, de gouvernance, de propriété et de réputation, redéfinissant les modèles économiques en ligne.",
+   "apport": "Sa typologie des tokens (paiement, utilité, sécurité, gouvernance) structurera notre chapitre sur la tokenisation et les nouveaux modèles économiques."
+  },
+  {
+   "auteur": "Paul Vigna & Michael J. Casey",
+   "titre": "The Age of Cryptocurrency: How Bitcoin and Digital Money Are Challenging the Global Economic Order",
+   "annee": "2015",
+   "idee": "Analyse comment les monnaies numériques bouleversent le système bancaire traditionnel, l'inclusion financière dans les pays émergents et la politique monétaire.",
+   "apport": "Leur regard géopolitique enrichira notre chapitre sur les stablecoins et les MNBC, ainsi que la section sur l'inclusion financière."
+  },
+  {
+   "auteur": "William Mougayar",
+   "titre": "The Business Blockchain: Promise, Practice, and Application of the Next Internet Technology",
+   "annee": "2016",
+   "idee": "La blockchain n'est pas qu'une technologie financière : c'est une plateforme de création de valeur, de nouveaux modèles d'affaires et de désintermédiation sectorielle.",
+   "apport": "Ses exemples sectoriels (santé, immobilier, énergie) alimenteront notre chapitre sur la blockchain en entreprise avec des cas pratiques."
+  },
+  {
+   "auteur": "David Birch",
+   "titre": "The Currency Cold War: Cash and Central Bank Digital Currencies in a Time of Crisis",
+   "annee": "2020",
+   "idee": "Les monnaies numériques de banque centrale et les stablecoins privés redessinent la géopolitique monétaire, entre surveillance, souveraineté et innovation.",
+   "apport": "Son analyse des MNBC (euro numérique, e-yuan) fournira le cadre de notre chapitre sur les monnaies institutionnelles et les enjeux de vie privée."
+  },
+  {
+   "auteur": "Campbell Harvey, Ashwin Ramachandran & Joey Santoro",
+   "titre": "DeFi and the Future of Finance",
+   "annee": "2021",
+   "idee": "La finance décentralisée (prêts, échanges, assurance) fonctionne sans intermédiaire grâce aux smart contracts, mais introduit des risques systémiques inédits.",
+   "apport": "Leur décomposition des protocoles DeFi et des risques associés nourrira directement notre chapitre sur la DeFi et celui sur la gestion des risques."
+  },
+  {
+   "auteur": "Pierre Noizat",
+   "titre": "La monnaie dévoilée par le Bitcoin",
+   "annee": "2014",
+   "idee": "Analyse francophone du Bitcoin comme révélateur des mécanismes monétaires : création monétaire, confiance, rôle des banques centrales, limites du système actuel.",
+   "apport": "Sa perspective française et sa pédagogie sur la création monétaire inspireront notre approche didactique des fondamentaux économiques."
+  },
+  {
+   "auteur": "Adli Takkal Bataille",
+   "titre": "Les cryptomonnaies",
+   "annee": "2018 (Que sais-je ?, PUF)",
+   "idee": "Synthèse concise en français sur l'histoire, le fonctionnement technique, les usages et les enjeux réglementaires des cryptomonnaies.",
+   "apport": "Son format de vulgarisation courte nous servira de référence pour le niveau de langage attendu, tout en allant beaucoup plus loin en profondeur."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – COMPRENDRE LES FONDATIONS : De quoi parle-t-on vraiment ?",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "La blockchain expliquée à ma grand-mère : anatomie d'un registre pas comme les autres",
+     "objectif": "Donner une intuition solide et imagée du fonctionnement d'une blockchain (blocs, hachage, chaînage, consensus) sans prérequis technique, afin que le lecteur puisse suivre tout le reste du livre.",
+     "sections": [
+      "1.1 – Le problème du registre : pourquoi la confiance coûte cher",
+      "1.2 – Le bloc, la chaîne et le hachage : la métaphore du cahier de comptes scellé",
+      "1.3 – Le consensus : comment des inconnus se mettent d'accord sans chef",
+      "1.4 – Décentralisation, distribution, désintermédiation : trois mots, trois réalités",
+      "1.5 – Ce que la blockchain ne fait PAS : dissiper cinq mythes tenaces",
+      "1.6 – Un premier vocabulaire : nœud, mineur, validateur, transaction, adresse",
+      "1.7 – Petit historique : du cypherpunk au grand public (1991-2024)"
+     ],
+     "exercices": [
+      "Exercice 1 : « Le jeu du cahier » – Simuler une mini-blockchain avec papier, ciseaux et sceaux pour ressentir le chaînage et l'immuabilité.",
+      "Exercice 2 : « Trouvez l'intrus » – Liste de dix affirmations sur la blockchain ; le lecteur doit identifier les cinq fausses et justifier.",
+      "Exercice 3 : « Expliquez en 3 phrases » – Rédiger une explication de la blockchain adaptée à trois publics (enfant, ami non-tech, collègue financier)."
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Bitcoin : la première brique, le premier récit",
+     "objectif": "Raconter la naissance de Bitcoin, son fonctionnement concret et sa proposition de valeur, en distinguant le protocole du réseau et de l'actif financier.",
+     "sections": [
+      "2.1 – 31 octobre 2008 : le white paper de Satoshi Nakamoto et son contexte",
+      "2.2 – Le minage et la preuve de travail : convertir l'électricité en sécurité",
+      "2.3 – Halving, rareté programmée et modèle économique du réseau",
+      "2.4 – Bitcoin comme moyen de paiement : promesses, limites et Lightning Network",
+      "2.5 – Bitcoin comme réserve de valeur : le débat « or numérique »",
+      "2.6 – Les forks et la gouvernance de Bitcoin : Bitcoin Cash, SegWit et les leçons",
+      "2.7 – Ce que Bitcoin a changé (et ce qu'il n'a pas changé) dans le paysage monétaire"
+     ],
+     "exercices": [
+      "Exercice 1 : « Suivre une transaction » – Utiliser un explorateur de blocs public (mempool.space) pour tracer une transaction fictive de bout en bout.",
+      "Exercice 2 : « Calculez le prochain halving » – À partir de la date et du rythme des halvings, estimer la date du prochain et l'impact sur l'émission.",
+      "Exercice 3 : « Débat en deux colonnes » – Remplir un tableau avantages/inconvénients de Bitcoin comme réserve de valeur vs moyen de paiement."
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Au-delà de Bitcoin : Ethereum, smart contracts et l'ère de la programmabilité",
+     "objectif": "Faire comprendre la rupture apportée par Ethereum et les blockchains programmables : contrats intelligents, applications décentralisées, passage de la monnaie au code exécutoire.",
+     "sections": [
+      "3.1 – Vitalik Buterin et l'idée d'un « ordinateur mondial »",
+      "3.2 – Le smart contract : un distributeur automatique juridique",
+      "3.3 – La machine virtuelle Ethereum (EVM) expliquée sans code",
+      "3.4 – Les DApps : à quoi ressemblent des applications sans serveur central ?",
+      "3.5 – La transition Proof-of-Work → Proof-of-Stake (The Merge) et ses implications",
+      "3.6 – Les alternatives : Solana, Cardano, Polkadot, Avalanche – panorama sans parti pris",
+      "3.7 – Les limites actuelles : scalabilité, coûts de gas, centralisation rampante"
+     ],
+     "exercices": [
+      "Exercice 1 : « Rédigez un smart contract en français » – Décrire en langage naturel les conditions d'un contrat de vente conditionnelle et le traduire en pseudo-code.",
+      "Exercice 2 : « Comparatif de consensus » – Remplir une grille comparant PoW, PoS et DPoS sur cinq critères (énergie, vitesse, sécurité, décentralisation, accessibilité).",
+      "Exercice 3 : « Testez une DApp » – Explorer une application décentralisée grand public (ex. Uniswap en mode testnet) et noter l'expérience utilisateur."
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Parler crypto sans jargon : le lexique de survie",
+     "objectif": "Fournir un vocabulaire opérationnel et contextualisé pour que le lecteur puisse lire la presse spécialisée, comprendre une conversation et poser les bonnes questions.",
+     "sections": [
+      "4.1 – Les 50 mots incontournables classés par thème (protocole, finance, sécurité, droit)",
+      "4.2 – Les acronymes décryptés : DeFi, NFT, DAO, DEX, CEX, KYC, AML, TVL, APY…",
+      "4.3 – Faux amis et confusions fréquentes : token vs coin, wallet vs exchange, clé vs adresse",
+      "4.4 – Les unités et ordres de grandeur : satoshi, wei, gwei, market cap, volume",
+      "4.5 – Lire une fiche projet : white paper, tokenomics, roadmap – mode d'emploi",
+      "4.6 – Écouter et comprendre : décrypter un podcast ou une conférence crypto en 20 minutes"
+     ],
+     "exercices": [
+      "Exercice 1 : « Le bingo crypto » – Grille de 25 termes ; le lecteur coche ceux qu'il maîtrise et recherche les autres dans le glossaire du livre.",
+      "Exercice 2 : « Traduction simultanée » – Prendre un paragraphe technique d'un article crypto et le réécrire pour un public de 12 ans.",
+      "Exercice 3 : « Créez votre glossaire personnel » – Tenir un carnet de 10 termes rencontrés cette semaine et les définir en une phrase."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – EXPLORER L'ÉCOSYSTÈME : Ce qui existe, ce qui émerge",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La DeFi : quand la finance se passe de guichet",
+     "objectif": "Cartographier la finance décentralisée (prêts, échanges, assurance, rendement) en montrant les mécanismes, les avantages et les risques spécifiques, sans incitation à investir.",
+     "sections": [
+      "5.1 – Qu'est-ce que la DeFi ? Définition, périmètre et philosophie",
+      "5.2 – Les protocoles de prêt/emprunt : Aave, Compound et le mécanisme de surcollatéralisation",
+      "5.3 – Les échanges décentralisés (DEX) : Uniswap, les pools de liquidité et l'automated market maker",
+      "5.4 – Le yield farming et le staking : d'où vient le rendement ?",
+      "5.5 – Les stablecoins algorithmiques : le cas Terra/Luna et ses leçons",
+      "5.6 – Les risques DeFi : smart contract bugs, impermanent loss, effets de levier",
+      "5.7 – DeFi vs finance traditionnelle : comparaison honnête des coûts, vitesses et garanties"
+     ],
+     "exercices": [
+      "Exercice 1 : « Simulez un prêt DeFi » – Sur un testnet, emprunter un montant fictif et noter les étapes, les frais et les risques de liquidation.",
+      "Exercice 2 : « Cartographiez un protocole » – Choisir un protocole DeFi et remplir une fiche : objectif, token, TVL, risques identifiés.",
+      "Exercice 3 : « Calculez le vrai rendement » – À partir d'un APY affiché, déduire les frais de gas, l'impermanent loss et l'inflation du token pour obtenir le rendement net."
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "NFT, métavers et propriété numérique : au-delà du singe à 300 000 $",
+     "objectif": "Dépasser le sensationnalisme des NFT pour comprendre les cas d'usage réels (art, propriété intellectuelle, identité, jeux) et les limites actuelles.",
+     "sections": [
+      "6.1 – Qu'est-ce qu'un NFT techniquement ? Un reçu, pas l'œuvre",
+      "6.2 – L'art numérique et les créateurs : nouveaux modèles de rémunération et royalties",
+      "6.3 – Les NFT utilitaires : accès, abonnements, certification, billetterie",
+      "6.4 – Le métavers : promesse immersive ou bulle spéculative ?",
+      "6.5 – La propriété intellectuelle à l'ère des tokens : ce que vous possédez vraiment",
+      "6.6 – Les jeux play-to-earn et GameFi : opportunités et dérives",
+      "6.7 – L'impact environnemental des NFT : mythes et réalités post-Merge"
+     ],
+     "exercices": [
+      "Exercice 1 : « Créez un NFT test » – Minter un NFT sur une blockchain de test pour comprendre le processus sans dépenser.",
+      "Exercice 2 : « Analyse d'une collection » – Choisir une collection NFT et évaluer : utilité, communauté, liquidité, risques.",
+      "Exercice 3 : « Débat métavers » – Rédiger deux paragraphes argumentés : un pour, un contre l'investissement temps/argent dans un métavers."
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Stablecoins et monnaies numériques de banque centrale : la réponse institutionnelle",
+     "objectif": "Expliquer comment les acteurs publics et privés tentent de concilier innovation blockchain et stabilité monétaire, et ce que cela implique pour le citoyen.",
+     "sections": [
+      "7.1 – Pourquoi des stablecoins ? Le besoin de stabilité dans un monde volatil",
+      "7.2 – Les trois familles : adossés à des réserves (USDC), algorithmiques, hybrides",
+      "7.3 – Les risques des stablecoins : opacité des réserves, bank run, contagion",
+      "7.4 – Les MNBC : euro numérique, e-yuan, e-dollar – où en est-on ?",
+      "7.5 – Vie privée vs traçabilité : le dilemme des monnaies programmables",
+      "7.6 – Impact sur les banques commerciales et le crédit",
+      "7.7 – Ce que le citoyen peut anticiper dans les 5 à 10 ans"
+     ],
+     "exercices": [
+      "Exercice 1 : « Comparez trois stablecoins » – Grille : émetteur, type de réserve, audit, blockchain, régulation.",
+      "Exercice 2 : « Lettre au député » – Rédiger un paragraphe de questions à poser à un élu sur l'euro numérique.",
+      "Exercice 3 : « Scénario 2030 » – Écrire deux micro-fictions : une avec MNBC omniprésente, une avec stablecoins privés dominants."
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "DAO et gouvernance décentralisée : qui décide quand personne ne commande ?",
+     "objectif": "Présenter les organisations autonomes décentralisées comme nouveau modèle de coordination collective, avec leurs forces et leurs angles morts.",
+     "sections": [
+      "8.1 – Qu'est-ce qu'une DAO ? Définition, composants (token, trésorerie, proposition, vote)",
+      "8.2 – Les grands types : investissement, protocole, service, communautaire",
+      "8.3 – Le vote on-chain : mécanismes, pondération, délégation",
+      "8.4 – Cas d'école : ConstitutionDAO, MakerDAO, les subventionnements communautaires",
+      "8.5 – Les limites : apathie des votants, concentration des tokens, attaque de gouvernance",
+      "8.6 – Le cadre juridique : la DAO est-elle une société ? Une association ? Un vide ?",
+      "8.7 – Ce que la DAO enseigne à toute organisation traditionnelle"
+     ],
+     "exercices": [
+      "Exercice 1 : « Participez à un vote » – Rejoindre le forum d'une DAO publique, lire trois propositions et argumenter son vote.",
+      "Exercice 2 : « Concevez votre mini-DAO » – Définir en une page : mission, mécanisme de vote, trésorerie, règle d'exclusion.",
+      "Exercice 3 : « Comparez gouvernances » – Tableau comparatif : association loi 1901, SAS, DAO sur 6 critères."
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "L'infrastructure du quotidien : wallets, exchanges, réseaux et outils",
+     "objectif": "Donner une vision concrète et pratique de l'écosystème technique avec lequel le lecteur interagira : portefeuilles, plateformes, réseaux, sauvegardes.",
+     "sections": [
+      "9.1 – Les types de wallets : hot, cold, hardware, custodial, non-custodial",
+      "9.2 – Les clés privées et la seed phrase : votre seul vrai mot de passe",
+      "9.3 – Les exchanges centralisés (CEX) : fonctionnement, KYC, avantages et risques",
+      "9.4 – Les DEX et les agrégateurs : swap sans intermédiaire",
+      "9.5 – Les réseaux, les bridges et la fragmentation de la liquidité",
+      "9.6 – Les outils de suivi : explorateurs de blocs, portfolio trackers, alertes",
+      "9.7 – Choisir sa stack personnelle : critères de sécurité, ergonomie et coût"
+     ],
+     "exercices": [
+      "Exercice 1 : « Installez un wallet de test » – Créer un wallet sur un réseau de test, générer sa seed phrase et la stocker en sécurité (sans jamais la photographier).",
+      "Exercice 2 : « Audit de sécurité personnel » – Checklist en 15 points pour évaluer la robustesse de sa configuration actuelle.",
+      "Exercice 3 : « Comparez deux exchanges » – Grille : frais, actifs disponibles, régulation, réputation, support, assurance."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – ÉVALUER LES OPPORTUNITÉS : Où se crée la valeur ?",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Investir dans les crypto-actifs : méthodes, critères et bon sens",
+     "objectif": "Fournir une grille d'analyse rationnelle pour évaluer un crypto-actif sans promesse de rendement, en insistant sur la diversification et la tolérance au risque.",
+     "sections": [
+      "10.1 – Les crypto-actifs sont-ils une classe d'actifs ? Débat et nuances",
+      "10.2 – L'analyse fondamentale appliquée : équipe, usage, tokenomics, adoption",
+      "10.3 – L'analyse on-chain : métriques de réseau, activité des adresses, vélocité",
+      "10.4 – La gestion du risque : position sizing, stop mental, horizon de temps",
+      "10.5 – DCA, lump-sum, rebalancement : stratégies passives vs actives",
+      "10.6 – Les biais cognitifs de l'investisseur crypto : FOMO, ancrage, survivance",
+      "10.7 – Ce qu'il ne faut JAMAIS faire : levier, tout-en-un, suivre les influenceurs aveuglément"
+     ],
+     "exercices": [
+      "Exercice 1 : « Scorez un projet » – Grille de 10 critères pondérés pour évaluer un crypto-actif de votre choix.",
+      "Exercice 2 : « Simulez un DCA » – Tableau sur 12 mois avec un investissement fictif mensuel ; calculez le prix moyen d'achat.",
+      "Exercice 3 : « Journal de décision » – Tenir un carnet où chaque intention d'achat/vente est justifiée en 3 lignes avant exécution."
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "La blockchain au service de l'entreprise : cas d'usage réels",
+     "objectif": "Identifier les secteurs où la blockchain apporte une valeur démontrable (supply chain, santé, immobilier, énergie) et ceux où elle reste un gadget.",
+     "sections": [
+      "11.1 – Critères d'adoption : quand la blockchain est-elle vraiment utile ?",
+      "11.2 – Supply chain et traçabilité : Walmart, De Beers, industrie pharmaceutique",
+      "11.3 – Santé et dossiers médicaux : interopérabilité, consentement, intégrité",
+      "11.4 – Immobilier et cadastre : tokenisation, réduction des frais de notaire",
+      "11.5 – Énergie et certificats verts : peer-to-peer trading, garanties d'origine",
+      "11.6 – Finance d'entreprise : trade finance, factures, obligations tokenisées",
+      "11.7 – Les échecs instructifs : projets abandonnés et leçons à retenir"
+     ],
+     "exercices": [
+      "Exercice 1 : « Diagnostic sectoriel » – Choisir son secteur d'activité et lister 3 problèmes que la blockchain pourrait résoudre et 3 où elle serait inutile.",
+      "Exercice 2 : « Étude de cas express » – Résumer en une page un cas d'usage réel : problème, solution blockchain, résultats, limites.",
+      "Exercice 3 : « Pitch interne » – Rédiger un mail de 10 lignes à sa direction proposant un pilote blockchain argumenté."
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Métiers et compétences : travailler dans la blockchain sans être développeur",
+     "objectif": "Cartographier les opportunités professionnelles (juridique, compliance, marketing, produit, éducation) et les parcours de montée en compétences.",
+     "sections": [
+      "12.1 – Panorama des métiers : technique, business, juridique, communautaire",
+      "12.2 – Les compétences transversales valorisées : pensée systémique, cryptographie de base, économie",
+      "12.3 – Formations et certifications : lesquelles ont de la valeur, lesquelles sont du vent",
+      "12.4 – Freelance, salariat, contribution DAO : trois modes d'engagement",
+      "12.5 – Construire sa présence : portfolio, contributions open-source, réseau",
+      "12.6 – Les pièges du secteur : volatilité des équipes, burnout, hype"
+     ],
+     "exercices": [
+      "Exercice 1 : « Bilan de compétences crypto » – Grille d'auto-évaluation sur 8 compétences clés et plan de progression sur 6 mois.",
+      "Exercice 2 : « Informational interview » – Préparer 5 questions à poser à un professionnel du secteur et planifier la prise de contact.",
+      "Exercice 3 : « Mini-contribution » – Rejoindre un Discord ou forum d'un projet et proposer une amélioration (doc, traduction, test)."
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Tokenisation et nouveaux modèles économiques : quand tout devient actif",
+     "objectif": "Expliquer comment la tokenisation transforme des actifs illiquides (immobilier, art, revenus futurs) en instruments négociables, et quels modèles économiques émergent.",
+     "sections": [
+      "13.1 – La tokenisation : définition, mécanisme et différence avec la titrisation classique",
+      "13.2 – Tokeniser l'immobilier : fractions, liquidité et contraintes réglementaires",
+      "13.3 – Tokeniser l'art et la propriété intellectuelle : redevances programmables",
+      "13.4 – Les security tokens et la convergence avec la finance traditionnelle",
+      "13.5 – Les modèles x-to-earn : learn-to-earn, move-to-earn, create-to-earn",
+      "13.6 – Les risques de la tokenisation : liquidité fantôme, fragmentation, complexité juridique",
+      "13.7 – Ce qui est réel aujourd'hui vs ce qui reste une promesse"
+     ],
+     "exercices": [
+      "Exercice 1 : « Tokenisez un objet du quotidien » – Choisir un actif (ex. un vélo, une œuvre) et décrire le processus de tokenisation en 5 étapes.",
+      "Exercice 2 : « Analyse d'un security token » – Étudier une émission de security token existante et résumer : sous-jacent, droit attaché, liquidité, régulation.",
+      "Exercice 3 : « Business model canvas » – Remplir un canvas pour un projet de tokenisation fictif."
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Blockchain et impact social : transparence, inclusion, biens communs",
+     "objectif": "Montrer comment la blockchain peut servir l'intérêt général (aide humanitaire, identité, lutte contre la corruption) sans tomber dans le solutionnisme technologique.",
+     "sections": [
+      "14.1 – Identité numérique pour les sans-papiers et les réfugiés",
+      "14.2 – Traçabilité de l'aide humanitaire : le Programme Alimentaire Mondial et Building Blocks",
+      "14.3 – Lutte contre la corruption : registres fonciers, marchés publics",
+      "14.4 – Inclusion financière dans les pays sous-bancarisés",
+      "14.5 – Les biens communs numériques : open-source, financement par le protocole",
+      "14.6 – Les limites : fracture numérique, énergie, techno-colonialisme",
+      "14.7 – Évaluer un projet à impact : grille de lecture critique"
+     ],
+     "exercices": [
+      "Exercice 1 : « Cartographiez un projet à impact » – Choisir une initiative blockchain sociale et remplir : bénéficiaires, mécanisme, résultats mesurés, limites.",
+      "Exercice 2 : « Débat structuré » – Rédiger un argumentaire pour et un contre : « La blockchain résout-elle mieux la corruption qu'une réforme institutionnelle ? »",
+      "Exercice 3 : « Idée locale » – Proposer une application blockchain pour un problème concret de sa commune ou association."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – GÉRER LES RISQUES : Protéger son argent, ses données, sa sérénité",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Volatilité, bulles et cycles : survivre aux montagnes russes",
+     "objectif": "Expliquer les mécanismes de la volatilité crypto, l'histoire des cycles haussiers/baissiers et les stratégies de préservation du capital.",
+     "sections": [
+      "15.1 – Pourquoi les crypto-actifs sont-ils si volatils ? Facteurs structurels",
+      "15.2 – Anatomie d'une bulle : 2013, 2017, 2021 – schémas récurrents",
+      "15.3 – Le cycle du halving et la psychologie des foules",
+      "15.4 – Les krachs : Terra, FTX, Celsius – autopsie de trois effondrements",
+      "15.5 – Stratégies de protection : diversification, stops, prise de profits partiels",
+      "15.6 – Gérer la baisse : résister à la panique sans décision impulsive",
+      "15.7 – L'horizon de temps : pourquoi 4 ans changent tout"
+     ],
+     "exercices": [
+      "Exercice 1 : « Tracez les cycles » – Sur un graphique de prix Bitcoin, identifier les 4 phases (accumulation, hausse, distribution, baisse) pour deux cycles.",
+      "Exercice 2 : « Plan de crise personnel » – Rédiger une checklist de 5 actions à faire si son portefeuille perd 50 % en une semaine.",
+      "Exercice 3 : « Journal émotionnel » – Pendant 2 semaines, noter chaque jour son émotion face au marché et vérifier si elle influence ses décisions."
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Sécurité informatique : protéger ses actifs numériques comme un professionnel",
+     "objectif": "Donner les bonnes pratiques concrètes pour sécuriser ses clés, ses appareils et ses comptes, en réduisant drastiquement les risques de perte ou de vol.",
+     "sections": [
+      "16.1 – Le principe fondamental : « Not your keys, not your coins »",
+      "16.2 – La seed phrase : création, stockage, sauvegarde, récupération",
+      "16.3 – Les hardware wallets : choix, initialisation, mise à jour du firmware",
+      "16.4 – Hygiène numérique : 2FA, mots de passe, phishing, SIM swapping",
+      "16.5 – Sécuriser ses interactions : vérification des contrats, sites officiels, signatures",
+      "16.6 – Le plan de succession : que deviennent vos crypto si vous décédez ?",
+      "16.7 – Réagir en cas de compromission : étapes d'urgence"
+     ],
+     "exercices": [
+      "Exercice 1 : « Audit sécurité » – Passer en revue ses 5 points de contact crypto (wallet, exchange, mail, téléphone, sauvegarde) et noter la faille principale de chacun.",
+      "Exercice 2 : « Simulez un phishing » – Créer un faux mail de phishing (pour soi uniquement) et lister les 7 indices qui le trahissent.",
+      "Exercice 3 : « Plan de succession » – Rédiger une lettre à un proche de confiance expliquant comment accéder à vos actifs en cas d'incapacité, sans révéler la seed."
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Arnaques, manipulations et signaux d'alerte : le guide de vigilance",
+     "objectif": "Répertorier les schémas d'arnaque les plus courants (rug pulls, pump & dump, faux support, Ponzi) et entraîner l'œil du lecteur à les détecter.",
+     "sections": [
+      "17.1 – Typologie des arnaques crypto : du plus grossier au plus sophistiqué",
+      "17.2 – Les rug pulls : comment les repérer avant qu'il ne soit trop tard",
+      "17.3 – Pump & dump et manipulation de marché sur les petits tokens",
+      "17.4 – Les faux projets, faux influenceurs et faux concours",
+      "17.5 – Les schémas de Ponzi déguisés en « rendement garanti »",
+      "17.6 – Le social engineering : urgences fabriquées, autorité empruntée, rareté artificielle",
+      "17.7 – La checklist anti-arnaque en 12 questions"
+     ],
+     "exercices": [
+      "Exercice 1 : « Autopsie d'un rug pull » – Étudier un cas historique et lister les 5 signaux d'alerte qui étaient visibles avant.",
+      "Exercice 2 : « Test de résistance » – Prendre un projet réel et le soumettre à la checklist en 12 questions ; noter le score.",
+      "Exercice 3 : « Alertez un proche » – Rédiger un message bienveillant à un ami tenté par un projet douteux."
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Cadre réglementaire et conformité : ce que la loi dit (et ne dit pas encore)",
+     "objectif": "Présenter le paysage réglementaire européen (MiCA) et français sans donner de conseil juridique personnalisé, pour que le lecteur sache où s'informer.",
+     "sections": [
+      "18.1 – Le règlement MiCA : périmètre, calendrier, obligations pour les émetteurs",
+      "18.2 – Le statut de crypto-actif en droit français : qualification, propriété, fiscalité (principes généraux)",
+      "18.3 – KYC/AML : pourquoi les exchanges demandent votre pièce d'identité",
+      "18.4 – La protection du consommateur : recours, médiation, assurance",
+      "18.5 – La régulation internationale : approches américaine, asiatique, africaine",
+      "18.6 – Ce qui est interdit, ce qui est flou, ce qui est autorisé",
+      "18.7 – Où trouver une information juridique fiable et à jour"
+     ],
+     "exercices": [
+      "Exercice 1 : « Quiz réglementaire » – 10 questions vrai/faux sur MiCA et le droit français des crypto-actifs avec correction.",
+      "Exercice 2 : « Vérifiez la conformité d'un exchange » – Consulter le registre de l'AMF/PSAN et vérifier si une plateforme y figure.",
+      "Exercice 3 : « Note de synthèse » – Résumer en 10 lignes les obligations fiscales générales applicables aux plus-values crypto en France (sans conseil personnalisé)."
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Risques psychologiques et biais cognitifs : votre pire ennemi, c'est vous",
+     "objectif": "Identifier les pièges mentaux spécifiques à l'investissement crypto (FOMO, biais de confirmation, effet de levier émotionnel) et proposer des garde-fous comportementaux.",
+     "sections": [
+      "19.1 – Le FOMO et le FUD : deux faces de la même pièce émotionnelle",
+      "19.2 – Le biais de confirmation dans la recherche crypto",
+      "19.3 – L'effet de dotation et l'attachement irrationnel à un projet",
+      "19.4 – Le gambling déguisé : quand l'investissement devient addiction",
+      "19.5 – La surcharge informationnelle : doomscrolling, Twitter/X, Discord",
+      "19.6 – Les stratégies de protection mentale : règles écrites, pauses, cercle de confiance",
+      "19.7 – Savoir s'arrêter : signaux d'alerte et ressources d'aide"
+     ],
+     "exercices": [
+      "Exercice 1 : « Journal de biais » – Pendant une semaine, noter chaque décision financière et identifier le biais potentiel derrière.",
+      "Exercice 2 : « Règles personnelles gravées » – Rédiger 5 règles non négociables (ex. « Je ne consulte le prix qu'une fois par jour ») et les afficher.",
+      "Exercice 3 : « Détox informationnelle » – Couper toutes les sources crypto pendant 72 heures et observer son état émotionnel."
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – PASSER À L'ACTION AVEC MÉTHODE : Votre feuille de route personnelle",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Construire sa stratégie personnelle : du curieux à l'acteur éclairé",
+     "objectif": "Guider le lecteur dans la définition de son profil, de ses objectifs et de son plan d'action personnalisé, sans prescription universelle.",
+     "sections": [
+      "20.1 – Définir son profil : curieux, épargnant, investisseur, entrepreneur, développeur",
+      "20.2 – Clarifier ses objectifs : apprendre, diversifier, innover, travailler",
+      "20.3 – Évaluer sa tolérance au risque et son horizon de temps",
+      "20.4 – La règle des petits pas : commencer avec un montant qu'on accepte de perdre",
+      "20.5 – Construire son portefeuille d'apprentissage : 50 % lecture, 30 % pratique, 20 % réseau",
+      "20.6 – Les revues trimestrielles : réévaluer, ajuster, documenter",
+      "20.7 – Savoir dire non : refuser la pression sociale et le marketing agressif"
+     ],
+     "exercices": [
+      "Exercice 1 : « Mon profil en une page » – Remplir un canevas : situation, objectifs, contraintes, niveau de connaissance, temps disponible.",
+      "Exercice 2 : « Plan d'action 90 jours » – Définir 3 objectifs concrets, mesurables et datés pour les 3 prochains mois.",
+      "Exercice 3 : « Lettre à moi-même futur » – Écrire une lettre à lire dans 6 mois : où j'en suis, ce que j'ai appris, ce que je veux éviter."
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Aspects pratiques : fiscalité, comptabilité et organisation (principes généraux)",
+     "objectif": "Donner les repères généraux sur la fiscalité des crypto-actifs en France et les bonnes pratiques de documentation, en renvoyant systématiquement vers un professionnel pour le conseil personnalisé.",
+     "sections": [
+      "21.1 – Le principe général d'imposition des plus-values sur crypto-actifs en France",
+      "21.2 – Cessions imposables vs non-imposables : les seuils et les exceptions",
+      "21.3 – La tenue de registre : pourquoi documenter chaque transaction dès le premier euro",
+      "21.4 – Les outils de suivi fiscal : logiciels, tableaux, exports d'exchanges",
+      "21.5 – Déclaration : où et comment (principes généraux, sans conseil personnalisé)",
+      "21.6 – Les cas particuliers : staking, airdrops, DeFi, NFT – ce qu'on sait et ce qu'on ignore",
+      "21.7 – Quand consulter un fiscaliste spécialisé et comment le choisir"
+     ],
+     "exercices": [
+      "Exercice 1 : « Créez votre registre » – Mettre en place un tableur avec les colonnes : date, type d'opération, actif, quantité, prix, frais, exchange.",
+      "Exercice 2 : « Simulez une déclaration » – À partir de 5 transactions fictives, identifier lesquelles seraient imposables selon les principes généraux.",
+      "Exercice 3 : « Checklist avant consultation » – Préparer la liste des documents et questions à apporter à un rendez-vous avec un fiscaliste."
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Rester à jour : sources, outils et hygiène informationnelle",
+     "objectif": "Aider le lecteur à construire une veille efficace et critique dans un secteur où l'information évolue chaque semaine, en évitant la surcharge et la désinformation.",
+     "sections": [
+      "22.1 – Les types de sources : médias spécialisés, recherche académique, rapports institutionnels",
+      "22.2 – Les newsletters et podcasts de référence (francophones et anglophones)",
+      "22.3 – Les outils de veille : agrégateurs, alertes, explorateurs on-chain",
+      "22.4 – Évaluer la fiabilité d'une source : biais, financement, track record",
+      "22.5 – Les communautés : Discord, forums, conférences – participer sans se noyer",
+      "22.6 – La règle du 80/20 informationnel : 20 % de sources pour 80 % de la valeur",
+      "22.7 – Prendre du recul : l'art de la pause stratégique dans un secteur qui ne dort jamais"
+     ],
+     "exercices": [
+      "Exercice 1 : « Créez votre média-kit personnel » – Sélectionner 5 sources maximum et planifier un créneau de lecture hebdomadaire.",
+      "Exercice 2 : « Fact-check » – Prendre une affirmation crypto virale et la vérifier via 3 sources indépendantes.",
+      "Exercice 3 : « Synthèse mensuelle » – À la fin du mois, rédiger en 10 lignes les 3 évolutions marquantes du secteur."
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Enseigner et transmettre : parler crypto à ses proches sans les braquer",
+     "objectif": "Donner des clés de communication pour partager ses connaissances avec famille, amis ou collègues, sans prosélytisme ni condescendance.",
+     "sections": [
+      "23.1 – Pourquoi parler de crypto est difficile : jargon, peur, méfiance légitime",
+      "23.2 – Adapter son discours : enfant, parent sceptique, collègue curieux",
+      "23.3 – Les métaphores qui fonctionnent et celles qui trompent",
+      "23.4 – Répondre aux objections sans se braquer : « c'est une bulle », « c'est pour les criminels »",
+      "23.5 – Protéger ses proches : prévenir sans interdire, alerter sans paniquer",
+      "23.6 – L'éducation financière comme porte d'entrée : du budget à la blockchain",
+      "23.7 – Organiser un mini-atelier familial ou entre amis"
+     ],
+     "exercices": [
+      "Exercice 1 : « Le pitch en 3 niveaux » – Préparer une explication de Bitcoin en 30 secondes, 2 minutes et 5 minutes.",
+      "Exercice 2 : « Jeu de rôle » – Simuler une conversation avec un proche sceptique et lister les 5 réponses les plus efficaces.",
+      "Exercice 3 : « Atelier clé en main » – Préparer le déroulé d'une session de 30 minutes pour initier 3 proches à la blockchain."
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "L'avenir : tendances, incertitudes et posture du citoyen éclairé",
+     "objectif": "Ouvrir l'horizon sur les évolutions probables et incertaines du secteur, en cultivant une posture de curiosité critique plutôt que de prédiction.",
+     "sections": [
+      "24.1 – Les tendances structurelles : institutionnalisation, convergence avec l'IA, tokenisation massive",
+      "24.2 – Les incertitudes majeures : régulation, scalabilité, adoption réelle vs spéculation",
+      "24.3 – Le rôle des banques centrales et la coexistence monnaies publiques/privées",
+      "24.4 – L'impact environnemental : progrès, greenwashing et trajectoire",
+      "24.5 – La question philosophique : la confiance peut-elle être purement algorithmique ?",
+      "24.6 – Construire sa posture personnelle : ni évangéliste ni détracteur, mais citoyen informé",
+      "24.7 – Le mot de la fin : la blockchain comme outil, pas comme religion"
+     ],
+     "exercices": [
+      "Exercice 1 : « Ma prédiction sous enveloppe » – Écrire 3 prédictions sur le secteur à horizon 5 ans, les sceller et les rouvrir en 2030.",
+      "Exercice 2 : « Mon manifeste personnel » – Rédiger en 15 lignes sa position sur la blockchain : ce qu'on en attend, ce qu'on en craint, comment on veut s'en servir.",
+      "Exercice 3 : « Lettre de clôture » – Écrire une lettre à soi-même : ce que ce livre a changé dans ma compréhension, ce que je m'engage à faire différemment."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,605 @@
+{
+ "titre": "Le Marché Apprivoisé",
+ "sous_titre": "Comprendre la bourse, dompter ses émotions et construire son premier portefeuille d'actions et d'ETF en 90 jours",
+ "bibliographie": [
+  {
+   "auteur": "Burton G. Malkiel",
+   "titre": "A Random Walk Down Wall Street",
+   "annee": "1973 (rééd. 2023)",
+   "idee": "Les marchés sont globalement efficients ; un singe lançant des fléchettes bat souvent les gérants actifs. L'investissement passif via indices est la stratégie la plus rationnelle pour le particulier.",
+   "apport": "Notre livre reprendra la démonstration de l'efficience et la justification des ETF indiciels, tout en montrant comment un débutant peut quand même 'ajouter de la valeur' par la discipline et l'allocation."
+  },
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "The Intelligent Investor",
+   "annee": "1949 (rév. 1973)",
+   "idee": "Investir exige une marge de sécurité, une distinction claire entre investissement et spéculation, et un 'investisseur défensif' qui automatise ses décisions pour neutraliser l'émotion.",
+   "apport": "On retiendra le concept de marge de sécurité, la métaphore de Mr. Market et le profil de l'investisseur défensif comme socle du chapitre sur la psychologie et la gestion du risque."
+  },
+  {
+   "auteur": "John C. Bogle",
+   "titre": "The Little Book of Common Sense Investing",
+   "annee": "2007",
+   "idee": "Les fonds indiciels à bas coût surperforment la grande majorité des fonds actifs sur longue période grâce à la réduction des frais et à la diversification maximale.",
+   "apport": "Base de notre partie sur les ETF : explication des frais (TER), de la réplication physique vs synthétique, et de la construction d'un portefeuille 'tout-ETF'."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "Le succès financier dépend moins de l'intelligence que du comportement : patience, humilité face à l'incertitude, et définition personnelle de la richesse comptent davantage que la performance brute.",
+   "apport": "Inspirera nos chapitres sur les biais cognitifs, la gestion émotionnelle en période de krach et la définition d'objectifs personnels avant toute stratégie."
+  },
+  {
+   "auteur": "Jeremy J. Siegel",
+   "titre": "Stocks for the Long Run",
+   "annee": "1994 (5e éd. 2014)",
+   "idee": "Sur toute période de 20 ans ou plus, les actions ont historiquement surpassé toutes les autres classes d'actifs dans tous les grands marchés développés.",
+   "apport": "Données historiques utilisées pour justifier l'horizon long terme et rassurer le lecteur débutant face à la volatilité court terme."
+  },
+  {
+   "auteur": "William J. Bernstein",
+   "titre": "The Four Pillars of Investing",
+   "annee": "2002 (rév. 2023)",
+   "idee": "Investir repose sur quatre piliers : théorie (rendement/risque), histoire, psychologie et business (choix des véhicules). L'allocation d'actifs prime sur le stock-picking.",
+   "apport": "Structure pédagogique des quatre piliers réadaptée en nos six parties ; insistance sur l'allocation comme décision n°1 du portefeuille."
+  },
+  {
+   "auteur": "Howard Marks",
+   "titre": "The Most Important Thing: Uncommon Sense for the Thoughtful Investor",
+   "annee": "2011",
+   "idee": "La gestion du risque et la compréhension des cycles de marché sont plus importantes que la recherche de rendement. La pensée de second niveau distingue l'investisseur avisé.",
+   "apport": "Chapitre dédié à la lecture des cycles, à la notion de risque réel vs volatilité, et à la construction d'une 'checklist' avant chaque achat."
+  },
+  {
+   "auteur": "Peter Lynch",
+   "titre": "One Up on Wall Street",
+   "annee": "1989",
+   "idee": "L'investisseur individuel peut dénicher des pépites en observant son quotidien, à condition de comprendre le modèle économique et de rester dans son cercle de compétence.",
+   "apport": "Alimentera le chapitre sur l'analyse fondamentale simplifiée d'une action individuelle, avec une grille accessible au non-spécialiste."
+  },
+  {
+   "auteur": "Daniel Kahneman",
+   "titre": "Thinking, Fast and Slow",
+   "annee": "2011",
+   "idee": "Le cerveau humain est câblé par des heuristiques et biais (ancrage, aversion à la perte, excès de confiance) qui sabotent les décisions financières rationnelles.",
+   "apport": "Fondement théorique de notre partie 'psychologie' ; exercices concrets pour identifier et neutraliser ses propres biais avant d'investir."
+  },
+  {
+   "auteur": "Taylor Larimore, Mel Lindauer, Michael LeBoeuf",
+   "titre": "The Bogleheads' Guide to Investing",
+   "annee": "2006 (rév. 2023)",
+   "idee": "Un plan simple en trois fonds (actions domestiques, actions internationales, obligations) suffit pour 95 % des investisseurs ; la régularité bat le timing.",
+   "apport": "Modèle des 'trois fonds' adapté au contexte européen/français (PEA, assurance-vie) dans notre partie construction de portefeuille."
+  },
+  {
+   "auteur": "JL Collins",
+   "titre": "The Simple Path to Wealth",
+   "annee": "2016",
+   "idee": "Un seul ETF monde, un taux d'épargne élevé et du temps suffisent à bâtir un patrimoine solide ; la complexité est l'ennemie de l'investisseur débutant.",
+   "apport": "Philosophie de simplification radicale qui irrigue notre approche 'premier portefeuille' et le chapitre sur la stratégie minimaliste."
+  },
+  {
+   "auteur": "Rick Ferri",
+   "titre": "All About Asset Allocation",
+   "annee": "2010 (2e éd.)",
+   "idee": "L'allocation d'actifs explique plus de 90 % de la variance des rendements d'un portefeuille ; il faut la définir selon son horizon, sa tolérance au risque et ses objectifs de vie.",
+   "apport": "Méthodologie pas-à-pas pour déterminer sa répartition actions/obligations/liquidités, intégrée au chapitre 'votre allocation sur mesure'."
+  },
+  {
+   "auteur": "James Montier",
+   "titre": "The Little Book of Behavioral Investing",
+   "annee": "2010",
+   "idee": "Les investisseurs sont leur pire ennemi : surtrading, effet de disposition, suivisme. Des règles mécaniques et des garde-fous comportementaux sont indispensables.",
+   "apport": "Exercices de 'journal d'investissement' et règles pré-engagées (stop-loss mental, DCA) repris dans nos chapitres de discipline."
+  },
+  {
+   "auteur": "Robert T. Kiyosaki",
+   "titre": "Rich Dad Poor Dad",
+   "annee": "1997",
+   "idee": "L'éducation financière de base (actif vs passif, cash-flow, indépendance) est le préalable à tout investissement ; l'école ne l'enseigne pas.",
+   "apport": "Inspire notre chapitre 1 sur la 'mise à niveau' financière personnelle : bilan patrimonial, budget, fonds d'urgence avant d'entrer en bourse."
+  },
+  {
+   "auteur": "Eric Tyson",
+   "titre": "Investing for Dummies",
+   "annee": "2006 (9e éd. 2022)",
+   "idee": "Un tour d'horizon accessible de tous les véhicules d'investissement (actions, obligations, fonds, immobilier) avec un langage zéro-jargon.",
+   "apport": "Ton pédagogique et progressif que nous adoptons ; glossaire intégré à chaque fin de chapitre pour démystifier le vocabulaire."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "The Black Swan",
+   "annee": "2007",
+   "idee": "Les événements extrêmes et imprévisibles façonnent les marchés plus que les modèles ne le prévoient ; la robustesse (antifragilité) prime sur l'optimisation.",
+   "apport": "Chapitre sur la gestion des krachs et la construction d'un portefeuille résilient ; notion de 'cygne noir' comme garde-fou contre l'excès de confiance."
+  },
+  {
+   "auteur": "Marc Fiorentino / Édouard Petit",
+   "titre": "Épargnant 3.0 (Édouard Petit)",
+   "annee": "2015",
+   "idee": "Adapter la philosophie Boglehead au contexte français : PEA, assurance-vie, ETF éligibles, fiscalité spécifique, et construction d'un portefeuille lazy en euros.",
+   "apport": "Ancrage franco-européen indispensable : fiscalité, enveloppes (PEA, CTO, AV), ETF disponibles sur Euronext. Source principale de nos encadrés 'Spécial France'."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – Avant d'entrer dans l'arène : les fondations personnelles",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Votre bilan financier : savoir d'où l'on part avant de choisir où aller",
+     "objectif": "Permettre au lecteur de réaliser un diagnostic complet de sa situation financière personnelle (revenus, charges, épargne, dettes) et de définir un 'numéro de départ' clair avant tout investissement.",
+     "sections": [
+      "1.1 Pourquoi la bourse n'est pas un jeu : ce que l'investissement exige de vous",
+      "1.2 Le bilan patrimonial en une page : actifs, passifs, liquidités",
+      "1.3 Le fonds d'urgence : la règle des 3 à 6 mois et comment le constituer",
+      "1.4 Dettes bonnes, dettes toxiques : trier avant d'investir",
+      "1.5 Définir ses objectifs chiffrés : retraite, projet immobilier, indépendance",
+      "1.6 Votre 'numéro' : capacité d'investissement mensuelle réaliste"
+     ],
+     "exercices": [
+      "Remplir la grille de bilan patrimonial fournie (tableau à compléter)",
+      "Calculer son ratio d'endettement et son taux d'épargne actuel",
+      "Rédiger en trois phrases ses objectifs financiers à 5, 10 et 20 ans"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Comment fonctionne un marché financier : la mécanique sous le capot",
+     "objectif": "Expliquer de manière limpide le fonctionnement des marchés (Bourse, obligations, devises), les acteurs, les mécanismes de cotation et les cycles, sans jargon superflu.",
+     "sections": [
+      "2.1 Qu'est-ce qu'une action ? Une part d'entreprise, pas un ticket de loto",
+      "2.2 Les marchés primaires et secondaires : introduction en bourse et revente",
+      "2.3 Qui sont les acteurs : particuliers, institutionnels, market-makers, régulateurs",
+      "2.4 La formation du prix : offre, demande, carnet d'ordres",
+      "2.5 Les grands indices (CAC 40, S&P 500, MSCI World) : thermomètres du marché",
+      "2.6 Obligations, matières premières, devises : les autres terrains de jeu",
+      "2.7 Le rôle des régulateurs (AMF, SEC, ESMA) : vos filets de sécurité"
+     ],
+     "exercices": [
+      "Consulter un carnet d'ordres en direct sur le site d'Euronext et identifier bid/ask",
+      "Repérer la composition du CAC 40 et noter les 5 premières capitalisations",
+      "Expliquer en deux phrases à un proche ce qu'est une action (test de compréhension)"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'histoire des marchés en 10 krachs : ce que le passé enseigne",
+     "objectif": "Donner une perspective historique des cycles boursiers pour dédramatiser la volatilité et ancrer la conviction que le temps est l'allié de l'investisseur.",
+     "sections": [
+      "3.1 1929, 1987, 2000, 2008, 2020 : anatomie de cinq krachs majeurs",
+      "3.2 Les bulles : tulipes, dotcom, subprimes – les mécanismes de l'euphorie",
+      "3.3 Combien de temps pour récupérer ? Les données de chaque crise",
+      "3.4 Les marchés émergents et les crises locales (Asie 1997, dette 2011)",
+      "3.5 Ce qui change et ce qui ne change pas : leçons permanentes",
+      "3.6 Le mythe du 'cette fois c'est différent'"
+     ],
+     "exercices": [
+      "Tracer sur papier la courbe du S&P 500 de 2000 à aujourd'hui et identifier les creux",
+      "Calculer le rendement annualisé du MSCI World sur 30 ans (données fournies)",
+      "Écrire une lettre à son 'moi futur' expliquant pourquoi il ne devra pas vendre en cas de -30 %"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Votre psychologie d'investisseur : les 12 biais qui vous feront perdre de l'argent",
+     "objectif": "Identifier les biais cognitifs majeurs (Kahneman, Montier) et fournir des parades concrètes pour protéger ses décisions d'investissement.",
+     "sections": [
+      "4.1 L'aversion à la perte : pourquoi une baisse de 10 % fait plus mal qu'une hausse de 20 %",
+      "4.2 L'ancrage et le biais de confirmation : vous ne voyez que ce qui vous arrange",
+      "4.3 L'excès de confiance et l'illusion de contrôle",
+      "4.4 Le suivisme (FOMO) et la peur de rater le train",
+      "4.5 L'effet de disposition : vendre trop tôt les gagnants, garder trop longtemps les perdants",
+      "4.6 Le biais de récence et la projection linéaire",
+      "4.7 Les parades : règles mécaniques, journal d'investissement, horizon long"
+     ],
+     "exercices": [
+      "Auto-évaluation : cocher les 12 biais et s'attribuer une note de vulnérabilité",
+      "Tenir un 'journal de décision' pour chaque futur achat/vente (modèle fourni)",
+      "Rédiger son 'contrat comportemental' : 5 règles intangibles qu'on s'engage à respecter"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – Les instruments : actions, ETF, obligations et au-delà",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "L'action individuelle : comprendre ce que vous achetez vraiment",
+     "objectif": "Apprendre à lire une fiche valeur, comprendre les ratios clés et évaluer grossièrement la santé d'une entreprise sans être analyste professionnel.",
+     "sections": [
+      "5.1 Anatomie d'une action : capitalisation, flottant, dividende",
+      "5.2 Lire une fiche valeur en 10 minutes : PER, P/B, dette/EBITDA, free cash-flow",
+      "5.3 Les secteurs économiques et leurs cycles (tech, santé, énergie, conso…)",
+      "5.4 Growth vs Value : deux philosophies, deux profils de risque",
+      "5.5 Les petites et moyennes capitalisations : opportunités et pièges",
+      "5.6 Les actions à dividende : la boule de neige des revenus passifs",
+      "5.7 Quand l'action individuelle a-t-elle sa place dans un premier portefeuille ?"
+     ],
+     "exercices": [
+      "Choisir une entreprise du quotidien et remplir la grille d'analyse (10 ratios)",
+      "Comparer le PER de deux concurrents du même secteur et interpréter l'écart",
+      "Calculer le rendement en dividende d'une action et le comparer au livret A"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Les ETF : l'outil miracle du débutant (et pourquoi)",
+     "objectif": "Démystifier les ETF (trackers) : fonctionnement, avantages, coûts, réplication, et pourquoi ils constituent la pierre angulaire d'un premier portefeuille.",
+     "sections": [
+      "6.1 Qu'est-ce qu'un ETF ? Un panier d'actions dans une seule ligne",
+      "6.2 Réplication physique vs synthétique : ce que ça change pour vous",
+      "6.3 Accumulant vs distribuant : la question du dividende",
+      "6.4 Les frais qui comptent : TER, spread, frais de courtage",
+      "6.5 Les grands ETF monde : MSCI World, MSCI ACWI, FTSE All-World",
+      "6.6 ETF sectoriels, thématiques et factoriels : la boîte de Pandore",
+      "6.7 Comment choisir son premier ETF : la grille de sélection en 7 critères"
+     ],
+     "exercices": [
+      "Comparer trois ETF MSCI World (iShares, Amundi, Vanguard) sur TER, encours, réplication",
+      "Simuler l'impact d'un TER de 0,20 % vs 0,60 % sur 25 ans (tableur fourni)",
+      "Sélectionner son premier ETF selon la grille et justifier son choix en 5 lignes"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Obligations, fonds monétaires et autres classes d'actifs : le rôle des amortisseurs",
+     "objectif": "Expliquer le rôle des obligations et des actifs défensifs dans un portefeuille, sans entrer dans la gestion obligataire active.",
+     "sections": [
+      "7.1 Une obligation, c'est quoi ? Prêter de l'argent à un État ou une entreprise",
+      "7.2 Le lien taux/prix : pourquoi les obligations baissent quand les taux montent",
+      "7.3 Obligations d'État vs corporate : le spectre du risque",
+      "7.4 Les fonds monétaires et leur rôle de 'parking' de liquidités",
+      "7.5 L'or et les matières premières : diversification ou mirage ?",
+      "7.6 L'immobilier coté (SIIC, REIT) : un pont vers la pierre-papier",
+      "7.7 Quelle place pour les amortisseurs selon votre âge et votre horizon ?"
+     ],
+     "exercices": [
+      "Identifier sur le site de l'AFT les taux des OAT françaises à 10 ans et tracer leur évolution",
+      "Calculer la part obligataire théorique selon la règle '110 – âge' et la nuancer",
+      "Lister trois scénarios de vie où les obligations protégeraient son portefeuille"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Les enveloppes fiscales françaises : PEA, CTO, assurance-vie",
+     "objectif": "Présenter les véhicules d'investissement disponibles en France, leur fiscalité, leurs plafonds, et guider le lecteur vers le choix optimal pour démarrer.",
+     "sections": [
+      "8.1 Le PEA : le cocon fiscal de l'investisseur européen",
+      "8.2 Le compte-titres ordinaire (CTO) : liberté totale, fiscalité moins douce",
+      "8.3 L'assurance-vie en unités de compte : le couteau suisse patrimonial",
+      "8.4 Le PER : l'enveloppe retraite et son avantage fiscal à l'entrée",
+      "8.5 Flat tax, barème progressif, prélèvements sociaux : le tableau comparatif",
+      "8.6 Quelle enveloppe pour quel instrument ? La matrice de décision",
+      "8.7 Ouvrir son premier compte : checklist et pièges à éviter"
+     ],
+     "exercices": [
+      "Remplir la matrice enveloppe/instrument pour son propre cas",
+      "Simuler la fiscalité d'une plus-value de 5 000 € en PEA (> 5 ans) vs CTO",
+      "Vérifier l'éligibilité PEA de trois ETF popularisés (liste fournie)"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Les frais cachés : ce que la finance vous facture et comment le réduire",
+     "objectif": "Rendre le lecteur capable d'identifier tous les frais (courtage, gestion, spread, rétrocessions) et de minimiser leur impact sur la performance à long terme.",
+     "sections": [
+      "9.1 Les frais de courtage : fixes, proportionnels, dégressifs",
+      "9.2 Le TER des fonds et ETF : le coût invisible qui ronge 1 % par an",
+      "9.3 Les frais d'entrée, de sortie, d'arbitrage : les pièges des contrats d'assurance-vie",
+      "9.4 Le spread bid/ask : le coût caché de la liquidité",
+      "9.5 Les rétrocessions et conflits d'intérêts des conseillers",
+      "9.6 L'impact composé des frais sur 20 et 30 ans : les chiffres qui choquent",
+      "9.7 La stratégie 'zéro frais superflus' : courtiers en ligne, ETF low-cost"
+     ],
+     "exercices": [
+      "Auditer les frais de son éventuel contrat d'assurance-vie actuel",
+      "Comparer les grilles tarifaires de trois courtiers en ligne (tableau à compléter)",
+      "Calculer l'écart de patrimoine à 30 ans entre 0,3 % et 1,5 % de frais annuels"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – La stratégie : construire un portefeuille qui vous ressemble",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Définir son profil : horizon, tolérance au risque et objectifs de vie",
+     "objectif": "Guider le lecteur dans l'auto-évaluation de son profil d'investisseur pour que la stratégie soit alignée avec sa vie réelle et non avec un modèle générique.",
+     "sections": [
+      "10.1 L'horizon de placement : pourquoi 5 ans est le minimum vital",
+      "10.2 La tolérance au risque : le questionnaire honnête (pas celui de la banque)",
+      "10.3 Les objectifs hiérarchisés : sécurité, croissance, revenus, transmission",
+      "10.4 Le cycle de vie de l'investisseur : 25 ans, 40 ans, 55 ans, 65 ans",
+      "10.5 La capacité vs la volonté de prendre des risques : la distinction cruciale",
+      "10.6 Rédiger sa 'politique d'investissement personnelle' en une page"
+     ],
+     "exercices": [
+      "Compléter le questionnaire de profil (20 questions) et calculer son score",
+      "Rédiger sa politique d'investissement personnelle (modèle à trous fourni)",
+      "Identifier les trois événements de vie qui pourraient modifier sa stratégie"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "L'allocation d'actifs : la seule décision qui compte vraiment",
+     "objectif": "Montrer que la répartition entre actions, obligations et liquidités détermine 90 % de la performance et du risque, et apprendre à la construire.",
+     "sections": [
+      "11.1 Le théorème de Bernstein : pourquoi l'allocation prime sur le choix des titres",
+      "11.2 La frontière efficiente : le meilleur rendement pour un niveau de risque donné",
+      "11.3 Les allocations classiques : 60/40, 80/20, 100 % actions, all-weather",
+      "11.4 Adapter l'allocation à son âge : la glissade (glide path)",
+      "11.5 La diversification géographique : Europe, Amérique, émergents",
+      "11.6 La diversification factorielle : taille, value, momentum – utile ou gadget ?",
+      "11.7 Construire son allocation cible : la méthode en 5 étapes"
+     ],
+     "exercices": [
+      "Déterminer son allocation cible selon la méthode en 5 étapes",
+      "Simuler la performance historique de trois allocations (données 1990-2024 fournies)",
+      "Dessiner son 'camembert' d'allocation et le commenter en 3 lignes"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le portefeuille minimaliste : 3 ETF pour conquérir le monde",
+     "objectif": "Présenter la stratégie 'lazy investing' à 2-3 ETF comme solution optimale pour un débutant, avec des exemples concrets adaptés au PEA et au CTO.",
+     "sections": [
+      "12.1 Le principe : un ETF monde + un ETF obligataire + éventuellement un ETF émergents",
+      "12.2 Le portefeuille à un seul ETF : le MSCI World ou le FTSE All-World suffit-il ?",
+      "12.3 La version PEA : quels ETF éligibles pour répliquer le monde ?",
+      "12.4 La version CTO/assurance-vie : plus de choix, plus de vigilance",
+      "12.5 Les variantes : ajouter une poche small caps, tilt value, ou or",
+      "12.6 Les erreurs classiques du lazy investor : trop d'ETF, trop de complexité",
+      "12.7 Le rééquilibrage annuel : la seule 'gestion active' nécessaire"
+     ],
+     "exercices": [
+      "Composer son portefeuille à 3 ETF avec les noms exacts, ISIN et supports",
+      "Calculer le coût total (TER pondéré) de son portefeuille lazy",
+      "Programmer un rappel annuel de rééquilibrage dans son agenda"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Ajouter des actions individuelles : la poche 'plaisir' encadrée",
+     "objectif": "Expliquer comment intégrer une petite poche de stock-picking (5-15 % du portefeuille) sans compromettre la solidité de l'ensemble.",
+     "sections": [
+      "13.1 Pourquoi une poche actions individuelles ? Apprendre, s'impliquer, chercher l'alpha",
+      "13.2 La règle du 90/10 ou du 85/15 : protéger le cœur du portefeuille",
+      "13.3 Le cercle de compétence : n'investir que dans ce qu'on comprend",
+      "13.4 La grille d'analyse simplifiée : 10 questions avant d'acheter une action",
+      "13.5 La concentration vs la diversification : combien de lignes ?",
+      "13.6 Quand vendre ? Les trois déclencheurs (thèse invalidée, surévaluation, besoin)",
+      "13.7 Le journal de position : tracer sa logique pour apprendre de ses erreurs"
+     ],
+     "exercices": [
+      "Remplir la grille de 10 questions pour une entreprise que l'on connaît bien",
+      "Définir par écrit sa thèse d'investissement sur une action choisie",
+      "Fixer ses règles de sortie (prix cible, stop mental, horizon) avant l'achat"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Investir régulièrement : le DCA et la puissance du temps composé",
+     "objectif": "Démontrer la supériorité de l'investissement programmé (DCA) sur le timing et donner un plan concret de versements automatiques.",
+     "sections": [
+      "14.1 Le dollar-cost averaging : lisser les achats pour neutraliser l'émotion",
+      "14.2 Les mathématiques du temps composé : 200 €/mois à 7 % sur 30 ans",
+      "14.3 DCA vs lump sum : que dit la recherche ? (Et pourquoi ça n'a pas d'importance pour vous)",
+      "14.4 Mettre en place un virement automatique : le pilote automatique de la richesse",
+      "14.5 Augmenter progressivement : indexer ses versements sur son salaire",
+      "14.6 Les marchés baissiers sont vos amis : acheter plus quand c'est 'en solde'",
+      "14.7 Le tableau de suivi mensuel : 5 minutes pour rester sur les rails"
+     ],
+     "exercices": [
+      "Calculer le patrimoine projeté à 20, 30 et 40 ans avec son versement mensuel",
+      "Mettre en place (ou simuler) un virement automatique vers son courtier",
+      "Créer son tableau de suivi mensuel (modèle fourni) et le remplir pour le mois 1"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – Passer à l'action : ouvrir son compte, acheter, gérer",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Choisir son courtier et ouvrir son premier compte en 48 heures",
+     "objectif": "Guider pas à pas dans le choix d'un courtier en ligne adapté et l'ouverture effective d'un PEA ou CTO, sans se perdre dans les options.",
+     "sections": [
+      "15.1 Les critères de choix : frais, interface, gamme d'ETF, service client, solidité",
+      "15.2 Tour d'horizon des courtiers populaires en France (Boursorama, Fortuneo, Degiro, Trade Republic, Bourse Direct, Interactive Brokers)",
+      "15.3 L'ouverture du PEA : pièces, délais, premier versement",
+      "15.4 L'ouverture du CTO : les spécificités et les options fiscales",
+      "15.5 L'interface de trading : comprendre un passage d'ordre (marché, limite, stop)",
+      "15.6 Le premier achat : walkthrough commenté étape par étape",
+      "15.7 Les pièges à éviter : options par défaut, vente à découvert, effet de levier"
+     ],
+     "exercices": [
+      "Comparer deux courtiers sur la grille de critères et choisir le sien",
+      "Ouvrir effectivement son PEA ou CTO (checklist de documents fournie)",
+      "Passer un ordre d'achat simulé (mode démo) pour se familiariser avec l'interface"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Construire son premier portefeuille : le plan d'action sur 90 jours",
+     "objectif": "Fournir un calendrier concret semaine par semaine pour passer de zéro à un portefeuille fonctionnel en trois mois.",
+     "sections": [
+      "16.1 Semaine 1-2 : finaliser l'ouverture, virer les fonds, vérifier l'éligibilité",
+      "16.2 Semaine 3-4 : le premier achat – l'ETF monde cœur de portefeuille",
+      "16.3 Semaine 5-6 : compléter l'allocation (obligataire, émergents, poche actions)",
+      "16.4 Semaine 7-8 : mettre en place le virement automatique et le DCA",
+      "16.5 Semaine 9-10 : le premier rééquilibrage de vérification",
+      "16.6 Semaine 11-12 : documenter sa stratégie, créer ses alertes, souffler",
+      "16.7 Le tableau de bord du trimestre : ce qu'on surveille et ce qu'on ignore"
+     ],
+     "exercices": [
+      "Imprimer le calendrier 90 jours et cocher chaque étape réalisée",
+      "Réaliser son premier achat d'ETF (montant minimum défini à l'avance)",
+      "Rédiger un mémo d'une page récapitulant sa stratégie pour ne pas dévier"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Lire un marché sans paniquer : indicateurs, actualité et bruit",
+     "objectif": "Apprendre à distinguer l'information pertinente du bruit médiatique et à consulter les bons indicateurs sans devenir accro aux écrans.",
+     "sections": [
+      "17.1 Les indicateurs macro : PIB, inflation, taux directeurs – ce qu'ils disent vraiment",
+      "17.2 Les indicateurs de marché : VIX, put/call ratio, breadth – thermomètres de sentiment",
+      "17.3 La saisonnalité et les cycles présidentiels : mythe ou réalité ?",
+      "17.4 Les médias financiers : comment les consommer sans être contaminé par l'anxiété",
+      "17.5 Le 'noise trading' : pourquoi ignorer 95 % de l'actualité est une stratégie",
+      "17.6 La routine d'information saine : 15 minutes par semaine, pas plus",
+      "17.7 Les signaux d'alerte légitimes : quand faut-il vraiment s'inquiéter ?"
+     ],
+     "exercices": [
+      "Consulter le VIX et le taux à 10 ans, et noter son ressenti sans agir",
+      "Faire une 'diète médiatique' de 7 jours sans consulter aucun cours",
+      "Rédiger sa liste de 3 indicateurs à suivre mensuellement et rien d'autre"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La fiscalité de l'investisseur : déclarer, optimiser, ne pas se tromper",
+     "objectif": "Donner une vue claire des obligations déclaratives et des leviers d'optimisation fiscale pour un investisseur particulier en France (sans conseil personnalisé).",
+     "sections": [
+      "18.1 Le PEA après 5 ans : exonération d'IR, prélèvements sociaux uniquement",
+      "18.2 Le CTO : flat tax (PFU) de 30 % ou barème progressif, le choix à faire",
+      "18.3 L'assurance-vie : l'abattement de 4 600/9 200 € après 8 ans",
+      "18.4 Le PER : déduction à l'entrée, imposition à la sortie – le calcul à faire",
+      "18.5 La déclaration annuelle : cases 2DC, 2CG, 2OP, 3VG – mode d'emploi",
+      "18.6 Les moins-values : les reporter pour les imputer sur les plus-values futures",
+      "18.7 Les erreurs fréquentes et comment les éviter (IFU, courtiers étrangers)"
+     ],
+     "exercices": [
+      "Identifier les cases de sa déclaration correspondant à ses opérations",
+      "Calculer l'impôt théorique sur une plus-value de 3 000 € en CTO (PFU vs barème)",
+      "Vérifier que son courtier fournit bien un IFU et le conserver"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Gérer les turbulences : que faire quand le marché perd 20, 30 ou 50 %",
+     "objectif": "Préparer mentalement et stratégiquement le lecteur à sa première vraie crise boursière, avec un plan d'action pré-écrit.",
+     "sections": [
+      "19.1 La tempête arrivera : pourquoi c'est une certitude statistique",
+      "19.2 Les cinq phases émotionnelles d'un krach (déni, panique, capitulation, espoir, euphorie)",
+      "19.3 Le plan de crise pré-écrit : ne jamais décider sous le coup de l'émotion",
+      "19.4 Faut-il vendre ? La grille de décision en 4 questions",
+      "19.5 Renforcer pendant la baisse : le DCA inversé et les paliers d'achat",
+      "19.6 Le rôle de la poche obligataire et du cash : l'amortisseur en action",
+      "19.7 Après la tempête : le rebond, la patience et la récompense de la discipline"
+     ],
+     "exercices": [
+      "Rédiger son 'plan de crise' en une page (scénario -20 %, -35 %, -50 %)",
+      "Simuler mentalement une perte de 30 % sur son portefeuille et noter ses réactions",
+      "Identifier une activité 'déconnexion' (sport, lecture, nature) à pratiquer en cas de stress boursier"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – Durer, progresser et transmettre : l'investisseur sur le long terme",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Le rééquilibrage et la maintenance : 2 heures par an pour protéger son plan",
+     "objectif": "Institutionnaliser une routine de gestion minimale (rééquilibrage annuel, revue de la thèse) pour que le portefeuille reste aligné sans y penser.",
+     "sections": [
+      "20.1 Pourquoi rééquilibrer : vendre un peu ce qui a monté, racheter ce qui a baissé",
+      "20.2 Les méthodes : calendrier fixe vs bandes de tolérance (± 5 %)",
+      "20.3 Le rééquilibrage par les flux : utiliser le DCA pour ajuster sans vendre",
+      "20.4 La revue annuelle : vérifier les frais, la pertinence des ETF, la thèse des actions",
+      "20.5 Quand changer un ETF : fusion, hausse du TER, baisse de l'encours",
+      "20.6 La tentation du 'tweaking' : pourquoi trop gérer détruit la performance",
+      "20.7 Le rituel de janvier : la checklist de maintenance en 10 points"
+     ],
+     "exercices": [
+      "Programmer un rappel annuel 'rééquilibrage' dans son calendrier",
+      "Réaliser un rééquilibrage simulé sur papier avec les données de son portefeuille",
+      "Compléter la checklist de maintenance annuelle (modèle fourni)"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Augmenter sa capacité d'investissement : gagner plus, dépenser mieux",
+     "objectif": "Montrer que l'augmentation du taux d'épargne a plus d'impact que la performance boursière, et donner des leviers concrets pour accélérer.",
+     "sections": [
+      "21.1 La vérité mathématique : taux d'épargne > rendement du marché les 10 premières années",
+      "21.2 Les leviers de revenus : négociation, side projects, compétences rares",
+      "21.3 Les leviers de dépenses : audit des abonnements, inflation du mode de vie",
+      "21.4 L'automatisation : se payer en premier avant de payer les factures",
+      "21.5 Les paliers d'augmentation : +50 € par an, la stratégie douce",
+      "21.6 L'impact d'un passage de 10 % à 20 % d'épargne sur 25 ans : les chiffres",
+      "21.7 Éviter le piège du 'lifestyle creep' : vivre mieux sans vivre plus cher"
+     ],
+     "exercices": [
+      "Auditer ses dépenses des 3 derniers mois et identifier 50 € réallouables",
+      "Programmer une augmentation automatique de versement de +5 €/mois chaque année",
+      "Calculer l'impact sur son patrimoine à 60 ans d'une hausse de 5 % du taux d'épargne"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Au-delà du premier portefeuille : diversifier vers l'immobilier, le private equity et les alternatives",
+     "objectif": "Ouvrir des perspectives pour l'investisseur qui maîtrise les bases et souhaite élargir son allocation sans tomber dans la complexité inutile.",
+     "sections": [
+      "22.1 L'immobilier physique vs SCPI vs SIIC : trois façons d'accéder à la pierre",
+      "22.2 Le crowdfunding immobilier : rendements élevés, risques réels",
+      "22.3 Le private equity pour particuliers : ELTI, fonds de fonds, plateformes",
+      "22.4 Les crypto-actifs : comprendre sans se brûler (maximum 5 % du patrimoine)",
+      "22.5 L'or et les matières premières : la poche assurance de 5 à 10 %",
+      "22.6 L'internationalisation : comptes multi-devises, actions émergentes",
+      "22.7 Le critère universel : n'ajouter que ce qu'on comprend et qu'on peut expliquer"
+     ],
+     "exercices": [
+      "Évaluer la place actuelle de l'immobilier dans son patrimoine (résidence, SCPI)",
+      "Rechercher une SCPI accessible et noter son TDVM, ses frais et sa note de risque",
+      "Définir un 'plafond d'alternatives' en % de son patrimoine et s'y tenir"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Préparer la transmission et la retraite : penser à 20 ans, agir maintenant",
+     "objectif": "Intégrer la dimension succession, retraite et fiscalité de long terme dans la stratégie d'investissement sans entrer dans le conseil juridique personnalisé.",
+     "sections": [
+      "23.1 La retraite par capitalisation : compléter les régimes obligatoires",
+      "23.2 Le PER et l'assurance-vie : les deux piliers de la préparation retraite",
+      "23.3 La clause bénéficiaire de l'assurance-vie : l'outil de transmission sous-estimé",
+      "23.4 La donation de titres et le démembrement : les grandes pistes (information générale)",
+      "23.5 Le PEA et la succession : ce qui se passe au décès du titulaire",
+      "23.6 Le testament et la rédaction de ses volontés financières (information générale)",
+      "23.7 Quand consulter un notaire ou un CGP : les signaux qui ne trompent pas"
+     ],
+     "exercices": [
+      "Vérifier la clause bénéficiaire de son éventuelle assurance-vie",
+      "Estimer grossièrement sa future pension et le gap à combler par capitalisation",
+      "Lister les documents financiers importants et leur localisation pour ses proches"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Votre manifeste d'investisseur : les 20 principes à relire chaque année",
+     "objectif": "Synthétiser tout le livre en un manifeste personnel de 20 principes intangibles, et donner au lecteur un rituel annuel de relecture et de réengagement.",
+     "sections": [
+      "24.1 Les 20 principes : du fonds d'urgence au temps composé, tour d'horizon",
+      "24.2 Le rituel annuel : relire, rééquilibrer, réévaluer ses objectifs de vie",
+      "24.3 La lettre à son soi futur : pourquoi vous avez commencé et ce que vous vous devez",
+      "24.4 Transmettre la culture financière : en parler à ses enfants, ses amis, sa communauté",
+      "24.5 Continuer à apprendre : les 10 ressources (livres, podcasts, sites) pour la route",
+      "24.6 L'humilité de l'investisseur : accepter l'incertitude comme compagne",
+      "24.7 Le mot de la fin : votre argent travaille pour votre vie, pas l'inverse"
+     ],
+     "exercices": [
+      "Recopier les 20 principes sur une carte et la placer dans son portefeuille physique",
+      "Écrire sa 'lettre à mon moi de 70 ans' (une page)",
+      "Planifier la date de sa première revue annuelle et inviter un proche à faire de même"
+     ]
+    }
+   ]
+  }
+ ]
+}

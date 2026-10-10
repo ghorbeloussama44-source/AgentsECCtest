@@ -1,0 +1,601 @@
+{
+ "titre": "L'Argent qui Ne Dort Jamais",
+ "sous_titre": "Le guide complet pour bâtir des revenus passifs solides, protéger son patrimoine et vivre libre après la vie active",
+ "bibliographie": [
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "The Intelligent Investor",
+   "annee": "1949",
+   "idee": "L'investissement dans la valeur : acheter des actifs sous-évalués avec une marge de sécurité, ignorer le bruit du marché et penser en propriétaire d'entreprise.",
+   "apport": "Notre livre reprendra la discipline de la marge de sécurité et la distinction fondamentale entre spéculation et investissement."
+  },
+  {
+   "auteur": "Burton Malkiel",
+   "titre": "A Random Walk Down Wall Street",
+   "annee": "1973",
+   "idee": "Les marchés sont efficients à long terme ; la gestion passive via des indices bat la majorité des gérants actifs sur la durée.",
+   "apport": "Fondement de notre pilier 'investir via les indices' et de la démonstration que la simplicité bat la complexité."
+  },
+  {
+   "auteur": "John C. Bogle",
+   "titre": "The Little Book of Common Sense Investing",
+   "annee": "2007",
+   "idee": "Les fonds indiciels à frais réduits sont l'outil optimal pour l'investisseur particulier ; les coûts composés détruisent la performance.",
+   "apport": "Justification chiffrée de l'approche indicielle et de la minimisation des frais, cœur de notre stratégie long terme."
+  },
+  {
+   "auteur": "Robert Kiyosaki",
+   "titre": "Rich Dad Poor Dad",
+   "annee": "1997",
+   "idee": "La distinction actif/passif est la clé : les riches acquièrent des actifs qui génèrent du cash-flow, les autres accumulent des passifs.",
+   "apport": "Cadre mental 'actif vs passif' utilisé pour structurer chaque décision d'investissement du lecteur."
+  },
+  {
+   "auteur": "Thomas J. Stanley & William D. Danko",
+   "titre": "The Millionaire Next Door",
+   "annee": "1996",
+   "idee": "La plupart des millionnaires vivent modestement, épargnent massivement et investissent régulièrement plutôt que de chercher des coups d'éclat.",
+   "apport": "Démystification de la richesse et validation de l'approche progressive et disciplinée que nous enseignons."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "Le succès financier dépend davantage du comportement que de l'intelligence ; la patience, la peur et l'avidité gouvernent les décisions.",
+   "apport": "Intégration d'un volet psychologique et comportemental dans chaque partie pour éviter les erreurs émotionnelles."
+  },
+  {
+   "auteur": "Vicki Robin & Joe Dominguez",
+   "titre": "Your Money or Your Life",
+   "annee": "1992",
+   "idee": "L'indépendance financière se calcule en heures de vie échangées contre de l'argent ; réduire les dépenses et investir la différence mène à la liberté.",
+   "apport": "Méthode de calcul du 'chiffre de liberté' et de la trajectoire vers l'indépendance financière."
+  },
+  {
+   "auteur": "JL Collins",
+   "titre": "The Simple Path to Wealth",
+   "annee": "2016",
+   "idee": "Un portefeuille simple (100 % fonds indiciel actions puis transition vers obligations) suffit pour bâtir une fortune sur 20-30 ans.",
+   "apport": "Modèle de portefeuille ultra-simple que nous adaptons et enrichissons avec d'autres classes d'actifs."
+  },
+  {
+   "auteur": "George S. Clason",
+   "titre": "The Richest Man in Babylon",
+   "annee": "1926",
+   "idee": "Des principes universels : se payer en premier, vivre en dessous de ses moyens, faire travailler chaque pièce d'or.",
+   "apport": "Principes fondateurs présentés en ouverture du livre sous forme de règles intemporelles."
+  },
+  {
+   "auteur": "Napoleon Hill",
+   "titre": "Think and Grow Rich",
+   "annee": "1937",
+   "idee": "La richesse commence par un désir défini, un plan précis et une persévérance inébranlable ; le mindset précède l'action.",
+   "apport": "Dimension mindset et fixation d'objectifs chiffrés intégrée à la partie 1."
+  },
+  {
+   "auteur": "Tony Robbins",
+   "titre": "Unshakeable: Your Financial Freedom Playbook",
+   "annee": "2017",
+   "idee": "Synthèse des stratégies des plus grands investisseurs ; importance de l'allocation d'actifs, des frais et de la gestion des émotions en période de crise.",
+   "apport": "Techniques de rééquilibrage et de gestion des krachs que nous intégrons dans la partie protection."
+  },
+  {
+   "auteur": "Ramit Sethi",
+   "titre": "I Will Teach You to Be Rich",
+   "annee": "2009",
+   "idee": "Automatiser ses finances personnelles : épargne, investissement, paiement des factures ; éliminer la volonté de l'équation.",
+   "apport": "Système d'automatisation que nous adaptons au contexte francophone (virements programmés, enveloppes)."
+  },
+  {
+   "auteur": "Scott Trench",
+   "titre": "Set for Life",
+   "annee": "2018",
+   "idee": "Trois phases (survie, accumulation, abondance) pour atteindre l'indépendance financière en optimisant logement, transport et revenus.",
+   "apport": "Structure en phases progressives qui inspire notre progression en 5 parties."
+  },
+  {
+   "auteur": "Taylor Larimore, Mel Lindauer, Michael LeBoeuf",
+   "titre": "The Bogleheads' Guide to Investing",
+   "annee": "2006",
+   "idee": "Approche communautaire de l'investissement passif : allocation simple, diversification mondiale, rééquilibrage annuel, ignorez le bruit.",
+   "apport": "Checklist de rééquilibrage et règles de diversification mondiale intégrées aux chapitres pratiques."
+  },
+  {
+   "auteur": "Peter Lynch",
+   "titre": "One Up On Wall Street",
+   "annee": "1989",
+   "idee": "L'investisseur particulier peut battre le marché en investissant dans ce qu'il comprend ; le bon sens est un avantage concurrentiel.",
+   "apport": "Contrepoint à l'approche purement indicielle : poche satellite 'conviction' dans notre modèle hybride."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Antifragile: Things That Gain from Disorder",
+   "annee": "2012",
+   "idee": "Construire des systèmes qui bénéficient de la volatilité plutôt que d'y résister ; la barre à haltère (90 % sûr / 10 % risqué).",
+   "apport": "Principe de la barre à haltère appliqué à l'allocation patrimoniale pour la robustesse long terme."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 – Les Fondations : Penser en Architecte de sa Liberté Financière",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi votre argent doit travailler pendant que vous dormez",
+     "objectif": "Installer la vision long terme, définir les revenus passifs et créer l'urgence d'agir dès aujourd'hui.",
+     "sections": [
+      "La grande illusion du salaire unique : pourquoi l'échange temps-argent a une date de péremption",
+      "Définition précise des revenus passifs : ce qu'ils sont, ce qu'ils ne sont pas",
+      "Le coût de l'inaction : simulations chiffrées sur 10, 20 et 30 ans",
+      "La règle des 72 et la magie (réelle) des intérêts composés",
+      "Les trois piliers : épargne, rendement, temps",
+      "Votre chiffre de liberté : combien vous faut-il réellement ?",
+      "Le contrat avec vous-même : engagement et horizon"
+     ],
+     "exercices": [
+      "Calculer son chiffre de liberté annuel (dépenses × 25, règle des 4 %)",
+      "Simuler sur tableur la croissance d'une épargne mensuelle de 200, 500 et 1 000 € sur 25 ans à 7 %",
+      "Écrire sa 'lettre de motivation financière' à son futur moi retraité"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La psychologie de l'investisseur : dompter la peur, l'avidité et l'ennui",
+     "objectif": "Identifier les biais cognitifs qui sabotent l'investissement long terme et mettre en place des garde-fous comportementaux.",
+     "sections": [
+      "Les 7 biais qui coûtent des milliards : aversion à la perte, ancrage, mimétisme, excès de confiance, biais de récence, effet de disposition, biais narratif",
+      "Pourquoi votre cerveau est câblé pour vendre au pire moment",
+      "La solitude de l'investisseur long terme face au bruit médiatique",
+      "Construire son 'plan de vol' avant le décollage pour ne pas paniquer en vol",
+      "Le journal de bord de l'investisseur : tracer ses décisions et ses émotions",
+      "La règle des 24 heures et le filtre des 3 questions",
+      "S'entourer sans se laisser influencer : choisir ses sources d'information"
+     ],
+     "exercices": [
+      "Tenir un journal d'émotions pendant 30 jours à chaque tentation d'achat/vente",
+      "Rédiger son 'contrat comportemental' : 5 règles non négociables en cas de krach",
+      "Identifier ses 3 biais dominants via une auto-évaluation guidée"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'état des lieux : cartographier sa situation financière sans se mentir",
+     "objectif": "Réaliser un diagnostic complet de son patrimoine, de ses flux et de ses dettes pour savoir d'où l'on part.",
+     "sections": [
+      "Le bilan patrimonial personnel : actifs, passifs, valeur nette",
+      "Le compte de résultat personnel : revenus, dépenses fixes, dépenses variables",
+      "La radiographie des dettes : taux, durée, coût total réel",
+      "Identifier les fuites invisibles : abonnements, frais bancaires, impôts optimisables",
+      "La capacité d'investissement réelle : ce qui reste après le nécessaire",
+      "Les 4 profils d'investisseur et leurs implications stratégiques",
+      "Fixer un point A honnête avant de tracer la route vers le point B"
+     ],
+     "exercices": [
+      "Remplir la grille de bilan patrimonial fournie (actifs/passifs)",
+      "Catégoriser 3 mois de relevés bancaires en 6 postes de dépenses",
+      "Calculer son taux d'épargne actuel et son ratio d'endettement"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les principes intemporels : ce que 3 000 ans d'histoire financière nous enseignent",
+     "objectif": "Extraire les lois universelles de la création de richesse à travers les époques et les civilisations.",
+     "sections": [
+      "Babylone, Rome, Florence : les premières leçons de l'accumulation",
+      "Se payer en premier : la règle des 10 % minimum",
+      "Vivre en dessous de ses moyens sans se priver : la nuance cruciale",
+      "Faire travailler chaque unité monétaire : le concept de soldat financier",
+      "La patience comme avantage compétitif suprême",
+      "Diversifier depuis l'Antiquité : ne pas mettre tous ses œufs dans le même panier",
+      "Les erreurs qui se répètent : tulipes, bulles, krachs et leçons"
+     ],
+     "exercices": [
+      "Mettre en place un virement automatique 'se payer en premier' dès la réception du salaire",
+      "Lister 5 dépenses à réduire de 50 % sans perte de qualité de vie",
+      "Écrire ses 5 principes financiers non négociables sur une carte à garder dans son portefeuille"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Définir sa stratégie de vie : le projet avant le portefeuille",
+     "objectif": "Aligner la stratégie d'investissement sur un projet de vie concret, chiffré et daté.",
+     "sections": [
+      "La retraite n'est pas un âge, c'est un taux d'épargne : le modèle FIRE adapté",
+      "Les 4 scénarios de vie post-active : semi-retraite, retraite totale, entrepreneuriat léger, transmission",
+      "Chiffrer chaque scénario : revenus nécessaires, capital cible, horizon",
+      "La notion de 'coast FIRE' et de 'barista FIRE' : les étapes intermédiaires",
+      "Construire sa frise chronologique financière sur 5, 10, 20, 30 ans",
+      "Les sacrifices acceptables et les lignes rouges personnelles",
+      "Rédiger sa déclaration d'intention financière"
+     ],
+     "exercices": [
+      "Calculer le capital nécessaire pour chacun des 4 scénarios de vie",
+      "Tracer sa frise chronologique avec jalons et montants cibles",
+      "Identifier 3 sacrifices acceptables et 3 lignes rouges non négociables"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 – La Stratégie : Concevoir son Architecture Patrimoniale",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "L'allocation d'actifs : la décision qui compte à 90 %",
+     "objectif": "Comprendre que la répartition entre classes d'actifs détermine l'essentiel de la performance et construire son allocation personnelle.",
+     "sections": [
+      "L'étude Brinson : pourquoi l'allocation prime sur le stock-picking",
+      "Les grandes classes d'actifs : actions, obligations, immobilier, matières premières, liquidités",
+      "Le triangle rendement-risque-liquidité : arbitrer sans se tromper",
+      "Les allocations classiques : 60/40, 80/20, tout-actions, et leurs limites",
+      "Adapter l'allocation à son âge, sa tolérance au risque et son horizon",
+      "La barre à haltère de Taleb : 85 % sécurité / 15 % asymétrie",
+      "Rééquilibrer sans émotion : la méthode calendaire"
+     ],
+     "exercices": [
+      "Déterminer son allocation cible via le questionnaire de profil fourni",
+      "Simuler 3 allocations différentes sur les 30 dernières années",
+      "Programmer un rappel annuel de rééquilibrage dans son agenda"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "L'investissement indiciel : la voie royale du particulier",
+     "objectif": "Maîtriser la stratégie des fonds indiciels et ETF comme socle du portefeuille long terme.",
+     "sections": [
+      "Pourquoi 92 % des gérants actifs perdent contre leur indice sur 15 ans",
+      "ETF vs fonds indiciels vs fonds actifs : comprendre les différences",
+      "Les indices majeurs : MSCI World, S&P 500, Euro Stoxx 600, MSCI Emerging Markets",
+      "Les frais : comment 1 % par an vous coûte 25 % sur 30 ans",
+      "La fiscalité des enveloppes : PEA, assurance-vie, CTO, PER (cadre général)",
+      "Construire un portefeuille 100 % ETF en 4 lignes maximum",
+      "Les erreurs classiques : surdiversification, chasing de performance, rotation excessive"
+     ],
+     "exercices": [
+      "Comparer les frais de 5 fonds de sa banque avec un ETF équivalent",
+      "Construire sur papier un portefeuille 4 ETF avec pondération",
+      "Ouvrir un PEA ou vérifier les conditions de son enveloppe existante"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'immobilier locatif : bâtir une rente de pierre",
+     "objectif": "Intégrer l'immobilier comme générateur de cash-flow et levier patrimonial dans une stratégie long terme.",
+     "sections": [
+      "Les fondamentaux : cash-flow, rendement brut, rendement net, TRI",
+      "Le levier du crédit : emprunter pour s'enrichir, les règles de prudence",
+      "Les stratégies : location nue, meublée, colocation, courte durée, parking, SCPI",
+      "L'immobilier papier (SCPI, OPCI, REIT) : diversifier sans gérer",
+      "La fiscalité immobilière : comprendre les grandes options sans conseil personnalisé",
+      "Le triangle emplacement-prix-travaux : les 3 filtres de sélection",
+      "Gérer ou déléguer : le vrai coût de chaque option"
+     ],
+     "exercices": [
+      "Calculer le cash-flow d'un bien type avec la grille fournie",
+      "Comparer le rendement d'un achat direct vs une SCPI sur 15 ans",
+      "Visiter 2 annonces réelles et appliquer les 3 filtres de sélection"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Les revenus complémentaires : dividendes, obligations, royalties et digital",
+     "objectif": "Diversifier les sources de revenus passifs au-delà des actions indicielles et de l'immobilier.",
+     "sections": [
+      "Les actions à dividendes : aristocrates, stratégies DCA et réinvestissement",
+      "Les obligations et fonds obligataires : le rôle d'amortisseur",
+      "Les revenus digitaux : propriété intellectuelle, formations en ligne, affiliation",
+      "Les royalties et droits d'auteur : publier, breveter, licencier",
+      "Le crowdfunding immobilier et le private equity : la poche alternative",
+      "Les matières premières et l'or : assurance ou rendement ?",
+      "Assembler un 'portefeuille de revenus' qui verse chaque mois"
+     ],
+     "exercices": [
+      "Identifier 5 actions à dividendes croissants depuis 20 ans",
+      "Lister 3 compétences monétisables en revenu digital passif",
+      "Construire un tableau de projection de revenus passifs cumulés sur 10 ans"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Le plan d'action chiffré : de l'épargne mensuelle au capital cible",
+     "objectif": "Transformer la stratégie en un plan opérationnel avec montants, échéances et automatisations.",
+     "sections": [
+      "La formule magique : combien investir par mois pour atteindre son objectif",
+      "Le DCA (Dollar Cost Averaging) : investir régulièrement quoi qu'il arrive",
+      "Les paliers : 10 000, 50 000, 100 000, 500 000 € – ce qui change à chaque étape",
+      "Automatiser : virements, achats programmés, réinvestissement des dividendes",
+      "Le tableau de bord annuel : 5 indicateurs à suivre et rien de plus",
+      "Anticiper les accidents de parcours : chômage, maladie, divorce",
+      "Ajuster le plan sans le trahir : la révision annuelle"
+     ],
+     "exercices": [
+      "Calculer son épargne mensuelle nécessaire via la table d'amortissement inversée",
+      "Mettre en place 3 virements automatiques (épargne de précaution, investissement, plaisir)",
+      "Créer son tableau de bord annuel avec les 5 indicateurs"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 – Les Véhicules : Déployer son Capital avec Méthode",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "La Bourse sans stress : acheter, tenir, ne pas vendre",
+     "objectif": "Donner un mode d'emploi concret pour investir en actions et ETF sur le très long terme sans subir la volatilité.",
+     "sections": [
+      "Ouvrir un compte : PEA, CTO, assurance-vie – choisir sans se perdre",
+      "Passer son premier ordre : marché, limite, et pourquoi la limite protège",
+      "Le plan d'achat programmé : investir le 5 de chaque mois, quoi qu'il arrive",
+      "Que faire quand le marché chute de 30, 40, 50 % ? Le protocole",
+      "Les krachs historiques : 2000, 2008, 2020 – que s'est-il passé ensuite ?",
+      "La poche satellite : 10 à 20 % pour ses convictions (stock-picking raisonnable)",
+      "Quand vendre réellement : les 4 seules raisons valables"
+     ],
+     "exercices": [
+      "Passer un premier achat d'ETF monde de 100 € (ou simuler)",
+      "Programmer un achat mensuel automatique",
+      "Écrire son protocole de krach : que faire si -30 % demain"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "L'immobilier étape par étape : de la recherche à la gestion",
+     "objectif": "Guider le lecteur dans l'acquisition d'un premier bien locatif ou d'un portefeuille SCPI avec méthode.",
+     "sections": [
+      "Se préparer : capacité d'emprunt, apport, dossier bancaire",
+      "La recherche : critères de sélection, zones tendues, données démographiques",
+      "L'analyse financière : grille de calcul, cash-flow positif dès l'achat",
+      "Le financement : taux, durée, assurance emprunteur, négociation",
+      "L'achat : compromis, notaire, conditions suspensives",
+      "La mise en location : bail, sélection du locataire, assurance loyers impayés",
+      "La gestion déléguée vs en direct : tableaux comparatifs"
+     ],
+     "exercices": [
+      "Faire une simulation de crédit sur 3 durées (15, 20, 25 ans)",
+      "Analyser une annonce réelle avec la grille de rentabilité fournie",
+      "Contacter 2 agences et poser les 10 questions clés"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "L'assurance-vie et les enveloppes fiscales : optimiser sans complexité",
+     "objectif": "Présenter les enveloppes disponibles en France et leur usage optimal dans une stratégie long terme (information générale, non un conseil personnalisé).",
+     "sections": [
+      "L'assurance-vie : le couteau suisse patrimonial français",
+      "Le PEA : 8 ans pour une fiscalité douce sur les actions européennes",
+      "Le PER : préparer la retraite en déduisant aujourd'hui",
+      "Le CTO : la liberté totale au prix d'une fiscalité plus lourde",
+      "Les livrets et fonds euros : la poche de sécurité",
+      "La combinaison optimale : quelle enveloppe pour quel objectif ?",
+      "Les pièges : frais de versement, frais de gestion, fonds en euros à 0,8 %"
+     ],
+     "exercices": [
+      "Vérifier les frais de son assurance-vie actuelle et comparer",
+      "Ouvrir un PEA si ce n'est pas déjà fait",
+      "Répartir son épargne cible entre 3 enveloppes maximum"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Diversifier sans se disperser : la construction du portefeuille global",
+     "objectif": "Assembler toutes les classes d'actifs en un portefeuille cohérent, diversifié et adapté à son profil.",
+     "sections": [
+      "La diversification géographique : Europe, Amérique du Nord, Asie, émergents",
+      "La diversification par classe : actions, obligations, immobilier, alternatives",
+      "La diversification temporelle : lisser les points d'entrée",
+      "Le portefeuille 'tout-terrain' : un modèle en 6 lignes",
+      "Le portefeuille 'revenu' : privilégier le cash-flow régulier",
+      "Le portefeuille 'croissance' : viser l'appréciation du capital",
+      "Revoir et simplifier : moins c'est souvent mieux"
+     ],
+     "exercices": [
+      "Dessiner son allocation cible en camembert avec 6 segments maximum",
+      "Vérifier la corrélation entre ses actifs actuels",
+      "Simplifier : réduire à 8 lignes maximum son portefeuille existant"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Les cycles économiques : investir en toutes saisons",
+     "objectif": "Comprendre les cycles pour adapter tactiquement sa stratégie sans jamais abandonner le cap long terme.",
+     "sections": [
+      "Les 4 saisons de l'économie : expansion, sommet, récession, reprise",
+      "Le cycle de 7 à 10 ans : repères historiques et indicateurs avancés",
+      "Pourquoi essayer de timer le marché est une stratégie perdante",
+      "L'approche 'toutes saisons' : un portefeuille qui résiste à chaque phase",
+      "Les obligations en période de hausse de taux : adapter la poche obligataire",
+      "L'or et les actifs réels : protection ou spéculation ?",
+      "Rester investi : le coût des jours manquants (les 10 meilleurs jours sur 20 ans)"
+     ],
+     "exercices": [
+      "Identifier la phase actuelle du cycle avec 5 indicateurs simples",
+      "Vérifier que son allocation résiste à un scénario de récession",
+      "Calculer ce qu'aurait coûté de rater les 10 meilleurs jours du CAC 40 sur 20 ans"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 – La Croissance : Optimiser, Protéger et Accélérer",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "L'effet de levier maîtrisé : emprunter pour enrichir",
+     "objectif": "Utiliser le crédit comme accélérateur patrimonial tout en respectant des limites de risque strictes.",
+     "sections": [
+      "Le bon levier vs le mauvais levier : immobilier locatif vs spéculation à crédit",
+      "Les règles d'or : taux d'endettement, cash-flow positif, réserve de 6 mois",
+      "Le crédit in fine vs amortissable : quand choisir l'un ou l'autre",
+      "La renégociation et le rachat de crédit : récupérer des milliers d'euros",
+      "L'effet boule de neige : réinvestir les cash-flows dans le bien suivant",
+      "Les limites : quand ne PAS emprunter",
+      "Le levier intellectuel : utiliser le temps des autres (gestion, comptabilité)"
+     ],
+     "exercices": [
+      "Calculer son taux d'endettement actuel et sa marge disponible",
+      "Simuler l'effet levier sur un bien à 5 % de rendement avec crédit à 3,5 %",
+      "Lister 3 situations où emprunter serait une erreur"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Protéger son patrimoine : risques, assurances et transmission",
+     "objectif": "Sécuriser les acquis contre les aléas de la vie et préparer la transmission (information générale).",
+     "sections": [
+      "Les 5 risques majeurs : décès, invalidité, divorce, krach, inflation",
+      "L'assurance-vie comme outil de transmission : clauses bénéficiaires, abattements",
+      "La protection du conjoint : régime matrimonial, donation, démembrement",
+      "L'assurance des actifs : PNO, GLI, responsabilité civile",
+      "La réserve de précaution : 6 à 12 mois de dépenses en liquidités",
+      "Le testament et les donations : les grandes options (cadre informatif)",
+      "La protection contre l'inflation : actifs réels, indexation, TIPS"
+     ],
+     "exercices": [
+      "Vérifier ses clauses bénéficiaires d'assurance-vie",
+      "Constituer ou compléter sa réserve de précaution (objectif 6 mois)",
+      "Lister ses 3 risques majeurs et la protection existante pour chacun"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "L'optimisation fiscale : payer sa juste part, pas plus",
+     "objectif": "Présenter les leviers fiscaux généraux disponibles pour l'investisseur long terme (information, non conseil personnalisé).",
+     "sections": [
+      "La fiscalité des revenus de capitaux : PFU, barème, et quand choisir",
+      "Les niches utiles : PER, investissement locatif, FCPI, dons",
+      "La fiscalité de l'immobilier : micro-foncier, réel, LMNP, LMP",
+      "L'optimisation par l'enveloppe : PEA après 5 ans, assurance-vie après 8 ans",
+      "La donation et le démembrement : transmettre en réduisant la base taxable",
+      "Les erreurs fiscales coûteuses : ce qu'il ne faut PAS faire",
+      "Tenir ses comptes : le tableau de suivi fiscal annuel"
+     ],
+     "exercices": [
+      "Calculer la différence PFU vs barème pour ses revenus de capitaux",
+      "Vérifier si un passage au réel serait avantageux pour son locatif",
+      "Créer un tableau de suivi des échéances fiscales (5 ans PEA, 8 ans AV)"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Accélérer : augmenter ses revenus pour investir davantage",
+     "objectif": "Montrer que la meilleure stratégie d'investissement commence par l'augmentation de sa capacité d'épargne.",
+     "sections": [
+      "Les 3 leviers : réduire les dépenses, augmenter les revenus, améliorer le rendement",
+      "Négocier son salaire : les techniques et le bon timing",
+      "Créer un revenu complémentaire : freelance, consulting, micro-entreprise",
+      "Monétiser une compétence : formation, coaching, contenu",
+      "L'entrepreneuriat léger : créer un actif qui génère sans votre présence",
+      "Réinvestir 100 % des revenus exceptionuels : primes, héritages, ventes",
+      "Le cercle vertueux : plus de revenus → plus d'investissement → plus de revenus passifs"
+     ],
+     "exercices": [
+      "Identifier 1 compétence monétisable et esquisser une offre",
+      "Calculer l'impact d'une augmentation de 200 €/mois investie sur 20 ans",
+      "Fixer un objectif de revenu complémentaire à 12 mois"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Le rééquilibrage et la révision annuelle : le rituel de l'investisseur",
+     "objectif": "Instituer une routine annuelle de maintenance du portefeuille pour rester sur la trajectoire sans sur-réagir.",
+     "sections": [
+      "Pourquoi rééquilibrer : la dérive naturelle du portefeuille",
+      "La méthode calendaire : 1 fois par an, à date fixe",
+      "La méthode par seuils : rééquilibrer quand une classe dévie de 5 %",
+      "Le rééquilibrage par les flux : orienter l'épargne vers la classe sous-pondérée",
+      "La révision annuelle en 7 étapes : le protocole complet",
+      "Ce qu'il ne faut PAS changer : éviter le tinkering",
+      "Documenter : le journal de révision et les décisions prises"
+     ],
+     "exercices": [
+      "Programmer sa date annuelle de rééquilibrage",
+      "Réaliser un rééquilibrage sur papier avec son allocation actuelle",
+      "Remplir le template de journal de révision annuelle"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 5 – La Récolte : Vivre de ses Revenus Passifs",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "La transition : du salaire aux revenus passifs sans rupture",
+     "objectif": "Préparer la bascule progressive entre revenus d'activité et revenus du patrimoine pour éviter le choc psychologique et financier.",
+     "sections": [
+      "Le modèle de la transition en 3 phases : accumulation, transition, récolte",
+      "La règle de sécurité : ne basculer que lorsque les revenus passifs couvrent 150 % des dépenses",
+      "La retraite progressive : réduire le temps de travail avant de l'arrêter",
+      "Le 'coast mode' : ne plus épargner, laisser les intérêts composés faire le reste",
+      "Gérer la perte d'identité professionnelle : qui suis-je sans mon métier ?",
+      "Le filet de sécurité : garder 2 ans de dépenses en liquidités au moment de la bascule",
+      "Prévenir le conjoint et la famille : le projet partagé"
+     ],
+     "exercices": [
+      "Calculer le ratio revenus passifs / dépenses actuelles",
+      "Construire un plan de transition sur 3 ans avec jalons",
+      "Rédiger une 'lettre de démission' symbolique à son futur employeur"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "La stratégie de retrait : vivre de son capital sans l'épuiser",
+     "objectif": "Définir une méthode de distribution des revenus qui préserve le capital sur 40 ans et plus.",
+     "sections": [
+      "La règle des 4 % : origine, validité et limites",
+      "Le retrait séquentiel : obligations d'abord, actions ensuite",
+      "Le seau de liquidités : 3 seaux pour 3 horizons (1 an, 5 ans, 15 ans)",
+      "Gérer les séquences de rendements défavorables : les 5 premières années",
+      "L'inflation : le tueur silencieux du retraité et comment s'en protéger",
+      "Adapter le taux de retrait : la méthode dynamique (Guyton-Klinger)",
+      "Le cas particulier : que faire si le marché chute de 40 % en début de retraite"
+     ],
+     "exercices": [
+      "Simuler un retrait de 4 % sur un capital de 500 000 € sur 35 ans",
+      "Construire ses 3 seaux de liquidités avec des montants concrets",
+      "Tester un scénario de krach en année 1 et ajuster sa stratégie"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "La fiscalité de la phase de distribution et la transmission",
+     "objectif": "Optimiser la fiscalité des retraits et préparer la transmission du patrimoine aux générations suivantes (information générale).",
+     "sections": [
+      "La fiscalité des retraits : assurance-vie, PEA, CTO, immobilier",
+      "L'arbitrage entre enveloppes : d'où retirer en premier ?",
+      "La fiscalité des revenus fonciers en phase de rente",
+      "La donation progressive : transmettre de son vivant",
+      "Le démembrement : donner la nue-propriété, garder l'usufruit",
+      "L'assurance-vie après 70 ans : les règles spécifiques",
+      "Préparer la succession : anticipation, dialogue familial, cadre général"
+     ],
+     "exercices": [
+      "Simuler la fiscalité d'un rachat partiel d'assurance-vie après 8 ans",
+      "Comparer la fiscalité d'un retrait PEA vs CTO pour 10 000 €",
+      "Lister les bénéficiaires souhaités et vérifier la cohérence des clauses"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Au-delà de l'argent : le sens, la contribution et la liberté retrouvée",
+     "objectif": "Dépasser la dimension purement financière pour aborder la qualité de vie, le sens et l'héritage immatériel.",
+     "sections": [
+      "L'argent comme moyen, jamais comme fin : la question du 'pourquoi'",
+      "Les 4 piliers de la vie post-active : santé, relations, contribution, croissance",
+      "Le bénévolat, le mentorat et la transmission de savoir",
+      "Voyager, créer, apprendre : utiliser le temps retrouvé",
+      "L'héritage immatériel : valeurs, histoires, leçons de vie",
+      "La gratitude financière : remercier le chemin parcouru",
+      "Votre lettre à la génération suivante : ce que vous voulez transmettre au-delà de l'argent"
+     ],
+     "exercices": [
+      "Rédiger sa 'bucket list' de 20 projets pour les 20 prochaines années",
+      "Écrire une lettre de transmission de valeurs à ses enfants ou proches",
+      "Planifier une première action de contribution (bénévolat, mentorat) dans les 90 jours"
+     ]
+    }
+   ]
+  }
+ ]
+}
