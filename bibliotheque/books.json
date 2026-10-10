@@ -29,7 +29,7 @@
   "c1": "#7a2e1f",
   "c2": "#f3e6d4",
   "pages": 314,
-  "mots": 94607,
+  "mots": 94455,
   "chapitres": 24,
   "parties": [
    "Partie 1 : La Genèse - De l'Intuition à la Preuve",
@@ -89,7 +89,7 @@
   "c1": "#3d3a2f",
   "c2": "#f0c75e",
   "pages": 286,
-  "mots": 89535,
+  "mots": 89529,
   "chapitres": 24,
   "parties": [
    "PARTIE I – LES FONDATIONS : Comprendre la mécanique intime de la discipline",
@@ -100,5 +100,86 @@
   ],
   "fichier": "pdf/discipline.pdf",
   "nom_fichier": "La-Forge-des-Jours-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "emotions",
+  "titre": "L'Ingénierie Émotionnelle",
+  "sous_titre": "Décoder ses états, maîtriser l'impact des autres et transformer l'affect en avantage décisif.",
+  "theme": "Intelligence émotionnelle",
+  "c1": "#6b2737",
+  "c2": "#f4d8d0",
+  "pages": 304,
+  "mots": 96131,
+  "chapitres": 24,
+  "parties": [
+   "Partie 1 : L'Anatomie de l'Affect (Comprendre la mécanique émotionnelle)",
+   "Partie 2 : La Forge des États (Maîtrise et reprogrammation en temps réel)",
+   "Partie 3 : Le Radar Social (Décoder les autres et naviguer les egos)",
+   "Partie 4 : Le Capital Émotionnel (L'appliquer à l'argent, au travail et aux relations)"
+  ],
+  "fichier": "pdf/emotions.pdf",
+  "nom_fichier": "L-Ingenierie-Emotionnelle-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "marketing",
+  "titre": "Le Rayonnement Numérique",
+  "sous_titre": "Se faire connaître, bâtir son audience et vendre sur internet dans l'espace francophone — de la première publication au premier million de vues",
+  "theme": "Marketing digital",
+  "c1": "#14505c",
+  "c2": "#d6eef0",
+  "pages": 304,
+  "mots": 90057,
+  "chapitres": 24,
+  "parties": [
+   "PARTIE I — LES FONDATIONS : IDENTITÉ, POSITIONNEMENT ET ÉTAT D'ESPRIT NUMÉRIQUE",
+   "PARTIE II — L'ART DU CONTENU : CRÉER, ÉCRIRE, CAPTIVER",
+   "PARTIE III — BÂTIR SON AUDIENCE : RÉSEAUX, COMMUNAUTÉ ET CONFIANCE",
+   "PARTIE IV — CONVERTIR ET VENDRE : DU CONTENU AU CHIFFRE D'AFFAIRES",
+   "PARTIE V — LE MOTEUR DE CROISSANCE : ANALYSE, AUTOMATISATION ET PASSAGE À L'ÉCHELLE",
+   "PARTIE VI — PÉRENNISER SON EMPIRE NUMÉRIQUE : DURABILITÉ, ÉTHIQUE ET HÉRITAGE"
+  ],
+  "fichier": "pdf/marketing.pdf",
+  "nom_fichier": "Le-Rayonnement-Numerique-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "negociation",
+  "titre": "L'Alchimie de l'Accord",
+  "sous_titre": "Préparer, conduire et conclure toute négociation — influencer sans manipuler, convaincre sans contraindre",
+  "theme": "Négociation",
+  "c1": "#5b4a1e",
+  "c2": "#efe3bf",
+  "pages": 316,
+  "mots": 95542,
+  "chapitres": 24,
+  "parties": [
+   "PARTIE I — LES FONDATIONS : Comprendre la négociation et l'influence éthique",
+   "PARTIE II — LA PRÉPARATION : L'art invisible avant la table",
+   "PARTIE III — LA CONDUITE : L'art de l'échange en temps réel",
+   "PARTIE IV — LA CONCLUSION : Verrouiller l'accord et préserver la relation",
+   "PARTIE V — LES TERRAINS : Appliquer l'art de l'accord aux situations réelles",
+   "PARTIE VI — LA MAÎTRISE : Devenir un négociateur complet et intègre"
+  ],
+  "fichier": "pdf/negociation.pdf",
+  "nom_fichier": "L-Alchimie-de-l-Accord-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "parole",
+  "titre": "L'Acoustique de l'Influence",
+  "sous_titre": "Vaincre le trac, architecturer le discours et magnétiser l'auditoire",
+  "theme": "Prise de parole",
+  "c1": "#2d2a4a",
+  "c2": "#e3def6",
+  "pages": 300,
+  "mots": 94368,
+  "chapitres": 24,
+  "parties": [
+   "Partie 1 : L'Ingénierie du Trac et de l'Esprit",
+   "Partie 2 : L'Architecture du Message et de la Narration",
+   "Partie 3 : La Scénographie du Corps et de la Voix",
+   "Partie 4 : La Mécanique de l'Interaction et de l'Adaptation",
+   "Partie 5 : Les Arènes Spécifiques"
+  ],
+  "fichier": "pdf/parole.pdf",
+  "nom_fichier": "L-Acoustique-de-l-Influence-Oussama-Ghorbel.pdf"
  }
 ]
