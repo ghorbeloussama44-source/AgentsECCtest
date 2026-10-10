@@ -1,0 +1,585 @@
+{
+ "titre": "La Forge des Jours",
+ "sous_titre": "Maîtriser ses habitudes, son temps et son attention pour passer de l'intention à l'action, jour après jour",
+ "bibliographie": [
+  {
+   "auteur": "James Clear",
+   "titre": "Atomic Habits",
+   "annee": "2018",
+   "idee": "Les habitudes se construisent par de minuscules améliorations quotidiennes (1%) structurées en quatre lois : signal, envie, réponse, récompense.",
+   "apport": "Le cadre des quatre lois sera adapté en un système original de « maillons » pour ancrer les routines ; l'idée d'identité plutôt que d'objectif sera reprise et approfondie."
+  },
+  {
+   "auteur": "Charles Duhigg",
+   "titre": "The Power of Habit",
+   "annee": "2012",
+   "idee": "Toute habitude suit une boucle signal-routine-récompense ; modifier un seul maillon permet de reprogrammer le comportement.",
+   "apport": "La boucle sera enrichie d'une dimension émotionnelle et contextuelle propre à notre méthode ; le concept de « keystone habit » inspirera nos chapitres sur les habitudes-piliers."
+  },
+  {
+   "auteur": "Cal Newport",
+   "titre": "Deep Work",
+   "annee": "2016",
+   "idee": "La capacité à se concentrer sans distraction sur une tâche cognitivement exigeante est devenue rare et donc précieuse.",
+   "apport": "Notre livre intégrera un protocole de « travail en forge » : sessions profondes ritualisées, adaptées aux non-spécialistes du savoir."
+  },
+  {
+   "auteur": "Cal Newport",
+   "titre": "Digital Minimalism",
+   "annee": "2019",
+   "idee": "Une philosophie d'usage technologique intentionnel : ne garder que les outils qui servent réellement ses valeurs.",
+   "apport": "Un chapitre entier sera consacré à la « diète numérique » comme condition préalable à la discipline."
+  },
+  {
+   "auteur": "David Allen",
+   "titre": "Getting Things Done",
+   "annee": "2001",
+   "idee": "Libérer l'esprit en externalisant chaque tâche dans un système de confiance, puis traiter par contexte et énergie.",
+   "apport": "Le principe de « capture » et de « revue hebdomadaire » sera intégré dans notre système de gouvernance du temps."
+  },
+  {
+   "auteur": "Stephen R. Covey",
+   "titre": "The 7 Habits of Highly Effective People",
+   "annee": "1989",
+   "idee": "L'efficacité repose sur des principes universels : proactivité, vision du but, priorisation, synergie, renouvellement.",
+   "apport": "La matrice d'Eisenhower sera réinterprétée en « cadran de la forge » ; la notion de renouvellement nourrira la partie sur la durée."
+  },
+  {
+   "auteur": "Greg McKeown",
+   "titre": "Essentialism",
+   "annee": "2014",
+   "idee": "Dire non à presque tout pour investir son énergie dans ce qui compte vraiment ; moins mais mieux.",
+   "apport": "Le filtre essentialiste deviendra notre « tamis de l'essentiel », appliqué aux engagements et aux habitudes."
+  },
+  {
+   "auteur": "Steven Pressfield",
+   "titre": "The War of Art",
+   "annee": "2002",
+   "idee": "La Résistance est une force universelle qui sabote toute création ; la discipline consiste à « se présenter » chaque jour.",
+   "apport": "Le concept de Résistance sera renommé « le Contrepoids » et traité comme un personnage récurrent du livre."
+  },
+  {
+   "auteur": "Carol S. Dweck",
+   "titre": "Mindset: The New Psychology of Success",
+   "annee": "2006",
+   "idee": "L'état d'esprit de croissance (growth mindset) permet de voir l'effort comme chemin et l'échec comme information.",
+   "apport": "Un chapitre sera dédié à la reprogrammation du dialogue intérieur pour soutenir la discipline sans culpabilité."
+  },
+  {
+   "auteur": "Angela Duckworth",
+   "titre": "Grit: The Power of Passion and Perseverance",
+   "annee": "2016",
+   "idee": "La persévérance passionnée (grit) prédit la réussite mieux que le talent ; elle se cultive par l'intérêt, la pratique, le but et l'espoir.",
+   "apport": "La formule du grit sera décomposée en quatre leviers pratiques intégrés à notre méthode de maintien à long terme."
+  },
+  {
+   "auteur": "Gary Keller & Jay Papasan",
+   "titre": "The One Thing",
+   "annee": "2013",
+   "idee": "Une seule question — « Quelle est LA chose qui, faite maintenant, rend tout le reste plus facile ou inutile ? » — concentre l'action.",
+   "apport": "Le principe de focalisation unique sera utilisé dans le rituel matinal de « l'Unique du Jour »."
+  },
+  {
+   "auteur": "Jake Knapp & John Zeratsky",
+   "titre": "Make Time",
+   "annee": "2018",
+   "idee": "Chaque journée mérite un « highlight » choisi intentionnellement, protégé des urgences et des distractions par défaut.",
+   "apport": "Le highlight quotidien deviendra un pilier de notre système de planification hebdomadaire."
+  },
+  {
+   "auteur": "Nir Eyal",
+   "titre": "Indistractable",
+   "annee": "2019",
+   "idee": "La distraction est un problème de gestion de la douleur interne ; quatre étapes : maîtriser les déclencheurs internes, rendre le temps visible, supprimer les déclencheurs externes, créer des pactes.",
+   "apport": "Le modèle à quatre étapes sera condensé en un « bouclier attentionnel » présenté dans la partie III."
+  },
+  {
+   "auteur": "BJ Fogg",
+   "titre": "Tiny Habits",
+   "annee": "2020",
+   "idee": "Les comportements durables naissent de micro-habitudes ancrées à un comportement existant, suivies d'une célébration immédiate.",
+   "apport": "La méthode Fogg sera fusionnée avec notre approche identitaire pour créer les « micro-forgeages »."
+  },
+  {
+   "auteur": "Darren Hardy",
+   "titre": "The Compound Effect",
+   "annee": "2010",
+   "idee": "De petits choix cohérents, répétés, produisent des résultats exponentiels ; l'ennemi est l'inertie, pas l'ambition.",
+   "apport": "La courbe composée illustrera visuellement la partie sur la durée et le chapitre sur la patience stratégique."
+  },
+  {
+   "auteur": "Brian Tracy",
+   "titre": "Eat That Frog!",
+   "annee": "2001",
+   "idee": "Affronter la tâche la plus difficile en premier chaque matin élimine la procrastination et génère un élan positif.",
+   "apport": "Le principe sera intégré au rituel du « Premier Marteau » dans le protocole matinal."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "The 4-Hour Workweek",
+   "annee": "2007",
+   "idee": "Éliminer, automatiser, déléguer : la productivité n'est pas faire plus mais faire moins, mieux, avec des leviers.",
+   "apport": "Le filtre 80/20 et l'élimination systématique nourriront le chapitre sur la simplification des routines."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – LES FONDATIONS : Comprendre la mécanique intime de la discipline",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le mythe de la volonté",
+     "objectif": "Déconstruire l'idée que la discipline repose sur la force de volonté brute et poser les bases neuroscientifiques du comportement.",
+     "sections": [
+      "La légende du héros volontaire : pourquoi la volonté ne suffit pas",
+      "Le muscle fatigué : égo-dépletion et limites cognitives",
+      "La discipline comme architecture, pas comme combat",
+      "Le Contrepoids : nommer la force qui vous retient",
+      "Cartographie personnelle : vos zones de friction",
+      "Le contrat de lecture : ce que ce livre vous demande"
+     ],
+     "exercices": [
+      "Journal de friction : noter pendant 7 jours chaque moment où la volonté a cédé et identifier le déclencheur",
+      "Test d'auto-évaluation : où situez-vous votre discipline sur 5 domaines clés (santé, travail, relations, finances, apprentissage) ?",
+      "Rédiger une lettre à soi-même décrivant la personne disciplinée que vous souhaitez devenir (ancrage identitaire)"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La boucle du geste : signal, élan, réponse, ancrage",
+     "objectif": "Présenter le modèle original en quatre temps de la formation d'une habitude, enrichi des apports de Duhigg, Clear et Fogg.",
+     "sections": [
+      "Anatomie d'une habitude : le circuit neuronal simplifié",
+      "Le signal : déclencheur externe, interne ou temporel",
+      "L'élan : la micro-décision qui précède l'action",
+      "La réponse : le comportement lui-même, décomposable",
+      "L'ancrage : la récompense qui cimente la boucle",
+      "Quand la boucle se brise : diagnostic des échecs"
+     ],
+     "exercices": [
+      "Dessiner la boucle de 3 habitudes existantes (une positive, une neutre, une négative)",
+      "Identifier le signal dominant de votre pire habitude et proposer 2 alternatives de réponse",
+      "Expérience de 48 h : remplacer une réponse automatique par une autre et noter la difficulté ressentie"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'identité avant l'objectif",
+     "objectif": "Montrer que la discipline durable naît d'un changement d'identité plutôt que d'une liste d'objectifs SMART.",
+     "sections": [
+      "Objectifs vs systèmes : pourquoi les résolutions échouent",
+      "La question « Qui est-ce que je choisis d'être ? »",
+      "Le vote quotidien : chaque action comme bulletin d'identité",
+      "L'effet Pygmalion inversé : se raconter autrement",
+      "Les trois identités de forge : l'Apprenti, l'Artisan, le Maître",
+      "Écrire sa charte d'identité disciplinée"
+     ],
+     "exercices": [
+      "Rédiger 5 affirmations identitaires au présent (ex. : « Je suis quelqu'un qui termine ce qu'il commence »)",
+      "Lister 10 preuves passées que vous avez déjà été discipliné dans un domaine",
+      "Choisir une identité-cible pour les 90 prochains jours et définir 3 comportements qui la prouvent"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Le Contrepoids : connaître son adversaire intérieur",
+     "objectif": "Explorer les mécanismes de la procrastination, de la peur et de la rationalisation comme forces opposées à la discipline.",
+     "sections": [
+      "Le Contrepoids n'est pas la paresse : origine évolutive",
+      "Les cinq voix du Contrepoids : peur, fatigue, perfectionnisme, distraction, doute",
+      "La rationalisation : l'art de se mentir élégamment",
+      "Le coût invisible de l'inaction répétée",
+      "Dialogue avec le Contrepoids : l'approche ACT adaptée",
+      "Transformer l'obstacle en signal"
+     ],
+     "exercices": [
+      "Tenir un « registre du Contrepoids » pendant 5 jours : noter chaque excuse et la classer parmi les cinq voix",
+      "Écrire une lettre de compassion au Contrepoids pour reconnaître sa fonction protectrice",
+      "Exercice du pire scénario : que se passe-t-il concrètement si vous ne changez rien pendant 5 ans ?"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "L'environnement comme premier levier",
+     "objectif": "Démontrer que modifier l'environnement est plus efficace que modifier la volonté, et poser les principes du design comportemental.",
+     "sections": [
+      "Vous êtes la moyenne de vos environnements",
+      "Le design des choix par défaut : nudges personnels",
+      "Éliminer, réduire, rendre invisible : la stratégie soustractive",
+      "Rendre visible, accessible, attractif : la stratégie additive",
+      "L'espace physique : bureau, maison, trajet",
+      "L'espace social : les cinq personnes les plus proches"
+     ],
+     "exercices": [
+      "Audit environnemental : photographier votre espace de travail et identifier 3 friction-points et 3 facilitateurs",
+      "Réorganiser une pièce ou un bureau selon le principe « ce que je veux faire doit être à portée de main »",
+      "Choisir une personne « alliée de discipline » et formaliser un pacte de reddition de comptes hebdomadaire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – L'ÉDIFICATION : Construire des habitudes qui durent",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "Les micro-forgeages : commencer ridiculement petit",
+     "objectif": "Introduire la méthode des micro-habités adaptées, où l'on démarre par une version tellement réduite de l'habitude qu'il est impossible d'échouer.",
+     "sections": [
+      "Le paradoxe du seuil : pourquoi viser petit mène loin",
+      "La règle des deux minutes : le geste d'amorçage",
+      "Empiler les micro-forgeages : la technique d'ancrage en chaîne",
+      "La célébration immédiate : câbler la dopamine",
+      "Le carnet de forge : tracer sans juger",
+      "Quand augmenter la charge : le principe de progression 10 %"
+     ],
+     "exercices": [
+      "Définir 3 micro-forgeages (santé, travail, esprit) en version « deux minutes maximum »",
+      "Pratiquer pendant 7 jours et cocher chaque réalisation sans exception",
+      "Après 7 jours, augmenter la difficulté de 10 % et observer la résistance"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Les habitudes-piliers : les cinq gestes qui changent tout",
+     "objectif": "Identifier et installer les habitudes à effet domino qui, une fois ancrées, facilitent toutes les autres.",
+     "sections": [
+      "Qu'est-ce qu'une habitude-pilier ? Effet de rayonnement",
+      "Pilier 1 : le sommeil comme fondation non négociable",
+      "Pilier 2 : le mouvement quotidien, même minimal",
+      "Pilier 3 : la planification de la veille au soir",
+      "Pilier 4 : la revue hebdomadaire de 30 minutes",
+      "Pilier 5 : un rituel de clôture pour fermer la journée",
+      "Séquence d'installation : un pilier à la fois, 30 jours chacun"
+     ],
+     "exercices": [
+      "Choisir UN pilier à installer en priorité et rédiger le protocole exact (heure, lieu, durée, déclencheur)",
+      "Créer un tableau de suivi mural pour le pilier choisi",
+      "Après 30 jours, évaluer l'effet domino : quelles autres habitudes ont émergé spontanément ?"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le rituel du matin : le Premier Marteau",
+     "objectif": "Construire un protocole matinal personnalisé qui lance la journée dans l'action plutôt que dans la réaction.",
+     "sections": [
+      "Pourquoi les 60 premières minutes déterminent les 15 suivantes",
+      "Le Premier Marteau : affronter la tâche la plus importante avant tout",
+      "Composantes du rituel : corps, esprit, intention",
+      "Le protocole en 5 blocs (20-15-10-10-5 minutes)",
+      "Adapter le rituel à son chronotype",
+      "Les erreurs classiques : trop long, trop rigide, trop ambitieux"
+     ],
+     "exercices": [
+      "Concevoir son propre rituel du Premier Marteau en 5 blocs max, total ≤ 60 min",
+      "Tester pendant 14 jours et ajuster un seul bloc par semaine",
+      "Écrire la version « urgence » du rituel (5 minutes) pour les jours chaotiques"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le rituel du soir : fermer la forge",
+     "objectif": "Instaurer une routine de clôture qui prépare le lendemain, libère l'esprit et consolide les habitudes de la journée.",
+     "sections": [
+      "La journée sans clôture : pourquoi le cerveau rumine",
+      "Le tri du soir : 3 victoires, 1 leçon, 1 gratitude",
+      "Préparer le lendemain : choisir l'Unique du Jour",
+      "Déconnexion progressive : la descente numérique",
+      "Le rituel de coucher : signaux de sommeil",
+      "Le carnet de forge du soir : 5 minutes suffisent"
+     ],
+     "exercices": [
+      "Rédiger sa checklist de clôture du soir (max 7 items)",
+      "Pratiquer la « déconnexion progressive » : couper les écrans 60 min, puis 90 min avant le coucher",
+      "Écrire pendant 7 soirs les 3 victoires du jour et observer l'effet sur la motivation"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Survivre à la rupture : que faire quand on décroche",
+     "objectif": "Fournir un protocole de reprise après un échec, une interruption ou une période de laisser-aller, sans culpabilité paralysante.",
+     "sections": [
+      "La rupture n'est pas la fin : normaliser l'interruption",
+      "La règle du « jamais deux fois » : reprendre dès le lendemain",
+      "Le diagnostic bienveillant : pourquoi ai-je décroché ?",
+      "Le protocole de reprise en 4 étapes (Reconnaître, Réduire, Relancer, Récompenser)",
+      "Les rechutes saisonnières : anticiper les périodes à risque",
+      "La lettre de reprise : se parler comme à un ami"
+     ],
+     "exercices": [
+      "Identifier ses 3 scénarios de rupture les plus fréquents et rédiger un plan de reprise pour chacun",
+      "Simuler une reprise après 3 jours d'arrêt : relancer une habitude en version micro",
+      "Tenir un « registre de reprises » pour mesurer la vitesse de retour à la routine"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – LA MAÎTRISE : Gouverner son temps et son attention",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Le tamis de l'essentiel : dire non pour dire oui",
+     "objectif": "Apprendre à filtrer les engagements et les tâches pour ne garder que ce qui sert réellement ses priorités profondes.",
+     "sections": [
+      "La surcharge moderne : pourquoi nous faisons trop",
+      "Le tamis à trois mailles : valeur, impact, alignement",
+      "L'art du non élégant : scripts et postures",
+      "Le cadran de la forge : urgent/important revisité",
+      "La liste d'anti-objectifs : ce que je refuse de faire",
+      "Révision trimestrielle du tamis"
+     ],
+     "exercices": [
+      "Lister toutes les obligations actuelles et les passer au tamis à trois mailles",
+      "Identifier 3 engagements à éliminer ou déléguer cette semaine",
+      "Rédiger 3 formules de refus polies mais fermes adaptées à son contexte"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le travail en forge : sessions profondes et concentration",
+     "objectif": "Mettre en place un système de blocs de travail profond, protégés des interruptions, adaptés à la réalité quotidienne.",
+     "sections": [
+      "Le mythe du multitâche : coût cognitif réel",
+      "Le bloc de forge : 90 minutes, porte fermée",
+      "Préparer l'environnement : téléphone, notifications, espace",
+      "Le rituel d'entrée et de sortie de session",
+      "La profondeur progressive : de 25 à 90 minutes",
+      "Gérer les interruptions inévitables : le protocole « Parking »"
+     ],
+     "exercices": [
+      "Planifier 3 blocs de forge cette semaine et les défendre comme des rendez-vous médicaux",
+      "Mesurer sa durée maximale de concentration actuelle et viser +10 min par semaine",
+      "Créer un panneau ou signal « en forge » pour son entourage"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "La diète numérique : reprendre le contrôle de ses écrans",
+     "objectif": "Construire une relation intentionnelle avec la technologie, en éliminant les usages par défaut qui volent l'attention.",
+     "sections": [
+      "Le modèle économique de l'attention : vous êtes le produit",
+      "L'audit numérique : combien d'heures, sur quoi, pour quel résultat ?",
+      "Le tri des applications : garder, limiter, supprimer",
+      "Les zones sans écran et les heures sans écran",
+      "Le téléphone en mode outil, pas en mode jouet",
+      "La règle des 20 secondes : ajouter de la friction"
+     ],
+     "exercices": [
+      "Faire un audit numérique de 3 jours avec les outils intégrés du téléphone",
+      "Supprimer ou déplacer 5 applications distrayantes de l'écran d'accueil",
+      "Instaurer une « heure sans écran » quotidienne et la protéger pendant 14 jours"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le bouclier attentionnel : se protéger des distractions internes",
+     "objectif": "Maîtriser les déclencheurs internes (ennui, inconfort, anxiété) qui poussent à la distraction, selon le modèle de Nir Eyal enrichi.",
+     "sections": [
+      "La distraction comme analgésique émotionnel",
+      "Identifier ses 5 déclencheurs internes dominants",
+      "La technique des 10 minutes : surfer sur l'envie",
+      "Le journal des distractions : observer sans juger",
+      "La pleine conscience appliquée : 5 minutes d'ancrage",
+      "Créer des pactes avec soi-même et avec autrui"
+     ],
+     "exercices": [
+      "Tenir un journal des distractions pendant 5 jours : noter le déclencheur interne avant chaque interruption",
+      "Pratiquer la technique des 10 minutes face à une envie de distraction cette semaine",
+      "Rédiger un « pacte d'attention » signé avec soi-même, affichable dans l'espace de travail"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "L'énergie avant le temps : chronobiologie et rythme",
+     "objectif": "Organiser sa journée selon son énergie réelle plutôt que selon un emploi du temps rigide, en respectant son chronotype.",
+     "sections": [
+      "Le temps n'est pas la seule ressource : le rôle de l'énergie",
+      "Les 4 chronotypes et leurs fenêtres optimales",
+      "Cartographier sa courbe d'énergie sur 24 h",
+      "Placer les tâches selon l'énergie : forge, admin, création, repos",
+      "Le rôle du sommeil, de l'alimentation et du mouvement",
+      "La sieste stratégique et les micro-pauses"
+     ],
+     "exercices": [
+      "Tracer sa courbe d'énergie personnelle sur 7 jours (note /10 toutes les 2 heures)",
+      "Repositionner les 3 tâches les plus exigeantes dans la fenêtre d'énergie maximale",
+      "Expérimenter la sieste de 20 minutes ou la micro-pause de 5 minutes pendant 5 jours"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – LE PASSAGE : De l'intention à l'action",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Le fossé de l'intention : pourquoi savoir ne suffit pas",
+     "objectif": "Analyser les mécanismes psychologiques qui créent l'écart entre savoir quoi faire et le faire réellement, et proposer des ponts concrets.",
+     "sections": [
+      "Le paradoxe connaissance-action : 92 % des résolutions échouent",
+      "L'illusion de la préparation : lire, planifier, attendre",
+      "Le seuil d'activation : la première seconde qui coûte",
+      "La règle des 5 secondes et le compte à rebours",
+      "Réduire la décision : les protocoles pré-décidés",
+      "L'engagement public comme catalyseur"
+     ],
+     "exercices": [
+      "Identifier une intention non réalisée depuis plus d'un mois et appliquer la règle des 5 secondes immédiatement",
+      "Écrire un protocole pré-décidé pour une tâche récurrente (si X, alors Y)",
+      "Annoncer un engagement concret à une personne de confiance avec une date limite"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "La planification réaliste : du rêve au calendrier",
+     "objectif": "Traduire les ambitions en plans hebdomadaires et quotidiens réalistes, en intégrant les imprévus et la flexibilité.",
+     "sections": [
+      "Le piège de la sur-planification : l'agenda idéal n'existe pas",
+      "La planification inversée : partir du résultat et remonter",
+      "Le highlight quotidien : une priorité non négociable",
+      "La règle des 3 : trois tâches clés par jour, pas plus",
+      "Les blocs tampons : prévoir 30 % d'imprévu",
+      "La revue du dimanche : 30 minutes pour cadrer la semaine"
+     ],
+     "exercices": [
+      "Planifier la semaine à venir avec un seul highlight par jour et 3 tâches clés max",
+      "Insérer deux blocs tampons de 30 minutes dans l'agenda",
+      "Faire une revue de 30 minutes le dimanche soir pendant 4 semaines consécutives"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Vaincre la procrastination : le protocole du Premier Marteau",
+     "objectif": "Fournir un arsenal de techniques concrètes pour démarrer malgré la résistance, adapté à chaque profil de procrastinateur.",
+     "sections": [
+      "Les 4 profils de procrastinateur : le perfectionniste, le rêveur, l'évitant, le surchargé",
+      "Le coût réel de la procrastination : calcul chiffré",
+      "La technique du saucissonnage : découper en tranches de 10 minutes",
+      "Le compte à rebours et l'élan physique",
+      "L'environnement de démarrage : tout préparer la veille",
+      "La récompense de départ : se féliciter d'avoir commencé"
+     ],
+     "exercices": [
+      "Identifier son profil de procrastinateur dominant et appliquer la contre-stratégie associée",
+      "Prendre une tâche repoussée et la découper en 5 tranches de 10 minutes ; faire la première immédiatement",
+      "Préparer physiquement l'environnement de la tâche du lendemain soir (vêtements, documents, outils)"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "La discipline collective : s'entourer pour tenir",
+     "objectif": "Montrer comment l'environnement social, les partenaires de responsabilité et les communautés renforcent la discipline individuelle.",
+     "sections": [
+      "La discipline n'est pas un sport solitaire",
+      "Le partenaire de forge : choisir, formaliser, rythmer",
+      "Les groupes de mastermind : structure et règles",
+      "L'engagement public : pourquoi annoncer ses objectifs aide",
+      "Les modèles inspirants : mentor réel ou symbolique",
+      "Gérer les saboteurs bienveillants de l'entourage"
+     ],
+     "exercices": [
+      "Trouver un partenaire de forge et fixer un rendez-vous hebdomadaire de 15 minutes",
+      "Rejoindre ou créer un groupe de 3 à 5 personnes avec un objectif de progression commun",
+      "Identifier une personne « saboteuse » dans son entourage et préparer une réponse bienveillante mais ferme"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "L'action imparfaite : le courage du brouillon",
+     "objectif": "Libérer le lecteur du perfectionnisme paralysant en valorisant l'action imparfaite, l'itération et le droit à l'erreur.",
+     "sections": [
+      "Le perfectionnisme comme procrastination déguisée",
+      "La règle du 70 % : assez bon pour avancer",
+      "Le brouillon comme méthode : produire avant de polir",
+      "L'itération rapide : 3 versions valent mieux qu'une parfaite",
+      "Le feedback comme carburant, pas comme jugement",
+      "Célébrer l'imperfection : le carnet des « assez bien »"
+     ],
+     "exercices": [
+      "Terminer une tâche en la livrant à 70 % de sa qualité perçue et observer le résultat",
+      "Écrire un premier jet (mail, rapport, projet) en 20 minutes chrono sans relecture",
+      "Tenir un carnet de 10 actions « assez bien » réalisées cette semaine"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – LA DURÉE : Tenir, durer, progresser",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "La courbe composée : la patience stratégique",
+     "objectif": "Faire comprendre que les résultats de la discipline sont exponentiels mais invisibles au début, et cultiver la patience active.",
+     "sections": [
+      "L'effet composé appliqué aux habitudes : 1 % par jour",
+      "La vallée de la déception : pourquoi les premiers mois semblent vains",
+      "Les résultats invisibles : ce qui change avant d'être visible",
+      "La patience active : agir sans voir, faire confiance au processus",
+      "Mesurer le processus, pas seulement le résultat",
+      "Le journal de long terme : relire ses progrès tous les 90 jours"
+     ],
+     "exercices": [
+      "Calculer l'effet composé d'une micro-habitude sur 1 an, 3 ans, 5 ans",
+      "Créer un tableau de bord de processus (actions réalisées) plutôt que de résultats",
+      "Relire son journal de forge tous les 90 jours et noter 3 progrès invisibles"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Le renouvellement : éviter l'usure et la routine morte",
+     "objectif": "Introduire des cycles de variation, de repos et de réinvention pour que la discipline ne devienne pas une prison.",
+     "sections": [
+      "La discipline n'est pas la rigidité : flexibilité structurée",
+      "Le cycle des saisons : adapter ses habitudes au rythme annuel",
+      "Les semaines de délestage : réduire sans abandonner",
+      "La variation contrôlée : changer la forme, garder le fond",
+      "Le renouvellement physique, mental, émotionnel, spirituel (Covey revisité)",
+      "Le rituel annuel : la grande revue de vie"
+     ],
+     "exercices": [
+      "Planifier une semaine de délestage tous les 3 mois avec un programme allégé",
+      "Choisir une habitude et la faire varier (heure, lieu, format) pendant 7 jours",
+      "Faire une revue annuelle écrite : qu'est-ce qui a fonctionné, qu'est-ce qui doit évoluer ?"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Les tempêtes : discipline dans l'adversité",
+     "objectif": "Préparer le lecteur à maintenir un minimum de discipline lors des crises personnelles, professionnelles ou de santé.",
+     "sections": [
+      "La discipline en temps normal vs en temps de crise",
+      "Le mode survie : réduire à l'essentiel sans tout abandonner",
+      "La routine minimale de crise : 3 gestes non négociables",
+      "Le deuil des habitudes perdues : accepter et reconstruire",
+      "La résilience comme muscle : chaque tempête renforce",
+      "Demander de l'aide : la discipline n'exclut pas la vulnérabilité"
+     ],
+     "exercices": [
+      "Définir sa « routine minimale de crise » : 3 gestes de 5 minutes qui maintiennent le cap",
+      "Identifier un soutien (ami, coach, thérapeute) à activer en cas de tempête",
+      "Écrire une lettre à soi-même pour les jours difficiles, à relire quand la tempête arrive"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La forge perpétuelle : transmettre et continuer",
+     "objectif": "Clore le livre en ouvrant vers la transmission, la legacy et la discipline comme mode de vie permanent plutôt que projet fini.",
+     "sections": [
+      "La discipline comme œuvre d'une vie, pas comme sprint",
+      "Transmettre : enseigner ce qu'on pratique",
+      "Le mentorat inversé : apprendre de plus jeune que soi",
+      "La lettre à son futur soi : dans 10 ans",
+      "Le manifeste de la forge : ses 10 principes personnels",
+      "Le dernier geste : commencer aujourd'hui, maintenant, imparfaitement"
+     ],
+     "exercices": [
+      "Rédiger son manifeste personnel de discipline en 10 phrases",
+      "Écrire une lettre à son soi de dans 10 ans décrivant la vie construite par la discipline",
+      "Choisir UNE action du livre et la faire dans les 24 heures suivant la dernière page lue"
+     ]
+    }
+   ]
+  }
+ ]
+}

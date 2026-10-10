@@ -1,0 +1,607 @@
+{
+ "titre": "La Gravité du Leader",
+ "sous_titre": "Diriger, inspirer et faire grandir une équipe sans jamais la retenir",
+ "bibliographie": [
+  {
+   "auteur": "John C. Maxwell",
+   "titre": "The 21 Irrefutable Laws of Leadership",
+   "annee": "1998",
+   "idee": "Le leadership repose sur des lois immuables (influence, priorité, connexion, reproduction). On ne naît pas leader, on le devient par l'accumulation de compétences relationnelles.",
+   "apport": "Structure progressive des compétences de leadership ; notion de « loi du couvercle » : l'efficacité d'une équipe est plafonnée par la capacité de son dirigeant."
+  },
+  {
+   "auteur": "Simon Sinek",
+   "titre": "Start With Why",
+   "annee": "2009",
+   "idee": "Les grands leaders communiquent d'abord le POURQUOI (croyance, mission) avant le QUOI ou le COMMENT. C'est ce qui déclenche l'adhésion profonde.",
+   "apport": "Le chapitre sur la vision et le récit fondateur ; l'idée que l'influence commence par la clarté du sens."
+  },
+  {
+   "auteur": "Jim Collins",
+   "titre": "Good to Great",
+   "annee": "2001",
+   "idee": "Le passage de bon à excellent exige un leadership de niveau 5 : humilité personnelle + volonté professionnelle féroce. Les bons leaders posent d'abord les bonnes questions.",
+   "apport": "Le paradoxe humilité/ambition ; la métaphore du bus (bonnes personnes, bons sièges) ; la discipline face aux faits bruts."
+  },
+  {
+   "auteur": "Peter Drucker",
+   "titre": "The Effective Executive",
+   "annee": "1967",
+   "idee": "L'efficacité du dirigeant n'est pas innée : elle se travaille par la gestion du temps, la concentration sur les contributions et les décisions structurées.",
+   "apport": "La méthode de décision (définir le problème, alternatives, critères, mise en œuvre, feedback) ; la distinction efficacité/efficience."
+  },
+  {
+   "auteur": "Stephen R. Covey",
+   "titre": "The 7 Habits of Highly Effective People",
+   "annee": "1989",
+   "idee": "L'influence durable naît d'un caractère aligné (proactivité, vision, priorités) avant toute technique relationnelle (écoute empathique, synergie).",
+   "apport": "Le cercle d'influence vs cercle de préoccupation ; la notion de compte bancaire émotionnel pour bâtir la confiance."
+  },
+  {
+   "auteur": "Daniel Goleman",
+   "titre": "Primal Leadership (Realizing the Power of Emotional Intelligence)",
+   "annee": "2002",
+   "idee": "Le premier rôle du leader est émotionnel : il donne le ton affectif du groupe. Six styles de leadership sont mobilisables selon le contexte.",
+   "apport": "La boîte à outils des six styles (visionnaire, coach, affiliatif, démocratique, dirigeant, exigeant) et leurs conditions d'usage."
+  },
+  {
+   "auteur": "Patrick Lencioni",
+   "titre": "The Five Dysfunctions of a Team",
+   "annee": "2002",
+   "idee": "Les équipes échouent à cause de cinq dysfonctionnements en pyramide : absence de confiance, peur du conflit, manque d'engagement, évitement de la responsabilité, inattention aux résultats.",
+   "apport": "Le modèle pyramidal pour diagnostiquer et réparer la cohésion d'équipe ; exercices de vulnérabilité calculée."
+  },
+  {
+   "auteur": "Brené Brown",
+   "titre": "Dare to Lead",
+   "annee": "2018",
+   "idee": "Le leadership courageux exige de la vulnérabilité : oser les conversations difficiles, clarifier les valeurs, faire confiance avant d'avoir des preuves.",
+   "apport": "La notion de « rumble » (conversation honnête) ; l'idée que la vulnérabilité n'est pas une faiblesse mais un levier de connexion."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence: The Psychology of Persuasion",
+   "annee": "1984",
+   "idee": "Six (puis sept) principes universels gouvernent l'adhésion : réciprocité, engagement, preuve sociale, autorité, sympathie, rareté, unité.",
+   "apport": "Comprendre les mécanismes d'influence pour les utiliser éthiquement ; éviter la manipulation en connaissance de cause."
+  },
+  {
+   "auteur": "Dale Carnegie",
+   "titre": "How to Win Friends and Influence People",
+   "annee": "1936",
+   "idee": "L'influence naît de l'intérêt sincère porté à l'autre : écouter, valoriser, éviter la contradiction frontale, faire sentir à l'autre son importance.",
+   "apport": "Les techniques conversationnelles fondamentales (écoute active, reformulation, reconnaissance) comme socle de toute relation de leadership."
+  },
+  {
+   "auteur": "Marcus Buckingham & Curt Coffman",
+   "titre": "First, Break All the Rules",
+   "annee": "1999",
+   "idee": "Les meilleurs managers ne traitent pas tout le monde pareil : ils identifient les talents uniques et construisent autour des forces, pas des faiblesses.",
+   "apport": "L'approche par les forces individuelles ; les douze questions d'engagement ; la personnalisation du management."
+  },
+  {
+   "auteur": "Ken Blanchard & Spencer Johnson",
+   "titre": "The One Minute Manager",
+   "annee": "1982",
+   "idee": "Trois outils simples suffisent : objectifs d'une minute, compliments d'une minute, recadrages d'une minute. La clarté et la rapidité du feedback font tout.",
+   "apport": "Le modèle de feedback court, spécifique et bienveillant ; l'idée que « la minute » force la concision et l'impact."
+  },
+  {
+   "auteur": "Amy C. Edmondson",
+   "titre": "The Fearless Organization",
+   "annee": "2018",
+   "idee": "La sécurité psychologique est le prédicteur n°1 de la performance d'équipe : oser poser des questions, admettre ses erreurs, proposer des idées folles sans crainte de représailles.",
+   "apport": "Le diagnostic de sécurité psychologique ; les rituels pour instaurer un climat où l'erreur est un apprentissage."
+  },
+  {
+   "auteur": "Adam Grant",
+   "titre": "Give and Take",
+   "annee": "2013",
+   "idee": "Les « donneurs » (ceux qui aident sans attendre de retour) surpassent les « preneurs » et les « matchers » à long terme, à condition de protéger leur énergie.",
+   "apport": "Le leadership comme service ; les stratégies pour donner sans s'épuiser ; la générosité comme avantage compétitif durable."
+  },
+  {
+   "auteur": "Marshall Goldsmith",
+   "titre": "What Got You Here Won't Get You There",
+   "annee": "2007",
+   "idee": "Les comportements qui ont permis l'ascension (contrôle, certitude, compétition) deviennent des plafonds à haut niveau. Le leadership supérieur exige de « désapprendre ».",
+   "apport": "Les 20 habitudes à abandonner ; la méthode de feedforward (se projeter vers le futur plutôt que ressasser le passé)."
+  },
+  {
+   "auteur": "Kim Scott",
+   "titre": "Radical Candor",
+   "annee": "2017",
+   "idee": "Le meilleur feedback combine deux axes : se soucier personnellement + confronter directement. Quatre quadrants : bienveillance ruinée, agressité odieuse, manipulation insincère, franchise radicale.",
+   "apport": "Le cadre de feedback à deux axes ; les scripts pour donner et recevoir des critiques constructives en équipe."
+  },
+  {
+   "auteur": "Sun Tzu",
+   "titre": "L'Art de la Guerre",
+   "annee": "~500 av. J.-C.",
+   "idee": "La victoire suprême est celle obtenue sans combat : connaître le terrain, soi-même et l'adversaire ; adapter sa stratégie au contexte ; gagner par la ruse et la préparation.",
+   "apport": "La métaphore stratégique appliquée au leadership : préparation, lecture du contexte, économie de forces, flexibilité."
+  },
+  {
+   "auteur": "Warren Bennis",
+   "titre": "On Becoming a Leader",
+   "annee": "1989",
+   "idee": "Le leadership n'est pas un poste mais un processus de « devenir soi-même » : authenticité, vision, confiance, curiosité. Le leader se construit par l'épreuve et la réflexion.",
+   "apport": "La notion de « creuset » (épreuve transformatrice) ; l'idée que diriger, c'est d'abord se connaître et se choisir."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – LE LEADER FACE À LUI-MÊME : forger sa gravité intérieure",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le creuset : qui êtes-vous quand personne ne regarde ?",
+     "objectif": "Aider le lecteur à identifier ses valeurs profondes, son récit fondateur et les épreuves qui l'ont façonné, pour ancrer son leadership dans l'authenticité plutôt que dans un rôle emprunté.",
+     "sections": [
+      "1.1 Le mythe du leader « né » : déconstruire l'illusion du charisme inné",
+      "1.2 L'inventaire du creuset : vos trois épreuves formatrices",
+      "1.3 La boussole des valeurs : en choisir cinq et s'y tenir",
+      "1.4 Le miroir honnête : demander un feedback brutal à trois personnes",
+      "1.5 La cohérence micro : aligner les petits gestes quotidiens sur le discours",
+      "1.6 L'auto-biographie du leader : écrire sa « déclaration de commandement »"
+     ],
+     "exercices": [
+      "Écrire une lettre à soi-même à 16 ans : « Ce que j'ai appris de mes blessures » (800 mots, à relire chaque trimestre)",
+      "Demander à trois proches de répondre anonymement : « Quelle est ma plus grande force ? Mon angle mort le plus visible ? » et consigner les réponses sans se justifier",
+      "Créer une « carte de valeurs » : cinq valeurs hiérarchisées, avec pour chacune un exemple concret de la semaine passée où elle a été honorée ou trahie"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Le cercle d'influence : agir là où l'on peut vraiment changer les choses",
+     "objectif": "Distinguer ce qui dépend de soi de ce qui n'en dépend pas, pour concentrer l'énergie du leader sur les leviers réels et éviter la posture victimaire.",
+     "sections": [
+      "2.1 La carte des deux cercles : préoccupation vs influence",
+      "2.2 L'énergie du langage : « je choisis » contre « on m'oblige »",
+      "2.3 Les fuites d'énergie : identifier vos trois ruminations chroniques",
+      "2.4 Le pouvoir du petit périmètre : agir sur un mètre carré d'abord",
+      "2.5 L'art de dire non sans perdre l'alliance",
+      "2.6 La règle des 90 jours : quel changement tangible puis-je enclencher ?"
+     ],
+     "exercices": [
+      "Dessiner ses deux cercles sur une feuille A3 : lister 10 préoccupations actuelles et les classer ; pour chaque item du cercle d'influence, noter UNE action sous 48 h",
+      "Tenir pendant 7 jours un journal des « fuites » : noter chaque fois qu'on rumine sur l'incontrôlable, puis réécrire la pensée en mode « je peux… »",
+      "Choisir un projet bloqué depuis plus de 3 mois et le découper en 5 micro-actions de moins de 30 minutes chacune"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La discipline du regard : attention, priorités et présence",
+     "objectif": "Entraîner le leader à protéger son attention, à hiérarchiser sans culpabilité et à être pleinement présent dans chaque interaction, condition sine qua non de l'influence.",
+     "sections": [
+      "3.1 Le cerveau du leader : pourquoi l'attention est la ressource la plus rare",
+      "3.2 La matrice importance/urgence revisitée : le quadrant II de Covey",
+      "3.3 Les rituels de recentrage : matin, transition, soir",
+      "3.4 La présence radicale : écouter avec tout le corps",
+      "3.5 Le mythe du multitâche et le coût caché de l'interruption",
+      "3.6 Protéger le temps profond : le « bloc sacré » du leader",
+      "3.7 La revue hebdomadaire : 30 minutes pour ne pas subir la semaine suivante"
+     ],
+     "exercices": [
+      "Installer un « bloc sacré » de 90 minutes/jour sans notification pendant 21 jours et consigner l'impact sur la qualité des décisions",
+      "Pratiquer l'écoute active lors de 3 conversations cette semaine : reformuler avant de répondre, noter le ressenti de l'interlocuteur",
+      "Chaque vendredi, remplir la grille : 3 victoires / 2 apprentissages / 1 priorité unique de la semaine prochaine"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Gouverner ses émotions sans les nier",
+     "objectif": "Développer l'intelligence émotionnelle du leader : reconnaître, nommer, réguler ses émotions pour qu'elles informent sans déborder, et créer un climat affectif sain autour de soi.",
+     "sections": [
+      "4.1 Le mythe du leader impassible : pourquoi la répression coûte cher",
+      "4.2 Le vocabulaire émotionnel : passer de 4 à 20 mots pour décrire ce qu'on ressent",
+      "4.3 Le circuit stimulus → interprétation → émotion → réaction",
+      "4.4 La pause de 6 secondes : désamorcer l'amygdale",
+      "4.5 L'émotion comme signal : colère = frontière, peur = information, tristesse = perte",
+      "4.6 L'humeur du leader comme météo d'équipe : l'effet de contagion",
+      "4.7 Le journal émotionnel du dirigeant"
+     ],
+     "exercices": [
+      "Pendant 14 jours, noter trois fois par jour : émotion ressentie / déclencheur / besoin sous-jacent / action choisie",
+      "Identifier son « top 3 des déclencheurs » émotionnels au travail et préparer une phrase-ancrage pour chacun",
+      "Demander à un membre de confiance de l'équipe : « Quel effet mon humeur a-t-elle sur le groupe ? » et écouter sans se défendre"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Le courage d'être imparfait : vulnérabilité et autorité",
+     "objectif": "Réconcilier l'autorité naturelle du leader avec l'aveu de ses limites, pour bâtir une crédibilité plus profonde que la posture de celui qui sait tout.",
+     "sections": [
+      "5.1 La vulnérabilité n'est pas la faiblesse : les travaux de Brené Brown appliqués",
+      "5.2 Dire « je ne sais pas » sans perdre la face",
+      "5.3 L'erreur publique : comment la transformer en rituel d'apprentissage",
+      "5.4 Le piège du perfectionnisme : quand l'exigence paralyse l'équipe",
+      "5.5 L'autorité tranquille : être ferme sur la direction, souple sur le chemin",
+      "5.6 Le rituel du « mea culpa » : quand et comment s'excuser en leader",
+      "5.7 La confiance asymétrique : faire confiance avant d'avoir des preuves"
+     ],
+     "exercices": [
+      "Lors d'une prochaine réunion, partager un échec récent et ce qu'on en a appris (3 minutes max), puis inviter l'équipe à faire de même",
+      "Lister 5 situations où l'on évite de demander de l'aide par orgueil ; pour chacune, identifier une personne à qui demander cette semaine",
+      "Écrire une « permission d'imperfection » : un texte court qu'on s'adresse à soi-même les jours de doute"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – L'ART DE LA CONNEXION : communiquer pour influencer",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "Le récit qui embarque : vision, storytelling et sens",
+     "objectif": "Apprendre au leader à formuler une vision claire et à la raconter sous forme de récit mobilisateur, pour que l'équipe ne suive pas un plan mais une aventure.",
+     "sections": [
+      "6.1 Pourquoi le cerveau a besoin d'une histoire, pas d'un organigramme",
+      "6.2 La structure du récit de vision : état actuel → tension → avenir possible → rôle de chacun",
+      "6.3 Le « WHY » de Sinek adapté : trouver la croyance fondatrice de votre équipe",
+      "6.4 Les trois niveaux de sens : individuel, collectif, sociétal",
+      "6.5 Raconter sans manipuler : la frontière entre inspiration et propagande",
+      "6.6 Les rituels de narration : réunion de lancement, bilan trimestriel, célébration",
+      "6.7 Le pitch de vision en 90 secondes : exercice de synthèse"
+     ],
+     "exercices": [
+      "Écrire son « manifeste d'équipe » en 200 mots : pourquoi on existe, ce qu'on refuse, ce qu'on vise",
+      "Raconter sa vision à voix haute devant un miroir ou une caméra en 90 secondes ; visionner, corriger, recommencer jusqu'à fluidité",
+      "Demander à trois membres de l'équipe : « Si tu devais résumer notre mission en une phrase à un ami, que dirais-tu ? » et comparer les réponses"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Écouter pour entendre : l'art de la présence conversationnelle",
+     "objectif": "Transformer l'écoute du leader d'une posture passive en un outil actif de diagnostic, de valorisation et d'influence silencieuse.",
+     "sections": [
+      "7.1 Les quatre niveaux d'écoute : ignorer, attendre son tour, comprendre, ressentir",
+      "7.2 L'écoute active : reformulation, silence, relance ouverte",
+      "7.3 Les questions qui ouvrent : du « pourquoi » accusateur au « qu'est-ce qui t'a amené là ? »",
+      "7.4 Lire le non-verbal : posture, regard, ton, rythme",
+      "7.5 L'écoute en situation de crise : ne pas résoudre, d'abord accueillir",
+      "7.6 L'entretien de découverte : structure d'une conversation 1-à-1 qui compte"
+     ],
+     "exercices": [
+      "Pendant une semaine, compter le ratio paroles/écoute dans chaque réunion ; viser 40 % de paroles, 60 % d'écoute",
+      "Pratiquer la reformulation systématique pendant 3 jours : « Si je comprends bien, tu dis que… » avant toute réponse",
+      "Mener un « entretien de découverte » de 30 min avec un membre de l'équipe en n'utilisant que des questions ouvertes"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le feedback qui fait grandir : franchise radicale et bienveillance",
+     "objectif": "Donner au leader un cadre concret pour formuler des retours honnêtes, réguliers et constructifs, sans tomber dans la flatterie stérile ni dans la critique destructrice.",
+     "sections": [
+      "8.1 Le quadrant Radical Candor : se soucier × confronter",
+      "8.2 La règle des 24 heures : ni trop tôt à chaud, ni trop tard à froid",
+      "8.3 Le modèle SBI : Situation – Comportement – Impact",
+      "8.4 Le feedback positif : le multiplier par cinq",
+      "8.5 Le recadrage sans humiliation : séparer la personne de l'acte",
+      "8.6 Recevoir le feedback : la posture du leader apprenant",
+      "8.7 Instaurer la culture du feedback continu, pas annuel"
+     ],
+     "exercices": [
+      "Donner cette semaine un feedback positif spécifique à chaque membre de l'équipe (minimum 3 personnes) en utilisant le modèle SBI",
+      "Préparer par écrit un recadrage difficile en 5 phrases max (fait observable, impact, attente, soutien proposé, ouverture) et le délivrer sous 7 jours",
+      "Instaurer un rituel mensuel de « feedback croisé » en binômes dans l'équipe : 5 min de points forts, 3 min de pistes d'amélioration"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "L'influence sans autorité : persuader, convaincre, entraîner",
+     "objectif": "Outiller le leader pour obtenir l'adhésion au-delà du lien hiérarchique : pairs, direction, partenaires, en s'appuyant sur les leviers éthiques de la persuasion.",
+     "sections": [
+      "9.1 Les sept principes de Cialdini appliqués au leadership d'équipe",
+      "9.2 La réciprocité stratégique : donner avant de demander",
+      "9.3 La preuve sociale : montrer que « d'autres l'ont fait »",
+      "9.4 L'engagement progressif : la technique du petit pas",
+      "9.5 L'argument par les valeurs : relier la demande à l'identité de l'autre",
+      "9.6 Convaincre sans manipuler : la ligne rouge éthique",
+      "9.7 Négocier en interne : transformer les résistances en alliances"
+     ],
+     "exercices": [
+      "Identifier une décision qu'on veut faire adopter et construire un argumentaire en 3 niveaux : rationnel (chiffres), émotionnel (histoire), identitaire (valeurs)",
+      "Pratiquer la technique du « petit engagement » : demander d'abord un micro-oui avant la grande demande, pendant 2 semaines",
+      "Cartographier les 5 personnes clés dont on a besoin sans lien hiérarchique et noter pour chacune : ce qu'on peut lui apporter avant de lui demander"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "La parole juste en temps de crise : annoncer, rassurer, mobiliser",
+     "objectif": "Préparer le leader aux moments de turbulence (restructuration, échec, incertitude) où sa parole devient le seul ancrage de l'équipe.",
+     "sections": [
+      "10.1 Les trois besoins de l'équipe en crise : vérité, direction, présence",
+      "10.2 L'annonce difficile : structure en quatre temps (fait, impact, plan, soutien)",
+      "10.3 Le silence qui parle : quand se taire est plus puissant que parler",
+      "10.4 Gérer la rumeur : nommer, contextualiser, rediriger",
+      "10.5 Le rituel de la « porte ouverte » : disponibilité sans promesse",
+      "10.6 Protéger l'équipe du bruit externe tout en restant transparent",
+      "10.7 Après la tempête : le récit de reconstruction"
+     ],
+     "exercices": [
+      "Simuler par écrit l'annonce d'une mauvaise nouvelle (perte de client, réorganisation) en respectant les 4 temps, puis la lire à voix haute",
+      "Préparer une « phrase d'ancrage » personnelle pour les moments de panique : une phrase courte qu'on se répète avant de prendre la parole",
+      "Organiser un exercice de crise en équipe (jeu de rôle) : un scénario inattendu, 10 min pour réagir, puis débrief sur la qualité de la communication"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – DIRIGER ET DÉCIDER : l'architecture de l'action collective",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Choisir quand tout est incertain : la méthode de décision du leader",
+     "objectif": "Fournir une boîte à outils de décision structurée pour les choix complexes, irréversibles ou à information incomplète, en évitant la paralysie et l'impulsivité.",
+     "sections": [
+      "11.1 Les trois types de décisions : réversible, irréversible, reportable",
+      "11.2 La règle 70 % : décider avec l'information disponible, pas parfaite",
+      "11.3 Le processus en 5 étapes de Drucker adapté : problème, alternatives, critères, choix, feedback",
+      "11.4 Le conseil des voix intérieures : le « board » imaginaire",
+      "11.5 La pré-mortem : imaginer l'échec avant de décider",
+      "11.6 Décider seul vs décider ensemble : le curseur de la participation",
+      "11.7 Assumer et communiquer la décision : le « disagree and commit »"
+     ],
+     "exercices": [
+      "Prendre une décision en attente depuis plus de 2 semaines et appliquer la méthode 5 étapes par écrit (max 1 page)",
+      "Réaliser une pré-mortem sur un projet en cours : « Imaginons que dans 6 mois tout a échoué. Pourquoi ? » Lister 5 causes probables et une parade pour chacune",
+      "Identifier une décision récente où l'on a trop attendu et analyser : quelle information manquait vraiment ? Aurait-elle changé le résultat ?"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Déléguer sans abdiquer : confier, contrôler, libérer",
+     "objectif": "Apprendre au leader à déléguer efficacement pour développer son équipe et se libérer du temps stratégique, sans micro-manager ni abandonner.",
+     "sections": [
+      "12.1 Pourquoi on ne délègue pas : les 5 peurs du leader-contrôleur",
+      "12.2 Le modèle des 5 niveaux de délégation (de « fais ce que je dis » à « décide et informe-moi après »)",
+      "12.3 La clarification du cadre : résultat attendu, limites, ressources, délai",
+      "12.4 Le point de contrôle : fréquence, format, posture",
+      "12.5 Accepter un résultat à 80 % : le coût caché du perfectionnisme du chef",
+      "12.6 Déléguer la décision, pas seulement la tâche",
+      "12.7 La délégation comme acte de confiance et de développement"
+     ],
+     "exercices": [
+      "Lister ses 10 tâches hebdomadaires et identifier 3 à déléguer cette semaine avec le niveau de délégation approprié",
+      "Pour chaque délégation, rédiger une « fiche cadre » d'une demi-page : résultat, limites, ressources, point de contrôle",
+      "Après 2 semaines, demander au délégataire : « Qu'est-ce qui t'a aidé ? Qu'est-ce qui t'a manqué ? » et ajuster"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Fixer le cap sans figer la route : objectifs, priorités et agilité",
+     "objectif": "Articuler vision à long terme et exécution à court terme : définir des objectifs clairs, hiérarchiser sans cesse, et rester capable de pivoter.",
+     "sections": [
+      "13.1 La différence entre vision, stratégie, objectifs et tâches",
+      "13.2 Les OKR simplifiés : 3 objectifs, 3 résultats clés chacun",
+      "13.3 La loi de Pareto appliquée : identifier les 20 % qui produisent 80 %",
+      "13.4 Le rituel de priorisation hebdomadaire : la « règle des 3 »",
+      "13.5 Savoir pivoter : les signaux qui disent « on se trompe de route »",
+      "13.6 Dire non aux bonnes idées pour protéger les excellentes",
+      "13.7 La revue mensuelle : célébrer, corriger, réaligner"
+     ],
+     "exercices": [
+      "Définir 3 OKR pour le trimestre avec son équipe en atelier de 90 minutes",
+      "Chaque lundi matin, choisir les 3 priorités de la semaine et les afficher visiblement",
+      "Identifier une activité récurrente qui consomme du temps mais produit peu de valeur, et la supprimer ou la déléguer pendant 30 jours"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le temps du leader : protéger, investir, récupérer",
+     "objectif": "Repenser la gestion du temps non comme une technique de productivité mais comme un choix stratégique sur ce qui mérite l'attention du dirigeant.",
+     "sections": [
+      "14.1 L'audit du temps : où passent vraiment vos 50 heures hebdomadaires ?",
+      "14.2 Les quatre types de temps : production, relation, stratégie, récupération",
+      "14.3 Le coût réel d'une réunion : calculer et réduire",
+      "14.4 Le « non » comme acte de leadership : protéger le temps collectif",
+      "14.5 La récupération n'est pas un luxe : sommeil, marche, déconnexion",
+      "14.6 Le rituel de fin de journée : fermer les boucles ouvertes",
+      "14.7 La règle du « si c'est demain, est-ce que j'accepte ? »"
+     ],
+     "exercices": [
+      "Tenir un journal du temps pendant 5 jours ouvrés (par blocs de 30 min) puis catégoriser et identifier les 3 plus grosses fuites",
+      "Supprimer ou raccourcir 2 réunions récurrentes ce mois-ci ; mesurer l'impact",
+      "Instaurer un « couvre-feu numérique » : aucune notification professionnelle après 20 h pendant 21 jours"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Le leader-stratège : lire le terrain, anticiper, s'adapter",
+     "objectif": "Développer la capacité du leader à prendre de la hauteur, lire les signaux faibles et adapter sa stratégie sans perdre le fil de la mission.",
+     "sections": [
+      "15.1 La métaphore Sun Tzu : connaître le terrain, se connaître, connaître l'environnement",
+      "15.2 Les signaux faibles : les repérer avant qu'ils ne deviennent des crises",
+      "15.3 La pensée en scénarios : préparer 3 futurs plausibles",
+      "15.4 L'art du pivot : changer de tactique sans trahir la stratégie",
+      "15.5 Le conseil de guerre : s'entourer de voix dissonantes",
+      "15.6 La simplicité stratégique : une phrase qui résume le cap",
+      "15.7 Le bilan stratégique trimestriel : regarder en arrière pour mieux viser"
+     ],
+     "exercices": [
+      "Réaliser une « cartographie du terrain » : forces, faiblesses, menaces, opportunités, mais aussi signaux faibles (tendances, bruits, intuitions)",
+      "Écrire 3 scénarios à 12 mois (optimiste, probable, pessimiste) et pour chacun une réponse en 3 actions",
+      "Nommer un « avocat du diable » dans l'équipe pour chaque décision stratégique : son rôle est de contester"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – LA CONFIANCE COMME FONDATION : cohésion, conflits et sécurité",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Bâtir la confiance : le compte bancaire émotionnel",
+     "objectif": "Comprendre la confiance comme un capital qui se construit par micro-actions quotidiennes et se détruit en un instant, et donner les outils pour l'alimenter.",
+     "sections": [
+      "16.1 La confiance comme équation : fiabilité × bienveillance × intégrité ÷ ego",
+      "16.2 Les dépôts et les retraits : les petits gestes qui comptent",
+      "16.3 La confiance se donne avant de se mériter : le pari du leader",
+      "16.4 Les quatre blessures de la confiance : promesse non tenue, secret trahi, injustice, absence",
+      "16.5 Réparer la confiance : le processus en 4 étapes (reconnaître, s'excuser, réparer, ré-engager)",
+      "16.6 La confiance au sein de l'équipe : les rituels de reliance",
+      "16.7 Le test de la chaise vide : parle-t-on de l'absent comme s'il était là ?"
+     ],
+     "exercices": [
+      "Identifier un « retrait » de confiance qu'on a fait récemment (promesse non tenue, oubli, parole maladroite) et le réparer explicitement sous 48 h",
+      "Instaurer un rituel hebdomadaire de 5 min en équipe : chacun dit un merci ou une reconnaissance à un autre membre",
+      "Pendant une semaine, noter chaque dépôt et retrait de confiance qu'on observe ; faire le bilan le vendredi"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "La sécurité psychologique : oser se tromper ensemble",
+     "objectif": "Créer un climat où l'erreur, la question naïve et la dissentiment sont possibles sans crainte, condition de l'innovation et de l'engagement.",
+     "sections": [
+      "17.1 Les travaux d'Amy Edmondson : pourquoi la peur tue la performance",
+      "17.2 Les 7 signes d'une équipe en insécurité psychologique",
+      "17.3 Le rôle du leader : modéliser la vulnérabilité et la curiosité",
+      "17.4 Le rituel de l'échec partagé : « ce que j'ai raté cette semaine »",
+      "17.5 La question qui ouvre : « Qu'est-ce qu'on ne me dit pas ? »",
+      "17.6 Gérer la faute grave sans détruire la sécurité : la frontière claire",
+      "17.7 Mesurer la sécurité psychologique : l'enquête en 7 questions"
+     ],
+     "exercices": [
+      "Lancer le rituel hebdomadaire du « fail Friday » : chacun partage un échec de la semaine et ce qu'il en tire (tour de table, 2 min par personne)",
+      "Poser la question « Qu'est-ce qu'on ne me dit pas ? » en réunion et accueillir les réponses sans justification ni représaille",
+      "Faire passer un mini-sondage anonyme de 7 questions sur la sécurité psychologique et partager les résultats avec l'équipe"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Le conflit comme carburant : désamorcer, transformer, construire",
+     "objectif": "Réhabiliter le conflit sain dans l'équipe : distinguer le désaccord productif de la guerre d'egos, et donner les outils de médiation au leader.",
+     "sections": [
+      "18.1 Les 5 styles de gestion de conflit (Thomas-Kilmann) : quand utiliser lequel",
+      "18.2 Le conflit de tâche vs le conflit de personne : la distinction vitale",
+      "18.3 La pyramide de Lencioni : pourquoi éviter le conflit est le pire ennemi de l'équipe",
+      "18.4 Le « rumble » de Brené Brown : oser la conversation qui fâche",
+      "18.5 La médiation en 4 étapes : écouter chaque partie, reformuler, chercher le besoin, co-construire",
+      "18.6 Le désaccord engagé : « je ne suis pas d'accord et je m'engage »",
+      "18.7 Quand le conflit est toxique : intervenir, recadrer, ou séparer"
+     ],
+     "exercices": [
+      "Identifier un conflit latent dans l'équipe et le nommer ouvertement en réunion : « J'ai l'impression qu'il y a une tension entre X et Y, est-ce qu'on peut en parler ? »",
+      "Pratiquer la médiation en binôme : un conflit simulé, 10 min de reformulation croisée",
+      "Établir avec l'équipe une « charte du désaccord » : comment on se dispute, ce qu'on ne fait jamais, comment on conclut"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Recruter, intégrer, faire grandir : le cycle de vie du collaborateur",
+     "objectif": "Penser le leadership comme un accompagnement du parcours individuel : attirer les bons profils, les intégrer, les développer et savoir les laisser partir.",
+     "sections": [
+      "19.1 Le recrutement comme acte de leadership : chercher le caractère avant le CV",
+      "19.2 L'intégration : les 90 premiers jours qui décident de tout",
+      "19.3 La découverte des forces : l'entretien « qu'est-ce qui vous allume ? »",
+      "19.4 Le plan de développement individuel : co-construit, vivant, révisable",
+      "19.5 Le feedback de progression : montrer le chemin parcouru",
+      "19.6 Savoir dire « ce poste n'est plus pour toi » avec dignité",
+      "19.7 Le départ comme célébration : l'alumni, la gratitude, la porte ouverte"
+     ],
+     "exercices": [
+      "Rédiger une « fiche d'intégration » pour le prochain arrivant : les 10 choses à savoir, les 5 personnes à rencontrer, le premier objectif à 30 jours",
+      "Mener un entretien de forces avec chaque membre de l'équipe ce mois-ci : « Quelles sont tes 3 forces ? Quand les as-tu utilisées pour la dernière fois ? »",
+      "Écrire une lettre de reconnaissance à un ancien collaborateur parti il y a plus d'un an"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Les rituels qui soudent : créer une culture vivante au quotidien",
+     "objectif": "Montrer que la culture ne se décrète pas mais se construit par des rituels répétés, des symboles partagés et des histoires collectives.",
+     "sections": [
+      "20.1 La culture comme somme des comportements tolérés et célébrés",
+      "20.2 Les 5 types de rituels : lancement, célébration, transition, crise, clôture",
+      "20.3 Le storytelling interne : les histoires qu'on se raconte sur nous-mêmes",
+      "20.4 Les symboles : mots, objets, lieux qui incarnent la culture",
+      "20.5 Le rituel du lundi et celui du vendredi : ancrer le rythme",
+      "20.6 Célébrer les petites victoires : le pouvoir du « bravo » public",
+      "20.7 Quand la culture dérive : les signaux d'alerte et la correction"
+     ],
+     "exercices": [
+      "Co-construire avec l'équipe 3 rituels hebdomadaires (lancement, célébration, rétrospective) et les tester pendant 4 semaines",
+      "Raconter en réunion l'histoire d'un succès collectif : qui a fait quoi, quel obstacle, quelle émotion (5 min)",
+      "Identifier un comportement toxique toléré depuis trop longtemps et le nommer publiquement avec une nouvelle règle claire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – LE LEADERSHIP QUI DURE : impact, transmission et liberté",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Le leader-jardinier : faire grandir sans façonner",
+     "objectif": "Passer du leadership de contrôle au leadership de cultivation : créer les conditions pour que chacun pousse selon sa nature, sans imposer sa propre forme.",
+     "sections": [
+      "21.1 La métaphore du jardin : soleil, eau, terre, patience",
+      "21.2 Identifier la « graine » de chacun : talents, moteurs, zone de génie",
+      "21.3 L'art du tuteurage : soutenir sans étouffer",
+      "21.4 La taille bienveillante : recadrer pour mieux grandir",
+      "21.5 Accepter les saisons : les périodes de jachère et de repos",
+      "21.6 Le leader qui s'efface : préparer son absence",
+      "21.7 Mesurer la croissance autrement que par les KPI : les signaux humains"
+     ],
+     "exercices": [
+      "Pour chaque membre de l'équipe, répondre par écrit : « Quelle est sa graine unique ? De quoi a-t-il besoin pour pousser ? Qu'est-ce qui le bloque ? »",
+      "Déléguer une responsabilité entière à un membre de l'équipe pendant 1 mois sans intervention, sauf demande de sa part",
+      "Tenir un « journal de jardinier » pendant 6 semaines : noter les signes de croissance de chaque personne"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Transmettre et multiplier : former des leaders, pas des suiveurs",
+     "objectif": "Faire du leader un multiplicateur : partager son savoir, créer des leaders autonomes et accepter que la relève fasse autrement (et peut-être mieux).",
+     "sections": [
+      "22.1 Le syndrome du « indispensable » : pourquoi on garde le pouvoir",
+      "22.2 Le modèle du compagnonnage : montrer, faire avec, laisser faire, laisser enseigner",
+      "22.3 Le mentorat croisé : apprendre aussi de ceux qu'on dirige",
+      "22.4 Documenter son savoir : les processus, les principes, les pièges",
+      "22.5 La relève : identifier, préparer, oser passer le relais",
+      "22.6 Le leader qui dit « je ne suis plus nécessaire » : la libération",
+      "22.7 L'héritage n'est pas un monument : c'est une manière de penser qui survit"
+     ],
+     "exercices": [
+      "Choisir un « protégé » dans l'équipe et lui transmettre une compétence clé en 4 étapes (montrer, faire avec, laisser faire, laisser enseigner) sur 2 mois",
+      "Rédiger un « manuel du leader » de 2 pages : vos 10 principes, vos 5 erreurs à éviter, vos 3 ressources favorites",
+      "Organiser une session de mentorat inversé : un membre junior vous apprend quelque chose pendant 30 minutes"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "L'éthique du pouvoir : influence, responsabilité et limites",
+     "objectif": "Interroger la dimension morale du leadership : jusqu'où influencer sans manipuler, comment assumer le pouvoir sans en abuser, et où poser ses propres limites.",
+     "sections": [
+      "23.1 Le pouvoir corrompt-il ? Les mécanismes de la dérive",
+      "23.2 L'influence éthique : la différence entre convaincre et contraindre",
+      "23.3 La responsabilité du leader : assumer les conséquences de ses choix",
+      "23.4 Le whistleblowing interne : créer les canaux pour la vérité",
+      "23.5 Les dilemmes du leader : performance vs humanité, court terme vs long terme",
+      "23.6 La limite personnelle : quand le leader doit dire « je ne peux plus »",
+      "23.7 Le serment du leader : écrire son code d'honneur"
+     ],
+     "exercices": [
+      "Écrire son « serment du leader » en 10 lignes : ce qu'on s'engage à faire, ce qu'on refuse absolument, ce qu'on demandera si on dévie",
+      "Identifier un dilemme éthique récent dans son activité et l'analyser par écrit : quelles valeurs étaient en tension ? Quelle décision a été prise ? À quel prix ?",
+      "Créer un « canal de vérité » anonyme dans l'équipe : une boîte à questions/suggestions sans filtre, consultée chaque semaine"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La gravité libératrice : diriger sans retenir, partir sans disparaître",
+     "objectif": "Synthèse et ouverture : concevoir un leadership qui élève puis libère, qui inspire sans créer de dépendance, et qui prépare le monde à continuer sans soi.",
+     "sections": [
+      "24.1 Le paradoxe final : plus on influence, plus on doit apprendre à lâcher",
+      "24.2 La gravité qui attire vs la gravité qui retient : la distinction cruciale",
+      "24.3 Les signes qu'on est devenu un goulot d'étranglement",
+      "24.4 Préparer l'après : la transition comme dernier acte de leadership",
+      "24.5 L'empreinte qu'on laisse : au-delà des résultats, les personnes transformées",
+      "24.6 La lettre au futur leader : ce que je veux qu'on retienne",
+      "24.7 L'invitation : votrepropre gravité : choisir qui vous voulez être pour ceux que vous dirigez"
+     ]
+    }
+   ]
+  }
+ ]
+}

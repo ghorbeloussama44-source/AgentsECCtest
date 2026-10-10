@@ -1,0 +1,104 @@
+[
+ {
+  "slug": "architecture-de-la-richesse",
+  "titre": "L'Architecture de la Richesse",
+  "sous_titre": "Le système mental complet pour bâtir une fortune durable — au-delà des secrets, au-delà des mythes",
+  "theme": "Mentalité et richesse",
+  "c1": "#1f3b34",
+  "c2": "#e9dcb6",
+  "pages": 501,
+  "mots": 139467,
+  "chapitres": 40,
+  "parties": [
+   "PARTIE I — LES FONDATIONS INVISIBLES : Comprendre la machine mentale de la richesse",
+   "PARTIE II — DÉMOLIR POUR RECONSTRUIRE : Éliminer les freins et reprogrammer",
+   "PARTIE III — L'ARCHITECTURE STRATÉGIQUE : Concevoir le plan de construction de sa fortune",
+   "PARTIE IV — L'EXÉCUTION IMPLACABLE : Passer de la stratégie à l'action quotidienne",
+   "PARTIE V — MULTIPLIER ET LEVER : Accélérer avec les systèmes, le levier et les autres",
+   "PARTIE VI — RÉSILIENCE ET DURABILITÉ : Traverser les tempêtes et durer",
+   "PARTIE VII — L'HÉRITAGE ET LA PLÉNITUDE : Au-delà de l'argent, la richesse complète"
+  ],
+  "fichier": "pdf/architecture-de-la-richesse.pdf",
+  "nom_fichier": "L-Architecture-de-la-Richesse-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "entreprise",
+  "titre": "L'Équation Entrepreneuriale",
+  "sous_titre": "De l'idée brute à l'empire rentable : le manuel de l'entrepreneur bâtisseur en Afrique, au Maghreb et en Europe",
+  "theme": "Entrepreneuriat",
+  "c1": "#7a2e1f",
+  "c2": "#f3e6d4",
+  "pages": 314,
+  "mots": 94607,
+  "chapitres": 24,
+  "parties": [
+   "Partie 1 : La Genèse - De l'Intuition à la Preuve",
+   "Partie 2 : La Traction - Conquérir le Marché et Générer du Cash",
+   "Partie 3 : La Mécanique - Finances, Systèmes et Équipes",
+   "Partie 4 : L'Empire - Croissance, Expansion et Pérennité"
+  ],
+  "fichier": "pdf/entreprise.pdf",
+  "nom_fichier": "L-Equation-Entrepreneuriale-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "immobilier",
+  "titre": "L'Édifice Locatif",
+  "sous_titre": "La méthode complète pour bâtir un patrimoine immobilier, pierre après pierre",
+  "theme": "Investissement immobilier",
+  "c1": "#2b3f63",
+  "c2": "#dfe6f2",
+  "pages": 313,
+  "mots": 91595,
+  "chapitres": 24,
+  "parties": [
+   "PARTIE I – LES FONDATIONS : Comprendre le terrain avant de poser la première pierre",
+   "PARTIE II – LES PLANS ET LE FINANCEMENT : Dessiner la stratégie et lever les fonds",
+   "PARTIE III – LE CHANTIER DE RECHERCHE : Trouver, analyser et sélectionner le bien",
+   "PARTIE IV – LA POSE DE LA PREMIÈRE PIERRE : Négocier, acheter et sécuriser",
+   "PARTIE V – L'EXPLOITATION DE L'ÉDIFICE : Gérer, optimiser et rentabiliser",
+   "PARTIE VI – L'ÉLÉVATION ET LA PROTECTION : Fiscalité, risques et expansion"
+  ],
+  "fichier": "pdf/immobilier.pdf",
+  "nom_fichier": "L-Edifice-Locatif-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "leadership",
+  "titre": "La Gravité du Leader",
+  "sous_titre": "Diriger, inspirer et faire grandir une équipe sans jamais la retenir",
+  "theme": "Leadership",
+  "c1": "#4a2c4f",
+  "c2": "#efe2ec",
+  "pages": 297,
+  "mots": 93204,
+  "chapitres": 24,
+  "parties": [
+   "PARTIE I – LE LEADER FACE À LUI-MÊME : forger sa gravité intérieure",
+   "PARTIE II – L'ART DE LA CONNEXION : communiquer pour influencer",
+   "PARTIE III – DIRIGER ET DÉCIDER : l'architecture de l'action collective",
+   "PARTIE IV – LA CONFIANCE COMME FONDATION : cohésion, conflits et sécurité",
+   "PARTIE V – LE LEADERSHIP QUI DURE : impact, transmission et liberté"
+  ],
+  "fichier": "pdf/leadership.pdf",
+  "nom_fichier": "La-Gravite-du-Leader-Oussama-Ghorbel.pdf"
+ },
+ {
+  "slug": "discipline",
+  "titre": "La Forge des Jours",
+  "sous_titre": "Maîtriser ses habitudes, son temps et son attention pour passer de l'intention à l'action, jour après jour",
+  "theme": "Discipline et productivité",
+  "c1": "#3d3a2f",
+  "c2": "#f0c75e",
+  "pages": 286,
+  "mots": 89535,
+  "chapitres": 24,
+  "parties": [
+   "PARTIE I – LES FONDATIONS : Comprendre la mécanique intime de la discipline",
+   "PARTIE II – L'ÉDIFICATION : Construire des habitudes qui durent",
+   "PARTIE III – LA MAÎTRISE : Gouverner son temps et son attention",
+   "PARTIE IV – LE PASSAGE : De l'intention à l'action",
+   "PARTIE V – LA DURÉE : Tenir, durer, progresser"
+  ],
+  "fichier": "pdf/discipline.pdf",
+  "nom_fichier": "La-Forge-des-Jours-Oussama-Ghorbel.pdf"
+ }
+]

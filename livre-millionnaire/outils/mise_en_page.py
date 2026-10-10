@@ -1,8 +1,8 @@
 
 #!/usr/bin/env python3
 """
-mise_en_page.py — Assemblage du livre PDF (Phase 3, correction 2/2).
-Usage : python3 mise_en_page.py plan.json chapitres_v2 livre.pdf [--corps 10]
+mise_en_page.py — Assemblage du livre PDF pour la collection.
+Usage : python3 mise_en_page.py plan.json dossier_chapitres sortie.pdf [--corps 11] [--auteur …] [--annee …] [--collection …]
 Format : 6x9 pouces (152,4 x 228,6 mm), police Times (WinAnsi).
 """
 
@@ -16,12 +16,12 @@ from pathlib import Path
 from reportlab.lib.pagesizes import inch
 from reportlab.lib.units import mm
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT
+from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT, TA_RIGHT
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import (
     BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer,
     PageBreak, NextPageTemplate, HRFlowable, Flowable,
-    Table, TableStyle,
+    Table, TableStyle, KeepTogether,
 )
 from reportlab.platypus.tableofcontents import TableOfContents
 from reportlab.pdfbase.pdfmetrics import registerFontFamily
@@ -55,26 +55,26 @@ registerFontFamily(
 # ─── Assainissement WinAnsi ──────────────────────────────────────────────────
 
 _WINANSI_REPLACEMENTS = [
-    ('\u202f', '\u00a0'),   # fine no-break space → no-break space
-    ('\u2009', '\u00a0'),   # thin space → no-break space
+    ('\u202f', '\u00a0'),   # fine no-break space -> no-break space
+    ('\u2009', '\u00a0'),   # thin space -> no-break space
     ('\u200a', ' '),        # hair space
-    ('\u2192', '->'),       # →
-    ('\u2190', '<-'),       # ←
-    ('\u2194', '<->'),      # ↔
-    ('\u2248', 'env.'),     # ≈
-    ('\u2260', '!='),       # ≠
-    ('\u2264', '<='),       # ≤
-    ('\u2265', '>='),       # ≥
-    ('\u2713', '-'),        # ✓
-    ('\u2714', '-'),        # ✔
-    ('\u2717', 'x'),        # ✗
-    ('\u2718', 'x'),        # ✘
-    ('\u25cf', '-'),        # ●
-    ('\u25cb', 'o'),        # ○
-    ('\u2022', '-'),        # • (en fait dans WinAnsi, mais au cas où)
-    ('\u2023', '-'),        # ‣
-    ('\u2043', '-'),        # ⁃
-    ('\u00a0', '\u00a0'),   # NBSP reste
+    ('\u2192', '->'),       # arrow right
+    ('\u2190', '<-'),       # arrow left
+    ('\u2194', '<->'),      # arrow both
+    ('\u2248', 'env.'),     # approx
+    ('\u2260', '!='),       # not equal
+    ('\u2264', '<='),       # lte
+    ('\u2265', '>='),       # gte
+    ('\u2713', '-'),        # check
+    ('\u2714', '-'),        # heavy check
+    ('\u2717', 'x'),        # cross
+    ('\u2718', 'x'),        # heavy cross
+    ('\u25cf', '-'),        # black circle
+    ('\u25cb', 'o'),        # white circle
+    ('\u2022', '-'),        # bullet
+    ('\u2023', '-'),        # triangular bullet
+    ('\u2043', '-'),        # hyphen bullet
+    ('\u00a0', '\u00a0'),   # NBSP stays
     ('\ufeff', ''),         # BOM
     ('\u200b', ''),         # zero-width space
     ('\u200c', ''),         # ZWNJ
@@ -85,11 +85,9 @@ def sanitize_winansi(text: str) -> str:
     """Remplace les caractères hors WinAnsi par des équivalents sûrs."""
     for old, new in _WINANSI_REPLACEMENTS:
         text = text.replace(old, new)
-    # Supprimer tout caractère hors plage WinAnsi restante
     out = []
     for ch in text:
         cp = ord(ch)
-        # WinAnsi couvre 0x00-0xFF + quelques caractères cp1252 spécifiques
         if cp <= 0xFF:
             out.append(ch)
         elif ch in '\u20ac\u201a\u0192\u201e\u2026\u2020\u2021\u02c6\u2030' \
@@ -163,14 +161,12 @@ def safe_paragraph(text: str, style) -> Paragraph:
 
 def strip_chapter_heading(md_text: str, chap_num: int) -> str:
     """
-    Supprime la première ligne ## si elle reprend le numéro du chapitre
-    (ex. '## Chapitre 3 — ...'). Évite le doublon avec le titre qu'on génère.
+    Supprime la première ligne ## si elle reprend le numéro du chapitre.
     """
     lines = md_text.split('\n')
     for i, line in enumerate(lines):
         if not line.strip():
             continue
-        # Première ligne non vide trouvée
         if re.match(
             r'^##\s+[Cc]hapitre\s+' + str(chap_num) + r'[\s\-—–:.]',
             line.strip()
@@ -180,7 +176,7 @@ def strip_chapter_heading(md_text: str, chap_num: int) -> str:
     return md_text
 
 def parse_markdown(md_text: str, styles: dict) -> list:
-    """Convertit le Markdown en flowables. Pas d'entrée TOC pour ##/###."""
+    """Convertit le Markdown en flowables."""
     flowables = []
     md_text = strip_think_tags(md_text)
     lines = md_text.split('\n')
@@ -198,7 +194,7 @@ def parse_markdown(md_text: str, styles: dict) -> list:
         list_items = []
         in_list = False
 
-    code_fence = '`' * 3  # trois backticks sans les écrire littéralement
+    code_fence = '`' * 3
 
     while i < len(lines):
         line = lines[i]
@@ -232,7 +228,7 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
-        # Titres ##, ###, #### (pas de TOC, juste du rendu)
+        # Titres ##, ###, ####
         heading_match = re.match(r'^(#{2,4})\s+(.*)', stripped)
         if heading_match:
             flush_list()
@@ -246,7 +242,7 @@ def parse_markdown(md_text: str, styles: dict) -> list:
             i += 1
             continue
 
-        # Titre # (niveau 1 dans le markdown, peu probable mais géré)
+        # Titre #
         h1_match = re.match(r'^#\s+(.*)', stripped)
         if h1_match:
             flush_list()
@@ -347,7 +343,6 @@ def make_styles(corps: float, leading: float) -> dict:
         alignment=TA_JUSTIFY, spaceAfter=corps * 0.55, spaceBefore=0,
         firstLineIndent=corps * 1.5,
     )
-    # Titres de sections internes (##, ###) — PAS d'entrée TOC
     s['h2'] = ParagraphStyle(
         'H2', fontName=FONT_SERIF_BOLD,
         fontSize=corps * 1.3, leading=corps * 1.65,
@@ -375,19 +370,16 @@ def make_styles(corps: float, leading: float) -> dict:
         alignment=TA_JUSTIFY, leftIndent=18, spaceAfter=corps * 0.3,
         bulletIndent=6,
     )
-    # Titre de chapitre (entrée TOC niveau 1)
     s['chap_title'] = ParagraphStyle(
         'ChapTitle', fontName=FONT_SERIF_BOLD,
         fontSize=corps * 1.6, leading=corps * 2.0,
         alignment=TA_LEFT, spaceBefore=corps * 0.5, spaceAfter=corps * 1.0,
     )
-    # Titre de partie (page de partie, entrée TOC niveau 0)
     s['part_title'] = ParagraphStyle(
         'PartTitle', fontName=FONT_SERIF_BOLD,
         fontSize=20, leading=26, alignment=TA_CENTER,
         spaceBefore=0, spaceAfter=12,
     )
-    # Titres Introduction / Conclusion / Bibliographie (TOC niveau 0)
     s['sect_title'] = ParagraphStyle(
         'SectTitle', fontName=FONT_SERIF_BOLD,
         fontSize=corps * 1.6, leading=corps * 2.0,
@@ -402,28 +394,42 @@ def make_styles(corps: float, leading: float) -> dict:
         'Subtitle', fontName=FONT_SERIF_ITALIC,
         fontSize=14, leading=18, alignment=TA_CENTER, spaceAfter=8,
     )
-    # TOC
+    s['author_name'] = ParagraphStyle(
+        'AuthorName', fontName=FONT_SERIF_BOLD,
+        fontSize=16, leading=21, alignment=TA_CENTER, spaceAfter=8,
+    )
+    s['collection_name'] = ParagraphStyle(
+        'CollectionName', fontName=FONT_SERIF_ITALIC,
+        fontSize=11, leading=14, alignment=TA_CENTER,
+        textColor=HexColor("#555555"),
+    )
+    # Copyright
+    s['copyright'] = ParagraphStyle(
+        'Copyright', fontName=FONT_SERIF,
+        fontSize=8.5, leading=11.5, alignment=TA_LEFT,
+        spaceAfter=8, textColor=HexColor("#333333"),
+    )
+    # TOC avec retrait à droite pour le numéro de page
     s['toc_level0'] = ParagraphStyle(
         'TOCLevel0', fontName=FONT_SERIF_BOLD,
         fontSize=corps, leading=leading, spaceBefore=7, spaceAfter=2,
+        rightIndent=28,
     )
     s['toc_level1'] = ParagraphStyle(
         'TOCLevel1', fontName=FONT_SERIF,
         fontSize=corps * 0.92, leading=leading * 0.92,
         leftIndent=14, spaceBefore=1, spaceAfter=1,
+        rightIndent=28,
     )
-    # Bibliographie
     s['bib_entry'] = ParagraphStyle(
         'BibEntry', fontName=FONT_SERIF, fontSize=corps * 0.92,
         leading=leading * 0.92, alignment=TA_JUSTIFY,
         spaceAfter=corps * 0.7, leftIndent=12,
     )
-    # Avertissement
     s['warning'] = ParagraphStyle(
         'Warning', fontName=FONT_SERIF, fontSize=corps, leading=leading,
         alignment=TA_JUSTIFY, spaceAfter=corps,
     )
-    # Cellule tableau
     s['table_cell'] = ParagraphStyle(
         'TableCell', fontName=FONT_SERIF, fontSize=8.5, leading=11,
         alignment=TA_LEFT,
@@ -441,7 +447,7 @@ class RunningTitle(Flowable):
         self.height = 0
 
     def draw(self):
-        pass  # rien à dessiner
+        pass
 
 # ─── Template de document ────────────────────────────────────────────────────
 
@@ -451,12 +457,10 @@ class BookDocTemplate(BaseDocTemplate):
         self._current_title = ""
 
     def afterFlowable(self, flowable):
-        # Mise à jour du titre courant
         if isinstance(flowable, RunningTitle):
             self._current_title = flowable.title
             return
 
-        # Notifications TOC
         if isinstance(flowable, Paragraph):
             style_name = flowable.style.name
             text = flowable.getPlainText()
@@ -469,25 +473,33 @@ class BookDocTemplate(BaseDocTemplate):
 
 # ─── En-tête / pied de page ──────────────────────────────────────────────────
 
-def header_footer(canvas, doc):
-    """Titre courant en haut, numéro de page en bas."""
-    canvas.saveState()
-    page_num = canvas.getPageNumber()
+def make_header_footer(annee: int, auteur: str):
+    """Fabrique la fonction header_footer avec les bons paramètres."""
+    def header_footer(canvas, doc):
+        canvas.saveState()
+        page_num = canvas.getPageNumber()
 
-    # Pied : numéro de page
-    canvas.setFont(FONT_SERIF, 8.5)
-    canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(page_num))
+        # Pied : numéro de page centré + mention copyright
+        canvas.setFont(FONT_SERIF, 8.5)
+        canvas.drawCentredString(PAGE_W / 2, 10 * mm, str(page_num))
 
-    # En-tête : titre courant (à partir de la page 4)
-    if page_num > 3 and doc._current_title:
-        canvas.setFont(FONT_SERIF_ITALIC, 8)
-        canvas.drawCentredString(PAGE_W / 2, PAGE_H - 11 * mm,
-                                 doc._current_title)
-        canvas.setStrokeColor(HexColor("#AAAAAA"))
-        canvas.setLineWidth(0.4)
-        canvas.line(MARGIN_LR, PAGE_H - 13 * mm,
-                    PAGE_W - MARGIN_LR, PAGE_H - 13 * mm)
-    canvas.restoreState()
+        # Mention copyright en petit sous le numéro
+        canvas.setFont(FONT_SERIF, 6.5)
+        canvas.drawCentredString(
+            PAGE_W / 2, 7 * mm,
+            f"\u00a9 {annee} {auteur}")
+
+        # En-tête : titre courant (à partir de la page 4)
+        if page_num > 3 and doc._current_title:
+            canvas.setFont(FONT_SERIF_ITALIC, 8)
+            canvas.drawCentredString(PAGE_W / 2, PAGE_H - 11 * mm,
+                                     doc._current_title)
+            canvas.setStrokeColor(HexColor("#AAAAAA"))
+            canvas.setLineWidth(0.4)
+            canvas.line(MARGIN_LR, PAGE_H - 13 * mm,
+                        PAGE_W - MARGIN_LR, PAGE_H - 13 * mm)
+        canvas.restoreState()
+    return header_footer
 
 def no_header_footer(canvas, doc):
     """Pages sans en-tête ni pied (page de titre, pages de partie)."""
@@ -506,7 +518,7 @@ def read_file_safe(path: str) -> str:
 # ─── Construction du livre ───────────────────────────────────────────────────
 
 def build_book(plan_path: str, chapitres_dir: str, output_path: str,
-               corps: float):
+               corps: float, auteur: str, annee: int, collection: str):
     leading = LEADING_DEFAULT if corps == BODY_DEFAULT else corps * 1.25
     styles = make_styles(corps, leading)
 
@@ -533,11 +545,15 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
         topMargin=MARGIN_TB,
         bottomMargin=MARGIN_TB,
         title=titre,
-        author="Qwen 3.8 Max Thinking via Dialagram",
+        author=auteur,
+        subject=sous_titre,
+        creator=collection,
     )
 
+    header_footer_fn = make_header_footer(annee, auteur)
+
     tmpl_content = PageTemplate(id='content', frames=[frame_main],
-                                onPage=header_footer)
+                                onPage=header_footer_fn)
     tmpl_blank = PageTemplate(id='blank', frames=[frame_blank],
                               onPage=no_header_footer)
     doc.addPageTemplates([tmpl_blank, tmpl_content])
@@ -546,21 +562,42 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
 
     # ── Page de titre ──────────────────────────────────────────────────────
     story.append(NextPageTemplate('blank'))
-    story.append(Spacer(1, 55 * mm))
+    story.append(Spacer(1, 50 * mm))
     story.append(safe_paragraph(escape_xml(sanitize_winansi(titre)),
                                 styles['title_page']))
     if sous_titre:
         story.append(Spacer(1, 8))
         story.append(safe_paragraph(escape_xml(sanitize_winansi(sous_titre)),
                                     styles['subtitle']))
-    story.append(Spacer(1, 25 * mm))
-    mention_style = ParagraphStyle(
-        'Mention', fontName=FONT_SERIF, fontSize=9.5, leading=13,
-        alignment=TA_CENTER, textColor=HexColor("#555555"),
-    )
+    story.append(Spacer(1, 20 * mm))
+    story.append(safe_paragraph(escape_xml(sanitize_winansi(auteur)),
+                                styles['author_name']))
+    story.append(Spacer(1, 55 * mm))
+    story.append(safe_paragraph(escape_xml(sanitize_winansi(collection)),
+                                styles['collection_name']))
+    story.append(PageBreak())
+
+    # ── Page de copyright (verso de la page de titre) ──────────────────────
     story.append(safe_paragraph(
-        "R\u00e9dig\u00e9 par Qwen 3.8 Max Thinking via Dialagram",
-        mention_style))
+        f"\u00a9 {annee} {auteur}. Tous droits r\u00e9serv\u00e9s.",
+        styles['copyright']))
+    story.append(safe_paragraph(
+        "Aucune partie de cet ouvrage ne peut \u00eatre reproduite, "
+        "stock\u00e9e ou transmise, sous quelque forme ou par quelque "
+        "moyen que ce soit, sans l\u2019autorisation \u00e9crite "
+        "pr\u00e9alable de l\u2019auteur, sauf courtes citations dans "
+        "le cadre d\u2019une critique ou d\u2019une recension, "
+        "conform\u00e9ment aux lois sur la propri\u00e9t\u00e9 "
+        "intellectuelle.",
+        styles['copyright']))
+    story.append(safe_paragraph(
+        f"Ouvrage con\u00e7u et dirig\u00e9 par {auteur}, "
+        "r\u00e9dig\u00e9 avec l\u2019assistance d\u2019outils "
+        "d\u2019intelligence artificielle.",
+        styles['copyright']))
+    story.append(safe_paragraph(
+        f"{collection} \u2014 Premi\u00e8re \u00e9dition, {annee}.",
+        styles['copyright']))
     story.append(PageBreak())
 
     # ── Page d'avertissement ───────────────────────────────────────────────
@@ -606,6 +643,7 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
     toc = TableOfContents()
     toc.levelStyles = [styles['toc_level0'], styles['toc_level1']]
     toc.dotsMinLevel = 0
+    toc.rightColumnWidth = 32
     story.append(toc)
     story.append(PageBreak())
 
@@ -621,23 +659,26 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
             story.extend(flowables)
         story.append(PageBreak())
 
-    # ── Parties et chapitres ───────────────────────────────────────────────
-    chap_counter = 1
+    # ── Parties et chapitres (nombre variable, lu depuis plan.json) ────────
     for part_idx, partie in enumerate(parties, start=1):
         partie_titre = partie.get("titre", f"Partie {part_idx}")
-        partie_label = partie_titre if partie_titre.lower().startswith("partie") else f"Partie {part_idx} – {partie_titre}"
+        if partie_titre.lower().startswith("partie"):
+            partie_label = partie_titre
+        else:
+            partie_label = f"Partie {part_idx} \u2013 {partie_titre}"
 
         # Page de partie (template blank, pas d'en-tête)
         story.append(NextPageTemplate('blank'))
         story.append(Spacer(1, 70 * mm))
-        story.append(safe_paragraph(escape_xml(sanitize_winansi(partie_label)),
-                                    styles['part_title']))
+        story.append(safe_paragraph(
+            escape_xml(sanitize_winansi(partie_label)),
+            styles['part_title']))
         story.append(PageBreak())
         story.append(NextPageTemplate('content'))
 
         chapitres = partie.get("chapitres", [])
         for chap in chapitres:
-            chap_num = chap.get("numero", chap_counter)
+            chap_num = chap.get("numero", part_idx * 100 + chapitres.index(chap) + 1)
             chap_titre = chap.get("titre", f"Chapitre {chap_num}")
             chap_label = f"Chapitre {chap_num} \u2013 {chap_titre}"
 
@@ -656,7 +697,6 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
             if os.path.isfile(chap_file):
                 md = read_file_safe(chap_file)
                 if md:
-                    # Supprimer le ## Chapitre N doublon
                     md = strip_chapter_heading(md, chap_num)
                     flowables = parse_markdown(md, styles)
                     story.extend(flowables)
@@ -667,7 +707,6 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
                     styles['body']))
 
             story.append(PageBreak())
-            chap_counter += 1
 
     # ── Conclusion ─────────────────────────────────────────────────────────
     concl_path = os.path.join(chapitres_dir, "99_conclusion.md")
@@ -683,32 +722,18 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
 
     # ── Bibliographie commentée ────────────────────────────────────────────
     story.append(RunningTitle("Bibliographie"))
-    bib_title_style = ParagraphStyle(
-        'BibTitle', fontName=FONT_SERIF_BOLD,
-        fontSize=16, leading=21, alignment=TA_CENTER,
-        spaceBefore=6, spaceAfter=14,
-    )
-    story.append(safe_paragraph("Bibliographie comment\u00e9e",
-                                bib_title_style))
-    # On utilise sect_title pour l'entrée TOC (niveau 0)
-    # Mais on a déjà le titre visible ci-dessus ; on ajoute un invisible
-    # pour la TOC via un paragraphe de style SectTitle de taille nulle.
-    # En fait, utilisons directement le bib_title avec style SectTitle :
-    # Correction : on remplace le paragraphe ci-dessus.
-    # -> On supprime le dernier flowable et on remet avec le bon style.
-    story.pop()  # retire le Paragraph bib_title_style
     story.append(safe_paragraph("Bibliographie comment\u00e9e",
                                 styles['sect_title']))
     story.append(Spacer(1, 6))
 
     for entry in bibliographie:
-        auteur = escape_xml(sanitize_winansi(entry.get("auteur", "")))
+        auteur_ref = escape_xml(sanitize_winansi(entry.get("auteur", "")))
         titre_ref = escape_xml(sanitize_winansi(entry.get("titre", "")))
-        annee = escape_xml(str(entry.get("annee", "")))
+        annee_ref = escape_xml(str(entry.get("annee", "")))
         idee = escape_xml(sanitize_winansi(entry.get("idee", "")))
         apport = escape_xml(sanitize_winansi(entry.get("apport", "")))
 
-        ref_line = f"<b>{auteur}</b>, <i>{titre_ref}</i> ({annee})."
+        ref_line = f"<b>{auteur_ref}</b>, <i>{titre_ref}</i> ({annee_ref})."
         story.append(safe_paragraph(ref_line, styles['bib_entry']))
         if idee:
             story.append(safe_paragraph(
@@ -733,7 +758,6 @@ def build_book(plan_path: str, chapitres_dir: str, output_path: str,
     print(f"\u2714 {output_path} g\u00e9n\u00e9r\u00e9 \u2014 {n_pages} pages.")
     return n_pages
 
-# ─── CLI ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(
@@ -745,6 +769,16 @@ def main():
     parser.add_argument("--corps", type=float, default=BODY_DEFAULT,
                         help=f"Taille du corps en pt (d\u00e9faut "
                              f"{BODY_DEFAULT})")
+    parser.add_argument("--auteur", type=str,
+                        default="Oussama Ghorbel",
+                        help="Nom de l\u2019auteur "
+                             "(d\u00e9faut : Oussama Ghorbel)")
+    parser.add_argument("--annee", type=int, default=2026,
+                        help="Ann\u00e9e de publication (d\u00e9faut : 2026)")
+    parser.add_argument("--collection", type=str,
+                        default="Biblioth\u00e8que Oussama Ghorbel",
+                        help="Nom de la collection "
+                             "(d\u00e9faut : Biblioth\u00e8que Oussama Ghorbel)")
     args = parser.parse_args()
 
     if not os.path.isfile(args.plan):
@@ -755,7 +789,8 @@ def main():
               file=sys.stderr)
         sys.exit(1)
 
-    build_book(args.plan, args.chapitres, args.output, args.corps)
+    build_book(args.plan, args.chapitres, args.output, args.corps,
+               args.auteur, args.annee, args.collection)
 
 if __name__ == "__main__":
     main()
