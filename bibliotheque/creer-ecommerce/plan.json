@@ -1,0 +1,616 @@
+{
+ "titre": "Boutique Rentable : Le Système Complet pour Lancer et Faire Exploser Votre E-commerce",
+ "sous_titre": "De la sélection du produit idéal à l'optimisation chirurgicale du tunnel de vente — 24 étapes concrètes pour générer vos premiers 10 000 € mensuels",
+ "bibliographie": [
+  {
+   "auteur": "Russell Brunson",
+   "titre": "DotCom Secrets",
+   "annee": "2015",
+   "idee": "Décompose l'architecture des tunnels de vente en ligne : pages de capture, séquences e-mail, upsells et value ladders pour maximiser la valeur de chaque visiteur.",
+   "apport": "Notre livre reprendra la logique de value ladder et l'adaptera aux boutiques e-commerce (panier moyen, cross-sell post-achat, fidélisation)."
+  },
+  {
+   "auteur": "Russell Brunson",
+   "titre": "Expert Secrets",
+   "annee": "2017",
+   "idee": "Montre comment transformer une expertise en mouvement communautaire via le storytelling et la création d'une audience engagée.",
+   "apport": "Intégration d'un chapitre sur la construction d'une marque narrative autour de la boutique pour différencier l'offre."
+  },
+  {
+   "auteur": "Russell Brunson",
+   "titre": "Traffic Secrets",
+   "annee": "2020",
+   "idee": "Recense les canaux d'acquisition (rêvés, possédés, gagnés) et explique comment remplir un tunnel avec du trafic qualifié.",
+   "apport": "Structure de notre partie acquisition : SEO, réseaux sociaux, publicités payantes, partenariats, avec priorisation par budget."
+  },
+  {
+   "auteur": "Alex Hormozi",
+   "titre": "$100M Offers",
+   "annee": "2021",
+   "idee": "Formule mathématique de la valeur perçue : résultat rêvé × probabilité perçue ÷ (délai × effort). Une offre irrésistible élimine la concurrence.",
+   "apport": "Chapitre dédié à la construction de l'offre produit : bundles, garanties, bonus, framing du prix pour maximiser la conversion."
+  },
+  {
+   "auteur": "Seth Godin",
+   "titre": "This Is Marketing",
+   "annee": "2018",
+   "idee": "Le marketing moderne consiste à servir une tribu spécifique plutôt qu'à crier plus fort. La permission et la générosité priment sur l'interruption.",
+   "apport": "Philosophie de niche qui irrigue tout le livre : choisir un micro-marché, parler à une personne précise, créer de la confiance avant la vente."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "The 4-Hour Workweek",
+   "annee": "2007",
+   "idee": "Automatisation, délégation et tests à faible coût (mini-tests produits) permettent de valider un business avant d'investir massivement.",
+   "apport": "Méthode de validation produit par pré-vente et landing page test avant tout stock, intégrée dans la partie sélection produit."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "Boucle Construire-Mesurer-Apprendre : lancer un MVP, collecter des données réelles, pivoter ou persévérer.",
+   "apport": "Cadre itératif appliqué à la boutique : versions successives du site, A/B tests continuels, indicateurs de validation."
+  },
+  {
+   "auteur": "Steve Blank",
+   "titre": "The Four Steps to the Epiphany",
+   "annee": "2005",
+   "idee": "Le développement client (Customer Development) précède le développement produit : sortir du bâtiment, interviewer, valider les hypothèses.",
+   "apport": "Scripts d'interview client et validation de la demande avant le lancement, chapitre 3."
+  },
+  {
+   "auteur": "Donald Miller",
+   "titre": "Building a StoryBrand",
+   "annee": "2017",
+   "idee": "Le client est le héros de l'histoire ; la marque est le guide. Un message clair en 7 étapes narratives transforme la communication.",
+   "apport": "Framework StoryBrand appliqué aux fiches produit, à la page d'accueil et aux e-mails de la boutique."
+  },
+  {
+   "auteur": "Sabri Suby",
+   "titre": "Sell Like Crazy",
+   "annee": "2019",
+   "idee": "Système Godfather en 8 phases : de l'inconnu froid à l'acheteur fidèle grâce à des aimants à prospects, des séquences de nurturing et des offres à seuil bas.",
+   "apport": "Adaptation du système en 8 phases au parcours e-commerce : lead magnet → e-mail → première commande → LTV."
+  },
+  {
+   "auteur": "Perry Marshall",
+   "titre": "80/20 Sales and Marketing",
+   "annee": "2013",
+   "idee": "80 % des résultats viennent de 20 % des efforts. Identifier les segments, mots-clés et canaux les plus rentables et éliminer le reste.",
+   "apport": "Chapitre analytique : tableau de bord 80/20, identification des produits et canaux à forte marge, élagage."
+  },
+  {
+   "auteur": "Dan Kennedy",
+   "titre": "The Ultimate Sales Letter",
+   "annee": "2004",
+   "idee": "Structure éprouvée de la lettre de vente : accroche, problème, agitation, solution, preuve, offre, urgence, appel à l'action.",
+   "apport": "Template de fiche produit et de page de vente réutilisé dans les chapitres rédactionnels."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence: The Psychology of Persuasion",
+   "annee": "1984",
+   "idee": "Six principes de persuasion (réciprocité, engagement, preuve sociale, autorité, rareté, sympathie) gouvernent les décisions d'achat.",
+   "apport": "Intégration des leviers psychologiques dans chaque étape du tunnel : avis clients, compteurs, garanties, storytelling."
+  },
+  {
+   "auteur": "Jonah Berger",
+   "titre": "Contagious: Why Things Catch On",
+   "annee": "2013",
+   "idee": "Six ingrédients (STEPPS) rendent un contenu viral : monnaie sociale, déclencheurs, émotion, public, valeur pratique, histoires.",
+   "apport": "Chapitre sur le marketing organique et le bouche-à-oreille numérique pour réduire la dépendance aux publicités payantes."
+  },
+  {
+   "auteur": "Gary Vaynerchuk",
+   "titre": "Crushing It!",
+   "annee": "2018",
+   "idee": "Documenter plutôt que créer : publier massivement sur chaque plateforme sociale adaptée à son audience pour bâtir une marque personnelle et commerciale.",
+   "apport": "Stratégie de contenu organique pour la boutique : coulisses, UGC, micro-contenus quotidiens sur TikTok/Instagram/Pinterest."
+  },
+  {
+   "auteur": "Ryan Deiss & Russ Henberry",
+   "titre": "The Digital Business Launchpad",
+   "annee": "2016",
+   "idee": "Tout business numérique repose sur quatre piliers : audience, offre, conversion, livraison. Chaque pilier se mesure et s'optimise séparément.",
+   "apport": "Architecture du livre suit cette logique en quatre piliers, avec KPIs dédiés à chaque phase."
+  },
+  {
+   "auteur": "Gary Halbert",
+   "titre": "The Boron Letters",
+   "annee": "1984",
+   "idee": "Le copywriting direct repose sur la faim du marché ( starving crowd ), la clarté du message et la répétition. L'écriture se fait en parlant.",
+   "apport": "Principes de rédaction appliqués aux fiches produit, e-mails transactionnels et pages de vente de la boutique."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie I — Fondations : Mindset, Niche et Validation",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le Mindset du Boutiqueur Rentable",
+     "objectif": "Installer les croyances, habitudes et indicateurs mentaux indispensables pour traiter la boutique en ligne comme une entreprise et non un hobby.",
+     "sections": [
+      "Pourquoi 90 % des e-commerces échouent (et comment être dans les 10 %)",
+      "La règle des 1 000 vrais fans appliquée à l'e-commerce",
+      "Penser en systèmes : la boutique comme machine à cash-flow",
+      "Les 5 KPIs à graver dans votre tableau de bord mental",
+      "Gérer le syndrome de l'objet brillant et la paralysie par l'analyse",
+      "Votre contrat d'engagement envers vous-même"
+     ],
+     "exercices": [
+      "Écrire votre 'lettre de mission boutique' en 200 mots (pour qui, quoi, pourquoi)",
+      "Calculer votre chiffre d'affaires cible mensuel et le décomposer en commandes × panier moyen",
+      "Lister 3 croyances limitantes sur l'e-commerce et les reformuler en croyances aidantes",
+      "Créer un tableau de bord vierge (Google Sheets) avec les 5 KPIs : visiteurs, taux de conversion, panier moyen, coût d'acquisition, marge nette"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Choisir Sa Niche : Le Croisement Passion × Profit × Faisabilité",
+     "objectif": "Guider le lecteur dans l'identification d'une niche suffisamment rentable, pas trop concurrentielle et alignée avec ses ressources.",
+     "sections": [
+      "Niche, sous-niche et micro-niche : trouver le bon niveau de granularité",
+      "La matrice Passion / Compétence / Demande / Concurrence",
+      "Analyser la concurrence sans se décourager : la méthode des 5 concurrents",
+      "Tendances éphémères vs marchés pérennes : lire les signaux",
+      "Valider la taille du marché avec des outils gratuits (Google Trends, AnswerThePublic, Ubersuggest)",
+      "Étude de cas : trois niches décortiquées de A à Z"
+     ],
+     "exercices": [
+      "Brainstormer 10 niches potentielles puis les filtrer avec la matrice à 4 critères",
+      "Réaliser une fiche concurrentielle sur 5 boutiques existantes (trafic estimé, positionnement, faiblesses)",
+      "Vérifier le volume de recherche de 10 mots-clés niche et noter les résultats",
+      "Rédiger un paragraphe 'Pourquoi cette niche est faite pour moi et pour le marché'"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Valider la Demande Avant d'Investir un Centime",
+     "objectif": "Éliminer le risque financier en prouvant que des clients sont prêts à payer avant de créer le stock ou le site.",
+     "sections": [
+      "Le principe du Lean Startup appliqué à la boutique en ligne",
+      "Construire une landing page de validation en 2 heures (Carrd, Systeme.io)",
+      "Lancer une micro-campagne publicitaire de test (20-50 €)",
+      "Interviewer 10 clients potentiels : le script en 7 questions",
+      "Pré-vente et crowdfunding : encaisser avant de produire",
+      "Interpréter les résultats : seuils de validation et décision go / no-go"
+     ],
+     "exercices": [
+      "Créer une landing page de test avec formulaire e-mail et bouton 'Précommander'",
+      "Rédiger le script d'interview client et planifier 10 appels en 5 jours",
+      "Lancer une campagne Facebook Ads à 5 €/jour pendant 5 jours et noter CPL et taux de clic",
+      "Remplir la grille de décision : si X leads en Y jours → je lance / je pivote"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Le Business Model Canvas Spécial E-commerce",
+     "objectif": "Cartographier l'intégralité du modèle économique de la boutique sur une seule page pour visualiser les leviers de rentabilité.",
+     "sections": [
+      "Adapter le Business Model Canvas à la vente en ligne",
+      "Définir sa proposition de valeur unique (UVP) en une phrase",
+      "Canaux d'acquisition et de distribution : choisir sans s'éparpiller",
+      "Structure de coûts fixe et variable : le vrai prix d'une commande",
+      "Modèle de revenus : vente unitaire, abonnement, bundle, marketplace",
+      "Calculer le seuil de rentabilité et le nombre de commandes critiques"
+     ],
+     "exercices": [
+      "Remplir le Business Model Canvas sur une feuille A3 en 30 minutes chrono",
+      "Calculer le coût de revient total d'un produit (achat + shipping + pub + packaging + retours)",
+      "Écrire 3 versions de sa proposition de valeur et les tester sur 5 personnes",
+      "Déterminer le panier moyen minimum pour être rentable à 100 commandes/mois"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie II — Sélection des Produits et Chaîne d'Approvisionnement",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La Méthode SPARK pour Dénicher le Produit Gagnant",
+     "objectif": "Fournir un framework reproductible (Solution, Preuve, Audience, Rentabilité, Kiff) pour évaluer et sélectionner chaque produit.",
+     "sections": [
+      "Les 5 critères SPARK expliqués avec exemples concrets",
+      "Recherche produit sur AliExpress, Alibaba, 1688 et salons professionnels",
+      "Espionner les best-sellers : TikTok Creative Center, Amazon Movers & Shakers, Pinterest Trends",
+      "Évaluer la marge : viser 60-70 % de marge brute minimum",
+      "Produit unique vs gamme : les avantages de chaque stratégie",
+      "Les 10 erreurs fatales de sélection (contrefaçon, fragilité, saisonnalité extrême)"
+     ],
+     "exercices": [
+      "Sourcer 20 produits potentiels et les noter sur la grille SPARK (score /25)",
+      "Commander 3 échantillons chez 3 fournisseurs différents et comparer qualité/délai",
+      "Calculer la marge nette projetée pour les 5 produits les mieux notés",
+      "Rédiger la fiche 'persona acheteur' du produit n°1 : qui, quand, pourquoi, objection principale"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Négocier avec les Fournisseurs comme un Acheteur Pro",
+     "objectif": "Maîtriser les techniques de négociation, les incoterms et la gestion des risques fournisseurs pour sécuriser sa chaîne d'approvisionnement.",
+     "sections": [
+      "Trouver et vérifier un fournisseur fiable : checklist en 12 points",
+      "Le premier contact : message type et erreurs à éviter",
+      "Négocier prix, MOQ et délais : les 3 leviers",
+      "Incoterms, droits de douane et TVA import : comprendre sans être juriste",
+      "Mettre en place un contrôle qualité avant expédition",
+      "Plan B : avoir toujours deux fournisseurs par produit critique"
+     ],
+     "exercices": [
+      "Rédiger un e-mail de premier contact professionnel en anglais et en français",
+      "Simuler une négociation : lister 5 concessions possibles et 3 lignes rouges",
+      "Créer un tableau comparatif de 3 fournisseurs (prix, MOQ, délai, certifications)",
+      "Rédiger une checklist contrôle qualité à envoyer au fournisseur avant chaque expédition"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Dropshipping, Stock Propre ou Print-on-Demand : Choisir Son Modèle Logistique",
+     "objectif": "Comparer objectivement les trois grands modèles logistiques et aider le lecteur à choisir celui adapté à son capital, sa niche et ses ambitions.",
+     "sections": [
+      "Dropshipping : avantages, limites et comment le professionnaliser",
+      "Stock propre (FBA, 3PL, garage) : quand et comment franchir le pas",
+      "Print-on-Demand : la niche créative à faible risque",
+      "Modèle hybride : commencer en dropshipping, basculer en stock",
+      "Choisir et intégrer un prestataire logistique (ShipStation, Sendcloud, Amazon FBA)",
+      "Gérer les retours et le SAV sans y laisser sa marge"
+     ],
+     "exercices": [
+      "Remplir la matrice de décision logistique (capital, volume, contrôle, risque)",
+      "Demander un devis à 2 prestataires 3PL et comparer les coûts par commande",
+      "Calculer le coût d'un retour produit (transport + remise en stock + perte de temps)",
+      "Rédiger une politique de retour claire et rassurante en 150 mots"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Créer une Offre Irrésistible : Bundles, Bonus et Ancrage de Prix",
+     "objectif": "Transformer un simple produit en une offre perçue comme exceptionnelle en appliquant les principes de valeur d'Hormozi et de psychologie de Cialdini.",
+     "sections": [
+      "La formule de valeur perçue : Résultat × Probabilité ÷ (Délai × Effort)",
+      "Construire un bundle qui augmente le panier moyen de 40 %",
+      "Bonus, cadeaux et seuils de livraison gratuite : l'art de l'ajout perçu",
+      "Ancrage de prix, prix barré et framing : présenter le prix sans culpabilité",
+      "Garanties et réversibilité du risque : 'Satisfait ou remboursé' qui convertit",
+      "Créer l'urgence et la rareté de manière éthique"
+     ],
+     "exercices": [
+      "Concevoir 3 formules de bundle pour votre produit phare et calculer la marge de chaque formule",
+      "Rédiger la section 'Ce que vous recevez' avec liste à puces et valeur chiffrée de chaque élément",
+      "Écrire 3 variantes de présentation de prix (ancrage élevé, comparaison, coût par jour)",
+      "Définir votre garantie (durée, conditions) et la formuler en une phrase mémorable"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie III — Construire la Boutique qui Convertit",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Choisir et Configurer Sa Plateforme E-commerce",
+     "objectif": "Guider le choix technique (Shopify, WooCommerce, PrestaShop, solutions françaises) et la configuration initiale sans se perdre dans les options.",
+     "sections": [
+      "Comparatif honnête : Shopify vs WooCommerce vs PrestaShop vs solutions SAAS françaises",
+      "Les 10 réglages critiques du premier jour (devise, TVA, expédition, e-mails)",
+      "Choisir un thème / template orienté conversion (pas juste joli)",
+      "Installer les 7 applications indispensables (avis, upsell, relance panier, analytics)",
+      "Sécuriser sa boutique : SSL, RGPD, mentions légales, CGV",
+      "Checklist de lancement technique en 25 points"
+     ],
+     "exercices": [
+      "Créer un compte d'essai sur la plateforme choisie et installer le thème",
+      "Configurer les 3 zones de livraison avec leurs tarifs",
+      "Rédiger les CGV et mentions légales (ou utiliser un générateur) et les faire relire",
+      "Installer et paramétrer une application d'avis clients et une de relance panier abandonné"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Fiches Produit qui Vendent : Copywriting et Visuels",
+     "objectif": "Apprendre à rédiger des fiches produit persuasives et à produire des visuels qui déclenchent l'achat, en s'appuyant sur les frameworks de Dan Kennedy et Donald Miller.",
+     "sections": [
+      "La structure AIDA appliquée à la fiche produit",
+      "Titre, sous-titre, bénéfices vs caractéristiques : la hiérarchie de l'information",
+      "Le storytelling produit : donner une histoire à chaque article",
+      "Photographie produit : 7 clichés essentiels (fond blanc, lifestyle, détail, échelle, UGC)",
+      "Vidéo courte : script de 15 secondes qui montre le produit en action",
+      "Preuve sociale intégrée : avis, photos clients, badges de confiance",
+      "SEO on-page de la fiche : mots-clés, balises, URL"
+     ],
+     "exercices": [
+      "Rédiger la fiche produit complète du produit n°1 en suivant le template AIDA",
+      "Shooter ou faire shooter les 7 photos types avec un smartphone et un fond blanc",
+      "Écrire un script vidéo de 15 secondes et le filmer",
+      "Optimiser la balise title et la meta description pour le mot-clé principal du produit"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Architecture du Site : Parcours Utilisateur et Pages Clés",
+     "objectif": "Structurer la navigation, la page d'accueil et les pages secondaires pour que chaque clic rapproche le visiteur de l'achat.",
+     "sections": [
+      "La règle des 3 clics et le principe de friction minimale",
+      "Page d'accueil : hero, preuve sociale, catégories, réassurance",
+      "Pages collections : filtres, tri et merchandising visuel",
+      "Page panier et checkout : éliminer chaque point de friction",
+      "Pages de confiance : À propos, FAQ, livraison, contact",
+      "Mobile-first : 70 % du trafic est mobile, concevoir en conséquence"
+     ],
+     "exercices": [
+      "Dessiner le wireframe de la page d'accueil sur papier (hero, 3 sections, footer)",
+      "Parcourir le checkout de sa boutique en mode navigation privée et lister 5 frictions",
+      "Rédiger la page 'À propos' en utilisant le framework StoryBrand (client héros, marque guide)",
+      "Tester la vitesse du site sur PageSpeed Insights et corriger les 3 problèmes majeurs"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Branding et Identité Visuelle : Être Mémorable en 3 Secondes",
+     "objectif": "Créer une identité de marque cohérente (nom, logo, couleurs, ton) qui inspire confiance et se distingue dans un marché saturé.",
+     "sections": [
+      "Nom de boutique : critères de mémorabilité et vérification de disponibilité",
+      "Logo et palette de couleurs : psychologie et cohérence",
+      "Ton de voix : rédiger un mini-guide éditorial en 10 règles",
+      "Packaging et unboxing : transformer la livraison en expérience",
+      "Cohérence cross-canal : site, réseaux sociaux, e-mails, packaging",
+      "Déposer sa marque et protéger ses visuels (INPI, droits d'auteur)"
+     ],
+     "exercices": [
+      "Brainstormer 20 noms, en sélectionner 3 et vérifier leur disponibilité (domaine + INPI)",
+      "Créer une palette de 4 couleurs et 2 polices sur Canva ou Figma",
+      "Rédiger le guide de ton en 10 phrases : 'Nous disons / Nous ne disons pas'",
+      "Concevoir un mockup de packaging (boîte, papier de soie, carte de remerciement)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie IV — Acquérir du Trafic Qualifié",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "SEO E-commerce : Être Trouvé Sans Payer",
+     "objectif": "Mettre en place une stratégie de référencement naturel qui génère un trafic gratuit et croissant sur 6 à 18 mois.",
+     "sections": [
+      "Recherche de mots-clés transactionnels et informationnels pour l'e-commerce",
+      "Architecture SEO : silos de catégories, pages piliers, maillage interne",
+      "Optimisation technique : vitesse, Core Web Vitals, sitemap, données structurées",
+      "Blog intégré : 4 types d'articles qui attirent et convertissent",
+      "Netlinking éthique : partenariats, relations presse, annuaires de niche",
+      "Mesurer et itérer : Search Console, positions, CTR"
+     ],
+     "exercices": [
+      "Constituer une liste de 50 mots-clés (20 transactionnels, 30 informationnels) avec volume et difficulté",
+      "Rédiger le brief SEO de 3 articles de blog piliers",
+      "Installer et configurer Google Search Console + un plugin SEO",
+      "Écrire un article de 1 200 mots optimisé pour un mot-clé informationnel"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Publicité Payante : Meta Ads et Google Shopping Maîtrisés",
+     "objectif": "Lancer des campagnes publicitaires rentables sur Facebook/Instagram et Google avec un budget maîtrisé et une logique de test itératif.",
+     "sections": [
+      "Structure de campagne : TOFU / MOFU / BOFU appliquée à l'e-commerce",
+      "Meta Ads : ciblage, créas, copy et format qui convertissent en 2024-2025",
+      "Google Shopping et Performance Max : flux produit et optimisation",
+      "Budget, enchères et ROAS cible : la mécanique financière",
+      "Le cycle de test : 3 créas × 2 audiences × 2 budgets, puis scale",
+      "Retargeting dynamique : rattraper les 97 % qui n'achètent pas à la première visite"
+     ],
+     "exercices": [
+      "Créer un compte Meta Business Manager et installer le Pixel sur la boutique",
+      "Concevoir 3 visuels publicitaires (statique, carrousel, vidéo courte) pour le produit phare",
+      "Lancer une campagne test à 10 €/jour et configurer les colonnes de suivi ROAS",
+      "Mettre en place une audience de retargeting 'visiteurs 7 jours sans achat'"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Réseaux Sociaux Organiques : TikTok, Instagram, Pinterest",
+     "objectif": "Construire une présence sociale qui génère du trafic gratuit, de la preuve sociale et une communauté engagée sans budget publicitaire.",
+     "sections": [
+      "Choisir 1 à 2 plateformes maximum : où est VOTRE client ?",
+      "La stratégie 'Documenter > Créer' : coulisses, processus, résultats",
+      "Formats qui performent : reels, TikTok natifs, épingles Pinterest, carrousels",
+      "Calendrier éditorial : 5 posts/semaine sans y passer 3 heures",
+      "UGC et micro-influenceurs : obtenir du contenu authentique à moindre coût",
+      "Transformer les abonnés en acheteurs : liens, codes promo, lives shopping"
+     ],
+     "exercices": [
+      "Définir les 3 piliers de contenu de la marque et planifier 15 posts",
+      "Filmer et publier 3 vidéos courtes (15-30 s) dans la semaine",
+      "Contacter 5 micro-influenceurs (1 000-10 000 abonnés) avec un message type",
+      "Créer un tableau Pinterest de 20 épingles liées à la niche"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "E-mail Marketing et SMS : Le Canal à 4 000 % de ROI",
+     "objectif": "Construire une liste e-mail dès le jour 1 et mettre en place les séquences automatisées qui génèrent 20 à 30 % du chiffre d'affaires.",
+     "sections": [
+      "Pourquoi l'e-mail reste le canal le plus rentable de l'e-commerce",
+      "Construire sa liste : pop-up, lead magnet, quiz, roue de la fortune (éthique)",
+      "La séquence de bienvenue en 5 e-mails (J0 à J7)",
+      "Relance panier abandonné : les 3 e-mails qui récupèrent 10-15 % des ventes",
+      "Séquence post-achat : fidéliser, demander un avis, proposer un upsell",
+      "Segmentation et campagnes : VIP, inactifs, anniversaire, saisons",
+      "SMS marketing : compléments, règles RGPD et bonnes pratiques"
+     ],
+     "exercices": [
+      "Configurer un pop-up de capture e-mail avec un code de bienvenue de 10 %",
+      "Rédiger les 5 e-mails de la séquence de bienvenue",
+      "Écrire les 3 e-mails de relance panier abandonné (1 h, 24 h, 72 h)",
+      "Segmenter la liste en 3 groupes (nouveaux, acheteurs 1x, VIP) et envoyer une campagne test"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie V — Le Tunnel de Vente : Optimiser Chaque Étape",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "Cartographier Son Tunnel : De l'Inconnu au Client Fidèle",
+     "objectif": "Visualiser et formaliser le parcours client complet pour identifier les fuites et les opportunités d'optimisation à chaque étape.",
+     "sections": [
+      "Les 5 étapes du tunnel e-commerce : Awareness → Intérêt → Décision → Achat → Fidélité",
+      "Cartographier les points de contact : quel canal, quel message, quelle page",
+      "Identifier les 3 fuites majeures de VOTRE tunnel actuel",
+      "Définir un KPI par étape et un objectif chiffré",
+      "Le concept de 'micro-engagement' : faire dire oui 7 fois avant l'achat",
+      "Outils de tracking : UTM, Google Analytics 4, heatmaps (Hotjar, Clarity)"
+     ],
+     "exercices": [
+      "Dessiner le tunnel complet sur une grande feuille avec chaque page et chaque e-mail",
+      "Installer Google Analytics 4 et Microsoft Clarity sur la boutique",
+      "Analyser les 30 derniers jours : à quelle étape perd-on le plus de visiteurs ?",
+      "Fixer un objectif de conversion par étape et noter la date de revue (J+30)"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Optimiser la Conversion : CRO et A/B Testing",
+     "objectif": "Appliquer une démarche scientifique d'optimisation du taux de conversion pour augmenter les ventes sans augmenter le trafic.",
+     "sections": [
+      "Les 7 leviers CRO les plus impactants en e-commerce",
+      "Hiérarchie visuelle, CTA et microcopy : les détails qui changent tout",
+      "Réduire la friction checkout : guest checkout, autofill, moins de champs",
+      "Mettre en place un test A/B : hypothèse, variante, durée, significativité",
+      "Outils : Google Optimize (alternatives), VWO, Convert",
+      "Lire les heatmaps et les session recordings pour comprendre le comportement",
+      "Cadence de test : un test par semaine, documenter, itérer"
+     ],
+     "exercices": [
+      "Lister 10 hypothèses d'optimisation classées par impact estimé × facilité",
+      "Lancer un A/B test sur le CTA de la page produit (couleur, texte ou placement)",
+      "Analyser 20 session recordings et noter les 3 patterns de friction récurrents",
+      "Créer un journal de tests CRO (hypothèse, résultat, décision) dans un Notion ou Sheets"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Upsell, Cross-sell et Order Bump : Augmenter le Panier Moyen",
+     "objectif": "Implémenter des mécaniques de vente additionnelle qui augmentent le panier moyen de 20 à 50 % sans coût d'acquisition supplémentaire.",
+     "sections": [
+      "La différence entre upsell, cross-sell, order bump et downsell",
+      "Quand et où proposer : page produit, panier, post-achat immédiat",
+      "Règles d'or : pertinence, prix inférieur à 30 % du panier, simplicité",
+      "Applications et implémentation technique (Shopify, WooCommerce)",
+      "Le post-purchase upsell : la page la plus sous-exploitée de l'e-commerce",
+      "Mesurer l'impact : taux d'acceptation, incrément de panier moyen"
+     ],
+     "exercices": [
+      "Concevoir 3 offres d'upsell / cross-sell adaptées à votre catalogue",
+      "Configurer un order bump sur la page panier (produit complémentaire à petit prix)",
+      "Créer une page post-achat avec une offre à -30 % valable 10 minutes",
+      "Suivre le panier moyen sur 30 jours et calculer l'incrément généré"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Fidélisation et LTV : Transformer un Acheteur en Client à Vie",
+     "objectif": "Mettre en place les systèmes de fidélisation, programmes VIP et expériences post-achat qui multiplient la valeur à vie du client.",
+     "sections": [
+      "Pourquoi acquérir coûte 5 à 7 fois plus cher que fidéliser",
+      "Programme de fidélité : points, niveaux, récompenses tangibles",
+      "E-mails post-achat : séquence J+3, J+14, J+30, J+60",
+      "Communauté et engagement : groupe privé, ambassadeurs, co-création",
+      "Abonnement et replenishment : transformer l'achat unique en revenu récurrent",
+      "Mesurer la LTV et le ratio LTV/CAC pour piloter la croissance"
+     ],
+     "exercices": [
+      "Concevoir un programme de fidélité à 3 niveaux avec avantages concrets",
+      "Rédiger la séquence de 4 e-mails post-achat",
+      "Calculer la LTV moyenne actuelle et fixer un objectif à 12 mois",
+      "Mettre en place une demande d'avis automatisée à J+7 avec incitation (code promo)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie VI — Piloter, Scaler et Pérenniser",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Tableau de Bord et Finances : Piloter par les Chiffres",
+     "objectif": "Installer une routine de pilotage financier et opérationnel pour prendre des décisions éclairées et éviter les pièges de trésorerie.",
+     "sections": [
+      "Les 12 indicateurs à suivre chaque semaine (CA, marge, ROAS, CAC, LTV, taux de retour…)",
+      "Construire son tableau de bord automatisé (Google Sheets, Looker Studio, Triple Whale)",
+      "Comprendre son compte de résultat e-commerce en 10 lignes",
+      "Gérer la trésorerie : délais fournisseurs, stock, saisonnalité",
+      "Quand et comment augmenter le budget publicitaire sans casser la rentabilité",
+      "Les 5 ratios d'alerte qui doivent déclencher une action immédiate"
+     ],
+     "exercices": [
+      "Créer un tableau de bord hebdomadaire avec les 12 KPIs dans Google Sheets",
+      "Remplir un compte de résultat simplifié sur le mois écoulé",
+      "Calculer le CAC actuel et le comparer à la LTV (objectif LTV/CAC > 3)",
+      "Définir 3 règles de gestion de trésorerie et les afficher au-dessus du bureau"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Automatiser et Déléguer : Passer de 60 h/semaine à 20 h",
+     "objectif": "Identifier les tâches à automatiser ou déléguer pour libérer du temps stratégique et éviter le burnout du solo-entrepreneur.",
+     "sections": [
+      "La matrice Eisenhower appliquée à l'e-commerce : automatiser, déléguer, supprimer",
+      "Automatisations clés : e-mails, publications sociales, facturation, suivi colis",
+      "Outils no-code : Zapier, Make, Shopify Flow, Klaviyo",
+      "Recruter son premier VA (assistant virtuel) : où, comment, pour quelles tâches",
+      "SOP et documentation : créer des process pour que tout tourne sans vous",
+      "Externaliser la logistique, le SAV et la création de contenu"
+     ],
+     "exercices": [
+      "Lister toutes les tâches hebdomadaires et les classer en 4 quadrants (automatiser / déléguer / faire / supprimer)",
+      "Mettre en place 3 automatisations via Zapier ou Make (ex : commande → e-mail → facture)",
+      "Rédiger 2 SOP (procédures opérationnelles standard) pour les tâches les plus répétitives",
+      "Publier une annonce de recrutement VA et rédiger le brief de mission"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Scaler : Multiplier par 5 Sans Casser la Machine",
+     "objectif": "Préparer la croissance rapide en consolidant les fondations : stock, logistique, service client, diversification des canaux.",
+     "sections": [
+      "Les 4 piliers du scale : trafic, conversion, panier moyen, fréquence d'achat",
+      "Diversifier les canaux d'acquisition pour ne pas dépendre d'une seule source",
+      "Passer de 10 à 100 commandes/jour : logistique, stockage, personnel",
+      "Internationalisation : vendre en Europe et au-delà (langues, devises, conformité)",
+      "Marketplaces (Amazon, Etsy, Cdiscount) : canal complémentaire ou risque ?",
+      "Lever des fonds, réinvestir ou autofinancer : choisir sa stratégie de croissance"
+     ],
+     "exercices": [
+      "Réaliser un audit des 4 piliers et identifier le pilier le plus faible",
+      "Ouvrir un canal d'acquisition secondaire et y allouer 15 % du budget",
+      "Négocier un tarif logistique dégressif avec le prestataire pour le volume ×5",
+      "Rédiger un plan de croissance à 12 mois avec jalons trimestriels"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Vision Long Terme : Marque, Éthique et Liberté Financière",
+     "objectif": "Inscrire la boutique dans une vision durable : construction d'une marque forte, pratiques éthiques, et alignement du business avec le projet de vie de l'entrepreneur.",
+     "sections": [
+      "Passer de 'boutique qui vend' à 'marque qu'on aime' : les 5 transitions",
+      "Éco-responsabilité et éthique : un avantage concurrentiel, pas une contrainte",
+      "Protéger et valoriser sa marque : INPI, propriété intellectuelle, cession",
+      "Préparer la sortie ou la transmission : valorisation d'un e-commerce",
+      "L'équilibre vie pro / vie perso : éviter le piège de la boutique 24/7",
+      "Votre plan d'action 90 jours : les 15 premières actions concrètes"
+     ],
+     "exercices": [
+      "Rédiger la vision de la marque à 3 ans en une page (mission, valeurs, impact souhaité)",
+      "Identifier 3 actions éco-responsables à mettre en place dans les 6 mois",
+      "Construire le plan d'action 90 jours avec 15 tâches datées et priorisées",
+      "Écrire une lettre à soi-même à lire dans 12 mois : objectifs, fiertés, ajustements"
+     ]
+    }
+   ]
+  }
+ ]
+}
