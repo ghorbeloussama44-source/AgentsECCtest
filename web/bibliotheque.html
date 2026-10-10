@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bibliothèque Oussama Ghorbel</title>
+<meta name="description" content="La collection de livres pratiques d'Oussama Ghorbel, à télécharger en PDF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout : une étagère. Navigation, en-tête de collection, recherche, puis une grille de couvertures ; chaque livre = couverture + fiche + lien PDF */
+:root {
+  --bg: #eceeea; --panel: #f8f9f6; --ink: #1c2421; --muted: #5a6560; --line: #d3d8d2;
+  --accent: #2f5d50; --accent-ink: #ffffff;
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --r: 4px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #141917; --panel: #1c2320; --ink: #e6ebe7; --muted: #9aa69f; --line: #2d3632;
+  --accent: #7fb8a6; --accent-ink: #0f1714; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 var(--body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: grid; gap: 28px; }
+h1, h2 { margin: 0; text-wrap: balance; }
+nav.site { display: flex; flex-wrap: wrap; gap: 6px; }
+nav.site a { text-decoration: none; font-size: .84rem; font-weight: 600; color: var(--ink); border: 1px solid var(--line); background: var(--panel); padding: 6px 12px; border-radius: 999px; }
+nav.site a[aria-current] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+header.top { display: grid; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+.eyebrow { font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.05; }
+header.top p { margin: 0; max-width: 62ch; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: .88rem; color: var(--muted); }
+.stats b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.filter input { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 8px 12px; width: min(100%, 340px); }
+.shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 28px 24px; }
+.book { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 16px; align-items: start; }
+.cover { aspect-ratio: 2 / 3; max-width: 100%; border-radius: 2px 6px 6px 2px; background: var(--c1); color: var(--c2);
+  padding: 12px 10px 10px 14px; display: grid; grid-template-rows: auto 1fr auto; gap: 6px;
+  box-shadow: inset 6px 0 0 rgba(0,0,0,.18), 0 1px 2px rgba(0,0,0,.18), 0 8px 18px -10px rgba(0,0,0,.45); }
+.cover .col { font-size: .5rem; letter-spacing: .16em; text-transform: uppercase; opacity: .8; }
+.cover .t { font-family: var(--display); font-weight: 700; font-size: .98rem; line-height: 1.08; align-self: center; overflow-wrap: anywhere; }
+.cover .a { font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; border-top: 1px solid currentColor; padding-top: 5px; opacity: .9; }
+.info { display: grid; gap: 8px; min-width: 0; }
+.info h2 { font-family: var(--display); font-weight: 500; font-size: 1.3rem; line-height: 1.15; }
+.info .sub { margin: 0; font-size: .9rem; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta b { color: var(--ink); font-weight: 600; }
+.dl { justify-self: start; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; background: var(--accent); color: var(--accent-ink);
+  font: 600 .86rem var(--body); padding: 8px 14px; border-radius: var(--r); }
+.dl:hover { filter: brightness(1.08); }
+.dl svg { width: 15px; height: 15px; }
+a:focus-visible, input:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.note { font-size: .9rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .78rem; color: var(--muted); display: grid; gap: 4px; }
+@media (max-width: 420px) { .book { grid-template-columns: 104px minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site" aria-label="Pages"><a href="/">Atelier</a><a href="/bibliotheque" aria-current="page">Bibliothèque</a><a href="/tableau">Tableau de bord</a></nav>
+  <header class="top">
+    <span class="eyebrow">Collection · Première édition 2026</span>
+    <h1>Bibliothèque Oussama Ghorbel</h1>
+    <p>Des livres pratiques sur l'argent, l'entreprise, les compétences et la façon de mener sa vie. Chaque titre se télécharge en PDF, prêt à lire ou à imprimer. La collection s'agrandit chaque jour.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+  <div class="filter"><input id="q" type="search" placeholder="Chercher un titre ou un thème" aria-label="Chercher un titre ou un thème"></div>
+  <main class="shelf" id="shelf"><p class="note">Chargement de la collection…</p></main>
+  <footer>
+    <span>© 2026 Oussama Ghorbel. Tous droits réservés. Aucune reproduction, même partielle, sans l'autorisation écrite de l'auteur.</span>
+    <span>Ouvrages conçus et dirigés par Oussama Ghorbel, rédigés avec l'assistance d'outils d'intelligence artificielle. Contenu éducatif, sans valeur de conseil financier, juridique ou fiscal personnalisé.</span>
+  </footer>
+</div>
+<script>
+const OWNER = "ghorbeloussama44-source", REPO = "AgentsECCtest", LIVRES = "claude/millionaire-book-500-pages-kb2v7u";
+const PAL = [["#1f3b34","#e9dcb6"],["#7a2e1f","#f3e6d4"],["#2b3f63","#dfe6f2"],["#4a2c4f","#efe2ec"],["#3d3a2f","#f0c75e"],["#6b2737","#f4d8d0"],["#14505c","#d6eef0"],["#5b4a1e","#efe3bf"],["#2d2a4a","#e3def6"],["#24453a","#cfe7d9"],["#5a3a22","#f2dcc4"],["#33415c","#f1e4c3"]];
+const fmt = (n) => Number(n || 0).toLocaleString("fr-FR");
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const raw = (b, p) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${b}/${p.split("/").map(encodeURIComponent).join("/")}`;
+const hash = (s) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+const ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10"/></svg>';
+let BOOKS = [];
+
+async function charger() {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/etat.json?ref=etat-usine`, { headers: { Accept: "application/vnd.github.raw+json" } });
+    if (r.ok) return (await r.json()).catalogue;
+  } catch (e) {}
+  return (await (await fetch(raw("etat-usine", "etat.json") + "?t=" + Date.now())).json()).catalogue;
+}
+
+function render() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const list = BOOKS.filter((b) => !q || (b.titre + " " + b.theme + " " + b.sous_titre).toLowerCase().includes(q));
+  document.getElementById("stats").innerHTML = `<span><b>${BOOKS.length}</b> livres</span><span><b>${fmt(BOOKS.reduce((a, b) => a + (b.pages || 0), 0))}</b> pages</span>`;
+  document.getElementById("shelf").innerHTML = list.map((b) => {
+    const [c1, c2] = PAL[hash(b.slug) % PAL.length];
+    return `<article class="book">
+      <div class="cover" style="--c1:${c1};--c2:${c2}" aria-hidden="true"><span class="col">Bibliothèque O. Ghorbel</span><span class="t">${esc(b.titre)}</span><span class="a">Oussama Ghorbel</span></div>
+      <div class="info">
+        <span class="eyebrow">${esc(b.theme)}</span><h2>${esc(b.titre)}</h2><p class="sub">${esc(b.sous_titre)}</p>
+        <div class="meta"><span><b>${b.pages}</b> pages</span>${b.mots ? `<span><b>${fmt(b.mots)}</b> mots</span>` : ""}</div>
+        <a class="dl" href="${raw(LIVRES, b.pdf)}" target="_blank" rel="noopener">${ICON}Télécharger le PDF</a>
+      </div></article>`;
+  }).join("") || '<p class="note">Aucun livre ne correspond.</p>';
+}
+
+document.getElementById("q").addEventListener("input", render);
+charger().then((c) => { BOOKS = c || []; render(); })
+  .catch(() => { document.getElementById("shelf").innerHTML = '<p class="note">La collection n\'a pas pu être chargée. Rechargez la page dans un instant.</p>'; });
+</script>
+</body>
+</html>
