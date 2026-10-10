@@ -1,0 +1,585 @@
+{
+ "titre": "Le Flux Libéré",
+ "sous_titre": "Éliminer les gaspillages, fluidifier les opérations et transformer durablement votre organisation grâce au Lean Management",
+ "bibliographie": [
+  {
+   "auteur": "Taiichi Ohno",
+   "titre": "Toyota Production System: Beyond Large-Scale Production",
+   "annee": "1988",
+   "idee": "Ohno, père du TPS, expose les piliers Juste-à-temps et Jidoka, la traque systématique des 7 gaspillages (muda) et la logique de production tirée par la demande réelle.",
+   "apport": "Notre livre reprendra la taxonomie originelle des muda et la philosophie « aller voir sur le terrain » comme point d'ancrage de toute démarche Lean."
+  },
+  {
+   "auteur": "James P. Womack & Daniel T. Jones",
+   "titre": "Lean Thinking: Banish Waste and Create Wealth in Your Corporation",
+   "annee": "1996",
+   "idee": "Formalise les cinq principes Lean (valeur, chaîne de valeur, flux, tirée, perfection) à travers des études de cas sectorielles.",
+   "apport": "Structure narrative du livre : chaque partie suivra la progression de ces cinq principes, appliqués à des contextes francophones contemporains."
+  },
+  {
+   "auteur": "James P. Womack, Daniel T. Jones & Daniel Roos",
+   "titre": "The Machine That Changed the World",
+   "annee": "1990",
+   "idee": "Étude comparative MIT montrant la supériorité du système Toyota sur la production de masse ; introduit le terme « Lean Production ».",
+   "apport": "Fournira le socle historique et les données chiffrées du chapitre 1 pour contextualiser la naissance du Lean."
+  },
+  {
+   "auteur": "Jeffrey K. Liker",
+   "titre": "The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer",
+   "annee": "2004",
+   "idee": "Décline 14 principes managériaux en 4P (Philosophie, Processus, Personnes/Partenaires, Résolution de problèmes).",
+   "apport": "Inspirera la partie « dimension humaine » et le chapitre sur la culture Lean ; cadre 4P utilisé comme grille d'auto-diagnostic."
+  },
+  {
+   "auteur": "Masaaki Imai",
+   "titre": "Kaizen: The Key to Japan's Competitive Success",
+   "annee": "1986",
+   "idee": "Le Kaizen (amélioration continue par petits pas) comme philosophie managériale quotidienne impliquant chaque collaborateur.",
+   "apport": "Alimentera les rituels d'amélioration continue, les tableaux de suggestions et la section sur l'engagement des équipes."
+  },
+  {
+   "auteur": "Michael L. George",
+   "titre": "Lean Six Sigma: Combining Six Sigma Quality with Lean Speed",
+   "annee": "2002",
+   "idee": "Fusion du Lean (vitesse, flux) et du Six Sigma (variabilité, qualité statistique) pour un programme d'excellence opérationnelle complet.",
+   "apport": "Un chapitre dédié aux passerelles Lean / Six Sigma ; outils DMAIC adaptés au contexte Lean."
+  },
+  {
+   "auteur": "Shigeo Shingo",
+   "titre": "A Study of the Toyota Production System from an Industrial Engineering Viewpoint",
+   "annee": "1989",
+   "idee": "Ingénieur clé du TPS, Shingo détaille le SMED (changement de série en moins de 10 min) et le Poka-Yoke (anti-erreur).",
+   "apport": "Chapitre pratique sur la réduction des temps de changement et la conception de dispositifs anti-erreur dans les processus administratifs."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "Transpose le Lean à l'innovation : boucle Build-Measure-Learn, produit minimum viable, pivot validé par l'apprentissage.",
+   "apport": "Un chapitre sur l'esprit Lean appliqué aux projets internes et à l'innovation de processus."
+  },
+  {
+   "auteur": "Mike Rother & John Shook",
+   "titre": "Learning to See: Value Stream Mapping to Add Value and Eliminate Muda",
+   "annee": "1999",
+   "idee": "Manuel de référence pour cartographier la chaîne de valeur (VSM) et identifier les gaspillages bout en bout.",
+   "apport": "Méthodologie VSM détaillée dans un chapitre entier avec modèle de cartographie adapté aux services."
+  },
+  {
+   "auteur": "John Shook",
+   "titre": "Managing to Learn: Using the A3 Management Process",
+   "annee": "2008",
+   "idee": "Le rapport A3 comme outil de résolution de problèmes, de communication et de développement du leadership Lean.",
+   "apport": "Template A3 fourni en exercice ; chapitre sur la résolution structurée de problèmes (PDCA + A3)."
+  },
+  {
+   "auteur": "Karen Martin & Mike Osterling",
+   "titre": "Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation",
+   "annee": "2013",
+   "idee": "Étend la VSM au-delà de l'atelier : bureaux, services, santé ; insiste sur l'alignement du leadership.",
+   "apport": "Cas VSM dans les fonctions support (RH, finance, informatique) ; check-list d'alignement dirigeant."
+  },
+  {
+   "auteur": "James P. Womack",
+   "titre": "Gemba Walks: A Lean Window on Transforming the World",
+   "annee": "2011",
+   "idee": "Recueil d'essais sur l'importance d'aller sur le terrain (gemba) pour comprendre la valeur et les problèmes réels.",
+   "apport": "Chapitre sur les tournées terrain, l'écoute active et la posture du manager-coach Lean."
+  },
+  {
+   "auteur": "Drew Locher",
+   "titre": "Lean Thinking for the Office",
+   "annee": "2008",
+   "idee": "Adapte les outils Lean (5S, flux tiré, cellules) aux environnements de bureau et aux processus transactionnels.",
+   "apport": "Exercices de 5S administratif, kanban de bureau et standardisation des tâches intellectuelles."
+  },
+  {
+   "auteur": "Mark Graban",
+   "titre": "Lean Hospitals: Improving Quality, Patient Safety, and Employee Engagement",
+   "annee": "2009",
+   "idee": "Application du Lean en milieu hospitalier : sécurité, flux patients, engagement soignant.",
+   "apport": "Un chapitre sectoriel montrant l'universalité du Lean (santé, éducation, secteur public)."
+  },
+  {
+   "auteur": "Karen Martin",
+   "titre": "Clarity First: How Smart Leaders and Organizations Achieve Outstanding Performance",
+   "annee": "2018",
+   "idee": "La clarté organisationnelle (sens, priorités, rôles) comme prérequis à toute amélioration Lean durable.",
+   "apport": "Chapitre sur la clarification de la valeur perçue par le client et l'alignement stratégique avant le déploiement."
+  },
+  {
+   "auteur": "Pascal Dennis",
+   "titre": "Getting the Right Things Done: A Leader's Guide to Planning and Execution",
+   "annee": "2006",
+   "idee": "Le système de management Lean (hoshin kanri, réunions quotidiennes, management visuel) comme moteur d'exécution.",
+   "apport": "Chapitre sur le déploiement de la stratégie Lean et les rituels de pilotage quotidien."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie I – Comprendre : les fondations du Lean et la promesse du flux",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "D'où vient le Lean ? Genèse d'une révolution silencieuse",
+     "objectif": "Ancrer le lecteur dans l'histoire du Lean (Toyota, MIT, diffusion mondiale) pour qu'il comprenne que le Lean n'est pas une mode mais un système éprouvé, et démystifier les idées reçues.",
+     "sections": [
+      "1.1 – De Toyoda à Ohno : la naissance du TPS dans un Japon d'après-guerre",
+      "1.2 – Le MIT et « The Machine That Changed the World » : la révélation au monde occidental",
+      "1.3 – Les cinq principes fondateurs (valeur, chaîne de valeur, flux, tirée, perfection)",
+      "1.4 – Idées reçues : « Le Lean, c'est réduire les effectifs », « c'est réservé à l'industrie »",
+      "1.5 – Pourquoi le Lean est plus pertinent que jamais à l'ère de la complexité",
+      "1.6 – Ce que ce livre va (et ne va pas) vous apporter : mode d'emploi"
+     ],
+     "exercices": [
+      "Quiz d'auto-positionnement : où en est votre organisation sur l'échelle Lean (grille 5 niveaux)",
+      "Cartographie mentale : listez 5 frustrations opérationnelles récurrentes dans votre service",
+      "Écriture d'une « lettre d'intention » : pourquoi vous voulez vous engager dans cette lecture"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La valeur vue par le client : le seul point de départ qui vaille",
+     "objectif": "Apprendre à définir la valeur du point de vue du client final (interne ou externe) et à distinguer activité à valeur ajoutée, activité nécessaire sans valeur et gaspillage pur.",
+     "sections": [
+      "2.1 – Qu'est-ce que la valeur ? Définition client vs. définition interne",
+      "2.2 – Les trois catégories d'activités : VA, NVA nécessaire, NVA pure (muda)",
+      "2.3 – La Voix du Client (VOC) : enquêtes, entretiens, observation",
+      "2.4 – Cartographier le parcours client pour repérer les irritants",
+      "2.5 – Le concept de « client interne » : chaque service est fournisseur du suivant",
+      "2.6 – Erreurs fréquentes : optimiser localement au détriment du flux global"
+     ],
+     "exercices": [
+      "Entretien VOC : préparez 7 questions à poser à un client interne cette semaine",
+      "Tableau VA / NVA : classez 15 tâches de votre poste en trois colonnes",
+      "Parcours client en post-it : reconstituez le parcours d'une demande type de bout en bout"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Les 7 (+1) gaspillages : apprendre à voir l'invisible",
+     "objectif": "Décrire en profondeur chaque muda (surproduction, attentes, transports, sur-traitement, stocks, mouvements, défauts + talent sous-exploité) avec des exemples concrets hors-usine.",
+     "sections": [
+      "3.1 – Surproduction et sur-traitement : faire plus ou plus tôt que nécessaire",
+      "3.2 – Attentes et temps morts : le coût caché de la file d'attente",
+      "3.3 – Transports et mouvements inutiles : les kilomètres invisibles du bureau",
+      "3.4 – Stocks et en-cours : ce qui stagne coûte",
+      "3.5 – Défauts, retouches et réclamations : la non-qualité comme gaspillage",
+      "3.6 – Le 8e gaspillage : le talent, les idées et l'engagement non exploités",
+      "3.7 – Grille de détection : repérer les gaspillages dans votre propre environnement"
+     ],
+     "exercices": [
+      "Chasse aux gaspillages : 30 minutes d'observation silencieuse avec grille de comptage",
+      "Calcul du coût d'un en-cours : estimez la valeur immobilisée dans vos files de traitement",
+      "Photo-langage : prenez 5 photos illustrant un gaspillage dans votre espace de travail"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Penser système : du silo au flux de bout en bout",
+     "objectif": "Faire passer le lecteur d'une vision par fonction à une vision par processus transversal, condition indispensable pour appliquer le Lean.",
+     "sections": [
+      "4.1 – L'entreprise vue en silos : pourquoi l'optimisation locale crée du désordre global",
+      "4.2 – Le concept de chaîne de valeur (value stream) : du besoin à la livraison",
+      "4.3 – Flux poussé vs. flux tiré : la logique du supermarché appliquée à l'entreprise",
+      "4.4 – Le takt time : caler le rythme de production sur le rythme de la demande",
+      "4.5 – Temps de cycle, temps de traversée et efficience de flux",
+      "4.6 – Cartographier macro : identifier vos 3 à 5 chaînes de valeur principales"
+     ],
+     "exercices": [
+      "Chronométrage simple : mesurez le temps de traversée d'une demande standard vs. le temps de traitement réel",
+      "Dessin du flux idéal : esquissez en une page le parcours sans interruption d'une prestation clé",
+      "Tableau takt : calculez le takt time de votre service sur la base de la demande hebdomadaire"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie II – Diagnostiquer : cartographier, mesurer et prioriser",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Value Stream Mapping : dessiner la réalité telle qu'elle est",
+     "objectif": "Guider pas à pas la réalisation d'une cartographie de chaîne de valeur (VSM) de l'état actuel, y compris dans des environnements de services et de bureaux.",
+     "sections": [
+      "5.1 – Objectifs et limites de la VSM : ce qu'elle révèle, ce qu'elle ne dit pas",
+      "5.2 – Préparer un chantier VSM : périmètre, équipe, données nécessaires",
+      "5.3 – La marche terrain (gemba walk) : observer avant de dessiner",
+      "5.4 – Les symboles et conventions : flux matières, flux d'information, indicateurs",
+      "5.5 – Dessiner l'état actuel : atelier guidé en 6 étapes",
+      "5.6 – Identifier les boucles de gaspillage et les points de rupture de flux",
+      "5.7 – Passer à l'état futur : esquisser la cible à 6-12 mois"
+     ],
+     "exercices": [
+      "Réalisez la VSM simplifiée d'un processus administratif en 90 minutes (template fourni)",
+      "Calculez l'efficience de flux : (temps VA / temps de traversée) × 100",
+      "Atelier collectif : animez une session VSM avec 3 collègues et synthétisez les résultats"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Le Gemba : aller voir là où la valeur se crée",
+     "objectif": "Installer la pratique du Gemba Walk comme outil quotidien d'observation, d'écoute et de compréhension des problèmes réels.",
+     "sections": [
+      "6.1 – Genba, Genbutsu, Genjitsu : les trois « réels » du management Toyota",
+      "6.2 – Préparer sa tournée : quoi observer, quelles questions poser",
+      "6.3 – La posture : observer sans juger, questionner sans accuser",
+      "6.4 – Structurer un Gemba Walk efficace : fréquence, durée, compte rendu",
+      "6.5 – Du constat à l'action : transformer une observation en opportunité d'amélioration",
+      "6.6 – Le Gemba dans les services : open space, télétravail, processus numériques"
+     ],
+     "exercices": [
+      "Programmez trois Gemba Walks cette semaine et notez 3 observations factuelles par visite",
+      "Grille d'observation : remplissez le canevas fourni (flux, stocks, standard, moral)",
+      "Débrief en binôme : racontez votre tournée à un collègue et identifiez une action commune"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Mesurer ce qui compte : indicateurs de flux et tableaux de bord Lean",
+     "objectif": "Choisir et mettre en place les bons indicateurs (temps de traversée, taux de défauts, taux de service, en-cours) pour piloter l'amélioration sans noyer l'équipe sous la donnée.",
+     "sections": [
+      "7.1 – Mesurer pour apprendre, pas pour contrôler : philosophie de la mesure Lean",
+      "7.2 – Les 6 indicateurs clés de flux : lead time, cycle time, takt, WIP, taux de défauts, taux de service",
+      "7.3 – Construire un tableau de bord visuel en 1 page (SQDC : Sécurité, Qualité, Délai, Coût)",
+      "7.4 – La collecte de données simple : chronométrage, comptage, échantillonnage",
+      "7.5 – Analyser la variabilité : distinguer cause commune et cause spéciale",
+      "7.6 – Éviter les pièges : vanity metrics, surcharge de KPI, tableaux jamais regardés"
+     ],
+     "exercices": [
+      "Sélectionnez 4 indicateurs pertinents pour votre périmètre et définissez leur mode de collecte",
+      "Créez un mini-tableau SQDC sur une feuille A3 affichée dans votre espace",
+      "Mesurez pendant 5 jours le temps de traitement d'une tâche type et calculez la variabilité"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Prioriser les chantiers : matrice impact / effort et A3 de cadrage",
+     "objectif": "Outiller le lecteur pour choisir les premiers chantiers Lean à lancer, en arbitrant entre impact client, faisabilité et mobilisation des équipes.",
+     "sections": [
+      "8.1 – Pourquoi ne pas tout traiter en même temps : la tentation du big bang",
+      "8.2 – Matrice Impact / Effort / Rapidité : classer les opportunités",
+      "8.3 – Le rapport A3 : cadrer un problème en une page (contexte, analyse, contre-mesures, plan)",
+      "8.4 – Impliquer l'équipe dans la sélection : ateliers de priorisation participatifs",
+      "8.5 – Définir un périmètre pilote : petit, visible, gagnable en 90 jours",
+      "8.6 – Rédiger la charte de chantier : objectifs, sponsors, ressources, calendrier"
+     ],
+     "exercices": [
+      "Remplissez une matrice Impact/Effort avec les 8 gaspillages identifiés au chapitre 3",
+      "Rédigez votre premier A3 de cadrage sur le problème le plus urgent (template fourni)",
+      "Organisez un vote pondéré avec votre équipe pour choisir le chantier pilote"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Le diagnostic Lean dans les fonctions support : RH, finance, IT, juridique",
+     "objectif": "Montrer comment les outils de diagnostic Lean s'adaptent aux processus intellectuels et administratifs souvent perçus comme « non industrialisables ».",
+     "sections": [
+      "9.1 – Spécificités des processus de bureau : intangibilité, variabilité, travail du savoir",
+      "9.2 – Cartographier un processus RH : du recrutement à l'intégration",
+      "9.3 – Le cycle de clôture comptable : un cas d'école de flux batch-and-queue",
+      "9.4 – Les files d'attente IT : tickets, bugs, demandes de service",
+      "9.5 – Le processus contractuel juridique : délais, allers-retours, validations",
+      "9.6 – Synthèse : points communs des gaspillages de bureau et leviers universels"
+     ],
+     "exercices": [
+      "Choisissez un processus support et listez les 5 principales sources d'attente",
+      "Mesurez le nombre d'allers-retours (e-mails, validations) sur une demande type",
+      "Proposez 3 simplifications immédiates sans investissement technologique"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie III – Agir : les outils et méthodes pour créer le flux",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Le 5S appliqué au bureau et au numérique : ordre, clarté, discipline",
+     "objectif": "Déployer la méthode 5S (Trier, Ranger, Nettoyer, Standardiser, Maintenir) dans les espaces physiques, les arborescences numériques et les processus quotidiens.",
+     "sections": [
+      "10.1 – Les 5S : origine industrielle et transposition universelle",
+      "10.2 – Seiri (Trier) : éliminer le superflu physique et numérique",
+      "10.3 – Seiton (Ranger) : une place pour chaque chose, chaque chose à sa place",
+      "10.4 – Seiso (Nettoyer) : rendre les anomalies visibles",
+      "10.5 – Seiketsu (Standardiser) : règles visuelles et check-lists partagées",
+      "10.6 – Shitsuke (Maintenir) : audits croisés et rituels d'ancrage",
+      "10.7 – 5S numérique : boîte mail, dossiers partagés, gestion documentaire"
+     ],
+     "exercices": [
+      "Chantier 5S pilote : triez et réorganisez une zone (bureau, serveur, armoire) en 2 heures",
+      "Avant / Après : photographiez et affichez le résultat pour l'équipe",
+      "Créez une check-list 5S hebdomadaire et planifiez un audit croisé mensuel"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Standardisation et travail standard : la liberté par la règle claire",
+     "objectif": "Montrer que le standard n'est pas une contrainte bureaucratique mais le socle qui libère la créativité et rend l'amélioration possible.",
+     "sections": [
+      "11.1 – Pourquoi standardiser ? Le paradoxe : stabilité pour innover",
+      "11.2 – Construire un standard : qui, quoi, comment, séquence, temps",
+      "11.3 – Le format visuel : one-point lesson, fiche réflexe, vidéo courte",
+      "11.4 – Faire vivre le standard : audits, revues, mise à jour par l'opérateur",
+      "11.5 – Standard et autonomie : le standard comme garde-fou, pas comme carcan",
+      "11.6 – Cas concrets : standard de réunion, standard de reporting, standard d'accueil client"
+     ],
+     "exercices": [
+      "Rédigez un standard opératoire pour une tâche récurrente en utilisant le template visuel",
+      "Testez le standard avec un collègue qui ne connaît pas la tâche et recueillez ses difficultés",
+      "Planifiez une revue trimestrielle de 3 standards avec l'équipe pour les actualiser"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Réduire les temps de changement : la méthode SMED adaptée à tous les contextes",
+     "objectif": "Transposer la méthode SMED (Single Minute Exchange of Die) aux changements de contexte, de projet, de série ou de tâche pour réduire les temps de transition.",
+     "sections": [
+      "12.1 – Le problème du changement de série : de Shingo à vos transitions quotidiennes",
+      "12.2 – Décomposer : séparer opérations internes (machine arrêtée) et externes (machine en marche)",
+      "12.3 – Convertir : transformer les opérations internes en opérations externes",
+      "12.4 – Simplifier et paralléliser : réduire le temps résiduel",
+      "12.5 – SMED intellectuel : passer d'un projet à l'autre sans perte cognitive",
+      "12.6 – SMED administratif : clôture de dossier, passage de relais, changement d'outil"
+     ],
+     "exercices": [
+      "Chronométrez une transition récurrente (changement de logiciel, passage de dossier) et décomposez les étapes",
+      "Identifiez 3 opérations « internes » que vous pouvez préparer « en externe »",
+      "Mettez en place une check-list de transition pour réduire le temps de démarrage de 50 %"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Le flux tiré et le Kanban : produire uniquement ce que le client demande",
+     "objectif": "Installer un système de pilotage par la demande (pull) à l'aide de kanbans physiques ou numériques pour limiter l'en-cours et lisser la charge.",
+     "sections": [
+      "13.1 – Flux poussé vs. flux tiré : pourquoi le push génère des stocks et des urgences",
+      "13.2 – Le supermarché Toyota : principe de réapprovisionnement par la consommation",
+      "13.3 – Concevoir un Kanban : cartes, colonnes, limites WIP, règles explicites",
+      "13.4 – Dimensionner le stock tampon et le nombre de kanbans",
+      "13.5 – Kanban numérique : Trello, Jira, outils open source – bonnes pratiques",
+      "13.6 – Gérer les priorités et les urgences dans un système tiré",
+      "13.7 – Étendre le Kanban entre services : le chaînage fournisseur / client interne"
+     ],
+     "exercices": [
+      "Montez un tableau Kanban physique ou numérique pour votre équipe en 1 heure",
+      "Fixez une limite WIP réaliste et observez pendant 2 semaines l'effet sur le lead time",
+      "Simulez un flux tiré avec un jeu de cartes en équipe (jeu du supermarché fourni)"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Poka-Yoke et Jidoka : concevoir des processus qui rendent l'erreur impossible ou immédiatement visible",
+     "objectif": "Intégrer la qualité à la source en éliminant les possibilités d'erreur (Poka-Yoke) et en donnant à chacun le pouvoir d'arrêter le flux en cas d'anomalie (Jidoka).",
+     "sections": [
+      "14.1 – L'erreur est humaine, le défaut est systémique : changer de paradigme",
+      "14.2 – Poka-Yoke : principes de conception anti-erreur (éliminer, détecter, alerter)",
+      "14.3 – Exemples industriels et transposition bureau / numérique",
+      "14.4 – Jidoka : autonomation, andon et droit d'alerte",
+      "14.5 – Construire une culture « stop and fix » sans blâme",
+      "14.6 – Intégrer la vérification qualité dans le flux plutôt qu'en fin de chaîne",
+      "14.7 – Mesurer l'efficacité : taux de défauts, coût de non-qualité, nombre d'alertes"
+     ],
+     "exercices": [
+      "Identifiez 3 erreurs récurrentes dans votre service et concevez un Poka-Yoke pour chacune",
+      "Instaurez un signal visuel (pastille rouge, canal dédié) pour signaler une anomalie de flux",
+      "Réalisez une analyse 5 Pourquoi sur le dernier défaut transmis au client interne"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Lean Six Sigma : quand la vitesse rencontre la précision",
+     "objectif": "Présenter la complémentarité Lean (vitesse, flux) et Six Sigma (réduction de la variabilité) et fournir la démarche DMAIC adaptée à des chantiers Lean.",
+     "sections": [
+      "15.1 – Lean et Six Sigma : deux logiques, une finalité commune",
+      "15.2 – La démarche DMAIC : Définir, Mesurer, Analyser, Innover, Contrôler",
+      "15.3 – Outils Six Sigma utiles au Lean : Pareto, Ishikawa, capabilité, cartes de contrôle",
+      "15.4 – Quand utiliser le Six Sigma ? Critères de choix Lean pur vs. LSS",
+      "15.5 – Les ceintures (Yellow, Green, Black) : rôle et formation",
+      "15.6 – Cas fil rouge : réduire le taux de réclamations clients de 40 % en 4 mois"
+     ],
+     "exercices": [
+      "Réalisez un diagramme de Pareto sur vos 10 dernières non-conformités",
+      "Construisez un diagramme d'Ishikawa (6M) sur un problème de qualité récurrent",
+      "Rédigez la phase « Définir » d'un DMAIC sur un problème choisi (charte, SIPOC, VOC)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie IV – Engager : la dimension humaine et culturelle du Lean",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Le rôle du leader Lean : coach, facilitateur, serviteur du flux",
+     "objectif": "Redéfinir le rôle du manager : passer du contrôleur au développeur de compétences, du décideur solitaire au facilitateur de résolution de problèmes en équipe.",
+     "sections": [
+      "16.1 – Le leadership Lean : principes du Toyota Way appliqués au management",
+      "16.2 – Manager par le questionnement : l'art du coaching Socratique",
+      "16.3 – Le rituel du Gemba Walk managérial : fréquence, posture, suivi",
+      "16.4 – Développer les personnes : la pyramide de compétences et le compagnonnage",
+      "16.5 – Gérer la résistance au changement : peurs, croyances, objections courantes",
+      "16.6 – Le droit à l'erreur : créer la sécurité psychologique nécessaire au Kaizen"
+     ],
+     "exercices": [
+      "Préparez et réalisez un entretien de coaching Lean avec un membre de votre équipe (grille de questions fournie)",
+      "Listez 3 comportements managériaux à arrêter et 3 à instaurer pour favoriser le flux",
+      "Organisez un « vis ma vie » de 2 heures dans le service aval pour comprendre les contraintes du client interne"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Kaizen au quotidien : l'amélioration continue par les équipes",
+     "objectif": "Installer une dynamique Kaizen pérenne : suggestions, chantiers courts, rituels d'équipe, célébration des progrès.",
+     "sections": [
+      "17.1 – Kaizen vs. Kaikaku : amélioration incrémentale et rupture complémentaire",
+      "17.2 – Le système de suggestions : recueillir, évaluer, mettre en œuvre, reconnaître",
+      "17.3 – Le chantier Kaizen (Kaizen Event) : préparer, animer, clôturer en 3 à 5 jours",
+      "17.4 – Les rituels quotidiens : réunion debup 5-15 min, tableau SQDC, revues hebdo",
+      "17.5 – PDCA et cycles courts : expérimenter, apprendre, ajuster en continu",
+      "17.6 – Célébrer les victoires : rendre visible le progrès pour nourrir la motivation"
+     ],
+     "exercices": [
+      "Lancez un challenge Kaizen 30 jours : une amélioration par jour, même minime",
+      "Animez une réunion debout de 10 minutes avec tableau SQDC pendant une semaine",
+      "Organisez un mini-chantier Kaizen de 4 heures sur un irritant identifié par l'équipe"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Résolution de problèmes : A3, 5 Pourquoi, Ishikawa et PDCA",
+     "objectif": "Structurer la démarche de résolution de problèmes pour traiter les causes racines et non les symptômes, en impliquant les personnes concernées.",
+     "sections": [
+      "18.1 – Résoudre un problème ou éteindre un incendie : la différence Lean",
+      "18.2 – Le PDCA (Plan-Do-Check-Act) : boucle d'apprentissage en 4 temps",
+      "18.3 – Les 5 Pourquoi : creuser jusqu'à la cause racine sans s'arrêter au symptôme",
+      "18.4 – Ishikawa (6M) et arbre des causes : structurer l'analyse",
+      "18.5 – Le rapport A3 : raconter le problème, l'analyse et le plan en une page",
+      "18.6 – Animer un atelier de résolution de problèmes en équipe",
+      "18.7 – Capitaliser : transformer la solution en standard et la partager"
+     ],
+     "exercices": [
+      "Appliquez les 5 Pourquoi sur un retard récurrent de livraison interne",
+      "Rédigez un A3 complet sur un problème réel en respectant les 8 blocs du template",
+      "Animez un atelier Ishikawa de 45 minutes avec 4 collègues et choisissez 2 contre-mesures"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Management visuel : rendre l'information transparente et actionnable",
+     "objectif": "Concevoir des dispositifs visuels (tableaux, andon, management visuel de projet) qui permettent à chacun de voir l'état du flux en un coup d'œil et d'agir sans attendre.",
+     "sections": [
+      "19.1 – Pourquoi le visuel ? Réduire le temps de recherche, rendre les écarts évidents",
+      "19.2 – Les niveaux de management visuel : information, alerte, décision",
+      "19.3 – Concevoir un tableau de management visuel : SQDC, Kanban, planning",
+      "19.4 – L'Andon : signal d'alerte et escalade structurée",
+      "19.5 – Management visuel en mode hybride : outils numériques et murs physiques",
+      "19.6 – Erreurs à éviter : trop d'info, info morte, tableau sans rituel associé"
+     ],
+     "exercices": [
+      "Créez un tableau management visuel pour votre équipe en moins de 2 heures (matériel fourni en liste)",
+      "Définissez un code couleur Andon à 3 niveaux adapté à votre contexte",
+      "Testez le tableau pendant 2 semaines et recueillez les retours de l'équipe en rétrospective"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Lean et bien-être au travail : performance durable et respect des personnes",
+     "objectif": "Montrer que le Lean bien appliqué réduit la pénibilité, clarifie les rôles et augmente l'engagement ; aborder les risques de dérive (Lean-pressing) et les garde-fous.",
+     "sections": [
+      "20.1 – Le pilier « Respect des personnes » : mythe ou réalité ? Conditions de succès",
+      "20.2 – Lean et ergonomie : réduire les gestes inutiles, les déplacements, la charge mentale",
+      "20.3 – Lean et sens : reconnecter chacun à la valeur créée pour le client final",
+      "20.4 – Les dérives possibles : Lean-pressing, intensification, exclusion des salariés du dialogue",
+      "20.5 – Garde-fous : co-construction, droit d'alerte, indicateurs de bien-être",
+      "20.6 – Mesurer l'impact humain : enquêtes d'engagement, absentéisme, turnover"
+     ],
+     "exercices": [
+      "Réalisez un mini-sondage bien-être (5 questions) auprès de votre équipe avant / après un chantier Lean",
+      "Identifiez 2 tâches à forte pénibilité et proposez une simplification ergonomique",
+      "Rédigez une « charte Lean » d'équipe incluant les engagements de respect et de dialogue"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie V – Déployer, ancrer et aller plus loin : le Lean comme système de management",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Déployer le Lean à l'échelle : du pilote à l'organisation entière",
+     "objectif": "Structurer un plan de déploiement progressif (pilote → extension → système) en évitant le big bang et en mobilisant toutes les strates hiérarchiques.",
+     "sections": [
+      "21.1 – La stratégie du petit pas gagnant : pourquoi commencer par un pilote",
+      "21.2 – Hoshin Kanri : déployer la stratégie Lean en cascades d'objectifs alignés",
+      "21.3 – Le rôle du sponsor exécutif : visibilité, ressources, exemplarité",
+      "21.4 – Construire l'équipe Lean interne : champions, Green Belts, relais terrain",
+      "21.5 – Plan de déploiement en 3 vagues : pilote, extension, systématisation",
+      "21.6 – Communiquer : narrer les succès, partager les apprentissages, donner envie",
+      "21.7 – Gérer la résistance à l'échelle : syndicat, middle management, fonctions support"
+     ],
+     "exercices": [
+      "Rédigez un plan de déploiement 12 mois en 3 vagues avec jalons et responsables",
+      "Préparez un argumentaire sponsor en 1 page (problème, ambition, ressources, ROI attendu)",
+      "Identifiez 3 « champions Lean » potentiels dans votre organisation et planifiez un entretien"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Ancrer les acquis : éviter le retour en arrière et pérenniser la transformation",
+     "objectif": "Mettre en place les mécanismes de sustain (audits, rituels, gouvernance, formation continue) pour que les gains Lean survivent au départ des initiateurs.",
+     "sections": [
+      "22.1 – Pourquoi 70 % des transformations Lean s'essoufflent : les causes profondes",
+      "22.2 – Le système d'audit Lean : auto-évaluation, audits croisés, scoring maturité",
+      "22.3 – Les rituels de gouvernance : comité Lean, revues mensuelles, A3 de suivi",
+      "22.4 – Intégrer le Lean dans les processus RH : recrutement, onboarding, évaluation",
+      "22.5 – Former en continu : dojo Lean, compagnonnage, communautés de pratique",
+      "22.6 – Capitaliser et partager : bibliothèque de standards, retours d'expérience internes"
+     ],
+     "exercices": [
+      "Construisez une grille d'audit maturité Lean en 5 niveaux pour votre périmètre",
+      "Planifiez un cycle trimestriel d'audits croisés entre 3 services",
+      "Rédigez le programme d'un « Dojo Lean » de 2 heures pour les nouveaux arrivants"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Lean et numérique : IA, automatisation et flux digitaux au service du Lean",
+     "objectif": "Explorer la complémentarité Lean / transformation digitale : automatiser les tâches sans valeur, fluidifier les flux numériques, utiliser l'IA comme amplificateur de Kaizen.",
+     "sections": [
+      "23.1 – Digitaliser un gaspillage ou éliminer le gaspillage ? L'ordre Lean d'abord",
+      "23.2 – Automatisation des tâches répétitives : RPA, macros, intégrations",
+      "23.3 – IA et Lean : prédiction de la demande, détection d'anomalies, aide à la décision",
+      "23.4 – Lean IT / DevOps : flux de livraison logiciel, Kanban Agile, amélioration continue",
+      "23.5 – Outils collaboratifs et management visuel numérique : bonnes pratiques",
+      "23.6 – Risques et limites : dette technique, sur-automatisation, perte de sens"
+     ],
+     "exercices": [
+      "Identifiez 5 tâches automatisables dans votre service et estimez le temps libéré",
+      "Cartographiez un flux numérique (e-mail → ERP → validation) et repérez les attentes",
+      "Testez un outil Kanban numérique pendant 3 semaines et comparez avec votre méthode précédente"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La perfection comme horizon : installer une culture Lean vivante et évolutive",
+     "objectif": "Synthétiser la démarche, ouvrir sur l'amélioration permanente (le 5e principe : perfection), et donner au lecteur une feuille de route personnelle pour les 12 prochains mois.",
+     "sections": [
+      "24.1 – Le 5e principe : la perfection comme direction, pas comme destination",
+      "24.2 – Relier les 24 chapitres : la carte globale du système Lean intégré",
+      "24.3 – Adapter le Lean à son contexte : PME, grand groupe, association, secteur public",
+      "24.4 – Le Lean au-delà de l'entreprise : Lean personnel, Lean familial, Lean communautaire",
+      "24.5 – Construire sa feuille de route 12 mois : objectifs, jalons, ressources, alliés",
+      "24.6 – Les 10 commandements du praticien Lean : synthèse actionnable",
+      "24.7 – Mot de la fin : le flux libéré, c'est d'abord un état d'esprit"
+     ],
+     "exercices": [
+      "Rédigez votre feuille de route Lean personnelle sur 12 mois (3 objectifs, 6 jalons, 3 alliés)",
+      "Écrivez une « lettre à votre organisation dans 1 an » décrivant le futur souhaité",
+      "Engagement public : partagez un objectif Lean avec un collègue et fixez un point de suivi mensuel"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,606 @@
+{
+ "titre": "Lever, c'est gagner : Le guide complet pour séduire business angels et VC",
+ "sous_titre": "Préparation, ciblage et négociation : la méthode en 24 étapes pour transformer votre startup en machine à convaincre les investisseurs",
+ "bibliographie": [
+  {
+   "auteur": "Brad Feld & Jason Mendelson",
+   "titre": "Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist",
+   "annee": "2012",
+   "idee": "Décortique chaque clause du term sheet et la mécanique économique des tours de table VC, du point de vue de l'investisseur comme de l'entrepreneur.",
+   "apport": "Structure de la partie négociation : vocabulaire du term sheet, liquidation preferences, anti-dilution, board seats."
+  },
+  {
+   "auteur": "Alejandro Cremades",
+   "titre": "The Art of Startup Fundraising",
+   "annee": "2016",
+   "idee": "Guide étape par étape du processus de levée : préparation du pitch, outreach, due diligence, closing, avec des exemples concrets de decks.",
+   "apport": "Méthodologie séquentielle de la levée et templates de documents que notre livre adaptera au marché francophone."
+  },
+  {
+   "auteur": "Jeffrey Bussgang",
+   "titre": "Mastering the VC Game: A Venture Capital Insider Reveals How to Get from Start-up to IPO on Your Terms",
+   "annee": "2010",
+   "idee": "Vue insider du fonctionnement des fonds VC : processus de décision, typologie des fonds, relations post-investissement.",
+   "apport": "Grille de ciblage des investisseurs et compréhension de la psychologie du comité d'investissement."
+  },
+  {
+   "auteur": "David S. Rose",
+   "titre": "Angel Investing: The Gust Guide to Making Money and Having Fun Investing in Startups",
+   "annee": "2014",
+   "idee": "Le point de vue du business angel : critères de sélection, attentes, erreurs fréquentes des entrepreneurs lors du pitch.",
+   "apport": "Chapitres sur la compréhension du mindset BA et l'adaptation du discours selon le profil d'investisseur."
+  },
+  {
+   "auteur": "Scott Kupor",
+   "titre": "Secrets of Sand Hill Road: Venture Capital and How to Get It",
+   "annee": "2019",
+   "idee": "Un associé d'Andreessen Horowitz explique la logique interne des VC : sourcing, due diligence, construction de portefeuille, exits.",
+   "apport": "Section sur la manière dont un VC évalue réellement un dossier et ce qui différencie un oui d'un non."
+  },
+  {
+   "auteur": "Oren Klaff",
+   "titre": "Pitch Anything: An Innovative Method for Presenting, Persuading, and Winning the Deal",
+   "annee": "2011",
+   "idee": "Applique les neurosciences au pitch : capter l'attention du cerveau reptilien, créer un cadre de contrôle, générer l'urgence.",
+   "apport": "Techniques narratives et psychologiques pour la partie pitch et prise de parole devant investisseurs."
+  },
+  {
+   "auteur": "Chris Voss & Tahl Raz",
+   "titre": "Never Split the Difference: Negotiating As If Your Life Depended on It",
+   "annee": "2016",
+   "idee": "Techniques de négociation issues du FBI : écoute active, questions calibrées, miroir, étiquetage des émotions.",
+   "apport": "Boîte à outils de négociation pour les chapitres sur le term sheet, la valorisation et les concessions."
+  },
+  {
+   "auteur": "Roger Fisher & William Ury",
+   "titre": "Getting to Yes: Negotiating Agreement Without Giving In",
+   "annee": "1981",
+   "idee": "Négociation raisonnée : séparer les personnes du problème, se concentrer sur les intérêts, inventer des options mutuellement bénéfiques.",
+   "apport": "Cadre théorique de la négociation intégrative appliqué aux discussions avec investisseurs."
+  },
+  {
+   "auteur": "Jason Calacanis",
+   "titre": "Angel: How to Invest in Technology Startups—Timeless Advice from an Entrepreneur Who Turned $100,000 into $100 Million",
+   "annee": "2017",
+   "idee": "Le parcours d'un super-angel : comment il choisit ses deals, ce qu'il attend des fondateurs, les red flags.",
+   "apport": "Insights sur la relation long terme avec un BA et les signaux qui déclenchent l'engagement financier."
+  },
+  {
+   "auteur": "Peter Thiel & Blake Masters",
+   "titre": "Zero to One: Notes on Startups, or How to Build the Future",
+   "annee": "2014",
+   "idee": "Construire un monopole créatif : les questions fondamentales à se poser pour créer une valeur défendable et investissable.",
+   "apport": "Chapitre sur la construction du narratif stratégique et la démonstration d'un avantage concurrentiel durable."
+  },
+  {
+   "auteur": "Guy Kawasaki",
+   "titre": "The Art of the Start 2.0: The Time-Tested, Battle-Hardened Guide for Anyone Starting Anything",
+   "annee": "2015",
+   "idee": "Les 10 étapes du lancement : cause, articulation, préparation, démarrage, scaling, avec un focus sur la levée de fonds initiale.",
+   "apport": "Approche pragmatique du storytelling fondateur et de la préparation des documents clés."
+  },
+  {
+   "auteur": "Mahendra Ramsinghani",
+   "titre": "The Business of Venture Capital: Insights from Leading Practitioners on the Art of Raising a Fund, Deal Structuring, Value Creation, and Exit Strategies",
+   "annee": "2011",
+   "idee": "Le VC vu comme une entreprise : levée du fonds, allocation, reporting LP, gouvernance des participations.",
+   "apport": "Compréhension des contraintes du VC pour mieux anticiper ses objections et négocier en connaissance de cause."
+  },
+  {
+   "auteur": "Bill Fisher",
+   "titre": "Raising Venture Capital for the Serious Entrepreneur",
+   "annee": "2008",
+   "idee": "Manuel opérationnel : business plan financier, data room, due diligence, structuration juridique du tour.",
+   "apport": "Checklists opérationnelles et templates financiers repris dans les chapitres de préparation documentaire."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+   "annee": "2011",
+   "idee": "Valider par l'expérimentation avant de lever : MVP, boucle build-measure-learn, pivot.",
+   "apport": "Chapitre sur la preuve de traction et la réduction du risque perçu par l'investisseur avant la levée."
+  },
+  {
+   "auteur": "Brad Feld & Jason Mendelson",
+   "titre": "Startup Boards: Getting the Most Out of Your Board of Directors",
+   "annee": "2013",
+   "idee": "Gouvernance post-investissement : composition du board, droits des investisseurs, gestion des conflits.",
+   "apport": "Sections sur la gouvernance post-levée et la préparation des clauses de contrôle dans le pacte d'actionnaires."
+  },
+  {
+   "auteur": "Steven Medoff",
+   "titre": "The Startup Fundraising Playbook: A Step-by-Step Guide to Raising Capital",
+   "annee": "2019",
+   "idee": "Processus séquentiel de la levée : pipeline d'investisseurs, suivi CRM, gestion du momentum, techniques de closing.",
+   "apport": "Méthode de gestion du pipeline d'investisseurs et création d'urgence concurrentielle entre term sheets."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – Comprendre le terrain : l'écosystème du capital-risque et votre positionnement",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Cartographie du financement : BA, VC, CVC, crowdfunding, dette",
+     "objectif": "Donner au lecteur une vue panoramique des sources de financement afin qu'il identifie où se situe sa levée dans le spectre et choisisse le bon véhicule au bon moment.",
+     "sections": [
+      "1.1 – Le cycle de vie financier d'une startup : de la love money à l'IPO",
+      "1.2 – Business angels : profils, motivations, tickets typiques (5 k€ à 500 k€)",
+      "1.3 – Fonds VC : généralistes, sectoriels, micro-VC, corporate venture",
+      "1.4 – Financements alternatifs : crowdfunding equity, Bpifrance, prêts d'honneur, subventions",
+      "1.5 – Comparatif décisionnel : quel véhicule pour quel stade et quel besoin ?",
+      "1.6 – Le marché francophone et européen : spécificités et tendances 2024-2025",
+      "1.7 – Erreurs fatales de positionnement : lever trop tôt, trop tard, ou au mauvais guichet"
+     ],
+     "exercices": [
+      "Cartographie personnelle : positionnez votre projet sur la matrice stade × montant × type d'investisseur",
+      "Quiz d'auto-évaluation : quel est votre profil de risque et votre appétence à la dilution ?",
+      "Recherche dirigée : listez 10 BA et 5 fonds VC actifs dans votre secteur sur les 18 derniers mois"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La psychologie de l'investisseur : peurs, biais et critères cachés",
+     "objectif": "Faire comprendre au lecteur ce qui se passe dans la tête d'un BA ou d'un partner VC au moment où il lit un deck, afin d'anticiper ses objections et d'adapter son discours.",
+     "sections": [
+      "2.1 – Le modèle mental du VC : puissance de la loi, taux d'échec, taille du fonds",
+      "2.2 – Le modèle mental du BA : émotion, réseau, plaisir d'accompagner",
+      "2.3 – Les 7 biais cognitifs qui filtrent chaque pitch (ancrage, aversion à la perte, effet de halo…)",
+      "2.4 – Les 10 questions que tout investisseur se pose dans les 90 premières secondes",
+      "2.5 – Le concept de « founder-market fit » et pourquoi il prime sur le produit",
+      "2.6 – Signaux faibles qui déclenchent un oui ou un non : langage corporel, clarté, honnêteté",
+      "2.7 – Gérer le rejet : analyser un refus pour améliorer le tour suivant"
+     ],
+     "exercices": [
+      "Jeu de rôle inversé : rédigez la fiche de rejet d'un projet fictif en adoptant le point de vue d'un VC",
+      "Audit de biais : relisez votre pitch et identifiez 3 biais que vous exploitez et 3 que vous subissez",
+      "Interview terrain : contactez un BA de votre réseau et demandez-lui ses 3 critères non négociables"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Auto-diagnostic : votre startup est-elle « fundable » aujourd'hui ?",
+     "objectif": "Amener le lecteur à évaluer honnêtement la maturité de son projet et à combler les lacunes avant de solliciter le marché.",
+     "sections": [
+      "3.1 – La grille des 12 piliers de la fundability (équipe, marché, traction, tech, modèle…)",
+      "3.2 – Traction : quel niveau de preuve selon le stade (pré-seed, seed, série A) ?",
+      "3.3 – L'équipe : complémentarité, track record, capacité d'exécution",
+      "3.4 – Le marché : TAM, SAM, SOM et la question de la croissance adressable",
+      "3.5 – Barrières à l'entrée et défensabilité : IP, network effects, switching costs",
+      "3.6 – Les red flags qui font fuir les investisseurs (et comment les neutraliser)",
+      "3.7 – Construire un plan de mise à niveau sur 90 jours avant d'aller au marché"
+     ],
+     "exercices": [
+      "Scorecard de fundability : notez votre projet de 1 à 10 sur chacun des 12 piliers et identifiez le top 3 à améliorer",
+      "SWOT investisseur : listez ce qu'un VC verra comme forces et faiblesses en 5 minutes de lecture de votre site",
+      "Plan d'action 90 jours : rédigez 3 actions concrètes par pilier faible avec deadline et responsable"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Définir votre thèse de levée : combien, pourquoi, pour quoi faire ?",
+     "objectif": "Aider le lecteur à formuler une thèse d'investissement claire et chiffrée qui servira de fil conducteur à toute la démarche de levée.",
+     "sections": [
+      "4.1 – Du besoin financier à la thèse : traduire une ambition en plan d'utilisation des fonds",
+      "4.2 – Calculer le montant optimal : runway, milestones, marge de sécurité",
+      "4.3 – Valorisation pré-money : méthodes (comparables, DCF simplifié, scorecard, Berkus)",
+      "4.4 – La dilution acceptable : combien de capital êtes-vous prêt à céder et pourquoi ?",
+      "4.5 – Rédiger le one-pager de thèse : problème, solution, traction, ask, utilisation",
+      "4.6 – Aligner la thèse avec la stratégie de sortie attendue par l'investisseur",
+      "4.7 – Scénarios : que se passe-t-il si la levée est partielle, retardée ou échoue ?"
+     ],
+     "exercices": [
+      "Calculateur de runway : modélisez 18 mois de dépenses et identifiez le montant exact à lever",
+      "Simulation de dilution : comparez 3 scénarios (10 %, 20 %, 30 %) et leur impact sur votre contrôle",
+      "Rédaction guidée : écrivez votre thèse de levée en 250 mots maximum, testable auprès de 3 mentors"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – Préparer l'arsenal : documents, données et narratif",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Le pitch deck parfait : structure, design et storytelling",
+     "objectif": "Fournir une méthode pas à pas pour construire un deck de 10 à 15 slides qui raconte une histoire irrésistible et répond aux questions implicites de l'investisseur.",
+     "sections": [
+      "5.1 – L'anatomie d'un deck gagnant : les 12 slides incontournables",
+      "5.2 – Le storytelling en 3 actes : tension, transformation, triomphe",
+      "5.3 – Slide par slide : problème, solution, marché, business model, traction, équipe, ask",
+      "5.4 – Design et lisibilité : règles typographiques, data-viz, cohérence visuelle",
+      "5.5 – Adapter le deck au format : envoi froid, réunion en présentiel, vidéo de 3 minutes",
+      "5.6 – Les 10 erreurs qui tuent un deck (et comment les éviter)",
+      "5.7 – Itérer : tester le deck sur 5 publics différents avant le vrai lancement"
+     ],
+     "exercices": [
+      "Squelette narratif : remplissez le canvas « Problème → Insight → Solution → Preuve → Vision » en 15 minutes",
+      "Audit de deck : analysez 3 decks publics (Airbnb seed, Buffer seed, etc.) et notez ce qui fonctionne",
+      "Créez votre v1 de deck en 90 minutes chrono en suivant le template fourni, puis faites-le critiquer par un pair"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Business plan financier et data room : les chiffres qui convainquent",
+     "objectif": "Guider le lecteur dans la construction d'un modèle financier crédible et d'une data room complète qui accélère la due diligence.",
+     "sections": [
+      "6.1 – Le P&L prévisionnel sur 3 à 5 ans : hypothèses, drivers de croissance, sensibilité",
+      "6.2 – Unit economics : CAC, LTV, payback period, marge contribution",
+      "6.3 – Le tableau de trésorerie et le scénario de consommation du cash",
+      "6.4 – La data room : arborescence type, documents juridiques, contrats, propriété intellectuelle",
+      "6.5 – Préparer la due diligence : anticiper les 50 questions les plus fréquentes",
+      "6.6 – Les KPIs que le VC va scruter et comment les présenter avec honnêteté",
+      "6.7 – Outils : Notion, DocSend, Dealroom, Captable.io – organiser et tracker l'accès"
+     ],
+     "exercices": [
+      "Construisez votre modèle financier simplifié sur tableur : 3 scénarios (pessimiste, base, optimiste)",
+      "Checklist data room : cochez les documents que vous possédez déjà et planifiez la collecte des manquants",
+      "Simulation de due diligence : demandez à un mentor de jouer l'auditeur et notez chaque question posée"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Construire votre narratif fondateur : l'histoire qui donne envie d'investir",
+     "objectif": "Travailler la dimension émotionnelle et identitaire du pitch : pourquoi VOUS, pourquoi MAINTENANT, pourquoi CETTE équipe.",
+     "sections": [
+      "7.1 – Le « why » de Simon Sinek appliqué à la levée de fonds",
+      "7.2 – Votre origin story : transformer un parcours en avantage narratif",
+      "7.3 – Le « why now » : fenêtre d'opportunité, rupture technologique ou réglementaire",
+      "7.4 – La vision à 10 ans : peindre un futur désirable et crédible",
+      "7.5 – Cohérence narrative : aligner deck, discours oral, site web et réponses aux questions",
+      "7.6 – Adapter le récit au profil de l'investisseur (BA impact, VC growth, corporate)",
+      "7.7 – Entraînement : répéter, filmer, itérer jusqu'à la fluidité naturelle"
+     ],
+     "exercices": [
+      "Écrivez votre origin story en 200 mots : déclencheur personnel, prise de conscience, décision d'agir",
+      "Pitch miroir : enregistrez-vous en vidéo 3 minutes, visionnez et notez 3 points d'amélioration",
+      "Test de cohérence : faites lire votre narratif à 2 personnes externes et vérifiez qu'elles restituent le message clé"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "L'équipe comme actif : présenter, prouver, rassurer",
+     "objectif": "Montrer comment structurer la présentation de l'équipe fondatrice et dirigeante pour maximiser la confiance de l'investisseur.",
+     "sections": [
+      "8.1 – Ce que l'investisseur évalue réellement dans une équipe (compétence, cohésion, résilience)",
+      "8.2 – La slide « équipe » : format, informations clés, ordre de présentation",
+      "8.3 – Combler les trous : advisor, board, recrutements clés prévus",
+      "8.4 – Le cap table : qui détient quoi, vesting, clauses de non-concurrence",
+      "8.5 – Gérer la question du fondateur solo vs co-fondateurs",
+      "8.6 – Préparer les références : qui appeler, comment briefer vos referees",
+      "8.7 – Anticiper les questions difficiles : conflits passés, échecs, pivots"
+     ],
+     "exercices": [
+      "Matrice de compétences : cartographiez les forces et lacunes de votre équipe actuelle sur 6 dimensions",
+      "Rédigez 3 bios de 3 lignes pour chaque membre fondateur, orientées résultats et pertinence sectorielle",
+      "Simulation : préparez vos réponses aux 5 questions les plus gênantes sur votre équipe"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – Cibler et approcher : trouver les bons investisseurs",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Cartographier l'écosystème : BA, réseaux, fonds, family offices",
+     "objectif": "Construire une base de données exhaustive et segmentée des investisseurs pertinents pour le projet du lecteur.",
+     "sections": [
+      "9.1 – Typologie complète : BA individuels, syndicats, réseaux (France Angels, EBAN), fonds seed, A, B+",
+      "9.2 – Où les trouver : annuaires, Dealroom, Crunchbase, LinkedIn, événements, presse spécialisée",
+      "9.3 – Filtrer par thèse d'investissement : secteur, stade, ticket, géographie",
+      "9.4 – Analyser le portefeuille existant : cohérence, conflits d'intérêts, follow-on",
+      "9.5 – Le rôle des intermédiaires : levée via conseil, plateformes (Seedrs, WiSEED), incubateurs",
+      "9.6 – Construire votre CRM investisseurs : 80 à 150 cibles, priorisées en 3 tiers",
+      "9.7 – Maintenir la base à jour : suivre les annonces, les nouveaux fonds, les départs de partners"
+     ],
+     "exercices": [
+      "Construisez votre liste de 100 investisseurs cibles dans un tableur avec 8 colonnes de qualification",
+      "Analysez 5 fonds de votre shortlist : lisez leurs derniers communiqués et identifiez 2 investissements récents similaires à votre projet",
+      "Priorisez : classez vos 100 cibles en A (dream), B (fit solide), C (à tenter) avec justification"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "L'art de l'outreach : obtenir le premier rendez-vous",
+     "objectif": "Donner les techniques concrètes pour décrocher un meeting avec un investisseur sollicité par des centaines d'entrepreneurs.",
+     "sections": [
+      "10.1 – Le warm intro : pourquoi c'est 10× plus efficace et comment l'obtenir",
+      "10.2 – Cartographier votre réseau et identifier les ponts vers chaque cible",
+      "10.3 – Le cold email qui fonctionne : objet, accroche, structure, CTA (modèles inclus)",
+      "10.4 – LinkedIn et Twitter/X : créer de la visibilité avant de solliciter",
+      "10.5 – Les événements : salons, demo days, conférences, afterworks – comment les exploiter",
+      "10.6 – Le follow-up : fréquence, ton, valeur ajoutée à chaque relance",
+      "10.7 – Taux de conversion réalistes : combien de contacts pour 1 term sheet"
+     ],
+     "exercices": [
+      "Rédigez 3 versions de cold email (BA, VC seed, VC série A) et faites-les valider par un pair",
+      "Cartographie réseau : identifiez 5 personnes de votre entourage capables de vous introduire auprès d'investisseurs",
+      "Plan événementiel : listez 6 événements pertinents sur les 6 prochains mois et préparez votre « elevator pitch » pour chacun"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Gérer le pipeline : momentum, parallélisme et création d'urgence",
+     "objectif": "Apprendre à orchestrer plusieurs conversations investisseurs simultanément pour créer une dynamique concurrentielle et éviter le piège du processus séquentiel.",
+     "sections": [
+      "11.1 – Pourquoi le séquentiel tue la levée : le coût du temps et la perte de momentum",
+      "11.2 – Lancer 20 à 40 conversations sur une fenêtre de 2 à 3 semaines",
+      "11.3 – Le tableau de suivi : stade, prochain pas, date, température, décision",
+      "11.4 – Créer l'urgence sans mentir : deadline naturelle, other investors, milestones",
+      "11.5 – Gérer les « maybe » et les silences : relances structurées et sortie élégante",
+      "11.6 – Le rôle du lead investor et comment l'identifier tôt",
+      "11.7 – Que faire si le pipeline stalle : pivoter la stratégie d'approche"
+     ],
+     "exercices": [
+      "Construisez votre tableau de pipeline (Notion ou Excel) avec colonnes : nom, contact, stade, score, prochaine action, deadline",
+      "Scénario : simulez une semaine type avec 8 meetings investisseurs et planifiez vos préparations",
+      "Rédigez un email de relance « valeur ajoutée » pour un investisseur qui n'a pas répondu depuis 10 jours"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Adapter son discours : BA vs VC vs Corporate",
+     "objectif": "Montrer que chaque typologie d'investisseur a un langage, des priorités et un processus décisionnel différents, et adapter le pitch en conséquence.",
+     "sections": [
+      "12.1 – Le BA : émotion, proximité, mentorat, ticket personnel – parler humain",
+      "12.2 – Le VC seed : équipe, marché, vision – parler potentiel exponentiel",
+      "12.3 – Le VC growth/série A+ : metrics, scalabilité, chemin vers la rentabilité – parler chiffres",
+      "12.4 – Le Corporate Venture : synergies stratégiques, accès marché, co-développement",
+      "12.5 – Les family offices et fonds souverains : horizon long, impact, diversification",
+      "12.6 – Adapter le format : déjeuner informel vs comité d'investissement vs pitch concours",
+      "12.7 – Le piège du discours unique : pourquoi un même deck ne fonctionne pas partout"
+     ],
+     "exercices": [
+      "Déclinez votre pitch en 3 versions (BA, VC seed, corporate) en modifiant l'accroche, les preuves et le ask",
+      "Préparez une FAQ spécifique pour chaque typologie : 5 questions que seul un BA poserait, 5 pour un VC",
+      "Jeu de rôle : un partenaire joue un BA sceptique, l'autre un VC pressé – adaptez votre discours en temps réel"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – Pitcher et convaincre : du premier meeting au term sheet",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Le premier meeting : structure, énergie et gestion du temps",
+     "objectif": "Préparer le lecteur à transformer un premier rendez-vous de 30 à 60 minutes en une conversation mémorable qui déclenche un second meeting.",
+     "sections": [
+      "13.1 – Les 5 premières minutes : briser la glace, poser le cadre, capter l'attention",
+      "13.2 – La structure en 4 blocs : histoire, produit, traction, demande",
+      "13.3 – Gérer le temps : 20 min de pitch, 10 min de Q&A, 5 min de next steps",
+      "13.4 – Lecture de salle : décoder le langage corporel et adapter le rythme",
+      "13.5 – Les questions pièges et comment y répondre sans perdre le contrôle",
+      "13.6 – L'art de la conclusion : demander clairement le next step",
+      "13.7 – Le debrief post-meeting : qu'est-ce qui a marché, qu'est-ce qui a manqué ?"
+     ],
+     "exercices": [
+      "Chronométrez votre pitch complet : il doit tenir en 12 minutes. Coupez le superflu.",
+      "Préparez une « question bank » de 20 questions difficiles et rédigez vos réponses en 2 phrases max",
+      "Filmez un pitch blanc devant 2 collègues et recueillez leur feedback structuré (grille fournie)"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La démo produit et la preuve de traction en situation",
+     "objectif": "Apprendre à intégrer une démonstration produit percutante et des données de traction dans le pitch sans noyer l'investisseur.",
+     "sections": [
+      "14.1 – Quand montrer le produit et quand rester sur la vision",
+      "14.2 – La démo en 3 minutes : scénario utilisateur, wow moment, simplicité",
+      "14.3 – Les métriques de traction qui comptent : MRR, croissance MoM, rétention, NPS",
+      "14.4 – Raconter la traction : du premier client au centième, la courbe narrative",
+      "14.5 – Gérer les chiffres modestes : honnêteté, contexte, trajectoire",
+      "14.6 – Les social proofs : logos clients, presse, awards, partenariats stratégiques",
+      "14.7 – Préparer un backup technique : que faire si la démo plante"
+     ],
+     "exercices": [
+      "Scénarisez votre démo produit en 3 étapes : problème → utilisation → résultat. Répétez 5 fois.",
+      "Sélectionnez vos 5 métriques clés et créez un mini-dashboard visuel sur une slide",
+      "Testez votre démo devant quelqu'un qui ne connaît pas votre produit : notez ses questions spontanées"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Gérer les objections et transformer les doutes en engagement",
+     "objectif": "Équiper le lecteur d'une panoplie de réponses aux objections les plus fréquentes et lui apprendre à transformer chaque résistance en opportunité de dialogue.",
+     "sections": [
+      "15.1 – La taxonomie des objections : marché, équipe, concurrence, valorisation, timing",
+      "15.2 – La méthode LAER : Listen, Acknowledge, Explore, Respond",
+      "15.3 – Répondre à « C'est trop tôt » : montrer la traction et le momentum",
+      "15.4 – Répondre à « La concurrence est trop forte » : différenciation et moat",
+      "15.5 – Répondre à « Le marché est trop petit » : expansion, adjacences, vision",
+      "15.6 – Répondre à « La valorisation est trop haute » : ancrage, comparables, milestones",
+      "15.7 – Quand dire « je ne sais pas encore » et transformer l'honnêteté en force"
+     ],
+     "exercices": [
+      "Listez les 10 objections que vous avez reçues (ou anticipez-les) et rédigez une réponse en 2 phrases pour chacune",
+      "Jeu de rôle : un partenaire joue l'avocat du diable pendant 15 minutes, vous répondez sans vous justifier",
+      "Technique du reframe : prenez 3 objections et reformulez-les en questions ouvertes qui ramènent l'investisseur vers votre thèse"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Du deuxième meeting au comité d'investissement : naviguer le processus interne du VC",
+     "objectif": "Démystifier ce qui se passe entre le premier meeting et le term sheet : partenaires, analystes, comité, et comment influencer chaque étape.",
+     "sections": [
+      "16.1 – Le processus type d'un VC : sourcing → screening → partner meeting → IC → term sheet",
+      "16.2 – Le rôle de l'analyst/associate : votre allié interne, comment le nourrir",
+      "16.3 – Le partner champion : l'identifier, le brief, lui donner les armes pour défendre votre dossier",
+      "16.4 – Le comité d'investissement : qui vote, quels critères, quelles dynamiques de groupe",
+      "16.5 – Fournir les bons documents au bon moment sans surcharger",
+      "16.6 – Gérer la durée du processus : 4 à 12 semaines, comment maintenir l'engagement",
+      "16.7 – Les signaux positifs et négatifs : décoder le silence, les relances, les demandes supplémentaires"
+     ],
+     "exercices": [
+      "Après un meeting, rédigez un email de synthèse pour l'analyst avec 3 documents clés et 2 données complémentaires",
+      "Timeline : construisez un rétroplanning sur 8 semaines avec les jalons de votre processus de levée",
+      "Identifiez dans votre pipeline 2 investisseurs où vous pouvez demander explicitement : « Quelle est votre prochaine étape interne ? »"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – Négocier : valorisation, term sheet et pacte d'actionnaires",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "La valorisation : art, science et psychologie",
+     "objectif": "Donner au lecteur les outils pour défendre une valorisation juste, comprendre les méthodes de calcul et négocier sans se brader ni faire fuir l'investisseur.",
+     "sections": [
+      "17.1 – Les méthodes de valorisation : comparables, VC method, scorecard, Berkus, DCF simplifié",
+      "17.2 – La valorisation pre-money vs post-money : ce que ça change concrètement",
+      "17.3 – Les facteurs qui font monter la valorisation : traction, FOMO, concurrence entre investisseurs",
+      "17.4 – Les facteurs qui la font baisser : dilution passée, cap table désordonné, dépendance client",
+      "17.5 – L'ancre psychologique : qui propose le premier chiffre et pourquoi",
+      "17.6 – Négocier la valo sans casser la relation : techniques de Chris Voss appliquées",
+      "17.7 – Les instruments alternatifs : SAFE, BSA AIR, convertible note – quand les utiliser"
+     ],
+     "exercices": [
+      "Calculez votre valorisation selon 3 méthodes différentes et comparez les résultats",
+      "Simulation : négociez une valorisation avec un partenaire qui joue un VC ancré 30 % en dessous de votre cible",
+      "Rédigez votre « walk-away number » et justifiez-le en 3 arguments factuels"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Décrypter le term sheet : chaque clause expliquée",
+     "objectif": "Rendre le lecteur capable de lire, comprendre et négocier chaque ligne d'un term sheet sans dépendre exclusivement de son avocat.",
+     "sections": [
+      "18.1 – Anatomy of a term sheet : structure type et vocabulaire essentiel",
+      "18.2 – Liquidation preference : 1x non-participating vs participating – l'impact réel",
+      "18.3 – Anti-dilution : full ratchet vs weighted average, quand c'est négociable",
+      "18.4 – Board seats et droits de veto : qui contrôle quoi après la levée",
+      "18.5 – Vesting, cliff et acceleration : protéger les fondateurs",
+      "18.6 – Drag-along, tag-along, ROFR : les clauses de sortie et de transfert",
+      "18.7 – Information rights, pro-rata, exclusivité : les clauses opérationnelles"
+     ],
+     "exercices": [
+      "Prenez un term sheet modèle (fourni en annexe) et annotez chaque clause avec sa signification en langage simple",
+      "Scénario : un VC propose une liquidation preference 2x participating. Calculez l'impact sur votre payout en cas de sortie à 50 M€",
+      "Listez 3 clauses que vous refuseriez en l'état et rédigez votre contre-proposition argumentée"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Négocier comme un fondateur : stratégies, tactiques et lignes rouges",
+     "objectif": "Transformer le lecteur en négociateur préparé, capable de défendre ses intérêts tout en préservant une relation long terme avec l'investisseur.",
+     "sections": [
+      "19.1 – La préparation : BATNA, zone d'accord possible (ZOPA), priorités hiérarchisées",
+      "19.2 – Les 3 règles d'or : ne jamais négocier sous pression, toujours demander du temps, tout écrire",
+      "19.3 – Techniques d'écoute active et de questionnement calibré (méthode Voss)",
+      "19.4 – Négociation intégrative : créer de la valeur au lieu de se battre sur un seul chiffre",
+      "19.5 – Les concessions stratégiques : quoi céder, quand, et en échange de quoi",
+      "19.6 – Gérer le rapport de force : quand vous avez 1 term sheet vs 5",
+      "19.7 – Les lignes rouges non négociables : contrôle, intégrité, vision long terme"
+     ],
+     "exercices": [
+      "Définissez votre BATNA et votre ZOPA pour votre levée actuelle, par écrit, avant toute négociation",
+      "Jeu de rôle : négociez 3 clauses d'un term sheet avec un partenaire en utilisant les questions calibrées",
+      "Rédigez votre « concession ladder » : 5 concessions classées de la plus facile à la plus coûteuse, avec contrepartie attendue"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Le pacte d'actionnaires et la gouvernance post-levée",
+     "objectif": "Préparer le lecteur à la vie après la signature : droits des investisseurs, fonctionnement du board, gestion des conflits et préparation du tour suivant.",
+     "sections": [
+      "20.1 – Du term sheet au pacte : ce qui change, ce qui se négocie encore",
+      "20.2 – La composition du board : équilibre fondateurs / investisseurs / indépendants",
+      "20.3 – Les droits de veto et les reserved matters : ce que vous ne pourrez plus décider seul",
+      "20.4 – Reporting et communication : fréquence, format, transparence",
+      "20.5 – Gérer un investisseur difficile : désaccord stratégique, sous-performance, remplacement",
+      "20.6 – Préparer le prochain tour : comment le pacte actuel impacte la série suivante",
+      "20.7 – Le rôle de l'avocat : quand le consulter, comment le briefer, combien ça coûte"
+     ],
+     "exercices": [
+      "Listez les 5 décisions que vous souhaitez garder en contrôle total et vérifiez si le pacte le permet",
+      "Simulez un board meeting : préparez un rapport d'activité trimestriel type pour vos investisseurs",
+      "Identifiez 2 scénarios de conflit potentiel et rédigez votre stratégie de résolution amiable"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 6 – Clore, intégrer et préparer l'avenir",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Le closing : due diligence finale, signature et transfert des fonds",
+     "objectif": "Accompagner le lecteur dans les dernières semaines avant la signature : checklist juridique, conditions suspensives, virement et annonce.",
+     "sections": [
+      "21.1 – La due diligence finale : documents, audits, vérifications croisées",
+      "21.2 – Les conditions suspensives (CPs) : les identifier, les négocier, les lever",
+      "21.3 – Le closing simultané vs les tranches : avantages, risques, calendrier",
+      "21.4 – La signature : processus juridique, notaire, registre des mouvements de titres",
+      "21.5 – L'annonce de la levée : communication interne, presse, réseaux sociaux, clients",
+      "21.6 – Les erreurs de closing : précipitation, oubli de CP, mauvaise communication équipe",
+      "21.7 – Le premier virement : gestion immédiate du cash et premiers arbitrages"
+     ],
+     "exercices": [
+      "Créez votre checklist de closing en 20 points et attribuez un responsable et une deadline à chacun",
+      "Rédigez un communiqué de presse interne de 150 mots pour annoncer la levée à votre équipe",
+      "Plan de communication J-7 à J+30 : listez les 6 actions de communication à mener autour du closing"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Les 100 premiers jours post-levée : exécution, reporting et relation investisseurs",
+     "objectif": "Guider le lecteur dans la transition délicate entre la levée et l'exécution, en maintenant la confiance des investisseurs et le momentum de l'équipe.",
+     "sections": [
+      "22.1 – Le plan d'utilisation des fonds : transformer le budget en plan d'action hebdomadaire",
+      "22.2 – Recruter vite et bien : les 3 premiers hires post-levée",
+      "22.3 – Le reporting investisseurs : format, fréquence, ton, transparence sur les difficultés",
+      "22.4 – Le premier board meeting : ordre du jour, posture, gestion des attentes",
+      "22.5 – Aligner l'équipe : partager la vision, célébrer, redéfinir les priorités",
+      "22.6 – Éviter le « post-fundraising blues » : maintenir l'énergie et la discipline",
+      "22.7 – Poser les jalons du tour suivant dès le jour 1"
+     ],
+     "exercices": [
+      "Rédigez votre plan d'exécution à 90 jours post-levée avec 3 objectifs majeurs et 9 actions clés",
+      "Créez un template de rapport mensuel investisseurs (1 page) et envoyez-le pour feedback à un mentor",
+      "Préparez l'ordre du jour de votre premier board meeting : 5 points stratégiques, 2 points opérationnels, 1 point gouvernance"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Échouer, pivoter, retenter : la levée quand ça ne se passe pas comme prévu",
+     "objectif": "Préparer le lecteur aux scénarios difficiles : refus massif, pivot nécessaire, bridge round, et reconstruction de la confiance.",
+     "sections": [
+      "23.1 – Analyser un échec : les 7 raisons pour lesquelles une levée échoue",
+      "23.2 – Le pivot stratégique : quand et comment ajuster sa thèse sans tout recommencer",
+      "23.3 – Le bridge round et le financement relais : options, risques, dilution",
+      "23.4 – Revenir devant les mêmes investisseurs après un refus : timing et approche",
+      "23.5 – Les alternatives : revenue-based financing, subventions, partenariat stratégique",
+      "23.6 – Préserver le moral de l'équipe et sa propre santé mentale pendant l'incertitude",
+      "23.7 – Le comeback : exemples de startups qui ont levé après 6, 12, 18 mois de refus"
+     ],
+     "exercices": [
+      "Post-mortem : si votre levée échoue, rédigez une analyse en 5 points : ce qui a manqué, ce qui a fonctionné, 3 changements pour la prochaine tentative",
+      "Plan B : identifiez 3 sources de financement alternatives que vous pourriez activer en 30 jours",
+      "Lettre à vous-même : écrivez un message d'encouragement à lire si vous traversez une période de refus"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "La levée comme compétence de vie : leadership, réseau et vision long terme",
+     "objectif": "Élever la perspective : la levée de fonds n'est pas un événement ponctuel mais une compétence de leadership, de communication et de construction de réseau qui sert toute la carrière.",
+     "sections": [
+      "24.1 – Ce que la levée vous a appris sur vous-même : résilience, clarté, persuasion",
+      "24.2 – Construire un réseau d'investisseurs pour la vie, pas pour un tour",
+      "24.3 – Devenir un « founder magnet » : attirer plutôt que courir",
+      "24.4 – Transmettre : mentorat, angel investing, retour à la communauté",
+      "24.5 – La levée en série : B, C, D – comment le processus évolue avec la maturité",
+      "24.6 – L'exit : IPO, acquisition, LBO – préparer la sortie dès l'entrée",
+      "24.7 – Votre manifeste de fondateur : écrire votre vision à 10 ans et la relire chaque année"
+     ],
+     "exercices": [
+      "Rédigez votre « investor relationship map » : 20 personnes à garder en contact trimestriel, avec la valeur que vous pouvez leur apporter",
+      "Écrivez votre manifeste de fondateur en 500 mots : mission, valeurs, vision à 10 ans, legs souhaité",
+      "Plan de networking annuel : 4 événements, 12 déjeuners, 6 intros à donner – planifiez-les dans votre agenda"
+     ]
+    }
+   ]
+  }
+ ]
+}

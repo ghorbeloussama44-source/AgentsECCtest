@@ -1,0 +1,585 @@
+{
+ "titre": "Le Droit en Poche du Dirigeant",
+ "sous_titre": "24 chapitres pour maîtriser les fondamentaux juridiques et contractuels sans être juriste",
+ "bibliographie": [
+  {
+   "auteur": "Yves Guyon",
+   "titre": "Droit des affaires – Tome 1 : Économique, commerçants, concurrence",
+   "annee": "2003 (12e éd.)",
+   "idee": "Présentation encyclopédique du droit commercial français : statut du commerçant, actes de commerce, liberté du commerce et de la concurrence.",
+   "apport": "Structure pédagogique pour expliquer les notions de commerçant et d'acte de commerce à un non-juriste ; cadre général des obligations du dirigeant."
+  },
+  {
+   "auteur": "Michel Germain",
+   "titre": "Droit commercial – Sociétés commerciales",
+   "annee": "2015 (14e éd.)",
+   "idee": "Analyse exhaustive des formes sociétaires (SARL, SA, SAS, SNC), de leur constitution à leur dissolution, avec focus sur la gouvernance.",
+   "apport": "Chapitres sur le choix de la structure juridique, les responsabilités du dirigeant et les mécanismes de gouvernance."
+  },
+  {
+   "auteur": "Colette Saint-Alary-Houin",
+   "titre": "Droit commercial – Actes, commerçants, fonds de commerce, concurrence, contrats",
+   "annee": "2021 (14e éd.)",
+   "idee": "Manuel de référence couvrant le droit commercial général, les baux commerciaux et les principaux contrats d'affaires.",
+   "apport": "Modélisation des sections sur le fonds de commerce, le bail commercial et la typologie des contrats commerciaux."
+  },
+  {
+   "auteur": "François Terré, Philippe Simler, Yves Lequette",
+   "titre": "Droit des obligations",
+   "annee": "2019 (13e éd.)",
+   "idee": "Théorie générale des obligations : formation du contrat, consentement, nullités, inexécution, responsabilité civile.",
+   "apport": "Socle théorique simplifié pour expliquer la formation, la validité et la rupture des contrats au dirigeant."
+  },
+  {
+   "auteur": "Philippe Malaurie, Laurent Aynès, Pierre-Yves Gautier",
+   "titre": "Droit des contrats spéciaux",
+   "annee": "2020 (12e éd.)",
+   "idee": "Étude détaillée des contrats nommés : vente, louage, mandat, entreprise, dépôt, prêt, assurance.",
+   "apport": "Fiches pratiques sur les contrats les plus courants en entreprise (vente, prestation de services, mandat)."
+  },
+  {
+   "auteur": "Jean-Baptiste Racine",
+   "titre": "Droit du commerce",
+   "annee": "2022 (9e éd.)",
+   "idee": "Présentation moderne du droit commercial intégrant le droit du numérique, les plateformes et les nouvelles formes de commerce.",
+   "apport": "Intégration des enjeux numériques : e-commerce, contrats électroniques, signature électronique."
+  },
+  {
+   "auteur": "Laurence Idot",
+   "titre": "Droit européen de la concurrence",
+   "annee": "2018",
+   "idee": "Exposé clair des règles de concurrence européennes et françaises : ententes, abus de position dominante, concentrations.",
+   "apport": "Sections sur la conformité concurrentielle et les pratiques commerciales déloyales."
+  },
+  {
+   "auteur": "Pierre Sirinelli",
+   "titre": "Droit de la propriété intellectuelle",
+   "annee": "2020 (6e éd.)",
+   "idee": "Panorama complet : droit d'auteur, brevets, marques, dessins et modèles, avec focus sur la valorisation économique.",
+   "apport": "Chapitre sur la protection des actifs immatériels et les stratégies de dépôt pour le dirigeant."
+  },
+  {
+   "auteur": "Anne-Laure Thomat-Raynaud",
+   "titre": "Droit du travail pour les managers",
+   "annee": "2019",
+   "idee": "Guide pratique du droit du travail destiné aux managers non-juristes : embauche, exécution, rupture, obligations de l'employeur.",
+   "apport": "Approche managériale du droit social ; exercices de mise en situation pour le dirigeant-employeur."
+  },
+  {
+   "auteur": "Philippe Pétel",
+   "titre": "Droit des entreprises en difficulté",
+   "annee": "2021 (5e éd.)",
+   "idee": "Étude des procédures collectives : sauvegarde, redressement judiciaire, liquidation ; prévention des difficultés.",
+   "apport": "Chapitre sur l'anticipation des difficultés et les outils de prévention (mandat ad hoc, conciliation)."
+  },
+  {
+   "auteur": "Nicolas Dissaux",
+   "titre": "Droit de la distribution",
+   "annee": "2020 (3e éd.)",
+   "idee": "Cadre juridique des réseaux de distribution : franchise, concession, agence commerciale, e-distribution.",
+   "apport": "Sections sur les contrats de distribution et les obligations spécifiques du franchiseur/franchisé."
+  },
+  {
+   "auteur": "Francis Lefebvre (collectif)",
+   "titre": "Mémento Sociétés commerciales",
+   "annee": "2023",
+   "idee": "Référence pratique annuelle : constitution, fonctionnement, fiscalité, transformation, dissolution des sociétés.",
+   "apport": "Checklists et tableaux de synthèse pour les obligations déclaratives et les formalités du dirigeant."
+  },
+  {
+   "auteur": "Georges Ripert, Jean-Baptiste Roblot",
+   "titre": "Traité de droit commercial – Tome 1",
+   "annee": "2001 (17e éd.)",
+   "idee": "Traité historique et doctrinal du droit commercial français, fondement de la discipline.",
+   "apport": "Ancrage historique des notions (fonds de commerce, lettre de change) et leur évolution contemporaine."
+  },
+  {
+   "auteur": "Jean-François Overstake",
+   "titre": "Le contrat – Essai de classification",
+   "annee": "2003 (rééd.)",
+   "idee": "Classification doctrinale des contrats selon leur fonction économique et leur régime juridique.",
+   "apport": "Grille de lecture pour aider le dirigeant à identifier la nature juridique de ses engagements."
+  },
+  {
+   "auteur": "Xavier Delpech",
+   "titre": "Droit de l'entreprise – Le guide juridique du chef d'entreprise",
+   "annee": "2021",
+   "idee": "Guide transversal couvrant la vie juridique de l'entreprise de sa création à sa transmission, avec cas pratiques.",
+   "apport": "Structure chronologique par cycle de vie de l'entreprise ; ton accessible et orienté action."
+  },
+  {
+   "auteur": "Stéphanie Fougou",
+   "titre": "Le droit des affaires pour les Nuls",
+   "annee": "2019",
+   "idee": "Vulgarisation du droit des affaires : création, contrats, propriété intellectuelle, droit social, fiscalité.",
+   "apport": "Preuve que la vulgarisation juridique fonctionne ; inspiration pour le ton et la progressivité pédagogique."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie I – Les fondations juridiques : comprendre le terrain avant de bâtir",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le droit pour un dirigeant : mode d'emploi",
+     "objectif": "Démystifier le droit des affaires, donner au lecteur non-juriste un état d'esprit et une boîte à outils méthodologique pour aborder l'ensemble du livre.",
+     "sections": [
+      "1.1 Pourquoi le droit n'est pas (que) l'affaire des avocats",
+      "1.2 Cartographie du droit qui impacte l'entreprise au quotidien",
+      "1.3 Hiérarchie des normes : loi, décret, jurisprudence, usage, contrat",
+      "1.4 Les sources fiables d'information juridique pour le dirigeant",
+      "1.5 Quand consulter un professionnel : les signaux d'alerte",
+      "1.6 Lexique de survie : 50 termes juridiques traduits en langage dirigeant"
+     ],
+     "exercices": [
+      "Cartographier les risques juridiques de sa propre entreprise sur une matrice probabilité/impact",
+      "Rédiger une 'fiche réflexe' personnelle : qui appeler selon 10 situations juridiques types",
+      "Quiz d'auto-évaluation : quel est votre niveau de culture juridique (score sur 50)"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Choisir et structurer son entreprise : les formes juridiques décodées",
+     "objectif": "Permettre au dirigeant de comprendre les implications concrètes de chaque forme sociétaire et de piloter les choix structurants de son entité.",
+     "sections": [
+      "2.1 Entreprise individuelle, micro-entreprise, EIRL : quand rester seul",
+      "2.2 SARL, SAS, SA, SNC : le tableau comparatif qui change tout",
+      "2.3 Les statuts : ce qu'il faut absolument négocier avant de signer",
+      "2.4 Capital social, apports, valorisation : parler le même langage que les associés",
+      "2.5 Le pacte d'associés : la clause qui évite les divorces",
+      "2.6 Les obligations déclaratives et les formalités constitutives",
+      "2.7 Changer de forme : transformation, fusion, scission en pratique"
+     ],
+     "exercices": [
+      "Compléter une grille de décision multi-critères pour choisir sa forme sociale",
+      "Simuler une rédaction de clause d'agrément et de préemption adaptée à sa situation",
+      "Checklist des 20 documents à vérifier avant la signature des statuts"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La responsabilité du dirigeant : connaître ses limites pour mieux décider",
+     "objectif": "Clarifier les différents régimes de responsabilité (civile, pénale, fiscale, sociale) pesant sur le dirigeant et les moyens de s'en prémunir sans paralyser l'action.",
+     "sections": [
+      "3.1 Dirigeant de droit, dirigeant de fait : qui est responsable ?",
+      "3.2 Responsabilité civile envers la société, les associés, les tiers",
+      "3.3 Responsabilité pénale : les infractions les plus fréquentes",
+      "3.4 Responsabilité fiscale et sociale : les cas de mise en cause personnelle",
+      "3.5 Les assurances de responsabilité civile des mandataires sociaux (RCMS)",
+      "3.6 Les mécanismes d'exonération et de protection : délégation, quitus, conventions"
+     ],
+     "exercices": [
+      "Autodiagnostic : lister les 10 décisions récentes à risque juridique dans son entreprise",
+      "Rédiger une note de délégation de pouvoirs juridiquement solide",
+      "Étude de cas : analyser 3 jurisprudences de mise en cause de dirigeants et en tirer les leçons"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "La gouvernance et les organes : qui décide quoi et comment",
+     "objectif": "Donner au dirigeant une vision claire de l'articulation entre direction, associés, organes de contrôle et tiers, pour sécuriser la prise de décision collective.",
+     "sections": [
+      "4.1 Assemblées générales : convocation, quorum, majorité, procès-verbal",
+      "4.2 Le conseil d'administration et le directoire : rôles et obligations",
+      "4.3 Le rôle du commissaire aux comptes et du comité d'audit",
+      "4.4 Les conventions réglementées : éviter les conflits d'intérêts",
+      "4.5 Les décisions unilatérales du dirigeant et leurs limites",
+      "4.6 La transparence vis-à-vis des associés et le droit à l'information"
+     ],
+     "exercices": [
+      "Rédiger un modèle de convocation et de procès-verbal d'AG conforme",
+      "Simuler une procédure d'approbation de convention réglementée",
+      "Créer un calendrier annuel des obligations de gouvernance pour son entreprise"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Le fonds de commerce et les actifs de l'entreprise",
+     "objectif": "Faire comprendre la notion de fonds de commerce et la gestion juridique des actifs corporels et incorporels qui composent le patrimoine professionnel.",
+     "sections": [
+      "5.1 Qu'est-ce qu'un fonds de commerce ? Composition et évaluation",
+      "5.2 Le bail commercial : statut, renouvellement, indemnité d'éviction",
+      "5.3 La cession et la location-gérance du fonds de commerce",
+      "5.4 Le nantissement du fonds et les sûretés sur les actifs",
+      "5.5 Les actifs incorporels : logiciels, fichiers clients, savoir-faire",
+      "5.6 La protection juridique du patrimoine professionnel vs personnel"
+     ],
+     "exercices": [
+      "Établir un inventaire juridique complet des actifs de son entreprise",
+      "Analyser son bail commercial actuel à l'aide d'une grille de 15 points critiques",
+      "Simuler une clause de non-concurrence dans une cession de fonds"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie II – Le contrat, outil stratégique du dirigeant",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "La formation du contrat : avant la signature, tout se joue",
+     "objectif": "Maîtriser les étapes pré-contractuelles et les conditions de validité pour sécuriser chaque engagement contractuel dès l'origine.",
+     "sections": [
+      "6.1 Négociation, pourparlers, lettre d'intention : où commence l'engagement ?",
+      "6.2 Offre, acceptation, consentement : les trois piliers de la validité",
+      "6.3 Vices du consentement : erreur, dol, violence – savoir les détecter",
+      "6.4 Capacité et pouvoir de représentation : qui peut signer quoi ?",
+      "6.5 La forme du contrat : écrit obligatoire, preuve électronique, signature numérique",
+      "6.6 Les conditions suspensives et résolutoires : sécuriser l'aléatoire"
+     ],
+     "exercices": [
+      "Rédiger une lettre d'intention en limitant son caractère engageant",
+      "Identifier 5 clauses à risque dans un modèle de contrat fourni en annexe",
+      "Checklist pré-signature : 12 vérifications avant d'apposer sa signature"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Rédiger un contrat solide : la méthode en 7 étapes",
+     "objectif": "Fournir au dirigeant une méthodologie opérationnelle pour rédiger ou faire rédiger un contrat équilibré, clair et protecteur.",
+     "sections": [
+      "7.1 L'objet et les définitions : éviter toute ambiguïté dès la première page",
+      "7.2 Les obligations des parties : qui fait quoi, quand, comment, avec quels livrables",
+      "7.3 Le prix, les modalités de paiement et les révisions",
+      "7.4 La durée, le renouvellement et la résiliation anticipée",
+      "7.5 Les clauses limitatives de responsabilité et les garanties",
+      "7.6 Les clauses de force majeure, d'imprévision et de hardship",
+      "7.7 La loi applicable, le règlement des litiges et la clause compromissoire"
+     ],
+     "exercices": [
+      "Rédiger une clause d'objet et une clause de prix pour un contrat de prestation de services",
+      "Comparer 3 versions d'une même clause de limitation de responsabilité et choisir la meilleure",
+      "Construire un 'contrat-type' de 2 pages pour son activité principale"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Les contrats courants du dirigeant : vente, prestation, sous-traitance, bail",
+     "objectif": "Passer en revue les contrats les plus fréquents en entreprise avec leurs spécificités et leurs pièges propres.",
+     "sections": [
+      "8.1 Le contrat de vente commerciale et la CGV/CGA",
+      "8.2 Le contrat de prestation de services et de conseil",
+      "8.3 Le contrat de sous-traitance et la loi de 1975",
+      "8.4 Le bail commercial en détail : rédaction, révision, renouvellement",
+      "8.5 Le contrat d'agence commerciale et le mandat",
+      "8.6 Les contrats de distribution : concession, franchise, licence de marque"
+     ],
+     "exercices": [
+      "Analyser ses propres CGV à l'aide d'une grille de conformité de 20 points",
+      "Simuler une négociation de clause de sous-traitance avec un prestataire",
+      "Étudier un contrat de franchise type et identifier les 8 clauses d'alerte"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Exécution, modification et rupture du contrat : gérer la vie contractuelle",
+     "objectif": "Accompagner le dirigeant dans la gestion dynamique du contrat : avenants, inexécution, mise en demeure, résiliation et contentieux.",
+     "sections": [
+      "9.1 Le suivi de l'exécution : tableaux de bord contractuels et alertes",
+      "9.2 L'avenant et la modification contractuelle : formaliser le changement",
+      "9.3 L'inexécution : exception d'inexécution, résolution, résiliation",
+      "9.4 La mise en demeure : quand, comment, et quels effets juridiques",
+      "9.5 La médiation, la conciliation et l'arbitrage avant le tribunal",
+      "9.6 Le contentieux judiciaire : procédure, délais, coûts, exécution du jugement"
+     ],
+     "exercices": [
+      "Rédiger une mise en demeure efficace et juridiquement fondée",
+      "Construire un tableau de bord de suivi contractuel pour ses 5 principaux contrats",
+      "Jeu de rôle : simuler une médiation commerciale entre deux parties en conflit"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Les contrats numériques et la donnée : le nouveau territoire juridique",
+     "objectif": "Intégrer les spécificités juridiques du numérique : contrats SaaS, CGU, e-commerce, RGPD et propriété des données.",
+     "sections": [
+      "10.1 Contrat SaaS, licence logicielle, cloud : les pièges cachés",
+      "10.2 Les CGU et CGV d'un site e-commerce : obligations et bonnes pratiques",
+      "10.3 La signature électronique et la valeur probante du numérique",
+      "10.4 Le RGPD appliqué à l'entreprise : registre, DPO, sous-traitance",
+      "10.5 La propriété des données : clients, salariés, partenaires",
+      "10.6 Les contrats de traitement et les transferts de données hors UE"
+     ],
+     "exercices": [
+      "Auditer la conformité RGPD de son site web avec une checklist de 25 points",
+      "Rédiger une clause de sous-traitance de données conforme à l'article 28 RGPD",
+      "Simuler une réponse à une demande d'exercice de droit (accès, effacement, portabilité)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie III – Le dirigeant face au droit social : embaucher, manager, séparer",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "Embaucher en conformité : du besoin au contrat de travail",
+     "objectif": "Sécuriser chaque étape du recrutement et de la conclusion du contrat de travail pour éviter les contentieux prud'homaux dès l'origine.",
+     "sections": [
+      "11.1 Définir le besoin : CDI, CDD, intérim, stage, alternance – quel contrat ?",
+      "11.2 La promesse d'embauche et l'offre de contrat : valeur juridique",
+      "11.3 Le contrat de travail : clauses essentielles, période d'essai, mobilité",
+      "11.4 Les obligations déclaratives : DPAE, registre du personnel, médecine du travail",
+      "11.5 La convention collective applicable : la trouver, la comprendre, l'appliquer",
+      "11.6 Les spécificités des cadres dirigeants et des mandataires sociaux"
+     ],
+     "exercices": [
+      "Rédiger une offre de contrat de travail juridiquement sécurisée",
+      "Construire une grille de choix du type de contrat selon la situation",
+      "Simuler un entretien de recrutement en respectant les questions interdites par la loi"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Gérer la relation de travail au quotidien : droits et obligations",
+     "objectif": "Donner au dirigeant les réflexes juridiques pour le management quotidien : durée du travail, rémunération, pouvoir disciplinaire, obligations de sécurité.",
+     "sections": [
+      "12.1 Durée du travail, heures supplémentaires, repos : le cadre légal",
+      "12.2 Rémunération, primes, intéressement : structurer sans risque",
+      "12.3 Le pouvoir de direction et le pouvoir disciplinaire : jusqu'où aller ?",
+      "12.4 L'obligation de sécurité et la prévention des risques professionnels",
+      "12.5 Le harcèlement moral et sexuel : prévention, détection, réaction",
+      "12.6 Les représentants du personnel : CSE, dialogue social, négociation obligatoire"
+     ],
+     "exercices": [
+      "Rédiger un avertissement et une mise à pied disciplinaire conformes",
+      "Créer un plan de prévention des risques psychosociaux adapté à une PME",
+      "Simuler la préparation et le déroulement d'un CSE ordinaire"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Rupture du contrat de travail : licencier, négocier, sécuriser",
+     "objectif": "Maîtriser les différents modes de rupture du contrat de travail et leurs implications juridiques, financières et humaines.",
+     "sections": [
+      "13.1 La démission et la prise d'acte : ce que le dirigeant doit savoir",
+      "13.2 Le licenciement pour motif personnel : procédure, cause réelle et sérieuse",
+      "13.3 Le licenciement économique : critères d'ordre, reclassement, PSE",
+      "13.4 La rupture conventionnelle : négocier et homologuer",
+      "13.5 Les indemnités de rupture : calcul, exonérations, régimes social et fiscal",
+      "13.6 Le contentieux prud'homal : délais, procédure, risque financier"
+     ],
+     "exercices": [
+      "Simuler le calcul d'une indemnité de licenciement pour 3 profils différents",
+      "Rédiger une lettre de licenciement pour motif personnel conforme",
+      "Construire un comparatif financier entre rupture conventionnelle et licenciement"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "La protection sociale du dirigeant et de ses salariés",
+     "objectif": "Clarifier le paysage de la protection sociale obligatoire et complémentaire pour le dirigeant TNS ou assimilé salarié, et les obligations de l'employeur.",
+     "sections": [
+      "14.1 TNS ou assimilé salarié : quel statut social pour quel dirigeant ?",
+      "14.2 Les cotisations sociales : assiette, taux, déclarations (DSN, Urssaf)",
+      "14.3 La mutuelle et la prévoyance obligatoires : choisir et mettre en place",
+      "14.4 La retraite complémentaire et la retraite du dirigeant",
+      "14.5 Les accidents du travail et les maladies professionnelles : obligations",
+      "14.6 L'épargne salariale : intéressement, participation, PEE, PER collectif"
+     ],
+     "exercices": [
+      "Comparer le coût social total d'un dirigeant TNS vs assimilé salarié",
+      "Simuler la mise en place d'un accord d'intéressement dans une PME de 15 salariés",
+      "Créer un tableau récapitulatif des obligations sociales annuelles de l'entreprise"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie IV – Protéger son entreprise : propriété intellectuelle, concurrence, conformité",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "La propriété intellectuelle : brevets, marques, droits d'auteur, dessins",
+     "objectif": "Permettre au dirigeant d'identifier, protéger et valoriser ses actifs immatériels sans nécessairement passer par un conseil en PI pour chaque décision.",
+     "sections": [
+      "15.1 Cartographier ses actifs immatériels : qu'est-ce qui a de la valeur ?",
+      "15.2 La marque : dépôt, classes, surveillance, renouvellement",
+      "15.3 Le brevet et le certificat d'utilité : quand et comment protéger une invention",
+      "15.4 Le droit d'auteur et les logiciels : protection automatique et limites",
+      "15.5 Les dessins et modèles : protéger l'apparence de ses produits",
+      "15.6 La stratégie de valorisation : licence, cession, franchise, apport en société"
+     ],
+     "exercices": [
+      "Réaliser un audit de propriété intellectuelle simplifié de son entreprise",
+      "Simuler une recherche d'antériorité sur la base de données INPI",
+      "Rédiger une clause de cession de droits d'auteur pour un prestataire créatif"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Secret des affaires, savoir-faire et clauses de non-concurrence",
+     "objectif": "Protéger les informations stratégiques et le savoir-faire de l'entreprise face à la mobilité des salariés, aux concurrents et aux partenaires.",
+     "sections": [
+      "16.1 Le secret des affaires : définition légale, mesures de protection, sanctions",
+      "16.2 Les clauses de confidentialité (NDA) : rédiger et faire respecter",
+      "16.3 La clause de non-concurrence dans le contrat de travail : validité et limites",
+      "16.4 Le savoir-faire : définition, protection contractuelle, transmission",
+      "16.5 Les accords de non-divulgation avec les partenaires et sous-traitants",
+      "16.6 Que faire en cas de violation : preuves, mise en demeure, action en justice"
+     ],
+     "exercices": [
+      "Rédiger un NDA adapté à une discussion avec un investisseur potentiel",
+      "Analyser la validité d'une clause de non-concurrence selon 5 critères jurisprudentiels",
+      "Construire un protocole interne de protection du secret des affaires"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Droit de la concurrence et pratiques commerciales : jouer selon les règles",
+     "objectif": "Sensibiliser le dirigeant aux règles de concurrence (ententes, abus, concentrations) et aux pratiques commerciales réglementées pour éviter sanctions et contentieux.",
+     "sections": [
+      "17.1 Les pratiques anticoncurrentielles : ententes, abus de position dominante",
+      "17.2 Les aides d'État et les subventions publiques : ce qui est autorisé",
+      "17.3 La concurrence déloyale : parasitisme, dénigrement, désorganisation",
+      "17.4 Les pratiques commerciales trompeuses et agressives (B2C)",
+      "17.5 Les pratiques restrictives de concurrence en B2B : déséquilibre significatif, rupture brutale",
+      "17.6 Le contrôle des concentrations et le rôle de l'Autorité de la concurrence"
+     ],
+     "exercices": [
+      "Analyser 3 situations commerciales et qualifier le risque concurrentiel",
+      "Rédiger une clause de non-dénigrement dans un contrat de distribution",
+      "Simuler une réponse à une demande d'information de l'Autorité de la concurrence"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Conformité, éthique et anticorruption : le dirigeant en première ligne",
+     "objectif": "Intégrer les obligations de conformité (compliance) qui pèsent sur le dirigeant : Sapin II, devoir de vigilance, LCB-FT, éthique des affaires.",
+     "sections": [
+      "18.1 La loi Sapin II et le programme anticorruption : qui est concerné ?",
+      "18.2 Le devoir de vigilance : cartographie des risques et plan d'action",
+      "18.3 La lutte contre le blanchiment et le financement du terrorisme (LCB-FT)",
+      "18.4 Le lanceur d'alerte : protection, procédure interne, obligations de l'entreprise",
+      "18.5 L'éthique des affaires et la RSE : au-delà de l'obligation légale",
+      "18.6 Mettre en place un dispositif de conformité proportionné à sa taille"
+     ],
+     "exercices": [
+      "Rédiger une cartographie des risques de corruption simplifiée pour une PME",
+      "Construire un code de conduite / charte éthique d'une page",
+      "Simuler un traitement interne d'un signalement d'alerte éthique"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie V – Financement, fiscalité et obligations financières : piloter les chiffres dans le cadre légal",
+   "chapitres": [
+    {
+     "numero": 19,
+     "titre": "Financer son entreprise : les cadres juridiques du capital et de la dette",
+     "objectif": "Comprendre les implications juridiques des principales sources de financement pour négocier en connaissance de cause avec banquiers et investisseurs.",
+     "sections": [
+      "19.1 L'augmentation de capital : procédure, droit préférentiel de souscription, prime d'émission",
+      "19.2 L'emprunt bancaire : clauses clés, covenants, sûretés, garantie OSEO/Bpifrance",
+      "19.3 Le crédit-bail (leasing) et l'affacturage : cadre juridique et pièges",
+      "19.4 Les obligations convertibles, BSA, BSPCE : financer avec du capital futur",
+      "19.5 Le crowdfunding et les émissions participatives : réglementation",
+      "19.6 Les garanties et sûretés : caution, nantissement, hypothèque – ce que le dirigeant signe"
+     ],
+     "exercices": [
+      "Analyser les clauses clés d'un contrat de prêt bancaire et identifier 5 points de négociation",
+      "Simuler une augmentation de capital avec prime d'émission (calcul et PV d'AG)",
+      "Comparer le coût juridique et financier de 3 modes de financement"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "La fiscalité de l'entreprise : ce que le dirigeant doit comprendre sans être fiscaliste",
+     "objectif": "Donner une vision claire des grands mécanismes fiscaux de l'entreprise (IS, TVA, CET, droits d'enregistrement) pour dialoguer avec son expert-comptable et éviter les redressements.",
+     "sections": [
+      "20.1 Impôt sur les sociétés vs impôt sur le revenu : le choix de régime",
+      "20.2 La TVA : mécanisme, collecte, déduction, déclarations, régularisations",
+      "20.3 La contribution économique territoriale (CFE et CVAE)",
+      "20.4 Les droits d'enregistrement : cessions de parts, apports, baux",
+      "20.5 Les obligations déclaratives et le calendrier fiscal annuel",
+      "20.6 Le contrôle fiscal : droits, procédure, recours, pénalités"
+     ],
+     "exercices": [
+      "Construire le calendrier fiscal annuel de son entreprise",
+      "Simuler un choix IS/IR pour une société en création avec 3 scénarios",
+      "Préparer les documents et réponses à une demande de pièces lors d'un contrôle fiscal"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "La comptabilité et les obligations financières légales",
+     "objectif": "Rappeler les obligations comptables et financières du dirigeant : tenue des comptes, approbation, dépôt, audit, et conséquences en cas de manquement.",
+     "sections": [
+      "21.1 Les obligations comptables : livre-journal, grand livre, inventaire, comptes annuels",
+      "21.2 L'approbation des comptes et l'affectation du résultat en AG",
+      "21.3 Le dépôt des comptes au greffe : obligation, délais, confidentialité",
+      "21.4 Le rôle du commissaire aux comptes : seuils, mission, alerte",
+      "21.5 Les conventions de trésorerie et les comptes courants d'associés",
+      "21.6 Les sanctions : responsabilité pour comptes infidèles, banqueroute"
+     ],
+     "exercices": [
+      "Préparer l'ordre du jour et la résolution d'approbation des comptes pour l'AG annuelle",
+      "Vérifier si son entreprise atteint les seuils de nomination d'un CAC",
+      "Construire un tableau de suivi de trésorerie intégrant les contraintes juridiques"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Les sûretés, les garanties et la gestion du risque contractuel",
+     "objectif": "Outiller le dirigeant pour sécuriser ses créances, protéger ses engagements et structurer une gestion proactive du risque juridique et financier.",
+     "sections": [
+      "22.1 Les sûretés personnelles : caution simple, solidaire, autonome",
+      "22.2 Les sûretés réelles : nantissement, hypothèque, gage, réserve de propriété",
+      "22.3 Les garanties contractuelles : garantie d'actif et de passif (GAP), garantie à première demande",
+      "22.4 Les assurances professionnelles : RC pro, multirisque, perte d'exploitation",
+      "22.5 La gestion des impayés : relance, injonction de payer, procédure simplifiée",
+      "22.6 Construire une cartographie des risques juridiques et un plan de mitigation"
+     ],
+     "exercices": [
+      "Rédiger une clause de réserve de propriété efficace pour un fournisseur",
+      "Simuler une procédure d'injonction de payer de la requête à l'exécution",
+      "Construire une matrice de gestion des risques juridiques de son entreprise"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie VI – Anticiper les crises, transmettre et pérenniser",
+   "chapitres": [
+    {
+     "numero": 23,
+     "titre": "Prévenir et traverser les difficultés : mandat ad hoc, conciliation, procédures collectives",
+     "objectif": "Préparer le dirigeant à détecter les difficultés tôt et à utiliser les outils juridiques de prévention et de traitement pour sauver l'entreprise.",
+     "sections": [
+      "23.1 Les signaux d'alerte : quand l'entreprise entre en zone de danger",
+      "23.2 Le mandat ad hoc : un outil confidentiel et souple",
+      "23.3 La conciliation : négocier avec ses créanciers sous protection judiciaire",
+      "23.4 La sauvegarde : protéger l'activité tout en restructurant la dette",
+      "23.5 Le redressement judiciaire : plan de continuation, observation, période suspecte",
+      "23.6 La liquidation judiciaire : procédure, conséquences, rebond"
+     ],
+     "exercices": [
+      "Construire un tableau de bord de détection précoce des difficultés (10 indicateurs)",
+      "Simuler la rédaction d'une requête en mandat ad hoc",
+      "Étudier un cas pratique : choisir entre conciliation et sauvegarde selon 3 scénarios"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Transmettre, céder et pérenniser : préparer l'avenir juridique de l'entreprise",
+     "objectif": "Accompagner le dirigeant dans les enjeux juridiques de la transmission, de la cession et de la pérennisation de son entreprise, y compris la dimension successorale.",
+     "sections": [
+      "24.1 Préparer la transmission : diagnostic juridique, audit, valorisation",
+      "24.2 La cession de titres vs la cession de fonds : avantages, risques, fiscalité",
+      "24.3 La garantie d'actif et de passif : protéger acheteur et vendeur",
+      "24.4 Le pacte Dutreil et les dispositifs fiscaux de transmission familiale",
+      "24.5 La transmission aux salariés : reprise, SCOP, LBO interne",
+      "24.6 La pérennisation : fondation d'entreprise, gouvernance post-transmission, archivage juridique",
+      "24.7 Bilan du parcours : construire son plan d'action juridique à 12 mois"
+     ],
+     "exercices": [
+      "Rédiger une lettre d'intention (LOI) pour la cession de sa société",
+      "Construire une checklist de due diligence juridique de 30 points",
+      "Élaborer son plan d'action juridique personnel : 10 actions concrètes à mener dans les 12 prochains mois"
+     ]
+    }
+   ]
+  }
+ ]
+}

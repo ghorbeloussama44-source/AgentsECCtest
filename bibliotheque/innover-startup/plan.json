@@ -1,0 +1,613 @@
+{
+ "titre": "Hypothèse Zéro",
+ "sous_titre": "Valider, tester, lancer : la méthode complète pour créer un produit sans gaspiller une seule ressource",
+ "bibliographie": [
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "Introduit la boucle Build-Measure-Learn : construire un prototype minimal, mesurer les réactions réelles des clients, apprendre et ajuster. L'entrepreneur doit gérer son projet comme une série d'expériences scientifiques.",
+   "apport": "Notre livre reprendra le cadre itératif mais le dépassera en intégrant des protocoles de décision quantitatifs (seuils de validation, arbres de décision) et des méthodes adaptées aux contextes non-tech."
+  },
+  {
+   "auteur": "Steve Blank",
+   "titre": "The Four Steps to the Epiphany",
+   "annee": "2005",
+   "idee": "Les startups échouent parce qu'elles construisent avant de comprendre. Le Customer Development impose de sortir du bâtiment pour découvrir, valider, créer puis construire l'entreprise.",
+   "apport": "Structure du livre autour de la progression découverte → validation → création ; intégration des scripts d'entretien client et des cartes d'empathie terrain."
+  },
+  {
+   "auteur": "Steve Blank et Bob Dorf",
+   "titre": "The Startup Owner's Manual",
+   "annee": "2012",
+   "idee": "Manuel opérationnel du Customer Development : checklists, tableaux de bord, métriques de validation étape par étape pour chaque type de marché (web, mobile, physique, B2B).",
+   "apport": "Fournira la trame des fiches-outils pratiques intégrées à chaque chapitre et les grilles de scoring des hypothèses."
+  },
+  {
+   "auteur": "Ash Maurya",
+   "titre": "Running Lean",
+   "annee": "2012",
+   "idee": "Remplace le Business Plan par le Lean Canvas (une page) et détaille un processus itératif en trois phases : problème/solution, produit/marché, croissance. Chaque itération dure 2 à 4 semaines.",
+   "apport": "Le Lean Canvas sera un outil central du livre, enrichi d'une version « Hypothèse Zéro » qui ajoute une colonne « test prévu » et une colonne « critère d'abandon »."
+  },
+  {
+   "auteur": "Alexander Osterwalder et Yves Pigneur",
+   "titre": "Business Model Generation",
+   "annee": "2010",
+   "idee": "Le Business Model Canvas décompose tout modèle économique en 9 blocs (segments, valeur, canaux, revenus, coûts…). Visualiser sur une seule page permet de détecter les incohérences.",
+   "apport": "Utilisé comme cartographie initiale dans la Partie 2 ; notre livre y greffera un calque « risque » pour prioriser les blocs à tester en premier."
+  },
+  {
+   "auteur": "Alexander Osterwalder, Yves Pigneur, Greg Bernarda, Alan Smith",
+   "titre": "Value Proposition Design",
+   "annee": "2014",
+   "idee": "Aligner la proposition de valeur avec les tâches, douleurs et bénéfices du client via le Value Proposition Canvas. Prototyper la valeur avant de prototyper le produit.",
+   "apport": "Chapitre dédié à la cartographie valeur/douleur ; exercices de rédaction de propositions de valeur testables en moins de 30 mots."
+  },
+  {
+   "auteur": "David J. Bland et Alexander Osterwalder",
+   "titre": "Testing Business Ideas",
+   "annee": "2019",
+   "idee": "Bibliothèque de 44 expériences classées par effort et fiabilité (entretien, landing page, concierge, Wizard of Oz, prévente…). Chaque test a un protocole et un critère de succès.",
+   "apport": "Le livre reprendra la logique de catalogue d'expériences mais l'organisera en parcours décisionnel : « quelle hypothèse → quel test → quel seuil »."
+  },
+  {
+   "auteur": "Rob Fitzpatrick",
+   "titre": "The Mom Test",
+   "annee": "2013",
+   "idee": "Ne jamais demander « aimerais-tu mon produit ? » mais poser des questions sur le comportement passé et les faits concrets. Trois règles : parler de leur vie, poser des questions spécifiques, écouter plus que parler.",
+   "apport": "Chapitre complet sur l'art de l'entretien de validation ; scripts de questions, anti-patterns, grille de codage des réponses."
+  },
+  {
+   "auteur": "Dan Olsen",
+   "titre": "The Lean Product Playbook",
+   "annee": "2015",
+   "idee": "Le product-market fit se construit en 6 étapes : cible, besoins sous-adressés, proposition de valeur, ensemble de fonctionnalités, MVP, test-utilisabilité. Méthode pyramidale.",
+   "apport": "Structure de la Partie 4 (conception MVP) ; intégration de la pyramide de priorisation fonctionnalités/valeur."
+  },
+  {
+   "auteur": "Jake Knapp, John Zeratsky, Braden Kowitz",
+   "titre": "Sprint",
+   "annee": "2016",
+   "idee": "En 5 jours, une équipe passe de l'idée au prototype testé auprès de 5 utilisateurs. Lundi : carte ; mardi : esquisse ; mercredi : décision ; jeudi : prototype ; vendredi : test.",
+   "apport": "Adaptation du format Sprint en « Sprint Solo » et « Sprint 48 h » pour entrepreneurs individuels ; intégré dans la Partie 3."
+  },
+  {
+   "auteur": "Geoffrey A. Moore",
+   "titre": "Crossing the Chasm",
+   "annee": "1991",
+   "idee": "Entre les early adopters et la majorité, il existe un fossé. Pour le franchir, il faut dominer une niche de référence avant d'élargir. Positionnement = cible + problème + différenciation.",
+   "apport": "Chapitre sur le choix de la niche initiale et la stratégie de tête de pont pour les premiers clients ; critères de sélection de la niche."
+  },
+  {
+   "auteur": "Clayton M. Christensen",
+   "titre": "The Innovator's Dilemma",
+   "annee": "1997",
+   "idee": "Les entreprises établies échouent face aux innovations de rupture car elles écoutent leurs clients existants. La rupture commence par un segment négligé avec un produit inférieur.",
+   "apport": "Éclairage stratégique : quand tester une hypothèse de rupture vs. incrémentale ; cadre pour identifier les segments négligés."
+  },
+  {
+   "auteur": "Marty Cagan",
+   "titre": "Inspired: How to Create Tech Products Customers Love",
+   "annee": "2008",
+   "idee": "Les meilleurs produits naissent de la découverte (risque valeur, utilisabilité, faisabilité, viabilité) avant la livraison. Les équipes produit doivent tester les risques, pas juste exécuter un cahier des charges.",
+   "apport": "Grille d'évaluation des quatre risques intégrée dans le processus de priorisation des hypothèses ; notion de « discovery » vs « delivery »."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "The 4-Hour Workweek",
+   "annee": "2007",
+   "idee": "Tester la demande avant de créer : publicité fictive, page de vente, précommande. Le « muse » est un produit automatisé validé par le marché en quelques jours.",
+   "apport": "Techniques de test à très faible coût (fausse landing page, test AdWords à 50 €) intégrées dans la boîte à outils de la Partie 3."
+  },
+  {
+   "auteur": "Sean Ellis et Morgan Brown",
+   "titre": "Hacking Growth",
+   "annee": "2017",
+   "idee": "La croissance est un processus d'expérimentation continue : identifier le levier principal, formuler des hypothèses, lancer des tests A/B, mesurer, scaler. Boucle hebdomadaire.",
+   "apport": "Méthodologie des boucles de test rapides appliquée post-MVP ; tableau de bord de croissance et indicateurs north-star."
+  },
+  {
+   "auteur": "Peter F. Drucker",
+   "titre": "Innovation and Entrepreneurship",
+   "annee": "1985",
+   "idee": "L'innovation est une discipline, pas un éclair de génie. Sept sources d'opportunités (inattendu, incongruence, besoin, changement, démographie, perception, savoir). L'entrepreneur systématique teste avant d'investir.",
+   "apport": "Cadre d'identification des opportunités en amont de la formulation d'hypothèses ; ancrage philosophique du livre."
+  },
+  {
+   "auteur": "Alexander Osterwalder, Tim Clark, Yves Pigneur",
+   "titre": "Business Model You",
+   "annee": "2012",
+   "idee": "Appliquer le Business Model Canvas à soi-même : qui je suis, quelle valeur j'offre, à qui, comment. Permet de tester son positionnement personnel comme une hypothèse marché.",
+   "apport": "Exercice d'introspection entrepreneuriale en ouverture du livre ; lien entre identité du porteur de projet et choix des hypothèses."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie 1 – Les fondations : penser en hypothèses, agir en expérimentateur",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le mythe du plan parfait : pourquoi 90 % des produits échouent avant d'avoir un client",
+     "objectif": "Déconstruire l'illusion du business plan exhaustif et installer le postulat central du livre : toute idée est une hypothèse tant qu'elle n'a pas été confrontée au réel.",
+     "sections": [
+      "1.1 – L'hécatombe silencieuse : ce que disent les chiffres sur l'échec des lancements",
+      "1.2 – Le biais du bâtisseur : pourquoi nous confondons activité et validation",
+      "1.3 – Le coût caché de l'ego : temps, argent, énergie brûlés pour « avoir raison »",
+      "1.4 – Le paradigme expérimental : passer de « je crois que » à « je teste si »",
+      "1.5 – Les trois ressources à protéger : temps, trésorerie, motivation",
+      "1.6 – La promesse du livre : un protocole, pas une recette magique",
+      "1.7 – Auto-diagnostic : où en êtes-vous dans votre rapport à l'incertitude ?"
+     ],
+     "exercices": [
+      "Inventaire des croyances non testées sur votre idée actuelle (tableau en 3 colonnes : croyance / indice / niveau de confiance)",
+      "Calcul du « coût de l'entêtement » : combien de semaines/euros avez-vous investis sans feedback client ?",
+      "Rédaction d'une phrase-manifeste : « Je m'autorise à découvrir que mon idée est fausse si… »"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "L'anatomie d'une hypothèse marché : formuler pour pouvoir réfuter",
+     "objectif": "Enseigner la structure formelle d'une hypothèse testable et la distinction entre opinion, intuition et hypothèse scientifique appliquée au marché.",
+     "sections": [
+      "2.1 – Qu'est-ce qu'une hypothèse ? Définition, structure « Si… alors… parce que… »",
+      "2.2 – Les cinq familles d'hypothèses : problème, solution, segment, canal, modèle économique",
+      "2.3 – Le critère de réfutabilité : une hypothèse qui ne peut pas être fausse est inutile",
+      "2.4 – Granularité : découper une idée en 10 à 20 micro-hypothèses testables",
+      "2.5 – Hiérarchisation par le risque : la matrice impact × incertitude",
+      "2.6 – Le journal d'hypothèses : votre carnet de bord expérimental",
+      "2.7 – Erreurs classiques : hypothèses trop vagues, trop larges, non mesurables"
+     ],
+     "exercices": [
+      "Transformer une idée de produit en 10 hypothèses formulées en « Si [cible] rencontre [problème], alors elle acceptera de [action] si [condition] »",
+      "Noter chaque hypothèse sur une échelle de confiance (0-10) et de criticité (0-10)",
+      "Construire la matrice impact × incertitude et entourer les 3 hypothèses « à risque maximal »"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Le mindset de l'expérimentateur : détachement, curiosité, vélocité",
+     "objectif": "Travailler la posture psychologique indispensable pour accepter les résultats négatifs, itérer vite et ne pas tomber dans le piège de la confirmation.",
+     "sections": [
+      "3.1 – Le biais de confirmation : votre pire ennemi intérieur",
+      "3.2 – Détachement constructif : aimer le problème, pas la solution",
+      "3.3 – La règle des 48 heures : décider vite, corriger plus vite encore",
+      "3.4 – L'échec comme donnée : recadrer chaque « non » en information",
+      "3.5 – Gérer la pression sociale : expliquer sa démarche à son entourage",
+      "3.6 – Rituel quotidien de l'expérimentateur : 20 minutes pour apprendre",
+      "3.7 – Construire un « conseil des sceptiques » : s'entourer de contradicteurs bienveillants"
+     ],
+     "exercices": [
+      "Écrire une « lettre d'adieu » à votre solution actuelle pour vous entraîner au détachement",
+      "Identifier 3 personnes de votre réseau qui oseront vous dire la vérité et planifier un échange",
+      "Mettre en place un rituel : chaque soir, noter 1 chose apprise, 1 hypothèse mise à jour, 1 action pour demain"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Cartographier le terrain : Business Model Canvas, Lean Canvas et calque-risque",
+     "objectif": "Fournir les outils de cartographie initiale pour visualiser l'ensemble des hypothèses d'un projet sur une seule page et identifier les zones de fragilité.",
+     "sections": [
+      "4.1 – Le Business Model Canvas en 15 minutes : les 9 blocs essentiels",
+      "4.2 – Le Lean Canvas d'Ash Maurya : pourquoi il convient mieux aux projets naissants",
+      "4.3 – Le calque-risque : superposer une couche « niveau de risque » à chaque bloc",
+      "4.4 – Le Value Proposition Canvas : zoomer sur l'adéquation problème/solution",
+      "4.5 – Choisir son outil selon la maturité du projet",
+      "4.6 – Remplir son premier canvas : mode d'emploi pas à pas",
+      "4.7 – Du canvas à la liste d'hypothèses ordonnées : le pont vers le test"
+     ],
+     "exercices": [
+      "Remplir un Lean Canvas vierge pour votre projet en 30 minutes chrono (timer obligatoire)",
+      "Colorier chaque case en vert/orange/rouge selon votre niveau de certitude",
+      "Extraire les 3 cases les plus rouges et formuler pour chacune une hypothèse testable"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 2 – Explorer le problème : comprendre avant de construire",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Sortir du bâtiment : l'art de la découverte client",
+     "objectif": "Maîtriser la méthodologie d'entretien exploratoire pour comprendre les douleurs réelles du segment cible sans influencer les réponses.",
+     "sections": [
+      "5.1 – Pourquoi Google ne suffit pas : les limites de la recherche documentaire",
+      "5.2 – Préparer un entretien de découverte : cible, recrutement, logistique",
+      "5.3 – Les 3 règles du Mom Test : faits passés, spécificité, écoute active",
+      "5.4 – Script-type : les 12 questions qui révèlent un vrai problème",
+      "5.5 – Les anti-patterns : questions orientées, pitching déguisé, recherche de compliments",
+      "5.6 – Coder et synthétiser : transformer 10 entretiens en carte de douleurs",
+      "5.7 – Nombre magique : combien d'entretiens suffisent ? (indice : moins que vous croyez)"
+     ],
+     "exercices": [
+      "Rédiger un script de 10 questions ouvertes à partir de votre hypothèse problème",
+      "Réaliser 3 entretiens de 20 minutes dans la semaine et les enregistrer (avec accord)",
+      "Remplir une grille de codage : douleur citée / fréquence / intensité / solution actuelle / coût actuel"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Qualifier la douleur : fréquence, intensité, budget",
+     "objectif": "Distinguer un « joli problème » d'une douleur aiguë pour laquelle les gens paient réellement, en utilisant des critères quantitatifs.",
+     "sections": [
+      "6.1 – Le triangle FIB : Fréquence, Intensité, Budget déjà dépensé",
+      "6.2 – La hiérarchie des douleurs : vitamine vs. aspirine vs. hémorragie",
+      "6.3 – Observer les comportements réels : ce que les gens font vs. ce qu'ils disent",
+      "6.4 – Cartographier les solutions existantes et leurs failles",
+      "6.5 – Le test du « je paierais » : pourquoi il est trompeur et comment le remplacer",
+      "6.6 – Segmenter la douleur : un même problème, des intensités différentes selon les profils",
+      "6.7 – Score de validation du problème : construire un indicateur composite 0-100"
+     ],
+     "exercices": [
+      "Construire la grille FIB pour votre problème principal et la faire remplir par 5 prospects",
+      "Réaliser une « journée d'observation » : suivre un utilisateur potentiel dans sa routine",
+      "Calculer le score de validation et décider : problème assez aigu (≥ 70) ou à reformuler (< 70)"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Définir et choisir son segment : la stratégie de la tête de pont",
+     "objectif": "Apprendre à sélectionner une niche initiale suffisamment étroite pour être dominée, en s'inspirant de Crossing the Chasm.",
+     "sections": [
+      "7.1 – Le piège du « tout le monde » : pourquoi un segment large est un segment vide",
+      "7.2 – Critères de sélection d'une niche : accessibilité, douleur, pouvoir d'achat, taille minimale",
+      "7.3 – La tête de pont : dominer 100 personnes avant d'en viser 10 000",
+      "7.4 – Personas vs. anti-personas : qui servir et qui exclure volontairement",
+      "7.5 – Cartographie concurrentielle rapide : qui fait quoi, où sont les angles morts",
+      "7.6 – Valider le segment : 5 indicateurs concrets que vous avez trouvé la bonne cible",
+      "7.7 – Quand élargir : signaux de saturation de la niche et critères d'expansion"
+     ],
+     "exercices": [
+      "Rédiger 3 personas et 2 anti-personas pour votre projet",
+      "Construire un tableau comparatif de 5 concurrents directs/indirects avec colonnes « forces / faiblesses / angle mort »",
+      "Sélectionner votre niche tête de pont et écrire en 2 lignes pourquoi elle est la meilleure porte d'entrée"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "La proposition de valeur en une phrase : clarté radicale",
+     "objectif": "Formuler une proposition de valeur testable, mémorable et différenciante, prête à être soumise au marché.",
+     "sections": [
+      "8.1 – La structure « Pour [qui], qui [problème], notre [solution] permet [bénéfice] contrairement à [alternative] »",
+      "8.2 – Le test de la grand-mère : si elle ne comprend pas, recommencez",
+      "8.3 – Bénéfice fonctionnel vs. émotionnel vs. social : lequel domine ?",
+      "8.4 – Les 5 variantes : tester 3 à 5 formulations avant de figer",
+      "8.5 – Le mot qui tue : identifier le terme différenciateur qui déclenche l'attention",
+      "8.6 – Proposition de valeur et pricing : cohérence perçue",
+      "8.7 – Itérer la proposition : elle évoluera 7 à 12 fois avant le lancement"
+     ],
+     "exercices": [
+      "Rédiger 5 versions de votre proposition de valeur en 20 minutes",
+      "Les soumettre à 3 personnes de votre cible et mesurer le temps de compréhension",
+      "Éliminer les 3 plus faibles, fusionner les 2 meilleures, produire la v1 finale"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 3 – Tester sans construire : 12 méthodes de validation rapide",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Le catalogue des tests : choisir la bonne expérience pour la bonne hypothèse",
+     "objectif": "Présenter un panorama structuré des méthodes de test classées par effort, coût et fiabilité, avec un arbre de décision pour sélectionner la méthode adaptée.",
+     "sections": [
+      "9.1 – Les 3 axes de tout test : effort, fiabilité, vitesse d'apprentissage",
+      "9.2 – Tests qualitatifs vs. quantitatifs : quand utiliser lequel",
+      "9.3 – Le continuum : entretien → landing page → concierge → Wizard of Oz → prévente → MVP",
+      "9.4 – L'arbre de décision : « Quelle est mon hypothèse ? → Quel est mon budget ? → Quel test ? »",
+      "9.5 – Les 12 méthodes détaillées en fiches express",
+      "9.6 – Combiner 2 à 3 tests pour trianguler la vérité",
+      "9.7 – Le seuil de validation : définir à l'avance ce qui constitue un succès ou un échec"
+     ],
+     "exercices": [
+      "Pour votre hypothèse n°1, identifier 3 méthodes de test possibles et les classer par effort croissant",
+      "Définir le seuil chiffré de succès (ex. : ≥ 15 % de taux de clic, ≥ 3 précommandes)",
+      "Planifier un calendrier : 1 test par semaine pendant 4 semaines"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Landing pages, publicités et tests à 50 euros",
+     "objectif": "Démarrer la validation de la demande avec des outils gratuits ou quasi-gratuits, sans écrire une ligne de code produit.",
+     "sections": [
+      "10.1 – La landing page de validation : structure en 5 blocs (accroche, problème, solution, preuve, CTA)",
+      "10.2 – Outils no-code : Carrd, Framer, Webflow, Notion – lequel choisir selon le besoin",
+      "10.3 – Le test AdWords / Meta à 50 € : cibler, diffuser, mesurer le CTR",
+      "10.4 – La fausse porte : mesurer l'intention d'achat sans avoir de produit",
+      "10.5 – A/B testing simplifié : 2 variantes, 1 variable, 200 visiteurs minimum",
+      "10.6 – Analyser les résultats : taux de rebond, taux de clic, taux d'inscription",
+      "10.7 – Piges juridiques et éthiques : transparence, RGPD, ne pas encaisser sans livrer"
+     ],
+     "exercices": [
+      "Créer une landing page en 2 heures avec un outil no-code",
+      "Lancer une campagne publicitaire à 50 € sur 5 jours avec 2 variantes de message",
+      "Remplir la fiche de résultats : visiteurs, clics, inscriptions, coût par lead, enseignement principal"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Concierge, Wizard of Oz et service manuel : simuler le produit",
+     "objectif": "Valider la valeur délivrée en exécutant le service manuellement avant toute automatisation, pour apprendre en conditions réelles.",
+     "sections": [
+      "11.1 – Le service concierge : faire à la main ce que le logiciel fera demain",
+      "11.2 – Le Wizard of Oz : une façade automatisée, un humain derrière le rideau",
+      "11.3 – Choisir entre concierge et Wizard of Oz selon la complexité du service",
+      "11.4 – Recruter 5 à 10 cobayes : où les trouver, comment les dédommager",
+      "11.5 – Le protocole d'exécution : livrer, observer, noter les frictions",
+      "11.6 – Mesurer la satisfaction : NPS simplifié, taux de réutilisation, verbatims",
+      "11.7 – Ce que le manuel révèle que l'automatique cache : les insights opérationnels"
+     ],
+     "exercices": [
+      "Concevoir un protocole concierge pour votre service : étapes, outils, durée, livrable",
+      "Réaliser 3 prestations manuelles avec de vrais utilisateurs",
+      "Rédiger un compte-rendu : 3 surprises, 3 frictions, 3 ajustements à apporter"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Prévente, crowdfunding et engagement financier : le test ultime",
+     "objectif": "Valider la volonté de payer réelle en demandant un engagement financier avant même que le produit n'existe.",
+     "sections": [
+      "12.1 – Pourquoi l'argent est le seul juge de paix : la différence entre « j'achèterais » et « je paie »",
+      "12.2 – La prévente simple : page de vente + paiement, livraison différée",
+      "12.3 – Le crowdfunding : Kickstarter, Ulule, KissKissBankBank – préparer une campagne minimale",
+      "12.4 – La lettre d'intention B2B : obtenir un bon de commande avant de produire",
+      "12.5 – Fixer le prix de test : ni trop bas (non significatif), ni trop haut (non représentatif)",
+      "12.6 – Le taux de conversion cible : à partir de quel pourcentage la demande est-elle validée ?",
+      "12.7 – Gérer l'échec de la prévente : ce que cela signifie et comment rebondir"
+     ],
+     "exercices": [
+      "Rédiger une page de prévente (titre, problème, solution, prix, garantie, bouton de paiement)",
+      "Envoyer la page à 50 contacts qualifiés et suivre le taux de conversion",
+      "Si conversion < 5 % : formuler 3 hypothèses explicatives et planifier un pivot de message"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 4 – Construire le MVP : le minimum qui crée la valeur maximale",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Définir le périmètre du MVP : la pyramide valeur/fonctionnalités",
+     "objectif": "Apprendre à réduire un produit à son noyau de valeur essentiel en utilisant la méthode de priorisation par l'impact et le risque.",
+     "sections": [
+      "13.1 – MVP ≠ produit médiocre : la définition précise",
+      "13.2 – La pyramide de Dan Olsen : cible → besoin → valeur → fonctionnalités → UX",
+      "13.3 – La technique MoSCoW appliquée au MVP : Must, Should, Could, Won't",
+      "13.4 – Le « One Feature MVP » : peut-on tout réduire à une seule fonctionnalité ?",
+      "13.5 – Le périmètre temporel : un MVP se construit en 2 à 6 semaines, pas 6 mois",
+      "13.6 – La checklist anti-gaspillage : chaque fonctionnalité passe-t-elle le test du « pourquoi ? »",
+      "13.7 – Valider le périmètre avec 5 utilisateurs avant de coder ou fabriquer"
+     ],
+     "exercices": [
+      "Lister toutes les fonctionnalités imaginées, puis les classer MoSCoW",
+      "Supprimer tout ce qui n'est pas « Must » et vérifier que la valeur reste compréhensible",
+      "Présenter le périmètre réduit à 3 utilisateurs cibles et recueillir leurs réactions"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Prototyper sans coder : no-code, low-code et maquettes",
+     "objectif": "Explorer les outils et techniques permettant de créer un prototype fonctionnel sans compétences techniques avancées.",
+     "sections": [
+      "14.1 – Le spectre du prototype : papier → maquette → wireframe → prototype cliquable → produit fonctionnel",
+      "14.2 – Outils no-code pour le web : Bubble, Webflow, Glide, Softr",
+      "14.3 – Outils no-code pour le mobile : FlutterFlow, Adalo, Thunkable",
+      "14.4 – Prototyper un service : Typeform + Zapier + Notion en 3 heures",
+      "14.5 – La maquette Figma en 1 journée : structure, composants, test d'utilisabilité",
+      "14.6 – Le prototype physique : impression 3D, carton, détournement d'objets existants",
+      "14.7 – Choisir le bon niveau de finition : « assez bon pour apprendre » vs. « assez bon pour vendre »"
+     ],
+     "exercices": [
+      "Réaliser une maquette papier de votre produit en 30 minutes (5 écrans/étapes)",
+      "Construire un prototype cliquable sur Figma ou un outil no-code en une journée",
+      "Faire tester le prototype à 3 personnes et noter chaque hésitation ou question"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Le Sprint 48 heures : de l'idée au prototype testé en un week-end",
+     "objectif": "Fournir un protocole pas-à-pas adapté du Design Sprint de Google pour un entrepreneur solo ou une équipe de 2-3 personnes.",
+     "sections": [
+      "15.1 – Pourquoi 48 heures ? La contrainte de temps comme accélérateur de décision",
+      "15.2 – Vendredi soir : cadrage – définir la question unique à laquelle répondre",
+      "15.3 – Samedi matin : esquisse – 3 solutions divergentes en 90 minutes",
+      "15.4 – Samedi après-midi : décision – voter, choisir, story-boarder",
+      "15.5 – Dimanche matin : prototyper – construire la façade testable",
+      "15.6 – Dimanche après-midi : tester – 5 utilisateurs, 45 minutes chacun",
+      "15.7 – Dimanche soir : synthèse – 3 apprentissages, 1 décision : continuer, itérer ou abandonner"
+     ],
+     "exercices": [
+      "Bloquer un week-end dans votre agenda et inviter 1 à 2 acolytes",
+      "Préparer le matériel : post-its, feutres, Figma, 5 créneaux de test utilisateurs",
+      "Exécuter le Sprint et rédiger le compte-rendu en 3 apprentissages + 1 décision"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Le test d'utilisabilité express : 5 utilisateurs, 20 questions",
+     "objectif": "Mettre en place un protocole de test utilisateur rapide, structuré et actionnable pour valider l'expérience avant tout développement lourd.",
+     "sections": [
+      "16.1 – Pourquoi 5 utilisateurs suffisent (loi de Nielsen) et quand en ajouter",
+      "16.2 – Le protocole : tâche, observation silencieuse, think-aloud, questions post-test",
+      "16.3 – Les 20 questions types : compréhension, navigation, valeur perçue, frein, recommandation",
+      "16.4 – Recruter les bons testeurs : ni proches complaisants, ni inconnus hors-cible",
+      "16.5 – Coder les résultats : heatmap des hésitations, verbatims, score de complétion",
+      "16.6 – Prioriser les corrections : matrice fréquence × gravité",
+      "16.7 – Itérer ou pivoter : le seuil de 80 % de complétion comme go/no-go"
+     ],
+     "exercices": [
+      "Écrire le scénario de test : 3 tâches à accomplir sur votre prototype",
+      "Mener 5 sessions de 20 minutes et remplir la grille d'observation",
+      "Produire la liste des 5 corrections prioritaires et estimer le temps de chacune"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 5 – Mesurer, itérer, pivoter : la boucle d'apprentissage en action",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "Les métriques qui comptent : au-delà de la vanité",
+     "objectif": "Installer un tableau de bord minimal de 5 à 7 indicateurs réellement décisionnels et éliminer les métriques de vanité.",
+     "sections": [
+      "17.1 – Métriques de vanité vs. métriques actionnables : le tri radical",
+      "17.2 – La North Star Metric : l'unique chiffre qui reflète la valeur délivrée",
+      "17.3 – Le framework AARRR appliqué au MVP : Acquisition, Activation, Rétention, Référence, Revenu",
+      "17.4 – Cohortes et taux de rétention : le vrai juge de paix",
+      "17.5 – Le tableau de bord MVP : 5 indicateurs suffisent au départ",
+      "17.6 – Fréquence de mesure : quotidienne en test, hebdomadaire en itération",
+      "17.7 – Outils simples : Google Analytics, Mixpanel, Notion, ou une feuille Excel"
+     ],
+     "exercices": [
+      "Définir votre North Star Metric en une phrase et la justifier",
+      "Construire un tableau de bord à 5 cases dans un tableur",
+      "Après 2 semaines de test, remplir le tableau et identifier la métrique la plus faible"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La boucle Build-Measure-Learn en pratique : cycles de 1 à 2 semaines",
+     "objectif": "Opérationnaliser la boucle d'itération courte avec des rituels, des livrables et des critères de passage à l'étape suivante.",
+     "sections": [
+      "18.1 – Anatomie d'un cycle : hypothèse → test → données → décision",
+      "18.2 – Lundi : formuler l'hypothèse de la semaine",
+      "18.3 – Mardi à jeudi : exécuter le test (entretien, landing, prototype, prévente)",
+      "18.4 – Vendredi : analyser, remplir la fiche de cycle",
+      "18.5 – Le rituel de décision : continuer, ajuster, pivoter, abandonner",
+      "18.6 – Le journal de bord : capitaliser les apprentissages pour ne jamais répéter une erreur",
+      "18.7 – Accélérer le rythme : passer de 2 semaines à 1 semaine, puis à 5 jours"
+     ],
+     "exercices": [
+      "Planifier 4 cycles consécutifs dans votre agenda avec livrables pour chaque jour",
+      "Créer la fiche de cycle vierge : hypothèse, test, résultat chiffré, décision, apprentissage",
+      "Après le premier cycle, rédiger un paragraphe de synthèse : « Ce que j'ai appris cette semaine »"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Pivoter sans drame : reconnaître le signal et changer de direction",
+     "objectif": "Démystifier le pivot, fournir les signaux d'alerte qui l'imposent et les 10 types de pivots possibles.",
+     "sections": [
+      "19.1 – Le pivot n'est pas un échec : c'est une validation d'apprentissage",
+      "19.2 – Les 5 signaux qui disent « pivotez maintenant » (rétention < 10 %, CAC > LTV, etc.)",
+      "19.3 – Les 10 types de pivots : zoom-in, zoom-out, segment, plateforme, canal, technologie, valeur, croissance, modèle, moteur",
+      "19.4 – Le processus de pivot en 7 étapes : de la décision à la relance",
+      "19.5 – Communiquer le pivot : à soi-même, à ses associés, à ses premiers clients",
+      "19.6 – Le pivot partiel : garder 80 % et changer 20 %",
+      "19.7 – Études de cas : Instagram, Slack, Nintendo – ce que les pivots célèbres enseignent"
+     ],
+     "exercices": [
+      "Passer en revue vos métriques actuelles et cocher les signaux d'alerte présents",
+      "Si un signal est présent : rédiger 3 options de pivot et leurs implications",
+      "Écrire une « note de pivot » d'une page : ce qu'on garde, ce qu'on change, pourquoi, prochain test"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Itérer sur la valeur : améliorer sans surcharger",
+     "objectif": "Mettre en place un processus d'amélioration continue qui ajoute de la valeur sans gonfler le produit de fonctionnalités inutiles.",
+     "sections": [
+      "20.1 – La règle du « un ajout = un retrait » : maintenir la simplicité",
+      "20.2 – Le feedback structuré : entretiens post-usage, sondages NPS, analyses de churn",
+      "20.3 – La matrice effort/impact pour prioriser les améliorations",
+      "20.4 – Le test A/B continu : une variable à la fois, 100 utilisateurs minimum",
+      "20.5 – Les boucles de feedback automatiques : in-app, email, chat",
+      "20.6 – Savoir dire non : résister à la demande de fonctionnalité qui dilue la valeur",
+      "20.7 – Le cycle d'itération mature : 3 à 5 améliorations par mois, pas plus"
+     ],
+     "exercices": [
+      "Envoyer un sondage NPS à vos 10 premiers utilisateurs et analyser les verbatims",
+      "Construire la matrice effort/impact avec les 8 améliorations envisagées",
+      "Sélectionner 2 améliorations « impact fort / effort faible » et planifier leur implémentation"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie 6 – De la validation à la croissance : structurer sans perdre l'agilité",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Le passage au produit : quand et comment quitter le mode MVP",
+     "objectif": "Identifier les signaux qui indiquent que le MVP a rempli son rôle et qu'il est temps d'investir dans un produit complet.",
+     "sections": [
+      "21.1 – Le signal du product-market fit : rétention, bouche-à-oreille, croissance organique",
+      "21.2 – La checklist de maturité : 10 critères pour passer du MVP au V1",
+      "21.3 – Ce qui change : équipe, budget, dette technique, support client",
+      "21.4 – Ce qui ne doit pas changer : la boucle d'apprentissage, l'écoute client, la vélocité",
+      "21.5 – Construire la roadmap post-MVP : 3 mois, 6 mois, 12 mois",
+      "21.6 – Les erreurs classiques du passage à l'échelle : recruter trop vite, automatiser trop tôt",
+      "21.7 – Le rôle du fondateur : de testeur à chef d'orchestre"
+     ],
+     "exercices": [
+      "Remplir la checklist de maturité à 10 critères et calculer votre score",
+      "Rédiger une roadmap sur 3 mois : 3 objectifs, 9 actions, 3 indicateurs",
+      "Identifier la première tâche à déléguer et rédiger la fiche de poste ou le brief"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Growth hacking éthique : les boucles d'acquisition à faible coût",
+     "objectif": "Mettre en place les premières boucles de croissance organiques et payantes sans budget marketing conséquent, en restant transparent et respectueux.",
+     "sections": [
+      "22.1 – Le principe : la croissance est un système d'expériences, pas un coup de génie",
+      "22.2 – Les 4 canaux d'acquisition à tester en priorité : SEO, contenu, communauté, partenariat",
+      "22.3 – Le growth loop : chaque utilisateur en amène un autre (parrainage, partage, UGC)",
+      "22.4 – Le test A/B appliqué à l'acquisition : landing, email, publicité",
+      "22.5 – Les indicateurs de croissance : CAC, LTV, taux viral, payback period",
+      "22.6 – L'éthique du growth : pas de dark patterns, pas de spam, transparence RGPD",
+      "22.7 – Le tableau de bord croissance : 1 réunion hebdomadaire, 3 tests, 1 décision"
+     ],
+     "exercices": [
+      "Concevoir un mécanisme de parrainage simple et le tester auprès de 10 clients",
+      "Lancer 2 campagnes d'acquisition à 30 € chacune sur des canaux différents",
+      "Remplir le tableau de bord : coût par acquisition, taux de conversion, enseignement"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Financer la phase de validation : bootstrapping, micro-budgets et aides",
+     "objectif": "Donner les clés pour financer la phase de test sans s'endetter ni diluer prématurément, en mobilisant des ressources minimales.",
+     "sections": [
+      "23.1 – Le budget minimal de validation : combien coûte réellement un cycle de test (50 à 500 €)",
+      "23.2 – Le bootstrapping : financer par les préventes, le freelancing, les économies",
+      "23.3 – Les aides publiques et concours : Bpifrance, French Tech, incubateurs, bourses régionales",
+      "23.4 – Le crowdfunding comme outil de validation ET de financement",
+      "23.5 – Les business angels et micro-investisseurs : quand les solliciter, comment pitcher",
+      "23.6 – La règle des 3 enveloppes : budget test, budget MVP, budget lancement",
+      "23.7 – La discipline financière : suivre chaque euro dépensé et son retour en apprentissage"
+     ],
+     "exercices": [
+      "Établir votre budget de validation sur 3 mois en 3 enveloppes",
+      "Lister 5 sources de financement adaptées à votre situation et leurs conditions",
+      "Calculer le « coût par apprentissage » : budget total / nombre d'hypothèses testées"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le manifeste Hypothèse Zéro : vos 21 principes pour entreprendre sans gaspiller",
+     "objectif": "Synthétiser l'ensemble du livre en un manifeste opérationnel, fournir un plan d'action 90 jours et installer les habitudes durables de l'entrepreneur expérimentateur.",
+     "sections": [
+      "24.1 – Les 21 principes Hypothèse Zéro : résumé en une phrase par principe",
+      "24.2 – Le plan d'action 90 jours : semaine par semaine, de l'idée au premier client payant",
+      "24.3 – Le rituel de l'expérimentateur : routines quotidiennes, hebdomadaires et mensuelles pour maintenir la discipline",
+      "24.4 – L'anti-gaspillage comme culture d'entreprise : transmettre le mindset à vos futurs collaborateurs",
+      "24.5 – Quand arrêter de tester et commencer à vendre : le seuil de confiance absolue",
+      "24.6 – Le mot de la fin : l'entrepreneuriat est une science humaine, pas un jeu de hasard",
+      "24.7 – Votre prochain pas : choisir une seule action dans les 10 prochaines minutes"
+     ],
+     "exercices": [
+      "Imprimer ou recopier les 21 principes et les afficher dans votre espace de travail",
+      "Remplir le plan d'action 90 jours en fixant 3 jalons précis (jour 30, jour 60, jour 90)",
+      "Envoyer un message à un partenaire de redevabilité pour planifier un point hebdomadaire de 15 minutes"
+     ]
+    }
+   ]
+  }
+ ]
+}
