@@ -1,0 +1,603 @@
+{
+ "titre": "La Machine à Liberté",
+ "sous_titre": "Feuille de route radicale pour optimiser ses dépenses, investir massivement et conquérir son indépendance financière",
+ "bibliographie": [
+  {
+   "auteur": "George S. Clason",
+   "titre": "L'Homme le plus riche de Babylone",
+   "annee": "1926",
+   "idee": "Les principes universels de l'enrichissement : se payer d'abord, contrôler ses dépenses, faire fructifier chaque pièce. Récits paraboles babyloniennes.",
+   "apport": "Structure narrative et principe du 'payez-vous d'abord' comme fondement de chaque chapitre budgétaire."
+  },
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "The Intelligent Investor",
+   "annee": "1949",
+   "idee": "L'investissement défensif et la marge de sécurité : acheter sous la valeur intrinsèque, ignorer le bruit du marché, penser long terme.",
+   "apport": "Cadre conceptuel pour les chapitres sur l'investissement en actions et la gestion du risque."
+  },
+  {
+   "auteur": "Burton Malkiel",
+   "titre": "A Random Walk Down Wall Street",
+   "annee": "1973",
+   "idee": "Les marchés sont efficients ; la gestion passive par indices bat la gestion active sur le long terme. Diversification et coûts bas.",
+   "apport": "Justification scientifique de l'investissement indiciel massif, cœur de la stratégie du livre."
+  },
+  {
+   "auteur": "Thomas J. Stanley & William D. Danko",
+   "titre": "The Millionaire Next Door",
+   "annee": "1996",
+   "idee": "Les vrais millionnaires vivent modestement, épargnent plus de 20 % de leurs revenus et investissent systématiquement. La richesse silencieuse.",
+   "apport": "Démystification du luxe et ancrage des données sur le taux d'épargne nécessaire."
+  },
+  {
+   "auteur": "Vicki Robin & Joe Dominguez",
+   "titre": "Your Money or Your Life",
+   "annee": "1992",
+   "idee": "Chaque dépense se mesure en heures de vie. L'indépendance financière est atteinte quand les revenus passifs couvrent les dépenses. Courbe de croisement.",
+   "apport": "Concept d'énergie vitale et graphique de croisement repris dans la partie 5."
+  },
+  {
+   "auteur": "Robert T. Kiyosaki",
+   "titre": "Père riche, Père pauvre",
+   "annee": "1997",
+   "idee": "Distinguer actif et passif ; éduquer financièrement ; faire travailler l'argent pour soi plutôt que l'inverse.",
+   "apport": "Vulgarisation actif/passif et mindset entrepreneurial intégré aux chapitres introductifs."
+  },
+  {
+   "auteur": "David Bach",
+   "titre": "The Automatic Millionaire",
+   "annee": "2004",
+   "idee": "Automatiser l'épargne et l'investissement dès la réception du revenu élimine la dépendance à la volonté. Le facteur latte.",
+   "apport": "Système d'automatisation détaillé dans la partie optimisation des dépenses."
+  },
+  {
+   "auteur": "Dave Ramsey",
+   "titre": "The Total Money Makeover",
+   "annee": "2003",
+   "idee": "Méthode des boules de neige pour éliminer les dettes, fonds d'urgence, puis investissement progressif en 7 étapes.",
+   "apport": "Séquence de désendettement adaptée dans la partie 2."
+  },
+  {
+   "auteur": "Ramit Sethi",
+   "titre": "I Will Teach You to Be Rich",
+   "annee": "2009",
+   "idee": "Finance personnelle sans culpabilité : automatiser, négocier, investir dans des fonds indiciels, dépenser sans restriction sur ce qui compte vraiment.",
+   "apport": "Approche déculpabilisante et scripts de négociation repris dans les exercices."
+  },
+  {
+   "auteur": "Taylor Larimore, Mel Lindauer, Michael LeBoeuf",
+   "titre": "The Bogleheads' Guide to Investing",
+   "annee": "2005",
+   "idee": "Investissement passif à trois fonds, rééquilibrage annuel, minimisation fiscale, ignorez le bruit médiatique.",
+   "apport": "Architecture de portefeuille à trois fonds détaillée dans la partie investissement massif."
+  },
+  {
+   "auteur": "Tony Robbins",
+   "titre": "Money: Master the Game",
+   "annee": "2014",
+   "idee": "Synthèse des stratégies de 50 grands investisseurs ; allocation par seaux ; importance des frais composés.",
+   "apport": "Métaphore des seaux de liquidité et tableau comparatif des frais."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "La réussite financière dépend davantage du comportement que de l'intelligence. Récits sur la peur, l'avidité, la patience.",
+   "apport": "Encadrés psychologiques et biais cognitifs intégrés à chaque chapitre."
+  },
+  {
+   "auteur": "JL Collins",
+   "titre": "The Simple Path to Wealth",
+   "annee": "2016",
+   "idee": "Un seul fonds indiciel large (VTI/VXUS) suffit ; la simplicité bat la complexité ; lettre à sa fille sur la liberté.",
+   "apport": "Simplicité radicale du portefeuille et ton bienveillant adopté dans le livre."
+  },
+  {
+   "auteur": "Grant Sabatier",
+   "titre": "Financial Freedom",
+   "annee": "2019",
+   "idee": "Le mouvement FIRE : taux d'épargne extrême (50-70 %), side hustles, calcul du nombre de liberté, optimisation fiscale.",
+   "apport": "Formules du taux d'épargne et du 'FIRE number' reprises dans la partie 5."
+  },
+  {
+   "auteur": "Elizabeth Willard Thames",
+   "titre": "Meet the Frugalwoods",
+   "annee": "2018",
+   "idee": "Frugalité extrême assumée comme choix de vie ; réduction des dépenses à 30 % du revenu ; retraite à 32 ans.",
+   "apport": "Étude de cas concret et dimension 'design de vie' intégrée aux exercices."
+  },
+  {
+   "auteur": "Tim Ferriss",
+   "titre": "La Semaine de 4 heures",
+   "annee": "2007",
+   "idee": "Mini-retraites, externalisation, revenus passifs, design de vie. Le temps vaut plus que l'argent.",
+   "apport": "Concept de mini-retraites et de revenu décorrélé du temps dans la partie indépendance."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – DIAGNOSTIC ET DÉCLIC : COMPRENDRE OÙ L'ON EST POUR SAVOIR OÙ L'ON VA",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le miroir financier : oser regarder ses chiffres en face",
+     "objectif": "Amener le lecteur à établir un état des lieux complet et honnête de sa situation financière, sans jugement, pour créer le point de départ de la feuille de route.",
+     "sections": [
+      "1.1 Pourquoi 80 % des gens ignorent leur patrimoine net",
+      "1.2 L'inventaire en 90 minutes : actifs, passifs, flux",
+      "1.3 Le relevé de vie : tracer chaque euro sur 30 jours",
+      "1.4 Identifier les fuites invisibles (abonnements, micro-dépenses, frais bancaires)",
+      "1.5 Calculer son taux d'épargne réel et son taux de liberté",
+      "1.6 Le bilan émotionnel : quelles peurs bloquent votre rapport à l'argent"
+     ],
+     "exercices": [
+      "Exercice 1 : Remplir la grille 'Patrimoine Express' (tableau actif/passif fourni)",
+      "Exercice 2 : Exporter 90 jours de relevés bancaires et surligner par catégorie",
+      "Exercice 3 : Calculer son taux d'épargne actuel et le projeter sur 10, 20, 30 ans",
+      "Exercice 4 : Écrire une lettre à son 'moi financier' pour débloquer les croyances limitantes"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La psychologie de la dépense : pourquoi votre cerveau vous sabote",
+     "objectif": "Révéler les biais cognitifs et les mécanismes émotionnels qui poussent à la surconsommation, afin de désamorcer les automatismes avant d'agir.",
+     "sections": [
+      "2.1 L'hédonisme adaptatif : pourquoi chaque augmentation de salaire disparaît",
+      "2.2 Le marketing de l'identité : acheter pour être, pas pour avoir",
+      "2.3 L'ancrage, la comparaison sociale et l'effet Diderot",
+      "2.4 La douleur de payer : cash, carte, one-click, le gradient de la souffrance",
+      "2.5 Les 7 déclencheurs émotionnels de l'achat impulsif",
+      "2.6 Construire son 'pare-feu décisionnel' en 4 questions"
+     ],
+     "exercices": [
+      "Exercice 1 : Journal des achats impulsifs pendant 14 jours (déclencheur, émotion, montant)",
+      "Exercice 2 : Test des 72 heures sur tout achat supérieur à 50 €",
+      "Exercice 3 : Cartographier ses 3 principales fuites émotionnelles",
+      "Exercice 4 : Rédiger 5 affirmations financières personnalisées"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Définir SA liberté : le nombre, la date, le style de vie",
+     "objectif": "Guider le lecteur dans la définition chiffrée et personnelle de son indépendance financière, pour transformer un rêve vague en cible mesurable.",
+     "sections": [
+      "3.1 L'indépendance financière n'est pas la richesse : clarifier le concept",
+      "3.2 La règle des 4 % et ses variantes (3 %, 3,5 %, taux variables)",
+      "3.3 Calculer son 'FIRE number' : dépenses annuelles × multiplicateur",
+      "3.4 Choisir son niveau : Lean FIRE, Coast FIRE, Barista FIRE, Fat FIRE",
+      "3.5 Le design de vie : que feriez-vous de 35 heures libres par semaine ?",
+      "3.6 Fixer une date butoir et un plan de route inversé"
+     ],
+     "exercices": [
+      "Exercice 1 : Calculer son FIRE number selon 3 scénarios (frugal, confortable, ambitieux)",
+      "Exercice 2 : Écrire sa 'journée idéale' dans 10 ans, heure par heure",
+      "Exercice 3 : Construire la frise chronologique inversée depuis la date cible",
+      "Exercice 4 : Identifier les 3 dépenses qui seront éliminées et les 3 qui seront sanctuarisées"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "La feuille de route en une page : le système Ghorbel",
+     "objectif": "Présenter l'architecture globale du livre sous forme de système visuel en 5 piliers, pour que le lecteur ait une vue hélicoptère avant d'entrer dans le détail.",
+     "sections": [
+      "4.1 Les 5 piliers : Diagnostiquer, Optimiser, Automatiser, Investir, Protéger",
+      "4.2 La règle 50/30/20 réinventée : la répartition Ghorbel",
+      "4.3 Le tableau de bord mensuel : 6 indicateurs à suivre",
+      "4.4 Les 3 vitesses : mode survie, mode croisière, mode accélération",
+      "4.5 Les rituels : hebdomadaire (15 min), mensuel (1 h), annuel (demi-journée)",
+      "4.6 S'engager publiquement : le contrat avec soi-même"
+     ],
+     "exercices": [
+      "Exercice 1 : Remplir le tableau de bord Ghorbel avec ses chiffres actuels",
+      "Exercice 2 : Choisir sa vitesse de croisière et ajuster les pourcentages",
+      "Exercice 3 : Programmer les 3 rituels dans son agenda numérique",
+      "Exercice 4 : Rédiger et signer son contrat d'engagement financier"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – OPTIMISATION RADICALE DES DÉPENSES : REPRENDRE LE CONTRÔLE DE CHAQUE EURO",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Le grand tri : éliminer 30 % de dépenses sans perdre en qualité de vie",
+     "objectif": "Fournir une méthode structurée pour auditer chaque poste de dépense et supprimer le superflu sans sacrifier le bien-être.",
+     "sections": [
+      "5.1 La méthode des 3 colonnes : essentiel / utile / plaisir",
+      "5.2 Les abonnements fantômes : audit et résiliation en 60 minutes",
+      "5.3 Les assurances : trop couvert, mal couvert, ou pas couvert ?",
+      "5.4 L'alimentation : planifier les repas pour économiser 200 € par mois",
+      "5.5 Le transport : le vrai coût de la voiture et les alternatives",
+      "5.6 Le logement : renégocier, sous-louer, ou déménager stratégiquement",
+      "5.7 La règle du 'coût par usage' pour les achats durables"
+     ],
+     "exercices": [
+      "Exercice 1 : Lister tous les abonnements et attribuer une note /10 à chacun",
+      "Exercice 2 : Simuler le coût annuel réel de sa voiture (achat, assurance, essence, entretien, dépréciation)",
+      "Exercice 3 : Créer un menu hebdomadaire type avec liste de courses plafonnée",
+      "Exercice 4 : Négocier un contrat d'assurance ou d'énergie par téléphone (script fourni)"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Négocier comme un pro : réduire les factures fixes de 15 à 40 %",
+     "objectif": "Équiper le lecteur de scripts, techniques et arguments pour renégocier systématiquement chaque contrat récurrent.",
+     "sections": [
+      "6.1 La psychologie de la négociation : préparer son BATNA",
+      "6.2 Télécom, internet, énergie : les 5 phrases qui font baisser la facture",
+      "6.3 Banques et frais cachés : migrer vers le gratuit sans perdre en service",
+      "6.4 Crédits en cours : renégocier le taux ou regrouper intelligemment",
+      "6.5 Loyers et charges : ses droits et les arguments qui fonctionnent",
+      "6.6 Achats importants : la technique du prix cible et du silence"
+     ],
+     "exercices": [
+      "Exercice 1 : Appeler son opérateur avec le script fourni et noter le résultat",
+      "Exercice 2 : Comparer 3 banques en ligne et ouvrir un compte secondaire gratuit",
+      "Exercice 3 : Calculer l'économie annuelle potentielle sur chaque facture renégociable",
+      "Exercice 4 : Pratiquer la négociation sur un achat courant (marché, occasion)"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Automatiser l'épargne : le système qui rend la discipline inutile",
+     "objectif": "Mettre en place un système de virements et de règles automatiques qui épargne et investit avant que la tentation de dépenser n'intervienne.",
+     "sections": [
+      "7.1 Le principe 'Payez-vous d'abord' : inverser la formule classique",
+      "7.2 L'architecture multi-comptes : salaire, vie, plaisir, investissement, urgence",
+      "7.3 Les virements programmés : jour J+1 après la paie",
+      "7.4 L'arrondi automatique et les micro-investissements quotidiens",
+      "7.5 Augmenter le taux d'épargne de 1 % tous les 3 mois sans douleur",
+      "7.6 Le fonds d'urgence : 3 à 6 mois, où le placer, quand l'utiliser"
+     ],
+     "exercices": [
+      "Exercice 1 : Ouvrir la structure multi-comptes et paramétrer les virements",
+      "Exercice 2 : Activer l'arrondi automatique sur sa carte bancaire",
+      "Exercice 3 : Programmer l'augmentation progressive du taux d'épargne sur 12 mois",
+      "Exercice 4 : Constituer la première brique du fonds d'urgence (objectif 1 000 € en 30 jours)"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Gagner plus pour épargner plus : les leviers de revenus complémentaires",
+     "objectif": "Montrer que l'optimisation des dépenses a un plafond et qu'augmenter ses revenus est le multiplicateur indispensable à l'investissement massif.",
+     "sections": [
+      "8.1 Le plafond de la frugalité vs. l'infinité du revenu",
+      "8.2 Négocier une augmentation : le dossier en 5 pièces",
+      "8.3 Les side hustles à faible investissement initial (freelance, revente, création)",
+      "8.4 Monétiser une compétence en 30 jours : la méthode MVP",
+      "8.5 Les revenus semi-passifs : sous-location, matériel, contenu",
+      "8.6 Réinvestir 100 % des revenus complémentaires dans la machine"
+     ],
+     "exercices": [
+      "Exercice 1 : Préparer son dossier de négociation salariale (benchmark, réalisations, demande chiffrée)",
+      "Exercice 2 : Lister 5 compétences monétisables et choisir la plus rapide à lancer",
+      "Exercice 3 : Créer une offre de service et obtenir un premier client en 14 jours",
+      "Exercice 4 : Ouvrir un compte dédié aux revenus complémentaires avec virement 100 % vers l'investissement"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Éliminer les dettes : la stratégie boule de neige et la stratégie avalanche",
+     "objectif": "Donner un plan clair et motivant pour sortir de l'endettement, condition sine qua non avant tout investissement massif.",
+     "sections": [
+      "9.1 Toutes les dettes ne se valent pas : toxiques, neutres, stratégiques",
+      "9.2 La méthode boule de neige : le pouvoir psychologique des petites victoires",
+      "9.3 La méthode avalanche : l'optimisation mathématique du coût total",
+      "9.4 Le plan de remboursement accéléré : 50 % des revenus exceptionnels",
+      "9.5 Gérer les émotions : honte, fatigue, tentation de rechute",
+      "9.6 Le jour zéro dette : ritualiser et rediriger l'énergie libérée"
+     ],
+     "exercices": [
+      "Exercice 1 : Lister toutes les dettes par montant, taux et mensualité",
+      "Exercice 2 : Choisir sa stratégie (boule de neige ou avalanche) et construire le calendrier",
+      "Exercice 3 : Identifier 3 dépenses à geler pendant la phase de remboursement",
+      "Exercice 4 : Écrire une lettre de célébration à ouvrir le jour de la dernière mensualité"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – CONSTRUIRE LA MACHINE À INVESTIR : STRATÉGIES MASSIVES ET PASSIVES",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Les fondations : comprendre la bourse sans jargon",
+     "objectif": "Démystifier les marchés financiers pour que le lecteur comprenne mécaniquement où va son argent et pourquoi l'investissement en actions est le moteur historique de la richesse.",
+     "sections": [
+      "10.1 Qu'est-ce qu'une action, une obligation, un fonds ?",
+      "10.2 Les intérêts composés : la 8e merveille du monde en chiffres",
+      "10.3 Le risque et le rendement : la relation indissociable",
+      "10.4 Les cycles de marché : pourquoi les krachs sont des opportunités",
+      "10.5 L'inflation : l'ennemi silencieux de l'épargne dormante",
+      "10.6 Les 4 grandes classes d'actifs et leur rôle dans un portefeuille"
+     ],
+     "exercices": [
+      "Exercice 1 : Simuler la croissance de 500 € par mois sur 20, 30, 40 ans à 7 %",
+      "Exercice 2 : Calculer l'impact de l'inflation sur 10 000 € laissés sur un compte courant",
+      "Exercice 3 : Identifier son profil de risque via un questionnaire de 10 questions",
+      "Exercice 4 : Ouvrir un compte-titres ou une assurance-vie en ligne"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "L'investissement indiciel : la stratégie simple qui bat 90 % des pros",
+     "objectif": "Convaincre et guider le lecteur vers l'investissement passif en fonds indiciels (ETF), cœur de la stratégie d'investissement massif du livre.",
+     "sections": [
+      "11.1 La preuve par les chiffres : SPIVA, la sous-performance chronique de la gestion active",
+      "11.2 Qu'est-ce qu'un ETF ? Mécanique, frais, fiscalité",
+      "11.3 Les indices mondiaux : MSCI World, S&P 500, FTSE All-World",
+      "11.4 Le portefeuille à 1, 2 ou 3 fonds : simplicité maximale",
+      "11.5 Choisir son enveloppe : PEA, assurance-vie, compte-titres (contexte général)",
+      "11.6 Les frais : pourquoi 0,2 % vs 2 % change tout sur 30 ans"
+     ],
+     "exercices": [
+      "Exercice 1 : Comparer les frais de 3 ETF MSCI World et choisir le moins cher",
+      "Exercice 2 : Construire son allocation à 2 fonds (actions monde + obligations) selon son âge",
+      "Exercice 3 : Passer un premier ordre d'achat d'ETF (montant libre)",
+      "Exercice 4 : Calculer l'économie de frais sur 25 ans par rapport à un fonds actif classique"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le DCA : investir massivement sans timer le marché",
+     "objectif": "Installer la discipline du Dollar Cost Averaging comme méthode d'investissement automatique, massive et anti-stress.",
+     "sections": [
+      "12.1 Pourquoi timer le marché est un jeu perdu d'avance",
+      "12.2 Le DCA : investir la même somme, à intervalle fixe, quoi qu'il arrive",
+      "12.3 Déterminer son montant mensuel d'investissement massif",
+      "12.4 Automatiser le DCA : virement + achat programmé",
+      "12.5 Que faire quand le marché chute de 30 % ? Le protocole anti-panique",
+      "12.6 Accélérer le DCA avec les revenus exceptionnels (prime, héritage, side hustle)"
+     ],
+     "exercices": [
+      "Exercice 1 : Définir son montant DCA mensuel (minimum 20 % du revenu net)",
+      "Exercice 2 : Programmer l'achat automatique sur sa plateforme",
+      "Exercice 3 : Écrire son protocole anti-panique en 5 étapes et le placer en fond d'écran",
+      "Exercice 4 : Simuler un investissement de 5 000 € exceptionnel et son effet sur la trajectoire"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "L'immobilier à effet de levier : multiplier sans multiplier son argent",
+     "objectif": "Présenter l'immobilier locatif comme accélérateur de patrimoine grâce au crédit, sans en faire un conseil personnalisé.",
+     "sections": [
+      "13.1 Le principe du levier : contrôler un bien à 200 000 € avec 20 000 €",
+      "13.2 Cash-flow positif : la seule règle qui compte",
+      "13.3 Les stratégies : location nue, meublée, colocation, courte durée",
+      "13.4 Analyser un bien en 30 minutes : la grille à 12 critères",
+      "13.5 Le financement : préparer son dossier bancaire comme un pro",
+      "13.6 Les limites : vacance, travaux, fiscalité, temps – les risques à connaître"
+     ],
+     "exercices": [
+      "Exercice 1 : Remplir la grille d'analyse sur 3 annonces immobilières locales",
+      "Exercice 2 : Calculer le cash-flow d'un bien fictif à 150 000 € avec crédit sur 20 ans",
+      "Exercice 3 : Lister ses 5 objections à l'immobilier et les déconstruire",
+      "Exercice 4 : Visiter un bien réel et rédiger un compte-rendu d'analyse"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Diversifier intelligemment : au-delà des actions et de l'immobilier",
+     "objectif": "Élargir le spectre d'investissement (crowdfunding, SCPI, or, private equity, crypto) tout en gardant une approche rationnelle et proportionnée.",
+     "sections": [
+      "14.1 La diversification : réduire le risque sans diluer le rendement",
+      "14.2 Les SCPI : l'immobilier sans les contraintes de gestion",
+      "14.3 Le crowdfunding immobilier et obligataire : rendement vs risque",
+      "14.4 L'or et les matières premières : le rôle d'amortisseur",
+      "14.5 Les crypto-actifs : allocation limitée, compréhension maximale",
+      "14.6 La règle des 5 % : ne jamais dépasser ce seuil sur un actif spéculatif"
+     ],
+     "exercices": [
+      "Exercice 1 : Construire son allocation cible en % par classe d'actifs",
+      "Exercice 2 : Comparer 2 SCPI sur rendement, frais et taux d'occupation",
+      "Exercice 3 : Définir son allocation crypto maximale en euros et s'y tenir",
+      "Exercice 4 : Réviser son allocation tous les 6 mois (calendrier à programmer)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – ACCÉLÉRATION : PASSER DE L'ÉPARGNE À L'INVESTISSEMENT MASSIF",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Le taux d'épargne extrême : viser 50 % sans vivre dans la privation",
+     "objectif": "Montrer comment les lecteurs peuvent tendre vers un taux d'épargne de 40 à 60 % en combinant optimisation, augmentation de revenus et design de vie.",
+     "sections": [
+      "15.1 La courbe du taux d'épargne : de 10 % à 50 %, l'effet sur la date de liberté",
+      "15.2 Le concept de 'spend gap' : réduire l'écart entre revenu et dépense",
+      "15.3 La frugalité sélective : couper radicalement sur 3 postes, se faire plaisir sur 2",
+      "15.4 Le logement comme premier levier : colocation, zone tendue vs détendue",
+      "15.5 Le transport, l'alimentation, les loisirs : les micro-optimisations cumulées",
+      "15.6 L'effet boule de neige : réinvestir chaque économie dans la machine"
+     ],
+     "exercices": [
+      "Exercice 1 : Calculer l'impact d'un passage de 20 % à 50 % d'épargne sur la date FIRE",
+      "Exercice 2 : Identifier ses 3 postes de coupe radicale et ses 2 postes de plaisir sanctuarisé",
+      "Exercice 3 : Simuler 3 scénarios de logement et leur impact sur le taux d'épargne",
+      "Exercice 4 : Mettre en place un tracker de taux d'épargne mensuel"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "L'effet de levier du temps : commencer hier, agir aujourd'hui",
+     "objectif": "Illustrer par des exemples chiffrés l'urgence d'investir tôt et la puissance du temps, pour vaincre la procrastination.",
+     "sections": [
+      "16.1 L'histoire de Julie et Marc : 10 ans d'écart, 300 000 € d'écart",
+      "16.2 La règle des 72 : doubler son capital en un clin d'œil mental",
+      "16.3 Le coût de l'attente : chaque mois non investi a un prix",
+      "16.4 Les 5 excuses classiques et leur démontage point par point",
+      "16.5 Le minimum viable d'investissement : commencer avec 50 €",
+      "16.6 Créer un rituel de lancement : le premier ordre comme rite de passage"
+     ],
+     "exercices": [
+      "Exercice 1 : Calculer ce que 100 € par mois investis à 20 ans valent à 60 ans vs à 30 ans",
+      "Exercice 2 : Lister ses 3 excuses principales et rédiger une contre-argumentation",
+      "Exercice 3 : Passer un premier ordre dans les 48 heures (montant libre, même 20 €)",
+      "Exercice 4 : Écrire une lettre à son moi de 65 ans pour ancrer la motivation"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Optimiser l'enveloppe fiscale sans devenir fiscaliste",
+     "objectif": "Présenter les grands principes généraux de l'optimisation fiscale de l'investissement (sans conseil personnalisé) pour maximiser le rendement net.",
+     "sections": [
+      "17.1 La fiscalité : le coût caché qui grignote 30 % du rendement",
+      "17.2 Les enveloppes à fiscalité avantageuse : panorama général (PEA, assurance-vie, PER, etc.)",
+      "17.3 La règle de l'horizon : plus on garde, moins on paie",
+      "17.4 L'arbitrage entre imposition immédiate et différée",
+      "17.5 Les erreurs fiscales classiques des investisseurs débutants",
+      "17.6 Tenir un journal fiscal simple : 15 minutes par an"
+     ],
+     "exercices": [
+      "Exercice 1 : Lister ses enveloppes actuelles et vérifier leur adéquation avec sa stratégie",
+      "Exercice 2 : Simuler la différence de rendement net entre compte-titres et enveloppe avantageuse sur 20 ans",
+      "Exercice 3 : Programmer un rappel annuel pour la déclaration",
+      "Exercice 4 : Rédiger une note de 5 lignes sur sa situation fiscale générale (à montrer à un professionnel)"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Le rééquilibrage et la discipline : rester le capitaine dans la tempête",
+     "objectif": "Donner les règles de gestion comportementale et technique pour maintenir le cap sur 20-30 ans sans vendre au pire moment.",
+     "sections": [
+      "18.1 Le rééquilibrage annuel : pourquoi et comment le faire en 30 minutes",
+      "18.2 Les 4 phases émotionnelles d'un cycle de marché",
+      "18.3 Le journal d'investissement : tracer ses décisions et ses émotions",
+      "18.4 La règle du 'ne rien faire' : quand l'inaction est la meilleure stratégie",
+      "18.5 Gérer l'entourage : conjoint sceptique, amis consommateurs, réseaux sociaux",
+      "18.6 Le testament d'investissement : ses règles écrites à relire en cas de doute"
+     ],
+     "exercices": [
+      "Exercice 1 : Réaliser un rééquilibrage fictif sur son portefeuille actuel",
+      "Exercice 2 : Écrire son testament d'investissement en 10 règles non négociables",
+      "Exercice 3 : Tenir un journal d'investissement pendant 3 mois (1 ligne par semaine)",
+      "Exercice 4 : Identifier 1 personne de confiance avec qui partager sa stratégie"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Les erreurs fatales : les 12 pièges qui ruinent les investisseurs",
+     "objectif": "Recenser et déconstruire les erreurs les plus courantes pour que le lecteur les évite par anticipation.",
+     "sections": [
+      "19.1 Le trading fréquent : l'illusion du contrôle",
+      "19.2 Le stock-picking émotionnel : investir dans ce qu'on 'sent'",
+      "19.3 Les frais cachés et les produits structurés complexes",
+      "19.4 Le leverage excessif : emprunter pour investir au-delà du raisonnable",
+      "19.5 La concentration : tout mettre sur un seul actif ou un seul secteur",
+      "19.6 Le lifestyle creep après une plus-value : dépenser les gains trop tôt",
+      "19.7 La panique vendeuse : vendre au plus bas par peur"
+     ],
+     "exercices": [
+      "Exercice 1 : Cocher les pièges dans lesquels on est déjà tombé et chiffrer le coût",
+      "Exercice 2 : Écrire une règle de protection pour chacun des 12 pièges",
+      "Exercice 3 : Mettre en place un garde-fou (ex. : délai de 7 jours avant toute vente)",
+      "Exercice 4 : Relire ce chapitre une fois par an (programmer un rappel)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – INDÉPENDANCE FINANCIÈRE : ATTEINDRE, VIVRE ET PROTÉGER SA LIBERTÉ",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "La courbe de croisement : le moment où l'argent travaille pour vous",
+     "objectif": "Expliquer le mécanisme mathématique et émotionnel du passage de la phase d'accumulation à la phase de liberté, et préparer la transition.",
+     "sections": [
+      "20.1 Le graphique de Your Money or Your Life adapté : dépenses vs revenus passifs",
+      "20.2 Les 4 étapes : dépendance, transition, indépendance, abondance",
+      "20.3 Calculer son taux de couverture : revenus passifs / dépenses",
+      "20.4 Le seuil de sécurité : viser 120 % de couverture avant de quitter son emploi",
+      "20.5 La phase de transition : réduire ses heures, tester la vie à revenus passifs",
+      "20.6 Le jour de la bascule : préparer les 6 premiers mois de liberté"
+     ],
+     "exercices": [
+      "Exercice 1 : Tracer sa courbe de croisement avec ses données actuelles et ses projections",
+      "Exercice 2 : Calculer son taux de couverture actuel et la date estimée de 100 %",
+      "Exercice 3 : Planifier une 'semaine test' de vie à budget FIRE",
+      "Exercice 4 : Rédiger sa lettre de démission (à ne pas envoyer) pour clarifier ses motivations"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Vivre de ses investissements : la stratégie de retrait durable",
+     "objectif": "Présenter les méthodes de désinvestissement et de génération de revenus passifs pour vivre de son capital sans l'épuiser.",
+     "sections": [
+      "21.1 La règle des 4 % : origine, limites et adaptations",
+      "21.2 Le retrait par seaux : liquidités court terme, obligations moyen terme, actions long terme",
+      "21.3 Le retrait dynamique : ajuster en fonction des marchés",
+      "21.4 La stratégie des dividendes et des coupons : le revenu régulier",
+      "21.5 L'immobilier en phase de rente : cash-flow sans gestion active",
+      "21.6 Gérer la séquence des rendements : les 5 premières années de retraite sont critiques"
+     ],
+     "exercices": [
+      "Exercice 1 : Simuler 3 stratégies de retrait sur un capital de 500 000 €",
+      "Exercice 2 : Construire son portefeuille 'seaux' avec les montants par horizon",
+      "Exercice 3 : Calculer le revenu mensuel généré par un portefeuille à 3 % de distribution",
+      "Exercice 4 : Établir son budget de retraité avec marge de sécurité de 20 %"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Protéger sa liberté : assurance, diversification et plan B",
+     "objectif": "Sécuriser le patrimoine et la qualité de vie contre les imprévus (santé, krach, accident de la vie) sans conseil personnalisé.",
+     "sections": [
+      "22.1 Le fonds de sécurité post-indépendance : 2 ans de dépenses en liquidités",
+      "22.2 Les assurances essentielles : santé, prévoyance, responsabilité civile",
+      "22.3 La diversification géographique et monétaire",
+      "22.4 Le plan B : garder une compétence monétisable à vie",
+      "22.5 Protéger ses proches : les principes généraux de transmission",
+      "22.6 La cybersécurité financière : protéger ses comptes et ses données"
+     ],
+     "exercices": [
+      "Exercice 1 : Vérifier que son fonds de sécurité couvre bien 24 mois de dépenses",
+      "Exercice 2 : Faire un audit de ses assurances et résilier les doublons",
+      "Exercice 3 : Identifier 2 compétences monétisables de secours",
+      "Exercice 4 : Activer la double authentification sur tous ses comptes financiers"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Au-delà de l'argent : donner un sens à sa liberté",
+     "objectif": "Aborder la dimension existentielle de l'indépendance financière : que faire de son temps, de son énergie, de sa liberté retrouvée.",
+     "sections": [
+      "23.1 Le vide post-FIRE : la dépression de l'objectif atteint",
+      "23.2 Les 4 piliers du sens : contribution, création, connexion, croissance",
+      "23.3 Le bénévolat, le mentorat et la transmission",
+      "23.4 Les mini-retraites et les projets à impact",
+      "23.5 L'argent comme outil, jamais comme identité",
+      "23.6 Écrire sa 'constitution de vie libre' : valeurs, règles, rituels"
+     ],
+     "exercices": [
+      "Exercice 1 : Lister 10 activités que l'on ferait si l'argent n'existait pas",
+      "Exercice 2 : S'engager dans une activité de mentorat ou de bénévolat dans les 30 jours",
+      "Exercice 3 : Rédiger sa constitution de vie libre en 10 articles",
+      "Exercice 4 : Planifier sa première mini-retraite de 2 semaines"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Transmettre la flamme : enseigner la liberté financière autour de soi",
+     "objectif": "Encourager le lecteur à partager sa méthode, créer un effet multiplicateur et ancrer ses propres apprentissages en les enseignant.",
+     "sections": [
+      "24.1 Enseigner, c'est apprendre deux fois : le principe de la transmission",
+      "24.2 Parler d'argent en famille sans tabou : les enfants, le conjoint, les parents",
+      "24.3 Créer un cercle de responsabilité : 3 à 5 personnes sur la même route",
+      "24.4 Partager sans imposer : la posture du témoin, pas du gourou",
+      "24.5 Contribuer à la communauté : blog, podcast, association locale",
+      "24.6 La lettre à son moi de 80 ans : le bilan d'une vie financière libre"
+     ],
+     "exercices": [
+      "Exercice 1 : Expliquer la méthode Ghorbel à un proche en 10 minutes et recueillir ses questions",
+      "Exercice 2 : Créer ou rejoindre un groupe de 3 personnes engagées dans la même démarche",
+      "Exercice 3 : Écrire un article ou un post résumant ses 3 plus grandes leçons financières",
+      "Exercice 4 : Rédiger sa lettre à son moi de 80 ans et la placer dans une enveloppe scellée"
+     ]
+    }
+   ]
+  }
+ ]
+}

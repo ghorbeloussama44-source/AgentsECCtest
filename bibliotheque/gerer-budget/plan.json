@@ -1,0 +1,578 @@
+{
+ "titre": "Trésorerie en Pilote Automatique",
+ "sous_titre": "Suivre ses flux, épargner sans frustration et reprendre le contrôle en 30 minutes par semaine",
+ "bibliographie": [
+  {
+   "auteur": "David Bach",
+   "titre": "The Automatic Millionaire",
+   "annee": "2004",
+   "idee": "Automatiser l'épargne via des virements programmés pour 'se payer en premier' sans effort conscient. Le système bat la volonté.",
+   "apport": "Le principe fondateur du livre : construire des routines bancaires automatiques qui précèdent toute tentation de dépense."
+  },
+  {
+   "auteur": "Ramit Sethi",
+   "titre": "I Will Teach You to Be Rich",
+   "annee": "2009",
+   "idee": "Définir un 'plan de dépenses conscientes' : dépenser sans culpabilité dans ce qu'on aime, couper ailleurs, et tout automatiser.",
+   "apport": "La philosophie 'dépenser sans se priver' et le cadre pratique des six comptes dédiés reliés par virements automatiques."
+  },
+  {
+   "auteur": "Dave Ramsey",
+   "titre": "The Total Money Makeover",
+   "annee": "2003",
+   "idee": "Éliminer les dettes puis bâtir un fonds d'urgence via la méthode des enveloppes et un budget écrit mois par mois.",
+   "apport": "La discipline des enveloppes (adaptée en version numérique) et la notion de fonds d'urgence comme socle de sérénité."
+  },
+  {
+   "auteur": "Robert Kiyosaki",
+   "titre": "Rich Dad Poor Dad",
+   "annee": "1997",
+   "idee": "Distinguer actif et passif ; comprendre que la trésorerie positive est le vrai indicateur de richesse, pas le revenu.",
+   "apport": "Le vocabulaire actif/passif et la lecture en flux de trésorerie plutôt qu'en solde de compte."
+  },
+  {
+   "auteur": "Vicki Robin & Joe Dominguez",
+   "titre": "Your Money or Your Life",
+   "annee": "1992",
+   "idee": "Chaque euro dépensé représente des heures de vie ; aligner ses dépenses avec ses valeurs réelles pour retrouver du sens.",
+   "apport": "L'exercice du 'coût en heures de vie' intégré dans chaque chapitre de priorisation des dépenses."
+  },
+  {
+   "auteur": "Morgan Housel",
+   "titre": "The Psychology of Money",
+   "annee": "2020",
+   "idee": "La réussite financière dépend davantage du comportement que de l'intelligence ; il faut concevoir des systèmes qui compensent nos biais.",
+   "apport": "Les biais cognitifs (ancrage, aversion à la perte, effet de dotation) et comment les contourner par l'automatisation."
+  },
+  {
+   "auteur": "Tony Robbins",
+   "titre": "Money: Master the Game",
+   "annee": "2014",
+   "idee": "Simplifier la gestion financière en sept étapes, automatiser l'allocation et protéger son capital contre l'émotion.",
+   "apport": "Le modèle de seaux (sécurité / croissance / rêve) adapté à la trésorerie personnelle."
+  },
+  {
+   "auteur": "George S. Clason",
+   "titre": "The Richest Man in Babylon",
+   "annee": "1926",
+   "idee": "Se payer en premier : réserver au moins 10 % de chaque revenu avant toute dépense, puis faire fructifier cette réserve.",
+   "apport": "La règle des 10 % comme point de départ universel, réinterprétée avec les outils bancaires modernes."
+  },
+  {
+   "auteur": "Scott Pape",
+   "titre": "The Barefoot Investor",
+   "annee": "2016",
+   "idee": "Un système à cinq comptes (blow, grow, give, spend, splurge) géré en 20 minutes par semaine, sans tableur complexe.",
+   "apport": "L'architecture multi-comptes ultra-simple et le rituel hebdomadaire de vérification."
+  },
+  {
+   "auteur": "Mike Michalowicz",
+   "titre": "Profit First",
+   "annee": "2014",
+   "idee": "Inverser la formule : prélever le profit (l'épargne) dès l'encaissement, puis dépenser le reste, pour forcer la discipline.",
+   "apport": "Le principe 'épargne d'abord, dépense ensuite' appliqué à la trésorerie personnelle et aux indépendants."
+  },
+  {
+   "auteur": "JL Collins",
+   "titre": "The Simple Path to Wealth",
+   "annee": "2016",
+   "idee": "Réduire la gestion financière à quelques décisions simples et automatiques pour éliminer le stress et les frais inutiles.",
+   "apport": "La philosophie du minimalisme financier et la suppression des décisions quotidiennes."
+  },
+  {
+   "auteur": "Elizabeth Warren & Amelia Tyagi",
+   "titre": "All Your Worth",
+   "annee": "2005",
+   "idee": "La règle 50/30/20 : 50 % besoins, 30 % envies, 20 % épargne et remboursement de dettes.",
+   "apport": "Le cadre de répartition simple qui sert de point de départ avant toute personnalisation."
+  },
+  {
+   "auteur": "Suze Orman",
+   "titre": "The Money Book for the Young, Fabulous & Broke",
+   "annee": "2005",
+   "idee": "Construire un socle de sécurité pas à pas : suivi des dépenses, fonds d'urgence, élimination des dettes, puis investissement.",
+   "apport": "La progression séquentielle et la déculpabilisation des petites étapes."
+  },
+  {
+   "auteur": "Carl Richards",
+   "titre": "The One-Page Financial Plan",
+   "annee": "2015",
+   "idee": "Résumer tout son plan financier sur une seule page pour clarifier ses priorités et éliminer la complexité.",
+   "apport": "L'exercice de synthèse sur une page et la visualisation graphique des flux."
+  },
+  {
+   "auteur": "James Clear",
+   "titre": "Atomic Habits",
+   "annee": "2018",
+   "idee": "Les petits changements (1 %) répétés créent des résultats massifs ; il faut concevoir l'environnement pour rendre la bonne action facile.",
+   "apport": "Le design d'environnement appliqué aux finances : rendre l'épargne invisible et la dépense consciente."
+  },
+  {
+   "auteur": "David Bach & John David Mann",
+   "titre": "The Latte Factor",
+   "annee": "2019",
+   "idee": "Les micro-dépenses quotidiennes, cumulées et investies, représentent des sommes colossales sur une vie.",
+   "apport": "La prise de conscience des 'fuites invisibles' et l'exercice d'audit des micro-dépenses."
+  },
+  {
+   "auteur": "Karen Berman & Joe Knight",
+   "titre": "Financial Intelligence",
+   "annee": "2006",
+   "idee": "Comprendre les états financiers (bilan, compte de résultat, trésorerie) pour prendre de meilleures décisions.",
+   "apport": "La lecture simplifiée d'un 'compte de résultat personnel' et d'un 'tableau de trésorerie' adaptés au particulier."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 – Comprendre sa relation à l'argent et poser les fondations",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Pourquoi votre argent vous échappe (et ce n'est pas votre faute)",
+     "objectif": "Déculpabiliser le lecteur, identifier les biais cognitifs et les failles structurelles qui font 'fuir' la trésorerie sans qu'on s'en rende compte.",
+     "sections": [
+      "Le mythe de la volonté : pourquoi les résolutions budgétaires échouent en 3 semaines",
+      "Les 7 biais cognitifs qui sabotent votre trésorerie (ancrage, effet de dotation, comptabilité mentale…)",
+      "L'inflation silencieuse des dépenses : le mécanisme de 'lifestyle creep'",
+      "Ce que votre banque ne vous montre pas (et ce qu'elle vous cache)",
+      "Le coût réel de l'inaction : projection chiffrée sur 5 ans"
+     ],
+     "exercices": [
+      "Test d'auto-diagnostic : 'Quel est votre profil de fuite financière ?' (questionnaire en 12 questions)",
+      "Calcul du taux d'épargne réel des 6 derniers mois à partir des relevés bancaires",
+      "Rédaction d'une 'lettre à son futur moi' décrivant la situation financière souhaitée dans 3 ans"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La trésorerie personnelle : votre tableau de bord vital",
+     "objectif": "Introduire le concept de trésorerie appliqué au particulier, distinguer revenu, dépenses, épargne et dette, et donner un vocabulaire commun.",
+     "sections": [
+      "Trésorerie vs patrimoine : deux lunettes différentes sur votre argent",
+      "Le compte de résultat personnel : revenus, charges fixes, charges variables",
+      "Le tableau de flux de trésorerie : entrées, sorties, solde net",
+      "Actifs et passifs à l'échelle individuelle (le modèle Kiyosaki simplifié)",
+      "Lire son relevé bancaire comme un pilote lit ses instruments"
+     ],
+     "exercices": [
+      "Construction d'un mini compte de résultat personnel sur 3 mois (modèle fourni)",
+      "Identification de 3 'actifs' et 3 'passifs' dans sa propre vie",
+      "Exercice de color-coding : surligner un relevé bancaire en vert (entrée), rouge (sortie fixe), orange (sortie variable)"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "Définir vos règles du jeu : valeurs, objectifs et non-négociables",
+     "objectif": "Aider le lecteur à clarifier ce qui compte vraiment pour lui afin que le système financier serve sa vie et non l'inverse.",
+     "sections": [
+      "L'exercice du 'coût en heures de vie' : combien valez-vous à l'heure ?",
+      "Identifier vos 3 à 5 valeurs financières dominantes",
+      "Fixer des objectifs SMART à 3 horizons : 1 an, 5 ans, 20 ans",
+      "Les dépenses 'joie' vs les dépenses 'pilote automatique' : apprendre à distinguer",
+      "Rédiger sa charte financière personnelle en une page"
+     ],
+     "exercices": [
+      "Calcul du taux horaire réel et revalorisation de 5 dépenses récentes en heures de vie",
+      "Rédaction de la charte financière personnelle (modèle d'une page fourni)",
+      "Classement de 20 dépenses types en 4 quadrants : essentiel / plaisir / habitude / gaspillage"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Choisir ses outils : banque, applications, tableur ou cahier ?",
+     "objectif": "Passer en revue les outils disponibles, aider le lecteur à choisir la combinaison qui lui convient selon son profil technophile ou non.",
+     "sections": [
+      "Les 4 familles d'outils : banques en ligne, apps de budget, tableurs, papier",
+      "Critères de choix : simplicité, sécurité, automatisation, coût",
+      "Configurer une banque en ligne adaptée au suivi de trésorerie",
+      "Les applications de suivi : forces, limites et critères de sélection",
+      "Le tableur minimaliste : quand et pourquoi il reste imbattable",
+      "La règle du 'un seul endroit' : éviter la dispersion des données"
+     ],
+     "exercices": [
+      "Audit de ses outils actuels : lister tous les comptes, cartes et apps utilisés",
+      "Test de 2 applications gratuites pendant 7 jours et grille de comparaison",
+      "Mise en place d'un dossier unique (physique ou numérique) 'Centre de contrôle financier'"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 – Cartographier ses flux : savoir exactement où va chaque euro",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "L'audit complet : 90 minutes pour tout voir",
+     "objectif": "Guider le lecteur pas à pas dans un audit exhaustif de ses finances pour obtenir une photographie nette de sa situation.",
+     "sections": [
+      "Préparer l'audit : documents, accès, créneau et état d'esprit",
+      "Étape 1 : lister tous les comptes, livrets, crédits et dettes",
+      "Étape 2 : reconstituer 3 mois de dépenses par catégorie",
+      "Étape 3 : identifier les abonnements fantômes et prélèvements oubliés",
+      "Étape 4 : calculer son taux d'épargne réel et son 'burn rate' mensuel",
+      "Interpréter les résultats sans se juger"
+     ],
+     "exercices": [
+      "Réalisation de l'audit complet en suivant la checklist fournie",
+      "Liste de tous les abonnements actifs avec date de renouvellement et coût annuel",
+      "Calcul du 'burn rate' : combien de mois pourrait-on vivre sans aucun revenu ?"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Catégoriser sans se noyer : la méthode des 6 seaux",
+     "objectif": "Proposer un système de catégorisation simple et universel qui évite la sur-analyse tout en restant exploitable.",
+     "sections": [
+      "Pourquoi trop de catégories tuent le suivi",
+      "Les 6 seaux universels : Logement & charges / Alimentation / Transport / Plaisirs & loisirs / Épargne & investissements / Divers & imprévus",
+      "Adapter les seaux à sa situation : célibataire, couple, famille, indépendant",
+      "La règle des 80/20 : 20 % des postes représentent 80 % du montant",
+      "Créer sa nomenclature personnalisée en 15 minutes"
+     ],
+     "exercices": [
+      "Classement de ses 50 dernières transactions dans les 6 seaux",
+      "Définition d'un pourcentage cible par seau selon la règle 50/30/20 adaptée",
+      "Création d'une 'carte d'identité financière' synthétique sur une page"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Traquer les fuites invisibles",
+     "objectif": "Identifier les micro-dépenses, frais cachés, abonnements inutilisés et surcoûts récurrents qui rongent la trésorerie sans qu'on les voie.",
+     "sections": [
+      "Les 12 fuites les plus courantes (frais bancaires, abonnements zombies, assurances redondantes…)",
+      "L'effet latte revisité : modéliser l'impact cumulé sur 10 ans",
+      "La chasse aux abonnements fantômes : méthode pas à pas",
+      "Négocier ses contrats : assurance, téléphonie, énergie, banque",
+      "Le 'tarif émotionnel' : repérer les achats déclenchés par le stress ou l'ennui"
+     ],
+     "exercices": [
+      "Audit des abonnements : lister, évaluer l'usage réel des 3 derniers mois, résilier l'inutile",
+      "Appel de négociation : script fourni pour renégocier un contrat (téléphonie ou assurance)",
+      "Journal des dépenses émotionnelles pendant 7 jours : noter l'émotion déclencheuse de chaque achat non prévu"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Construire son tableau de bord de trésorerie",
+     "objectif": "Créer un outil de suivi visuel, simple et actualisable en moins de 10 minutes par semaine.",
+     "sections": [
+      "Les 5 indicateurs clés à suivre : solde, taux d'épargne, burn rate, ratio dettes/revenus, marge de manœuvre",
+      "Le tableau de bord sur une page : modèle visuel",
+      "Version tableur : structure et formules essentielles",
+      "Version application : paramétrage et alertes",
+      "Version papier : le carnet de trésorerie pour les réfractaires au numérique",
+      "Le rituel du dimanche soir : 10 minutes pour tout vérifier"
+     ],
+     "exercices": [
+      "Construction de son tableau de bord (choix du format et remplissage initial)",
+      "Mise en place d'une alerte automatique de seuil bas sur le compte courant",
+      "Premier rituel hebdomadaire : remplir le tableau, noter une observation, fixer un micro-objectif"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Anticiper les vagues : dépenses saisonnières et imprévus",
+     "objectif": "Apprendre à lisser les dépenses irrégulières (impôt, rentrée scolaire, vacances, entretien) pour éviter les mois en dents de scie.",
+     "sections": [
+      "Cartographier son calendrier annuel de dépenses exceptionnelles",
+      "La technique du 'compte tampon' pour les dépenses irrégulières",
+      "Provisionner chaque mois : la méthode 1/12",
+      "Construire son fonds d'urgence : combien, où, comment",
+      "Gérer l'imprévu sans faire exploser le système"
+     ],
+     "exercices": [
+      "Réalisation du calendrier annuel des dépenses saisonnières (modèle fourni)",
+      "Calcul du montant mensuel à provisionner pour chaque dépense irrégulière",
+      "Ouverture d'un livret dédié 'Imprévus' et mise en place du premier virement de provision"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 – Automatiser : mettre son argent en pilote automatique",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Le principe du 'Pay Yourself First' à l'ère numérique",
+     "objectif": "Installer le réflexe fondamental : l'épargne part en premier, dès la réception du revenu, avant toute dépense.",
+     "sections": [
+      "L'histoire du 'Pay Yourself First' : de Babylone au virement automatique",
+      "Déterminer son pourcentage d'épargne réaliste (commencer à 5 %, viser 20 %)",
+      "Programmer le virement le jour de la paie : mode d'emploi",
+      "Séparer physiquement l'épargne du compte courant : la barrière psychologique",
+      "Ajuster le montant sans culpabilité : la règle de révision trimestrielle"
+     ],
+     "exercices": [
+      "Calcul du montant d'épargne mensuel cible (même modeste)",
+      "Programmation effective du virement automatique dans son espace bancaire",
+      "Choix du compte de destination (livret A, LDDS, compte épargne dédié) et ouverture si nécessaire"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "L'architecture multi-comptes : le système des enveloppes 2.0",
+     "objectif": "Mettre en place une structure de comptes séparés qui rend le suivi automatique et élimine les décisions quotidiennes.",
+     "sections": [
+      "Pourquoi un seul compte courant est une invitation au chaos",
+      "Le modèle à 5 comptes : Courant / Fixes / Variables / Épargne / Plaisir",
+      "Le modèle à 7 comptes pour les couples et les indépendants",
+      "Les virements en cascade : programmer les transferts en chaîne",
+      "Automatiser les paiements récurrents : prélèvements, loyer, factures",
+      "Gérer les revenus irréguliers (freelance, intermittent) avec le compte tampon"
+     ],
+     "exercices": [
+      "Schéma de son architecture multi-comptes idéale sur papier",
+      "Ouverture des comptes manquants et paramétrage des virements en cascade",
+      "Programmation de 5 prélèvements automatiques pour les charges fixes"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Automatiser sans perdre le contrôle : garde-fous et alertes",
+     "objectif": "S'assurer que l'automatisation ne crée pas d'angle mort ; mettre en place des alertes, des plafonds et des revues régulières.",
+     "sections": [
+      "Les risques de l'automatisation aveugle : overdraft, frais, déconnexion",
+      "Paramétrer des alertes intelligentes : seuil bas, gros débit, fin de mois",
+      "Le plafond de carte bancaire comme filet de sécurité",
+      "La revue mensuelle de 20 minutes : vérifier, ajuster, corriger",
+      "Le tableau de bord automatisé : notifications et rapports hebdomadaires",
+      "Savoir quand reprendre la main : les signaux d'alarme"
+     ],
+     "exercices": [
+      "Configuration de 3 alertes bancaires personnalisées dans son app",
+      "Mise en place d'un plafond de carte adapté à son budget variable",
+      "Planification d'un rendez-vous mensuel avec soi-même (créneau dans l'agenda) pour la revue financière"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Automatiser son épargne longue : projets, retraite, investissement",
+     "objectif": "Mettre en place des virements automatiques vers les enveloppes long terme pour que l'avenir se construise sans effort conscient.",
+     "sections": [
+      "Définir ses 3 à 5 projets d'épargne à long terme (immobilier, retraite, voyage, études des enfants)",
+      "Choisir les bons véhicules : livrets, assurance-vie, PEA, PER",
+      "Programmer les versements programmés : montant, fréquence, date",
+      "L'investissement automatique (DCA) : lisser le risque sans timing",
+      "La règle de l'augmentation automatique : +1 % par an",
+      "Gérer les windfalls : primes, héritages, remboursements"
+     ],
+     "exercices": [
+      "Liste de ses projets long terme avec horizon et montant cible",
+      "Ouverture ou vérification d'une assurance-vie / PEA et mise en place d'un versement programmé",
+      "Décision d'affectation pour le prochain windfall (prime, remboursement d'impôt…)"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Automatiser ses dettes : rembourser sans y penser",
+     "objectif": "Structurer le remboursement des dettes (crédit conso, découvert, prêt étudiant) en flux automatiques pour s'en libérer sans stress.",
+     "sections": [
+      "Faire l'inventaire de toutes ses dettes : montant, taux, mensualité",
+      "La méthode avalanche (taux le plus élevé d'abord) vs la méthode boule de neige (petit montant d'abord)",
+      "Automatiser les remboursements : prélèvements fixes et virements complémentaires",
+      "Le cas du découvert chronique : identifier la cause et mettre un terme",
+      "Négocier ou regrouper ses crédits : quand et comment",
+      "Célébrer chaque dette éliminée : le renforcement positif"
+     ],
+     "exercices": [
+      "Tableau récapitulatif de toutes les dettes avec taux et échéance",
+      "Choix de sa méthode (avalanche ou boule de neige) et calcul du plan de remboursement",
+      "Programmation du virement complémentaire de remboursement et date de célébration prévue"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 – Épargner sans se priver : l'art de la dépense consciente",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Le paradoxe de la privation : pourquoi se priver fait dépenser plus",
+     "objectif": "Démontrer que la frustration génère des achats compensatoires et qu'un système durable repose sur le plaisir maîtrisé.",
+     "sections": [
+      "La psychologie de la restriction : effet rebond et achats émotionnels",
+      "Le budget 'anti-frustration' : inclure une ligne 'plaisir' non négociable",
+      "La méthode des 3 enveloppes plaisir : petit / moyen / grand",
+      "Dépenser plus sur ce qu'on adore, couper sur ce qui indiffère",
+      "Le concept de 'richesse personnelle' de Ramit Sethi appliqué",
+      "Transformer la relation à la dépense : de la culpabilité à l'intention"
+     ],
+     "exercices": [
+      "Identification de ses 3 'joies financières' non négociables",
+      "Définition d'une enveloppe plaisir mensuelle réaliste et sa programmation",
+      "Expérience de 7 jours : une dépense plaisir pleinement consciente et savourée, notée dans un journal"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Le budget flexible : la méthode 50/30/20 réinventée",
+     "objectif": "Adapter la règle classique 50/30/20 aux réalités françaises et aux situations variées, en la rendant vivante et ajustable.",
+     "sections": [
+      "La règle 50/30/20 : rappel et limites",
+      "Adapter les pourcentages à sa situation : étudiant, jeune actif, famille, retraité",
+      "Le budget 'à géométrie variable' : ajuster mois par mois sans tout refaire",
+      "La méthode du 'zéro-based budget' simplifiée",
+      "Intégrer les revenus exceptionnels dans le flexible",
+      "Le budget en couple : qui paie quoi, comment s'organiser"
+     ],
+     "exercices": [
+      "Calcul de sa répartition 50/30/20 personnalisée et comparaison avec la réalité",
+      "Ajustement d'une catégorie : transférer 5 % d'un poste vers un autre sans culpabilité",
+      "Simulation d'un mois à revenu irrégulier : comment adapter le budget"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Réduire ses dépenses sans sensation de manque",
+     "objectif": "Fournir des techniques concrètes pour baisser les coûts fixes et variables tout en maintenant sa qualité de vie.",
+     "sections": [
+      "Les 10 postes où les économies sont indolores (énergie, assurances, forfaits, transports…)",
+      "La technique du 'swap' : remplacer sans renoncer",
+      "Cuisiner, réparer, mutualiser : les micro-habits à fort impact",
+      "Les achats groupés, le cashback et la comparaison systématique",
+      "La règle des 48 heures pour tout achat non prévu au-dessus de 50 €",
+      "Le défi 'mois sans dépense superflue' : mode d'emploi"
+     ],
+     "exercices": [
+      "Audit des 3 contrats les plus coûteux et recherche d'une alternative moins chère",
+      "Mise en place de la règle des 48 heures (note sur le téléphone ou post-it sur la carte bancaire)",
+      "Planification d'un 'mois défi' avec objectifs chiffrés et récompense à la clé"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Gagner plus sans travailler plus : optimiser ses revenus",
+     "objectif": "Explorer les leviers pour augmenter ses entrées sans necessarily travailler davantage : négociation, side income, optimisation fiscale légale.",
+     "sections": [
+      "Négocier son salaire : préparation, arguments, timing",
+      "Les micro-revenus complémentaires : vendre, louer, monétiser une compétence",
+      "Optimiser sa fiscalité dans le cadre légal : déductions, crédits d'impôt, épargne défiscalisée",
+      "Les revenus passifs réalistes (pas les mirages) : dividendes, loyers, royalties",
+      "L'effet cumulé : +100 € par mois, c'est combien sur 20 ans ?",
+      "Réinvestir les gains dans le système automatisé"
+     ],
+     "exercices": [
+      "Préparation d'un argumentaire de négociation salariale (même si on ne le fait pas tout de suite)",
+      "Identification d'une source de micro-revenu complémentaire et premier pas concret",
+      "Vérification des déductions et crédits d'impôt applicables à sa situation"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "L'épargne plaisir : se payer des rêves sans casser la tirelire",
+     "objectif": "Montrer comment financer des projets plaisir (voyage, hobby, gâterie) grâce à des sous-comptes dédiés et une épargne ciblée.",
+     "sections": [
+      "La différence entre épargne de sécurité et épargne de projet",
+      "Créer un 'compte rêve' par projet : voyage, formation, gadget",
+      "Le virement 'plaisir futur' : se payer ses vacances 12 mois à l'avance",
+      "La technique des 'arrondis' et du micro-épargne pour les petits rêves",
+      "Célébrer les jalons : la motivation par la récompense",
+      "Éviter le piège : ne pas transformer l'épargne plaisir en frustration déguisée"
+     ],
+     "exercices": [
+      "Ouverture d'un sous-compte ou livret dédié à un projet plaisir précis",
+      "Programmation d'un micro-virement mensuel vers ce compte (même 20 €)",
+      "Visualisation : coller une image du projet sur le frigo ou en fond d'écran du téléphone"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 – Pérenniser, ajuster et transmettre le système",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Le rituel hebdomadaire et la revue mensuelle : 30 minutes pour tout piloter",
+     "objectif": "Installer une routine de suivi légère mais régulière qui maintient le système en vie sans devenir une corvée.",
+     "sections": [
+      "Le rituel du dimanche soir : 10 minutes, 3 actions",
+      "La revue mensuelle de 20 minutes : les 5 questions à se poser",
+      "Le bilan trimestriel : ajuster les pourcentages, les virements, les objectifs",
+      "Le bilan annuel : la grande photo et les décisions stratégiques",
+      "Utiliser un template ou un tableau de bord pré-rempli",
+      "Le principe du 'minimum viable tracking' : ne suivre que ce qui compte"
+     ],
+     "exercices": [
+      "Planification du créneau hebdomadaire dans son agenda (récurrence)",
+      "Réalisation de sa première revue mensuelle avec le guide des 5 questions",
+      "Création d'un template de bilan trimestriel (tableur ou papier)"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Gérer les turbulences : chômage, séparation, dépense imprévue majeure",
+     "objectif": "Préparer un plan de résilience pour que le système absorbe les chocs sans s'effondrer.",
+     "sections": [
+      "Le mode 'survie' : activer le fonds d'urgence et réduire le burn rate",
+      "Réorganiser son budget en cas de perte de revenu : les 3 priorités",
+      "Gérer une dépense exceptionnelle majeure sans casser l'épargne longue",
+      "Séparation, divorce, décès : réorganiser la trésorerie en urgence",
+      "Le plan B écrit : un document d'une page à préparer en temps calme",
+      "Reprendre le rythme normal après la tempête : le protocole de retour"
+     ],
+     "exercices": [
+      "Rédaction de son 'plan B financier' sur une page (scénario perte de revenu 3 mois)",
+      "Vérification de l'accessibilité immédiate de son fonds d'urgence",
+      "Simulation mentale : 'Si demain je perds 30 % de mes revenus, quelles sont mes 3 premières actions ?'"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Faire évoluer le système : revenus qui changent, projets qui naissent",
+     "objectif": "Montrer comment adapter l'architecture financière aux transitions de vie sans tout reconstruire.",
+     "sections": [
+      "Augmentation de revenus : la règle du 50/50 (moitié épargne, moitié plaisir)",
+      "Changement de statut : salarié à freelance, couple à solo, etc.",
+      "L'arrivée d'un enfant : adapter les seaux et automatiser l'épargne études",
+      "Préparer la retraite : accélérer l'automatisation après 45 ans",
+      "Le système à deux : synchroniser les finances en couple sans perdre son autonomie",
+      "Réviser l'architecture tous les 2 ans : le grand ménage"
+     ],
+     "exercices": [
+      "Simulation : si mon revenu augmente de 20 %, comment je répartis ?",
+      "Discussion en couple (ou avec un proche) sur l'organisation financière commune",
+      "Planification d'une 'révision d'architecture' dans 24 mois (date dans l'agenda)"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Transmettre et partager : éduquer ses proches sans les braquer",
+     "objectif": "Donner des clés pour parler d'argent en famille, éduquer ses enfants et partager ses bonnes pratiques sans imposer.",
+     "sections": [
+      "Parler d'argent en couple : les 5 conversations essentielles",
+      "Éduquer ses enfants à la trésorerie : 3 jeux par âge (6-10, 11-15, 16-20)",
+      "Aider ses parents vieillissants à organiser leurs finances",
+      "Partager le système sans juger : la posture bienveillante",
+      "L'argent et les amis : prêter, donner, dire non",
+      "Préparer sa succession : les bases sans entrer dans le conseil juridique"
+     ],
+     "exercices": [
+      "Préparer les 5 questions à aborder avec son/sa partenaire sur l'organisation financière",
+      "Choisir un jeu ou une activité d'éducation financière à faire avec un enfant cette semaine",
+      "Rédiger une 'lettre d'intention financière' à destination de ses proches (à ouvrir en cas de besoin)"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Votre trésorerie en pilote automatique : le plan d'action en 30 jours",
+     "objectif": "Synthétiser tout le livre en un plan d'action concret sur 4 semaines pour que le lecteur passe de la théorie à la pratique immédiatement.",
+     "sections": [
+      "Semaine 1 : l'audit et la cartographie (jours 1 à 7)",
+      "Semaine 2 : l'architecture multi-comptes et les virements (jours 8 à 14)",
+      "Semaine 3 : l'automatisation de l'épargne et des dettes (jours 15 à 21)",
+      "Semaine 4 : le tableau de bord, les alertes et le premier rituel (jours 22 à 30)",
+      "Les 10 commandements du pilote automatique financier",
+      "Le manifeste personnel : écrire sa promesse financière en 5 lignes"
+     ],
+     "exercices": [
+      "Impression du plan d'action 30 jours et coche quotidienne des tâches réalisées",
+      "Mise en place complète du système : tous les virements programmés, toutes les alertes actives",
+      "Rédaction de son manifeste financier personnel et affichage dans son espace de travail",
+      "Célébration de fin de mois : reconnaître le chemin parcouru et s'offrir un petit plaisir prévu"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -74,6 +74,16 @@ pre { margin: 6px 0 0; font: .74rem/1.5 var(--mono); white-space: pre-wrap; over
 .proj p { margin: 0; color: var(--muted); font-size: .86rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 .msg { font-size: .86rem; color: var(--muted); }
 footer { font-size: .78rem; color: var(--muted); display: grid; gap: 4px; }
+nav.tabs a[aria-current] { background: var(--dia); border-color: var(--dia); color: #fff; }
+details.form { border: 1px solid var(--line); border-radius: var(--r); background: var(--bg); }
+details.form summary { padding: 10px 12px; font-weight: 600; font-size: .9rem; color: var(--ink); }
+.reqform { display: grid; gap: 10px; padding: 0 12px 12px; }
+.reqform label { display: grid; gap: 4px; font-size: .8rem; color: var(--muted); min-width: 0; }
+.reqform input, .reqform textarea, .reqform select { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 8px 10px; width: 100%; min-width: 0; }
+.reqform textarea { min-height: 110px; resize: vertical; }
+.row2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 10px; }
+.btn { justify-self: start; font: 600 .86rem var(--font); color: #fff; background: var(--dia); border: 0; border-radius: var(--r); padding: 8px 14px; cursor: pointer; }
+.btn:disabled { opacity: .55; cursor: progress; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -84,7 +94,7 @@ footer { font-size: .78rem; color: var(--muted); display: grid; gap: 4px; }
       <h1>Atelier Dialagram</h1>
       <p>Les livres de la Bibliothèque Oussama Ghorbel sont écrits par Qwen via Dialagram, puis relus par Claude. Cette page suit l'usine en direct et donne accès aux PDF.</p>
     </div>
-    <nav class="tabs" aria-label="Sections"><a href="#direct">En direct</a><a href="#bibliotheque">Bibliothèque</a><a href="#projets">Projets</a></nav>
+    <nav class="tabs" aria-label="Pages"><a href="/" aria-current="page">Atelier</a><a href="/bibliotheque">Bibliothèque</a><a href="/tableau">Tableau de bord</a></nav>
   </header>
 
   <section class="panel" id="direct" aria-live="polite">
@@ -92,10 +102,24 @@ footer { font-size: .78rem; color: var(--muted); display: grid; gap: 4px; }
     <div id="live"><div class="msg">Lecture de l'état de l'usine…</div></div>
   </section>
 
-  <section class="panel" id="bibliotheque">
-    <header><h2>Bibliothèque</h2><span class="muted" style="font-size:.8rem" id="bCount"></span></header>
-    <div class="filter"><label class="lab" for="q">Chercher</label><input id="q" type="search" placeholder="Titre ou thème"></div>
-    <div class="grid" id="books"><div class="msg">Chargement du catalogue…</div></div>
+  <section class="panel" id="demandes">
+    <header><h2>Demandes à Dialagram</h2><span class="muted" style="font-size:.8rem" id="dCount"></span></header>
+    <p class="msg" style="margin:0">Décrivez ce que vous voulez obtenir. Claude transmet la consigne à un modèle Dialagram, relit le résultat, le note et le publie dans la demande, comme pour les livres de la bibliothèque.</p>
+    <details class="form" id="newReq">
+      <summary>Nouvelle demande</summary>
+      <form id="reqForm" class="reqform">
+        <label for="rTitre">Titre<input id="rTitre" required maxlength="140" placeholder="Ex. Guide de 20 pages sur la négociation de salaire"></label>
+        <label for="rConsigne">Consigne pour le modèle<textarea id="rConsigne" required maxlength="8000" placeholder="Ce qu'il faut produire, pour qui, le format, la longueur et le ton."></textarea></label>
+        <div class="row2">
+          <label for="rModele">Modèle Dialagram<select id="rModele"><option value="auto">auto (Claude choisit)</option><option>qwen-3.8-max-thinking</option><option>qwen-3.8-max</option><option>qwen-3.7-max</option><option>xiaomi-mimo-2.6</option><option>meta-muse-spark-1.3</option></select></label>
+          <label for="rNom">Votre nom<input id="rNom" maxlength="60" placeholder="Facultatif"></label>
+          <label for="rCode">Code d'accès<input id="rCode" required maxlength="80" type="password" autocomplete="off"></label>
+        </div>
+        <button class="btn" type="submit" id="rSubmit">Envoyer la demande</button>
+        <div class="msg" id="rMsg" role="status"></div>
+      </form>
+    </details>
+    <div class="grid" id="reqs"><div class="msg">Chargement des demandes…</div></div>
   </section>
 
   <section class="panel" id="projets">
@@ -155,19 +179,41 @@ function renderLive(e) {
     <div class="sum"><span>Bibliothèque <span class="num">${done} / ${total}</span> livres</span><span>Lot démarré à <span class="num">${esc(e.debut_lot || "—")}</span> UTC</span><span>Dialagram <span class="num">${fmt(e.tokens_dialagram)}</span> tokens (usine)</span></div>
     <div class="progress" aria-hidden="true"><i style="width:${Math.round(done / total * 100)}%"></i></div>
     <div class="grid">${books || '<div class="msg">Aucun lot en cours.</div>'}</div></div>`;
-  if (e.catalogue) { catalogue = e.catalogue; renderBooks(); }
 }
 
-function renderBooks() {
-  const q = $("q").value.trim().toLowerCase();
-  const list = catalogue.filter((b) => !q || (b.titre + " " + b.theme + " " + b.sous_titre).toLowerCase().includes(q));
-  $("bCount").textContent = `${catalogue.length} livres · ${fmt(catalogue.reduce((a, b) => a + (b.pages || 0), 0))} pages`;
-  $("books").innerHTML = list.map((b) => `<article class="card">
-      <span class="lab">${esc(b.theme)}</span><h3>${esc(b.titre)}</h3><p class="sub">${esc(b.sous_titre)}</p>
-      <div class="figs">${b.pages} pages</div>
-      <a class="dl" href="${raw(LIVRES, b.pdf)}" target="_blank" rel="noopener">Télécharger le PDF</a></article>`).join("")
-    || '<div class="msg">Aucun livre ne correspond.</div>';
+// ── Demandes : issues GitHub étiquetées « dialagram » (créées par /api/requete, traitées par Claude) ──
+const REQ_STATE = { "a-faire": ["s-a_faire", "À faire"], "en-cours": ["s-delegue", "Chez Dialagram"], "valide": ["s-valide", "Validé"], "refuse": ["s-refuse", "À refaire"] };
+async function renderReqs() {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/issues?labels=dialagram&state=all&per_page=30`, { headers: { Accept: "application/vnd.github+json" } });
+    if (!r.ok) throw new Error(r.status);
+    const list = await r.json();
+    $("dCount").textContent = list.length ? `${list.length} demande${list.length > 1 ? "s" : ""}` : "";
+    $("reqs").innerHTML = list.map((i) => {
+      const lab = (i.labels || []).map((l) => l.name).find((n) => REQ_STATE[n]) || (i.state === "closed" ? "valide" : "a-faire");
+      const [cls, txt] = REQ_STATE[lab];
+      return `<article class="card ${cls}"><span class="stage">${txt}</span><h3>${esc(i.title.replace(/^\[Dialagram\]\s*/, ""))}</h3>
+        <div class="figs">n° ${i.number} · ${new Date(i.created_at).toLocaleDateString("fr-FR")} · ${i.comments} réponse${i.comments > 1 ? "s" : ""}</div>
+        <a href="${i.html_url}" target="_blank" rel="noopener">${i.comments ? "Voir le résultat et la note de Claude" : "Voir la demande"}</a></article>`;
+    }).join("") || '<div class="msg">Aucune demande pour l\'instant. La première apparaîtra ici.</div>';
+  } catch (e) { $("reqs").innerHTML = '<div class="msg">La liste des demandes n\'a pas pu être chargée. Nouvel essai au prochain rafraîchissement.</div>'; }
 }
+
+$("reqForm").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const btn = $("rSubmit"), msg = $("rMsg");
+  btn.disabled = true; msg.textContent = "Envoi…";
+  try {
+    const r = await fetch("/api/requete", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ titre: $("rTitre").value.trim(), consigne: $("rConsigne").value.trim(), modele: $("rModele").value, nom: $("rNom").value.trim(), code: $("rCode").value }) });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(d.erreur || "L'envoi a échoué. Réessayez dans un instant.");
+    msg.innerHTML = `Demande n° ${d.numero} enregistrée. Claude la prendra en charge au prochain passage. <a href="${d.url}" target="_blank" rel="noopener">Suivre la demande</a>`;
+    $("rTitre").value = ""; $("rConsigne").value = "";
+    renderReqs();
+  } catch (e) { msg.textContent = e.message; }
+  finally { btn.disabled = false; }
+});
 
 async function renderProjects() {
   try {
@@ -188,11 +234,11 @@ async function renderProjects() {
 
 async function tick() {
   try { renderLive(await lireEtat()); }
-  catch (e) { $("lMaj").textContent = "Hors ligne · nouvel essai dans une minute"; if (!catalogue.length) $("books").innerHTML = '<div class="msg">Catalogue indisponible pour le moment.</div>'; }
+  catch (e) { $("lMaj").textContent = "Hors ligne · nouvel essai dans une minute"; }
 }
-$("q").addEventListener("input", renderBooks);
-tick(); renderProjects();
+tick(); renderProjects(); renderReqs();
 setInterval(tick, 75000);
+setInterval(renderReqs, 180000);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
 </script>
 </body>

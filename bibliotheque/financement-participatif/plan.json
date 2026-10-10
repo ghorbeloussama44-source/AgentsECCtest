@@ -1,0 +1,587 @@
+{
+ "titre": "Crowdfund & Build",
+ "sous_titre": "Le guide complet pour lever des fonds et investir via le financement participatif immobilier et entrepreneurial",
+ "bibliographie": [
+  {
+   "auteur": "Scott Steinberg",
+   "titre": "The Crowdfunding Bible",
+   "annee": "2011",
+   "idee": "Panorama exhaustif des modèles de crowdfunding (don, récompense, prêt, equity) avec des études de cas de campagnes réussies et les erreurs fatales à éviter.",
+   "apport": "Structure pédagogique par modèle de financement ; notre livre reprendra la clarté de segmentation tout en l'actualisant aux réglementations européennes 2024."
+  },
+  {
+   "auteur": "Alejandro Cremades",
+   "titre": "The Art of Startup Fundraising",
+   "annee": "2016",
+   "idee": "Méthode pas-à-pas pour construire un pitch deck, approcher les investisseurs et structurer un tour de table, du pre-seed à la série A.",
+   "apport": "Techniques de storytelling et de négociation avec les investisseurs ; intégrées dans nos chapitres sur la préparation de la levée entrepreneuriale."
+  },
+  {
+   "auteur": "Benjamin Graham",
+   "titre": "The Intelligent Investor",
+   "annee": "1949",
+   "idee": "Philosophie de l'investissement value : marge de sécurité, analyse fondamentale et discipline émotionnelle face aux marchés.",
+   "apport": "Principes de gestion du risque et d'allocation rationnelle transposés à la sélection de projets en crowdfunding."
+  },
+  {
+   "auteur": "Robert Kiyosaki",
+   "titre": "Rich Dad Poor Dad",
+   "annee": "1997",
+   "idee": "L'immobilier comme levier de création de richesse ; distinction actif/passif et éducation financière autodidacte.",
+   "apport": "Mindset d'investisseur immobilier et notion de cash-flow, adaptés au contexte du crowdfunding où l'on n'achète pas en direct."
+  },
+  {
+   "auteur": "Brad Feld & Jason Mendelson",
+   "titre": "Venture Deals",
+   "annee": "2012",
+   "idee": "Démystification des termes juridiques et financiers d'un tour de table VC : valuation, dilution, clauses de liquidité, board.",
+   "apport": "Grille de lecture des term sheets et des conditions d'investissement equity, appliquée aux plateformes de crowdfunding entrepreneurial."
+  },
+  {
+   "auteur": "Eric Ries",
+   "titre": "The Lean Startup",
+   "annee": "2011",
+   "idee": "Méthode de développement itératif (build-measure-learn) pour valider un produit avant d'engager des capitaux massifs.",
+   "apport": "Cadre pour évaluer la maturité d'une startup candidate à une levée en crowdfunding ; notre livre l'intègre dans les critères de due diligence."
+  },
+  {
+   "auteur": "Gary Keller",
+   "titre": "The Millionaire Real Estate Investor",
+   "annee": "2005",
+   "idee": "Modèles économiques de l'investissement immobilier : buy-and-hold, fix-and-flip, analyse des métriques clés (cap rate, cash-on-cash).",
+   "apport": "Indicateurs de rentabilité transposés à l'analyse de projets immobiliers financés par crowdfunding."
+  },
+  {
+   "auteur": "Donna LeValley",
+   "titre": "Crowdfunding for Dummies",
+   "annee": "2014",
+   "idee": "Introduction accessible aux plateformes, à la fiscalité et à la communication de campagne pour porteurs de projets novices.",
+   "apport": "Approche vulgarisatrice et checklists opérationnelles ; notre livre conserve ce ton pragmatique pour les débutants."
+  },
+  {
+   "auteur": "Arnaud Burgot",
+   "titre": "Le Crowdfunding : les mécanismes du financement participatif",
+   "annee": "2015",
+   "idee": "Analyse du cadre réglementaire français (ordonnance 2014, statuts CIP et IFP) et panorama des acteurs hexagonaux.",
+   "apport": "Ancrage réglementaire français et européen (ECSP 2020) ; notre livre actualise et approfondit ce cadre."
+  },
+  {
+   "auteur": "Phil Pustejovsky",
+   "titre": "Real Estate Investing Gone Bad",
+   "annee": "2012",
+   "idee": "Vingt histoires vraies de désastres immobiliers : mauvais due diligence, surendettement, partenaires défaillants.",
+   "apport": "Catalogue des risques concrets et des signaux d'alerte ; intégré dans nos chapitres sur la gestion du risque en crowdfunding immobilier."
+  },
+  {
+   "auteur": "Kevin Lawton",
+   "titre": "The Crowdfunding Revolution",
+   "annee": "2012",
+   "idee": "Théorisation du passage d'un financement bancaire centralisé à une désintermédiation par la foule ; impacts macro-économiques.",
+   "apport": "Perspective systémique et prospective sur l'évolution du secteur ; nourrit notre partie sur les tendances et l'avenir."
+  },
+  {
+   "auteur": "Douglas Cumming & Sofia Johan",
+   "titre": "Crowdfunding: A Global Overview",
+   "annee": "2017",
+   "idee": "Étude académique comparée des régulations, performances et risques du crowdfunding dans 40 pays.",
+   "apport": "Données chiffrées sur les taux de défaut, rendements moyens et corrélations macro ; utilisées pour nos tableaux de benchmark."
+  },
+  {
+   "auteur": "John Mayne",
+   "titre": "The Crowdfunding Handbook",
+   "annee": "2014",
+   "idee": "Guide pratique pour rédiger une campagne de reward crowdfunding : vidéo, contreparties, calendrier, communauté.",
+   "apport": "Techniques de marketing de campagne réutilisées pour les porteurs de projets entrepreneuriaux en equity crowdfunding."
+  },
+  {
+   "auteur": "Peter Thiel",
+   "titre": "Zero to One",
+   "annee": "2014",
+   "idee": "Créer une entreprise à fort avantage compétitif (monopole créatif) plutôt que de concourir dans un marché saturé.",
+   "apport": "Critères d'évaluation qualitative d'une startup : barrières à l'entrée, effet réseau, vision long terme ; appliqués à la sélection en crowdfunding."
+  },
+  {
+   "auteur": "Jean-Marc Torreton",
+   "titre": "Investir dans l'immobilier : les clés du succès",
+   "annee": "2019",
+   "idee": "Méthode française d'analyse d'un bien : emplacement, rendement locatif, fiscalité, financement bancaire vs alternatif.",
+   "apport": "Adaptation des métriques françaises (TRI, LMNP, SCI) au contexte spécifique du crowdfunding immobilier réglementé."
+  },
+  {
+   "auteur": "Massimo Sbracia & Andrea Rossi",
+   "titre": "Equity Crowdfunding: The Complete Guide",
+   "annee": "2020",
+   "idee": "Mécanismes juridiques de l'equity crowdfunding en Europe : prospectus, seuils, protection des investisseurs retail.",
+   "apport": "Cadre juridique post-règlement ECSP 2020/1503 ; notre livre en fait un chapitre dédié avec tableaux comparatifs par pays."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – Comprendre l'écosystème du financement participatif",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Cartographie du crowdfunding : du don à l'equity",
+     "objectif": "Donner au lecteur une vision panoramique et historiquement contextualisée des quatre grandes familles de crowdfunding, des acteurs et des montants en jeu en France et en Europe.",
+     "sections": [
+      "1.1 Du mécénat médiéval à Kickstarter : 20 ans d'évolution",
+      "1.2 Les quatre piliers : don, récompense, prêt, capital",
+      "1.3 Le poids des chiffres : volumes collectés 2018-2024",
+      "1.4 Cartographie des plateformes françaises et européennes",
+      "1.5 Le cadre réglementaire européen (ECSP 2020/1503) expliqué simplement",
+      "1.6 Crowdfunding vs. financement bancaire vs. love money : quand choisir quoi"
+     ],
+     "exercices": [
+      "Cartographier sur une matrice 2×2 (risque/rendement) cinq projets fictifs et identifier le type de crowdfunding adapté",
+      "Lister trois plateformes adaptées à un besoin personnel (investissement ou levée) et comparer leurs frais",
+      "Rédiger en 150 mots sa propre définition du financement participatif"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Les acteurs et leurs intérêts : investisseurs, porteurs, plateformes, régulateurs",
+     "objectif": "Décrire le jeu d'acteurs, les incitations économiques et les asymétries d'information pour que le lecteur sache se positionner du bon côté de la table.",
+     "sections": [
+      "2.1 L'investisseur particulier : profil, motivations, biais",
+      "2.2 Le porteur de projet : entrepreneur, promoteur, collectivité",
+      "2.3 La plateforme : modèle économique, sélection, conflits d'intérêts",
+      "2.4 Le régulateur : AMF, ACPR, ESMA – rôles et limites",
+      "2.5 Les intermédiaires : avocats, experts-comptables, CAC",
+      "2.6 La communauté : le rôle des early backers et du bouche-à-oreille"
+     ],
+     "exercices": [
+      "Interviewer (ou simuler l'interview de) un investisseur et un porteur de projet ; noter leurs attentes contradictoires",
+      "Construire un tableau des frais prélevés par trois plateformes (entrée, gestion, sortie)",
+      "Identifier deux biais cognitifs fréquents chez l'investisseur crowdfunding et proposer un correctif"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La boîte à outils juridique du crowdfunding",
+     "objectif": "Rendre lisible le cadre légal français et européen sans jargon superflu, pour que le lecteur distingue ce qui est autorisé, encadré ou interdit.",
+     "sections": [
+      "3.1 Les statuts : CIP, IFP, PSFP – qui fait quoi",
+      "3.2 Le règlement européen ECSP : passeport, seuils, obligations",
+      "3.3 Le contrat d'investissement : actions, obligations, titres participatifs",
+      "3.4 Le prospectus et le DICI : savoir lire 30 pages en 20 minutes",
+      "3.5 La protection des fonds : séquestre, cantonnement, assurance",
+      "3.6 Fiscalité de base : IFU, flat tax, PEA-PME, IR-PME (dispositif Madelin)",
+      "3.7 Les zones grises et les arnaques à repérer"
+     ],
+     "exercices": [
+      "Télécharger un DICI réel sur une plateforme et surligner les cinq informations critiques",
+      "Simuler le calcul de la flat tax sur un gain de 1 200 € en crowdfunding immobilier",
+      "Rédiger une checklist de 10 points de vigilance avant de signer un bulletin de souscription"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Psychologie de l'investisseur et du leveur de fonds",
+     "objectif": "Explorer les mécanismes émotionnels, les biais et les dynamiques de groupe qui influencent les décisions des deux côtés du financement.",
+     "sections": [
+      "4.1 Biais d'ancrage, aversion à la perte et FOMO en crowdfunding",
+      "4.2 L'effet de preuve sociale : pourquoi les premiers investisseurs déclenchent la vague",
+      "4.3 Le storytelling du porteur : neuroscience de la confiance",
+      "4.4 Gérer l'incertitude : horizon de blocage, illiquidité, défaut",
+      "4.5 Le syndrome du sauveur vs. la rationalité du rendement",
+      "4.6 Construire sa propre charte émotionnelle d'investissement"
+     ],
+     "exercices": [
+      "Tenir un journal de bord pendant une semaine : noter chaque impulsion d'investissement ou de rejet et l'émotion associée",
+      "Écrire un pitch de 30 secondes pour un projet fictif en mobilisant trois ressorts émotionnels",
+      "Définir par écrit ses trois limites non négociables (montant max, durée max, secteur exclu)"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Tendances 2025-2030 : tokenisation, IA, green crowdfunding",
+     "objectif": "Anticiper les mutations technologiques et réglementaires pour que le lecteur positionne ses choix dans une perspective de moyen terme.",
+     "sections": [
+      "5.1 La tokenisation immobilière : fractions on-chain et liquidité secondaire",
+      "5.2 L'intelligence artificielle dans la sélection et le scoring des projets",
+      "5.3 Le crowdfunding vert et à impact : taxonomie européenne, labels",
+      "5.4 Les marchés secondaires : revente de parts avant maturité",
+      "5.5 L'hybridation : crowdfunding + bancaire + subventions publiques",
+      "5.6 Risques émergents : cybersécurité, concentration, bulles sectorielles"
+     ],
+     "exercices": [
+      "Rechercher un projet tokenisé et comparer ses conditions à un projet classique sur une plateforme agréée",
+      "Rédiger un paragraphe : 'En 2030, ma stratégie de financement participatif ressemblera à…'",
+      "Lister trois labels ou certifications à vérifier avant d'investir dans un projet dit 'vert'"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – Préparer sa stratégie : investir ou lever ?",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "Définir son profil : investisseur ou porteur de projet ?",
+     "objectif": "Aider le lecteur à clarifier son rôle, ses ressources, sa tolérance au risque et ses objectifs financiers avant toute action.",
+     "sections": [
+      "6.1 Le test d'auto-évaluation : 20 questions pour situer son profil",
+      "6.2 Investisseur : combien allouer, sur quel horizon, avec quelle liquidité",
+      "6.3 Porteur de projet : ai-je vraiment besoin du crowdfunding ?",
+      "6.4 La notion de 'capital patient' vs. 'capital rapide'",
+      "6.5 Articuler crowdfunding et patrimoine global : la règle des 5 à 10 %",
+      "6.6 Les erreurs de positionnement les plus fréquentes"
+     ],
+     "exercices": [
+      "Remplir la grille d'auto-évaluation et calculer son score investisseur/leveur",
+      "Établir un budget d'investissement crowdfunding sur 3 ans avec trois scénarios (prudent, médian, ambitieux)",
+      "Rédiger une lettre d'intention à soi-même expliquant pourquoi on se lance"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Construire sa thèse d'investissement",
+     "objectif": "Guider le lecteur dans la formulation d'une stratégie d'allocation claire, chiffrée et révisable, inspirée des principes de Graham et Keller.",
+     "sections": [
+      "7.1 Choisir ses classes d'actifs : immobilier, startups, EnR, mixte",
+      "7.2 Définir ses critères de sélection : TRI cible, durée, géographie, secteur",
+      "7.3 La diversification : nombre minimum de tickets, corrélation",
+      "7.4 Gérer la liquidité : escalier de maturités et réserve de cash",
+      "7.5 Fixer ses stop-loss mentaux et ses règles de sortie",
+      "7.6 Documenter sa thèse : le mémo d'investissement personnel"
+     ],
+     "exercices": [
+      "Rédiger son mémo d'investissement en une page (objectifs, critères, exclusions)",
+      "Simuler un portefeuille de 10 tickets (1 000 € chacun) répartis sur 3 classes d'actifs",
+      "Calculer le TRI global attendu avec trois hypothèses de défaut (0 %, 5 %, 10 %)"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Préparer sa levée de fonds : du business plan au pitch deck",
+     "objectif": "Fournir au porteur de projet une méthodologie structurée pour concevoir un dossier de levée convaincant, du diagnostic initial au storytelling.",
+     "sections": [
+      "8.1 Le diagnostic financier : combien lever, pourquoi, pour quoi faire",
+      "8.2 Le business plan version crowdfunding : ce que les plateformes exigent",
+      "8.3 Le pitch deck : 12 slides qui racontent une histoire",
+      "8.4 La vidéo de campagne : script, tournage, montage avec un budget réduit",
+      "8.5 Le pré-lancement : construire une communauté avant le jour J",
+      "8.6 Le calendrier de campagne : 60 jours décisifs",
+      "8.7 Les contreparties et la communication post-campagne"
+     ],
+     "exercices": [
+      "Rédiger l'accroche de son pitch en une phrase (problème + solution + impact)",
+      "Construire le storyboard d'une vidéo de 90 secondes (3 actes, 6 plans)",
+      "Établir le rétroplanning J-30 à J+10 de sa campagne de levée"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Choisir sa plateforme et comprendre ses frais",
+     "objectif": "Donner une méthode objective de comparaison des plateformes agréées, au-delà du marketing, pour sélectionner le partenaire adapté à son projet ou à son ticket.",
+     "sections": [
+      "9.1 Les critères de sélection : agrément, track record, volumétrie",
+      "9.2 Décrypter la structure de frais : entrée, gestion, performance, sortie",
+      "9.3 Le taux de défaut affiché vs. réel : lire entre les lignes",
+      "9.4 La qualité du service investisseur : reporting, gouvernance, SAV",
+      "9.5 Les exclusivités et les clubs privés : opportunité ou opacité ?",
+      "9.6 Comparatif pratique : 8 plateformes françaises passées au crible"
+     ],
+     "exercices": [
+      "Construire un tableau comparatif de 4 plateformes avec 8 critères pondérés",
+      "Calculer le coût total d'un investissement de 5 000 € sur 36 mois en incluant tous les frais",
+      "Rédiger trois questions à poser au service client d'une plateforme avant d'ouvrir un compte"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – Le crowdfunding immobilier en profondeur",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Comprendre les projets : promotion, marchand de biens, rénovation",
+     "objectif": "Distinguer les typologies de projets immobiliers financés par crowdfunding et leurs profils de risque/rendement spécifiques.",
+     "sections": [
+      "10.1 La promotion immobilière : VEFA, permis, commercialisation",
+      "10.2 Le marchand de biens : achat-revente et cycles courts",
+      "10.3 La rénovation et la réhabilitation : valeur ajoutée et risques travaux",
+      "10.4 L'immobilier tertiaire et les résidences gérées",
+      "10.5 Le foncier et l'aménagement : spéculation ou développement ?",
+      "10.6 Les métriques clés : TRI, marge promoteur, taux de pré-commercialisation, LTV"
+     ],
+     "exercices": [
+      "Analyser une fiche projet réelle et extraire les 6 métriques clés",
+      "Comparer le profil de risque d'une promotion neuve vs. une rénovation en centre-ville",
+      "Calculer la marge promoteur sur un cas simplifié (coût terrain + travaux + frais vs. prix de vente)"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Analyser un projet immobilier comme un professionnel",
+     "objectif": "Fournir une grille de due diligence complète et opérationnelle pour évaluer la solidité d'un projet avant d'investir.",
+     "sections": [
+      "11.1 L'analyse du promoteur : historique, bilan, références",
+      "11.2 L'étude du marché local : tension, prix, demande",
+      "11.3 Le montage juridique : SCCV, SPA, GFA",
+      "11.4 Le plan de financement : fonds propres, dette senior, crowdfunding",
+      "11.5 Les garanties : caution personnelle, hypothèque, assurance décennale",
+      "11.6 Les red flags : 12 signaux d'alerte à ne jamais ignorer",
+      "11.7 Le scoring maison : construire sa propre note sur 100"
+     ],
+     "exercices": [
+      "Appliquer la grille de due diligence à deux projets réels et rédiger un avis motivé",
+      "Simuler un stress test : que se passe-t-il si la commercialisation prend 12 mois de retard ?",
+      "Attribuer une note sur 100 à un projet et justifier chaque critère"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Investir : de la souscription au remboursement",
+     "objectif": "Décrire le parcours complet de l'investisseur en crowdfunding immobilier, de la décision à la récupération du capital et des intérêts.",
+     "sections": [
+      "12.1 L'ouverture de compte et le KYC : documents et délais",
+      "12.2 La souscription : bulletin, virement, séquestre",
+      "12.3 La vie du projet : reporting trimestriel, visites de chantier",
+      "12.4 Les scénarios de sortie : remboursement anticipé, prorogation, restructuration",
+      "12.5 Le défaut et le recouvrement : procédure, délais, taux de récupération",
+      "12.6 La fiscalité du gain : flat tax, IFU, déclaration aux impôts"
+     ],
+     "exercices": [
+      "Simuler la déclaration fiscale d'un gain de 800 € sur un projet immobilier",
+      "Rédiger un e-mail type à poser à la plateforme en cas de retard de reporting",
+      "Construire un tableau de suivi de 5 investissements avec dates clés et TRI actualisé"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "Le crowdfunding immobilier pour financer son propre projet",
+     "objectif": "Passer de l'autre côté de la table : le porteur de projet immobilier qui cherche à compléter son plan de financement via une plateforme.",
+     "sections": [
+      "13.1 Le crowdfunding comme complément de la dette bancaire",
+      "13.2 Structurer l'offre : taux, durée, montant, garanties offertes",
+      "13.3 Préparer le dossier pour la plateforme : ce qui fait la différence",
+      "13.4 La campagne : communication, investisseurs, FAQ en direct",
+      "13.5 Gérer les relations investisseurs pendant la durée du projet",
+      "13.6 Les alternatives : obligataire, participatif, royalty"
+     ],
+     "exercices": [
+      "Rédiger la note de présentation de son projet immobilier (2 pages max)",
+      "Calculer le coût total du financement crowdfunding vs. un prêt bancaire classique",
+      "Préparer 10 questions/réponses anticipées pour la FAQ de sa campagne"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Risques spécifiques et gestion de crise en immobilier participatif",
+     "objectif": "Anticiper et gérer les situations dégradées : défaut du promoteur, retard de chantier, faillite, contentieux.",
+     "sections": [
+      "14.1 Typologie des risques : marché, exécution, juridique, plateforme",
+      "14.2 Le retard de livraison : causes, fréquence, impact sur le TRI",
+      "14.3 La défaillance du promoteur : procédure collective et rang de créance",
+      "14.4 La plateforme en difficulté : que deviennent mes investissements ?",
+      "14.5 Les recours juridiques : médiation, AMF, action collective",
+      "14.6 Construire son plan B : provision, assurance, diversification extrême",
+      "14.7 Études de cas : trois projets qui ont mal tourné et les leçons"
+     ],
+     "exercices": [
+      "Rédiger son 'plan de crise' personnel en 10 étapes si un projet entre en défaut",
+      "Calculer l'impact d'un retard de 18 mois sur le TRI d'un ticket de 2 000 € à 9 %",
+      "Reconstituer la chronologie d'un défaut réel à partir de données publiques et identifier les signaux précoces"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – Le crowdfunding entrepreneurial en profondeur",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "Equity crowdfunding : investir au capital de startups et PME",
+     "objectif": "Expliquer les mécanismes de l'investissement en capital via les plateformes : valorisation, dilution, pacte d'actionnaires et perspectives de sortie.",
+     "sections": [
+      "15.1 Du capital-risque classique à l'equity crowdfunding : démocratisation",
+      "15.2 Lire une valorisation : pre-money, post-money, méthode DCF vs. comparables",
+      "15.3 Les instruments : actions ordinaires, BSA, obligations convertibles, SAFE",
+      "15.4 Le pacte d'actionnaires : clauses clés pour l'investisseur minoritaire",
+      "15.5 La dilution au fil des tours : comprendre son pourcentage qui fond",
+      "15.6 Les sorties : rachat, IPO, marché secondaire, liquidation"
+     ],
+     "exercices": [
+      "Calculer la dilution d'un investisseur sur trois tours de table successifs",
+      "Identifier dans un pacte d'actionnaires fictif les clauses les plus protectrices",
+      "Simuler le rendement d'un investissement de 1 000 € avec un multiple de sortie x8 et un taux de dilution de 40 %"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Évaluer une startup : au-delà du pitch séduisant",
+     "objectif": "Outiller le lecteur pour analyser la viabilité réelle d'une entreprise au-delà du storytelling, en mobilisant des critères financiers, stratégiques et humains.",
+     "sections": [
+      "16.1 L'équipe : track record, complémentarité, engagement",
+      "16.2 Le marché : taille, croissance, concurrence, barrières à l'entrée",
+      "16.3 Le produit et la traction : MRR, churn, NPS, preuve d'usage",
+      "16.4 Le modèle économique : unit economics, LTV/CAC, chemin vers la rentabilité",
+      "16.5 Les risques spécifiques : dépendance client, technologie, réglementaire",
+      "16.6 Le scoring Thiel : la startup crée-t-elle un monopole ou concurrence-t-elle ?",
+      "16.7 La grille d'évaluation sur 50 points"
+     ],
+     "exercices": [
+      "Appliquer la grille de 50 points à deux startups en cours de levée sur une plateforme",
+      "Rédiger une 'anti-thèse' : trois raisons pour lesquelles la startup pourrait échouer",
+      "Calculer le LTV/CAC d'un SaaS fictif à partir de données fournies"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Lever des fonds pour sa startup ou sa PME via le crowdfunding",
+     "objectif": "Guider pas à pas l'entrepreneur qui choisit l'equity ou le crowdlending pour financer sa croissance, de la préparation à la clôture.",
+     "sections": [
+      "17.1 Le crowdfunding est-il adapté à mon stade ? Pré-amorçage, seed, growth",
+      "17.2 Préparer le data room : documents financiers, juridiques, commerciaux",
+      "17.3 Fixer la valorisation et la fourchette de levée",
+      "17.4 Animer la campagne : lives, webinaires, ambassadeurs",
+      "17.5 Le rôle des lead investors et l'effet de signal",
+      "17.6 Gérer la sur-souscription et l'allocation des tickets",
+      "17.7 Post-levée : reporting, AG, relation avec 200 actionnaires"
+     ],
+     "exercices": [
+      "Construire le sommaire de son data room (15 documents minimum)",
+      "Rédiger le mail de teasing à envoyer à sa communauté à J-7",
+      "Simuler un tableau de cap table avant/après levée avec 150 investisseurs"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Crowdlending et obligations : prêter aux entreprises",
+     "objectif": "Explorer le financement participatif sous forme de prêt ou d'obligations, ses rendements, ses risques et sa place dans un portefeuille diversifié.",
+     "sections": [
+      "18.1 Mécanisme du crowdlending : taux, durée, amortissement",
+      "18.2 Les obligations : coupon, maturité, rang de créance",
+      "18.3 Le scoring de crédit des plateformes : méthodologie et limites",
+      "18.4 La diversification par le prêt : 50, 100, 200 tickets",
+      "18.5 Le risque de défaut : taux constatés et provisionnement",
+      "18.6 La revente sur le marché secondaire : liquidité réelle ou mirage ?",
+      "18.7 Comparatif : crowdlending vs. fonds obligataires vs. livrets"
+     ],
+     "exercices": [
+      "Construire un portefeuille fictif de 20 prêts de 200 € avec des durées échelonnées",
+      "Calculer le rendement net après défauts (hypothèse 3 %) et fiscalité",
+      "Rédiger une note de 200 mots : pourquoi j'inclus (ou non) le crowdlending dans mon allocation"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Crowdfunding à impact et finance durable",
+     "objectif": "Explorer la montée du financement participatif à vocation sociale, environnementale ou territoriale et comment l'intégrer dans une stratégie d'investissement responsable.",
+     "sections": [
+      "19.1 Définitions : impact investing, ISR, finance solidaire, green bonds",
+      "19.2 Les plateformes spécialisées : énergie renouvelable, ESS, agriculture",
+      "19.3 Mesurer l'impact : indicateurs ESG, rapports d'impact, labels",
+      "19.4 Rendement financier vs. rendement social : le faux dilemme",
+      "19.5 Le cadre réglementaire SFDR et la taxonomie verte européenne",
+      "19.6 Construir son portefeuille 'sensé' sans sacrifier la performance",
+      "19.7 Greenwashing : repérer les projets qui surfent sur la vague"
+     ],
+     "exercices": [
+      "Sélectionner trois projets à impact et comparer leurs indicateurs ESG",
+      "Rédiger sa propre charte d'investissement responsable en 10 engagements",
+      "Calculer l'empreinte carbone évitée par un investissement dans un parc solaire financé en crowdfunding"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – Optimiser, diversifier et pérenniser",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Construire un portefeuille diversifié et résilient",
+     "objectif": "Synthétiser les acquis des parties précédentes pour bâtir une allocation multi-actifs, multi-plateformes et multi-horizons.",
+     "sections": [
+      "20.1 Les grands principes : corrélation, concentration, horizon",
+      "20.2 L'allocation cible : 60/30/10 ou une autre règle personnelle",
+      "20.3 Diversifier par classe, par géographie, par plateforme, par durée",
+      "20.4 Le rééquilibrage annuel : quand vendre, quand renforcer",
+      "20.5 La gestion des liquidités : réserve, opportunités, urgences",
+      "20.6 Le tableau de bord : outils, apps, tableurs pour suivre son portefeuille"
+     ],
+     "exercices": [
+      "Construire son allocation cible sur un graphique circulaire (5 classes d'actifs)",
+      "Remplir un tableau de bord Excel/Notion avec 10 investissements fictifs",
+      "Définir trois règles de rééquilibrage automatique et les dater dans son agenda"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Fiscalité et enveloppes : optimiser sans se tromper",
+     "objectif": "Présenter les leviers fiscaux applicables au crowdfunding (IR-PME, PEA-PME, flat tax, holding) sans donner de conseil personnalisé, mais en informant sur les mécanismes.",
+     "sections": [
+      "21.1 La flat tax (PFU) : calcul, abattements, exceptions",
+      "21.2 La réduction IR-PME (Madelin) : conditions, plafonds, cumul",
+      "21.3 Le PEA-PME : éligibilité, fonctionnement, sortie",
+      "21.4 La holding personnelle : quand et pourquoi structurer",
+      "21.5 Les moins-values : constatation, report, compensation",
+      "21.6 Les spécificités du crowdfunding immobilier : revenus fonciers vs. plus-values",
+      "21.7 Avertissement : consulter un professionnel pour toute décision fiscale"
+     ],
+     "exercices": [
+      "Simuler la fiscalité d'un gain de 3 000 € en flat tax vs. barème progressif",
+      "Vérifier l'éligibilité d'un projet fictif au dispositif IR-PME",
+      "Lister les cinq questions à poser à son comptable avant la déclaration annuelle"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Gérer les risques et les crises : la boîte à outils",
+     "objectif": "Préparer le lecteur aux scénarios adverses : défauts en chaîne, faillite de plateforme, krach sectoriel, illiquidité prolongée.",
+     "sections": [
+      "22.1 Le stress test de portefeuille : simuler 10 %, 20 %, 30 % de défaut",
+      "22.2 La provision pour pertes : combien mettre de côté",
+      "22.3 La faillite d'une plateforme : procédure, séquestre, délais",
+      "22.4 Le risque systémique : immobilier en crise, taux d'intérêt, récession",
+      "22.5 Les recours : médiation AMF, associations de consommateurs, action en justice",
+      "22.6 La résilience psychologique : accepter la perte, apprendre, continuer"
+     ],
+     "exercices": [
+      "Réaliser le stress test de son portefeuille fictif avec trois scénarios",
+      "Rédiger une lettre type de réclamation à adresser à une plateforme en cas de litige",
+      "Écrire son 'plan de continuité' : que faire si 20 % de mon portefeuille est en défaut simultanément"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Communauté, formation continue et veille",
+     "objectif": "Encourager le lecteur à s'inscrire dans une dynamique d'apprentissage permanent et de réseau pour affiner ses décisions au fil du temps.",
+     "sections": [
+      "23.1 Les forums, groupes et communautés d'investisseurs crowdfunding",
+      "23.2 Les newsletters, podcasts et blogs de référence",
+      "23.3 Les événements : salons, webinaires, AG de plateformes",
+      "23.4 Créer son propre groupe d'investissement entre pairs",
+      "23.5 La veille réglementaire : suivre les évolutions AMF/ESMA",
+      "23.6 Transmettre et partager : mentorat, éducation financière, écriture"
+     ],
+     "exercices": [
+      "S'inscrire à deux newsletters et un forum spécialisés, puis rédiger un résumé des trois enseignements de la semaine",
+      "Organiser un mini-comité d'investissement entre trois amis avec ordre du jour et vote",
+      "Tenir un journal d'apprentissage mensuel : une leçon, une erreur, une amélioration"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Passer à l'action : votre plan à 90 jours",
+     "objectif": "Transformer la lecture en action concrète grâce à un plan opérationnel sur trois mois, jalonné d'étapes vérifiables et de rituels.",
+     "sections": [
+      "24.1 Semaine 1-2 : diagnostic, thèse et allocation",
+      "24.2 Semaine 3-4 : ouverture de comptes, premiers tickets, première campagne",
+      "24.3 Mois 2 : montée en puissance, diversification, networking",
+      "24.4 Mois 3 : premier bilan, réajustements, projections annuelles",
+      "24.5 Les rituels : mensuel (revue), trimestriel (rééquilibrage), annuel (stratégie)",
+      "24.6 Le mot de la fin : le financement participatif comme levier d'autonomie financière",
+      "24.7 Annexes : glossaire, modèles de documents, ressources utiles"
+     ],
+     "exercices": [
+      "Remplir le plan d'action 90 jours personnalisé (template fourni)",
+      "Programmer dans son calendrier les 12 revues mensuelles de l'année",
+      "Rédiger une lettre à son futur soi dans 12 mois : 'Cher moi, voici ce que j'ai accompli en crowdfunding…'"
+     ]
+    }
+   ]
+  }
+ ]
+}
