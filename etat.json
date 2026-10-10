@@ -1,0 +1,474 @@
+{
+ "maj": "2026-10-11T02:40:25Z",
+ "actif": true,
+ "debut_lot": "01:12",
+ "objectif": 91,
+ "termines": 30,
+ "tokens_dialagram": 18395328,
+ "lot": [
+  {
+   "slug": "devenir-polyglotte",
+   "etape": "rédaction",
+   "titre": "Maîtriser une langue en autodidacte",
+   "chapitres_ecrits": 25,
+   "chapitres_rectifies": 0,
+   "chapitres_total": 26,
+   "mots": 92622,
+   "prompts": [],
+   "journal": [],
+   "pages": null,
+   "fuites": null,
+   "tokens": null
+  },
+  {
+   "slug": "lecture-rapide",
+   "etape": "rédaction",
+   "titre": "L'Art de l'Hyper-Lecture",
+   "chapitres_ecrits": 25,
+   "chapitres_rectifies": 0,
+   "chapitres_total": 26,
+   "mots": 96319,
+   "prompts": [
+    "Rédige le chapitre 24 : « Construire son « Second Cerveau » Numérique ».\nObjectif : Mettre en place un système de gestion des connaissances personnelles (PKM) pérenne et sans friction.\nSections : Pourquoi le cerveau doit être un processeur, pas un disque dur · Le framework CODE de Tiago Forte (Capture, Organize, Distill, Express) · Choisir ses outils : Notion, Obsidian, Readwise, Logseq · L'automatisation du flux de lecture (Kindle vers Notes) · L'organisation par projets vs par catégories (PARA) · Le manifeste du lecteur stratégique : lire moins, retenir plus, agir mieux"
+   ],
+   "journal": [
+    "[done]  Chapitre 23 – 4380 mots – 197.1s – 2 appel(s)",
+    "[done]  Chapitre 21 – 4574 mots – 206.5s – 2 appel(s)"
+   ],
+   "pages": null,
+   "fuites": null,
+   "tokens": null
+  },
+  {
+   "slug": "problem-solving",
+   "etape": "rectification",
+   "titre": "Décomposer pour régner",
+   "chapitres_ecrits": 26,
+   "chapitres_rectifies": 15,
+   "chapitres_total": 26,
+   "mots": 94694,
+   "prompts": [
+    "Relecture d'éditeur de chaque chapitre : retirer les messages au commanditaire et les doublons, vérifier les citations, alléger l'avertissement financier, reformuler les expériences personnelles invérifiables."
+   ],
+   "journal": [
+    "✓ 00_introduction.md : ok (1 tentative(s), 99.56s)",
+    "✓ ch02.md : ok (1 tentative(s), 68.6s)"
+   ],
+   "pages": null,
+   "fuites": null,
+   "tokens": null
+  },
+  {
+   "slug": "prise-notes",
+   "etape": "rectification",
+   "titre": "Le Second Cerveau Numérique",
+   "chapitres_ecrits": 26,
+   "chapitres_rectifies": 9,
+   "chapitres_total": 26,
+   "mots": 97692,
+   "prompts": [
+    "Relecture d'éditeur de chaque chapitre : retirer les messages au commanditaire et les doublons, vérifier les citations, alléger l'avertissement financier, reformuler les expériences personnelles invérifiables."
+   ],
+   "journal": [
+    "✓ ch06.md : ok (1 tentative(s), 82.28s)",
+    "✓ ch07.md : ok (1 tentative(s), 73.9s)"
+   ],
+   "pages": null,
+   "fuites": null,
+   "tokens": null
+  },
+  {
+   "slug": "raconter-histoires",
+   "etape": "rectification",
+   "titre": "L'Architecte de Récits",
+   "chapitres_ecrits": 26,
+   "chapitres_rectifies": 9,
+   "chapitres_total": 26,
+   "mots": 98363,
+   "prompts": [
+    "Relecture d'éditeur de chaque chapitre : retirer les messages au commanditaire et les doublons, vérifier les citations, alléger l'avertissement financier, reformuler les expériences personnelles invérifiables."
+   ],
+   "journal": [
+    "✓ ch06.md : ok (1 tentative(s), 126.27s)",
+    "✓ ch08.md : ok (1 tentative(s), 52.51s)"
+   ],
+   "pages": null,
+   "fuites": null,
+   "tokens": null
+  }
+ ],
+ "catalogue": [
+  {
+   "slug": "architecture-de-la-richesse",
+   "titre": "L'Architecture de la Richesse",
+   "sous_titre": "Le système mental complet pour bâtir une fortune durable — au-delà des secrets, au-delà des mythes",
+   "theme": "Mentalité et richesse",
+   "pages": 501,
+   "pdf": "livre-millionnaire/L-Architecture-de-la-Richesse.pdf"
+  },
+  {
+   "slug": "entreprise",
+   "titre": "L'Équation Entrepreneuriale",
+   "sous_titre": "De l'idée brute à l'empire rentable : le manuel de l'entrepreneur bâtisseur en Afrique, au Maghreb et en Europe",
+   "theme": "Entrepreneuriat",
+   "pages": 314,
+   "pdf": "bibliotheque/entreprise/L-Equation-Entrepreneuriale-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "immobilier",
+   "titre": "L'Édifice Locatif",
+   "sous_titre": "La méthode complète pour bâtir un patrimoine immobilier, pierre après pierre",
+   "theme": "Investissement immobilier",
+   "pages": 313,
+   "pdf": "bibliotheque/immobilier/L-Edifice-Locatif-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "leadership",
+   "titre": "La Gravité du Leader",
+   "sous_titre": "Diriger, inspirer et faire grandir une équipe sans jamais la retenir",
+   "theme": "Leadership",
+   "pages": 297,
+   "pdf": "bibliotheque/leadership/La-Gravite-du-Leader-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "discipline",
+   "titre": "La Forge des Jours",
+   "sous_titre": "Maîtriser ses habitudes, son temps et son attention pour passer de l'intention à l'action, jour après jour",
+   "theme": "Discipline et productivité",
+   "pages": 286,
+   "pdf": "bibliotheque/discipline/La-Forge-des-Jours-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "emotions",
+   "titre": "L'Ingénierie Émotionnelle",
+   "sous_titre": "Décoder ses états, maîtriser l'impact des autres et transformer l'affect en avantage décisif.",
+   "theme": "Intelligence émotionnelle",
+   "pages": 304,
+   "pdf": "bibliotheque/emotions/L-Ingenierie-Emotionnelle-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "marketing",
+   "titre": "Le Rayonnement Numérique",
+   "sous_titre": "Se faire connaître, bâtir son audience et vendre sur internet dans l'espace francophone — de la première publication au premier million de vues",
+   "theme": "Marketing digital",
+   "pages": 304,
+   "pdf": "bibliotheque/marketing/Le-Rayonnement-Numerique-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "negociation",
+   "titre": "L'Alchimie de l'Accord",
+   "sous_titre": "Préparer, conduire et conclure toute négociation — influencer sans manipuler, convaincre sans contraindre",
+   "theme": "Négociation",
+   "pages": 316,
+   "pdf": "bibliotheque/negociation/L-Alchimie-de-l-Accord-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "parole",
+   "titre": "L'Acoustique de l'Influence",
+   "sous_titre": "Vaincre le trac, architecturer le discours et magnétiser l'auditoire",
+   "theme": "Prise de parole",
+   "pages": 300,
+   "pdf": "bibliotheque/parole/L-Acoustique-de-l-Influence-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "amelioration-continue",
+   "titre": "Le Flux Libéré",
+   "sous_titre": "Éliminer les gaspillages, fluidifier les opérations et transformer durablement votre organisation grâce au Lean Management",
+   "theme": "Optimiser processus",
+   "pages": 326,
+   "mots": 99059,
+   "tokens": 726608,
+   "pdf": "bibliotheque/amelioration-continue/Le-Flux-Libere-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "bases-juridiques",
+   "titre": "Le Droit en Poche du Dirigeant",
+   "sous_titre": "24 chapitres pour maîtriser les fondamentaux juridiques et contractuels sans être juriste",
+   "theme": "Droit des affaires",
+   "pages": 347,
+   "mots": 95856,
+   "tokens": 789193,
+   "pdf": "bibliotheque/bases-juridiques/Le-Droit-en-Poche-du-Dirigeant-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "booster-memoire",
+   "titre": "Le Palais Infini",
+   "sous_titre": "Exercices et techniques de mémorisation pour retenir discours, langues et données techniques à vie",
+   "theme": "Techniques mémorisation",
+   "pages": 330,
+   "mots": 98052,
+   "tokens": 396239,
+   "pdf": "bibliotheque/booster-memoire/Le-Palais-Infini-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "bourse-debutants",
+   "titre": "Le Marché Apprivoisé",
+   "sous_titre": "Comprendre la bourse, dompter ses émotions et construire son premier portefeuille d'actions et d'ETF en 90 jours",
+   "theme": "Investir en bourse",
+   "pages": 320,
+   "mots": 94271,
+   "tokens": 728727,
+   "pdf": "bibliotheque/bourse-debutants/Le-Marche-Apprivoise-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "business-plan",
+   "titre": "L'Art de Convaincre par les Chiffres et le Récit",
+   "sous_titre": "Construire un prévisionnel financier infaillible et un pitch deck magnétique pour les banques et les investisseurs",
+   "theme": "Business plan",
+   "pages": 330,
+   "mots": 96980,
+   "tokens": 459771,
+   "pdf": "bibliotheque/business-plan/L-Art-de-Convaincre-par-les-Chiffres-et-le-Recit-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "comprendre-crypto",
+   "titre": "Blockchain & Crypto-Actifs : Le Guide Lucide",
+   "sous_titre": "Comprendre les opportunités technologiques, maîtriser les risques, agir avec méthode",
+   "theme": "Comprendre crypto",
+   "pages": 325,
+   "mots": 91878,
+   "tokens": 777663,
+   "pdf": "bibliotheque/comprendre-crypto/Blockchain-Crypto-Actifs-Le-Guide-Lucide-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "copywriting",
+   "titre": "Mots Magnétiques",
+   "sous_titre": "Le guide ultime du copywriting pour créer des pages de vente, emails et publicités qui captent l'attention et convertissent",
+   "theme": "Écriture persuasive",
+   "pages": 339,
+   "mots": 101597,
+   "tokens": 511748,
+   "pdf": "bibliotheque/copywriting/Mots-Magnetiques-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "creer-ecommerce",
+   "titre": "Boutique Rentable : Le Système Complet pour Lancer et Faire Exploser Votre E-commerce",
+   "sous_titre": "De la sélection du produit idéal à l'optimisation chirurgicale du tunnel de vente — 24 étapes concrètes pour générer vos premiers 10 000 € mensuels",
+   "theme": "Créer e-commerce",
+   "pages": 329,
+   "mots": 94512,
+   "tokens": 763631,
+   "pdf": "bibliotheque/creer-ecommerce/Boutique-Rentable-Le-Systeme-Complet-pour-Lancer-et-Faire-Exploser-Votre-E-commerce-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "crises-financieres",
+   "titre": "Le Code des Krachs",
+   "sous_titre": "24 leçons tirées des grandes crises financières pour protéger et faire croître votre patrimoine",
+   "theme": "Histoire économique",
+   "pages": 304,
+   "mots": 92753,
+   "tokens": 767038,
+   "pdf": "bibliotheque/crises-financieres/Le-Code-des-Krachs-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "epargne-precaution",
+   "titre": "Le Matelas d'Or",
+   "sous_titre": "Constituer, dimensionner et placer intelligemment votre réserve de sécurité financière — méthode complète en 24 étapes",
+   "theme": "Gérer son épargne",
+   "pages": 311,
+   "mots": 90839,
+   "tokens": 726901,
+   "pdf": "bibliotheque/epargne-precaution/Le-Matelas-d-Or-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "esprit-critique",
+   "titre": "L'Esprit Blindé",
+   "sous_titre": "Le manuel pratique pour déjouer les manipulations, décrypter l'information et décider librement",
+   "theme": "Pensée critique",
+   "pages": 366,
+   "mots": 110528,
+   "tokens": 523776,
+   "pdf": "bibliotheque/esprit-critique/L-Esprit-Blinde-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "fideliser-clients",
+   "titre": "L'Effet Ambassadeur",
+   "sous_titre": "Transformer chaque achat ponctuel en alliance durable grâce à une expérience client exceptionnelle",
+   "theme": "Customer success",
+   "pages": 312,
+   "mots": 94085,
+   "tokens": 414204,
+   "pdf": "bibliotheque/fideliser-clients/L-Effet-Ambassadeur-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "financement-participatif",
+   "titre": "Crowdfund & Build",
+   "sous_titre": "Le guide complet pour lever des fonds et investir via le financement participatif immobilier et entrepreneurial",
+   "theme": "Crowdfunding pratique",
+   "pages": 336,
+   "mots": 91044,
+   "tokens": 750293,
+   "pdf": "bibliotheque/financement-participatif/Crowdfund-Build-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "gerer-budget",
+   "titre": "Trésorerie en Pilote Automatique",
+   "sous_titre": "Suivre ses flux, épargner sans frustration et reprendre le contrôle en 30 minutes par semaine",
+   "theme": "Budget personnel",
+   "pages": 313,
+   "mots": 93281,
+   "tokens": 730553,
+   "pdf": "bibliotheque/gerer-budget/Tresorerie-en-Pilote-Automatique-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "independance-financiere",
+   "titre": "La Machine à Liberté",
+   "sous_titre": "Feuille de route radicale pour optimiser ses dépenses, investir massivement et conquérir son indépendance financière",
+   "theme": "Atteindre FIRE",
+   "pages": 320,
+   "mots": 95144,
+   "tokens": 771618,
+   "pdf": "bibliotheque/independance-financiere/La-Machine-a-Liberte-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "innover-startup",
+   "titre": "Hypothèse Zéro",
+   "sous_titre": "Valider, tester, lancer : la méthode complète pour créer un produit sans gaspiller une seule ressource",
+   "theme": "Lean startup",
+   "pages": 321,
+   "mots": 93820,
+   "tokens": 758047,
+   "pdf": "bibliotheque/innover-startup/Hypothese-Zero-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "investir-franchise",
+   "titre": "Franchise Gagnante",
+   "sous_titre": "Le guide complet pour choisir, évaluer et financer votre réseau : entreprendre avec un modèle éprouvé, de l'auto-évaluation à la revente.",
+   "theme": "Investir franchise",
+   "pages": 328,
+   "mots": 91845,
+   "tokens": 680560,
+   "pdf": "bibliotheque/investir-franchise/Franchise-Gagnante-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "lancer-freelance",
+   "titre": "Solo & Solide",
+   "sous_titre": "Le guide complet pour décrocher vos premiers clients, fixer vos tarifs et maîtriser votre administratif sans équipe ni bureau",
+   "theme": "Devenir freelance",
+   "pages": 331,
+   "mots": 94386,
+   "tokens": 740753,
+   "pdf": "bibliotheque/lancer-freelance/Solo-Solide-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "lever-fonds",
+   "titre": "Lever, c'est gagner : Le guide complet pour séduire business angels et VC",
+   "sous_titre": "Préparation, ciblage et négociation : la méthode en 24 étapes pour transformer votre startup en machine à convaincre les investisseurs",
+   "theme": "Startup fundraising",
+   "pages": 318,
+   "mots": 92410,
+   "tokens": 326982,
+   "pdf": "bibliotheque/lever-fonds/Lever-c-est-gagner-Le-guide-complet-pour-seduire-business-angels-et-VC-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "logistique-entreprise",
+   "titre": "La Mécanique des Flux",
+   "sous_titre": "Optimiser marchandises, stocks et fournisseurs pour diviser vos coûts opérationnels",
+   "theme": "Supply chain",
+   "pages": 335,
+   "mots": 94734,
+   "tokens": 364605,
+   "pdf": "bibliotheque/logistique-entreprise/La-Mecanique-des-Flux-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "management-distant",
+   "titre": "L'Équipe Qui Ne Dort Jamais",
+   "sous_titre": "Fédérer, évaluer et motiver vos talents répartis sur tous les fuseaux horaires",
+   "theme": "Management distant",
+   "pages": 329,
+   "mots": 99232,
+   "tokens": 769572,
+   "pdf": "bibliotheque/management-distant/L-Equipe-Qui-Ne-Dort-Jamais-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "meta-apprentissage",
+   "titre": "Le Code d'Accélération",
+   "sous_titre": "Stratégies cognitives pour assimiler toute compétence complexe en un temps record",
+   "theme": "Apprendre à apprendre",
+   "pages": 342,
+   "mots": 98782,
+   "tokens": 469466,
+   "pdf": "bibliotheque/meta-apprentissage/Le-Code-d-Acceleration-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "metaux-precieux",
+   "titre": "Or & Argent : Le Bouclier Patrimonial",
+   "sous_titre": "Stratégies concrètes pour protéger, diversifier et transmettre votre richesse grâce aux métaux précieux physiques",
+   "theme": "Métaux précieux",
+   "pages": 309,
+   "mots": 91393,
+   "tokens": 747379,
+   "pdf": "bibliotheque/metaux-precieux/Or-Argent-Le-Bouclier-Patrimonial-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "methodes-agiles",
+   "titre": "Le Flux Agile",
+   "sous_titre": "Scrum, Kanban et méthodes hybrides pour livrer des projets complexes avec flexibilité et rapidité",
+   "theme": "Gestion de projet",
+   "pages": 312,
+   "mots": 91564,
+   "tokens": 351486,
+   "pdf": "bibliotheque/methodes-agiles/Le-Flux-Agile-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "pensee-creative",
+   "titre": "Penser à Côté",
+   "sous_titre": "24 méthodes concrètes pour débloquer votre créativité, générer des idées innovantes et transformer les impasses en opportunités",
+   "theme": "Stimuler créativité",
+   "pages": 331,
+   "mots": 98979,
+   "tokens": 437238,
+   "pdf": "bibliotheque/pensee-creative/Penser-a-Cote-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "preparer-retraite",
+   "titre": "L'Argent qui Ne Dort Jamais",
+   "sous_titre": "Le guide complet pour bâtir des revenus passifs solides, protéger son patrimoine et vivre libre après la vie active",
+   "theme": "Planifier retraite",
+   "pages": 302,
+   "mots": 87407,
+   "tokens": 722485,
+   "pdf": "bibliotheque/preparer-retraite/L-Argent-qui-Ne-Dort-Jamais-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "psychologie-argent",
+   "titre": "Les Menottes Invisibles",
+   "sous_titre": "Décrypter les biais cognitifs et croyances limitantes qui décident de votre richesse à votre insu",
+   "theme": "Psychologie financière",
+   "pages": 306,
+   "mots": 92961,
+   "tokens": 762769,
+   "pdf": "bibliotheque/psychologie-argent/Les-Menottes-Invisibles-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "reconversion-pro",
+   "titre": "Le Grand Pivot",
+   "sous_titre": "La méthode complète pour identifier vos compétences transférables et bâtir une reconversion professionnelle réaliste, étape par étape",
+   "theme": "Transition carrière",
+   "pages": 325,
+   "mots": 95143,
+   "tokens": 362108,
+   "pdf": "bibliotheque/reconversion-pro/Le-Grand-Pivot-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "recruter-talents",
+   "titre": "Attirer, Choisir, Fidéliser",
+   "sous_titre": "Le manuel complet pour rédiger des offres magnétiques, mener des entretiens structurés et retenir durablement les meilleurs talents",
+   "theme": "Recrutement stratégique",
+   "pages": 319,
+   "mots": 93028,
+   "tokens": 353817,
+   "pdf": "bibliotheque/recruter-talents/Attirer-Choisir-Fideliser-Oussama-Ghorbel.pdf"
+  },
+  {
+   "slug": "techniques-vente",
+   "titre": "LE CODE DU CLOSING",
+   "sous_titre": "Prospecter sans relâche, désamorcer chaque objection, signer sans forcer : la méthode intégrale pour commerciaux et entrepreneurs",
+   "theme": "Maîtriser vente",
+   "pages": 313,
+   "mots": 94259,
+   "tokens": 710098,
+   "pdf": "bibliotheque/techniques-vente/LE-CODE-DU-CLOSING-Oussama-Ghorbel.pdf"
+  }
+ ]
+}
