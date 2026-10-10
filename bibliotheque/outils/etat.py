@@ -52,7 +52,8 @@ def livre(slug):
         prompts.append("Relecture d'éditeur de chaque chapitre : retirer les messages au commanditaire et les doublons, "
                        "vérifier les citations, alléger l'avertissement financier, reformuler les expériences personnelles invérifiables.")
     c = json.load(open(fini[0])) if fini else {}
-    log = tail(f"{d}/nettoyage.log") if etape == "rectification" else tail(f"{d}/redaction.log")
+    log = ([] if fini else tail(f"{d}/nettoyage.log") if etape == "rectification"
+           else [l for l in tail(f"{d}/redaction.log", 6) if l.startswith(("[", "⚠"))][-2:])
     return {
         "slug": slug, "etape": etape, "titre": (plan or {}).get("titre") or c.get("titre"),
         "chapitres_ecrits": len(chap), "chapitres_rectifies": len(v2), "chapitres_total": total,
@@ -74,9 +75,26 @@ def etat():
         "objectif": len(sujets), "termines": len(faits),
         "tokens_dialagram": sum(f.get("tokens_dialagram") or 0 for f in faits),
         "lot": [livre(s) for s in lot],
-        "derniers": sorted(({"titre": f["titre"], "pages": f["pages"], "slug": f["slug"]} for f in faits),
-                           key=lambda x: x["slug"])[-50:],
+        "catalogue": catalogue(faits),
     }
+
+
+def catalogue(faits):
+    """Tous les livres terminés, avec le chemin de leur PDF dans le dépôt."""
+    out = []
+    try:
+        for b in json.load(open(f"{R}/bibliotheque/books.json")):
+            chemin = ("livre-millionnaire/L-Architecture-de-la-Richesse.pdf" if b["slug"] == "architecture-de-la-richesse"
+                      else f"bibliotheque/{b['slug']}/{b['nom_fichier']}")
+            out.append({"slug": b["slug"], "titre": b["titre"], "sous_titre": b["sous_titre"], "theme": b["theme"],
+                        "pages": b["pages"], "pdf": chemin})
+    except (OSError, KeyError, ValueError):
+        pass
+    themes = {x["slug"]: x["theme"] for x in json.load(open(f"{R}/bibliotheque/outils/sujets.json"))}
+    for f in sorted(faits, key=lambda x: x["slug"]):
+        out.append({"slug": f["slug"], "titre": f["titre"], "sous_titre": f.get("sous_titre", ""),
+                    "theme": themes.get(f["slug"], ""), "pages": f["pages"], "pdf": f"bibliotheque/{f['slug']}/{f['pdf']}"})
+    return out
 
 
 def publier():

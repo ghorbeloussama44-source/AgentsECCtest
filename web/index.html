@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Dialagram</title>
+<meta name="description" content="Suivi en direct de l'usine de la Bibliothèque Oussama Ghorbel : livres rédigés par Qwen via Dialagram, relus par Claude.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout : en-tête, panneau « en direct » de l'usine, bibliothèque téléchargeable, puis instantané des projets de l'Atelier */
+:root {
+  --bg: #f3f4f6; --panel: #ffffff; --ink: #161a22; --muted: #5d6573; --line: #dde1e8;
+  --dia: #4b5bd6; --dia-soft: #e6e9fb; --cla: #c4622d; --cla-soft: #f8e9df;
+  --ok: #1f7a4d; --ok-soft: #e0f1e8; --warn: #a3680b; --warn-soft: #f8eedb; --bad: #b3352f; --bad-soft: #f8e2e0;
+  --idle: #6b7280; --idle-soft: #eceef2;
+  --font: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #12151b; --panel: #1a1e26; --ink: #e8eaef; --muted: #9aa2b1; --line: #2c323d;
+  --dia: #8d99f2; --dia-soft: #252b4a; --cla: #e48a5a; --cla-soft: #3a2a21;
+  --ok: #5fc493; --ok-soft: #1b3328; --warn: #e2ad52; --warn-soft: #382c17; --bad: #ef7d76; --bad-soft: #3b2120;
+  --idle: #9aa2b1; --idle-soft: #262b35; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 56px; display: grid; gap: 24px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -.01em; }
+h2 { font-size: 1.1rem; font-weight: 600; }
+a { color: var(--dia); }
+.muted { color: var(--muted); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.lab { font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+header.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px; }
+header.top p { margin: 4px 0 0; max-width: 64ch; color: var(--muted); }
+nav.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+nav.tabs a { text-decoration: none; font-size: .85rem; font-weight: 600; border: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 6px 12px; border-radius: 999px; }
+nav.tabs a:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--dia); outline-offset: 2px; }
+section.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 12px; }
+section.panel > header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--idle); display: inline-block; margin-inline-end: 8px; }
+.dot.on { background: var(--ok); box-shadow: 0 0 0 3px var(--ok-soft); }
+.sum { font-size: .84rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.sum .num { color: var(--ink); }
+.progress { height: 6px; border-radius: 3px; background: var(--idle-soft); overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--dia); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 10px; }
+.card { border: 1px solid var(--line); border-radius: var(--r); padding: 10px; display: grid; gap: 6px; min-width: 0; background: var(--bg); align-content: start; }
+.card h3 { font-size: .92rem; font-weight: 600; overflow-wrap: anywhere; }
+.card .sub { font-size: .8rem; color: var(--muted); margin: 0; }
+.stage { justify-self: start; font: .7rem var(--mono); padding: 1px 7px; border-radius: 999px; background: var(--c-soft); color: var(--c); }
+.st-plan { --c: var(--idle); --c-soft: var(--idle-soft); }
+.st-redaction { --c: var(--dia); --c-soft: var(--dia-soft); }
+.st-rectification { --c: var(--warn); --c-soft: var(--warn-soft); }
+.st-mep { --c: var(--cla); --c-soft: var(--cla-soft); }
+.st-fini, .s-valide { --c: var(--ok); --c-soft: var(--ok-soft); }
+.s-a_faire { --c: var(--idle); --c-soft: var(--idle-soft); }
+.s-delegue { --c: var(--dia); --c-soft: var(--dia-soft); }
+.s-a_valider { --c: var(--warn); --c-soft: var(--warn-soft); }
+.s-refuse { --c: var(--bad); --c-soft: var(--bad-soft); }
+.figs { font-size: .76rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.journal { font: .72rem/1.45 var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+details summary { font-size: .78rem; color: var(--dia); cursor: pointer; }
+pre { margin: 6px 0 0; font: .74rem/1.5 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 8px; max-height: 280px; overflow: auto; }
+.dl { justify-self: start; display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-weight: 600; font-size: .82rem; color: #fff; background: var(--dia); border-radius: var(--r); padding: 6px 12px; }
+.filter { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.filter input { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 7px 10px; min-width: 0; width: min(100%, 320px); }
+.verdict { font-size: .8rem; padding: 6px 8px; border-radius: 4px; background: var(--c-soft); border-inline-start: 3px solid var(--c); white-space: pre-wrap; overflow-wrap: anywhere; }
+.proj { display: grid; gap: 8px; }
+.proj + .proj { border-top: 1px solid var(--line); padding-top: 12px; }
+.proj p { margin: 0; color: var(--muted); font-size: .86rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.msg { font-size: .86rem; color: var(--muted); }
+footer { font-size: .78rem; color: var(--muted); display: grid; gap: 4px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Atelier Dialagram</h1>
+      <p>Les livres de la Bibliothèque Oussama Ghorbel sont écrits par Qwen via Dialagram, puis relus par Claude. Cette page suit l'usine en direct et donne accès aux PDF.</p>
+    </div>
+    <nav class="tabs" aria-label="Sections"><a href="#direct">En direct</a><a href="#bibliotheque">Bibliothèque</a><a href="#projets">Projets</a></nav>
+  </header>
+
+  <section class="panel" id="direct" aria-live="polite">
+    <header><h2><span class="dot" id="lDot"></span>En direct : usine de la bibliothèque</h2><span class="muted" style="font-size:.8rem" id="lMaj">Connexion…</span></header>
+    <div id="live"><div class="msg">Lecture de l'état de l'usine…</div></div>
+  </section>
+
+  <section class="panel" id="bibliotheque">
+    <header><h2>Bibliothèque</h2><span class="muted" style="font-size:.8rem" id="bCount"></span></header>
+    <div class="filter"><label class="lab" for="q">Chercher</label><input id="q" type="search" placeholder="Titre ou thème"></div>
+    <div class="grid" id="books"><div class="msg">Chargement du catalogue…</div></div>
+  </section>
+
+  <section class="panel" id="projets">
+    <header><h2>Projets de l'Atelier</h2><span class="muted" style="font-size:.8rem" id="pDate"></span></header>
+    <div id="projects"><div class="msg">Chargement…</div></div>
+  </section>
+
+  <footer>
+    <span>© 2026 Oussama Ghorbel. Tous droits réservés. Ouvrages rédigés avec l'assistance d'outils d'intelligence artificielle ; contenu éducatif, sans valeur de conseil personnalisé.</span>
+    <span>Les projets ci-dessus sont un instantané de l'Atelier sur claude.ai ; l'usine et la bibliothèque se mettent à jour d'elles-mêmes.</span>
+  </footer>
+</div>
+
+<script>
+const OWNER = "ghorbeloussama44-source", REPO = "AgentsECCtest";
+const LIVRES = "claude/millionaire-book-500-pages-kb2v7u";   // branche où l'usine pousse les livres
+const BASE = 9;                                              // livres faits avant l'usine
+const STAGE = { "plan": ["st-plan", "Plan"], "rédaction": ["st-redaction", "Rédaction"], "rectification": ["st-rectification", "Rectification"], "mise en page": ["st-mep", "Mise en page"], "terminé": ["st-fini", "Terminé"] };
+const STATUS = { a_faire: "À faire", delegue: "Chez Dialagram", a_valider: "À valider", valide: "Validé", refuse: "À refaire" };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmt = (n) => Number(n || 0).toLocaleString("fr-FR");
+const raw = (branch, path) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${branch}/${path.split("/").map(encodeURIComponent).join("/")}`;
+let catalogue = [];
+
+async function lireEtat() {
+  // API GitHub (fraîche, 60 appels/h par visiteur), puis repli sur raw (cache CDN de quelques minutes)
+  try {
+    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/etat.json?ref=etat-usine`, { headers: { Accept: "application/vnd.github.raw+json" }, cache: "no-store" });
+    if (r.ok) return await r.json();
+  } catch (e) {}
+  const r = await fetch(raw("etat-usine", "etat.json") + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error("etat");
+  return await r.json();
+}
+
+function ago(iso) {
+  const s = Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 1000));
+  return s < 90 ? `il y a ${s} s` : s < 5400 ? `il y a ${Math.round(s / 60)} min` : `il y a ${Math.round(s / 3600)} h`;
+}
+
+function renderLive(e) {
+  const fresh = Date.now() - Date.parse(e.maj) < 10 * 60 * 1000;
+  $("lDot").className = "dot" + (e.actif && fresh ? " on" : "");
+  $("lMaj").textContent = (e.actif && fresh ? "En cours · " : "En pause · ") + "mis à jour " + ago(e.maj);
+  const done = BASE + e.termines, total = BASE + e.objectif;
+  const books = (e.lot || []).map((b) => {
+    const [cls, lab] = STAGE[b.etape] || ["st-plan", b.etape];
+    const figs = b.etape === "terminé" ? `${b.pages || "?"} pages · ${fmt(b.mots)} mots`
+      : b.etape === "rectification" ? `${b.chapitres_rectifies}/${b.chapitres_total} chapitres rectifiés · ${fmt(b.mots)} mots`
+      : `${b.chapitres_ecrits}/${b.chapitres_total} chapitres écrits · ${fmt(b.mots)} mots`;
+    const prompts = (b.prompts || []).length ? `<details><summary>Prompts en cours chez Dialagram (${b.prompts.length})</summary>${b.prompts.map((p) => `<pre>${esc(p)}</pre>`).join("")}</details>` : "";
+    return `<article class="card"><span class="stage ${cls}">${esc(lab)}</span><h3>${esc(b.titre || b.slug)}</h3><div class="figs">${figs}</div>
+      ${(b.journal || []).length ? `<div class="journal">${b.journal.map(esc).join("<br>")}</div>` : ""}${prompts}</article>`;
+  }).join("");
+  $("live").innerHTML = `<div style="display:grid;gap:12px">
+    <div class="sum"><span>Bibliothèque <span class="num">${done} / ${total}</span> livres</span><span>Lot démarré à <span class="num">${esc(e.debut_lot || "—")}</span> UTC</span><span>Dialagram <span class="num">${fmt(e.tokens_dialagram)}</span> tokens (usine)</span></div>
+    <div class="progress" aria-hidden="true"><i style="width:${Math.round(done / total * 100)}%"></i></div>
+    <div class="grid">${books || '<div class="msg">Aucun lot en cours.</div>'}</div></div>`;
+  if (e.catalogue) { catalogue = e.catalogue; renderBooks(); }
+}
+
+function renderBooks() {
+  const q = $("q").value.trim().toLowerCase();
+  const list = catalogue.filter((b) => !q || (b.titre + " " + b.theme + " " + b.sous_titre).toLowerCase().includes(q));
+  $("bCount").textContent = `${catalogue.length} livres · ${fmt(catalogue.reduce((a, b) => a + (b.pages || 0), 0))} pages`;
+  $("books").innerHTML = list.map((b) => `<article class="card">
+      <span class="lab">${esc(b.theme)}</span><h3>${esc(b.titre)}</h3><p class="sub">${esc(b.sous_titre)}</p>
+      <div class="figs">${b.pages} pages</div>
+      <a class="dl" href="${raw(LIVRES, b.pdf)}" target="_blank" rel="noopener">Télécharger le PDF</a></article>`).join("")
+    || '<div class="msg">Aucun livre ne correspond.</div>';
+}
+
+async function renderProjects() {
+  try {
+    const d = await (await fetch("atelier.json", { cache: "no-store" })).json();
+    $("pDate").textContent = "Instantané du " + d.exporte_le;
+    $("projects").innerHTML = d.projects.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)).map((p) => {
+      const ts = d.tasks.filter((t) => t.projectId === p.id).sort((a, b) => (a.order || 0) - (b.order || 0));
+      const ok = ts.filter((t) => t.status === "valide").length;
+      const tok = ts.reduce((a, t) => a + ((t.dialagram && t.dialagram.total_tokens) || 0), 0);
+      return `<div class="proj"><h3>${esc(p.name)}</h3>${p.brief ? `<p>${esc(p.brief)}</p>` : ""}
+        <div class="sum"><span><span class="num">${ok}/${ts.length}</span> tâches validées</span><span>Dialagram <span class="num">${fmt(tok)}</span> tokens</span></div>
+        <div class="grid">${ts.map((t) => `<article class="card s-${esc(t.status)}"><span class="stage">${esc(STATUS[t.status] || t.status)}</span><h3>${esc(t.title)}</h3>
+          ${t.claude && t.claude.note ? `<div class="verdict">${esc(t.claude.note)}</div>` : ""}
+          <details><summary>Consigne et résultat</summary><pre>${esc(t.instructions || "—")}</pre>${t.result ? `<pre>${esc(t.result)}</pre>` : ""}</details></article>`).join("")}</div></div>`;
+    }).join("");
+  } catch (e) { $("projects").innerHTML = '<div class="msg">Instantané des projets indisponible.</div>'; }
+}
+
+async function tick() {
+  try { renderLive(await lireEtat()); }
+  catch (e) { $("lMaj").textContent = "Hors ligne · nouvel essai dans une minute"; if (!catalogue.length) $("books").innerHTML = '<div class="msg">Catalogue indisponible pour le moment.</div>'; }
+}
+$("q").addEventListener("input", renderBooks);
+tick(); renderProjects();
+setInterval(tick, 75000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
+</script>
+</body>
+</html>
