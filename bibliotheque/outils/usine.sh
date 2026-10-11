@@ -2,6 +2,7 @@
 # Usine de la bibliothèque : traite sujets.json par lots de 5 livres en parallèle.
 # Chaque livre : plan (Qwen) -> rédaction -> rectification -> PDF, puis copie dans le dépôt.
 # Après chaque lot : commit + push. Reprise : un livre dont le PDF est déjà dans le dépôt est sauté.
+export DIALAGRAM_MODEL=${DIALAGRAM_MODEL:-qwen-3.7-max-thinking}
 R=/home/user/AgentsECCtest; O=$R/bibliotheque/outils; W=${W:-/tmp/usine}; BR=claude/millionaire-book-500-pages-kb2v7u
 mkdir -p $W; cd $W
 
@@ -58,7 +59,7 @@ fuites=sum(1 for f in fs if fuite.search(open(f).read()))
 n=json.load(open('rapport_nettoyage.json'))['fichiers']
 r=json.dumps(json.load(open('chapitres/rapport_redaction.json'))) if os.path.exists('chapitres/rapport_redaction.json') else ''
 tok=sum(map(int,re.findall(r'"total_tokens": (\d+)',r)))+sum(f['tokens']['total_tokens'] for f in n if f.get('tokens'))
-c=dict(slug=s,titre=p['titre'],sous_titre=p['sous_titre'],pages=len(PdfReader('livre.pdf').pages),mots=mots,fichiers=len(fs),
+c=dict(modele=os.environ.get('DIALAGRAM_MODEL',''),slug=s,titre=p['titre'],sous_titre=p['sous_titre'],pages=len(PdfReader('livre.pdf').pages),mots=mots,fichiers=len(fs),
   min_mots=min(len(open(f).read().split()) for f in fs),fuites=fuites,rectif_ok=sum(1 for f in n if f['statut'] in('ok','existant_valide')),rectif_total=len(n),tokens_dialagram=tok)
 fn=re.sub(r"[^A-Za-z0-9]+","-",unicodedata.normalize('NFKD',p['titre']).encode('ascii','ignore').decode()).strip('-')+'-Oussama-Ghorbel.pdf'
 shutil.rmtree(R+'/chapitres_v2',ignore_errors=True); shutil.copytree('chapitres_v2',R+'/chapitres_v2')

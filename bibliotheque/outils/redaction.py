@@ -18,7 +18,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Optional
 
 API_URL = "https://dialagram.me/router/v1/chat/completions"
-MODEL = "qwen-3.8-max-thinking"
+MODEL = __import__("os").environ.get("DIALAGRAM_MODEL", "qwen-3.8-max-thinking")
 TIMEOUT = 1500
 MAX_RETRIES = 5
 MAX_CONTINUATIONS = 6

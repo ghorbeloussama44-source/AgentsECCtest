@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 # Constantes
 # ---------------------------------------------------------------------------
 API_URL = "https://dialagram.me/router/v1/chat/completions"
-MODEL = "qwen-3.8-max-thinking"
+MODEL = __import__("os").environ.get("DIALAGRAM_MODEL", "qwen-3.8-max-thinking")
 TIMEOUT_S = 1500
 MAX_ATTEMPTS = 5
 PARALLEL = 3
