@@ -1,0 +1,10 @@
+MISSION (bibliothèque Oussama Ghorbel, phase 1 : recherche et plan) — Tu es l'auteur pour le compte de l'écrivain Oussama Ghorbel. Claude ne fait que te transmettre la mission.
+
+Objectif final : un livre complet et original, en français, d'environ 300 pages (environ 85 000 mots), sur Stratégies cognitives pour assimiler de nouvelles compétences complexes en un temps record.. Il rejoint une collection de 100 livres pratiques (argent, entreprise, compétences, relations, bien-être, numérique) : reste centré sur ton sujet.
+
+1. Recense au moins 15 livres de référence sur le sujet (auteur, année, idée centrale en 2 lignes, ce que notre livre en retiendra). Tu n'as pas accès au web : appuie-toi sur tes connaissances et signale toute incertitude.
+2. Conçois le plan détaillé d'un livre ORIGINAL qui synthétise et dépasse ces sources (aucune reproduction de texte protégé, citations très courtes et attribuées seulement ; pas de conseil médical, juridique ou fiscal personnalisé). Titre accrocheur, sous-titre, 4 à 6 parties, 24 chapitres. Pour chaque chapitre : titre, objectif, 5 à 7 sections avec titre, exercices pratiques prévus.
+3. Chaque chapitre doit viser 3 500 mots.
+
+Réponds UNIQUEMENT avec un JSON valide (sans balises markdown) de la forme :
+{"titre":"...","sous_titre":"...","bibliographie":[{"auteur":"...","titre":"...","annee":"...","idee":"...","apport":"..."}],"parties":[{"titre":"...","chapitres":[{"numero":1,"titre":"...","objectif":"...","sections":["...","..."],"exercices":["..."]}]}]}

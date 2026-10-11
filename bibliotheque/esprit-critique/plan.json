@@ -1,0 +1,617 @@
+{
+ "titre": "L'Esprit Blindé",
+ "sous_titre": "Le manuel pratique pour déjouer les manipulations, décrypter l'information et décider librement",
+ "bibliographie": [
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence et Manipulation",
+   "annee": "1984",
+   "idee": "Six principes universels (réciprocité, engagement, preuve sociale, autorité, sympathie, rareté) gouvernent la persuasion et sont exploités à des fins de manipulation.",
+   "apport": "Grille d'identification des leviers de manipulation dans la vie quotidienne ; chaque chapitre du livre déconstruira un de ces principes avec des contre-stratégies."
+  },
+  {
+   "auteur": "Daniel Kahneman",
+   "titre": "Système 1 / Système 2 : Les deux vitesses de la pensée",
+   "annee": "2011",
+   "idee": "Le cerveau alterne entre un mode rapide, intuitif et faillible (Système 1) et un mode lent, analytique et coûteux (Système 2), source de biais systématiques.",
+   "apport": "Cadre théorique central du livre ; exercices pour apprendre à basculer consciemment en Système 2 face aux décisions critiques."
+  },
+  {
+   "auteur": "Nassim Nicholas Taleb",
+   "titre": "Le Cygne Noir",
+   "annee": "2007",
+   "idee": "Les événements rares et imprévisibles dominent l'histoire ; notre cerveau, narratif par nature, construit des explications a posteriori illusoires.",
+   "apport": "Chapitres sur l'humilité épistémique, la gestion de l'incertitude et la résistance aux récits trop séduisants."
+  },
+  {
+   "auteur": "Dan Ariely",
+   "titre": "C'est (vraiment ?) moi qui décide",
+   "annee": "2008",
+   "idee": "Nos choix prétendument rationnels sont dictés par des ancres, des options par défaut, des effets de contexte et des émotions prévisibles.",
+   "apport": "Section consacrée aux architectures de choix (choice architecture) et aux moyens de les neutraliser pour soi et pour autrui."
+  },
+  {
+   "auteur": "Noam Chomsky & Edward Herman",
+   "titre": "La Fabrication du consentement",
+   "annee": "1988",
+   "idee": "Les médias de masse filtrent l'information via cinq filtres structurels (propriété, publicité, sources, réprimande, idéologie) pour servir des intérêts dominants.",
+   "apport": "Module d'analyse systémique de l'information médiatique ; méthode de triangulation des sources."
+  },
+  {
+   "auteur": "Rolf Dobelli",
+   "titre": "L'Art de penser clairement",
+   "annee": "2013",
+   "idee": "Catalogue de 52 biais cognitifs et erreurs logiques courantes, du biais de confirmation à l'erreur du coût irrécupérable.",
+   "apport": "Boîte à outils de repérage rapide des biais ; chaque chapitre intègre un 'détecteur de biais' associé."
+  },
+  {
+   "auteur": "Annie Duke",
+   "titre": "Thinking in Bets",
+   "annee": "2018",
+   "idee": "Toute décision est un pari probabiliste ; séparer la qualité du processus de celle du résultat évite le 'resulting' et améliore le jugement.",
+   "apport": "Méthode de journal de décision et d'évaluation probabiliste intégrée aux exercices pratiques."
+  },
+  {
+   "auteur": "Richard Thaler & Cass Sunstein",
+   "titre": "Nudge : La méthode douce pour inspirer la bonne décision",
+   "annee": "2008",
+   "idee": "L'architecture des choix oriente massivement les comportements sans contrainte ; comprendre ces 'coups de pouce' permet de s'en affranchir.",
+   "apport": "Chapitre sur la détection des nudges commerciaux et politiques et la création de son propre environnement décisionnel."
+  },
+  {
+   "auteur": "Philip Tetlock & Dan Gardner",
+   "titre": "Superforecasting : The Art and Science of Prediction",
+   "annee": "2015",
+   "idee": "La prévision s'améliore par la décomposition probabiliste, la mise à jour bayésienne et l'humilité intellectuelle.",
+   "apport": "Exercices de calibration et de prévision structurée ; grille 'superforecaster' adaptée au quotidien."
+  },
+  {
+   "auteur": "Jacques Ellul",
+   "titre": "Propagandes",
+   "annee": "1962",
+   "idee": "La propagande moderne n'est pas un mensonge grossier mais un environnement informationnel total qui prédispose à l'action sans réflexion.",
+   "apport": "Cadre historique et sociologique pour comprendre les manipulations de masse contemporaines (réseaux sociaux, marketing politique)."
+  },
+  {
+   "auteur": "Irving Janis",
+   "titre": "Groupthink",
+   "annee": "1982",
+   "idee": "La cohésion de groupe engendre une illusion d'unanimité, une autocensure et une surconfiance qui mènent à des décisions catastrophiques.",
+   "apport": "Chapitre sur les dynamiques de groupe, les réunions, les réseaux sociaux ; protocoles d'avocat du diable."
+  },
+  {
+   "auteur": "Carl Sagan",
+   "titre": "Le Monde hanté par les démons",
+   "annee": "1995",
+   "idee": "La méthode scientifique et le 'kit de détection de balivernes' (baloney detection kit) sont les meilleurs remparts contre la crédulité.",
+   "apport": "Liste de vérification type 'kit Sagan' intégrée comme outil récurrent dans le livre."
+  },
+  {
+   "auteur": "Hans Rosling",
+   "titre": "Factfulness",
+   "annee": "2018",
+   "idee": "Dix instincts cognitifs nous font percevoir le monde plus négativement et plus simplement qu'il ne l'est ; les données corrigent l'intuition.",
+   "apport": "Exercices de calibration factuelle ; chapitre sur la résistance au catastrophisme médiatique."
+  },
+  {
+   "auteur": "Daniel Levitin",
+   "titre": "Weaponized Lies (Mensonges armés par les chiffres)",
+   "annee": "2016",
+   "idee": "Statistiques, graphiques et chiffres sont massivement instrumentalisés ; savoir lire un graphique et un taux est une compétence civique.",
+   "apport": "Module complet de littératie statistique : moyennes trompeuses, échelles tronquées, corrélations fallacieuses."
+  },
+  {
+   "auteur": "Robert Greene",
+   "titre": "Les 48 Lois du pouvoir",
+   "annee": "1998",
+   "idee": "Catalogue des stratégies de pouvoir et de manipulation interpersonnelle à travers l'histoire ; les connaître permet de s'en défendre.",
+   "apport": "Contre-lecture défensive : pour chaque loi, le signal d'alerte et la parade ; utilisé avec distance critique."
+  },
+  {
+   "auteur": "Stuart Sutherland",
+   "titre": "Irrationality",
+   "annee": "1992",
+   "idee": "Synthèse exhaustive des mécanismes de l'irrationalité humaine : conformité, biais de jugement, erreurs de raisonnement.",
+   "apport": "Structure de classification des erreurs cognitives reprise dans la taxonomie du livre."
+  },
+  {
+   "auteur": "Edward Tufte",
+   "titre": "The Visual Display of Quantitative Information",
+   "annee": "1983",
+   "idee": "La représentation visuelle des données peut informer ou tromper ; le 'lie factor' mesure la distorsion graphique.",
+   "apport": "Chapitre sur la lecture critique des infographies, tableaux de bord et visualisations de données."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – Comprendre la machinerie : pourquoi notre cerveau est vulnérable",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le cerveau, cette formidable machine à se tromper",
+     "objectif": "Poser les bases neurocognitives de la vulnérabilité humaine : Systèmes 1 et 2, heuristiques, économie cognitive. Le lecteur comprend que la manipulation exploite des mécanismes naturels, non une faiblesse morale.",
+     "sections": [
+      "1.1 – Deux pilotes dans un même crâne : Système 1 et Système 2",
+      "1.2 – L'économie de l'énergie mentale : pourquoi le cerveau coupe les coins",
+      "1.3 – Les heuristiques : raccourcis utiles, pièges garantis",
+      "1.4 – L'illusion de rationalité : 'Je ne suis pas comme les autres'",
+      "1.5 – Cartographie personnelle : identifier ses propres zones de vulnérabilité",
+      "1.6 – Le mythe du sujet pleinement autonome"
+     ],
+     "exercices": [
+      "Test d'auto-diagnostic : 'Quel est mon profil de vulnérabilité cognitive ?' (questionnaire de 20 items)",
+      "Expérience personnelle : tenir pendant 3 jours un 'journal des raccourcis' où l'on note chaque décision prise en mode automatique",
+      "Exercice de bascule : face à une publicité choisie, rédiger une analyse en mode lent (5 questions structurées)"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "La grande famille des biais cognitifs : votre bestiaire intérieur",
+     "objectif": "Présenter les 25 biais les plus exploités par les manipulateurs, organisés par famille (biais de traitement, biais sociaux, biais émotionnels), avec des exemples concrets tirés du marketing, de la politique et des réseaux sociaux.",
+     "sections": [
+      "2.1 – Biais de confirmation : le miroir qui ne renvoie que ce qu'on veut voir",
+      "2.2 – Ancrage, effet de halo et effet de contraste : les illusions de mesure",
+      "2.3 – Biais de disponibilité et de représentativité : juger sur des échantillons tronqués",
+      "2.4 – Biais sociaux : conformité, autorité, preuve sociale",
+      "2.5 – Biais émotionnels : effet de cadrage, aversion à la perte, statu quo",
+      "2.6 – Le biais du survivant et l'erreur du coût irrécupérable",
+      "2.7 – Comment les biais se combinent en 'chaînes de vulnérabilité'"
+     ],
+     "exercices": [
+      "Jeu de rôle : identifier 5 biais dans une page d'accueil de site e-commerce",
+      "Défi 'avocat du diable' : défendre pendant 10 minutes une opinion opposée à la sienne sur un sujet clivant",
+      "Créer sa 'fiche biais' personnalisée : les 3 biais qui reviennent le plus dans ses propres décisions"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'architecture invisible : nudges, choix par défaut et environnement décisionnel",
+     "objectif": "Montrer comment l'environnement (physique, numérique, institutionnel) oriente les choix à notre insu. Distinguer nudge bienveillant et manipulation structurelle.",
+     "sections": [
+      "3.1 – Qu'est-ce qu'un nudge ? Définition, histoire, exemples fondateurs",
+      "3.2 – L'architecture de choix dans le commerce : disposition, options par défaut, prix psychologiques",
+      "3.3 – Dark patterns numériques : cases pré-cochées, abonnements cachés, UX manipulatrice",
+      "3.4 – Nudges d'État : entre intérêt général et dérive paternaliste",
+      "3.5 – Les 'sludges' : quand l'architecture de choix devient une barrière",
+      "3.6 – Cartographier son propre environnement : où suis-je nudgé sans le savoir ?"
+     ],
+     "exercices": [
+      "Audit personnel : photographier 10 situations quotidiennes où l'architecture oriente un choix",
+      "Repérer 5 dark patterns dans les applications de son téléphone et les documenter",
+      "Concevoir un 'contre-nudge' personnel : réaménager une routine pour servir ses propres objectifs"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Les émotions, cheval de Troie de la manipulation",
+     "objectif": "Analyser le rôle des émotions (peur, colère, urgence, appartenance, nostalgie) comme vecteurs de contournement de la raison. Comprendre sans diaboliser : l'émotion est aussi une information.",
+     "sections": [
+      "4.1 – Neurosciences de l'émotion : l'amygdale avant le cortex",
+      "4.2 – La peur comme monnaie : sécurité, santé, déclin",
+      "4.3 – L'urgence fabriquée : compteurs, 'dernières places', flash sales",
+      "4.4 – Colère et indignation : le carburant des réseaux sociaux",
+      "4.5 – Nostalgie et appartenance : manipuler l'identité",
+      "4.6 – Émotion et décision : quand ressentir est une donnée, quand c'est un piège",
+      "4.7 – La régulation émotionnelle comme compétence anti-manipulation"
+     ],
+     "exercices": [
+      "Journal émotionnel : pendant une semaine, noter l'émotion dominante déclenchée par chaque message persuasif reçu",
+      "Exercice de 'refroidissement' : appliquer la règle des 24 heures à un achat impulsif et analyser a posteriori",
+      "Cartographie : identifier ses 3 'boutons émotionnels' personnels les plus exploitables"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  },
+  {
+   "titre": "PARTIE II – Détecter la manipulation : les techniques et leurs signaux",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Les 12 techniques de manipulation interpersonnelle",
+     "objectif": "Cataloguer et illustrer les techniques de manipulation relationnelle (gaslighting, culpabilisation, love bombing, triangulation, double contrainte, etc.) pour les reconnaître en temps réel.",
+     "sections": [
+      "5.1 – Le gaslighting : 'Tu exagères, ça ne s'est jamais passé comme ça'",
+      "5.2 – La culpabilisation et le chantage affectif",
+      "5.3 – Le love bombing puis la dévalorisation : le cycle narcissique",
+      "5.4 – La triangulation et la division pour régner",
+      "5.5 – La double contrainte : 'Sois spontané !'",
+      "5.6 – Le flou stratégique, la fausse naïveté et le dénigrement masqué en humour",
+      "5.7 – Repérer les patterns : le manipulateur ne fait jamais une seule fois"
+     ],
+     "exercices": [
+      "Grille d'observation : checklist des 12 techniques à cocher dans une conversation passée",
+      "Jeu de rôle en binôme : simuler une tentative de manipulation et la déconstruire en direct",
+      "Rédiger son 'script de protection' : 5 phrases-types pour poser une limite sans agressivité"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Les six armes de Cialdini : réciprocité, rareté, autorité, engagement, preuve sociale, sympathie",
+     "objectif": "Reprendre les six principes de Cialdini un par un, les illustrer par des cas contemporains (influenceurs, vente, sectes, politique) et fournir une contre-mesure pour chacun.",
+     "sections": [
+      "6.1 – Réciprocité : le cadeau qui oblige",
+      "6.2 – Engagement et cohérence : le piège du 'petit oui' initial",
+      "6.3 – Preuve sociale : 'Tout le monde le fait'",
+      "6.4 – Autorité : la blouse blanche et le costume trois-pièces",
+      "6.5 – Sympathie et similarité : le miroir séducteur",
+      "6.6 – Rareté et urgence : le compte à rebours intérieur",
+      "6.7 – Les combinaisons : quand les six armes tirent en même temps"
+     ],
+     "exercices": [
+      "Audit d'une journée : identifier au moins une occurrence de chaque principe dans les sollicitations reçues",
+      "Contre-script : pour chaque principe, rédiger sa phrase de neutralisation",
+      "Analyse de cas : décortiquer une vidéo de vente ou un pitch de start-up avec la grille Cialdini"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Propagande, rhétorique et langage manipulatoire",
+     "objectif": "Analyser les techniques de manipulation langagière : euphémismes, cadrage, répétition, homme de paille, faux dilemmes, appels à l'émotion. Du discours politique à la publicité.",
+     "sections": [
+      "7.1 – Le cadrage (framing) : 'charges sociales' vs 'cotisations'",
+      "7.2 – La répétition et l'illusion de vérité (illusory truth effect)",
+      "7.3 – Les sophismes classiques : homme de paille, pente glissante, ad hominem",
+      "7.4 – Le faux dilemme et la fausse urgence",
+      "7.5 – L'euphémisme, le dysphémisme et le langage de bois",
+      "7.6 – La technique du 'firehose of falsehood' : inonder pour noyer",
+      "7.7 – Le storytelling comme arme : quand le récit remplace l'argument"
+     ],
+     "exercices": [
+      "Décryptage : prendre un discours politique récent et surligner cadrages, sophismes et appels émotionnels",
+      "Écrire deux paragraphes décrivant le même fait avec deux cadrages opposés",
+      "Jeu : repérer 5 sophismes dans un fil de commentaires sur les réseaux sociaux"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Manipulation numérique : algorithmes, bulles et ingénierie de l'attention",
+     "objectif": "Comprendre les mécanismes de manipulation spécifiques à l'environnement numérique : algorithmes de recommandation, économie de l'attention, astroturfing, deepfakes, micro-ciblage.",
+     "sections": [
+      "8.1 – L'économie de l'attention : votre temps est le produit",
+      "8.2 – Les algorithmes de recommandation : la bulle de filtres et la polarisation",
+      "8.3 – Micro-ciblage publicitaire et politique : Cambridge Analytica et au-delà",
+      "8.4 – Astroturfing, bots et fermes à trolls : fabriquer l'opinion",
+      "8.5 – Deepfakes et désinformation synthétique",
+      "8.6 – La gamification de la manipulation : likes, streaks, notifications",
+      "8.7 – Reprendre le contrôle : hygiène numérique et contre-mesures techniques"
+     ],
+     "exercices": [
+      "Audit algorithmique : comparer les recommandations YouTube/TikTok de deux profils différents",
+      "Paramétrer et documenter : désactiver 5 mécanismes de captation d'attention sur son téléphone",
+      "Expérience 'bulle brisée' : suivre pendant une semaine des sources opposées à ses opinions habituelles"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  },
+  {
+   "titre": "PARTIE III – Analyser l'information : du doute méthodique à la vérification",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Le kit de détection de balivernes : la méthode Sagan et au-delà",
+     "objectif": "Fournir une boîte à outils de vérification inspirée du 'baloney detection kit' de Carl Sagan, enrichie des méthodes contemporaines de fact-checking et d'investigation citoyenne.",
+     "sections": [
+      "9.1 – Les 10 questions du kit Sagan adaptées au XXIe siècle",
+      "9.2 – Distinguer fait, opinion, interprétation et spéculation",
+      "9.3 – La triangulation des sources : règle de trois minimum",
+      "9.4 – Évaluer la crédibilité d'une source : qui parle, d'où, pourquoi, avec quelles preuves ?",
+      "9.5 – Les indices de désinformation : absence de source, appel à l'émotion, généralisation abusive",
+      "9.6 – Le fact-checking en pratique : outils, limites et réflexes",
+      "9.7 – Le doute méthodique sans sombrer dans le cynisme"
+     ],
+     "exercices": [
+      "Appliquer le kit Sagan à une affirmation virale de la semaine et rédiger un verdict en 10 lignes",
+      "Créer sa 'liste blanche' et sa 'liste grise' de sources fiables par domaine",
+      "Exercice de triangulation : vérifier une information avec 3 sources de types différents (média, institution, article académique)"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Lire les chiffres sans se faire avoir : littératie statistique",
+     "objectif": "Donner au lecteur les compétences pour interpréter (et déjouer) les statistiques, graphiques, pourcentages et études cités dans le débat public, le marketing et les médias.",
+     "sections": [
+      "10.1 – Moyenne, médiane, mode : quand la 'moyenne' ment",
+      "10.2 – Les pourcentages qui manipulent : augmentation de 200 % sur une base de 3",
+      "10.3 – Corrélation n'est pas causalité : les glaces et les noyades",
+      "10.4 – Lire un graphique : échelles tronquées, axes inversés, camemberts trompeurs",
+      "10.5 – Taille d'échantillon, marge d'erreur et intervalle de confiance",
+      "10.6 – Le biais de publication et le p-hacking : quand la science elle-même est biaisée",
+      "10.7 – Le 'lie factor' de Tufte : quantifier la distorsion visuelle"
+     ],
+     "exercices": [
+      "Relever 3 graphiques dans la presse de la semaine et évaluer leur honnêteté avec la grille Tufte",
+      "Recalculer une statistique citée en valeur absolue à partir d'un pourcentage",
+      "Mini-enquête : prendre une étude médiatisée et vérifier la taille d'échantillon et la méthodologie"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Médias, réseaux sociaux et fabrique du consentement 2.0",
+     "objectif": "Analyser le système informationnel contemporain : concentration des médias, modèle économique de l'attention, viralité, agenda-setting. Fournir une méthode de consommation critique de l'information.",
+     "sections": [
+      "11.1 – Les 5 filtres de Chomsky revisités à l'ère numérique",
+      "11.2 – Le modèle économique : pourquoi l'indignation rapporte plus que la nuance",
+      "11.3 – Agenda-setting et priming : de quoi parle-t-on (et de quoi ne parle-t-on pas) ?",
+      "11.4 – La viralité : pourquoi le faux va six fois plus vite que le vrai",
+      "11.5 – Médias sociaux : l'illusion de l'horizontalité et la réalité algorithmique",
+      "11.6 – Construire son 'régime informationnel' : diversité, qualité, temporalité",
+      "11.7 – Le journalisme de solution et la slow information : alternatives concrètes"
+     ],
+     "exercices": [
+      "Audit médiatique : pendant une semaine, lister les 10 sujets dominants et identifier 3 sujets absents",
+      "Comparer le traitement d'un même événement par 3 médias d'orientations différentes",
+      "Construire sa 'diète informationnelle' personnalisée : 5 sources, 2 formats, 1 temps dédié"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Théories du complot, pseudosciences et pensée magique : comprendre sans mépriser",
+     "objectif": "Comprendre les mécanismes psychologiques et sociaux qui rendent les théories du complot séduisantes. Fournir des outils de dialogue et de discernement sans tomber dans l'arrogance.",
+     "sections": [
+      "12.1 – Pourquoi le cerveau aime les complots : besoin de sens, proportionnalité, agency detection",
+      "12.2 – La structure rhétorique du complotisme : l'argument circulaire et l'immunisation",
+      "12.3 – Pseudosciences : homéopathie, astrologie, médecines alternatives – où est la frontière ?",
+      "12.4 – La frontière entre scepticisme sain et dérive complotiste",
+      "12.5 – Comment parler à quelqu'un qui croit en une théorie du complot sans le braquer",
+      "12.6 – L'humilité épistémique : 'Je ne sais pas' comme force",
+      "12.7 – Le rasoir d'Occam et le rasoir de Hanlon : outils de tri"
+     ],
+     "exercices": [
+      "Analyse structurelle : déconstruire une théorie du complot célèbre en identifiant ses mécanismes rhétoriques",
+      "Exercice de dialogue : simuler une conversation avec un proche adepte d'une croyance infondée",
+      "Cartographier ses propres 'croyances non vérifiées' et appliquer le rasoir d'Occam à trois d'entre elles"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  },
+  {
+   "titre": "PARTIE IV – Décider rationnellement : méthodes, outils et garde-fous",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Le processus décisionnel : de l'intuition à la méthode structurée",
+     "objectif": "Présenter un processus de décision complet (clarifier, générer, évaluer, choisir, réviser) en intégrant les apports de Kahneman, Duke et Tetlock. Montrer quand la méthode s'applique et quand l'intuition suffit.",
+     "sections": [
+      "13.1 – La décision comme processus, pas comme instant",
+      "13.2 – Clarifier le vrai problème : 5 Pourquoi, reformulation, inversion",
+      "13.3 – Générer des options : au-delà du dilemme binaire",
+      "13.4 – Évaluer : pondération, scénarios, pré-mortem",
+      "13.5 – Le modèle de la 'pensée en paris' d'Annie Duke",
+      "13.6 – Quand faire confiance à son intuition : les conditions d'expertise (Klein, Kahneman)",
+      "13.7 – La décision réversible vs irréversible : adapter l'effort"
+     ],
+     "exercices": [
+      "Appliquer le processus en 6 étapes à une décision réelle en cours",
+      "Exercice de pré-mortem : 'Mon projet a échoué dans 6 mois, pourquoi ?'",
+      "Tenir un journal de décision pendant un mois avec notation de confiance et résultat"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Penser en probabilités : calibration, bayésianisme et superforecasting",
+     "objectif": "Initier à la pensée probabiliste : estimer des chances, mettre à jour ses croyances avec de nouvelles données, résister à la certitude. Inspiré de Tetlock et du bayésianisme pratique.",
+     "sections": [
+      "14.1 – Du 'peut-être' au chiffre : exprimer ses croyances en pourcentages",
+      "14.2 – Le théorème de Bayes en langage courant : mettre à jour sans tout jeter",
+      "14.3 – La calibration : suis-je sûr à 80 % ou à 60 % ?",
+      "14.4 – Le superforecaster : décomposition, vue de l'extérieur, granularité",
+      "14.5 – Les erreurs classiques : base rate neglect, conjonction, gambler's fallacy",
+      "14.6 – Penser en scénarios : meilleur cas, pire cas, cas médian",
+      "14.7 – L'incertitude radicale : quand les probabilités ne suffisent plus (Taleb)"
+     ],
+     "exercices": [
+      "Quiz de calibration : 10 questions de culture générale avec estimation de confiance, puis score",
+      "Exercice bayésien : réviser une opinion personnelle à la lumière d'un fait nouveau",
+      "Prévision structurée : estimer la probabilité de 5 événements de sa vie à 1 an et réviser chaque mois"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Décider en groupe : intelligence collective et pièges du conformisme",
+     "objectif": "Analyser les dynamiques de décision collective : groupthink, polarisation, effet du leader, pensée de ruche. Fournir des protocoles pour décider mieux à plusieurs (entreprise, famille, associations).",
+     "sections": [
+      "15.1 – Le groupthink de Janis : les 8 symptômes et les conditions d'apparition",
+      "15.2 – La polarisation de groupe : pourquoi ensemble on devient plus extrême",
+      "15.3 – L'effet du leader et le silence des subordonnés",
+      "15.4 – Les protocoles d'intelligence collective : Delphi, brainwriting, six chapeaux",
+      "15.5 – L'avocat du diable : comment l'institutionnaliser sans le rendre décoratif",
+      "15.6 – Décider en famille, en couple, entre amis : les pièges affectifs",
+      "15.7 – Les réunions efficaces : structure, temps de parole, décision explicite"
+     ],
+     "exercices": [
+      "Organiser une réunion avec le protocole des 'six chapeaux de Bono' et en tirer un compte-rendu",
+      "Jeu de l'avocat du diable : en réunion, désigner un contradicteur et évaluer l'impact",
+      "Audit d'une décision collective passée : identifier les pressions conformistes à l'œuvre"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Gérer l'incertitude, le risque et l'inattendu",
+     "objectif": "Apprendre à décider dans le brouillard : gestion du risque, cygnes noirs, robustesse, antifragilité. Accepter l'imprévisible sans paralyser l'action.",
+     "sections": [
+      "16.1 – Risque vs incertitude : la distinction de Knight",
+      "16.2 – Le Cygne Noir : accepter l'imprévisible sans sombrer dans la peur",
+      "16.3 – La barre de la robustesse : décisions qui survivent aux scénarios extrêmes",
+      "16.4 – L'antifragilité de Taleb : tirer profit du désordre",
+      "16.5 – Le principe de précaution : quand l'appliquer, quand il paralyse",
+      "16.6 – Le regret anticipé et le regret rétrospectif : minimiser les deux",
+      "16.7 – L'action imparfaite vaut mieux que la perfection paralysante"
+     ],
+     "exercices": [
+      "Scénario extrême : 'Si mon hypothèse principale est fausse, que se passe-t-il ?'",
+      "Construire une 'marge de sécurité' personnelle (financière, temporelle, relationnelle)",
+      "Exercice de regret : projeter deux futurs et identifier la décision qui minimise le regret à 10 ans"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  },
+  {
+   "titre": "PARTIE V – Construire ses défenses : stratégies, routines et environnement",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "L'art de dire non : poser des limites face à la pression",
+     "objectif": "Développer la compétence comportementale de résistance : techniques d'assertivité, scripts de refus, gestion de l'insistance, protection contre la culpabilisation.",
+     "sections": [
+      "17.1 – Pourquoi dire non est si difficile : évolution, éducation, appartenance",
+      "17.2 – Les techniques d'assertivité : disque rayé, brouillard, questionnement",
+      "17.3 – Scripts concrets : refuser une vente, une demande abusive, une pression sociale",
+      "17.4 – Gérer l'insistance et l'escalade : la technique du 'non progressif'",
+      "17.5 – Dire non sans détruire la relation : la communication non violente appliquée",
+      "17.6 – Le droit au délai : 'Je vais réfléchir' comme bouclier universel",
+      "17.7 – S'entraîner : la résistance est un muscle"
+     ],
+     "exercices": [
+      "Jeu de rôle : simuler 3 situations de pression (vendeur, collègue, famille) et pratiquer le script",
+      "Rédiger 5 phrases de refus personnalisées adaptées à ses contextes de vie",
+      "Défi 'un non par jour' pendant une semaine, avec journal de bord"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Hygiène cognitive : routines, outils et environnement anti-manipulation",
+     "objectif": "Construire un système personnel de protection : routines de vérification, environnement informationnel maîtrisé, outils numériques, rituels de réflexion. L'esprit critique comme pratique quotidienne.",
+     "sections": [
+      "18.1 – La routine matinale de l'esprit critique : 10 minutes pour se calibrer",
+      "18.2 – Les outils numériques : extensions de fact-checking, bloqueurs, RSS",
+      "18.3 – Le 'régime informationnel' : qualité, diversité, temporalité",
+      "18.4 – Le journal de pensée : écrire pour mieux raisonner",
+      "18.5 – Les rituels de décision : check-lists, délais, consultants de confiance",
+      "18.6 – L'environnement physique : réduire les déclencheurs de consommation impulsive",
+      "18.7 – La communauté critique : s'entourer de contradicteurs bienveillants"
+     ],
+     "exercices": [
+      "Concevoir sa 'routine d'hygiène cognitive' personnalisée (matin, soir, hebdo)",
+      "Installer et configurer 3 outils numériques de protection (bloqueur de notifications, fact-checker, RSS)",
+      "Créer son 'board de décision' : 3 personnes à consulter avant une décision majeure"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Éduquer son esprit critique : enfants, ados et autodidactes",
+     "objectif": "Fournir des méthodes pour transmettre la pensée critique aux enfants et adolescents, et pour continuer à progresser soi-même. La curiosité comme antidote permanent.",
+     "sections": [
+      "19.1 – Les fondements développementaux : quand l'enfant peut-il douter ?",
+      "19.2 – Enseigner le questionnement : la méthode socratique à la maison",
+      "19.3 – Médias et écrans : accompagner sans interdire",
+      "19.4 – Les jeux de l'esprit critique : énigmes, débats, 'vrai ou faux'",
+      "19.5 – L'autodidacte : lire, écouter, pratiquer – un programme d'auto-formation",
+      "19.6 – Les communautés de pensée : zététique, scepticisme organisé, MOOCs",
+      "19.7 – Rester humble : l'esprit critique commence par soi-même"
+     ],
+     "exercices": [
+      "Concevoir un 'jeu de détection de balivernes' pour enfants (8-12 ans)",
+      "Animer un mini-débat socratique en famille ou entre amis",
+      "Se créer un programme d'auto-formation trimestriel : 3 livres, 2 podcasts, 1 cours"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Résister à la manipulation systémique : travail, consommation, citoyenneté",
+     "objectif": "Appliquer les outils du livre aux trois grands domaines de la vie adulte : le monde professionnel (management, négociation), la consommation (marketing, finance personnelle) et la citoyenneté (vote, engagement, débat public).",
+     "sections": [
+      "20.1 – Au travail : repérer le management manipulatoire et les réunions toxiques",
+      "20.2 – Négociation et salaire : ne pas se faire ancrer",
+      "20.3 – Consommation : résister au marketing émotionnel et à l'obsolescence perçue",
+      "20.4 – Finance personnelle : les biais dans l'investissement et le crédit",
+      "20.5 – Le vote et le débat politique : voter éclairé, débattre sans haïr",
+      "20.6 – L'engagement citoyen : militer sans se faire manipuler par sa propre cause",
+      "20.7 – Le lanceur d'alerte intérieur : quand dire 'quelque chose ne va pas'"
+     ],
+     "exercices": [
+      "Audit professionnel : identifier 3 situations de manipulation potentielle dans son environnement de travail",
+      "Préparer une négociation (salaire, achat) avec la grille anti-ancrage",
+      "Rédiger sa 'charte citoyenne' : 5 principes pour s'informer et voter en conscience"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  },
+  {
+   "titre": "PARTIE VI – Vivre en esprit libre : philosophie pratique et transmission",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "La liberté de penser : philosophie pratique pour un esprit souverain",
+     "objectif": "Ancrer la pensée critique dans une réflexion philosophique accessible : autonomie kantienne, doute cartésien, stoïcisme, existentialisme. Montrer que la liberté intellectuelle est un projet de vie, pas une technique.",
+     "sections": [
+      "21.1 – Kant et la sortie de la minorité : 'Sapere aude'",
+      "21.2 – Descartes : le doute méthodique comme hygiène permanente",
+      "21.3 – Le stoïcisme : distinguer ce qui dépend de nous et ce qui n'en dépend pas",
+      "21.4 – L'existentialisme : condamné à être libre, responsable de ses choix",
+      "21.5 – La pensée critique comme vertu : courage, humilité, curiosité, persévérance",
+      "21.6 – Les limites de l'esprit critique : quand le doute devient paralysie ou cynisme",
+      "21.7 – Construire sa propre philosophie de la décision"
+     ],
+     "exercices": [
+      "Écrire sa 'déclaration d'indépendance intellectuelle' en 10 lignes",
+      "Méditation stoïcienne : appliquer la dichotomie du contrôle à une préoccupation actuelle",
+      "Choisir un philosophe et rédiger une lettre fictive lui demandant conseil sur une décision en cours"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Relations, persuasion éthique et influence positive",
+     "objectif": "Montrer que comprendre la manipulation permet aussi de communiquer avec intégrité : persuasion honnête, négociation gagnant-gagnant, leadership éthique. La différence entre influencer et manipuler.",
+     "sections": [
+      "22.1 – La frontière éthique : influencer vs manipuler – où passe la ligne ?",
+      "22.2 – La persuasion honnête : argumentation, écoute active, reformulation",
+      "22.3 – La communication non violente (Rosenberg) comme outil de clarté",
+      "22.4 – Le leadership éthique : inspirer sans contraindre",
+      "22.5 – La négociation raisonnée (Harvard) : intérêts, options, critères",
+      "22.6 – L'influence positive dans l'éducation, le management, le couple",
+      "22.7 – Résister à la tentation : le pouvoir rend-il manipulateur ?"
+     ],
+     "exercices": [
+      "Pratiquer la CNV dans une conversation difficile réelle et en faire le débrief",
+      "Préparer une négociation avec la méthode Harvard : lister intérêts, options, critères objectifs",
+      "Auto-évaluation : 'Suis-je déjà manipulateur sans le savoir ?' – questionnaire honnête"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Le manifeste de l'esprit libre : principes, serments et engagement",
+     "objectif": "Synthétiser le livre en un manifeste personnel : les 10 principes de l'esprit libre, le serment de l'analyste, les engagements concrets. Transformer la lecture en identité.",
+     "sections": [
+      "23.1 – Les 10 principes de l'esprit libre : synthèse du parcours",
+      "23.2 – Le serment de l'analyste : 'Je vérifierai avant de partager'",
+      "23.3 – Les 5 engagements concrets : information, consommation, relations, travail, citoyenneté",
+      "23.4 – Le rituel annuel : la grande révision de ses croyances",
+      "23.5 – Transmettre : devenir un passeur d'esprit critique",
+      "23.6 – La communauté des esprits libres : créer ou rejoindre un groupe de pensée",
+      "23.7 – Le paradoxe final : l'esprit libre doute aussi de sa propre liberté"
+     ],
+     "exercices": [
+      "Rédiger son manifeste personnel en une page",
+      "Organiser une 'soirée esprit critique' avec 3 amis : chacun apporte une info à vérifier ensemble",
+      "Planifier sa 'révision annuelle des croyances' : date, méthode, critères"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le monde de demain : IA, deepfakes et nouveaux fronts de la manipulation",
+     "objectif": "Anticiper les évolutions : intelligence artificielle générative, deepfakes, micro-ciblage algorithmique de nouvelle génération, neurotechnologies. Préparer le lecteur aux manipulations futures sans verser dans le catastrophisme.",
+     "sections": [
+      "24.1 – L'IA générative : quand n'importe qui peut produire du texte, de l'image et de la vidéo crédibles",
+      "24.2 – Les deepfakes : détecter, vérifier, réguler",
+      "24.3 – Le micro-ciblage de nouvelle génération : manipulation émotionnelle algorithmique",
+      "24.4 – Les neurotechnologies et la question de la liberté cognitive",
+      "24.5 – La régulation : ce que font (et ne font pas) les États et les plateformes",
+      "24.6 – L'éducation aux médias comme enjeu de société",
+      "24.7 – Rester humain : l'esprit critique comme dernière ligne de défense – et première"
+     ],
+     "exercices": [
+      "Tester 3 outils de détection de deepfakes et documenter les résultats",
+      "Rédiger une 'charte personnelle de l'IA' : ce que j'accepte, ce que je refuse, ce que je vérifie",
+      "Écrire une lettre ouverte fictive à un décideur politique sur la protection cognitive des citoyens"
+     ]
+    }
+   ],
+   "chapitres_count": 4
+  }
+ ]
+}

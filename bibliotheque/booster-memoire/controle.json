@@ -1,0 +1,15 @@
+{
+ "modele": "qwen-3.7-max-thinking",
+ "slug": "booster-memoire",
+ "titre": "Le Palais Infini",
+ "sous_titre": "Exercices et techniques de mémorisation pour retenir discours, langues et données techniques à vie",
+ "pages": 330,
+ "mots": 98052,
+ "fichiers": 26,
+ "min_mots": 2915,
+ "fuites": 0,
+ "rectif_ok": 26,
+ "rectif_total": 26,
+ "tokens_dialagram": 396239,
+ "pdf": "Le-Palais-Infini-Oussama-Ghorbel.pdf"
+}

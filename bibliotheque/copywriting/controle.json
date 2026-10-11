@@ -1,0 +1,15 @@
+{
+ "modele": "qwen-3.7-max-thinking",
+ "slug": "copywriting",
+ "titre": "Mots Magnétiques",
+ "sous_titre": "Le guide ultime du copywriting pour créer des pages de vente, emails et publicités qui captent l'attention et convertissent",
+ "pages": 339,
+ "mots": 101597,
+ "fichiers": 26,
+ "min_mots": 2546,
+ "fuites": 0,
+ "rectif_ok": 26,
+ "rectif_total": 26,
+ "tokens_dialagram": 511748,
+ "pdf": "Mots-Magnetiques-Oussama-Ghorbel.pdf"
+}

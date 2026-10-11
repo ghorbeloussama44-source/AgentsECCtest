@@ -1,0 +1,15 @@
+{
+ "modele": "qwen-3.7-max-thinking",
+ "slug": "meta-apprentissage",
+ "titre": "Le Code d'Accélération",
+ "sous_titre": "Stratégies cognitives pour assimiler toute compétence complexe en un temps record",
+ "pages": 342,
+ "mots": 98782,
+ "fichiers": 26,
+ "min_mots": 2390,
+ "fuites": 0,
+ "rectif_ok": 26,
+ "rectif_total": 26,
+ "tokens_dialagram": 469466,
+ "pdf": "Le-Code-d-Acceleration-Oussama-Ghorbel.pdf"
+}

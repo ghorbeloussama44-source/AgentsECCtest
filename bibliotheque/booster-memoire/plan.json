@@ -1,0 +1,629 @@
+{
+ "titre": "Le Palais Infini",
+ "sous_titre": "Exercices et techniques de mémorisation pour retenir discours, langues et données techniques à vie",
+ "bibliographie": [
+  {
+   "auteur": "Joshua Foer",
+   "titre": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+   "annee": "2011",
+   "idee": "Un journaliste devient champion de mémoire en un an grâce aux techniques ancestrales (palais, voyage, encodage visuel). Il montre que la mémoire est une compétence, pas un don.",
+   "apport": "Structure narrative d'apprentissage progressif ; preuve que toute personne peut progresser ; intégration de la compétition comme moteur de pratique."
+  },
+  {
+   "auteur": "Dominic O'Brien",
+   "titre": "How to Develop a Perfect Memory",
+   "annee": "1993",
+   "idee": "Le champion du monde de mémoire détaille son système de codage chiffres-lettres-images et la construction de parcours mentaux pour stocker des milliers d'éléments.",
+   "apport": "Méthode de codage numérique (Dominic System) adaptée aux données techniques ; progression d'exercices du simple au complexe."
+  },
+  {
+   "auteur": "Frances A. Yates",
+   "titre": "The Art of Memory",
+   "annee": "1966",
+   "idee": "Histoire intellectuelle des arts de mémoire de Simonide à Giordano Bruno, montrant comment le palais mental a structuré la rhétorique, la théologie et la philosophie.",
+   "apport": "Ancrage historique et philosophique ; légitimité culturelle du palais ; vocabulaire classique (loci, imagines agentes) réutilisé dans le livre."
+  },
+  {
+   "auteur": "Tony Buzan",
+   "titre": "Use Your Memory",
+   "annee": "1986",
+   "idee": "Introduction grand public aux mnémotechniques : association, imagination, mind-mapping, et les dix lois de la mémoire.",
+   "apport": "Approche ludique et visuelle ; exercices courts d'association ; intégration du mind-map comme complément au palais."
+  },
+  {
+   "auteur": "Harry Lorayne et Jerry Lucas",
+   "titre": "The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play",
+   "annee": "1974",
+   "idee": "Système de liaison (link method) et de substitution phonétique pour retenir noms, listes, chiffres et langues étrangères.",
+   "apport": "Techniques de substitution phonétique adaptées à l'apprentissage des langues ; exercices de listes chaînées pour les discours."
+  },
+  {
+   "auteur": "Anthony Metivier",
+   "titre": "The Magnetic Memory Method: How to Memorize Poetry, Prose, Speeches, Songs, Lyrics, and More",
+   "annee": "2014",
+   "idee": "Méthode structurée de création de palais magnétiques : un lieu par thème, des images vives, des révisions espacées.",
+   "apport": "Architecture de palais thématiques ; protocole de révision ; application directe aux textes longs (discours, poèmes)."
+  },
+  {
+   "auteur": "Nelson Dellis",
+   "titre": "Remember It! The Names of People You Meet, All of Your Passwords, Where You Left Your Keys, and Everything Else You Tend to Forget",
+   "annee": "2017",
+   "idee": "Un quadruple champion de mémoire USA propose des routines quotidiennes courtes pour ancrer la pratique mnémotechnique dans la vie réelle.",
+   "apport": "Micro-exercices quotidiens ; intégration dans un agenda ; notion de mémoire utilitaire au travail."
+  },
+  {
+   "auteur": "Jim Kwik",
+   "titre": "Limitless: Upgrade Your Brain, Learn Anything Faster, and Unlock Your Exceptional Life",
+   "annee": "2020",
+   "idee": "Combinaison de mindset, méthodes et motivation pour accélérer l'apprentissage ; techniques de lecture rapide, prise de notes et mémorisation active.",
+   "apport": "Cadre motivationnel (les 3 M) ; techniques de lecture active pour données techniques ; routines matinales de révision."
+  },
+  {
+   "auteur": "Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel",
+   "titre": "Make It Stick: The Science of Successful Learning",
+   "annee": "2014",
+   "idee": "Synthèse de la recherche cognitive : récupération active, espacement, entrelacement et élaboration surpassent la relecture passive.",
+   "apport": "Fondements scientifiques du calendrier de révision ; principe de récupération active intégré à chaque exercice du livre."
+  },
+  {
+   "auteur": "Barbara Oakley",
+   "titre": "A Mind for Numbers: How to Excel at Math and Science",
+   "annee": "2014",
+   "idee": "Distinction mode focalisé/diffus ; chunking ; techniques pour mémoriser formules et procédures techniques.",
+   "apport": "Stratégie de chunking pour données techniques ; alternance focalisé/diffus ; gestion de la procrastination dans la pratique."
+  },
+  {
+   "auteur": "Gabriel Wyner",
+   "titre": "Fluent Forever: How to Learn Any Language Fast and Never Forget It",
+   "annee": "2014",
+   "idee": "Apprentissage linguistique par images personnelles, prononciation d'abord, phrases contextualisées et répétition espacée via Anki.",
+   "apport": "Protocole de mémorisation lexicale ; création d'images personnelles ; intégration de la phonétique dans le palais."
+  },
+  {
+   "auteur": "Ed Cooke",
+   "titre": "Remember, Remember: Learn the Stuff",
+   "annee": "2008",
+   "idee": "Le grand maître de mémoire britannique vulgarise les techniques classiques avec humour et exercices concrets pour la vie quotidienne.",
+   "apport": "Ton accessible et humoristique ; exercices de mémorisation de listes et de chiffres ; dédramatisation de l'erreur."
+  },
+  {
+   "auteur": "Lynne Kelly",
+   "titre": "Memory Craft: Improve Your Memory with the Most Powerful Methods in History",
+   "annee": "2019",
+   "idee": "Réhabilitation des techniques mnémoniques des cultures orales (songlines, comptines, masques) appliquées au monde moderne.",
+   "apport": "Diversité culturelle des supports de mémoire ; utilisation du corps et du mouvement ; techniques narratives non-textuelles."
+  },
+  {
+   "auteur": "Cicéron (traduction et commentaire moderne)",
+   "titre": "De Oratore (L'Orateur), Livre II",
+   "annee": "-55 av. J.-C. (éditions modernes 2000+)",
+   "idee": "Premier exposé systématique de la méthode des lieux : associer chaque partie d'un discours à un point d'un parcours architectural.",
+   "apport": "Source originelle du palais de mémoire ; lien rhétorique-mémorisation ; structure en cinq canons réutilisée pour les discours."
+  },
+  {
+   "auteur": "Martin Dresler et al. (études) / collectif",
+   "titre": "Neuroscience of Memory and Learning (revues Nature Reviews Neuroscience, Neuron)",
+   "annee": "2017-2023",
+   "idee": "Les champions de mémoire n'ont pas un cerveau différent structurellement ; c'est l'entraînement aux stratégies qui modifie la connectivité fonctionnelle.",
+   "apport": "Légitimation neuroscientifique ; explication de la plasticité ; argument motivant pour le lecteur : tout le monde peut progresser."
+  },
+  {
+   "auteur": "Anneli Benkert",
+   "titre": "The Memory Code: The Secrets of Stonehenge, Easter Island and Other Ancient Monuments",
+   "annee": "2016",
+   "idee": "Les monuments anciens étaient des supports mnémotechniques collectifs ; la mémoire s'ancre dans l'espace physique parcouru.",
+   "apport": "Lien espace physique / mémoire ; idée de créer un palais réel (marche) en plus du palais mental ; dimension sensorielle."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE I – Les fondations : comprendre et préparer sa mémoire",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Votre mémoire n'est pas un disque dur : comment elle fonctionne vraiment",
+     "objectif": "Démystifier la mémoire, présenter les trois mémoires (sensorielle, travail, long terme) et installer la conviction que la mémoire se travaille.",
+     "sections": [
+      "Le mythe de la mémoire innée : ce que disent les neurosciences",
+      "Les trois étages de la mémoire : sensorielle, de travail, de long terme",
+      "Encodage, stockage, récupération : le cycle complet",
+      "Pourquoi on oublie : courbe d'Ebbinghaus et interférences",
+      "Le rôle des émotions et de l'attention dans la fixation",
+      "Votre profil mémoriel : auditif, visuel, kinesthésique ?"
+     ],
+     "exercices": [
+      "Test d'auto-évaluation : mémoriser 20 mots en 3 minutes puis restituer",
+      "Cartographie personnelle : lister 10 situations où la mémoire fait défaut",
+      "Premier encodage conscient : transformer une information abstraite en image mentale",
+      "Journal de bord : noter pendant 3 jours ce que l'on oublie et pourquoi"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Les sept piliers d'une mémorisation durable",
+     "objectif": "Présenter les principes transversaux qui seront réutilisés dans tout le livre : attention, association, visualisation, émotion, espacement, récupération, sens.",
+     "sections": [
+      "Pilier 1 – L'attention focalisée : éliminer le bruit",
+      "Pilier 2 – L'association : rien ne s'apprend seul",
+      "Pilier 3 – La visualisation exagérée : voir l'invisible",
+      "Pilier 4 – L'émotion et le bizarre : ce qui choque reste",
+      "Pilier 5 – L'espacement : répéter au bon moment",
+      "Pilier 6 – La récupération active : se tester plutôt que relire",
+      "Pilier 7 – Le sens et la structure : comprendre avant de stocker"
+     ],
+     "exercices": [
+      "Exercice du zoom sensoriel : décrire un objet avec les 5 sens pendant 2 minutes",
+      "Créer 5 associations absurdes pour retenir 5 mots sans lien",
+      "Construire une première mini-histoire visuelle pour une liste de courses",
+      "Programmer un rappel espacé sur téléphone pour revoir ce chapitre à J+1, J+3, J+7"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La méthode des lieux : de Simonide à votre salon",
+     "objectif": "Introduire la méthode des loci, son histoire, son fonctionnement cognitif, et réaliser un premier parcours de 10 étapes.",
+     "sections": [
+      "L'histoire de Simonide et la naissance du palais",
+      "Pourquoi le cerveau spatial est notre meilleur allié",
+      "Choisir son premier lieu : maison, trajet, quartier",
+      "Définir 10 étapes claires et ordonnées",
+      "Placer une image par étape : la règle de l'action",
+      "Parcourir mentalement : la promenade de rappel",
+      "Erreurs fréquentes du débutant et comment les éviter"
+     ],
+     "exercices": [
+      "Dessiner le plan simplifié de son logement et numéro 10 lieux",
+      "Mémoriser une liste de 10 mots en les plaçant sur ces 10 lieux",
+      "Parcours chronométré : restituer la liste en moins de 60 secondes",
+      "Variante : créer un deuxième parcours dans son trajet domicile-travail"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "Construire son vocabulaire mental : images, symboles et chiffres",
+     "objectif": "Apprendre à convertir toute donnée abstraite (chiffre, concept, mot étranger) en image concrète, condition sine qua non du palais.",
+     "sections": [
+      "Le principe de substitution : du mot à l'image",
+      "Le système chiffre-lettre (Major System) : convertir les nombres",
+      "Le système Dominic : personnages et actions pour les paires de chiffres",
+      "Créer son propre dictionnaire d'images personnelles",
+      "Images pour concepts abstraits : métaphores visuelles",
+      "Ancrer les images : exagération, mouvement, couleur, son",
+      "Construire une banque d'images réutilisable"
+     ],
+     "exercices": [
+      "Convertir les 10 premiers chiffres en images personnelles",
+      "Créer 10 personnages pour les nombres 00 à 99 (système Dominic simplifié)",
+      "Transformer 15 termes techniques de son métier en images",
+      "Jeu chronométré : convertir 20 données en images en 5 minutes"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE II – Bâtir ses palais : architecture mentale avancée",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "Concevoir un palais de mémoire de A à Z",
+     "objectif": "Guider le lecteur dans la construction complète d'un palais de 50 à 100 loci, avec règles de cohérence et de pérennité.",
+     "sections": [
+      "Choisir le type de palais : réel, fictif ou hybride",
+      "Définir les pièces et le parcours (règle de la continuité)",
+      "Nombre de loci par pièce : trouver le bon rythme",
+      "Peupler le palais : mobilier, couleurs, repères sensoriels",
+      "Étiqueter les zones : donner un thème par pièce",
+      "Tester la solidité : parcours à l'endroit et à l'envers",
+      "Entretenir le palais : révisions et mises à jour"
+     ],
+     "exercices": [
+      "Construire un palais de 50 loci dans un lieu familier",
+      "Parcourir mentalement le palais 3 fois avec un chronomètre",
+      "Ajouter 10 loci supplémentaires dans une nouvelle pièce",
+      "Décrire oralement son palais à un proche pour vérifier la clarté"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "Palais multiples et palais thématiques",
+     "objectif": "Apprendre à gérer plusieurs palais simultanément et à les spécialiser par domaine (langues, discours, données techniques).",
+     "sections": [
+      "Pourquoi un seul palais ne suffit pas",
+      "Attribuer un palais par domaine : la règle de la séparation",
+      "Palais pour les langues : organiser par langue et par thème",
+      "Palais pour les discours : une salle par intervention",
+      "Palais pour les données techniques : un atelier par projet",
+      "Cartographier ses palais : tenir un registre mental",
+      "Passer d'un palais à l'autre sans interférence"
+     ],
+     "exercices": [
+      "Concevoir trois mini-palais de 10 loci chacun (langue, discours, technique)",
+      "Écrire le registre : nom du palais, thème, nombre de loci, date de création",
+      "Exercice de navigation : passer d'un palais à l'autre sur commande",
+      "Créer un quatrième palais fictif (château, musée) pour stimuler la créativité"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Les techniques de liaison et de chaînage",
+     "objectif": "Maîtriser le link method et les chaînes d'images pour les informations séquentielles qui ne nécessitent pas de palais complet.",
+     "sections": [
+      "Le principe de la liaison : une histoire relie les éléments",
+      "Chaînage simple : 10 éléments en une histoire",
+      "Chaînage en cascade pour les listes longues",
+      "Combiner chaînage et palais : les hybrides",
+      "Lier des données abstraites : formules, acronymes, procédures",
+      "Renforcer les liens : répétition narrative et émotion",
+      "Quand utiliser le chaînage plutôt qu'un palais"
+     ],
+     "exercices": [
+      "Mémoriser une liste de 15 mots par chaînage narratif",
+      "Créer une histoire-lien pour retenir les étapes d'une procédure professionnelle",
+      "Chaîner 10 chiffres en une scène absurde",
+      "Comparer : même liste mémorisée par chaînage vs palais, mesurer le rappel à 24 h"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Le corps, le geste et la voix : mémoire incarnée",
+     "objectif": "Intégrer la dimension kinesthésique : gestes, déplacements physiques, voix et rythme comme ancres mémorielles.",
+     "sections": [
+      "La mémoire du corps : pourquoi bouger aide à retenir",
+      "Gestes associés : créer un mouvement par information",
+      "Marcher son palais : la méthode de la déambulation réelle",
+      "La voix comme ancre : ton, volume, rythme",
+      "Réciter à voix haute : l'effet de production",
+      "Le rôle du souffle et de la posture dans la concentration",
+      "Construire une routine corporelle de mémorisation"
+     ],
+     "exercices": [
+      "Associer un geste spécifique à chacun des 10 loci de son palais",
+      "Marcher réellement dans son logement en récitant une liste",
+      "Réciter un court texte à voix haute en variant le volume et le rythme",
+      "Routine de 5 minutes : respiration + marche + récitation"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE III – Retenir des discours et des présentations",
+   "chapitres": [
+    {
+     "numero": 9,
+     "titre": "Déconstruire un discours pour le mémoriser",
+     "objectif": "Apprendre à analyser la structure d'un discours, identifier ses points-clés et les convertir en unités mémorisables.",
+     "sections": [
+      "Les cinq canons de la rhétorique et la mémoire",
+      "Analyser la structure : introduction, développement, conclusion",
+      "Identifier les 3 à 7 idées-forces d'un discours",
+      "Convertir chaque idée en une image-symbole",
+      "Créer un fil narratif entre les idées",
+      "Gérer les transitions et les connecteurs logiques",
+      "Préparer ses notes mentales avant de ranger le papier"
+     ],
+     "exercices": [
+      "Déconstruire un discours célèbre (ex. : « I Have a Dream ») en 5 images",
+      "Résumer un article professionnel en 7 mots-clés visualisables",
+      "Créer un storyboard mental de 6 cases pour une présentation",
+      "Exercice de restitution : raconter le discours sans support écrit"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Placer un discours dans son palais : méthode pas à pas",
+     "objectif": "Appliquer concrètement le palais à un discours de 10 à 30 minutes, de la première lecture à la restitution fluide.",
+     "sections": [
+      "Choisir un palais adapté à la longueur du discours",
+      "Une pièce par grande partie du discours",
+      "Placer les arguments : une image par argument",
+      "Intégrer les chiffres et statistiques avec le système majeur",
+      "Mémoriser les citations et formules exactes",
+      "La technique du mot-gâchette pour les transitions",
+      "Révision espacée : J0, J+1, J+3, J+7, J+30"
+     ],
+     "exercices": [
+      "Placer un discours de 5 minutes dans un palais de 20 loci",
+      "Restituer le discours à voix haute en marchant dans le palais",
+      "Variante : restituer en commençant par la fin",
+      "Simuler une présentation devant un miroir sans notes"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Imprévu, questions et improvisation : garder le fil",
+     "objectif": "Préparer la gestion des interruptions, des questions du public et des trous de mémoire grâce à des filets de sécurité mentaux.",
+     "sections": [
+      "Le filet de sécurité : trois mots-clés de secours",
+      "Gérer un trou de mémoire sans paniquer",
+      "Techniques de relance : ponts narratifs",
+      "Répondre à une question sans perdre le fil",
+      "Improviser à partir d'une structure mémorisée",
+      "La respiration tactique pour retrouver la concentration",
+      "S'entraîner à l'imprévu : exercices de perturbation"
+     ],
+     "exercices": [
+      "Simuler une interruption au milieu du discours et reprendre",
+      "Exercice du partenaire : se faire poser 5 questions surprises pendant la restitution",
+      "Mémoriser un plan B de 3 phrases de transition universelles",
+      "Chronométrer une restitution avec 3 interruptions volontaires"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Discours longs, conférences et soutenances",
+     "objectif": "Adapter la méthode aux formats longs (1 h et plus) : thèses, conférences, soutenances, keynotes.",
+     "sections": [
+      "Segmenter un discours long en blocs de 10 minutes",
+      "Un palais par bloc : la technique du chapelet",
+      "Les pauses stratégiques comme points de respiration",
+      "Mémoriser les supports visuels : slides et graphiques",
+      "La répétition distribuée sur plusieurs semaines",
+      "Gérer la fatigue cognitive en fin de présentation",
+      "Étude de cas : préparer une soutenance de 45 minutes"
+     ],
+     "exercices": [
+      "Construire un chapelet de 5 palais pour une conférence de 50 minutes",
+      "Simuler la conférence en 3 sessions de répétition espacée",
+      "Créer des images pour 10 slides d'une présentation professionnelle",
+      "Restitution complète filmée puis auto-évaluation"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE IV – Mémoriser des langues étrangères",
+   "chapitres": [
+    {
+     "numero": 13,
+     "titre": "Le cerveau polyglotte : principes de mémorisation linguistique",
+     "objectif": "Comprendre comment le cerveau encode une langue étrangère et adapter les techniques de mémorisation à la phonétique, au lexique et à la grammaire.",
+     "sections": [
+      "Les trois niveaux : sons, mots, structures",
+      "Pourquoi la traduction mot à mot sabote la mémoire",
+      "L'importance de la prononciation comme première ancre",
+      "Images personnelles vs images génériques pour le vocabulaire",
+      "La répétition espacée appliquée aux langues (SRS)",
+      "Le rôle du contexte et des phrases complètes",
+      "Fixer un objectif réaliste : combien de mots par jour ?"
+     ],
+     "exercices": [
+      "Créer 10 images personnelles pour 10 mots d'une langue cible",
+      "Enregistrer sa prononciation et la comparer à un natif",
+      "Construire 5 phrases contextualisées avec 5 mots nouveaux",
+      "Programmer une session Anki / rappel espacé de 15 minutes"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Un palais par langue : organiser son lexique mentalement",
+     "objectif": "Construire des palais lexicaux thématiques pour stocker le vocabulaire de manière structurée et durable.",
+     "sections": [
+      "Un palais par champ lexical : cuisine, voyage, travail, émotions",
+      "Placer les mots : un objet-image par mot dans un loci",
+      "Intégrer le genre et le pluriel dans l'image",
+      "Mémoriser les verbes irréguliers avec des scènes d'action",
+      "Les mots de liaison : un couloir de connecteurs",
+      "Palais grammatical : placer les règles dans des pièces dédiées",
+      "Révision croisée : naviguer dans plusieurs palais lexicaux"
+     ],
+     "exercices": [
+      "Construire un palais de 30 loci pour le vocabulaire du voyage",
+      "Placer 20 mots nouveaux dans ce palais avec images",
+      "Créer 5 scènes d'action pour 5 verbes irréguliers",
+      "Restituer oralement le contenu du palais en langue cible"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "Phonétique, accents et mélodie : ancrer les sons",
+     "objectif": "Utiliser la mémoire auditive, le rythme et la musique pour retenir la prononciation et l'intonation d'une langue.",
+     "sections": [
+      "La boucle phonologique : répéter intelligemment",
+      "Associer un son à une image ou un geste",
+      "La méthode des paires minimales pour les sons proches",
+      "Utiliser la musique et les comptines comme ancres",
+      "Mémoriser l'accent tonique par le mouvement corporel",
+      "Les langues tonales : créer des mélodies mentales",
+      "Routine quotidienne de 10 minutes pour la phonétique"
+     ],
+     "exercices": [
+      "Créer 10 images-sons pour 10 phonèmes difficiles d'une langue cible",
+      "Répéter une comptine en la couplant à des gestes",
+      "Exercice de discrimination auditive : 10 paires minimales",
+      "Enregistrer et comparer sa prononciation jour 1 et jour 7"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "Conversations, expressions idiomatiques et culture",
+     "objectif": "Mémoriser des phrases complètes, des expressions figées et des références culturelles pour une communication naturelle.",
+     "sections": [
+      "Mémoriser des dialogues types : la technique du script mental",
+      "Expressions idiomatiques : une image littérale absurde",
+      "Proverbes et citations : un mur de sagesse dans le palais",
+      "Registres de langue : formel, informel, argot",
+      "Références culturelles : un musée mental",
+      "Simulations : rejouer des scènes de vie",
+      "Entretenir la langue sur le long terme"
+     ],
+     "exercices": [
+      "Mémoriser un dialogue de 10 répliques par la méthode du script",
+      "Créer 10 images absurdes pour 10 expressions idiomatiques",
+      "Construire un « mur de proverbes » de 5 loci dans son palais",
+      "Jeu de rôle : tenir une conversation de 3 minutes sans notes"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE V – Dompter les données techniques et complexes",
+   "chapitres": [
+    {
+     "numero": 17,
+     "titre": "Formules, codes et chiffres : le système majeur en action",
+     "objectif": "Appliquer le système chiffre-lettre et le système Dominic aux données chiffrées : formules, codes, numéros, dates, constantes.",
+     "sections": [
+      "Rappel du système majeur : consonnes et chiffres",
+      "Le système Dominic étendu : personnages et actions",
+      "Mémoriser des formules mathématiques et physiques",
+      "Retenir des codes, identifiants et numéros de série",
+      "Dates historiques et chronologies : un palais temporel",
+      "Constantes scientifiques : créer des scènes mémorables",
+      "Combiner chiffres et concepts : la double image"
+     ],
+     "exercices": [
+      "Convertir 20 numéros de téléphone en scènes narratives",
+      "Mémoriser 5 formules de physique avec le système majeur",
+      "Créer une chronologie de 15 dates dans un palais temporel",
+      "Test : restituer 30 chiffres après 24 heures sans révision"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "Schémas, processus et architectures : visualiser la complexité",
+     "objectif": "Transformer des systèmes complexes (architectures logicielles, processus industriels, organigrammes) en paysages mentaux navigables.",
+     "sections": [
+      "Du schéma plat au paysage mental en 3D",
+      "La technique de la machine mentale : animer les processus",
+      "Mémoriser un organigramme : un arbre dans une forêt",
+      "Architectures logicielles : un palais par module",
+      "Processus industriels : une chaîne de montage mentale",
+      "Données médicales ou juridiques : un tribunal anatomique",
+      "Simplifier sans trahir : identifier les nœuds critiques"
+     ],
+     "exercices": [
+      "Convertir un schéma technique professionnel en paysage mental de 10 étapes",
+      "Animer mentalement un processus de fabrication en 5 temps",
+      "Créer un organigramme-palais de 15 nœuds",
+      "Restituer le schéma à un collègue sans support visuel"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Retenir des cours, des livres et des rapports",
+     "objectif": "Mémoriser durablement le contenu de formations, d'ouvrages techniques et de rapports professionnels volumineux.",
+     "sections": [
+      "La lecture active : extraire avant de mémoriser",
+      "La méthode SQ3R adaptée au palais",
+      "Un chapitre = une pièce : structurer un livre mentalement",
+      "Fiches mentales : remplacer les notes papier",
+      "Mémoriser un rapport de 50 pages : la technique de l'entonnoir",
+      "Révisions croisées : interroger son palais à intervalles",
+      "Enseigner pour ancrer : la technique Feynman"
+     ],
+     "exercices": [
+      "Résumer un chapitre de livre en 7 images placées dans 7 loci",
+      "Créer une fiche mentale d'un rapport professionnel de 20 pages",
+      "Restituer oralement le contenu d'un chapitre à un partenaire",
+      "Planifier 5 sessions de révision espacée sur un mois"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Certifications, examens et concours : la préparation mnémotechnique",
+     "objectif": "Construire une stratégie de mémorisation complète pour réussir des examens, certifications professionnelles ou concours.",
+     "sections": [
+      "Cartographier le programme : identifier les domaines",
+      "Un palais par matière ou par module d'examen",
+      "Gérer le volume : 500 définitions, 200 articles, 100 formules",
+      "La simulation d'examen : restituer sous contrainte de temps",
+      "Gérer le stress : ancrage corporel et respiration",
+      "Planning de révision sur 8 semaines",
+      "Le jour J : routine de récupération et confiance"
+     ],
+     "exercices": [
+      "Créer un planning de mémorisation sur 8 semaines pour un examen fictif",
+      "Mémoriser 50 définitions techniques dans 5 palais de 10 loci",
+      "Simulation : restitution chronométrée de 20 questions",
+      "Exercice de gestion du stress : 4-7-8 avant une restitution"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE VI – Pratiquer toute une vie : routine, progrès et transmission",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "La routine quotidienne du mémorialiste",
+     "objectif": "Installer une pratique durable : rituels matinaux, sessions de révision, micro-exercices intégrés dans la journée.",
+     "sections": [
+      "Le rituel matinal de 10 minutes : réactivation",
+      "La session du soir : encodage et consolidation",
+      "Micro-exercices dans les transports, les files d'attente",
+      "La règle des 21 jours : créer l'habitude",
+      "Adapter la routine aux semaines chargées",
+      "Le repos et le sommeil : la consolidation nocturne",
+      "Tenir un journal de progression"
+     ],
+     "exercices": [
+      "Construire sa routine personnalisée matin/soir sur 7 jours",
+      "Pratiquer 3 micro-exercices dans une journée ordinaire",
+      "Tenir un journal de bord pendant 14 jours avec scores de rappel",
+      "Mesurer son temps de mémorisation et de restitution semaine 1 vs semaine 4"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Mesurer ses progrès et dépasser les plateaux",
+     "objectif": "Apprendre à évaluer objectivement sa mémoire, identifier les stagnations et relancer la progression.",
+     "sections": [
+      "Les indicateurs de progression : vitesse, capacité, fidélité",
+      "Tests hebdomadaires : se noter sans se juger",
+      "Identifier les plateaux : pourquoi on stagne",
+      "Varier les supports et les difficultés pour relancer",
+      "S'inspirer des compétitions de mémoire : défis personnels",
+      "Le rôle de la communauté : clubs, forums, partenaires",
+      "Se fixer des défis trimestriels"
+     ],
+     "exercices": [
+      "Créer sa grille d'auto-évaluation hebdomadaire",
+      "Réaliser un test de 100 mots et mesurer le rappel à J+7",
+      "Lancer un défi personnel sur 30 jours (ex. : 1000 mots d'une langue)",
+      "Trouver un partenaire de pratique et instaurer une session hebdomadaire"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Mémoire et numérique : outils, applications et limites",
+     "objectif": "Intégrer les outils numériques (Anki, applications de palais, IA) sans perdre la pratique mentale active.",
+     "sections": [
+      "Les applications de répétition espacée : Anki, Mochi, RemNote",
+      "Applications de palais : Memory Palace, Memoriad",
+      "Créer ses propres flashcards efficaces",
+      "L'IA comme partenaire d'entraînement : générer des quiz",
+      "Les limites du tout-numérique : pourquoi le mental reste roi",
+      "Hybrider : numérique pour planifier, mental pour encoder",
+      "Protéger son attention : gestion des notifications"
+     ],
+     "exercices": [
+      "Configurer un deck Anki de 50 cartes avec images personnelles",
+      "Utiliser une application de palais pour créer un parcours virtuel",
+      "Générer un quiz de 20 questions via IA et y répondre de mémoire",
+      "Comparatif : même contenu mémorisé via app vs palais mental, mesurer à J+7"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Transmettre et enseigner : faire vivre la mémoire",
+     "objectif": "Consolider ses acquis en enseignant les techniques à d'autres, et inscrire la pratique dans un projet de vie à long terme.",
+     "sections": [
+      "Enseigner pour mieux retenir : la pyramide d'apprentissage",
+      "Animer un atelier de mémorisation en entreprise ou à l'école",
+      "Adapter les techniques aux enfants, aux seniors, aux profils atypiques",
+      "Créer son propre système : hybridation et créativité",
+      "La mémoire comme philosophie : présence, attention, gratitude",
+      "Le palais infini : un projet qui grandit toute une vie",
+      "Manifeste du mémorialiste : 10 engagements envers sa mémoire"
+     ],
+     "exercices": [
+      "Préparer et animer une mini-formation de 30 minutes pour 3 proches",
+      "Adapter un exercice du livre à un enfant de 10 ans",
+      "Rédiger son manifeste personnel en 10 points",
+      "Construire un « palais de vie » : un lieu mental pour ses souvenirs les plus précieux"
+     ]
+    }
+   ]
+  }
+ ]
+}

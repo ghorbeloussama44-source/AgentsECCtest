@@ -1,0 +1,607 @@
+{
+ "titre": "Penser à Côté",
+ "sous_titre": "24 méthodes concrètes pour débloquer votre créativité, générer des idées innovantes et transformer les impasses en opportunités",
+ "bibliographie": [
+  {
+   "auteur": "Edward de Bono",
+   "titre": "Lateral Thinking: Creativity Step by Step",
+   "annee": "1970",
+   "idee": "La pensée latérale consiste à rompre volontairement les schémas logiques verticaux pour explorer des pistes inattendues. De Bono y formalise des outils comme la provocation, le hasard et la restructuration.",
+   "apport": "Notre livre reprendra la structure des outils de provocation et les adaptera à des contextes professionnels contemporains (startup, freelance, équipe projet) avec des exercices actualisés."
+  },
+  {
+   "auteur": "Edward de Bono",
+   "titre": "Six Thinking Hats",
+   "annee": "1985",
+   "idee": "Paralléliser la pensée en attribuant six rôles (émotion, faits, critique, optimisme, créativité, processus) pour éviter les conflits stériles en réunion.",
+   "apport": "Nous intégrerons une version enrichie des Six Chapeaux incluant un « chapeau numérique » (IA, données) et un « chapeau utilisateur » inspiré du design thinking."
+  },
+  {
+   "auteur": "Alex Osborn",
+   "titre": "Applied Imagination",
+   "annee": "1953",
+   "idee": "Osborn invente le brainstorming : suspendre le jugement, viser la quantité, combiner et améliorer les idées. Il pose les quatre règles fondatrices de la production collective d'idées.",
+   "apport": "Nous retracerons la genèse du brainstorming pour mieux en montrer les limites actuelles et proposer des variantes (brainwriting, brainwalking, brain-netting)."
+  },
+  {
+   "auteur": "Michael Michalko",
+   "titre": "Thinkertoys: A Handbook of Creative-Thinking Techniques",
+   "annee": "1991",
+   "idee": "Recueil de 39 techniques linéaires et intuitives (SCAMPER, random entry, lotus blossom) pour forcer la pensée hors de ses ornières.",
+   "apport": "Nous sélectionnerons les 10 techniques les plus robustes et les combinerons en « combos » inédits adaptés à la résolution de problèmes concrets."
+  },
+  {
+   "auteur": "Tony Buzan",
+   "titre": "The Mind Map Book",
+   "annee": "1993",
+   "idee": "Le mind mapping exploite la pensée irradiante et la mémoire visuelle : un mot-clé central, des branches colorées, des images pour structurer et générer des idées.",
+   "apport": "Nous proposerons des protocoles de mind mapping hybrides (analogique + numérique) et des variantes : anti-mind-map, mind mapping inversé, mind mapping en équipe."
+  },
+  {
+   "auteur": "Tom Kelley et David Kelley",
+   "titre": "Creative Confidence",
+   "annee": "2013",
+   "idee": "La créativité n'est pas un don mais une confiance qui se construit par la pratique itérative, le prototypage rapide et l'empathie envers l'utilisateur.",
+   "apport": "Nous emprunterons la notion de « confiance créative » comme fil rouge psychologique et les rituels de prototypage express pour valider les idées issues du brainstorming."
+  },
+  {
+   "auteur": "Steven Johnson",
+   "titre": "Where Good Ideas Come From: The Natural History of Innovation",
+   "annee": "2010",
+   "idee": "Les grandes idées naissent dans des environnements de « slow hunch », de sérendipité et de réseaux denses (cafés, laboratoires, villes).",
+   "apport": "Nous construirons un chapitre sur l'architecture de l'environnement créatif personnel et collectif, inspiré des sept patterns de Johnson."
+  },
+  {
+   "auteur": "James Webb Young",
+   "titre": "A Technique for Producing Ideas",
+   "annee": "1940",
+   "idee": "Produire une idée suit cinq étapes : collecte, digestion, incubation, illumination, vérification. L'incubation est aussi cruciale que l'effort conscient.",
+   "apport": "Nous formaliserons un protocole de « mise en incubation » avec des déclencheurs concrets (marche, sommeil, contrainte temporelle) pour chaque méthode du livre."
+  },
+  {
+   "auteur": "Roger von Oech",
+   "titre": "A Whack on the Side of the Head: How You Can Be More Creative",
+   "annee": "1983",
+   "idee": "Dix « serrures mentales » (peur de l'échec, spécialisation excessive, conformisme) bloquent la créativité ; von Oech propose des « clés » ludiques pour les ouvrir.",
+   "apport": "Nous utiliserons le diagnostic des serrures mentales comme test d'auto-évaluation en ouverture de chaque partie et proposerons des « clés » spécifiques par type de blocage."
+  },
+  {
+   "auteur": "Tina Seelig",
+   "titre": "inGenius: A Crash Course on Creativity",
+   "annee": "2012",
+   "idee": "La créativité dépend d'un « innovation engine » à six composantes : connaissances, imagination, attitude, ressources, habitat, culture.",
+   "apport": "Nous adapterons ce modèle pour créer un tableau de bord personnel de la créativité que le lecteur remplira au fil des 24 chapitres."
+  },
+  {
+   "auteur": "Mihaly Csikszentmihalyi",
+   "titre": "Creativity: Flow and the Psychology of Discovery and Invention",
+   "annee": "1996",
+   "idee": "La créativité de haut niveau émerge à l'intersection du flow, de la motivation intrinsèque et d'un domaine culturel réceptif. Elle est systémique, pas seulement individuelle.",
+   "apport": "Nous intégrerons la notion de flow dans la conception des exercices : calibrer la difficulté, éliminer les distractions, créer des rituels d'entrée en session créative."
+  },
+  {
+   "auteur": "Scott Berkun",
+   "titre": "The Myths of Innovation",
+   "annee": "2007",
+   "idee": "Démystifie les légendes de l'innovation (l'éclair de génie, le loup solitaire) et montre que l'innovation est un processus itératif, social et souvent chaotique.",
+   "apport": "Nous ouvrirons chaque partie par un « mythe à déboulonner » pour ancrer le lecteur dans une posture pragmatique et désacralisée de la création d'idées."
+  },
+  {
+   "auteur": "Tim Brown",
+   "titre": "Change by Design: How Design Thinking Transforms Organizations and Inspires Innovation",
+   "annee": "2009",
+   "idee": "Le design thinking articule empathie, idéation et prototypage en boucles rapides ; l'innovation naît de l'intersection faisabilité-viabilité-désirabilité.",
+   "apport": "Nous consacrerons un chapitre à l'intégration du design thinking dans les sessions de brainstorming, avec un canevas original « Idée → Prototype en 90 minutes »."
+  },
+  {
+   "auteur": "Austin Kleon",
+   "titre": "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
+   "annee": "2012",
+   "idee": "Toute création est recombinaison ; il faut collectionner, copier pour comprendre, puis transformer. La contrainte est un carburant créatif.",
+   "apport": "Nous proposerons des exercices de « recombinaison forcée » (mash-up sectoriel, contrainte OULIPO appliquée au business) et un carnet de collecte structuré."
+  },
+  {
+   "auteur": "Chris Griffiths",
+   "titre": "The Creative Thinking Handbook",
+   "annee": "2019",
+   "idee": "Synthèse des modèles de créativité (Wallas, de Bono, TRIZ, SCAMPER) en un système intégré de résolution créative de problèmes, du diagnostic à la mise en œuvre.",
+   "apport": "Nous nous inspirerons de l'architecture systémique de Griffiths pour construire notre « boucle Ghorbel » : méthode propriétaire qui articule les 24 chapitres en un processus itératif unique."
+  },
+  {
+   "auteur": "David Allen",
+   "titre": "Getting Things Done: The Art of Stress-Free Productivity",
+   "annee": "2001",
+   "idee": "Libérer l'esprit en externalisant les tâches dans un système de confiance ; la clarté mentale est la condition sine qua non de la créativité.",
+   "apport": "Nous intégrerons un protocole de « vidage mental » pré-brainstorming et un système de capture des idées post-session pour ne rien perdre."
+  },
+  {
+   "auteur": "Elizabeth Gilbert",
+   "titre": "Big Magic: Creative Living Beyond Fear",
+   "annee": "2015",
+   "idee": "La créativité est une relation de curiosité avec le monde ; il faut apprivoiser la peur, accepter l'imperfection et traiter les idées comme des entités vivantes à accueillir.",
+   "apport": "Nous consacrerons un chapitre à la gestion émotionnelle du processus créatif : peur du jugement, syndrome de l'imposteur, résistance, et rituels de « permission »."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "Partie I — Déverrouiller : comprendre la mécanique des idées et identifier ses blocages",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le Mythe de l'Éclair : ce que la science dit vraiment de la créativité",
+     "objectif": "Déconstruire les croyances limitantes sur l'inspiration et installer une vision processuelle, démystifiée et accessible de la génération d'idées.",
+     "sections": [
+      "Le génie n'existe pas : démontage de la légende de l'ampoule",
+      "Les quatre phases de Wallas revisitées à la lumière des neurosciences",
+      "Créativité ordinaire vs créativité extraordinaire : le spectre 4C",
+      "Le rôle du réseau du mode par défaut (DMN) et du réseau exécutif",
+      "Pourquoi votre cerveau résiste à la nouveauté : biais cognitifs et économie d'énergie",
+      "Le tableau de bord Ghorbel : auto-diagnostic de votre profil créatif"
+     ],
+     "exercices": [
+      "Test des 10 serrures mentales de von Oech adapté : identifier vos 3 verrous dominants",
+      "Journal de bord créatif : noter pendant 7 jours chaque micro-idée traversant votre esprit",
+      "Cartographie de vos 4 phases de Wallas : à quelle étape bloquez-vous le plus souvent ?"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Anatomie d'un Blocage : pourquoi votre esprit se fige et comment le repérer",
+     "objectif": "Donner au lecteur un vocabulaire et une grille de diagnostic pour identifier précisément la nature de son blocage créatif (peur, surcharge, conformisme, absence de contrainte).",
+     "sections": [
+      "Les 7 familles de blocages : taxonomie Ghorbel",
+      "Le blocage par excès d'information : la paralysie du scroll",
+      "Le blocage par perfectionnisme : l'ennemi du 'assez bon'",
+      "Le blocage social : peur du jugement et autocensure",
+      "Le blocage par expertise : la malédiction de la connaissance",
+      "Le blocage temporel : quand l'urgence tue l'incubation",
+      "Protocole FLASH : 5 questions pour diagnostiquer un blocage en 3 minutes"
+     ],
+     "exercices": [
+      "Grille d'auto-diagnostic : classer vos 3 derniers blocages dans la taxonomie des 7 familles",
+      "Exercice du 'pire scénario' : écrire la conséquence la plus absurde d'une mauvaise idée pour désamorcer la peur",
+      "Timer de 10 minutes : lister 30 utilisations d'un trombone pour réactiver la fluidité"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "L'Architecture de l'Environnement Créatif : préparer le terrain avant de semer",
+     "objectif": "Montrer que la créativité est systémique et que l'environnement physique, numérique, social et temporel conditionne la qualité des idées produites.",
+     "sections": [
+      "Les 7 patterns de Steven Johnson appliqués à votre quotidien",
+      "Le concept d'adjacent possible : élargir votre périmètre d'exploration",
+      "Design de l'espace physique : lumière, mouvement, objets déclencheurs",
+      "Hygiène numérique : notifications, deep work et fenêtres de sérendipité",
+      "Le réseau social créatif : diversité, densité et confiance",
+      "Rituels d'entrée en session : ancrage corporel et transition mentale"
+     ],
+     "exercices": [
+      "Audit de votre environnement : photographier votre espace de travail et identifier 3 modifications à fort impact",
+      "Construction d'un 'conseil d'administration imaginaire' de 5 personnes aux profils cognitifs opposés",
+      "Protocole de vidage mental GTD adapté : 10 minutes pour libérer la RAM cognitive avant une session"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "La Boîte à Outils Fondamentale : les 5 principes directeurs de la pensée divergente",
+     "objectif": "Installer les cinq principes transversaux qui irrigueront les 20 chapitres suivants : suspension du jugement, quantité avant qualité, combinaison, provocation, itération.",
+     "sections": [
+      "Principe 1 : suspendre le jugement interne (le 'oui, et…' permanent)",
+      "Principe 2 : viser la quantité (la loi des 100 idées)",
+      "Principe 3 : combiner et hybrider (la créativité comme recombinaison)",
+      "Principe 4 : provoquer et dérailler (le rôle de l'absurde)",
+      "Principe 5 : itérer et prototyper (l'idée n'existe qu'en mouvement)",
+      "Le contrat créatif avec soi-même : s'autoriser à être mauvais",
+      "La boucle Ghorbel : présentation du fil conducteur du livre"
+     ],
+     "exercices": [
+      "Rédiger votre 'Manifeste d'imperfection' en 5 phrases signées et datées",
+      "Session flash : générer 50 idées en 8 minutes sur un sujet absurde (ex. : 'un restaurant pour fantômes')",
+      "Créer votre carnet de collecte physique ou numérique (méthode Kleon adaptée)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie II — Dérailler seul : les méthodes individuelles de pensée latérale et de génération d'idées",
+   "chapitres": [
+    {
+     "numero": 5,
+     "titre": "La Provocation Contrôlée : la méthode PO de de Bono appliquée",
+     "objectif": "Maîtriser la technique de provocation (PO) pour sortir des rails de la pensée logique et accéder à des territoires conceptuels inexplorés.",
+     "sections": [
+      "Le mécanisme de la provocation : pourquoi l'absurde libère",
+      "Les 4 types de PO : inversion, exagération, souhait, évasion",
+      "La méthode du 'mot aléatoire' et ses déclinaisons numériques",
+      "Du PO à l'idée exploitable : le pont de faisabilité",
+      "Provocation sectorielle : appliquer le PO à votre industrie",
+      "Erreurs fréquentes : confondre provocation et fantaisie stérile",
+      "Routine quotidienne : 5 minutes de PO avant chaque réunion créative"
+     ],
+     "exercices": [
+      "Générer 5 provocations PO sur un problème réel de votre travail et en extraire 2 pistes exploitables",
+      "Exercice du mot aléatoire avec un générateur : relier le mot obtenu à votre défi en 3 associations",
+      "Écrire une 'lettre de provocation' à votre futur vous : décrire une solution totalement irréaliste puis la ramener à la réalité"
+     ]
+    },
+    {
+     "numero": 6,
+     "titre": "SCAMPER et au-delà : les 7 leviers de transformation d'une idée existante",
+     "objectif": "Utiliser la méthode SCAMPER (Substituer, Combiner, Adapter, Modifier, Put to other use, Eliminate, Reverse) comme grille systématique d'innovation incrémentale et radicale.",
+     "sections": [
+      "Origine de SCAMPER : d'Osborn à Eberle, la logique de la transformation",
+      "Chaque lettre décodée avec 3 exemples contemporains",
+      "SCAMPER inversé : partir du résultat souhaité",
+      "Le combo SCAMPER × contraintes budgétaires : innover avec moins",
+      "SCAMPER digital : appliquer les 7 leviers à un produit ou service numérique",
+      "Au-delà de SCAMPER : les 3 leviers supplémentaires Ghorbel (Transposer, Ritualiser, Gamifier)",
+      "Atelier solo : SCAMPER sur un objet du quotidien en 15 minutes"
+     ],
+     "exercices": [
+      "Appliquer les 10 leviers (SCAMPER + 3 Ghorbel) à un produit que vous utilisez quotidiennement",
+      "Défi 'zéro budget' : améliorer un service existant en supprimant une fonctionnalité (E) et en en détournant une autre (P)",
+      "Créer une fiche SCAMPER plastifiée à garder sur votre bureau"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "Mind Mapping Avancé : cartographier pour faire émerger l'invisible",
+     "objectif": "Dépasser le mind mapping classique pour en faire un outil de génération, de recombinaison et de détection d'angles morts.",
+     "sections": [
+      "Les règles de Buzan revisitées : quand les enfreindre volontairement",
+      "Mind mapping inversé : partir de la conclusion pour remonter aux causes",
+      "L'anti-mind-map : cartographier ce qu'on ne veut PAS",
+      "Mind mapping croisé : superposer deux cartes pour trouver l'intersection",
+      "Mind mapping collectif asynchrone (outils numériques : Miro, XMind, Obsidian)",
+      "Le mind mapping temporel : ajouter la dimension 'quand' à la carte",
+      "De la carte au plan d'action : les 3 questions de conversion"
+     ],
+     "exercices": [
+      "Réaliser une carte mentale de 40 branches sur un projet en cours, puis identifier les 3 zones vides",
+      "Anti-mind-map : lister tout ce qui ferait échouer votre projet, puis inverser chaque branche en opportunité",
+      "Mind mapping croisé : superposer la carte de vos compétences et celle des besoins d'un marché cible"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "La Contrainte Fertile : créer mieux avec moins",
+     "objectif": "Démontrer que la contrainte (temps, budget, matériau, forme) est le premier moteur de l'innovation et fournir un répertoire de contraintes génératives.",
+     "sections": [
+      "Le paradoxe de la page blanche : pourquoi trop de liberté paralyse",
+      "Les contraintes formelles : OULIPO appliqué au business et au produit",
+      "La contrainte temporelle : le sprint créatif de 25 minutes (Pomodoro idéatif)",
+      "La contrainte de ressources : innover avec 10 € ou 0 ligne de code",
+      "La contrainte de persona : résoudre pour un utilisateur extrême",
+      "La contrainte d'analogie : transposer une solution d'un secteur à un autre",
+      "Construire votre propre 'décorset' : 10 contraintes prêtes à l'emploi"
+     ],
+     "exercices": [
+      "Défi 6-3-5 adapté solo : 6 idées, 3 variations, 5 minutes par tour sur un problème réel",
+      "Résoudre un problème professionnel en s'imposant la contrainte 'comme si c'était un jeu vidéo'",
+      "Écrire un pitch de produit en exactement 20 mots (contrainte OULIPO)"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "L'Incubation Stratégique : l'art de ne rien faire pour tout trouver",
+     "objectif": "Intégrer la phase d'incubation comme étape active et planifiée du processus créatif, en s'appuyant sur les recherches en neurosciences du mode par défaut.",
+     "sections": [
+      "Pourquoi votre cerveau résout en dormant : le rôle du DMN",
+      "Les 5 déclencheurs d'incubation validés : marche, douche, sommeil, ennui, nature",
+      "Le protocole d'incubation Ghorbel : charger, relâcher, capturer",
+      "Gérer la frustration de l'attente : résister à l'envie de forcer",
+      "L'incubation collective : laisser un problème 'dormir' en équipe",
+      "Le carnet de chevet et la capture nocturne : ne pas perdre l'idée de 3h du matin",
+      "Quand l'incubation échoue : relancer la machine avec un micro-défi"
+     ],
+     "exercices": [
+      "Charger un problème avant une marche de 20 minutes sans téléphone, puis noter les associations au retour",
+      "Expérimenter une 'nuit d'incubation' : formuler le problème avant de dormir, noter la première idée au réveil",
+      "Créer un rituel hebdomadaire d'ennui créatif : 30 minutes sans écran, sans input, avec un carnet"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie III — Créer ensemble : les méthodes collectives de brainstorming et d'intelligence de groupe",
+   "chapitres": [
+    {
+     "numero": 10,
+     "titre": "Le Brainstorming Réinventé : au-delà des règles d'Osborn",
+     "objectif": "Moderniser le brainstorming classique en intégrant les critiques de la recherche (paresse sociale, fixation, inhibition) et en proposant des formats adaptés aux équipes contemporaines.",
+     "sections": [
+      "Ce qu'Osborn avait raison (et tort) : bilan de 70 ans de pratique",
+      "Les 4 biais qui sabotent un brainstorming classique",
+      "Brainstorming silencieux (brainwriting 6-3-5) : quand le silence produit plus",
+      "Brainwalking : le brainstorming en mouvement",
+      "Brain-netting : le brainstorming asynchrone à distance",
+      "Le rôle du facilitateur : chorégraphie, énergie, relance",
+      "Le format 'brainstorming éclair' : 12 minutes chrono pour une équipe pressée"
+     ],
+     "exercices": [
+      "Organiser un brainwriting 6-3-5 avec 3 collègues sur un vrai problème et comparer avec un brainstorming oral",
+      "Brainwalking : résoudre un défi en marchant à deux, en changeant de rôle tous les 500 mètres",
+      "Concevoir une session de brain-netting sur un outil collaboratif (Miro, FigJam) avec relances à J+1 et J+3"
+     ]
+    },
+    {
+     "numero": 11,
+     "titre": "Les Six Chapeaux 2.0 : orchestrer la pensée parallèle en équipe",
+     "objectif": "Déployer une version enrichie des Six Thinking Hats intégrant les dimensions numériques, utilisateur et systémique pour des réunions créatives structurées et sans conflit.",
+     "sections": [
+      "Rappel des 6 chapeaux : fonctions et postures",
+      "Le 7e chapeau Ghorbel : le chapeau 'Utilisateur' (empathie radicale)",
+      "Le 8e chapeau : le chapeau 'Données/IA' (ce que disent les chiffres)",
+      "Séquencer les chapeaux : 6 chorégraphies pour 6 types de problèmes",
+      "Gérer les personnalités dominantes et les silencieux sous les chapeaux",
+      "Les Six Chapeaux en solo : penser contre soi-même",
+      "Variantes rapides : 3 chapeaux en 15 minutes pour les micro-décisions"
+     ],
+     "exercices": [
+      "Animer une réunion de 45 minutes avec les 8 chapeaux sur un projet réel, en chronométrant chaque séquence",
+      "Exercice solo : analyser une décision personnelle à travers 4 chapeaux minimum",
+      "Créer un jeu de cartes physiques 'chapeaux' à utiliser en réunion pour matérialiser la posture"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "Le Design Sprint Idéatif : de l'empathie au prototype en 90 minutes",
+     "objectif": "Fusionner les techniques de brainstorming avec la logique design thinking pour passer de l'idée abstraite au prototype testable en une seule session.",
+     "sections": [
+      "Les 5 phases du Design Sprint adaptées à l'idéation pure",
+      "Phase 1 : cartographier le problème (5 min)",
+      "Phase 2 : diverger avec le 'Crazy 8' et le mash-up analogique (20 min)",
+      "Phase 3 : converger avec le vote silencieux et la matrice impact/effort (15 min)",
+      "Phase 4 : storyboarder la solution retenue (20 min)",
+      "Phase 5 : prototyper avec les moyens du bord (25 min)",
+      "Phase 6 : le test flash à 5 personnes (5 min de préparation)",
+      "Erreurs de facilitation : trop diverger, pas assez converger"
+     ],
+     "exercices": [
+      "Réaliser un sprint de 90 minutes en solo ou en duo sur un problème concret",
+      "Crazy 8 : dessiner 8 variations d'une solution en 8 minutes chrono",
+      "Construire un prototype 'papier' (maquette, storyboard, scénario) testable le jour même"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "La Méthode Delphi et le Wisdom of Crowds : harnesser l'intelligence distribuée",
+     "objectif": "Exploiter la sagesse des foules, les consultations structurées et les panels d'experts pour enrichir et valider les idées issues du brainstorming interne.",
+     "sections": [
+      "Le paradoxe de Condorcet et la sagesse des foules : conditions de validité",
+      "La méthode Delphi simplifiée pour une équipe de 5 à 50 personnes",
+      "Le panel d'utilisateurs flash : interroger 5 personnes en 48 heures",
+      "Le 'conseil des sages' inversé : consulter des non-experts",
+      "Les plateformes de co-création : quand et comment les utiliser",
+      "Agréger sans lisser : conserver les signaux faibles et les outliers",
+      "Du collectif à la décision : qui tranche et comment"
+     ],
+     "exercices": [
+      "Lancer un mini-Delphi en 3 rounds sur une question stratégique avec 5 collègues",
+      "Interviewer 3 'utilisateurs extrêmes' de votre produit/service en 15 minutes chacun",
+      "Organiser un vote pondéré (méthode Borda) pour classer 10 idées issues d'un brainstorming"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le Conflit Créatif : transformer le désaccord en carburant d'innovation",
+     "objectif": "Faire du conflit intellectuel un outil de génération d'idées plutôt qu'un frein, en s'appuyant sur les techniques de débat structuré et de 'red team'.",
+     "sections": [
+      "Pourquoi le consensus prématuré est l'ennemi de l'innovation",
+      "Le rôle de l'avocat du diable : comment l'institutionnaliser sans blesser",
+      "La technique du 'Yes, and…' vs 'Yes, but…' en improvisation appliquée",
+      "Le Red Team : assigner une équipe à la destruction de l'idée",
+      "Le débat en étoile : 5 perspectives opposées sur une même proposition",
+      "La 'dispute créative' : règles du jeu pour un désaccord productif",
+      "Quand le conflit devient toxique : les signaux d'alerte et la médiation"
+     ],
+     "exercices": [
+      "Jeu de rôle : défendre pendant 5 minutes une idée qu'on déteste, puis en lister 3 mérites",
+      "Organiser un Red Team de 20 minutes sur le projet phare de votre équipe",
+      "Écrire un 'mémo de dissentiment' structuré : 3 objections, 2 risques, 1 alternative"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie IV — Systématiser : les méthodes avancées pour innover à grande échelle et résoudre les problèmes complexes",
+   "chapitres": [
+    {
+     "numero": 15,
+     "titre": "TRIZ pour Tous : la résolution inventive de problèmes sans être ingénieur",
+     "objectif": "Rendre accessible la méthode TRIZ (Théorie de la Résolution des Problèmes Inventifs) en la simplifiant pour tout profil non-ingénieur confronté à des contradictions.",
+     "sections": [
+      "L'origine de TRIZ : Altshuller et l'analyse de 2 millions de brevets",
+      "Le concept de contradiction : vouloir A ET non-A simultanément",
+      "La matrice des 39 paramètres simplifiée : identifier votre contradiction",
+      "Les 40 principes inventifs traduits en langage business et quotidien",
+      "La séparation dans le temps, l'espace, la condition : 3 stratégies de résolution",
+      "L'idéalité : viser le résultat sans le système",
+      "Atelier : résoudre une contradiction réelle avec la matrice TRIZ simplifiée"
+     ],
+     "exercices": [
+      "Identifier 3 contradictions dans votre activité et les formuler en 'Je veux X SANS Y'",
+      "Appliquer 5 des 40 principes inventifs à un problème de processus interne",
+      "Exercice d'idéalité : décrire la solution parfaite 'comme par magie' puis la ramener en 3 étapes réalistes"
+     ]
+    },
+    {
+     "numero": 16,
+     "titre": "La Pensée Systémique Créative : voir les boucles, casser les cercles vicieux",
+     "objectif": "Introduire la pensée systémique comme outil de génération d'idées : identifier les boucles de rétroaction, les points de levier et les effets émergents pour innover là où personne ne regarde.",
+     "sections": [
+      "Du linéaire au circulaire : pourquoi la causalité simple échoue",
+      "Les 3 archétypes systémiques générateurs d'idées (limites de croissance, dérive des objectifs, tragédie des communs)",
+      "Les points de levier de Donella Meadows appliqués à l'innovation",
+      "Cartographier un système : la méthode des boucles causales en 20 minutes",
+      "La pensée du 2e et 3e ordre : anticiper les conséquences des idées",
+      "L'émergence : quand l'innovation naît de l'interaction, pas de l'addition",
+      "Étude de cas : résoudre un problème récurrent d'équipe par la pensée systémique"
+     ],
+     "exercices": [
+      "Dessiner la boucle causale d'un problème récurrent dans votre organisation et identifier le point de levier",
+      "Exercice du 'et alors ?' : pousser une idée sur 3 niveaux de conséquences",
+      "Construire un diagramme de stock et flux simplifié d'un processus à améliorer"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "L'Hybridation Sectorielle : importer les idées d'ailleurs",
+     "objectif": "Systématiser la créativité par analogie et transfert intersectoriel en utilisant des grilles de transposition et des voyages cognitifs structurés.",
+     "sections": [
+      "Le principe de la fécondation croisée : Gutenberg, Ford, Airbnb",
+      "La grille de transposition Ghorbel : 12 secteurs × 5 dimensions",
+      "Le safari créatif : visiter un secteur inconnu en 2 heures",
+      "Le 'et si on était…' : transposer les codes d'un secteur au vôtre",
+      "L'analogie structurelle vs l'analogie superficielle : éviter les pièges",
+      "La bibliothèque d'analogies : constituer un répertoire personnel de transferts",
+      "Atelier : résoudre un problème de votre secteur en important la logique d'un secteur opposé"
+     ],
+     "exercices": [
+      "Choisir un secteur radicalement différent du vôtre et lister 5 principes transférables",
+      "Safari créatif : passer 2 heures dans un lieu inconnu (hôpital, marché, usine) et noter 3 analogies exploitables",
+      "Construire votre 'bibliothèque d'analogies' : 10 fiches de transferts sectoriels documentés"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La Méthode des Personas Extrêmes et du Futur Antérieur",
+     "objectif": "Générer des idées en se projetant dans des utilisateurs marginaux, des futurs souhaités ou des futurs redoutés, pour sortir du présentisme créatif.",
+     "sections": [
+      "Le persona extrême : résoudre pour l'utilisateur le plus improbable",
+      "Le futur antérieur ('backcasting') : partir de 2035 et remonter à aujourd'hui",
+      "Le pré-mortem : imaginer l'échec total pour générer des solutions préventives",
+      "La lettre du futur : écrire le communiqué de presse de votre réussite dans 5 ans",
+      "Le scénario catastrophe : innover pour la résilience",
+      "L'exercice du '10-10-10' : impact à 10 minutes, 10 mois, 10 ans",
+      "Combiner persona extrême et backcasting : le protocole Ghorbel"
+     ],
+     "exercices": [
+      "Créer 2 personas extrêmes de votre produit/service et générer 5 idées pour chacun",
+      "Rédiger le communiqué de presse de votre projet en 2030 (succès total), puis lister les 5 étapes clés pour y arriver",
+      "Pré-mortem : lister 10 raisons pour lesquelles votre projet échouera, puis transformer chacune en idée de mitigation"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "L'IA comme Partenaire de Brainstorming : co-créer avec les machines",
+     "objectif": "Intégrer les outils d'intelligence artificielle générative comme amplificateurs de brainstorming sans déléguer la pensée, en gardant l'humain au centre de la décision créative.",
+     "sections": [
+      "L'IA comme 'sparring partner' : ce qu'elle fait bien et ce qu'elle ne fait pas",
+      "Le prompting créatif : 10 structures de prompts pour diverger",
+      "La technique du 'oui, et…' avec l'IA : itérer en conversation",
+      "L'IA pour explorer les angles morts : demander ce qu'on n'a pas envisagé",
+      "Les limites éthiques et créatives : ne pas confondre génération et innovation",
+      "Le workflow hybride Ghorbel : humain diverge, IA étend, humain converge",
+      "Construire votre 'prompt library' créative personnelle"
+     ],
+     "exercices": [
+      "Session de co-brainstorming de 20 minutes avec une IA : générer 30 idées, en garder 5, les retravailler seul",
+      "Demander à une IA de critiquer votre meilleure idée sous 5 angles différents",
+      "Créer 5 prompts réutilisables pour vos futures sessions d'idéation et les tester"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "Partie V — Ancrer : faire de la créativité une pratique quotidienne et durable",
+   "chapitres": [
+    {
+     "numero": 20,
+     "titre": "Le Rituel Créatif Quotidien : 20 minutes pour muscler son imagination",
+     "objectif": "Installer une routine quotidienne courte et réalisable qui entretient la flexibilité cognitive, la curiosité et la production d'idées comme un muscle.",
+     "sections": [
+      "Le principe de la répétition créative : pourquoi 20 minutes valent mieux que 3 heures mensuelles",
+      "La séquence Ghorbel du matin : capture, provocation, combinaison (15 min)",
+      "La séquence du soir : incubation, gratitude créative, micro-bilan (5 min)",
+      "Les 7 micro-exercices rotatifs pour ne jamais s'ennuyer",
+      "Adapter le rituel à votre chronotype : matin, midi, soir",
+      "Le carnet créatif : structure minimale pour ne rien perdre",
+      "Quand sauter un jour sans culpabilité : la règle des 2 jours"
+     ],
+     "exercices": [
+      "Concevoir votre rituel de 20 minutes en choisissant 3 micro-exercices parmi les 7 proposés",
+      "Tenir le rituel pendant 7 jours consécutifs et noter les résistances rencontrées",
+      "Créer la structure de votre carnet créatif (physique ou numérique) avec 4 sections minimum"
+     ]
+    },
+    {
+     "numero": 21,
+     "titre": "Vaincre la Résistance : peur, syndrome de l'imposteur et procrastination créative",
+     "objectif": "Aborder la dimension émotionnelle et psychologique du blocage créatif avec des outils concrets issus de la psychologie positive, de l'ACT et de la philosophie stoïcienne, sans se substituer à un accompagnement professionnel.",
+     "sections": [
+      "La résistance selon Steven Pressfield : la nommer pour la désarmer",
+      "Le syndrome de l'imposteur : 3 recadrages cognitifs immédiats",
+      "La peur du jugement : l'exercice de l'exposition progressive",
+      "La procrastination créative : distinguer l'incubation de la fuite",
+      "L'auto-compassion comme accélérateur : se parler comme à un ami",
+      "Le 'minimum viable effort' : démarrer ridiculement petit",
+      "Quand consulter un professionnel : les signaux qui dépassent l'auto-aide"
+     ],
+     "exercices": [
+      "Écrire une 'lettre de permission' à vous-même : vous autoriser explicitement à produire des idées médiocres",
+      "L'exercice des 2 minutes : commencer une tâche créative en s'engageant sur seulement 2 minutes",
+      "Tenir un journal de résistance pendant 5 jours : noter quand, où et comment elle se manifeste"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "De l'Idée à l'Action : le pont entre brainstorming et exécution",
+     "objectif": "Éviter le cimetière des idées jamais réalisées en construisant un système de sélection, priorisation et lancement rapide des idées issues des sessions créatives.",
+     "sections": [
+      "Le filtre ICE (Impact, Confiance, Facilité) pour trier 20 idées en 10 minutes",
+      "La matrice exploration/exploitation : équilibrer innovation et amélioration",
+      "Le prototype minimum : tester une idée en 48 heures avec moins de 50 €",
+      "Le pitch interne : vendre son idée à son équipe ou son N+1 en 3 minutes",
+      "Le tableau de bord des idées : suivre, relancer, abandonner sans culpabilité",
+      "La règle des 72 heures : si rien n'est fait, l'idée retourne au carnet",
+      "Célébrer les échecs rapides : le post-mortem constructif"
+     ],
+     "exercices": [
+      "Appliquer le filtre ICE à vos 10 meilleures idées du carnet et sélectionner la gagnante",
+      "Concevoir un prototype minimum de votre idée retenue en 48 heures chrono",
+      "Rédiger un pitch de 3 minutes (problème, solution, premier pas) et le tester devant une personne de confiance"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "La Créativité en Équipe sur le Temps Long : culture, rituels et sécurité psychologique",
+     "objectif": "Installer une culture de la créativité durable dans une équipe ou une organisation : rituels collectifs, droit à l'erreur, diversité cognitive et leadership facilitateur.",
+     "sections": [
+      "La sécurité psychologique : condition n°1 de l'innovation collective (travaux d'Amy Edmondson)",
+      "Les rituels d'équipe : stand-up créatif, vendredi des idées, hackathon interne",
+      "La diversité cognitive : recruter des pensées, pas des CV",
+      "Le rôle du manager-facilitateur : poser les questions plutôt que donner les réponses",
+      "Le budget-temps créatif : 10 % du temps pour explorer (modèle 3M/Google adapté)",
+      "Gérer les 'tueurs d'idées' : les repérer et les neutraliser avec bienveillance",
+      "Mesurer la créativité sans la tuer : indicateurs de processus vs de résultat"
+     ],
+     "exercices": [
+      "Concevoir un rituel créatif hebdomadaire de 30 minutes pour votre équipe",
+      "Organiser un 'vendredi des idées' pilote : chaque membre présente une idée en 3 minutes sans jugement",
+      "Créer une charte d'équipe créative en 7 points, co-signée par tous les membres"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Votre Système Créatif Personnel : assembler les 24 chapitres en une méthode unique",
+     "objectif": "Synthétiser l'ensemble du livre en un système personnalisé, adaptable et évolutif que le lecteur emporte comme une boîte à outils permanente.",
+     "sections": [
+      "La boucle Ghorbel complète : diagnostiquer → diverger → provoquer → incuber → converger → prototyper → itérer",
+      "Construire votre 'menu créatif' : choisir 5 méthodes parmi les 24 selon le contexte",
+      "Le tableau de bord trimestriel : évaluer, ajuster, renouveler sa pratique",
+      "Les 10 erreurs à éviter après avoir lu un livre sur la créativité",
+      "Transmettre : enseigner la pensée latérale à ses enfants, collègues, étudiants",
+      "La créativité comme posture de vie : au-delà du travail",
+      "Lettre ouverte au lecteur : votre première idée commence maintenant"
+     ],
+     "exercices": [
+      "Construire votre 'menu créatif' personnel : 5 méthodes favorites + 2 méthodes de secours + 1 méthode de confort",
+      "Planifier votre prochain cycle créatif de 90 jours avec la boucle Ghorbel",
+      "Écrire une lettre à votre 'vous' de dans 6 mois : décrire la pratique créative que vous voulez avoir installée"
+     ]
+    }
+   ]
+  }
+ ]
+}

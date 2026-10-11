@@ -1,0 +1,591 @@
+{
+ "titre": "Mots Magnétiques",
+ "sous_titre": "Le guide ultime du copywriting pour créer des pages de vente, emails et publicités qui captent l'attention et convertissent",
+ "bibliographie": [
+  {
+   "auteur": "Gary Halbert",
+   "titre": "The Boron Letters",
+   "annee": "1984",
+   "idee": "Lettres écrites depuis la prison enseignant les principes fondamentaux du marketing direct : connaître son marché, écrire comme on parle, et toujours tester.",
+   "apport": "Le ton conversationnel et l'obsession du lecteur unique seront le fil rouge de notre approche rédactionnelle."
+  },
+  {
+   "auteur": "David Ogilvy",
+   "titre": "Ogilvy on Advertising",
+   "annee": "1983",
+   "idee": "La publicité doit vendre, pas divertir. Les titres, les visuels et la preuve factuelle sont les piliers de toute campagne efficace.",
+   "apport": "La rigueur structurelle et l'importance du titre seront intégrées dans chaque chapitre sur les accroches."
+  },
+  {
+   "auteur": "Claude Hopkins",
+   "titre": "Scientific Advertising",
+   "annee": "1923",
+   "idee": "Toute publicité est un vendeur ; elle doit être mesurable, spécifique et orientée résultat. Chaque mot a un coût et une fonction.",
+   "apport": "Le principe de spécificité et de mesurabilité nourrira nos sections sur le testing et l'optimisation."
+  },
+  {
+   "auteur": "Robert Bly",
+   "titre": "The Copywriter's Handbook",
+   "annee": "1985",
+   "idee": "Manuel exhaustif couvrant tous les formats (brochures, emails, pages web) avec des formules d'accroches et des structures éprouvées.",
+   "apport": "Les formules structurelles (AIDA, PAS, 4P) seront adaptées et modernisées pour le marché francophone."
+  },
+  {
+   "auteur": "Eugene Schwartz",
+   "titre": "Breakthrough Advertising",
+   "annee": "1966",
+   "idee": "Le copywriter ne crée pas le désir, il le canalise. Le concept de 'stade de conscience' du marché détermine l'angle du message.",
+   "apport": "Le modèle des 5 stades de conscience sera le cadre théorique central de la Partie 1."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Influence : The Psychology of Persuasion",
+   "annee": "1984",
+   "idee": "Six principes psychologiques (réciprocité, engagement, preuve sociale, autorité, rareté, sympathie) gouvernent la décision d'achat.",
+   "apport": "Chaque principe sera décliné en techniques rédactionnelles concrètes dans les chapitres 8 et 9."
+  },
+  {
+   "auteur": "Joseph Sugarman",
+   "titre": "The Adweek Copywriting Handbook",
+   "annee": "1998",
+   "idee": "Le 'slippery slide' : chaque phrase doit donner envie de lire la suivante. La première phrase est la plus importante.",
+   "apport": "La technique du toboggan narratif sera enseignée comme méthode de fluidité rédactionnelle."
+  },
+  {
+   "auteur": "Drew Eric Whitman",
+   "titre": "Cashvertising",
+   "annee": "2008",
+   "idee": "Les 8 désirs fondamentaux (Life Force 8) motivent tout achat. La publicité efficace parle à ces pulsions primaires.",
+   "apport": "La grille des 8 désirs servira d'outil de positionnement dans les chapitres sur la recherche client."
+  },
+  {
+   "auteur": "Chip et Dan Heath",
+   "titre": "Made to Stick",
+   "annee": "2007",
+   "idee": "Les idées qui marquent suivent le modèle SUCCESs : Simple, Inattendu, Concret, Crédible, Émotionnel, Story.",
+   "apport": "Le framework SUCCESs sera adapté pour la construction d'accroches et de stories dans les emails."
+  },
+  {
+   "auteur": "Donald Miller",
+   "titre": "Building a StoryBrand",
+   "annee": "2017",
+   "idee": "Le client est le héros, la marque est le guide. Un récit en 7 étapes (personnage, problème, guide, plan, action, succès, échec évité).",
+   "apport": "Le framework StoryBrand structura la Partie 2 sur les pages de vente longues."
+  },
+  {
+   "auteur": "Evaldo Albuquerque",
+   "titre": "The 16-Word Sales Letter",
+   "annee": "2019",
+   "idee": "Une lettre de vente peut se réduire à 16 mots essentiels qui déclenchent la décision. La clarté bat la créativité.",
+   "apport": "L'exercice de réduction à l'essentiel sera intégré comme exercice récurrent à chaque chapitre."
+  },
+  {
+   "auteur": "Richard Bayan",
+   "titre": "Words That Sell",
+   "annee": "1984",
+   "idee": "Dictionnaire de mots et expressions classés par émotion et intention d'achat, avec des alternatives plus persuasives.",
+   "apport": "La notion de vocabulaire émotionnel alimentera le chapitre sur le choix des mots."
+  },
+  {
+   "auteur": "Luke Sullivan",
+   "titre": "Hey, Whipple, Squeeze This",
+   "annee": "1998",
+   "idee": "La créativité publicitaire doit servir la vente. Processus créatif, briefs, et relation créatif/stratégie.",
+   "apport": "Le processus itératif créatif sera enseigné dans la Partie 4 sur la publicité."
+  },
+  {
+   "auteur": "Ann Handley",
+   "titre": "Everybody Writes",
+   "annee": "2014",
+   "idee": "Écrire pour le web exige clarté, empathie et régularité. Le contenu doit être utile avant d'être vendeur.",
+   "apport": "Les principes d'écriture web (scannabilité, micro-copy) enrichiront les chapitres sur les emails et CTA."
+  },
+  {
+   "auteur": "Robert Cialdini",
+   "titre": "Pre-Suasion",
+   "annee": "2016",
+   "idee": "Ce qui précède le message est aussi important que le message lui-même. Le cadrage et l'amorçage préparent la persuasion.",
+   "apport": "Le concept de pré-suasion sera développé dans le chapitre sur les séquences email et le retargeting."
+  }
+ ],
+ "parties": [
+  {
+   "titre": "PARTIE 1 — Les Fondations : Comprendre le Cerveau de Celui qui Achète",
+   "chapitres": [
+    {
+     "numero": 1,
+     "titre": "Le Copywriting n'est pas de l'Écriture : C'est de la Psychologie Appliquée",
+     "objectif": "Déconstruire les mythes du copywriting et installer le bon état d'esprit : on n'écrit pas pour impressionner, on écrit pour faire agir.",
+     "sections": [
+      "1.1 — Pourquoi 90 % des textes de vente échouent (et ce n'est pas une question de style)",
+      "1.2 — La différence entre écrire et convertir : le paradigme du vendeur silencieux",
+      "1.3 — Les 3 niveaux de lecture : scanner, lire, acheter",
+      "1.4 — Le mythe de la créativité : pourquoi la clarté bat toujours l'originalité",
+      "1.5 — Votre premier audit : analyser 5 pages de vente de votre secteur",
+      "1.6 — Le contrat moral du copywriter : vendre sans manipuler"
+     ],
+     "exercices": [
+      "Exercice 1 : Choisir 5 pages de vente concurrentes et les annoter selon la grille « Attention-Intérêt-Désir-Action » fournie",
+      "Exercice 2 : Réécrire un paragraphe de vente existant en remplaçant tout adjectif vague par une donnée spécifique",
+      "Exercice 3 : Rédiger un paragraphe de 80 mots qui décrit votre produit en parlant uniquement du résultat client (jamais du produit lui-même)"
+     ]
+    },
+    {
+     "numero": 2,
+     "titre": "Les 5 Stades de Conscience : Parler à la Bonne Oreille au Bon Moment",
+     "objectif": "Maîtriser le modèle d'Eugene Schwartz pour adapter son message au niveau de connaissance et de désir du prospect.",
+     "sections": [
+      "2.1 — Le modèle des 5 stades : inconscient, conscient du problème, conscient de la solution, conscient du produit, pleinement conscient",
+      "2.2 — Comment identifier le stade dominant de votre audience",
+      "2.3 — Adapter l'accroche à chaque stade (avec 5 exemples concrets)",
+      "2.4 — Le piège de parler au stade 5 quand le marché est au stade 2",
+      "2.5 — Cartographier le parcours de conscience sur 3 canaux : page, email, pub",
+      "2.6 — Étude de cas : une même offre déclinée en 5 messages différents"
+     ],
+     "exercices": [
+      "Exercice 1 : Prendre votre offre principale et rédiger 5 accroches différentes, une par stade de conscience",
+      "Exercice 2 : Interviewer 3 clients réels et déterminer à quel stade ils étaient au moment de l'achat",
+      "Exercice 3 : Créer une matrice « Stade × Canal × Message » pour votre prochain lancement"
+     ]
+    },
+    {
+     "numero": 3,
+     "titre": "La Recherche Client : Le Trésor Caché dans les Mots de Votre Audience",
+     "objectif": "Apprendre à collecter et exploiter le langage exact des prospects pour écrire des textes qui résonnent comme une conversation intime.",
+     "sections": [
+      "3.1 — Les 8 sources de données client (avis, forums, tickets support, interviews, réseaux, sondages, chat, concurrents)",
+      "3.2 — La méthode du verbatim : collecter 100 citations clients en 2 heures",
+      "3.3 — Identifier les douleurs, objections et désirs cachés dans le langage",
+      "3.4 — Les 8 désirs fondamentaux (Life Force 8) appliqués à votre marché",
+      "3.5 — Construire une fiche persona actionnable (pas un portrait vague)",
+      "3.6 — Le test du miroir : votre texte utilise-t-il les mots du client ou les vôtres ?"
+     ],
+     "exercices": [
+      "Exercice 1 : Collecter 30 verbatims clients (avis Amazon, Trustpilot, forums) et les classer en 3 colonnes : douleur / désir / objection",
+      "Exercice 2 : Rédiger une fiche persona en 1 page incluant 10 citations verbatim",
+      "Exercice 3 : Réécrire votre accroche principale en utilisant uniquement des mots trouvés dans les verbatims"
+     ]
+    },
+    {
+     "numero": 4,
+     "titre": "L'Architecture de la Persuasion : AIDA, PAS, 4P et au-delà",
+     "objectif": "Maîtriser les frameworks classiques de structuration persuasive et savoir choisir celui qui convient à chaque format et audience.",
+     "sections": [
+      "4.1 — AIDA déconstruit : pourquoi il fonctionne encore en 2025",
+      "4.2 — PAS (Problème-Agitation-Solution) : le framework de l'urgence",
+      "4.3 — Les 4P (Picture, Promise, Prove, Push) : pour les audiences sceptiques",
+      "4.4 — BAB (Before-After-Bridge) : la structure narrative simple",
+      "4.5 — Le framework StoryBrand en 7 étapes pour les pages longues",
+      "4.6 — Quand casser les règles : hybridation et structures sur mesure",
+      "4.7 — Choisir son framework selon le format : page, email, pub, landing"
+     ],
+     "exercices": [
+      "Exercice 1 : Prendre une offre et la structurer successivement en AIDA, PAS et BAB (3 textes de 150 mots chacun)",
+      "Exercice 2 : Construire une page de vente en StoryBrand pour un produit fictif",
+      "Exercice 3 : Créer votre propre framework hybride en combinant 2 structures existantes et justifier vos choix"
+     ]
+    },
+    {
+     "numero": 5,
+     "titre": "Le Toboggan de Sugarman : L'Art de Faire Glisser le Lecteur jusqu'au Bout",
+     "objectif": "Apprendre à créer un texte dont chaque phrase rend la suivante irrésistible, éliminant tout point de sortie prématurée.",
+     "sections": [
+      "5.1 — Le principe du slippery slide : la première phrase est la seule qui compte",
+      "5.2 — Les 12 types d'accroches d'ouverture (question, choc, promesse, histoire, statistique…)",
+      "5.3 — Les transitions invisibles : relier les paragraphes sans couture",
+      "5.4 — Le rythme : alterner phrases courtes et longues pour hypnotiser",
+      "5.5 — Les micro-engagements : poser des questions, faire hocher la tête",
+      "5.6 — Éliminer les points de friction : jargon, longueur, redondance",
+      "5.7 — Le test du doigt : si vous pouvez arrêter de lire, votre texte échoue"
+     ],
+     "exercices": [
+      "Exercice 1 : Réécrire l'introduction d'une page de vente existante en 5 versions différentes, puis choisir la plus 'glissante'",
+      "Exercice 2 : Prendre un texte de 300 mots et le réécrire en supprimant 30 % des mots sans perdre de sens",
+      "Exercice 3 : Écrire une séquence de 10 phrases où chaque phrase commence par un lien avec la précédente (exercice de transition)"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 2 — Pages de Vente : Transformer un Scroll en Signature de Chèque",
+   "chapitres": [
+    {
+     "numero": 6,
+     "titre": "Le Titre et la Promesse : 80 % de Votre Conversion se Joue Ici",
+     "objectif": "Maîtriser l'art de rédiger des titres et sous-titres qui stoppent le scroll et promettent une transformation irrésistible.",
+     "sections": [
+      "6.1 — Les 4 fonctions du titre : attirer, qualifier, promettre, intriguer",
+      "6.2 — Les 20 formules de titres qui convertissent (avec exemples chiffrés)",
+      "6.3 — Le sous-titre comme amplificateur : préciser la promesse sans la diluer",
+      "6.4 — Spécificité vs. généralité : pourquoi « Perdez 3,7 kg en 21 jours » bat « Perdez du poids »",
+      "6.5 — L'angle unique : trouver l'entrée que personne n'a encore utilisée",
+      "6.6 — Tester 10 titres avant d'en choisir un : le processus de sélection",
+      "6.7 — Adaptation du titre selon le trafic : froid, tiède, chaud"
+     ],
+     "exercices": [
+      "Exercice 1 : Générer 25 titres pour votre offre en utilisant 10 formules différentes, puis les classer par score d'impact (1-10)",
+      "Exercice 2 : Prendre 5 titres de concurrents et les réécrire en les rendant plus spécifiques",
+      "Exercice 3 : Écrire un titre + sous-titre pour chacune des 3 températures de trafic (froid/tiède/chaud)"
+     ]
+    },
+    {
+     "numero": 7,
+     "titre": "La Structure d'une Page de Vente qui Convertit : Section par Section",
+     "objectif": "Construire une page de vente de A à Z en suivant une architecture éprouvée, du hero au dernier CTA.",
+     "sections": [
+      "7.1 — Le hero : titre, sous-titre, visuel et CTA en 5 secondes",
+      "7.2 — La section problème : nommer la douleur mieux que le client lui-même",
+      "7.3 — La section solution : présenter le mécanisme unique",
+      "7.4 — La preuve sociale : témoignages, chiffres, logos, études de cas",
+      "7.5 — L'offre irrésistible : stack de valeur, bonus, garantie",
+      "7.6 — La FAQ stratégique : transformer les objections en arguments",
+      "7.7 — Le CTA final et les relances : ne jamais laisser partir sans une dernière chance"
+     ],
+     "exercices": [
+      "Exercice 1 : Dessiner le wireframe d'une page de vente complète sur papier (blocs, hiérarchie, CTA)",
+      "Exercice 2 : Rédiger la section « problème » de 200 mots en utilisant uniquement des verbatims clients",
+      "Exercice 3 : Construire une offre stackée avec 3 bonus et calculer la valeur perçue vs. le prix réel"
+     ]
+    },
+    {
+     "numero": 8,
+     "titre": "Les 6 Leviers de Cialdini Intégrés dans le Texte",
+     "objectif": "Transformer les principes de psychologie sociale en techniques rédactionnelles concrètes et éthiques.",
+     "sections": [
+      "8.1 — La preuve sociale : chiffres, témoignages, UGC et comment les rédiger",
+      "8.2 — La rareté et l'urgence : countdowns, places limitées, sans manipulation",
+      "8.3 — L'autorité : crédibilité, credentials, médias, chiffres clés",
+      "8.4 — La réciprocité : donner avant de demander (lead magnets, contenu gratuit)",
+      "8.5 — L'engagement et la cohérence : micro-oui progressifs dans le texte",
+      "8.6 — La sympathie : humaniser la marque, montrer les coulisses",
+      "8.7 — Combiner 3 leviers sans surcharger : l'équilibre persuasion/pression"
+     ],
+     "exercices": [
+      "Exercice 1 : Réécrire un paragraphe de preuve sociale en intégrant 3 types de témoignages (texte, vidéo, chiffre)",
+      "Exercice 2 : Créer une séquence de 5 micro-engagements (questions, cases à cocher, choix) intégrés dans une page",
+      "Exercice 3 : Rédiger une section rareté qui crée l'urgence sans mentir ni utiliser de faux countdowns"
+     ]
+    },
+    {
+     "numero": 9,
+     "titre": "Objections, Garanties et Réassurance : Lever les Freins Invisibles",
+     "objectif": "Identifier et neutraliser les 10 objections les plus courantes directement dans le texte, avant que le lecteur ne les formule.",
+     "sections": [
+      "9.1 — Cartographier les objections : prix, temps, crédibilité, peur du changement, « et si ça ne marche pas ? »",
+      "9.2 — La technique du « Je sais ce que vous pensez » : nommer l'objection avant qu'elle n'émerge",
+      "9.3 — Garanties : inverser le risque (satisfait ou remboursé, essai gratuit, résultats garantis)",
+      "9.4 — La section FAQ comme outil de conversion (pas juste d'information)",
+      "9.5 — Le pouvoir du « même si » : anticiper les cas limites",
+      "9.6 — Réassurance visuelle et textuelle : badges, logos, mentions presse",
+      "9.7 — Le ton de la réassurance : empathique, pas défensif"
+     ],
+     "exercices": [
+      "Exercice 1 : Lister les 10 objections principales de votre marché et rédiger une réponse textuelle pour chacune",
+      "Exercice 2 : Écrire 3 versions de garantie (30 jours, 60 jours, résultat) et choisir la plus crédible",
+      "Exercice 3 : Transformer une FAQ de 8 questions en un mini-texte persuasif de 400 mots"
+     ]
+    },
+    {
+     "numero": 10,
+     "titre": "Le CTA et la Micro-Copy : Les Derniers Mots qui Font la Différence",
+     "objectif": "Optimiser chaque bouton, lien et instruction d'action pour maximiser le taux de clic et d'inscription.",
+     "sections": [
+      "10.1 — L'anatomie d'un CTA parfait : verbe, bénéfice, urgence, design",
+      "10.2 — Les 15 verbes d'action qui convertissent le mieux (et ceux à éviter)",
+      "10.3 — La micro-copy : textes de formulaire, tooltips, messages d'erreur",
+      "10.4 — Le CTA contextuel : adapter le message à la position dans la page",
+      "10.5 — Réduire la friction : nombre de champs, étapes, distraction",
+      "10.6 — Le CTA secondaire : offrir une porte de sortie qui ramène",
+      "10.7 — Tester les CTA : A/B testing, heatmap, analytics"
+     ],
+     "exercices": [
+      "Exercice 1 : Réécrire 10 CTA existants en appliquant la formule « Verbe + Bénéfice + Urgence »",
+      "Exercice 2 : Rédiger la micro-copy complète d'un formulaire d'inscription en 5 champs (labels, placeholders, erreurs)",
+      "Exercice 3 : Créer 3 variantes de CTA pour un même bouton et définir le protocole de test A/B"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 3 — Email Marketing : La Conversation qui Vend Sans Forcer",
+   "chapitres": [
+    {
+     "numero": 11,
+     "titre": "L'Objet et le Preheader : Gagner la Bataille de la Boîte de Réception",
+     "objectif": "Rédiger des objets et preheaders qui maximisent le taux d'ouverture sans tomber dans le clickbait.",
+     "sections": [
+      "11.1 — Le taux d'ouverture se joue en 2 secondes : les 3 filtres mentaux du destinataire",
+      "11.2 — Les 12 types d'objets qui fonctionnent (curiosité, bénéfice, question, liste, urgence…)",
+      "11.3 — Le preheader : le second titre que tout le monde oublie",
+      "11.4 — Longueur optimale, emojis, majuscules : ce que disent les données 2024",
+      "11.5 — Segmenter les objets selon le stade du client dans le funnel",
+      "11.6 — Éviter les filtres anti-spam : les mots et structures à bannir",
+      "11.7 — Le test A/B d'objets : envoyer, mesurer, itérer"
+     ],
+     "exercices": [
+      "Exercice 1 : Rédiger 15 objets pour un même email et les classer par taux d'ouverture estimé",
+      "Exercice 2 : Réécrire 5 objets d'emails promotionnels reçus cette semaine en les rendant plus engageants",
+      "Exercice 3 : Créer une banque de 30 objets classés par type (à réutiliser et adapter)"
+     ]
+    },
+    {
+     "numero": 12,
+     "titre": "La Séquence de Bienvenue : Les 7 Jours qui Définissent la Relation",
+     "objectif": "Construire une séquence automatisée de 5 à 7 emails qui transforme un nouvel abonné en prospect chaud.",
+     "sections": [
+      "12.1 — Email 1 : la promesse tenue (livraison immédiate de la valeur promise)",
+      "12.2 — Email 2 : l'histoire personnelle ou la mission (créer la connexion)",
+      "12.3 — Email 3 : la preuve sociale et les résultats clients",
+      "12.4 — Email 4 : le contenu éducatif à haute valeur (sans pitch)",
+      "12.5 — Email 5 : la première offre douce (produit d'entrée ou essai)",
+      "12.6 — Email 6-7 : la montée en engagement et le CTA principal",
+      "12.7 — Timing et fréquence : envoyer au bon moment sans saturer"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire l'email 1 de votre séquence de bienvenue (300 mots) avec un taux de clic cible de 15 %",
+      "Exercice 2 : Construire le plan détaillé d'une séquence de 7 emails avec objet, angle et CTA pour chacun",
+      "Exercice 3 : Rédiger l'email « histoire personnelle » en utilisant la structure héros-obstacle-résolution"
+     ]
+    },
+    {
+     "numero": 13,
+     "titre": "L'Email de Vente : Persuader en 300 à 800 Mots",
+     "objectif": "Structurer un email promotionnel qui vend sans agresser, en suivant une progression logique et émotionnelle.",
+     "sections": [
+      "13.1 — La règle 80/20 : 80 % de valeur, 20 % de pitch (ou comment inverser selon la température)",
+      "13.2 — L'ouverture narrative : commencer par une histoire, pas par le produit",
+      "13.3 — Le pont problème-solution : relier la douleur au produit naturellement",
+      "13.4 — La présentation de l'offre : bénéfices, stack, prix, garantie",
+      "13.5 — Le CTA dans l'email : un seul objectif, un seul lien, zéro distraction",
+      "13.6 — Le P.S. : le second endroit le plus lu après l'objet",
+      "13.7 — Variantes : email court (300 mots) vs. email long (800 mots), quand utiliser lequel"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire un email de vente de 500 mots pour votre produit principal en suivant la structure PAS",
+      "Exercice 2 : Rédiger 3 P.S. différents pour le même email et choisir le plus percutant",
+      "Exercice 3 : Réécrire un email promotionnel que vous avez reçu en le rendant 50 % plus court et 2x plus clair"
+     ]
+    },
+    {
+     "numero": 14,
+     "titre": "Le Storytelling par Email : Raconter pour Vendre Sans Avoir l'Air de Vendre",
+     "objectif": "Utiliser la narration comme véhicule de persuasion dans les emails quotidiens et les lancements.",
+     "sections": [
+      "14.1 — Pourquoi les histoires bypassent le cerveau rationnel (neuroscience simplifiée)",
+      "14.2 — La structure narrative en 5 actes adaptée à l'email",
+      "14.3 — Les 7 types de stories à raconter (client, personnelle, métaphore, origine, échec, coulisses, vision)",
+      "14.4 — Le « open loop » : ouvrir une histoire dans l'objet, la résoudre dans le corps",
+      "14.5 — L'email « Seinfeld » : trouver une histoire dans le quotidien banal",
+      "14.6 — Relier la story au produit sans transition brutale",
+      "14.7 — Fréquence et alternance : quand raconter, quand vendre"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire un email story de 400 mots basé sur une anecdote personnelle liée à votre domaine",
+      "Exercice 2 : Créer un calendrier éditorial de 14 emails alternant story/valeur/vente",
+      "Exercice 3 : Transformer un témoignage client sec en une mini-narration de 150 mots avec émotion"
+     ]
+    },
+    {
+     "numero": 15,
+     "titre": "La Séquence de Lancement et de Relance : Le Timing qui Multiplie par 3",
+     "objectif": "Orchestrer une séquence de lancement produit et des relances post-achat qui maximisent la conversion sans épuiser la liste.",
+     "sections": [
+      "15.1 — Le pré-lancement : 3 à 5 emails pour créer l'anticipation",
+      "15.2 — Le jour J : l'email d'ouverture (structure, ton, urgence)",
+      "15.3 — Les emails de milieu de lancement : preuve, FAQ, objections",
+      "15.4 — Le dernier jour : la séquence de clôture en 3 emails (matin, après-midi, soir)",
+      "15.5 — La relance panier : 3 emails qui récupèrent 15 à 25 % des abandons",
+      "15.6 — La relance post-achat : upsell, cross-sell et fidélisation",
+      "15.7 — Gérer la fatigue : fréquence maximale, désinscription, segmentation"
+     ],
+     "exercices": [
+      "Exercice 1 : Planifier une séquence de lancement de 10 emails sur 7 jours avec objet et angle pour chacun",
+      "Exercice 2 : Rédiger l'email de clôture (dernier jour, 18h) avec urgence authentique et récapitulatif de l'offre",
+      "Exercice 3 : Créer une séquence de relance panier de 3 emails espacés de 1h, 24h et 72h"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 4 — Publicité : Capter l'Attention en 1,7 Seconde",
+   "chapitres": [
+    {
+     "numero": 16,
+     "titre": "Le Scroll Stopper : Écrire pour un Cerveau en Mode Zapping",
+     "objectif": "Comprendre les mécanismes d'attention sur les feeds sociaux et adapter son écriture publicitaire au format natif.",
+     "sections": [
+      "16.1 — Le contexte de consommation : 1,7 seconde pour capter, 3 secondes pour convaincre",
+      "16.2 — Les 5 patterns de scroll et comment les interrompre",
+      "16.3 — L'accroche publicitaire : les 10 formats qui stoppent le pouce",
+      "16.4 — Écrire pour Facebook/Meta : le format natif et le « pattern interrupt »",
+      "16.5 — Écrire pour LinkedIn : le ton professionnel qui engage",
+      "16.6 — Écrire pour Instagram/TikTok : le texte au service du visuel",
+      "16.7 — Le hook visuel + hook textuel : la synergie indispensable"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire 10 accroches publicitaires de 12 mots maximum pour votre produit",
+      "Exercice 2 : Adapter un même message publicitaire en 3 versions (Facebook, LinkedIn, Instagram)",
+      "Exercice 3 : Analyser 10 publicités concurrentes dans la bibliothèque Meta Ads et identifier les patterns de hook"
+     ]
+    },
+    {
+     "numero": 17,
+     "titre": "Le Corps de la Pub : Convaincre en 125 à 500 Mots",
+     "objectif": "Structurer le texte principal d'une publicité qui maintient l'attention, délivre le message et pousse à l'action.",
+     "sections": [
+      "17.1 — La règle des 3 secondes : la première ligne du corps doit continuer le hook",
+      "17.2 — Le corps court (125 mots) : pour le trafic froid et le retargeting",
+      "17.3 — Le corps long (300-500 mots) : pour les audiences sceptiques et les produits complexes",
+      "17.4 — La structure en blocs : problème → agitation → solution → preuve → CTA",
+      "17.5 — L'écriture en « tu » vs. « vous » : adapter le registre à la plateforme",
+      "17.6 — Intégrer la preuve sociale dans le corps sans alourdir",
+      "17.7 — Le CTA publicitaire : clair, unique, urgent"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire une publicité Facebook de 150 mots (corps) en suivant la structure PAS",
+      "Exercice 2 : Réduire un texte de vente de 500 mots en un corps de pub de 125 mots sans perdre la persuasion",
+      "Exercice 3 : Rédiger 3 corps de pub différents (émotionnel, logique, narratif) pour un même produit et les soumettre à un mini-test"
+     ]
+    },
+    {
+     "numero": 18,
+     "titre": "La Publicité Vidéo et le Script : Écrire pour l'Oral et l'Image",
+     "objectif": "Adapter les techniques de copywriting aux scripts vidéo (YouTube, Reels, TikTok, VSL) où le texte est dit, pas lu.",
+     "sections": [
+      "18.1 — Les différences fondamentales entre texte lu et texte entendu",
+      "18.2 — Le script VSL (Video Sales Letter) : structure en 12 étapes",
+      "18.3 — Le hook vidéo : les 3 premières secondes qui décident de tout",
+      "18.4 — Écrire pour être parlé : phrases courtes, rythme, silences",
+      "18.5 — Le script UGC (User Generated Content) : authenticité structurée",
+      "18.6 — Le texte à l'écran (overlay) : compléter sans dupliquer",
+      "18.7 — Adapter le script à la durée : 15s, 30s, 60s, 5 min"
+     ],
+     "exercices": [
+      "Exercice 1 : Écrire un script VSL de 3 minutes (environ 450 mots) pour votre offre",
+      "Exercice 2 : Rédiger un script de publicité TikTok de 30 secondes avec hook, corps et CTA",
+      "Exercice 3 : Transformer un texte de vente écrit en script oral en le lisant à voix haute et en corrigeant les passages non naturels"
+     ]
+    },
+    {
+     "numero": 19,
+     "titre": "Le Retargeting et la Séquence Publicitaire : Suivre Sans Harceler",
+     "objectif": "Construire des séquences publicitaires multi-touch qui accompagnent le prospect du premier contact à la conversion finale.",
+     "sections": [
+      "19.1 — Le funnel publicitaire : TOFU, MOFU, BOFU et les messages adaptés",
+      "19.2 — La séquence de retargeting en 4 à 7 impressions : quoi dire à chaque étape",
+      "19.3 — Le message de retargeting : rappeler sans lasser, reformuler sans répéter",
+      "19.4 — L'exclusion publicitaire : ne pas montrer la pub à ceux qui ont déjà acheté",
+      "19.5 — La publicité de témoignage : laisser les clients parler à votre place",
+      "19.6 — L'offre de retargeting : un angle différent, pas juste un rappel",
+      "19.7 — Mesurer la fréquence optimale : quand la pub devient du harcèlement"
+     ],
+     "exercices": [
+      "Exercice 1 : Construire une séquence de 4 publicités de retargeting avec un angle différent à chaque étape",
+      "Exercice 2 : Rédiger 3 variantes de message de retargeting pour un panier abandonné",
+      "Exercice 3 : Créer une publicité de témoignage client (script + texte) pour le bas de funnel"
+     ]
+    },
+    {
+     "numero": 20,
+     "titre": "Les Créas qui Convertissent : Aligner Texte, Visuel et Format",
+     "objectif": "Apprendre à concevoir le brief créatif parfait et à rédiger un texte qui amplifie le visuel au lieu de le concurrencer.",
+     "sections": [
+      "20.1 — Le texte au service de l'image : ne jamais décrire ce qu'on voit",
+      "20.2 — Les 7 formats créatifs qui performent en 2025 (carrousel, vidéo, statique, UGC, texte brut…)",
+      "20.3 — Le brief copywriter → designer : communiquer l'intention sans brider la créativité",
+      "20.4 — Le texte sur image : lisibilité, hiérarchie, émotion",
+      "20.5 — Les itérations créatives : un bon texte × 5 visuels vs. 5 textes × un visuel",
+      "20.6 — L'A/B testing des créas : isoler la variable texte",
+      "20.7 — Analyser les performances : CTR, CPC, ROAS et ce qu'ils disent du texte"
+     ],
+     "exercices": [
+      "Exercice 1 : Rédiger un brief créatif complet pour une campagne de 3 publicités (objectif, cible, message, ton, CTA)",
+      "Exercice 2 : Écrire 5 textes différents pour un même visuel et identifier le plus performant par un vote à l'aveugle",
+      "Exercice 3 : Analyser les résultats de 3 publicités existantes (CTR, CPC) et proposer une réécriture du texte pour améliorer les métriques"
+     ]
+    }
+   ]
+  },
+  {
+   "titre": "PARTIE 5 — Optimisation, Éthique et Passage à l'Échelle",
+   "chapitres": [
+    {
+     "numero": 21,
+     "titre": "Le Testing A/B et l'Optimisation Continue : Ne Plus Jamais Deviner",
+     "objectif": "Mettre en place une culture du test systématique pour améliorer chaque texte itération après itération.",
+     "sections": [
+      "21.1 — Ce qu'on teste en priorité : titre > CTA > corps > design",
+      "21.2 — Construire une hypothèse de test : « Je pense que X fonctionnera mieux parce que Y »",
+      "21.3 — Les outils de testing : pages (Optimizely, VWO), emails (Mailchimp, Klaviyo), pubs (Meta, Google)",
+      "21.4 — Taille d'échantillon, durée et significativité statistique",
+      "21.5 — Les 10 tests à fort impact qui prennent moins d'une heure",
+      "21.6 — Documenter les résultats : créer votre bibliothèque de ce qui marche",
+      "21.7 — Le testing multivarié : quand et comment tester plusieurs variables"
+     ],
+     "exercices": [
+      "Exercice 1 : Concevoir un plan de 5 tests A/B pour votre page de vente principale avec hypothèses explicites",
+      "Exercice 2 : Créer un tableau de suivi des tests (hypothèse, variante, résultat, apprentissage)",
+      "Exercice 3 : Analyser un cas de test fourni et rédiger la recommandation d'optimisation en 200 mots"
+     ]
+    },
+    {
+     "numero": 22,
+     "titre": "Écrire Vite et Bien : Le Système de Production du Copywriter",
+     "objectif": "Développer un processus de rédaction personnel qui permet de produire des textes de qualité en un temps raisonnable.",
+     "sections": [
+      "22.1 — Le mythe de l'inspiration : pourquoi le système bat le talent",
+      "22.2 — Le processus en 5 phases : recherche → structure → rédaction → édition → publication",
+      "22.3 — La technique du « vomi créatif » : écrire sans filtre, éditer après",
+      "22.4 — Les templates et swipe files : vos raccourcis de qualité",
+      "22.5 — La routine quotidienne du copywriter : rituels, blocs de temps, énergie",
+      "22.6 — Écrire pour plusieurs formats dans la même session (batching)",
+      "22.7 — Gérer les révisions et les feedbacks sans tout réécrire"
+     ],
+     "exercices": [
+      "Exercice 1 : Créer votre swipe file personnel avec 20 accroches, 10 structures et 10 CTA classés par catégorie",
+      "Exercice 2 : Écrire un email de vente complet en 30 minutes chrono en suivant le processus en 5 phases",
+      "Exercice 3 : Mettre en place votre template de page de vente réutilisable avec les sections à remplir"
+     ]
+    },
+    {
+     "numero": 23,
+     "titre": "Éthique, Légalité et Confiance : Vendre Sans Franchir la Ligne",
+     "objectif": "Définir les limites éthiques et légales du copywriting pour construire une réputation durable et éviter les sanctions.",
+     "sections": [
+      "23.1 — La frontière entre persuasion et manipulation : le test de la transparence",
+      "23.2 — Les mentions légales obligatoires : RGPD, mentions de résultats, désinscription",
+      "23.3 — Les fausses urgences, les faux countdowns et les promesses irréalistes : pourquoi ça détruit la confiance",
+      "23.4 — La publicité comparative : ce qui est autorisé, ce qui ne l'est pas",
+      "23.5 — Les allégations santé, financières et de résultats : prudence maximale",
+      "23.6 — Construire la confiance à long terme : transparence sur les prix, les résultats, les limites",
+      "23.7 — Le copywriter responsable : dire non aux briefs toxiques"
+     ],
+     "exercices": [
+      "Exercice 1 : Auditer 3 de vos textes existants à la lumière de la checklist éthique fournie et corriger les zones grises",
+      "Exercice 2 : Rédiger une mention de résultats et une politique de confidentialité adaptées à votre activité",
+      "Exercice 3 : Réécrire une publicité « limite » en une version tout aussi persuasive mais 100 % éthique"
+     ]
+    },
+    {
+     "numero": 24,
+     "titre": "Le Copywriting à l'Ère de l'IA : Amplifier Sans Remplacer",
+     "objectif": "Intégrer les outils d'intelligence artificielle dans votre flux de travail copywriting sans perdre la voix humaine qui convertit.",
+     "sections": [
+      "24.1 — Ce que l'IA fait bien : brainstorming, variantes, reformulation, structure",
+      "24.2 — Ce que l'IA ne fait pas encore : émotion authentique, connaissance client profonde, voix unique",
+      "24.3 — Le workflow hybride : IA pour la quantité, humain pour la qualité",
+      "24.4 — Les prompts efficaces pour générer des accroches, des emails, des scripts",
+      "24.5 — Éditer et humaniser la sortie IA : votre valeur ajoutée irremplaçable",
+      "24.6 — Les risques : contenu générique, plagiat involontaire, perte de voix",
+      "24.7 — Construire votre avantage compétitif : la spécialisation, la voix, la stratégie"
+     ],
+     "exercices": [
+      "Exercice 1 : Générer 10 accroches avec un outil IA puis en choisir 2 et les réécrire à la main en les rendant 2x plus spécifiques",
+      "Exercice 2 : Créer votre bibliothèque de 10 prompts personnalisés pour votre usage copywriting",
+      "Exercice 3 : Rédiger un texte de 300 mots entièrement à la main, puis le comparer à une version IA du même brief : noter les différences et les forces de chaque version"
+     ]
+    }
+   ]
+  }
+ ]
+}
